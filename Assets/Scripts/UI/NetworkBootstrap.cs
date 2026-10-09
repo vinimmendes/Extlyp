@@ -19,6 +19,7 @@ namespace CyberExtraction.UI
     {
         public static NetworkBootstrap Instance { get; private set; }
         public GameObject playerPrefab, monsterPrefab, lootPrefab, matchManagerPrefab, botPrefab;
+        public GameObject esporiferoPrefab, sporeCloudPrefab;
         readonly Dictionary<ulong, int> slots = new Dictionary<ulong, int>();
         readonly HashSet<ulong> readyClients = new HashSet<ulong>();
         readonly Dictionary<ulong, CampJoinRequest> requests = new Dictionary<ulong, CampJoinRequest>();
@@ -47,8 +48,9 @@ namespace CyberExtraction.UI
             if (manager == null) { Debug.LogError("NetworkManager nao encontrado."); return; }
             Register(playerPrefab); Register(monsterPrefab); Register(lootPrefab);
             Register(matchManagerPrefab); Register(botPrefab);
+            Register(esporiferoPrefab); Register(sporeCloudPrefab);
             manager.NetworkConfig.PlayerPrefab = playerPrefab;
-            manager.NetworkConfig.ProtocolVersion = 5;
+            manager.NetworkConfig.ProtocolVersion = 6;
             manager.NetworkConfig.ConnectionApproval = true;
             manager.ConnectionApprovalCallback = ApproveConnection;
             manager.OnClientDisconnectCallback += Disconnected;
@@ -335,3 +337,4 @@ namespace CyberExtraction.UI
         }
     }
 }
+

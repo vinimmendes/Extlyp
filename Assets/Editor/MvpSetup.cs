@@ -33,10 +33,19 @@ public static class MvpSetup
 
         var player = MakePlayer();
         var monster = MakeMonster();
+        var sporeCloud = MakeSporeCloud();
+        var esporifero = MakeEsporifero(sporeCloud);
         var loot = MakeLoot();
         var bot = MakeBot();
         var matchManager = MakeMatchManager(monster, loot, bot);
+        var match = matchManager.GetComponent<MatchManager>();
+        match.esporiferoPrefab = esporifero;
+        EditorUtility.SetDirty(matchManager);
         BuildScene(player, monster, loot, matchManager, bot);
+        var bootstrap = Object.FindFirstObjectByType<NetworkBootstrap>();
+        bootstrap.esporiferoPrefab = esporifero;
+        bootstrap.sporeCloudPrefab = sporeCloud;
+        EditorSceneManager.SaveScene(bootstrap.gameObject.scene, ScenePath);
 
         AssetDatabase.SaveAssets();
         EditorUtility.DisplayDialog("Cyber Extraction", "Pronto! A cena Assets/Scenes/Game foi criada.\nGere o servidor pelo menu Cyber Extraction > Servidor. Veja SERVER_SETUP.md.", "OK");
@@ -133,6 +142,7 @@ public static class MvpSetup
         var health = go.AddComponent<Health>();
         health.maxHealth = GameConfig.PlayerMaxHealth;
         go.AddComponent<PlayerInventory>();
+        go.AddComponent<SporeContamination>();
         go.AddComponent<PlayerShooter>();
         go.AddComponent<PlayerController>();
         go.AddComponent<VisibilityTarget>();
@@ -179,6 +189,31 @@ public static class MvpSetup
         return SavePrefab(go, "Loot");
     }
 
+    static GameObject MakeSporeCloud()
+    {
+        var go = new GameObject("SporeCloud");
+        go.AddComponent<NetworkObject>();
+        go.AddComponent<SpriteRenderer>();
+        go.AddComponent<SporeCloud>();
+        return SavePrefab(go, "SporeCloud");
+    }
+
+    static GameObject MakeEsporifero(GameObject cloud)
+    {
+        var go = Object.Instantiate(AssetDatabase.LoadAssetAtPath<GameObject>(PrefabDir + "/Monster.prefab"));
+        go.name = "Esporifero";
+        var monster = go.GetComponent<Monster>();
+        monster.patrolSpeed = .8f;
+        monster.chaseSpeed = 1.7f;
+        monster.attackRange = 1.5f;
+        monster.attackCooldown = 1.2f;
+        var spores = go.AddComponent<Esporifero>();
+        spores.cloudPrefab = cloud.GetComponent<SporeCloud>();
+        go.AddComponent<EsporiferoVisual>().idleSprite =
+            AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Esporifero/Esporifero.png");
+        return SavePrefab(go, "Esporifero");
+    }
+
     static GameObject MakeBot()
     {
         var go = new GameObject("Bot");
@@ -198,6 +233,7 @@ public static class MvpSetup
         go.AddComponent<PlayerInventory>();
         go.AddComponent<PlayerShooter>();
         go.AddComponent<BotController>();
+        go.AddComponent<SporeContamination>();
         go.AddComponent<VisibilityTarget>();
         return SavePrefab(go, "Bot");
     }
@@ -249,3 +285,4 @@ public static class MvpSetup
         EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(ScenePath, true) };
     }
 }
+

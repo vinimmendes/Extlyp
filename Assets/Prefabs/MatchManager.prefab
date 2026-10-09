@@ -75,6 +75,8 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   lootPrefab: {fileID: 2656584173970377489, guid: f5ee7662e7a90ff439198390cddd4156, type: 3}
   monsterPrefab: {fileID: 5800903267042037811, guid: c481cadcb11ef80498786f8006d0135c, type: 3}
+  esporiferoPrefab: {fileID: 5800903267042037811, guid: 1ddef0fe12425d2ebd0a898ee9c65eec, type: 3}
+  sporeWind: {x: 0.65, y: 0.15}
   botPrefab: {fileID: 432442870776151503, guid: 6107f635ef7f91645917ae7e86919926, type: 3}
   State:
     UpdateTraits:
@@ -86,3 +88,4 @@ MonoBehaviour:
       MinSecondsBetweenUpdates: 0
       MaxSecondsBetweenUpdates: 0
     m_InternalValue: 300
+

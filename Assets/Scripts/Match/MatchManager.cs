@@ -18,6 +18,8 @@ namespace CyberExtraction.Match
 
         public GameObject lootPrefab;
         public GameObject monsterPrefab;
+        public GameObject esporiferoPrefab;
+        public Vector2 sporeWind = new Vector2(0.65f, 0.15f);
         public GameObject botPrefab;
         public BotDifficulty botDifficulty = BotDifficulty.Medium;
         readonly MatchQueue queue = new MatchQueue();
@@ -129,6 +131,11 @@ namespace CyberExtraction.Match
                 var m = Instantiate(monsterPrefab, MapBuilder.MonsterSpawn, Quaternion.identity);
                 m.GetComponent<NetworkObject>().Spawn();
             }
+            if (esporiferoPrefab != null)
+            {
+                var spores = Instantiate(esporiferoPrefab, MapBuilder.EsporiferoSpawn, Quaternion.identity);
+                spores.GetComponent<NetworkObject>().Spawn();
+            }
             State.Value = (byte)MatchState.Running;
             Debug.Log($"Partida iniciada: {HumanCount.Value} humanos + {BotCount.Value} bots.");
         }
@@ -216,3 +223,4 @@ namespace CyberExtraction.Match
         }
     }
 }
+

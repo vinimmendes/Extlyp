@@ -10,6 +10,14 @@ namespace CyberExtraction.Match
         public static readonly Vector2 HouseASpawn = SpawnPoints[0], HouseBSpawn = SpawnPoints[1], MonsterSpawn = new Vector2(15,15);
         public static readonly Vector2[] ExtractionPoints = { new Vector2(-400,610), new Vector2(400,610), new Vector2(-400,-610), new Vector2(400,-610), new Vector2(-415,0), new Vector2(415,0), new Vector2(0,60) };
         public static readonly Vector2 ExtractionCenter = ExtractionPoints[6];
+        public static readonly Vector2 EsporiferoSpawn = new Vector2(22, 18);
+        public static bool IsSheltered(Vector2 point)
+        {
+            foreach (var center in SpawnPoints)
+                if (Mathf.Abs(point.x - center.x) < 4f && Mathf.Abs(point.y - center.y) < 2.5f)
+                    return true;
+            return false;
+        }
         public static readonly Vector2[] Sites = MakeSites();
         public static readonly Vector2[] LootPoints = MakeLoot();
         public static Vector2 ParticipantSpawn(int slot) => SpawnPoints[Mathf.Clamp(slot,0,SpawnPoints.Length-1)];
@@ -69,3 +77,4 @@ namespace CyberExtraction.Match
         }
     }
 }
+

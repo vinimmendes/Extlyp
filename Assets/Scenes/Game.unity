@@ -298,6 +298,8 @@ MonoBehaviour:
   lootPrefab: {fileID: 2656584173970377489, guid: f5ee7662e7a90ff439198390cddd4156, type: 3}
   matchManagerPrefab: {fileID: 1597792431781885835, guid: a48fdd8b8d49fd846aa73e1e45927a2a, type: 3}
   botPrefab: {fileID: 432442870776151503, guid: 6107f635ef7f91645917ae7e86919926, type: 3}
+  esporiferoPrefab: {fileID: 5800903267042037811, guid: 1ddef0fe12425d2ebd0a898ee9c65eec, type: 3}
+  sporeCloudPrefab: {fileID: 5800903267042037811, guid: 1f064e2e0dbe59318ee915e566edf23d, type: 3}
 --- !u!4 &626745541
 Transform:
   m_ObjectHideFlags: 0
@@ -427,3 +429,4 @@ SceneRoots:
   - {fileID: 861312263}
   - {fileID: 625788925}
   - {fileID: 626745541}
+

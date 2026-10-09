@@ -13,6 +13,7 @@ namespace CyberExtraction.Combat
         public NetworkVariable<int> Maximum = new NetworkVariable<int>(100);
 
         public event Action<Health> OnDiedServer;
+        public event Action<Health, int> OnDamagedServer;
 
         public bool IsDead => Current.Value <= 0;
 
@@ -26,8 +27,10 @@ namespace CyberExtraction.Combat
 
         public void ServerTakeDamage(int amount)
         {
-            if (!IsServer || IsDead) return;
+            if (!IsServer || IsDead || amount <= 0) return;
+            int previous = Current.Value;
             Current.Value = Mathf.Max(0, Current.Value - amount);
+            OnDamagedServer?.Invoke(this, previous - Current.Value);
             if (Current.Value <= 0) OnDiedServer?.Invoke(this);
         }
 
@@ -39,3 +42,4 @@ namespace CyberExtraction.Combat
         }
     }
 }
+

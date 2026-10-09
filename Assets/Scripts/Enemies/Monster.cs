@@ -24,11 +24,13 @@ namespace CyberExtraction.Enemies
         MonsterNavigation navigation;
         Vector2 home, wanderTarget, alertPos;
         float nextWander, alertUntil, nextAttack;
+        Esporifero spores;
 
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
             health = GetComponent<Health>();
+            spores = GetComponent<Esporifero>();
             rb.gravityScale = 0f;
             rb.freezeRotation = true;
         }
@@ -75,6 +77,12 @@ namespace CyberExtraction.Enemies
         private void FixedUpdate()
         {
             if (!IsServer || health == null || health.IsDead) return;
+            if (MatchManager.Instance == null || MatchManager.Instance.CurrentState != MatchState.Running ||
+                (spores != null && spores.IsPreparing))
+            {
+                rb.linearVelocity = Vector2.zero;
+                return;
+            }
 
             Vector2 pos = rb.position;
             Transform target = FindTarget(pos);
@@ -151,3 +159,4 @@ namespace CyberExtraction.Enemies
         }
     }
 }
+

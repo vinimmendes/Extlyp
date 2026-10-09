@@ -48,6 +48,20 @@ namespace CyberExtraction.UI
             if (hp != null) GUI.Label(new Rect(10, 10, 200, 30), $"Vida: {hp.Current.Value}/{hp.Maximum.Value}", small);
             if (inv != null) GUI.Label(new Rect(10, 40, 280, 30), $"M {inv.Wood.Value}   P {inv.Nails.Value}   B {inv.Bandages.Value}", small);
             GUI.Label(new Rect(10, 70, 150, 30), $"Sala {mm.RoomNumber.Value}", small);
+            var contamination = po != null ? po.GetComponent<SporeContamination>() : null;
+            if (contamination != null && contamination.Level.Value > 0)
+                GUI.Label(new Rect(10, 100, 300, 30),
+                    $"Contaminacao: {Mathf.CeilToInt(contamination.Level.Value)}%", small);
+            if (mm.CurrentState == MatchState.Running)
+            {
+                // Wind is a configured map constant shared by the same-version builds.
+                float angle = Mathf.Repeat(Mathf.Atan2(mm.sporeWind.y, mm.sporeWind.x) * Mathf.Rad2Deg, 360);
+                string wind = mm.sporeWind.sqrMagnitude < .001f ? "calmo" :
+                    angle < 22.5f || angle >= 337.5f ? "L" : angle < 67.5f ? "NE" :
+                    angle < 112.5f ? "N" : angle < 157.5f ? "NO" : angle < 202.5f ? "O" :
+                    angle < 247.5f ? "SO" : angle < 292.5f ? "S" : "SE";
+                GUI.Label(new Rect(10, 130, 300, 30), $"Vento: {wind} (destino dos esporos)", small);
+            }
 
             string msg = null;
             if (mm.CurrentState == MatchState.Waiting)
@@ -72,3 +86,4 @@ namespace CyberExtraction.UI
         }
     }
 }
+
