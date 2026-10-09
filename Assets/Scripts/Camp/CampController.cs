@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using CyberExtraction.Core;
 using CyberExtraction.Players;
+using CyberExtraction.Items;
 
 namespace CyberExtraction.Camp
 {
@@ -167,10 +168,21 @@ namespace CyberExtraction.Camp
                 GUI.Box(panel, "");
                 GUI.Label(new Rect(panel.x + 10, panel.y + 15, panel.width - 20, panel.height * 0.45f),
                     $"DEPOSITO\nM - Madeira: {profile.Wood}\nP - Pregos: {profile.Nails}\nB - Bandagens: {profile.Bandages}\nLevar bandagens: {CampSession.BringBandages}/3", label);
+                var ammoTypes = new[] { ItemId.PistolAmmo, ItemId.RifleAmmo, ItemId.ShotgunShell };
+                var recipeStyle = new GUIStyle(button) { fontSize = Mathf.Max(12, font - 4) };
+                for (int i = 0; i < ammoTypes.Length; i++)
+                {
+                    int output = i == 0 ? 12 : i == 1 ? 5 : 4;
+                    if (GUI.Button(new Rect(panel.x + 10 + i * (panel.width - 20) / 3, panel.y + panel.height * .43f,
+                        (panel.width - 20) / 3 - 4, panel.height * .11f), $"{ItemCatalog.Icon(ammoTypes[i])} x{output}\nMT3 PO1 C1", recipeStyle))
+                        message = CampSession.Act(new CampAction { Kind = CampActionKind.CraftAmmo, Result = (int)ammoTypes[i] })
+                            ? "Municao criada no deposito ou mochila." : "Faltam materiais, espaco ou limite de acoes atingido.";
+                }
                 if (GUI.Button(new Rect(panel.x + 20, panel.y + panel.height * 0.55f, panel.width * 0.3f, panel.height * 0.15f), "-", button))
                     CampSession.BringBandages = Mathf.Max(0, CampSession.BringBandages - 1);
                 if (GUI.Button(new Rect(panel.x + panel.width * 0.65f, panel.y + panel.height * 0.55f, panel.width * 0.3f - 20, panel.height * 0.15f), "+", button))
                     CampSession.BringBandages = Mathf.Min(3, Mathf.Min(profile.Bandages, CampSession.BringBandages + 1));
+                GUI.Label(new Rect(panel.x + 10, panel.y + panel.height * .70f, panel.width - 20, panel.height * .07f), message, recipeStyle);
                 if (GUI.Button(new Rect(panel.x + 20, panel.y + panel.height * 0.77f, panel.width - 40, panel.height * 0.15f), "Fechar", button)) depotOpen = false;
             }
             else

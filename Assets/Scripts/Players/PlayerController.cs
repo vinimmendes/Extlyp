@@ -35,11 +35,7 @@ namespace CyberExtraction.Players
             rb.freezeRotation = true;
             GetComponent<NetworkTransform>().AuthorityMode = NetworkTransform.AuthorityModes.Server;
 
-            var nose = new GameObject("Nose");
-            nose.transform.SetParent(transform, false);
-            nose.transform.localPosition = new Vector3(0.5f, 0f, 0f);
-            nose.transform.localScale = new Vector3(0.5f, 0.25f, 1f);
-            SpriteFactory.Setup(nose.AddComponent<SpriteRenderer>(), SpriteFactory.Square, Color.white, 6);
+
         }
 
         public override void OnNetworkSpawn()
@@ -83,8 +79,9 @@ namespace CyberExtraction.Players
             if (!canAct) return;
 
             ReadInput();
+            if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame) shooter.RequestReload();
 
-            if (fireHeld && Time.time - lastFire >= GameConfig.FireCooldown)
+            if (fireHeld && Time.time - lastFire >= shooter.FireCooldown)
             {
                 lastFire = Time.time;
                 shooter.RequestFire(facing);

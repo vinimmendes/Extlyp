@@ -47,8 +47,9 @@ namespace CyberExtraction.UI
             if (manager == null) { Debug.LogError("NetworkManager nao encontrado."); return; }
             Register(playerPrefab); Register(monsterPrefab); Register(lootPrefab);
             Register(matchManagerPrefab); Register(botPrefab);
+            Register(CyberExtraction.Enemies.PlantEncounter.Prefab);
             manager.NetworkConfig.PlayerPrefab = playerPrefab;
-            manager.NetworkConfig.ProtocolVersion = 5;
+            manager.NetworkConfig.ProtocolVersion = 8;
             manager.NetworkConfig.ConnectionApproval = true;
             manager.ConnectionApprovalCallback = ApproveConnection;
             manager.OnClientDisconnectCallback += Disconnected;

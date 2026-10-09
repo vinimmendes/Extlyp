@@ -121,6 +121,13 @@ namespace CyberExtraction.Match
 
             for (int i = 0; i < MapBuilder.LootPoints.Length; i++)
             {
+                if (i % 16 == 6) { SpawnStack(MapBuilder.LootPoints[i], new ItemStack(ItemId.Mosin, 1, 0, 5)); continue; }
+                if (i % 16 == 7) { SpawnItem(MapBuilder.LootPoints[i], ItemId.RifleAmmo, 10); continue; }
+                if (i % 16 == 10) { SpawnStack(MapBuilder.LootPoints[i], new ItemStack(ItemId.DoubleBarrelShotgun, 1, 0, 2)); continue; }
+                if (i % 16 == 11) { SpawnItem(MapBuilder.LootPoints[i], ItemId.ShotgunShell, 8); continue; }
+                if (i % 16 == 12) { SpawnItem(MapBuilder.LootPoints[i], ItemId.Metal, 6); continue; }
+                if (i % 16 == 13) { SpawnItem(MapBuilder.LootPoints[i], ItemId.Gunpowder, 2); continue; }
+                if (i % 16 == 14) { SpawnItem(MapBuilder.LootPoints[i], ItemId.AmmoComponent, 2); continue; }
                 var item = i == 4 || i == 5 ? ItemId.Bandage : i % 2 == 0 ? ItemId.Wood : ItemId.Nails;
                 SpawnItem(MapBuilder.LootPoints[i], item, item == ItemId.Wood ? 6 : item == ItemId.Nails ? 4 : 2);
             }
@@ -130,6 +137,7 @@ namespace CyberExtraction.Match
                 m.GetComponent<NetworkObject>().Spawn();
             }
             State.Value = (byte)MatchState.Running;
+            CyberExtraction.Enemies.PlantEncounter.ServerSpawnMothers();
             Debug.Log($"Partida iniciada: {HumanCount.Value} humanos + {BotCount.Value} bots.");
         }
 

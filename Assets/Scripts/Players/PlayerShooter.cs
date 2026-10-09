@@ -7,144 +7,148 @@ using CyberExtraction.Items;
 
 namespace CyberExtraction.Players
 {
-    // Tiro 100% decidido no servidor: sorteia a direcao dentro do cone de mira e faz o raycast.
+    // Arma, municao, ferrolho, recarga, dispersao e dano decididos no servidor.
     public class PlayerShooter : NetworkBehaviour
     {
         PlayerInventory inv;
-        LineRenderer tracer;
-        float tracerUntil;
-        float lastShot = -10f;
-        float recycledMetal;
-        public NetworkVariable<double> ReloadEndsAt = new NetworkVariable<double>(0);
-        public bool Reloading => ReloadEndsAt.Value > NetworkManager.ServerTime.Time;
-        public int Magazine => inv != null ? inv.PistolRounds : 0;
-        public int Reserve => inv != null ? inv.Count(ItemId.PistolAmmo) : 0;
-
-        // velocidade medida no servidor (para abrir/fechar o cone)
+        readonly LineRenderer[] tracers = new LineRenderer[8];
+        float tracerUntil, recycledMetal;
+        double nextShotAt;
+        int reloadSlot = -1;
+        ItemStack reloadStack;
         Vector2 lastPos;
         float serverSpeed;
+        public NetworkVariable<double> ReloadEndsAt = new NetworkVariable<double>(0);
+        public NetworkVariable<double> BoltEndsAt = new NetworkVariable<double>(0);
+        double Now => NetworkManager != null ? NetworkManager.ServerTime.Time : 0;
+        public bool Reloading => ReloadEndsAt.Value > Now;
+        public bool CyclingBolt => BoltEndsAt.Value > Now;
+        public WeaponDefinition Weapon => inv != null ? inv.ActiveWeapon : null;
+        public int Magazine => inv != null ? inv.WeaponRounds : 0;
+        public int Reserve => Weapon != null ? inv.Count(Weapon.Ammo) : 0;
+        public float FireCooldown => Weapon != null ? Weapon.Cooldown : GameConfig.FireCooldown;
+        public float Range => Weapon != null ? Weapon.Range : GameConfig.AimRange;
 
-        private void Awake()
+        void Awake()
         {
             inv = GetComponent<PlayerInventory>();
-
-            var go = new GameObject("Tracer");
-            tracer = go.AddComponent<LineRenderer>();
-            tracer.useWorldSpace = true;
-            tracer.positionCount = 2;
-            tracer.startWidth = tracer.endWidth = 0.06f;
-            tracer.startColor = tracer.endColor = new Color(1f, 0.9f, 0.5f, 0.9f);
-            tracer.sortingOrder = 8;
-            var m = SpriteFactory.Unlit;
-            if (m != null) tracer.sharedMaterial = m;
-            tracer.enabled = false;
+            if (GetComponent<WeaponVisual>() == null) gameObject.AddComponent<WeaponVisual>();
+            for (int i = 0; i < tracers.Length; i++)
+            {
+                var go = new GameObject("Tracer" + i);
+                var line = go.AddComponent<LineRenderer>();
+                line.useWorldSpace = true; line.positionCount = 2;
+                line.startWidth = line.endWidth = .045f;
+                line.startColor = line.endColor = new Color(1f, .9f, .5f, .9f);
+                line.sortingOrder = 8;
+                if (SpriteFactory.Unlit != null) line.sharedMaterial = SpriteFactory.Unlit;
+                line.enabled = false; tracers[i] = line;
+            }
         }
-
+        public override void OnNetworkSpawn() { lastPos = transform.position; }
         public override void OnDestroy()
         {
-            if (tracer != null) Destroy(tracer.gameObject);
+            foreach (var line in tracers) if (line != null) Destroy(line.gameObject);
             base.OnDestroy();
         }
-
-        private void Update()
+        bool CanAct => IsServer && inv != null && inv.IsAlive && Weapon != null &&
+            MatchManager.Instance != null && MatchManager.Instance.CurrentState == MatchState.Running;
+        bool SameReloadWeapon => inv != null && reloadSlot >= 0 && reloadSlot == inv.ActiveWeaponSlot &&
+            reloadSlot < inv.Slots.Count && inv.Slots[reloadSlot].Equals(reloadStack);
+        void Update()
         {
-            if (tracer.enabled && Time.time >= tracerUntil) tracer.enabled = false;
-
+            if (Time.time >= tracerUntil) foreach (var line in tracers) line.enabled = false;
             if (!IsServer) return;
-            if (ReloadEndsAt.Value > 0 && NetworkManager.ServerTime.Time >= ReloadEndsAt.Value)
+            if (ReloadEndsAt.Value > 0)
             {
-                ReloadEndsAt.Value = 0;
-                if (inv.IsAlive && inv.PistolSlot() >= 0 && MatchManager.Instance != null && MatchManager.Instance.CurrentState == MatchState.Running)
+                if (!CanAct || !SameReloadWeapon) ServerCancelReload();
+                else if (Now >= ReloadEndsAt.Value)
                 {
-                    int amount = Mathf.Min(12 - Magazine, Reserve);
-                    if (amount > 0 && inv.ServerRemoveItem(ItemId.PistolAmmo, amount)) inv.ServerSetRounds(Magazine + amount);
+                    var weapon = Weapon;
+                    int amount = Mathf.Min(weapon.Capacity - Magazine, Reserve);
+                    int rounds = Magazine;
+                    ServerCancelReload();
+                    if (amount > 0 && inv.ServerRemoveItem(weapon.Ammo, amount)) inv.ServerSetRounds(rounds + amount);
                 }
             }
-            Vector2 p = transform.position;
-            float dt = Time.deltaTime;
-            if (dt > 0f)
-            {
-                float inst = (p - lastPos).magnitude / dt;
-                serverSpeed = Mathf.Lerp(serverSpeed, inst, 0.2f);
-            }
-            lastPos = p;
+            if (!CanAct || Now >= BoltEndsAt.Value) BoltEndsAt.Value = 0;
+            Vector2 position = transform.position;
+            if (Time.deltaTime > 0) serverSpeed = Mathf.Lerp(serverSpeed, (position - lastPos).magnitude / Time.deltaTime, .2f);
+            lastPos = position;
         }
-
-        public void RequestFire(float angleDeg) { FireServerRpc(angleDeg); }
+        public void RequestFire(float angleDeg) { if (IsOwner) FireServerRpc(angleDeg); }
         public void RequestReload() { if (IsOwner) ReloadServerRpc(); }
+        [ServerRpc] void FireServerRpc(float angleDeg) { ServerFire(angleDeg); }
         [ServerRpc] void ReloadServerRpc() { ServerReload(); }
-        public void ServerReload()
-        {
-            if (!IsServer || !inv.IsAlive || inv.PistolSlot() < 0 || Magazine >= 12 || Reserve <= 0 || Reloading ||
-                MatchManager.Instance == null || MatchManager.Instance.CurrentState != MatchState.Running) return;
-            ReloadEndsAt.Value = NetworkManager.ServerTime.Time + 1.5;
-        }
-
-        [ServerRpc]
-        void FireServerRpc(float angleDeg)
-        {
-            ServerFire(angleDeg);
-        }
-
-        // Bots usam a mesma resolucao/cadencia/dano, sem simular entrada do cliente.
-        public void ServerFire(float angleDeg)
+        public void ServerCancelReload()
         {
             if (!IsServer) return;
-            if (float.IsNaN(angleDeg) || float.IsInfinity(angleDeg)) return;
-            var mm = MatchManager.Instance;
-            if (mm == null || mm.CurrentState != MatchState.Running) return;
-            if (inv == null || !inv.IsAlive) return;
-            if (inv.PistolSlot() < 0 || Reloading) return;
+            ReloadEndsAt.Value = 0; reloadSlot = -1;
+        }
+        public void ServerReload()
+        {
+            if (!CanAct || Magazine >= Weapon.Capacity || Reserve <= 0 || Reloading || CyclingBolt) return;
+            reloadSlot = inv.ActiveWeaponSlot; reloadStack = inv.Slots[reloadSlot];
+            ReloadEndsAt.Value = Now + Weapon.ReloadSeconds;
+        }
+        public void ServerFire(float angleDeg)
+        {
+            if (!CanAct || float.IsNaN(angleDeg) || float.IsInfinity(angleDeg) || Reloading || CyclingBolt || Now < nextShotAt) return;
             if (Magazine <= 0) { ServerReload(); return; }
-            if (Time.time - lastShot < GameConfig.FireCooldown * 0.9f) return;
-            lastShot = Time.time;
+            var weapon = Weapon;
+            nextShotAt = Now + weapon.Cooldown;
+            if (weapon.BoltSeconds > 0) BoltEndsAt.Value = Now + weapon.BoltSeconds;
             inv.ServerSetRounds(Magazine - 1);
             int level = Mathf.Clamp(inv.RecyclerLevel.Value, 0, 3);
-            recycledMetal += 0.25f * level * 0.1f;
+            recycledMetal += .25f * level * .1f;
             if (recycledMetal >= 1f)
             {
                 recycledMetal -= 1f;
                 if (!inv.ServerAddItem(ItemId.Metal, 1)) MatchManager.Instance.ServerDropItem(transform.position, ItemId.Metal, 1);
             }
-
-            float speed01 = Mathf.Clamp01(serverSpeed / GameConfig.PlayerSpeed);
-            float half = Mathf.Lerp(GameConfig.AimHalfAngleStill, GameConfig.AimHalfAngleMoving, speed01);
-            float a = (angleDeg + Random.Range(-half, half)) * Mathf.Deg2Rad;
-
             Vector2 origin = transform.position;
-            Vector2 dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
-            Vector2 end = origin + dir * GameConfig.AimRange;
-
-            var hits = Physics2D.RaycastAll(origin, dir, GameConfig.AimRange);
+            float half = weapon.HalfAngle(serverSpeed / GameConfig.PlayerSpeed);
+            var ends = new Vector2[weapon.Pellets];
+            var directions = new Vector2[ends.Length];
+            var pelletHits = new RaycastHit2D[ends.Length][];
+            // Captura todos os impactos antes de dano/morte desativar colisores.
+            for (int pellet = 0; pellet < ends.Length; pellet++)
+            {
+                float angle = (Mathf.Repeat(angleDeg, 360f) + Random.Range(-half, half)) * Mathf.Deg2Rad;
+                Vector2 dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+                directions[pellet] = dir;
+                pelletHits[pellet] = Physics2D.RaycastAll(origin, dir, weapon.Range);
+            }
+            for (int pellet = 0; pellet < ends.Length; pellet++)
+                ends[pellet] = ResolvePellet(origin, directions[pellet], weapon, pelletHits[pellet]);
+            Noise.Emit(origin, weapon.NoiseRadius);
+            ShotFxClientRpc(origin, ends);
+        }
+        Vector2 ResolvePellet(Vector2 origin, Vector2 dir, WeaponDefinition weapon, RaycastHit2D[] hits)
+        {
             foreach (var hit in hits)
             {
-                // Areas de coleta/extracao nao sao cobertura. Filtro local ao tiro:
-                // nao altera a configuracao global de consultas da fisica/visao.
-                if (hit.collider.isTrigger) continue;
-                if (hit.collider.GetComponentInParent<NetworkObject>() == NetworkObject) continue; // ignora a si mesmo
-                var h = hit.collider.GetComponentInParent<Health>();
-                if (h != null)
+                if (hit.collider.isTrigger || hit.collider.GetComponentInParent<NetworkObject>() == NetworkObject) continue;
+                var health = hit.collider.GetComponentInParent<Health>();
+                if (health != null)
                 {
-                    if (h.IsDead) continue;
-                    h.ServerTakeDamage(GameConfig.ShotDamage);
-                    end = hit.point;
-                    break;
+                    // O corpo continua bloqueando os outros chumbos do mesmo disparo.
+                    if (!health.IsDead) health.ServerTakeDamage(weapon.DamageAt(hit.distance));
+                    return hit.point;
                 }
-                end = hit.point; // parede
-                break;
+                return hit.point;
             }
-
-            Noise.Emit(origin, GameConfig.ShotNoiseRadius);
-            ShotFxClientRpc(origin, end);
+            return origin + dir * weapon.Range;
         }
-
-        [ClientRpc]
-        void ShotFxClientRpc(Vector2 from, Vector2 to)
+        [ClientRpc] void ShotFxClientRpc(Vector2 from, Vector2[] ends)
         {
-            tracer.SetPosition(0, from);
-            tracer.SetPosition(1, to);
-            tracer.enabled = true;
-            tracerUntil = Time.time + 0.06f;
+            for (int i = 0; i < tracers.Length; i++)
+            {
+                tracers[i].enabled = i < ends.Length;
+                if (i >= ends.Length) continue;
+                tracers[i].SetPosition(0, from); tracers[i].SetPosition(1, ends[i]);
+            }
+            tracerUntil = Time.time + .08f;
         }
     }
 }

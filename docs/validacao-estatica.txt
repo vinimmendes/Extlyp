@@ -1,0 +1,8 @@
+Delimitadores lexicos de todos os scripts C#: OK (nao e compilacao)
+YAML do prefab, componentes e referencias de scripts: OK
+GUIDs locais sem duplicatas: OK
+PNG identico ao aprovado, transparencia e quatro recortes independentes: OK
+Registro do prefab, protocolo 8 e chamada de encontro: OK
+Cura apenas na conclusao do voo e brilho com timestamp confirmado: revisao estatica OK
+Revisao estatica de autoridade e limpeza dos filhos: OK
+Nao executado: compilacao C#, Unity Editor, verificacoes do menu e partida multiplayer (Unity indisponivel).

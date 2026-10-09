@@ -323,7 +323,7 @@ namespace CyberExtraction.Bots
                 if (Time.time >= nextError)
                 {
                     aimError = Random.Range(-profile.AimError, profile.AimError);
-                    nextError = Time.time + GameConfig.FireCooldown;
+                    nextError = Time.time + shooter.FireCooldown;
                 }
                 float heading = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg + (visibleThreat ? aimError : 0f);
                 rb.rotation = Mathf.MoveTowardsAngle(rb.rotation, heading, profile.TurnSpeed * Time.fixedDeltaTime);
@@ -336,7 +336,7 @@ namespace CyberExtraction.Bots
             float targetAngle = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg;
             if (Mathf.Abs(Mathf.DeltaAngle(rb.rotation, targetAngle)) > profile.AimError + 3f) return;
             shooter.ServerFire(rb.rotation);
-            nextShot = Time.time + GameConfig.FireCooldown * (difficulty == BotDifficulty.Easy ? 1.5f : 1f);
+            nextShot = Time.time + shooter.FireCooldown * (difficulty == BotDifficulty.Easy ? 1.5f : 1f);
         }
 
         private void OnDrawGizmosSelected()

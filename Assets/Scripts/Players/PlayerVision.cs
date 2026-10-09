@@ -19,6 +19,7 @@ namespace CyberExtraction.Players
 
         PlayerController pc;
         PlayerInventory inv;
+        PlayerShooter shooter;
         GameObject darkness;
         Mesh mesh;
         LineRenderer lineL, lineR;
@@ -33,6 +34,7 @@ namespace CyberExtraction.Players
         {
             pc = GetComponent<PlayerController>();
             inv = GetComponent<PlayerInventory>();
+            shooter = GetComponent<PlayerShooter>();
 
             darkness = new GameObject("Darkness");
             var mf = darkness.AddComponent<MeshFilter>();
@@ -146,21 +148,21 @@ namespace CyberExtraction.Players
         void UpdateAimLines(Vector2 o, float facing)
         {
             var mm = MatchManager.Instance;
-            bool show = mm != null && mm.CurrentState == MatchState.Running && inv != null && inv.IsAlive;
+            bool show = mm != null && mm.CurrentState == MatchState.Running && inv != null && inv.IsAlive && inv.ActiveWeapon != null;
             lineL.enabled = lineR.enabled = show;
             if (!show) return;
 
-            float h = Mathf.Lerp(GameConfig.AimHalfAngleStill, GameConfig.AimHalfAngleMoving, pc.Speed01);
+            float h = inv.ActiveWeapon.HalfAngle(pc.Speed01);
             SetLine(lineL, o, facing - h);
             SetLine(lineR, o, facing + h);
         }
 
-        static void SetLine(LineRenderer lr, Vector2 o, float angleDeg)
+        void SetLine(LineRenderer lr, Vector2 o, float angleDeg)
         {
             float r = angleDeg * Mathf.Deg2Rad;
             Vector2 dir = new Vector2(Mathf.Cos(r), Mathf.Sin(r));
-            var hit = Physics2D.Raycast(o, dir, GameConfig.AimRange, GameConfig.WallMask);
-            float d = hit.collider != null ? hit.distance : GameConfig.AimRange;
+            var hit = Physics2D.Raycast(o, dir, shooter.Range, GameConfig.WallMask);
+            float d = hit.collider != null ? hit.distance : shooter.Range;
             lr.SetPosition(0, o);
             lr.SetPosition(1, o + dir * d);
         }

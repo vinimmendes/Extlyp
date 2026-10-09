@@ -12,6 +12,7 @@ namespace CyberExtraction.Players
     {
         public static readonly List<PlayerInventory> All = new List<PlayerInventory>();
         public NetworkVariable<int> LootValue = new NetworkVariable<int>(0), Wood = new NetworkVariable<int>(0), Nails = new NetworkVariable<int>(0), Bandages = new NetworkVariable<int>(0), RecyclerLevel = new NetworkVariable<int>(0);
+        public NetworkVariable<int> EquippedSlot = new NetworkVariable<int>(-1);
         public NetworkVariable<double> BandageReadyAt = new NetworkVariable<double>(0);
         public NetworkVariable<byte> Status = new NetworkVariable<byte>((byte)PlayerStatus.Alive);
         public NetworkList<ItemStack> Slots;
@@ -48,9 +49,13 @@ namespace CyberExtraction.Players
         {
             if (!IsServer) return;
             while (Slots.Count < 9) Slots.Add(default);
+            int active = ActiveWeaponSlot;
+            if (active >= 0 && !Slots[active].Equals(grid.Slots[active]))
+                GetComponent<PlayerShooter>()?.ServerCancelReload();
             int score = 0;
-            for (int i = 0; i < 9; i++) { if (!Slots[i].Equals(grid.Slots[i])) Slots[i] = grid.Slots[i]; if (!grid.Slots[i].Empty && !ItemCatalog.Weapon(grid.Slots[i].Item) && grid.Slots[i].Item != ItemId.PistolAmmo) score += grid.Slots[i].Quantity * ItemCatalog.Score(grid.Slots[i].Item); }
+            for (int i = 0; i < 9; i++) { if (!Slots[i].Equals(grid.Slots[i])) Slots[i] = grid.Slots[i]; if (!grid.Slots[i].Empty && !ItemCatalog.Weapon(grid.Slots[i].Item) && !ItemCatalog.Ammo(grid.Slots[i].Item)) score += grid.Slots[i].Quantity * ItemCatalog.Score(grid.Slots[i].Item); }
             Wood.Value = grid.Count(ItemId.Wood); Nails.Value = grid.Count(ItemId.Nails); Bandages.Value = grid.Count(ItemId.Bandage); LootValue.Value = score;
+            if (!IsWeaponSlot(EquippedSlot.Value)) EquippedSlot.Value = FirstWeaponSlot();
         }
         public bool ServerAddStack(ItemStack stack)
         {
@@ -62,8 +67,31 @@ namespace CyberExtraction.Players
         { if (!IsServer) return false; var grid = Grid(); if (!grid.Remove(item, quantity)) return false; ServerSetGrid(grid); return true; }
         public int PistolSlot() { for (int i = 0; i < Slots.Count; i++) if (!Slots[i].Empty && Slots[i].Item == ItemId.Pistol) return i; return -1; }
         public int PistolRounds => PistolSlot() >= 0 ? Slots[PistolSlot()].Data : 0;
+        public bool IsWeaponSlot(int slot) => slot >= 0 && slot < Slots.Count && !Slots[slot].Empty && ItemCatalog.Weapon(Slots[slot].Item);
+        int FirstWeaponSlot() { for (int i = 0; i < Slots.Count; i++) if (IsWeaponSlot(i)) return i; return -1; }
+        public int ActiveWeaponSlot => IsWeaponSlot(EquippedSlot.Value) ? EquippedSlot.Value : FirstWeaponSlot();
+        public WeaponDefinition ActiveWeapon => ActiveWeaponSlot >= 0 ? WeaponCatalog.Get(Slots[ActiveWeaponSlot].Item) : null;
+        public int WeaponRounds => ActiveWeaponSlot >= 0 ? Slots[ActiveWeaponSlot].Data : 0;
+        public int WeaponCount { get { int count = 0; for (int i = 0; i < Slots.Count; i++) if (IsWeaponSlot(i)) count++; return count; } }
         public void ServerSetRounds(int rounds)
-        { int slot = PistolSlot(); if (!IsServer || slot < 0) return; var stack = Slots[slot]; stack.Data = Mathf.Clamp(rounds, 0, 12); Slots[slot] = stack; }
+        {
+            int slot = ActiveWeaponSlot;
+            if (!IsServer || slot < 0) return;
+            var stack = Slots[slot]; stack.Data = Mathf.Clamp(rounds, 0, ActiveWeapon.Capacity); Slots[slot] = stack;
+        }
+        public void RequestNextWeapon() { if (IsOwner) NextWeaponServerRpc(); }
+        [ServerRpc] void NextWeaponServerRpc() { ServerNextWeapon(); }
+        public void ServerNextWeapon()
+        {
+            if (!CanAct || WeaponCount < 2) return;
+            int active = ActiveWeaponSlot;
+            for (int offset = 1; offset <= Slots.Count; offset++)
+            {
+                int slot = (active + offset) % Slots.Count;
+                if (!IsWeaponSlot(slot)) continue;
+                GetComponent<PlayerShooter>()?.ServerCancelReload(); EquippedSlot.Value = slot; return;
+            }
+        }
         void DropItems()
         {
             var mm = MatchManager.Instance; if (mm == null) return;
@@ -72,11 +100,20 @@ namespace CyberExtraction.Players
         }
         bool CanAct => IsServer && IsAlive && MatchManager.Instance != null && MatchManager.Instance.CurrentState == MatchState.Running;
         public void RequestMove(int source, int target) { if (IsOwner) MoveServerRpc(source, target); }
-        [ServerRpc] void MoveServerRpc(int source, int target) { if (!CanAct) return; var grid = Grid(); if (grid.MoveTo(source, grid, target)) ServerSetGrid(grid); }
+        [ServerRpc] void MoveServerRpc(int source, int target)
+        {
+            if (!CanAct) return;
+            int active = ActiveWeaponSlot; var grid = Grid();
+            if (!grid.MoveTo(source, grid, target)) return;
+            GetComponent<PlayerShooter>()?.ServerCancelReload(); ServerSetGrid(grid);
+            if (active == source) EquippedSlot.Value = target;
+            else if (active == target) EquippedSlot.Value = source;
+        }
         public void RequestDrop(int slot) { if (IsOwner) DropServerRpc(slot); }
         [ServerRpc] void DropServerRpc(int slot)
         {
             if (!CanAct || slot < 0 || slot >= Slots.Count || Slots[slot].Empty) return;
+            GetComponent<PlayerShooter>()?.ServerCancelReload();
             MatchManager.Instance.ServerDropStack(transform.position + (Vector3)(Random.insideUnitCircle * .7f), Slots[slot]);
             Slots[slot] = default; ServerSetGrid(Grid());
         }

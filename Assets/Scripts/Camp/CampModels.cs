@@ -34,12 +34,13 @@ namespace CyberExtraction.Camp
             if (PierRepaired || Count(ItemId.Wood) < 20 || Count(ItemId.Nails) < 10) return false;
             Take(ItemId.Wood, 20); Take(ItemId.Nails, 10); PierRepaired = true; return true;
         }
-        public bool CraftAmmo()
+        public bool CraftAmmo(ItemId ammoItem = ItemId.PistolAmmo)
         {
+            if (!ItemCatalog.Ammo(ammoItem)) return false;
             if (Count(ItemId.Metal) < 3 || Count(ItemId.Gunpowder) < 1 || Count(ItemId.AmmoComponent) < 1) return false;
             var chestBefore = Chest.Copy(); var packBefore = Pack.Copy();
             Take(ItemId.Metal, 3); Take(ItemId.Gunpowder, 1); Take(ItemId.AmmoComponent, 1);
-            var ammo = new ItemStack(ItemId.PistolAmmo, 12);
+            var ammo = new ItemStack(ammoItem, ammoItem == ItemId.PistolAmmo ? 12 : ammoItem == ItemId.RifleAmmo ? 5 : 4);
             if (!Chest.Add(ammo) && !Pack.Add(ammo)) { Chest = chestBefore; Pack = packBefore; Sync(); return false; }
             Sync(); return true;
         }
@@ -61,7 +62,7 @@ namespace CyberExtraction.Camp
             InventoryGrid source = action.SourceGrid == 0 ? Pack : Chest;
             InventoryGrid target = action.TargetGrid == 0 ? Pack : Chest;
             if (action.Kind == CampActionKind.Repair) success = RepairPier();
-            else if (action.Kind == CampActionKind.CraftAmmo) success = CraftAmmo();
+            else if (action.Kind == CampActionKind.CraftAmmo) success = CraftAmmo(action.Result == 0 ? ItemId.PistolAmmo : (ItemId)action.Result);
             else if (action.Kind == CampActionKind.UpgradeRecycler) success = UpgradeRecycler();
             else if (action.Kind == CampActionKind.Transfer) success = source.MoveTo(action.Source, target, action.Target);
             else if (action.Kind == CampActionKind.Discard && action.Source >= 0 && action.Source < 9) { source.Slots[action.Source] = default; success = true; }

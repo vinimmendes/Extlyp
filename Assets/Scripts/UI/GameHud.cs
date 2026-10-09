@@ -47,6 +47,12 @@ namespace CyberExtraction.UI
             }
             if (hp != null) GUI.Label(new Rect(10, 10, 200, 30), $"Vida: {hp.Current.Value}/{hp.Maximum.Value}", small);
             if (inv != null) GUI.Label(new Rect(10, 40, 280, 30), $"M {inv.Wood.Value}   P {inv.Nails.Value}   B {inv.Bandages.Value}", small);
+            var shooter = po != null ? po.GetComponent<PlayerShooter>() : null;
+            if (shooter != null && shooter.Weapon != null)
+            {
+                string state = shooter.Reloading ? " - Recarregando" : shooter.CyclingBolt ? " - Ferrolho" : "";
+                GUI.Label(new Rect(10, 100, w - 20, 30), $"{CyberExtraction.Items.ItemCatalog.Name(shooter.Weapon.Item)}: {shooter.Magazine}/{shooter.Weapon.Capacity} + {shooter.Reserve}{state}", small);
+            }
             GUI.Label(new Rect(10, 70, 150, 30), $"Sala {mm.RoomNumber.Value}", small);
 
             string msg = null;

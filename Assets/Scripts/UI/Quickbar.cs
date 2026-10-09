@@ -32,8 +32,11 @@ namespace CyberExtraction.UI
         void Update()
         {
             var inv = LocalInventory();
-            if (inv != null && Keyboard.current != null && Keyboard.current.digit1Key.wasPressedThisFrame)
-                inv.RequestBandage();
+            if (inv == null || Keyboard.current == null) return;
+            var keyboard = Keyboard.current;
+            if (keyboard.digit1Key.wasPressedThisFrame) inv.RequestBandage();
+            if (keyboard.qKey.wasPressedThisFrame || keyboard.digit2Key.wasPressedThisFrame) inv.RequestNextWeapon();
+            if (keyboard.digit3Key.wasPressedThisFrame) inv.GetComponent<PlayerShooter>().RequestReload();
         }
 
         void OnGUI()
@@ -52,9 +55,14 @@ namespace CyberExtraction.UI
             GUI.enabled = inv.IsAlive && inv.Bandages.Value > 0 && hp.Current.Value < hp.Maximum.Value && cooldown <= 0;
             string label = cooldown > 0 ? $"B  {System.Math.Ceiling(cooldown)}s" : $"B  x{inv.Bandages.Value}";
             if (GUI.Button(new Rect(bounds.x, bounds.y, slot - 4, bounds.height), "1\n" + label, box)) inv.RequestBandage();
-            GUI.enabled = false;
-            GUI.Button(new Rect(bounds.x + slot, bounds.y, slot - 4, bounds.height), "2\n-", box);
-            GUI.Button(new Rect(bounds.x + slot * 2, bounds.y, slot - 4, bounds.height), "3\n-", box);
+            var shooter = inv.GetComponent<PlayerShooter>();
+            var weapon = inv.ActiveWeapon;
+            GUI.enabled = inv.IsAlive && inv.WeaponCount > 1;
+            string weaponLabel = weapon != null ? ItemCatalog.Icon(weapon.Item) : "-";
+            if (GUI.Button(new Rect(bounds.x + slot, bounds.y, slot - 4, bounds.height), "2 / Q\n" + weaponLabel, box)) inv.RequestNextWeapon();
+            GUI.enabled = inv.IsAlive && weapon != null && shooter.Magazine < weapon.Capacity && shooter.Reserve > 0 && !shooter.Reloading && !shooter.CyclingBolt;
+            string reload = shooter.Reloading ? "Recarga" : shooter.CyclingBolt ? "Ferrolho" : "Recarregar";
+            if (GUI.Button(new Rect(bounds.x + slot * 2, bounds.y, slot - 4, bounds.height), "3 / R\n" + reload, box)) shooter.RequestReload();
             GUI.enabled = oldEnabled;
             GUI.matrix = oldMatrix;
         }
