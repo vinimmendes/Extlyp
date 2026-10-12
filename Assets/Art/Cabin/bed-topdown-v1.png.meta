@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: 53b5428990873a04abcbf093cc097bc0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8566236535318940431
+    second: bed-topdown-v1_0
+  - first:
+      213: -2312412495589326172
+    second: bed-topdown-v1_1
+  - first:
+      213: -7218034561501383339
+    second: bed-topdown-v1_2
+  - first:
+      213: 8429855390589043763
+    second: bed-topdown-v1_3
+  - first:
+      213: 4714398392268094844
+    second: bed-topdown-v1_4
+  - first:
+      213: 161611309868254402
+    second: bed-topdown-v1_5
+  - first:
+      213: 6779899633952016961
+    second: bed-topdown-v1_6
+  - first:
+      213: 4464048488889471258
+    second: bed-topdown-v1_7
+  - first:
+      213: 4355786423319373090
+    second: bed-topdown-v1_8
+  - first:
+      213: -8214345821855803347
+    second: bed-topdown-v1_9
+  - first:
+      213: -4958864949696430502
+    second: bed-topdown-v1_10
+  - first:
+      213: 3839164524215204405
+    second: bed-topdown-v1_11
+  - first:
+      213: 788153552774549389
+    second: bed-topdown-v1_12
+  - first:
+      213: -4680061652101506234
+    second: bed-topdown-v1_13
+  - first:
+      213: -5358071971440809949
+    second: bed-topdown-v1_14
+  - first:
+      213: 1102370202390809223
+    second: bed-topdown-v1_15
+  - first:
+      213: 4122144093568764860
+    second: bed-topdown-v1_16
+  - first:
+      213: -2760959567956355417
+    second: bed-topdown-v1_17
+  - first:
+      213: -3096475305869618490
+    second: bed-topdown-v1_18
+  - first:
+      213: 280226244145183921
+    second: bed-topdown-v1_19
+  - first:
+      213: 1806460941846994352
+    second: bed-topdown-v1_20
+  - first:
+      213: -1026004840254615583
+    second: bed-topdown-v1_21
+  - first:
+      213: -6409895192348857741
+    second: bed-topdown-v1_22
+  - first:
+      213: 7131572741084309678
+    second: bed-topdown-v1_23
+  - first:
+      213: 304662696417951959
+    second: bed-topdown-v1_24
+  - first:
+      213: 4701274131445775115
+    second: bed-topdown-v1_25
+  - first:
+      213: 44306035707412022
+    second: bed-topdown-v1_26
+  - first:
+      213: -2353471337981591177
+    second: bed-topdown-v1_27
+  - first:
+      213: -6359774934692810162
+    second: bed-topdown-v1_28
+  - first:
+      213: -5655946029310076111
+    second: bed-topdown-v1_29
+  - first:
+      213: -593501287745762777
+    second: bed-topdown-v1_30
+  - first:
+      213: -6949441261779973907
+    second: bed-topdown-v1_31
+  - first:
+      213: -6165469079884865012
+    second: bed-topdown-v1_32
+  - first:
+      213: -4199959100396895363
+    second: bed-topdown-v1_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bed-topdown-v1_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1121
+        width: 187
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4775ac14d9e1980800000000000000
+      internalID: -8566236535318940431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 0
+        width: 987
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a249324619a8efd0800000000000000
+      internalID: -2312412495589326172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_2
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1130
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555b7312fc364db90800000000000000
+      internalID: -7218034561501383339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_3
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1137
+        width: 171
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334c8ff70dcdcf470800000000000000
+      internalID: 8429855390589043763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 936
+        width: 167
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dffcc1c58ec6140800000000000000
+      internalID: 4714398392268094844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 857
+        width: 50
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4026c41a82e3200800000000000000
+      internalID: 161611309868254402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_6
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 328
+        width: 229
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ac28eabca071e50800000000000000
+      internalID: 6779899633952016961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_7
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1071
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a115068f27c73fd30800000000000000
+      internalID: 4464048488889471258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_8
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 957
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225ab6f8cacd27c30800000000000000
+      internalID: 4355786423319373090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_9
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1054
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28121a1ff7c00e80800000000000000
+      internalID: -8214345821855803347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_10
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1072
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e7538f9929e2bb0800000000000000
+      internalID: -4958864949696430502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_11
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 957
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53af0244bc3774530800000000000000
+      internalID: 3839164524215204405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 991
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fc69dfa7510fa00800000000000000
+      internalID: 788153552774549389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_13
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 903
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bdf8339b41d0fb0800000000000000
+      internalID: -4680061652101506234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 826
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3282b452eed44a5b0800000000000000
+      internalID: -5358071971440809949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 734
+        width: 100
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78aca74cbd76c4f00800000000000000
+      internalID: 1102370202390809223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 621
+        width: 60
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb042a863cc43930800000000000000
+      internalID: 4122144093568764860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_17
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 712
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6deb0b6e91fa9d0800000000000000
+      internalID: -2760959567956355417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 128
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c25fd97d1c1705d0800000000000000
+      internalID: -3096475305869618490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 553
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bcf30bc84093e300800000000000000
+      internalID: 280226244145183921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_20
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 547
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd5863d7a6d11910800000000000000
+      internalID: 1806460941846994352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_21
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 538
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efcac6a806e2c1f0800000000000000
+      internalID: -1026004840254615583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_22
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 330
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aef8c984a7b07a0800000000000000
+      internalID: -6409895192348857741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_23
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea860329f9f68f260800000000000000
+      internalID: 7131572741084309678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_24
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 312
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d00e44bb116a3400800000000000000
+      internalID: 304662696417951959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 312
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bfe840ae74e3140800000000000000
+      internalID: 4701274131445775115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 140
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63efebfca186d9000800000000000000
+      internalID: 44306035707412022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_27
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 217
+        width: 94
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7714b8e894ac65fd0800000000000000
+      internalID: -2353471337981591177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_28
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 152
+        width: 116
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42b336746a8db7a0800000000000000
+      internalID: -6359774934692810162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_29
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 15
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b11368d0b0281b0800000000000000
+      internalID: -5655946029310076111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_30
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 11
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a4d2a29b573c7f0800000000000000
+      internalID: -593501287745762777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_31
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 7
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8892cfdff9e8f90800000000000000
+      internalID: -6949441261779973907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_32
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 15
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02eec3b98adf6aa0800000000000000
+      internalID: -6165469079884865012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed-topdown-v1_33
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 21
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d738ca5537fb6b5c0800000000000000
+      internalID: -4199959100396895363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bed-topdown-v1_0: -8566236535318940431
+      bed-topdown-v1_1: -2312412495589326172
+      bed-topdown-v1_10: -4958864949696430502
+      bed-topdown-v1_11: 3839164524215204405
+      bed-topdown-v1_12: 788153552774549389
+      bed-topdown-v1_13: -4680061652101506234
+      bed-topdown-v1_14: -5358071971440809949
+      bed-topdown-v1_15: 1102370202390809223
+      bed-topdown-v1_16: 4122144093568764860
+      bed-topdown-v1_17: -2760959567956355417
+      bed-topdown-v1_18: -3096475305869618490
+      bed-topdown-v1_19: 280226244145183921
+      bed-topdown-v1_2: -7218034561501383339
+      bed-topdown-v1_20: 1806460941846994352
+      bed-topdown-v1_21: -1026004840254615583
+      bed-topdown-v1_22: -6409895192348857741
+      bed-topdown-v1_23: 7131572741084309678
+      bed-topdown-v1_24: 304662696417951959
+      bed-topdown-v1_25: 4701274131445775115
+      bed-topdown-v1_26: 44306035707412022
+      bed-topdown-v1_27: -2353471337981591177
+      bed-topdown-v1_28: -6359774934692810162
+      bed-topdown-v1_29: -5655946029310076111
+      bed-topdown-v1_3: 8429855390589043763
+      bed-topdown-v1_30: -593501287745762777
+      bed-topdown-v1_31: -6949441261779973907
+      bed-topdown-v1_32: -6165469079884865012
+      bed-topdown-v1_33: -4199959100396895363
+      bed-topdown-v1_4: 4714398392268094844
+      bed-topdown-v1_5: 161611309868254402
+      bed-topdown-v1_6: 6779899633952016961
+      bed-topdown-v1_7: 4464048488889471258
+      bed-topdown-v1_8: 4355786423319373090
+      bed-topdown-v1_9: -8214345821855803347
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

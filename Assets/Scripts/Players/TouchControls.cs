@@ -15,7 +15,7 @@ namespace CyberExtraction.Players
     {
         public static TouchControls Instance { get; private set; }
 
-        public bool IsTouch => Touchscreen.current != null;
+        public bool IsTouch => GameInput.TouchActive;
         public Vector2 Move { get; private set; }
         public Vector2 Aim { get; private set; }
         public bool AimHeld { get; private set; }
@@ -32,9 +32,9 @@ namespace CyberExtraction.Players
         {
             get
             {
-                float size = Screen.height * 0.15f;
+                float size = Mathf.Max(44,Screen.height * 0.15f);
                 float margin = Screen.height * 0.04f;
-                return new Rect(Screen.width - size - margin, margin, size, size);
+                var safe=UiLayout.SafeScreen; return new Rect(safe.xMax-size-margin,safe.y+margin,size,size);
             }
         }
 
@@ -43,21 +43,22 @@ namespace CyberExtraction.Players
             get
             {
                 if (CampController.Active) return CampController.Instance.CanMove;
+                if (UiLayout.BlocksGameplay) return false;
                 var mm = MatchManager.Instance;
                 if (mm == null || mm.CurrentState != MatchState.Running) return false;
                 var nm = Unity.Netcode.NetworkManager.Singleton;
                 var player = nm != null && nm.SpawnManager != null
                     ? nm.SpawnManager.GetLocalPlayerObject() : null;
                 var inv = player != null ? player.GetComponent<PlayerInventory>() : null;
-                return inv != null && inv.IsAlive;
+                return inv != null && inv.IsAlive && inv.FishingPhase.Value == 0;
             }
         }
 
         private void Awake() { Instance = this; }
         private void OnDisable() { ResetInput(); }
         private void OnDestroy() { if (Instance == this) Instance = null; }
-        private void OnApplicationFocus(bool hasFocus) { if (!hasFocus) ResetInput(); }
-        private void OnApplicationPause(bool paused) { if (paused) ResetInput(); }
+        private void OnApplicationFocus(bool hasFocus) { GameInput.SetFocus(hasFocus); if (!hasFocus) ResetInput(); }
+        private void OnApplicationPause(bool paused) { GameInput.SetFocus(!paused); if (paused) ResetInput(); }
 
         void ResetInput()
         {
@@ -79,8 +80,8 @@ namespace CyberExtraction.Players
 
                 if (phase == TouchPhase.Began)
                 {
-                    Vector2 guiPosition = new Vector2(pos.x, Screen.height - pos.y);
-                    if (Quickbar.ContainsScreenPoint(pos) ||
+                    Vector2 guiPosition = UiLayout.Point(pos);
+                    if (UiLayout.ContainsControl(pos) ||
                         (CampController.Active && CampController.InteractionBounds.Contains(guiPosition))) continue;
                     // O botao tem prioridade sobre a metade direita. O dedo conserva
                     // sua funcao ate ser solto, mesmo se atravessar outra area.
@@ -117,23 +118,27 @@ namespace CyberExtraction.Players
         private void OnGUI()
         {
             if (!IsTouch || !CanAct) return;
+            using var themeFrame=UiLayout.Begin();
             // HUD e menu usam escala propria; os controles usam pixels da tela.
             var oldMatrix = GUI.matrix;
             GUI.matrix = Matrix4x4.identity;
-            if (moveId >= 0) DrawStick(moveOrigin, moveCur, new Color(1, 1, 1, 0.35f));
-            if (aimId >= 0) DrawStick(aimOrigin, aimCur, new Color(1, 0.6f, 0.4f, 0.4f));
+            if (moveId >= 0) DrawStick(moveOrigin, moveCur, HudTheme.Good);
+            if (aimId >= 0) DrawStick(aimOrigin, aimCur, HudTheme.Accent);
 
             if (CampController.Active) { GUI.matrix = oldMatrix; return; }
             Rect rect = FireRect;
             rect.y = Screen.height - rect.y - rect.height;
             var oldColor = GUI.color;
-            GUI.color = FireHeld ? new Color(1f, 0.55f, 0.35f) : Color.white;
+            GUI.color = FireHeld ? HudTheme.Accent : Color.white;
             var style = new GUIStyle(GUI.skin.box)
             {
                 alignment = TextAnchor.MiddleCenter,
                 fontSize = Mathf.Max(16, Mathf.RoundToInt(Screen.height * 0.03f))
             };
-            GUI.Box(rect, "ATIRAR", style);
+            var texture=SpriteFactory.CircleTexture;
+            GUI.color=HudTheme.Panel; GUI.DrawTexture(rect,texture);
+            GUI.color=FireHeld ? HudTheme.Accent : HudTheme.Text;
+            GUI.Label(rect,"ATIRAR",new GUIStyle(GUI.skin.label) { fontSize=style.fontSize,alignment=TextAnchor.MiddleCenter });
             GUI.color = oldColor;
             GUI.matrix = oldMatrix;
         }

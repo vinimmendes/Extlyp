@@ -1,0 +1,96 @@
+{
+  "scope": "regras C# reais com receita default de fixture; sem Unity, fisica, transporte, serializacao ou dispositivo",
+  "failures": 0,
+  "results": [
+    {
+      "name": "starter_equipment",
+      "status": "CONFIRMED",
+      "evidence": "Uma pistola e 24 tiros de reserva, distribuidos sob limite de 20."
+    },
+    {
+      "name": "inventory_full_atomic",
+      "status": "CONFIRMED",
+      "evidence": "Adicionar metal a mochila cheia falha sem consumir ou sobrescrever madeira."
+    },
+    {
+      "name": "negative_remove_rejected",
+      "status": "CONFIRMED",
+      "evidence": "Remocao negativa rejeitada."
+    },
+    {
+      "name": "pistol_transfer_preserves_rounds",
+      "status": "CONFIRMED",
+      "evidence": "Transferencia conserva os tiros da pistola e remove a origem."
+    },
+    {
+      "name": "craft_cost_and_output",
+      "status": "CONFIRMED",
+      "evidence": "Receita consome recursos e acrescenta exatamente 12 tiros aos 24 iniciais."
+    },
+    {
+      "name": "craft_full_rollback",
+      "status": "CONFIRMED",
+      "evidence": "Receita sem espaco desfaz o consumo de todos os ingredientes."
+    },
+    {
+      "name": "repair_insufficient_atomic",
+      "status": "CONFIRMED",
+      "evidence": "Reparo sem pregos suficientes conserva os materiais."
+    },
+    {
+      "name": "food_buff_consumed_once",
+      "status": "CONFIRMED",
+      "evidence": "Buff de alimento consumido uma unica vez."
+    },
+    {
+      "name": "forged_fishing_rejected",
+      "status": "CONFIRMED",
+      "evidence": "Cliente nao pode declarar uma captura."
+    },
+    {
+      "name": "valid_sequenced_transfer",
+      "status": "CONFIRMED",
+      "evidence": "Comando de sequencia correta aceito."
+    },
+    {
+      "name": "immediate_replay_rejected",
+      "status": "CONFIRMED",
+      "evidence": "Comando ja aplicado rejeitado."
+    },
+    {
+      "name": "old_replay_rejected",
+      "status": "CONFIRMED",
+      "evidence": "Sequencia antiga continua rejeitada apos expirar historico."
+    },
+    {
+      "name": "forged_perfect_cooking_rejected",
+      "status": "CONFIRMED",
+      "evidence": "Cliente nao escolhe qualidade de cozimento."
+    },
+    {
+      "name": "invalid_cooking_result_rejected",
+      "status": "CONFIRMED",
+      "evidence": "Resultado fora de 0..3 rejeitado mesmo na conclusao interna."
+    },
+    {
+      "name": "server_cooking_completion",
+      "status": "CONFIRMED",
+      "evidence": "Conclusao interna de atividade valida preserva recompensa."
+    },
+    {
+      "name": "queue_deadline",
+      "status": "CONFIRMED",
+      "evidence": "Espera de 30 segundos preservada."
+    },
+    {
+      "name": "bot_extraction_boundary",
+      "status": "CONFIRMED",
+      "evidence": "Extracao de bot liberada somente no ultimo minuto."
+    },
+    {
+      "name": "bot_collect_without_capacity",
+      "status": "CONFIRMED",
+      "evidence": "A politica continua escolhendo Collect; BotSituation nao recebe capacidade da mochila."
+    }
+  ]
+}

@@ -1,48 +1,41 @@
-# Servidor no seu PC
+# Servidor e cliente — estado atual em 11/10/2026
 
-Alteracoes de acampamento e itens estao em CAMP_ITEMS.md. O codigo atual usa protocolo 4; nao misture um servidor compilado com este codigo com clientes anteriores. Novos APKs sao gerados somente quando solicitados.
+## Compatibilidade
 
-Unity Netcode. Ate tres salas simultaneas, uma por processo, com cinco participantes cada. O primeiro humano de cada sala inicia uma espera de 30 segundos; cinco humanos iniciam imediatamente. Ao vencer o prazo, as vagas restantes recebem bots medios. Novas conexoes durante a partida sao encaminhadas pelo cliente para outra sala disponivel. Bots so extraem no ultimo minuto.
+Unity 6000.0.84f1; Netcode for GameObjects 2.13.3; Transport 2.7.4; protocolo **16**. Clientes antigos nao devem conectar ao servidor novo. O servidor continua sendo um Player Windows executado com `-batchmode -nographics -server`; nao exige o modulo Dedicated Server. O mapa e a expedicao agora incluem extrações variáveis e passagens compartilhadas; cliente e servidor precisam ser recompilados juntos. Nesta entrega houve apenas revisão estática, sem novos builds ou reinício do servidor. Detalhes em `Docs/Integracao/MAPA_EXPEDICAO_2026-10-11.md`.
 
-Iniciar-Servidor.bat abre as salas nas portas UDP 7777, 7778 e 7779. O cliente recebe apenas o endereco do PC e procura uma vaga entre essas portas. O numero da sala aparece no HUD. Quando todas estao ocupadas, o cliente avisa para tentar novamente. Parar-Servidor.bat encerra as tres instancias.
+## Iniciar
 
-A partida termina quando nao resta nenhum humano vivo e nao extraido, mesmo que os bots continuem vivos. Se nao ha nenhum cliente conectado, a sala e limpa imediatamente para a proxima busca. Humanos conectados que morreram ou extrairam podem ver os resultados por ate 15 segundos.
+1. Salve os arquivos e abra `Iniciar-Servidor.bat`.
+2. O atualizador compila em copia separada se o fingerprint mudou; so troca o executavel apos sucesso.
+3. O iniciador aguarda a confirmacao de prontidao de cada sala. Portas padrao: UDP 7777, 7778 e 7779.
+4. Abra Game na Unity ou o cliente compilado. Em versões com testes habilitados, escolha **Cabana normal** ou **Acampamento de teste**; nas demais, a cabana normal conecta diretamente. O portão abre a expedição **Floresta Velha**. Endereço e porta são internos, em `Assets/Resources/ServerConnectionSettings.asset`: inicialmente `127.0.0.1`, porta base `7777`, com busca nas três salas. O cliente não usa a preferência antiga `server_ip`. Acesso pela rede local/externa permanece para outra etapa.
+5. Logs ficam em `Logs/server*.log`; compilacao em `Logs/server-update.log`.
 
-## Gerar e iniciar
+`Parar-Servidor.bat` encerra as salas. `Restart-Server.ps1` agora prepara a compilacao antes de interromper a versao em execucao. Esse reinicio ainda encerra as partidas; nao e uma atualizacao sem interrupcao.
 
-1. Salve as alteracoes do projeto na Unity. Nao e necessario recriar a cena Game.
-2. De dois cliques em Iniciar-Servidor.bat na pasta do projeto.
-3. O iniciador compara o conteudo de Assets, Packages e ProjectSettings com a ultima compilacao. Se mudou, gera e instala o servidor atualizado antes de iniciar. Se nada mudou, inicia diretamente. Isso funciona com o projeto aberto na Unity: a compilacao usa uma copia separada e reutiliza o cache.
-4. Abra a cena Game na Unity e aperte Play para usar o cliente atual do projeto. No acampamento, caminhe ate o portao e entre no servidor usando 127.0.0.1 quando estiver no mesmo PC.
-5. Consulte Logs/server.log, Logs/server-room-2.log e Logs/server-room-3.log para acompanhar cada sala. Erros de compilacao ficam em Logs/server-update.log.
+## Progresso e identidade
 
-A atualizacao automatica compila apenas o servidor Windows. Nao gera APK nem executa partidas ou verificacoes completas. As verificacoes continuam disponiveis nos menus para quando forem solicitadas. A Unity na versao indicada em ProjectSettings/ProjectVersion.txt precisa estar instalada no caminho padrao do Unity Hub.
+O servidor salva perfis em `Application.persistentDataPath/Camps/<cluster>.json`, com backup `.bak`. `-camp-data <diretorio>` permite um diretorio explicito, usado pelos testes isolados. Preserve essa pasta ao mover o servidor.
 
-O programa usa uma compilacao Windows comum executada sem graficos (`-batchmode -nographics -server`), pois o modulo opcional Windows Dedicated Server nao esta instalado. O PC executa a simulacao sem jogador local. Uma compilacao otimizada com o modulo Dedicated Server pode ser adicionada depois.
+O cliente salva a chave de identidade no aparelho. Seu perfil e vinculado a essa chave, e pedidos de login sao assinados. Preservar a chave e necessario para acessar o mesmo perfil. O prototipo anterior possuia somente um GUID e progresso temporario na RAM; nao ha migracao automatica que consiga comprovar a titularidade desses perfis antigos.
 
-Para parar, de dois cliques em Parar-Servidor.bat. Fechar a janela do iniciador deixa as salas funcionando. Salas ja ligadas nao sao duplicadas; salas faltantes sao iniciadas. Mantenha os dois arquivos .bat, os scripts .ps1 e a pasta Builds/Server nesta estrutura. A opcao `-Port` define a porta base e `-Rooms` permite iniciar de uma a tres salas; o cliente normalmente procura nas tres portas a partir de 7777.
+Pesca/cozimento rodam no servidor. Operacoes tem sequencia monotona e respostas de confirmacao. A mochila e reservada antes do inicio, confirmada na partida e contabilizada uma vez ao extrair. Morte/desconexao durante a partida continua perdendo a mochila. Na recuperacao depois de queda completa do servidor, uma reserva ainda nao liquidada devolve o equipamento inicial, sem inventar o loot que nao foi salvo.
 
-Se o servidor estiver rodando com codigo antigo, ele so e encerrado depois que a nova compilacao termina com sucesso. A nova versao sera iniciada em seguida. Se a compilacao falhar, o iniciador informa o arquivo de log e preserva a versao anterior, sem iniciar silenciosamente uma versao desatualizada. Neste prototipo, reiniciar o servidor perde o progresso guardado apenas em memoria.
+## Teste e release
 
-## Testar
+Menus de build geram Development por padrao. `-release` gera build sem esses recursos; modo rapido e reinicio temporario ficam restritos a desenvolvimento ou habilitacao explicita de teste no servidor (`-allow-test`).
 
-- APK: execute Cyber Extraction > Servidor > Gerar APK Android para teste. O arquivo fica em Builds/Android/CyberExtraction.apk. Transfira para um celular Android de 64 bits e abra para instalar, autorizando o aplicativo que abre o arquivo quando o Android solicitar. Com o celular no mesmo Wi-Fi do PC, informe o IPv4 local do servidor e toque em Iniciar partida. Nao precisa conectar o celular a Unity para instalar o APK manualmente.
-- Mesmo PC: gere o cliente Windows pelo menu Servidor, abra Builds/Client/CyberExtraction.exe e informe 127.0.0.1. Clique em Iniciar partida.
-- Celular no mesmo Wi-Fi: gere novamente o aplicativo Android com a cena Game e informe o IPv4 local do PC (consulte `ipconfig`). Libere a porta UDP 7777 do servidor no firewall do Windows.
-- Um humano deve ver a contagem de 30 segundos e entrar numa partida com 4 bots. Cinco humanos devem iniciar imediatamente, sem bots. Teste movimentos, tiros, morte, extracao e desconexoes.
-- Ao terminar, os resultados ficam visiveis por 15 segundos. O servidor desconecta os clientes, limpa a partida e abre uma nova sala. O cliente volta ao menu e pode iniciar outra busca.
-- Na Unity, Iniciar servidor de teste abre um servidor sem jogador local. Use um cliente separado para entrar.
+Versao padrao: 1.2 / Android code 3. `CE_BUILD_VERSION` e `CE_ANDROID_VERSION_CODE` permitem versionamento da entrega. Release Android exige `CE_KEYSTORE_PATH`, `CE_KEYSTORE_ALIAS`, `CE_KEYSTORE_PASSWORD`, `CE_KEY_PASSWORD`, definidos fora do codigo. Nao registre esses valores em logs.
 
-## Internet
+## Verificacao
 
-Reserve o IPv4 local do PC no roteador. Encaminhe UDP 7777 a 7779 para esse endereco e permita essas portas no firewall. Os jogadores usam o IP publico ou um nome DNS apontando para ele. Teste com o celular em dados moveis. CGNAT pode impedir o acesso direto: nesse caso, solicite IPv4 publico ao provedor ou escolha uma solucao de tunel/relay compativel com UDP. A configuracao do roteador/firewall nao e alterada pelos scripts do projeto.
+`Tools/Validate-Unity.ps1 -Build` cria uma copia em `Builds/SkillsValidation`, roda checks e gera cliente/servidor nessa copia. `Tools/Run-SkillsSmoke.ps1` usa porta, identidade e arquivos de teste novos; nao reinicia as salas normais. Sua fixture desativa dano de IA para isolar transacoes e rede. Testes de combate competitivo continuam separados.
 
-## Limites atuais
+Use `-metrics` em testes para registrar counters disponiveis e eventos em `Logs/gameplay-metrics.jsonl`. Os dados nao incluem chaves ou conteudo de inventarios. A coleta e opt-in e adiciona custo de instrumentacao.
 
-Ate tres partidas, com no maximo 15 participantes ao todo. O acampamento acompanha o jogador entre as salas pela RAM compartilhada; nao ha banco de dados, e encerrar todas as salas perde o progresso. Uma mesma identificacao de acampamento nao pode ocupar duas salas simultaneamente. Ainda nao existe fila aguardando vaga, autenticacao ou reconexao durante partida. O movimento e simulado no servidor, sem previsao local, portanto a sensacao de atraso deve ser avaliada em testes reais.
+## Internet e limites
 
-## Validacao realizada
+Acesso externo ainda depende de roteador/firewall, IPv4 publico ou solucao UDP adequada. Nao foram alterados firewall, roteador ou hospedagem. A prova de identidade nao cifra o transporte nem autentica por si so o servidor para o cliente. Antes de uma abertura publica, configurar/provar protecao de transporte, limites de carga e recuperacao de identidade.
 
-Compilacao Windows na Unity 6000.0.84f1, 65 verificacoes de sala/prefabs e 50 das regras dos bots passaram. Dez clientes locais iniciaram uma partida com zero bots, com movimento replicado em todos. A mesma instancia do servidor abriu outra sala e iniciou uma partida com um humano e nove bots apos a espera. Estes testes nao medem latencia pela internet nem desempenho de celulares.
-
-APK Android ARM64 gerado em Builds/Android/CyberExtraction.apk. Assinatura, alinhamento e permissao INTERNET verificados; requer Android 6.0 ou superior em aparelho de 64 bits. A execucao no celular ainda precisa ser testada no aparelho.
+Continuam faltando testes em Android fisico, redes reais, carga prolongada nas tres salas, latencia/perda e balanceamento. Veja a evidencia e o escopo exato em `Docs/Auditoria/IMPLEMENTACAO_2026-10-10.md`.

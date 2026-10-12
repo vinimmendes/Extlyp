@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: c276bbb7e35ed9a4ab358763967e7ac2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7236095470269626599
+    second: player-shotgun-walk-sheet-v1_0
+  - first:
+      213: 1015052452596541672
+    second: player-shotgun-walk-sheet-v1_1
+  - first:
+      213: 458549111650386124
+    second: player-shotgun-walk-sheet-v1_2
+  - first:
+      213: -6597402760559736145
+    second: player-shotgun-walk-sheet-v1_3
+  - first:
+      213: -5807012484664238328
+    second: player-shotgun-walk-sheet-v1_4
+  - first:
+      213: -6981583145095533928
+    second: player-shotgun-walk-sheet-v1_5
+  - first:
+      213: 5092793897346319254
+    second: player-shotgun-walk-sheet-v1_6
+  - first:
+      213: 8796021611204963553
+    second: player-shotgun-walk-sheet-v1_7
+  - first:
+      213: -6842156813293185401
+    second: player-shotgun-walk-sheet-v1_8
+  - first:
+      213: 7021239373110010420
+    second: player-shotgun-walk-sheet-v1_9
+  - first:
+      213: -2663249396323866003
+    second: player-shotgun-walk-sheet-v1_10
+  - first:
+      213: -4651100629016797407
+    second: player-shotgun-walk-sheet-v1_11
+  - first:
+      213: 7525436714159521560
+    second: player-shotgun-walk-sheet-v1_12
+  - first:
+      213: 8002674195115053812
+    second: player-shotgun-walk-sheet-v1_13
+  - first:
+      213: 6540747807495583004
+    second: player-shotgun-walk-sheet-v1_14
+  - first:
+      213: -3957054724186397297
+    second: player-shotgun-walk-sheet-v1_15
+  - first:
+      213: 968798378785629127
+    second: player-shotgun-walk-sheet-v1_16
+  - first:
+      213: -6509407010951452813
+    second: player-shotgun-walk-sheet-v1_17
+  - first:
+      213: -5898746854547164719
+    second: player-shotgun-walk-sheet-v1_18
+  - first:
+      213: 2974231098118746316
+    second: player-shotgun-walk-sheet-v1_19
+  - first:
+      213: -8171586354908715444
+    second: player-shotgun-walk-sheet-v1_20
+  - first:
+      213: -527761936147686519
+    second: player-shotgun-walk-sheet-v1_21
+  - first:
+      213: 7437227200595838094
+    second: player-shotgun-walk-sheet-v1_22
+  - first:
+      213: 2503598371576901219
+    second: player-shotgun-walk-sheet-v1_23
+  - first:
+      213: 2757299367636992182
+    second: player-shotgun-walk-sheet-v1_24
+  - first:
+      213: 8093591203964497411
+    second: player-shotgun-walk-sheet-v1_25
+  - first:
+      213: 2146761495449500147
+    second: player-shotgun-walk-sheet-v1_26
+  - first:
+      213: -5344975423232809142
+    second: player-shotgun-walk-sheet-v1_27
+  - first:
+      213: -7282402505304647699
+    second: player-shotgun-walk-sheet-v1_28
+  - first:
+      213: 3954416784224599552
+    second: player-shotgun-walk-sheet-v1_29
+  - first:
+      213: 3570732125663450743
+    second: player-shotgun-walk-sheet-v1_30
+  - first:
+      213: 2566938321605646295
+    second: player-shotgun-walk-sheet-v1_31
+  - first:
+      213: 4983156687153180980
+    second: player-shotgun-walk-sheet-v1_32
+  - first:
+      213: 5472247226911033665
+    second: player-shotgun-walk-sheet-v1_33
+  - first:
+      213: 7890379014936904457
+    second: player-shotgun-walk-sheet-v1_34
+  - first:
+      213: 3482389257025884936
+    second: player-shotgun-walk-sheet-v1_35
+  - first:
+      213: -6869516162497482080
+    second: player-shotgun-walk-sheet-v1_36
+  - first:
+      213: 2194602117243675806
+    second: player-shotgun-walk-sheet-v1_37
+  - first:
+      213: 1366515521581080151
+    second: player-shotgun-walk-sheet-v1_38
+  - first:
+      213: -8847094353336478940
+    second: player-shotgun-walk-sheet-v1_39
+  - first:
+      213: 485990873277225917
+    second: player-shotgun-walk-sheet-v1_40
+  - first:
+      213: 3507513670476527861
+    second: player-shotgun-walk-sheet-v1_41
+  - first:
+      213: 3892034712500024249
+    second: player-shotgun-walk-sheet-v1_42
+  - first:
+      213: 3566656274106481372
+    second: player-shotgun-walk-sheet-v1_43
+  - first:
+      213: -2862173965477557837
+    second: player-shotgun-walk-sheet-v1_44
+  - first:
+      213: -3257761445536515646
+    second: player-shotgun-walk-sheet-v1_45
+  - first:
+      213: 2634349968926091832
+    second: player-shotgun-walk-sheet-v1_46
+  - first:
+      213: 4490779220092862856
+    second: player-shotgun-walk-sheet-v1_47
+  - first:
+      213: 7129815394314007950
+    second: player-shotgun-walk-sheet-v1_48
+  - first:
+      213: 7046184286553606121
+    second: player-shotgun-walk-sheet-v1_49
+  - first:
+      213: -3770972318162840296
+    second: player-shotgun-walk-sheet-v1_50
+  - first:
+      213: 5710453842040891145
+    second: player-shotgun-walk-sheet-v1_51
+  - first:
+      213: 1497907413634250268
+    second: player-shotgun-walk-sheet-v1_52
+  - first:
+      213: 3237377072019507
+    second: player-shotgun-walk-sheet-v1_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 881
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8fb32ed76cb6460800000000000000
+      internalID: 7236095470269626599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_1
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 840
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8e761e3d0361e00800000000000000
+      internalID: 1015052452596541672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_2
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 402
+        width: 900
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc00effccf71d5600800000000000000
+      internalID: 458549111650386124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_3
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 833
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faac7a0d4215174a0800000000000000
+      internalID: -6597402760559736145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 827
+        width: 13
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f545d79e8596fa0800000000000000
+      internalID: -5807012484664238328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 856
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ae9ba9e1f6c1f90800000000000000
+      internalID: -6981583145095533928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 821
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693ca9d111d3da640800000000000000
+      internalID: 5092793897346319254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_7
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 838
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ece7845d0fb11a70800000000000000
+      internalID: 8796021611204963553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_8
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 840
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786142e21a6cb01a0800000000000000
+      internalID: -6842156813293185401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_9
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 825
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432653d7204707160800000000000000
+      internalID: 7021239373110010420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 842
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6aa7d7d8cc3a0bd0800000000000000
+      internalID: -2663249396323866003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 813
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f9bd8de98f37fb0800000000000000
+      internalID: -4651100629016797407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_12
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 829
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f392fe1d8bf6860800000000000000
+      internalID: 7525436714159521560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_13
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 822
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2940dc7c53f0f60800000000000000
+      internalID: 8002674195115053812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 827
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15703ff97765ca50800000000000000
+      internalID: 6540747807495583004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 820
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85a61891b7b519c0800000000000000
+      internalID: -3957054724186397297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_16
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 469
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3ed7a1efcd17d00800000000000000
+      internalID: 968798378785629127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 473
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3772dc5dfc0f9a5a0800000000000000
+      internalID: -6509407010951452813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 467
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d173ca1df0732ea0800000000000000
+      internalID: -5898746854547164719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_19
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 455
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0b943fc67964920800000000000000
+      internalID: 2974231098118746316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_20
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 460
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46ac305181b89e80800000000000000
+      internalID: -8171586354908715444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 463
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bd1f5b0530da8f0800000000000000
+      internalID: -527761936147686519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 450
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84436d1cb6563760800000000000000
+      internalID: 7437227200595838094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 430
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e661e44719eb220800000000000000
+      internalID: 2503598371576901219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_24
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 445
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b089638a25e34620800000000000000
+      internalID: 2757299367636992182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_25
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 440
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ea78d7156325070800000000000000
+      internalID: 8093591203964497411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_26
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 433
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9f0c1c434dacd10800000000000000
+      internalID: 2146761495449500147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_27
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 400
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47e305eb25d2d5b0800000000000000
+      internalID: -5344975423232809142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_28
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 0
+        width: 1335
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7d6e75185bfea90800000000000000
+      internalID: -7282402505304647699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_29
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 393
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ebc852d19e0e630800000000000000
+      internalID: 3954416784224599552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_30
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 390
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776de3223f9cd8130800000000000000
+      internalID: 3570732125663450743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_31
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 392
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d754a3adc89f9320800000000000000
+      internalID: 2566938321605646295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_32
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 402
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431b0e5ea9ab72540800000000000000
+      internalID: 4983156687153180980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_33
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 404
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14906231cd351fb40800000000000000
+      internalID: 5472247226911033665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_34
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 402
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903c288b8e1408d60800000000000000
+      internalID: 7890379014936904457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_35
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 384
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8031aaa249ee35030800000000000000
+      internalID: 3482389257025884936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 443
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2788b42739aa0a0800000000000000
+      internalID: -6869516162497482080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_37
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9421a58ffac47e10800000000000000
+      internalID: 2194602117243675806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_38
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 77
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ed5e370a6d6f210800000000000000
+      internalID: 1366515521581080151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_39
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 80
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423d30f3f8ec83580800000000000000
+      internalID: -8847094353336478940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_40
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb55c5df169eb600800000000000000
+      internalID: 485990873277225917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_41
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 38
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8749589113da030800000000000000
+      internalID: 3507513670476527861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_42
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 49
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3bd0c33f8430630800000000000000
+      internalID: 3892034712500024249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_43
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 22
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdaf80efbfe4f7130800000000000000
+      internalID: 3566656274106481372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_44
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 17
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9c65e51f38748d0800000000000000
+      internalID: -2862173965477557837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_45
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 49
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c935d3c93b1ac2d0800000000000000
+      internalID: -3257761445536515646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_46
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 13
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83aa6efd6571f8420800000000000000
+      internalID: 2634349968926091832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_47
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 49
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881475258e3725e30800000000000000
+      internalID: 4490779220092862856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_48
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 53
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85b234635132f260800000000000000
+      internalID: 7129815394314007950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_49
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 35
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e787fdb64319c160800000000000000
+      internalID: 7046184286553606121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_50
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 35
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8159216f7a0daabc0800000000000000
+      internalID: -3770972318162840296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_51
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907ac19938b9f3f40800000000000000
+      internalID: 5710453842040891145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_52
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 50
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16f7104bd2a9c410800000000000000
+      internalID: 1497907413634250268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-shotgun-walk-sheet-v1_53
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 17
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338b16690608b0000800000000000000
+      internalID: 3237377072019507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      player-shotgun-walk-sheet-v1_0: 7236095470269626599
+      player-shotgun-walk-sheet-v1_1: 1015052452596541672
+      player-shotgun-walk-sheet-v1_10: -2663249396323866003
+      player-shotgun-walk-sheet-v1_11: -4651100629016797407
+      player-shotgun-walk-sheet-v1_12: 7525436714159521560
+      player-shotgun-walk-sheet-v1_13: 8002674195115053812
+      player-shotgun-walk-sheet-v1_14: 6540747807495583004
+      player-shotgun-walk-sheet-v1_15: -3957054724186397297
+      player-shotgun-walk-sheet-v1_16: 968798378785629127
+      player-shotgun-walk-sheet-v1_17: -6509407010951452813
+      player-shotgun-walk-sheet-v1_18: -5898746854547164719
+      player-shotgun-walk-sheet-v1_19: 2974231098118746316
+      player-shotgun-walk-sheet-v1_2: 458549111650386124
+      player-shotgun-walk-sheet-v1_20: -8171586354908715444
+      player-shotgun-walk-sheet-v1_21: -527761936147686519
+      player-shotgun-walk-sheet-v1_22: 7437227200595838094
+      player-shotgun-walk-sheet-v1_23: 2503598371576901219
+      player-shotgun-walk-sheet-v1_24: 2757299367636992182
+      player-shotgun-walk-sheet-v1_25: 8093591203964497411
+      player-shotgun-walk-sheet-v1_26: 2146761495449500147
+      player-shotgun-walk-sheet-v1_27: -5344975423232809142
+      player-shotgun-walk-sheet-v1_28: -7282402505304647699
+      player-shotgun-walk-sheet-v1_29: 3954416784224599552
+      player-shotgun-walk-sheet-v1_3: -6597402760559736145
+      player-shotgun-walk-sheet-v1_30: 3570732125663450743
+      player-shotgun-walk-sheet-v1_31: 2566938321605646295
+      player-shotgun-walk-sheet-v1_32: 4983156687153180980
+      player-shotgun-walk-sheet-v1_33: 5472247226911033665
+      player-shotgun-walk-sheet-v1_34: 7890379014936904457
+      player-shotgun-walk-sheet-v1_35: 3482389257025884936
+      player-shotgun-walk-sheet-v1_36: -6869516162497482080
+      player-shotgun-walk-sheet-v1_37: 2194602117243675806
+      player-shotgun-walk-sheet-v1_38: 1366515521581080151
+      player-shotgun-walk-sheet-v1_39: -8847094353336478940
+      player-shotgun-walk-sheet-v1_4: -5807012484664238328
+      player-shotgun-walk-sheet-v1_40: 485990873277225917
+      player-shotgun-walk-sheet-v1_41: 3507513670476527861
+      player-shotgun-walk-sheet-v1_42: 3892034712500024249
+      player-shotgun-walk-sheet-v1_43: 3566656274106481372
+      player-shotgun-walk-sheet-v1_44: -2862173965477557837
+      player-shotgun-walk-sheet-v1_45: -3257761445536515646
+      player-shotgun-walk-sheet-v1_46: 2634349968926091832
+      player-shotgun-walk-sheet-v1_47: 4490779220092862856
+      player-shotgun-walk-sheet-v1_48: 7129815394314007950
+      player-shotgun-walk-sheet-v1_49: 7046184286553606121
+      player-shotgun-walk-sheet-v1_5: -6981583145095533928
+      player-shotgun-walk-sheet-v1_50: -3770972318162840296
+      player-shotgun-walk-sheet-v1_51: 5710453842040891145
+      player-shotgun-walk-sheet-v1_52: 1497907413634250268
+      player-shotgun-walk-sheet-v1_53: 3237377072019507
+      player-shotgun-walk-sheet-v1_6: 5092793897346319254
+      player-shotgun-walk-sheet-v1_7: 8796021611204963553
+      player-shotgun-walk-sheet-v1_8: -6842156813293185401
+      player-shotgun-walk-sheet-v1_9: 7021239373110010420
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

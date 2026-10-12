@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: d0ea271b48d53b442a6fa94fc57d45ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7209780249892834656
+    second: fish-common-icon-v1_0
+  - first:
+      213: 5673744835344861964
+    second: fish-common-icon-v1_1
+  - first:
+      213: 2323574282630331366
+    second: fish-common-icon-v1_2
+  - first:
+      213: -4920507388851546234
+    second: fish-common-icon-v1_3
+  - first:
+      213: 7364152606916182163
+    second: fish-common-icon-v1_4
+  - first:
+      213: -7402071737498401463
+    second: fish-common-icon-v1_5
+  - first:
+      213: 5633317827041444011
+    second: fish-common-icon-v1_6
+  - first:
+      213: 3956141261409439143
+    second: fish-common-icon-v1_7
+  - first:
+      213: 4076074424856223957
+    second: fish-common-icon-v1_8
+  - first:
+      213: -8213603280560611415
+    second: fish-common-icon-v1_9
+  - first:
+      213: 752024008418415152
+    second: fish-common-icon-v1_10
+  - first:
+      213: -7653405976261045945
+    second: fish-common-icon-v1_11
+  - first:
+      213: 870989436869966947
+    second: fish-common-icon-v1_12
+  - first:
+      213: 2129575860054972010
+    second: fish-common-icon-v1_13
+  - first:
+      213: 3367915475755905819
+    second: fish-common-icon-v1_14
+  - first:
+      213: 9131814090651998537
+    second: fish-common-icon-v1_15
+  - first:
+      213: 4929692946403134534
+    second: fish-common-icon-v1_16
+  - first:
+      213: 7657400042454434160
+    second: fish-common-icon-v1_17
+  - first:
+      213: 2964001885451566372
+    second: fish-common-icon-v1_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fish-common-icon-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1243
+        height: 1254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2b280df07b1fb90800000000000000
+      internalID: -7209780249892834656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_1
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1191
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b00f0fdd03dbe40800000000000000
+      internalID: 5673744835344861964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_2
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 966
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebf96dcf7efe3020800000000000000
+      internalID: 2323574282630331366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_3
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 937
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68791dc8998d6bbb0800000000000000
+      internalID: -4920507388851546234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_4
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 214
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390810f67c9b23660800000000000000
+      internalID: 7364152606916182163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_5
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 172
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945037cf8fe864990800000000000000
+      internalID: -7402071737498401463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 127
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba04ea397b09d2e40800000000000000
+      internalID: 5633317827041444011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_7
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 111
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad4397448907e630800000000000000
+      internalID: 3956141261409439143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d02c9be710219830800000000000000
+      internalID: 4076074424856223957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_9
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 87
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af9338755b630e80800000000000000
+      internalID: -8213603280560611415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_10
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 83
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032585ce9d9bf6a00800000000000000
+      internalID: 752024008418415152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_11
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 87
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741db1760d3a9c590800000000000000
+      internalID: -7653405976261045945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_12
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 85
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c70c33740661c00800000000000000
+      internalID: 870989436869966947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 91
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66d2d436f5cd8d10800000000000000
+      internalID: 2129575860054972010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_14
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 73
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13b8fdf74d3dbe20800000000000000
+      internalID: 3367915475755905819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_15
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 77
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94918347888babe70800000000000000
+      internalID: 9131814090651998537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_16
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 55
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c8b1abd99c96440800000000000000
+      internalID: 4929692946403134534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071ce8994cc844a60800000000000000
+      internalID: 7657400042454434160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-common-icon-v1_18
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 18
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42dbde7c200422920800000000000000
+      internalID: 2964001885451566372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fish-common-icon-v1_0: -7209780249892834656
+      fish-common-icon-v1_1: 5673744835344861964
+      fish-common-icon-v1_10: 752024008418415152
+      fish-common-icon-v1_11: -7653405976261045945
+      fish-common-icon-v1_12: 870989436869966947
+      fish-common-icon-v1_13: 2129575860054972010
+      fish-common-icon-v1_14: 3367915475755905819
+      fish-common-icon-v1_15: 9131814090651998537
+      fish-common-icon-v1_16: 4929692946403134534
+      fish-common-icon-v1_17: 7657400042454434160
+      fish-common-icon-v1_18: 2964001885451566372
+      fish-common-icon-v1_2: 2323574282630331366
+      fish-common-icon-v1_3: -4920507388851546234
+      fish-common-icon-v1_4: 7364152606916182163
+      fish-common-icon-v1_5: -7402071737498401463
+      fish-common-icon-v1_6: 5633317827041444011
+      fish-common-icon-v1_7: 3956141261409439143
+      fish-common-icon-v1_8: 4076074424856223957
+      fish-common-icon-v1_9: -8213603280560611415
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "Wood",
+    "name": "Madeira",
+    "slug": "wood",
+    "path": "Assets/Art/Items/wood-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: A small compact bundle of three rough split firewood pieces, cracked bark, pale exposed wood ends, loosely tied with coarse hemp twine. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "Nails",
+    "name": "Pregos",
+    "slug": "nails",
+    "path": "Assets/Art/Items/nails-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: A small loose cluster of five bent and straight old iron nails, visibly pointed ends and flat nail heads, rusty dark iron. No wooden box. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "Bandage",
+    "name": "Bandagem",
+    "slug": "bandage",
+    "path": "Assets/Art/Items/bandage-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: One roll of off-white woven gauze bandage with a short unfurled tail, frayed cloth, recognizably medical but rustic. No blood, no modern packaging, no medical symbol. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "Metal",
+    "name": "Metal",
+    "slug": "metal",
+    "path": "Assets/Art/Items/metal-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: A compact pile of three salvaged rusted sheet-metal scraps with irregular torn edges, one bent corner and a bolt hole, dark gray iron and rust brown. Clearly different from nails. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "Gunpowder",
+    "name": "Pólvora",
+    "slug": "gunpowder",
+    "path": "Assets/Art/Items/gunpowder-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: A small open worn cloth pouch containing black granular gunpowder, folded mouth with visible dark grains, a very small spill beside pouch. No text or flame. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "AmmoComponent",
+    "name": "Componentes",
+    "slug": "ammo-component",
+    "path": "Assets/Art/Items/ammo-component-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: A small compact group of ammunition crafting parts: two EMPTY brass cartridge casings without bullets and three small round brass primer cups. Clearly show hollow empty case mouths; distinct from complete ammunition. No electronics, no gears. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "Pistol",
+    "name": "Pistola",
+    "slug": "pistol",
+    "path": "Assets/Art/Items/pistol-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE complete worn compact semi-automatic pistol in clean side profile, muzzle pointing right, blued steel slide, brown grip, no magazine outside gun. Realistic proportions. Isolated weapon, no hands. Weapon side profile is intentional for inventory readability. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "PistolAmmo",
+    "name": "Munição de pistola",
+    "slug": "pistol-ammo",
+    "path": "Assets/Art/Items/pistol-ammo-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: Three COMPLETE short brass pistol cartridges with rounded copper bullet tips, compact straight-walled casings, upright staggered cluster. No empty casings. Short squat silhouette distinct from rifle ammunition. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "FishCommon",
+    "name": "Peixe comum",
+    "slug": "fish-common",
+    "path": "Assets/Art/Items/fish-common-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE whole small freshwater fish in side profile, humble gray olive scales, ordinary rounded body, head pointing right, intact tail and fins, no blood, no hook. Modest unremarkable silhouette. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "FishRare",
+    "name": "Peixe raro",
+    "slug": "fish-rare",
+    "path": "Assets/Art/Items/fish-rare-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE whole unusual freshwater fish in side profile, deep green scales with natural muted golden flecks and distinct pale belly, elegant slightly arched dorsal fin, head pointing right. Rare but natural, no magic glow. Distinct from ordinary gray fish. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "FishLarge",
+    "name": "Peixe grande",
+    "slug": "fish-large",
+    "path": "Assets/Art/Items/fish-large-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE whole large bulky freshwater fish in side profile, thick heavy body, broad head pointing right, mottled dark olive scales, substantial tail. Clearly fatter and more imposing than small common fish; no blood. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "CookedFish",
+    "name": "Peixe assado",
+    "slug": "cooked-fish",
+    "path": "Assets/Art/Items/cooked-fish-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE cooked whole freshwater fish, golden brown roasted skin with three simple diagonal grill marks and lightly crisp fins, head pointing right. Appetizing rustic cooking, no plate, no utensils, no smoke, no garnishes. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "BurntFish",
+    "name": "Peixe queimado",
+    "slug": "burnt-fish",
+    "path": "Assets/Art/Items/burnt-fish-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE badly overcooked whole freshwater fish, charcoal-black cracked crust and a few brown edges, intact head pointing right and tail, unmistakably burnt but recognizable fish. No flame, smoke, plate or loose ash. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "RawFish",
+    "name": "Peixe cru",
+    "slug": "raw-fish",
+    "path": "Assets/Art/Items/raw-fish-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE raw boneless fish fillet with pale pink beige flesh, darker silvery skin edge and subtle muscle lines, no head, no tail, no whole fish. A prepared uncooked fillet, no blood puddle, plate, knife or lemon. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "Mosin",
+    "name": "Rifle de ferrolho",
+    "slug": "bolt-rifle",
+    "path": "Assets/Art/Items/bolt-rifle-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE complete old Mosin-type bolt-action rifle in clean side profile, muzzle pointing right, long aged walnut full stock, narrow blued steel barrel, recognizable bolt handle and iron sights. No scope, sling, hands, attachments or ammunition. Isolated inventory weapon, intentional side profile. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "RifleAmmo",
+    "name": "Munição de rifle",
+    "slug": "rifle-ammo",
+    "path": "Assets/Art/Items/rifle-ammo-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: Three COMPLETE tall slender brass rifle cartridges, bottleneck cases and pointed copper bullet tips, upright staggered cluster. Clearly taller and more pointed than pistol ammunition, no empty cases. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "DoubleBarrelShotgun",
+    "name": "Espingarda de dois canos",
+    "slug": "double-barrel-shotgun",
+    "path": "Assets/Art/Items/double-barrel-shotgun-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: ONE complete rustic side-by-side double-barrel break-action shotgun in readable slightly three-quarter side profile, muzzle pointing right, aged walnut buttstock and fore-end, two parallel dark steel barrels with both muzzle ends subtly distinguishable, plain steel receiver. No hands, ammo, scope, sling. Intentional inventory view, NOT a player-held pose. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  },
+  {
+    "id": "ShotgunShell",
+    "name": "Cartucho de espingarda",
+    "slug": "shotgun-shell",
+    "path": "Assets/Art/Items/shotgun-shell-icon-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE isolated inventory item icon for a rustic woodland survival horror game. Primary request: Two squat cylindrical shotgun shells in compact upright cluster, faded dark reddish-brown paper hulls with brass bases and closed crimped tops, no bullet tips, no text or labels. Clearly different from brass pistol and rifle cartridges. Style: original gritty hand-painted 2D raster game art, earthy subdued browns, olive, charcoal, aged brass and cream, subtle readable edge highlights, realistic proportions but simplified shapes readable at 48 pixels. Coarse painted material texture consistent with a worn olive-coated survivor and oppressive woodland atmosphere. No cyber, sci-fi, glowing parts or modern tactical styling. Center the single item or small coherent item cluster on a square canvas, occupy about 75 percent of available width or height, generous fully transparent margin, nothing cropped. Consistent diffuse light from upper left, no outside cast shadow. Truly transparent alpha background. No scenery, no floor, no tile panel, no border, no text, no labels, no letters, no numbers, no logo, no watermark, no human, no hands, no extra objects. Single icon, NOT a sheet, NOT multiple variants."
+  }
+]

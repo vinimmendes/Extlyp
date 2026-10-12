@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: a615e667a31050c4c902c74e5888a266
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3241668398167297612
+    second: ammo-bench-broken-topdown-v1_0
+  - first:
+      213: 190680453525567063
+    second: ammo-bench-broken-topdown-v1_1
+  - first:
+      213: -2155287417049276291
+    second: ammo-bench-broken-topdown-v1_2
+  - first:
+      213: 8159650701803848676
+    second: ammo-bench-broken-topdown-v1_3
+  - first:
+      213: -6192649242879188093
+    second: ammo-bench-broken-topdown-v1_4
+  - first:
+      213: -8823413418685950537
+    second: ammo-bench-broken-topdown-v1_5
+  - first:
+      213: -4031956362063343934
+    second: ammo-bench-broken-topdown-v1_6
+  - first:
+      213: 8111680263364368353
+    second: ammo-bench-broken-topdown-v1_7
+  - first:
+      213: 7696590628198242815
+    second: ammo-bench-broken-topdown-v1_8
+  - first:
+      213: -5483321143008269005
+    second: ammo-bench-broken-topdown-v1_9
+  - first:
+      213: -8054523359407594034
+    second: ammo-bench-broken-topdown-v1_10
+  - first:
+      213: 6198082142456499764
+    second: ammo-bench-broken-topdown-v1_11
+  - first:
+      213: -551767515058310292
+    second: ammo-bench-broken-topdown-v1_12
+  - first:
+      213: -199797212028894145
+    second: ammo-bench-broken-topdown-v1_13
+  - first:
+      213: 483665675099607457
+    second: ammo-bench-broken-topdown-v1_14
+  - first:
+      213: -7558291422138192596
+    second: ammo-bench-broken-topdown-v1_15
+  - first:
+      213: 4513323324399174981
+    second: ammo-bench-broken-topdown-v1_16
+  - first:
+      213: 4419702329972697949
+    second: ammo-bench-broken-topdown-v1_17
+  - first:
+      213: 7458044627668001833
+    second: ammo-bench-broken-topdown-v1_18
+  - first:
+      213: -4504651379162300
+    second: ammo-bench-broken-topdown-v1_19
+  - first:
+      213: -3639621324591011684
+    second: ammo-bench-broken-topdown-v1_20
+  - first:
+      213: 4855356028488293915
+    second: ammo-bench-broken-topdown-v1_21
+  - first:
+      213: 6044687269035626774
+    second: ammo-bench-broken-topdown-v1_22
+  - first:
+      213: -5927812523847091788
+    second: ammo-bench-broken-topdown-v1_23
+  - first:
+      213: 223938579842029822
+    second: ammo-bench-broken-topdown-v1_24
+  - first:
+      213: -1284095006489167433
+    second: ammo-bench-broken-topdown-v1_25
+  - first:
+      213: -5602292748155514348
+    second: ammo-bench-broken-topdown-v1_26
+  - first:
+      213: -142920656746851897
+    second: ammo-bench-broken-topdown-v1_27
+  - first:
+      213: 6543580176870284268
+    second: ammo-bench-broken-topdown-v1_28
+  - first:
+      213: -5091643388143924635
+    second: ammo-bench-broken-topdown-v1_29
+  - first:
+      213: -1304716314916335826
+    second: ammo-bench-broken-topdown-v1_30
+  - first:
+      213: 1104619388361731335
+    second: ammo-bench-broken-topdown-v1_31
+  - first:
+      213: 3130908106108415161
+    second: ammo-bench-broken-topdown-v1_32
+  - first:
+      213: 3165088480320548819
+    second: ammo-bench-broken-topdown-v1_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1523
+        height: 1016
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e0f58ab38bcfc20800000000000000
+      internalID: 3241668398167297612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 973
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756700abcde65a200800000000000000
+      internalID: 190680453525567063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_2
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 998
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70a8ed6381e612e0800000000000000
+      internalID: -2155287417049276291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 951
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e30944e417ec3170800000000000000
+      internalID: 8159650701803848676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_4
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 963
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383289bd25a4f0aa0800000000000000
+      internalID: -6192649242879188093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 959
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b51fc08e30fc8580800000000000000
+      internalID: -8823413418685950537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 961
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce86590d0d9b08c0800000000000000
+      internalID: -4031956362063343934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_7
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 911
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e75165d83a729070800000000000000
+      internalID: 8111680263364368353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 861
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff95b57e568cfca60800000000000000
+      internalID: 7696590628198242815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 355
+        width: 5
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d6a99e87457e3b0800000000000000
+      internalID: -5483321143008269005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 249
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5ac67eda5983090800000000000000
+      internalID: -8054523359407594034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_11
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 126
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ecfc5aed2040650800000000000000
+      internalID: 6198082142456499764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 135
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6379525e5ab758f0800000000000000
+      internalID: -551767515058310292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_13
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 95
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3487e58e7d2a3df0800000000000000
+      internalID: -199797212028894145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 97
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a19c527e5356b600800000000000000
+      internalID: 483665675099607457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_15
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 117
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d22924ffd8b1790800000000000000
+      internalID: -7558291422138192596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_16
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 119
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5454c43a6ab82ae30800000000000000
+      internalID: 4513323324399174981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 101
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b2dfe3adfe55d30800000000000000
+      internalID: 4419702329972697949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 111
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924692f031c408760800000000000000
+      internalID: 7458044627668001833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_19
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 91
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44345be1b0fffeff0800000000000000
+      internalID: -4504651379162300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_20
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 97
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98e0d650b77d7dc0800000000000000
+      internalID: -3639621324591011684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 97
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e98184590b16340800000000000000
+      internalID: 4855356028488293915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_22
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 59
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611d1398b0b03e350800000000000000
+      internalID: 6044687269035626774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_23
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 61
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b97bfc9aed2cbda0800000000000000
+      internalID: -5927812523847091788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 71
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef85dfea3f69b1300800000000000000
+      internalID: 223938579842029822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 81
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b93c50256afd2ee0800000000000000
+      internalID: -1284095006489167433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_26
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 45
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41291728d68a042b0800000000000000
+      internalID: -5602292748155514348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_27
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 63
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1d98f7b6e340ef0800000000000000
+      internalID: -142920656746851897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 49
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb14a160877fca50800000000000000
+      internalID: 6543580176870284268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 27
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a07bea059d659b0800000000000000
+      internalID: -5091643388143924635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_30
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 17
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f41cc9c67b4ede0800000000000000
+      internalID: -1304716314916335826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_31
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 29
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d6f4f2b75645f00800000000000000
+      internalID: 1104619388361731335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_32
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 27
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcabf09558337b20800000000000000
+      internalID: 3130908106108415161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-topdown-v1_33
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 15
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dfef281437aceb20800000000000000
+      internalID: 3165088480320548819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ammo-bench-broken-topdown-v1_0: 3241668398167297612
+      ammo-bench-broken-topdown-v1_1: 190680453525567063
+      ammo-bench-broken-topdown-v1_10: -8054523359407594034
+      ammo-bench-broken-topdown-v1_11: 6198082142456499764
+      ammo-bench-broken-topdown-v1_12: -551767515058310292
+      ammo-bench-broken-topdown-v1_13: -199797212028894145
+      ammo-bench-broken-topdown-v1_14: 483665675099607457
+      ammo-bench-broken-topdown-v1_15: -7558291422138192596
+      ammo-bench-broken-topdown-v1_16: 4513323324399174981
+      ammo-bench-broken-topdown-v1_17: 4419702329972697949
+      ammo-bench-broken-topdown-v1_18: 7458044627668001833
+      ammo-bench-broken-topdown-v1_19: -4504651379162300
+      ammo-bench-broken-topdown-v1_2: -2155287417049276291
+      ammo-bench-broken-topdown-v1_20: -3639621324591011684
+      ammo-bench-broken-topdown-v1_21: 4855356028488293915
+      ammo-bench-broken-topdown-v1_22: 6044687269035626774
+      ammo-bench-broken-topdown-v1_23: -5927812523847091788
+      ammo-bench-broken-topdown-v1_24: 223938579842029822
+      ammo-bench-broken-topdown-v1_25: -1284095006489167433
+      ammo-bench-broken-topdown-v1_26: -5602292748155514348
+      ammo-bench-broken-topdown-v1_27: -142920656746851897
+      ammo-bench-broken-topdown-v1_28: 6543580176870284268
+      ammo-bench-broken-topdown-v1_29: -5091643388143924635
+      ammo-bench-broken-topdown-v1_3: 8159650701803848676
+      ammo-bench-broken-topdown-v1_30: -1304716314916335826
+      ammo-bench-broken-topdown-v1_31: 1104619388361731335
+      ammo-bench-broken-topdown-v1_32: 3130908106108415161
+      ammo-bench-broken-topdown-v1_33: 3165088480320548819
+      ammo-bench-broken-topdown-v1_4: -6192649242879188093
+      ammo-bench-broken-topdown-v1_5: -8823413418685950537
+      ammo-bench-broken-topdown-v1_6: -4031956362063343934
+      ammo-bench-broken-topdown-v1_7: 8111680263364368353
+      ammo-bench-broken-topdown-v1_8: 7696590628198242815
+      ammo-bench-broken-topdown-v1_9: -5483321143008269005
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

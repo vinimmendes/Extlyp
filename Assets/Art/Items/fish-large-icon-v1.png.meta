@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 7ac55e4592682bf459250cb64767cc4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6349824730754057841
+    second: fish-large-icon-v1_0
+  - first:
+      213: 7889499208550345051
+    second: fish-large-icon-v1_1
+  - first:
+      213: -8865637156648577852
+    second: fish-large-icon-v1_2
+  - first:
+      213: 8339746275644157361
+    second: fish-large-icon-v1_3
+  - first:
+      213: -725093656178001261
+    second: fish-large-icon-v1_4
+  - first:
+      213: -7664223590430030623
+    second: fish-large-icon-v1_5
+  - first:
+      213: 4951971032026324201
+    second: fish-large-icon-v1_6
+  - first:
+      213: 3483248393845553138
+    second: fish-large-icon-v1_7
+  - first:
+      213: 7210188262056190160
+    second: fish-large-icon-v1_8
+  - first:
+      213: 6400251631167184457
+    second: fish-large-icon-v1_9
+  - first:
+      213: -1157335430857293995
+    second: fish-large-icon-v1_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fish-large-icon-v1_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1029
+        width: 369
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89f969dc04e0e7a0800000000000000
+      internalID: -6349824730754057841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 1219
+        height: 1032
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b596e55dab12d7d60800000000000000
+      internalID: 7889499208550345051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_2
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1039
+        width: 116
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4157a6afde6f480800000000000000
+      internalID: -8865637156648577852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_3
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1044
+        width: 399
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd28a44d0bbcb370800000000000000
+      internalID: 8339746275644157361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_4
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1030
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39afe925923ffe5f0800000000000000
+      internalID: -725093656178001261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 996
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4cf35504533a590800000000000000
+      internalID: -7664223590430030623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_6
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 272
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec14fdba6fe8b440800000000000000
+      internalID: 4951971032026324201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_7
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 278
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f73d9b85fbf65030800000000000000
+      internalID: 3483248393845553138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_8
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 249
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0ec8be50cbf0460800000000000000
+      internalID: 7210188262056190160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_9
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 79
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e95d4d2f242d850800000000000000
+      internalID: 6400251631167184457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish-large-icon-v1_10
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 36
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ff6c5be8150ffe0800000000000000
+      internalID: -1157335430857293995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fish-large-icon-v1_0: -6349824730754057841
+      fish-large-icon-v1_1: 7889499208550345051
+      fish-large-icon-v1_10: -1157335430857293995
+      fish-large-icon-v1_2: -8865637156648577852
+      fish-large-icon-v1_3: 8339746275644157361
+      fish-large-icon-v1_4: -725093656178001261
+      fish-large-icon-v1_5: -7664223590430030623
+      fish-large-icon-v1_6: 4951971032026324201
+      fish-large-icon-v1_7: 3483248393845553138
+      fish-large-icon-v1_8: 7210188262056190160
+      fish-large-icon-v1_9: 6400251631167184457
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

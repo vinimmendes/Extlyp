@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 8ac3e24734ceb254688494bf3063b172
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4646041981104191756
+    second: pier-broken-topdown-v1_0
+  - first:
+      213: 9056856636557138723
+    second: pier-broken-topdown-v1_1
+  - first:
+      213: -6693266270972994483
+    second: pier-broken-topdown-v1_2
+  - first:
+      213: 5274417617611390347
+    second: pier-broken-topdown-v1_3
+  - first:
+      213: 4759127268353588605
+    second: pier-broken-topdown-v1_4
+  - first:
+      213: 617355962588841533
+    second: pier-broken-topdown-v1_5
+  - first:
+      213: -7987064746631811211
+    second: pier-broken-topdown-v1_6
+  - first:
+      213: -2817386806017528278
+    second: pier-broken-topdown-v1_7
+  - first:
+      213: -5917496184361470083
+    second: pier-broken-topdown-v1_8
+  - first:
+      213: 2468729967369872164
+    second: pier-broken-topdown-v1_9
+  - first:
+      213: 2601911484304022728
+    second: pier-broken-topdown-v1_10
+  - first:
+      213: -2246920017480796354
+    second: pier-broken-topdown-v1_11
+  - first:
+      213: -6035666744379546684
+    second: pier-broken-topdown-v1_12
+  - first:
+      213: -8999168172233397615
+    second: pier-broken-topdown-v1_13
+  - first:
+      213: 6104674210023514247
+    second: pier-broken-topdown-v1_14
+  - first:
+      213: -9114286881759802452
+    second: pier-broken-topdown-v1_15
+  - first:
+      213: 4486913229535204647
+    second: pier-broken-topdown-v1_16
+  - first:
+      213: 8126692456403040718
+    second: pier-broken-topdown-v1_17
+  - first:
+      213: -7677398771278589433
+    second: pier-broken-topdown-v1_18
+  - first:
+      213: 1438451121879260164
+    second: pier-broken-topdown-v1_19
+  - first:
+      213: 3477704118259027140
+    second: pier-broken-topdown-v1_20
+  - first:
+      213: -6589929678214047685
+    second: pier-broken-topdown-v1_21
+  - first:
+      213: -5175130735783332393
+    second: pier-broken-topdown-v1_22
+  - first:
+      213: -4093497313943876303
+    second: pier-broken-topdown-v1_23
+  - first:
+      213: -5437881123553322388
+    second: pier-broken-topdown-v1_24
+  - first:
+      213: 2498536925846091606
+    second: pier-broken-topdown-v1_25
+  - first:
+      213: 4726419540653965489
+    second: pier-broken-topdown-v1_26
+  - first:
+      213: 409716204660180245
+    second: pier-broken-topdown-v1_27
+  - first:
+      213: -4540778266484471672
+    second: pier-broken-topdown-v1_28
+  - first:
+      213: 7981613760414464864
+    second: pier-broken-topdown-v1_29
+  - first:
+      213: -1705856639264338554
+    second: pier-broken-topdown-v1_30
+  - first:
+      213: -2372279390006422475
+    second: pier-broken-topdown-v1_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 1505
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c097447e09e0a7040800000000000000
+      internalID: 4646041981104191756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_1
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 892
+        width: 87
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b90ab202b60bd70800000000000000
+      internalID: 9056856636557138723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_2
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 837
+        width: 151
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c1d8bf9cdbc13a0800000000000000
+      internalID: -6693266270972994483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_3
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 879
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8df9cec0ee723940800000000000000
+      internalID: 5274417617611390347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_4
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 863
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d371f1901db0240800000000000000
+      internalID: 4759127268353588605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_5
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 849
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36c3122af9419800800000000000000
+      internalID: 617355962588841533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 835
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f27f22eee382190800000000000000
+      internalID: -7987064746631811211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 845
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ee37880a1a6e8d0800000000000000
+      internalID: -2817386806017528278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 782
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77b7639294d0eda0800000000000000
+      internalID: -5917496184361470083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_9
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 799
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423617f43d0b24220800000000000000
+      internalID: 2468729967369872164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_10
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 241
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc53fe95b8db1420800000000000000
+      internalID: 2601911484304022728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_11
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 253
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37b757162651d0e0800000000000000
+      internalID: -2246920017480796354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_12
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 255
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c36e9603110d3ca0800000000000000
+      internalID: -6035666744379546684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 247
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ae60c1a388c1380800000000000000
+      internalID: -8999168172233397615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_14
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 227
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780a0fd99d828b450800000000000000
+      internalID: 6104674210023514247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_15
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 223
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab44bfde5c838180800000000000000
+      internalID: -9114286881759802452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_16
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 207
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72552704fc7b44e30800000000000000
+      internalID: 4486913229535204647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_17
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 205
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9ffb66bbfc7c070800000000000000
+      internalID: 8126692456403040718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_18
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 215
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7025bee7e76647590800000000000000
+      internalID: -7677398771278589433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_19
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 177
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c10629ca766f310800000000000000
+      internalID: 1438451121879260164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_20
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 185
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc0eba4879434030800000000000000
+      internalID: 3477704118259027140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_21
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 191
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b385f336fdddb84a0800000000000000
+      internalID: -6589929678214047685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_22
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 191
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5bd6bc30e3e28b0800000000000000
+      internalID: -5175130735783332393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_23
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 177
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d0c5991e9f037c0800000000000000
+      internalID: -4093497313943876303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_24
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 177
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a5dc3ede3c884b0800000000000000
+      internalID: -5437881123553322388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 169
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657b043a8169ca220800000000000000
+      internalID: 2498536925846091606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_26
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 193
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b00524d78d979140800000000000000
+      internalID: 4726419540653965489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_27
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 165
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515cd75a7ba9fa500800000000000000
+      internalID: 409716204660180245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_28
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 175
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8880166893aebf0c0800000000000000
+      internalID: -4540778266484471672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_29
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 159
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bbfdb3d6364ce60800000000000000
+      internalID: 7981613760414464864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_30
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 158
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d48e2bc649358e0800000000000000
+      internalID: -1705856639264338554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pier-broken-topdown-v1_31
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 160
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534dfa2b678f31fd0800000000000000
+      internalID: -2372279390006422475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pier-broken-topdown-v1_0: 4646041981104191756
+      pier-broken-topdown-v1_1: 9056856636557138723
+      pier-broken-topdown-v1_10: 2601911484304022728
+      pier-broken-topdown-v1_11: -2246920017480796354
+      pier-broken-topdown-v1_12: -6035666744379546684
+      pier-broken-topdown-v1_13: -8999168172233397615
+      pier-broken-topdown-v1_14: 6104674210023514247
+      pier-broken-topdown-v1_15: -9114286881759802452
+      pier-broken-topdown-v1_16: 4486913229535204647
+      pier-broken-topdown-v1_17: 8126692456403040718
+      pier-broken-topdown-v1_18: -7677398771278589433
+      pier-broken-topdown-v1_19: 1438451121879260164
+      pier-broken-topdown-v1_2: -6693266270972994483
+      pier-broken-topdown-v1_20: 3477704118259027140
+      pier-broken-topdown-v1_21: -6589929678214047685
+      pier-broken-topdown-v1_22: -5175130735783332393
+      pier-broken-topdown-v1_23: -4093497313943876303
+      pier-broken-topdown-v1_24: -5437881123553322388
+      pier-broken-topdown-v1_25: 2498536925846091606
+      pier-broken-topdown-v1_26: 4726419540653965489
+      pier-broken-topdown-v1_27: 409716204660180245
+      pier-broken-topdown-v1_28: -4540778266484471672
+      pier-broken-topdown-v1_29: 7981613760414464864
+      pier-broken-topdown-v1_3: 5274417617611390347
+      pier-broken-topdown-v1_30: -1705856639264338554
+      pier-broken-topdown-v1_31: -2372279390006422475
+      pier-broken-topdown-v1_4: 4759127268353588605
+      pier-broken-topdown-v1_5: 617355962588841533
+      pier-broken-topdown-v1_6: -7987064746631811211
+      pier-broken-topdown-v1_7: -2817386806017528278
+      pier-broken-topdown-v1_8: -5917496184361470083
+      pier-broken-topdown-v1_9: 2468729967369872164
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caminhada linear — pistola</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#151a19;color:#e6e7df;font:16px system-ui;padding:24px}main{max-width:900px;margin:auto}h1{font-size:24px}canvas{display:block;width:100%;background:#222c28;border-radius:12px}section{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin:18px 0}button{background:#d4dfad;color:#172016;border:0;border-radius:6px;padding:12px;font:inherit;cursor:pointer}input{flex:1;min-width:200px}p{color:#bac4bd}output{font-variant-numeric:tabular-nums}label{display:flex;align-items:center;gap:8px}label input{min-width:0}
+</style><main>
+<h1>Caminhada linear com pistola</h1>
+<p>As pernas encurtam ao passar sob o corpo e se estendem ao avançar ou recuar. Na pose central, ficam ocultas. O corpo permanece fixo.</p>
+<canvas id="view" width="800" height="560" aria-label="Prévia da caminhada com pernas em sentidos opostos"></canvas>
+<section><button id="play">Pausar</button><button id="idle">Pose parada</button><button id="step">Próximo quadro</button><label><input id="guides" type="checkbox">Mostrar trajetórias</label></section>
+<section><span>Ciclo</span><input id="phase" type="range" min="0" max="1000" value="0" aria-label="Posição no ciclo"><output id="position"></output></section>
+<p id="status"></p><p>Estudo visual independente. Ainda não integrado à Unity.</p>
+</main><script>
+const canvas=document.getElementById('view'),ctx=canvas.getContext('2d');
+const phase=document.getElementById('phase'),play=document.getElementById('play'),status=document.getElementById('status');
+const img=new Image();let running=true,p=0,last=null,ready=false;
+// Triangle wave: each half-cycle is strictly linear. Reversal ONLY at endpoints.
+function travel(t){t=((t%1)+1)%1;return t<=.5?-1+4*t:3-4*t;}
+// Orthographic projection: vertical leg has zero visible longitudinal length.
+// Foot position remains linear; only projected length changes with inclination.
+function legProjection(q){return {footX:330+220*q,length:220*Math.abs(q),scale:Math.abs(q)};}
+function drawLeg(q,y,source){
+ const {footX,length,scale}=legProjection(q);if(scale<.00001)return;
+ const [sx,sy,trouserW,bootW]=source,bootLength=80*scale;
+ const trouserLength=length-bootLength/2;
+ // Hip stays fixed. Trouser extends toward the foot, behind the upper body.
+ ctx.save();ctx.translate(330,y);ctx.scale(Math.sign(q),1);
+ ctx.drawImage(img,sx,sy,trouserW,225,0,-47,trouserLength,94);ctx.restore();
+ // Keep the boot pointing east on BOTH halves; do not reverse foot orientation.
+ ctx.drawImage(img,sx+trouserW,sy,bootW,225,footX-bootLength/2,-47+y,bootLength,94);
+}
+function draw(){
+ ctx.clearRect(0,0,800,560);if(!ready)return;
+ const q=travel(p),d=q*220;
+ // Persistent limbs with fixed hips, opposite trajectories and foreshortening.
+ drawLeg(q,365,[970,370,315,185]);
+ drawLeg(-q,225,[1600,200,355,185]);
+ // Upper body is rendered last; thighs pass underneath it.
+ ctx.drawImage(img,0,0,930,724,130,110,465,362);
+ if(document.getElementById('guides').checked){
+  ctx.lineWidth=2;for(const [y,x,color] of [[365,330+d,'#ffce75'],[225,330-d,'#8ccfe9']]){
+   ctx.strokeStyle=color;ctx.beginPath();ctx.moveTo(110,y);ctx.lineTo(550,y);ctx.stroke();
+   ctx.fillStyle=color;ctx.beginPath();ctx.arc(x,y,5,0,Math.PI*2);ctx.fill();
+  }
+ }
+ phase.value=Math.round(p*1000);document.getElementById('position').textContent=`${Math.round(p*100)}%`;
+ status.textContent=Math.abs(d)<.01?'Pose parada: pernas verticais, ocultas sob o corpo.':`Extensão projetada: ${Math.round(Math.abs(q)*100)}% · Pernas em sentidos opostos`;
+}
+function pause(){running=false;play.textContent='Reproduzir';last=null;}
+play.onclick=()=>{running=!running;play.textContent=running?'Pausar':'Reproduzir';last=null;};
+document.getElementById('idle').onclick=()=>{pause();p=.25;draw();};
+document.getElementById('step').onclick=()=>{pause();p=(Math.round(p*16)+1)%16/16;draw();};
+phase.oninput=()=>{pause();p=Number(phase.value)/1000;draw();};
+document.getElementById('guides').onchange=draw;
+img.onload=()=>{ready=true;draw();};img.onerror=()=>{pause();status.textContent='Não foi possível carregar pistol-layers-v1.png. Mantenha a imagem na mesma pasta do HTML.';};img.src='pistol-layers-v1.png';
+function tick(now){if(running&&ready){if(last!==null)p=(p+Math.min((now-last)/1000,.1)/1.2)%1;draw();}last=now;requestAnimationFrame(tick);}requestAnimationFrame(tick);
+// Regression checks of the exact function used by this preview.
+for(let i=1;i<=500;i++){if(travel(i/1000)<travel((i-1)/1000))throw Error('Reversal before front');}
+for(let i=501;i<1000;i++){if(travel(i/1000)>travel((i-1)/1000))throw Error('Reversal before rear');}
+if(travel(.25)!==0||travel(.75)!==0||travel(0)!==-1||travel(.5)!==1||travel(1)!==-1)throw Error('Invalid cycle');
+</script></html>

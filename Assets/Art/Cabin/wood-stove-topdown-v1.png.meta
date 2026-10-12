@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: 1cc16184aad03d845ac70c5cc79e627c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -607314576135292808
+    second: wood-stove-topdown-v1_0
+  - first:
+      213: 3567514451088821541
+    second: wood-stove-topdown-v1_1
+  - first:
+      213: 4430975014645954001
+    second: wood-stove-topdown-v1_2
+  - first:
+      213: 5390297536177167433
+    second: wood-stove-topdown-v1_3
+  - first:
+      213: -8890493269306542609
+    second: wood-stove-topdown-v1_4
+  - first:
+      213: 1932801554134535200
+    second: wood-stove-topdown-v1_5
+  - first:
+      213: -5352899508963809788
+    second: wood-stove-topdown-v1_6
+  - first:
+      213: 2002425465624290906
+    second: wood-stove-topdown-v1_7
+  - first:
+      213: -1785689855889137082
+    second: wood-stove-topdown-v1_8
+  - first:
+      213: -4173089259761804972
+    second: wood-stove-topdown-v1_9
+  - first:
+      213: 6388966231367231662
+    second: wood-stove-topdown-v1_10
+  - first:
+      213: 1111082400354221991
+    second: wood-stove-topdown-v1_11
+  - first:
+      213: -525175517885877657
+    second: wood-stove-topdown-v1_12
+  - first:
+      213: -6360502944296747554
+    second: wood-stove-topdown-v1_13
+  - first:
+      213: -2124244539517941154
+    second: wood-stove-topdown-v1_14
+  - first:
+      213: 52927107731377238
+    second: wood-stove-topdown-v1_15
+  - first:
+      213: -8877300770129496866
+    second: wood-stove-topdown-v1_16
+  - first:
+      213: -2948922882406684267
+    second: wood-stove-topdown-v1_17
+  - first:
+      213: 5615502511352180033
+    second: wood-stove-topdown-v1_18
+  - first:
+      213: -7577034530265251775
+    second: wood-stove-topdown-v1_19
+  - first:
+      213: -1378793658698651306
+    second: wood-stove-topdown-v1_20
+  - first:
+      213: -7153361430076969877
+    second: wood-stove-topdown-v1_21
+  - first:
+      213: 1106836179654928812
+    second: wood-stove-topdown-v1_22
+  - first:
+      213: 6717978527359401353
+    second: wood-stove-topdown-v1_23
+  - first:
+      213: 4332512355507960199
+    second: wood-stove-topdown-v1_24
+  - first:
+      213: 3071564098149779874
+    second: wood-stove-topdown-v1_25
+  - first:
+      213: 2286677151079502085
+    second: wood-stove-topdown-v1_26
+  - first:
+      213: -2612678111674916829
+    second: wood-stove-topdown-v1_27
+  - first:
+      213: 5788300491202827548
+    second: wood-stove-topdown-v1_28
+  - first:
+      213: -2229034517224442112
+    second: wood-stove-topdown-v1_29
+  - first:
+      213: -1911441959950464695
+    second: wood-stove-topdown-v1_30
+  - first:
+      213: -4881397070075352870
+    second: wood-stove-topdown-v1_31
+  - first:
+      213: 7207379810623971041
+    second: wood-stove-topdown-v1_32
+  - first:
+      213: 2598040388455697261
+    second: wood-stove-topdown-v1_33
+  - first:
+      213: 296727452265781591
+    second: wood-stove-topdown-v1_34
+  - first:
+      213: -1648318763265772547
+    second: wood-stove-topdown-v1_35
+  - first:
+      213: 5293927791507278224
+    second: wood-stove-topdown-v1_36
+  - first:
+      213: 7434066507131462870
+    second: wood-stove-topdown-v1_37
+  - first:
+      213: 66343920834811183
+    second: wood-stove-topdown-v1_38
+  - first:
+      213: -3476660865658262416
+    second: wood-stove-topdown-v1_39
+  - first:
+      213: 7091837295331867148
+    second: wood-stove-topdown-v1_40
+  - first:
+      213: -7011455260206253869
+    second: wood-stove-topdown-v1_41
+  - first:
+      213: -1135417649040157964
+    second: wood-stove-topdown-v1_42
+  - first:
+      213: 1893333600385793695
+    second: wood-stove-topdown-v1_43
+  - first:
+      213: 1721781446123923912
+    second: wood-stove-topdown-v1_44
+  - first:
+      213: -4239645333730681919
+    second: wood-stove-topdown-v1_45
+  - first:
+      213: -29700555824242606
+    second: wood-stove-topdown-v1_46
+  - first:
+      213: -7976745182021984839
+    second: wood-stove-topdown-v1_47
+  - first:
+      213: -442969492629890810
+    second: wood-stove-topdown-v1_48
+  - first:
+      213: 3023961326155108658
+    second: wood-stove-topdown-v1_49
+  - first:
+      213: 2030971824552911382
+    second: wood-stove-topdown-v1_50
+  - first:
+      213: -1563030341493684133
+    second: wood-stove-topdown-v1_51
+  - first:
+      213: 5101968470463580775
+    second: wood-stove-topdown-v1_52
+  - first:
+      213: 8922197775035440314
+    second: wood-stove-topdown-v1_53
+  - first:
+      213: 8849536628463870957
+    second: wood-stove-topdown-v1_54
+  - first:
+      213: 1934871099537692231
+    second: wood-stove-topdown-v1_55
+  - first:
+      213: 6610775164520495954
+    second: wood-stove-topdown-v1_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_0
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1028
+        width: 135
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878f9865c926297f0800000000000000
+      internalID: -607314576135292808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_1
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1068
+        width: 98
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dc834ed7b528130800000000000000
+      internalID: 3567514451088821541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_2
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1073
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d57a9cac4cfd7d30800000000000000
+      internalID: 4430975014645954001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_3
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1068
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cd085dc0f2eca40800000000000000
+      internalID: 5390297536177167433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_4
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1036
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe57bf4b97f9e9480800000000000000
+      internalID: -8890493269306542609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_5
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1020
+        width: 113
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c0387e5c0b2da10800000000000000
+      internalID: 1932801554134535200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_6
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1052
+        width: 103
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40669d9e14ea6b5b0800000000000000
+      internalID: -5352899508963809788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1028
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a566bb70a5b0acb10800000000000000
+      internalID: 2002425465624290906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1040
+        width: 80
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642a5bc7984f737e0800000000000000
+      internalID: -1785689855889137082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 998
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45956ef9d653616c0800000000000000
+      internalID: -4173089259761804972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1052
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea82c9eefea2aa850800000000000000
+      internalID: 6388966231367231662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_11
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1024
+        width: 42
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af3d4d6e8b5b6f00800000000000000
+      internalID: 1111082400354221991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1406
+        height: 1018
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7623ea326a336b8f0800000000000000
+      internalID: -525175517885877657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 783
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddbd548544fab7a0800000000000000
+      internalID: -6360502944296747554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 728
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a48f598da2582e0800000000000000
+      internalID: -2124244539517941154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 536
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c415f8ce80cb000800000000000000
+      internalID: 52927107731377238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 534
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed43128cbfd7dc480800000000000000
+      internalID: -8877300770129496866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 281
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599e02433425317d0800000000000000
+      internalID: -2948922882406684267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 199
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14de57828c54eed40800000000000000
+      internalID: 5615502511352180033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 171
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140cba45d37f8d690800000000000000
+      internalID: -7577034530265251775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_20
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659a4baf87a8ddce0800000000000000
+      internalID: -1378793658698651306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_21
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 129
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c2842fda72abc90800000000000000
+      internalID: -7153361430076969877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_22
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 118
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9e1e024a54c5f00800000000000000
+      internalID: 1106836179654928812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_23
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 112
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d75f390ed0b3d50800000000000000
+      internalID: 6717978527359401353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_24
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 104
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789fa0f580d202c30800000000000000
+      internalID: 4332512355507960199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_25
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 110
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a98f0ff54360aa20800000000000000
+      internalID: 3071564098149779874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_26
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 112
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501981ae0c8ebbf10800000000000000
+      internalID: 2286677151079502085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_27
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 114
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320ad299917edbbd0800000000000000
+      internalID: -2612678111674916829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_28
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 80
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c151d5701ac245050800000000000000
+      internalID: 5788300491202827548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_29
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 104
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007b0c0aae0e011e0800000000000000
+      internalID: -2229034517224442112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_30
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 80
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94940682aa13975e0800000000000000
+      internalID: -1911441959950464695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_31
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 80
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8a68e3a3bc14cb0800000000000000
+      internalID: -4881397070075352870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_32
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 66
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee509d50c1c50460800000000000000
+      internalID: 7207379810623971041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_33
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 71
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b0502e7f71e0420800000000000000
+      internalID: 2598040388455697261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_34
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 64
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7599863bb003e1400800000000000000
+      internalID: 296727452265781591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_35
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 62
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3bee661deff19e0800000000000000
+      internalID: -1648318763265772547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_36
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 64
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0990c57274fc77940800000000000000
+      internalID: 5293927791507278224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_37
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 64
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d42332d91c1b2760800000000000000
+      internalID: 7434066507131462870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_38
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 66
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f259d5ac173bbe000800000000000000
+      internalID: 66343920834811183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_39
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 60
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cefe1ec5b60cfc0800000000000000
+      internalID: -3476660865658262416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_40
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 68
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a7f1922744b6260800000000000000
+      internalID: 7091837295331867148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_41
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 35
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8bcd0d69e42be90800000000000000
+      internalID: -7011455260206253869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_42
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 47
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f29045f9af2e30f0800000000000000
+      internalID: -1135417649040157964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_43
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 50
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e7e44d0e8764a10800000000000000
+      internalID: 1893333600385793695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_44
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 48
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c923155a1ff4e710800000000000000
+      internalID: 1721781446123923912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_45
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 58
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb17551801c925c0800000000000000
+      internalID: -4239645333730681919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_46
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 45
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250e678708b769ff0800000000000000
+      internalID: -29700555824242606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_47
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 29
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd55c10588ec4190800000000000000
+      internalID: -7976745182021984839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_48
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 23
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609d579e7914ad9f0800000000000000
+      internalID: -442969492629890810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_49
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 23
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2319ef3fdc447f920800000000000000
+      internalID: 3023961326155108658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_50
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 37
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612ad472d167f2c10800000000000000
+      internalID: 2030971824552911382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_51
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 31
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b588c1a8f200f4ae0800000000000000
+      internalID: -1563030341493684133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_52
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 19
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a8931ea45ddc640800000000000000
+      internalID: 5101968470463580775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_53
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 25
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc94c4ca9302db70800000000000000
+      internalID: 8922197775035440314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_54
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 25
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3a56e3daedfca70800000000000000
+      internalID: 8849536628463870957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_55
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 0
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7461d1e730b0ada10800000000000000
+      internalID: 1934871099537692231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood-stove-topdown-v1_56
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 20
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bf73b9cf03ebb50800000000000000
+      internalID: 6610775164520495954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wood-stove-topdown-v1_0: -607314576135292808
+      wood-stove-topdown-v1_1: 3567514451088821541
+      wood-stove-topdown-v1_10: 6388966231367231662
+      wood-stove-topdown-v1_11: 1111082400354221991
+      wood-stove-topdown-v1_12: -525175517885877657
+      wood-stove-topdown-v1_13: -6360502944296747554
+      wood-stove-topdown-v1_14: -2124244539517941154
+      wood-stove-topdown-v1_15: 52927107731377238
+      wood-stove-topdown-v1_16: -8877300770129496866
+      wood-stove-topdown-v1_17: -2948922882406684267
+      wood-stove-topdown-v1_18: 5615502511352180033
+      wood-stove-topdown-v1_19: -7577034530265251775
+      wood-stove-topdown-v1_2: 4430975014645954001
+      wood-stove-topdown-v1_20: -1378793658698651306
+      wood-stove-topdown-v1_21: -7153361430076969877
+      wood-stove-topdown-v1_22: 1106836179654928812
+      wood-stove-topdown-v1_23: 6717978527359401353
+      wood-stove-topdown-v1_24: 4332512355507960199
+      wood-stove-topdown-v1_25: 3071564098149779874
+      wood-stove-topdown-v1_26: 2286677151079502085
+      wood-stove-topdown-v1_27: -2612678111674916829
+      wood-stove-topdown-v1_28: 5788300491202827548
+      wood-stove-topdown-v1_29: -2229034517224442112
+      wood-stove-topdown-v1_3: 5390297536177167433
+      wood-stove-topdown-v1_30: -1911441959950464695
+      wood-stove-topdown-v1_31: -4881397070075352870
+      wood-stove-topdown-v1_32: 7207379810623971041
+      wood-stove-topdown-v1_33: 2598040388455697261
+      wood-stove-topdown-v1_34: 296727452265781591
+      wood-stove-topdown-v1_35: -1648318763265772547
+      wood-stove-topdown-v1_36: 5293927791507278224
+      wood-stove-topdown-v1_37: 7434066507131462870
+      wood-stove-topdown-v1_38: 66343920834811183
+      wood-stove-topdown-v1_39: -3476660865658262416
+      wood-stove-topdown-v1_4: -8890493269306542609
+      wood-stove-topdown-v1_40: 7091837295331867148
+      wood-stove-topdown-v1_41: -7011455260206253869
+      wood-stove-topdown-v1_42: -1135417649040157964
+      wood-stove-topdown-v1_43: 1893333600385793695
+      wood-stove-topdown-v1_44: 1721781446123923912
+      wood-stove-topdown-v1_45: -4239645333730681919
+      wood-stove-topdown-v1_46: -29700555824242606
+      wood-stove-topdown-v1_47: -7976745182021984839
+      wood-stove-topdown-v1_48: -442969492629890810
+      wood-stove-topdown-v1_49: 3023961326155108658
+      wood-stove-topdown-v1_5: 1932801554134535200
+      wood-stove-topdown-v1_50: 2030971824552911382
+      wood-stove-topdown-v1_51: -1563030341493684133
+      wood-stove-topdown-v1_52: 5101968470463580775
+      wood-stove-topdown-v1_53: 8922197775035440314
+      wood-stove-topdown-v1_54: 8849536628463870957
+      wood-stove-topdown-v1_55: 1934871099537692231
+      wood-stove-topdown-v1_56: 6610775164520495954
+      wood-stove-topdown-v1_6: -5352899508963809788
+      wood-stove-topdown-v1_7: 2002425465624290906
+      wood-stove-topdown-v1_8: -1785689855889137082
+      wood-stove-topdown-v1_9: -4173089259761804972
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

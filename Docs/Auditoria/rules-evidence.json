@@ -1,0 +1,86 @@
+{
+  "scope": "regras C# reais; sem Unity, fisica, transporte, serializacao ou dispositivo",
+  "failures": 0,
+  "results": [
+    {
+      "name": "starter_equipment",
+      "status": "CONFIRMED",
+      "evidence": "Uma pistola e 24 tiros de reserva, distribuidos sob limite de 20."
+    },
+    {
+      "name": "inventory_full_atomic",
+      "status": "CONFIRMED",
+      "evidence": "Adicionar metal a mochila cheia falha sem consumir ou sobrescrever madeira."
+    },
+    {
+      "name": "negative_remove_rejected",
+      "status": "CONFIRMED",
+      "evidence": "Remocao negativa rejeitada."
+    },
+    {
+      "name": "pistol_transfer_preserves_rounds",
+      "status": "CONFIRMED",
+      "evidence": "Transferencia conserva os tiros da pistola e remove a origem."
+    },
+    {
+      "name": "craft_cost_and_output",
+      "status": "CONFIRMED",
+      "evidence": "Receita consome recursos e acrescenta exatamente 12 tiros aos 24 iniciais."
+    },
+    {
+      "name": "craft_full_rollback",
+      "status": "CONFIRMED",
+      "evidence": "Receita sem espaco desfaz o consumo de todos os ingredientes."
+    },
+    {
+      "name": "repair_insufficient_atomic",
+      "status": "CONFIRMED",
+      "evidence": "Reparo sem pregos suficientes conserva os materiais."
+    },
+    {
+      "name": "food_buff_consumed_once",
+      "status": "CONFIRMED",
+      "evidence": "Buff de alimento consumido uma unica vez."
+    },
+    {
+      "name": "client_declared_fishing_duration",
+      "status": "CONFIRMED",
+      "evidence": "CatchFish aceito imediatamente com Duration=4, sem relogio, inicio ou fisgada no servidor."
+    },
+    {
+      "name": "immediate_replay_rejected",
+      "status": "CONFIRMED",
+      "evidence": "Mesmo Id rejeitado enquanto consta no historico."
+    },
+    {
+      "name": "replay_after_256_actions",
+      "status": "CONFIRMED",
+      "evidence": "Apos 256 transferencias legitimas o Id original sai do historico e a mesma captura e creditada outra vez."
+    },
+    {
+      "name": "out_of_range_cooking_result",
+      "status": "CONFIRMED",
+      "evidence": "Result=999, fora do dominio 0..3, produz peixe assado de qualidade maxima."
+    },
+    {
+      "name": "client_declared_perfect_cooking",
+      "status": "CONFIRMED",
+      "evidence": "Qualidade perfeita aceita apenas pela declaracao Result=3, sem validar os dois lados no servidor."
+    },
+    {
+      "name": "queue_deadline",
+      "status": "CONFIRMED",
+      "evidence": "Espera de 30 segundos preservada."
+    },
+    {
+      "name": "bot_extraction_boundary",
+      "status": "CONFIRMED",
+      "evidence": "Extracao de bot liberada somente no ultimo minuto."
+    },
+    {
+      "name": "bot_collect_without_capacity",
+      "status": "CONFIRMED",
+      "evidence": "A politica continua escolhendo Collect; BotSituation nao recebe capacidade da mochila."
+    }
+  ]
+}

@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 782b7fd40d1451c47b2b284bc40850ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1323823186458717907
+    second: ammo-bench-broken-high-angle-v3_0
+  - first:
+      213: 4963757811503907861
+    second: ammo-bench-broken-high-angle-v3_1
+  - first:
+      213: -8707005400943088179
+    second: ammo-bench-broken-high-angle-v3_2
+  - first:
+      213: -2318726966178287446
+    second: ammo-bench-broken-high-angle-v3_3
+  - first:
+      213: 3981668526686138243
+    second: ammo-bench-broken-high-angle-v3_4
+  - first:
+      213: 1851269671364134562
+    second: ammo-bench-broken-high-angle-v3_5
+  - first:
+      213: 6607566037238073527
+    second: ammo-bench-broken-high-angle-v3_6
+  - first:
+      213: -5572893228146660189
+    second: ammo-bench-broken-high-angle-v3_7
+  - first:
+      213: -987083610474421982
+    second: ammo-bench-broken-high-angle-v3_8
+  - first:
+      213: -4706752729149555497
+    second: ammo-bench-broken-high-angle-v3_9
+  - first:
+      213: -3740451423045585936
+    second: ammo-bench-broken-high-angle-v3_10
+  - first:
+      213: 3813214389088681449
+    second: ammo-bench-broken-high-angle-v3_11
+  - first:
+      213: -9216424962156350719
+    second: ammo-bench-broken-high-angle-v3_12
+  - first:
+      213: 2689031740686322515
+    second: ammo-bench-broken-high-angle-v3_13
+  - first:
+      213: 3105586505367815535
+    second: ammo-bench-broken-high-angle-v3_14
+  - first:
+      213: -1777934137855862780
+    second: ammo-bench-broken-high-angle-v3_15
+  - first:
+      213: -499102041869909641
+    second: ammo-bench-broken-high-angle-v3_16
+  - first:
+      213: -5927956095260831637
+    second: ammo-bench-broken-high-angle-v3_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_0
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1010
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de2c469c2a2f5210800000000000000
+      internalID: 1323823186458717907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_1
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 975
+        width: 57
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514c2c13e6fc2e440800000000000000
+      internalID: 4963757811503907861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_2
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1007
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd216338b08a2780800000000000000
+      internalID: -8707005400943088179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 1517
+        height: 993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0f2d10c1a32dfd0800000000000000
+      internalID: -2318726966178287446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_4
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 997
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fea72ed6ab14730800000000000000
+      internalID: 3981668526686138243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_5
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 951
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a60d1925f701b910800000000000000
+      internalID: 1851269671364134562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_6
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 965
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8c28f6d4ac2bb50800000000000000
+      internalID: 6607566037238073527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_7
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 967
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac632da22b19a2b0800000000000000
+      internalID: -5572893228146660189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_8
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 933
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221ef02afac2d42f0800000000000000
+      internalID: -987083610474421982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_9
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 99
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcb07d84514eaeb0800000000000000
+      internalID: -4706752729149555497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_10
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 97
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f373cd9f3f371cc0800000000000000
+      internalID: -3740451423045585936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_11
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 94
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edf90a98424be430800000000000000
+      internalID: 3813214389088681449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_12
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 103
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103b0afd35ea81080800000000000000
+      internalID: -9216424962156350719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_13
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 97
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bcb5dfe1c515520800000000000000
+      internalID: 2689031740686322515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_14
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 89
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6502b7f872491b20800000000000000
+      internalID: 3105586505367815535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_15
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 63
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4089f0f42528357e0800000000000000
+      internalID: -1777934137855862780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_16
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 85
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7710ca75655d219f0800000000000000
+      internalID: -499102041869909641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-bench-broken-high-angle-v3_17
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 66
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60ddd9c65babbda0800000000000000
+      internalID: -5927956095260831637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ammo-bench-broken-high-angle-v3_0: 1323823186458717907
+      ammo-bench-broken-high-angle-v3_1: 4963757811503907861
+      ammo-bench-broken-high-angle-v3_10: -3740451423045585936
+      ammo-bench-broken-high-angle-v3_11: 3813214389088681449
+      ammo-bench-broken-high-angle-v3_12: -9216424962156350719
+      ammo-bench-broken-high-angle-v3_13: 2689031740686322515
+      ammo-bench-broken-high-angle-v3_14: 3105586505367815535
+      ammo-bench-broken-high-angle-v3_15: -1777934137855862780
+      ammo-bench-broken-high-angle-v3_16: -499102041869909641
+      ammo-bench-broken-high-angle-v3_17: -5927956095260831637
+      ammo-bench-broken-high-angle-v3_2: -8707005400943088179
+      ammo-bench-broken-high-angle-v3_3: -2318726966178287446
+      ammo-bench-broken-high-angle-v3_4: 3981668526686138243
+      ammo-bench-broken-high-angle-v3_5: 1851269671364134562
+      ammo-bench-broken-high-angle-v3_6: 6607566037238073527
+      ammo-bench-broken-high-angle-v3_7: -5572893228146660189
+      ammo-bench-broken-high-angle-v3_8: -987083610474421982
+      ammo-bench-broken-high-angle-v3_9: -4706752729149555497
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

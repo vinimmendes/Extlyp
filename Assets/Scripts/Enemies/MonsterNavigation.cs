@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CyberExtraction.Core;
+using CyberExtraction.Match;
 
 namespace CyberExtraction.Enemies
 {
@@ -9,6 +10,7 @@ namespace CyberExtraction.Enemies
     // com CircleCast, impedindo que diagonais cortem quinas.
     public sealed class MonsterNavigation
     {
+        static readonly Unity.Profiling.ProfilerMarker SearchMarker=new Unity.Profiling.ProfilerMarker("CE.PathSearch");
         const float Cell = 0.5f;
         const float RepathInterval = 0.5f;
         Vector2 Min;
@@ -26,6 +28,10 @@ namespace CyberExtraction.Enemies
         int waypoint;
         Vector2 progressPosition;
         float nextRepath, progressAt;
+        Vector2 previousGoal;
+        bool globalPath;
+        float globalUntil;
+        int geometryVersion=-1;
 
         struct Candidate
         {
@@ -41,10 +47,18 @@ namespace CyberExtraction.Enemies
 
         public bool TryGetWaypoint(Vector2 from, Vector2 goal, out Vector2 next)
         {
+            if(MapBuilder.Current==ExpeditionMap.Large)
+            {
+                if(geometryVersion!=LargeMapPlan.GeometryVersion)
+                { geometryVersion=LargeMapPlan.GeometryVersion; initialized=false; nextRepath=0; globalPath=false; }
+                if(!ClearSegment(from,goal) && LargeMapPlan.TryWaypoint(from,goal,out var routePoint)) goal=routePoint;
+            }
             next = from;
+            if((goal-previousGoal).sqrMagnitude>4) { nextRepath=0; previousGoal=goal; globalPath=false; }
             if (ClearSegment(from, goal))
             {
                 path.Clear();
+                globalPath=false;
                 waypoint = 0;
                 next = goal;
                 progressPosition = from;
@@ -62,10 +76,11 @@ namespace CyberExtraction.Enemies
             else if (Time.time - progressAt > 1f)
             {
                 nextRepath = 0f;
+                globalPath=false;
                 progressAt = Time.time;
             }
 
-            if (Time.time >= nextRepath)
+            if (Time.time >= nextRepath && (!globalPath || Time.time>=globalUntil))
             {
                 FindPath(from, goal);
                 nextRepath = Time.time + RepathInterval;
@@ -131,6 +146,7 @@ namespace CyberExtraction.Enemies
 
         void FindPath(Vector2 from, Vector2 goal)
         {
+            using var sample=SearchMarker.Auto();
             if (!initialized || from.x < Min.x + 5 || from.y < Min.y + 5 || from.x > Min.x + 25 || from.y > Min.y + 25)
             {
                 Min = from - Vector2.one * 15;
@@ -139,6 +155,7 @@ namespace CyberExtraction.Enemies
                     walkable[i] = Physics2D.OverlapCircle(Position(i), radius, GameConfig.WallMask) == null;
             }
             path.Clear();
+            globalPath=false;
             waypoint = 0;
             heap.Clear();
             Vector2 localGoal = new Vector2(Mathf.Clamp(goal.x, Min.x + 1, Min.x + 29), Mathf.Clamp(goal.y, Min.y + 1, Min.y + 29));
@@ -184,6 +201,18 @@ namespace CyberExtraction.Enemies
                     Push(neighbor, candidateCost + Heuristic(neighbor, end));
                 }
             }
+            // If the nearest end belongs to another component, follow the closest
+            // reachable node instead of failing an otherwise useful partial route.
+            int partial=-1; float best=float.PositiveInfinity;
+            for(int i=0;i<closed.Length;i++)
+            {
+                if(!closed[i]) continue;
+                float distance=(Position(i)-localGoal).sqrMagnitude;
+                if(distance<best) { best=distance; partial=i; }
+            }
+            if(partial>=0 && partial!=start && (Position(partial)-from).sqrMagnitude>.36f)
+            { for(int n=partial;n>=0;n=parents[n]) path.Add(Position(n)); path.Reverse(); }
+            else if(NavigationDetour.Find(from,goal,radius,path,ClearSegment)) { globalPath=true; globalUntil=Time.time+5; }
         }
 
         static float Heuristic(int a, int b)

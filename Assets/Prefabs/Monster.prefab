@@ -284,6 +284,12 @@ MonoBehaviour:
   attackRange: 1.2
   attackCooldown: 0.8
   attackDamage: 15
+  chargeAimSeconds: 3
+  chargeSpeed: 38
+  chargeDuration: 0.5
+  chargeRecovery: 2
+  chargeCooldown: 8
+  chargeDamage: 40
 --- !u!114 &7259253739719442113
 MonoBehaviour:
   m_ObjectHideFlags: 0

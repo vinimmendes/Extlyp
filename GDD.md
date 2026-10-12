@@ -1,6 +1,12 @@
 # Cyber Extraction - Documento de Design (MVP)
 
-Versao 0.1 - 08/10/2026
+Versao atual: protocolo 11 — 10/10/2026. Resumo tecnico e validacao em README.md, SERVER_SETUP.md e Docs/Auditoria/IMPLEMENTACAO_2026-10-10.md.
+
+O MVP e as tabelas abaixo conservam o historico de design; secoes antigas nao substituem o estado atual descrito no topo.
+
+Versao original 0.1 - 08/10/2026
+
+Nova etapa autorizada: mapa de expedicao 900 x 1380, pistola com carregador 12/reserva 24/recarga 1,5s, mochila e bau seguro de nove slots e pilhas de 20. Fabricacao de 12 tiros por 3 metais + 1 polvora + 1 componente; Reciclador de 10/20/30%; baus de exploracao com abertura em 2/4/6s. Pesca com tensao e fogueira com controle de cozimento substituem o buff automatico do pier. Detalhes e controles em EXPANSION_SETUP.md.
 
 Atualizacao do prototipo: servidor dedicado no PC, partidas de 5 participantes com preenchimento por bots apos 30 segundos e acampamento pessoal jogavel. Madeira (M), pregos (P) e bandagens (B) substituem o loot generico. Reparo do pier, pesca e buff Bem alimentado definem o inicio da meta-progressao. Regras e limites atuais estao em CAMP_ITEMS.md e SERVER_SETUP.md; as secoes originais abaixo documentam o MVP anterior.
 
@@ -67,12 +73,12 @@ Vista de cima, 30 x 46 unidades.
 - **Botao ATIRAR (canto inferior direito):** segurar dispara na direcao da mira atual. E possivel soltar a mira e disparar depois; com movimento, mire simultaneamente para manter a direcao desejada.
 - No editor: WASD, mouse para mirar e botao esquerdo para atirar.
 
-## 10. Rede
-- Unity 6 + Netcode for GameObjects, Unity Transport (UDP).
-- Um jogador cria a partida (Host) e o outro entra pelo IP (mesma rede Wi-Fi).
-- Movimento: autoritativo no proprio jogador (simples, para o MVP).
-- Tiro, dano, loot, extracao e regras da partida: autoritativos no servidor.
-- Risco conhecido: o movimento pode ser trapaceado. Em fase posterior, movimento passa a ser validado no servidor e a visibilidade filtrada no servidor.
+## 10. Rede atual
+- Servidor Windows autoritativo, Netcode for GameObjects e Unity Transport; cinco participantes, ate tres salas.
+- Movimento: servidor recebe entradas sequenciadas; nao ha previsao/reconciliacao local nesta etapa.
+- Tiro, dano, loot, extracao, acampamento e minigames sao autoritativos no servidor.
+- Visibilidade de objetos, efeitos e inventarios privados e filtrada na replicacao.
+- Login exige prova de posse da chave do aparelho. Transporte publico protegido e recuperacao de conta ainda exigem projeto/validacao adicionais.
 
 ## 11. Roteiro
 1. Um jogador, sem rede. (feito)
@@ -85,8 +91,8 @@ Vista de cima, 30 x 46 unidades.
 
 Depois do MVP: base entre expedicoes, crafting, mais monstros, mais armas, inventario, matchmaking online, arte e som pos-apocalipticos.
 
-## 12. Fora de escopo (por enquanto)
-Base e meta-progressao, crafting, inventario com grade, varias armas, mais de um monstro, servidor dedicado, matchmaking, anti-cheat, arte final e audio.
+## 12. Escopo restante
+Squads, matchmaking hospedado, sistema de contas/recuperacao, arte final, audio completo, protecao de transporte e anti-cheat abrangente. Acampamento, crafting, inventario, servidor autoritativo e multiplos monstros ja existem no prototipo atual.
 
 ## 13. Decisoes em aberto
 - Numero final de jogadores por partida (squads de 2 a 4).
@@ -107,6 +113,6 @@ A IA roda no servidor e usa as regras existentes de vida, velocidade, dano, disp
 
 Facil combate de forma mais direta e ignora mais sons. Medio alterna combate, coleta e posicoes proximas de cobertura. Dificil prioriza posicoes de tiro com cobertura proxima, reage antes e recua com mais cautela. Nenhum nivel ganha dano, vida, velocidade ou visao extra. A dispersao normal da arma continua somada ao erro de mira da IA.
 
-Prazos e sobrevivencia podem antecipar a extracao. Monstro em alcance perigoso de melee provoca recuo. Sons nao permitem atirar em alvos invisiveis; alvo perdido vira investigacao da ultima posicao vista. Sao sete estados: Idle, Explore, Collect, Investigate, Engage, Retreat, Extract.
+Distancia e prazo podem antecipar o deslocamento para a saida; concluir a extracao continua permitido aos bots somente no ultimo minuto. Monstro em alcance perigoso de melee provoca recuo. Sons nao permitem atirar em alvos invisiveis; alvo perdido vira investigacao da ultima posicao vista. Sao sete estados: Idle, Explore, Collect, Investigate, Engage, Retreat, Extract.
 
 Os numeros sao iniciais para balanceamento em testes, nao garantia de dificuldade competitiva final. A navegacao usa o mapa estatico atual; paredes movidas em execucao precisariam de atualizacao da grade.

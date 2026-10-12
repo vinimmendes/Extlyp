@@ -10,6 +10,7 @@ namespace CyberExtraction.Combat
 
         public bool ForceHidden;
         SpriteRenderer[] rends;
+        public void Refresh() { rends = null; }
 
         private void OnEnable() { All.Add(this); }
         private void OnDisable() { All.Remove(this); }

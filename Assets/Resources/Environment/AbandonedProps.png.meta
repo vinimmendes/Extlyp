@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: b804fc715ff33c14d94b3f81ec0aa84d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4558638577111092680
+    second: AbandonedProps_0
+  - first:
+      213: -8626233487321232961
+    second: AbandonedProps_1
+  - first:
+      213: 2149957524727343987
+    second: AbandonedProps_2
+  - first:
+      213: -7847847042262514741
+    second: AbandonedProps_3
+  - first:
+      213: 859386870227074910
+    second: AbandonedProps_4
+  - first:
+      213: 5122695836114112267
+    second: AbandonedProps_5
+  - first:
+      213: -3136516806273640897
+    second: AbandonedProps_6
+  - first:
+      213: -348023477715389811
+    second: AbandonedProps_7
+  - first:
+      213: 3739727171910101233
+    second: AbandonedProps_8
+  - first:
+      213: 1828689514422536201
+    second: AbandonedProps_9
+  - first:
+      213: -5906636730219164572
+    second: AbandonedProps_10
+  - first:
+      213: 4872579493391215441
+    second: AbandonedProps_11
+  - first:
+      213: 2268608832576723643
+    second: AbandonedProps_12
+  - first:
+      213: 7232220579440771240
+    second: AbandonedProps_13
+  - first:
+      213: -4526811310814718457
+    second: AbandonedProps_14
+  - first:
+      213: 4038548550964543933
+    second: AbandonedProps_15
+  - first:
+      213: 5597485731101239516
+    second: AbandonedProps_16
+  - first:
+      213: 9117292502729623253
+    second: AbandonedProps_17
+  - first:
+      213: -6640633350712708746
+    second: AbandonedProps_18
+  - first:
+      213: 2676449756361794694
+    second: AbandonedProps_19
+  - first:
+      213: -7305550543505029830
+    second: AbandonedProps_20
+  - first:
+      213: -8004889242832978698
+    second: AbandonedProps_21
+  - first:
+      213: 8047462611400703641
+    second: AbandonedProps_22
+  - first:
+      213: 8055837428098546391
+    second: AbandonedProps_23
+  - first:
+      213: 2850876187888092465
+    second: AbandonedProps_24
+  - first:
+      213: 6648213048953063654
+    second: AbandonedProps_25
+  - first:
+      213: -219835014374368510
+    second: AbandonedProps_26
+  - first:
+      213: 6105416428222632676
+    second: AbandonedProps_27
+  - first:
+      213: -2933225254291232844
+    second: AbandonedProps_28
+  - first:
+      213: -4177000021069455332
+    second: AbandonedProps_29
+  - first:
+      213: 443610435834121792
+    second: AbandonedProps_30
+  - first:
+      213: -4882686324133478095
+    second: AbandonedProps_31
+  - first:
+      213: 282870001434705237
+    second: AbandonedProps_32
+  - first:
+      213: -4073407058092254808
+    second: AbandonedProps_33
+  - first:
+      213: -5413676580888237366
+    second: AbandonedProps_34
+  - first:
+      213: 5284353444833415709
+    second: AbandonedProps_35
+  - first:
+      213: -4763294359296684088
+    second: AbandonedProps_36
+  - first:
+      213: -2621971722348745208
+    second: AbandonedProps_37
+  - first:
+      213: -1254524935219215955
+    second: AbandonedProps_38
+  - first:
+      213: 5137528419246901585
+    second: AbandonedProps_39
+  - first:
+      213: -5549416223241603699
+    second: AbandonedProps_40
+  - first:
+      213: 7794669074554389957
+    second: AbandonedProps_41
+  - first:
+      213: -397693769812044471
+    second: AbandonedProps_42
+  - first:
+      213: 8636889704783245546
+    second: AbandonedProps_43
+  - first:
+      213: 3355780680560032034
+    second: AbandonedProps_44
+  - first:
+      213: -6716490453898948470
+    second: AbandonedProps_45
+  - first:
+      213: -3170565840484189285
+    second: AbandonedProps_46
+  - first:
+      213: 6994802916569239731
+    second: AbandonedProps_47
+  - first:
+      213: 3141340412554856013
+    second: AbandonedProps_48
+  - first:
+      213: 528054926655396756
+    second: AbandonedProps_49
+  - first:
+      213: -3024680196098776892
+    second: AbandonedProps_50
+  - first:
+      213: -3877826085527414290
+    second: AbandonedProps_51
+  - first:
+      213: -3232040449674358767
+    second: AbandonedProps_52
+  - first:
+      213: -6147295576719518653
+    second: AbandonedProps_53
+  - first:
+      213: 5714624489849783254
+    second: AbandonedProps_54
+  - first:
+      213: 1092378756677631088
+    second: AbandonedProps_55
+  - first:
+      213: 5260496526562074939
+    second: AbandonedProps_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestTree
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 527
+        width: 453
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c103ac41f2c75de438b2cdf91ce558e2
+      internalID: -618311979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 528
+        width: 485
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89758de94da69b40aa373030f02b08a
+      internalID: 2047083210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wardrobe
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 607
+        width: 403
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3218b9f6f003904789c361494da84b1
+      internalID: -1621829091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bed
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 41
+        width: 263
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f66775c9aa5484c964cc92f706b06f
+      internalID: 981236912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 104
+        width: 427
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e9dd9d8a5781e40845ff67086e447b
+      internalID: 1273793306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabinet
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 134
+        width: 327
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d2295063a66c74791a1b9995a89b6a
+      internalID: 1743058611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 59c6d601cf8d6924aa3dc6c96c23b2e1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bed: 981236912
+      Cabinet: 1743058611
+      DeadTree: 2047083210
+      ForestTree: -618311979
+      Table: 1273793306
+      Wardrobe: -1621829091
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,6 +9,29 @@ namespace CyberExtraction.Core
         static Texture2D circleTex;
         static Material unlit;
         static Material spriteMaterial;
+        static bool ownsUnlit, ownsSpriteMaterial;
+        static readonly System.Collections.Generic.Dictionary<int, Sprite> polygons = new System.Collections.Generic.Dictionary<int, Sprite>();
+        public static Sprite Polygon(int sides)
+        {
+            if (polygons.TryGetValue(sides, out var sprite)) return sprite;
+            const int size = 64;
+            var texture = new Texture2D(size, size, TextureFormat.RGBA32, false);
+            for (int y=0;y<size;y++) for (int x=0;x<size;x++)
+            {
+                Vector2 p = new Vector2((x+.5f)/size-.5f,(y+.5f)/size-.5f);
+                bool inside = true;
+                for (int i=0;i<sides;i++)
+                {
+                    float a=i*Mathf.PI*2/sides, b=(i+1)*Mathf.PI*2/sides;
+                    Vector2 v=new Vector2(Mathf.Cos(a),Mathf.Sin(a))*.5f, w=new Vector2(Mathf.Cos(b),Mathf.Sin(b))*.5f;
+                    if ((w.x-v.x)*(p.y-v.y)-(w.y-v.y)*(p.x-v.x)<0) { inside=false; break; }
+                }
+                texture.SetPixel(x,y,inside ? Color.white : Color.clear);
+            }
+            texture.Apply();
+            sprite=Sprite.Create(texture,new Rect(0,0,size,size),new Vector2(.5f,.5f),size);
+            polygons.Add(sides,sprite); return sprite;
+        }
 
         public static Sprite Square
         {
@@ -70,7 +93,7 @@ namespace CyberExtraction.Core
                 if (unlit == null)
                 {
                     var sh = Shader.Find("Sprites/Default");
-                    if (sh != null) unlit = new Material(sh);
+                    if (sh != null) { unlit = new Material(sh); ownsUnlit=true; }
                 }
                 return unlit;
             }
@@ -86,7 +109,7 @@ namespace CyberExtraction.Core
                 if (spriteMaterial == null)
                 {
                     var shader = Shader.Find("Universal Render Pipeline/2D/Sprite-Unlit-Default");
-                    if (shader != null) spriteMaterial = new Material(shader);
+                    if (shader != null) { spriteMaterial = new Material(shader); ownsSpriteMaterial=true; }
                     else
                     {
                         Debug.LogError("Shader de sprites URP 2D nao encontrado. Verifique o template Universal 2D e execute Cyber Extraction > Atualizar material dos sprites.");
@@ -104,6 +127,16 @@ namespace CyberExtraction.Core
             sr.sortingOrder = order;
             var m = SpriteMaterial;
             if (m != null) sr.sharedMaterial = m;
+        }
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void Reset()
+        {
+            if(square!=null) { Object.Destroy(square.texture); Object.Destroy(square); }
+            if(circle!=null) Object.Destroy(circle);
+            if(circleTex!=null) Object.Destroy(circleTex);
+            foreach(var value in polygons.Values) if(value!=null) { Object.Destroy(value.texture); Object.Destroy(value); }
+            polygons.Clear(); if(ownsSpriteMaterial && spriteMaterial!=null) Object.Destroy(spriteMaterial); if(ownsUnlit && unlit!=null) Object.Destroy(unlit);
+            square=circle=null; circleTex=null; unlit=spriteMaterial=null; ownsUnlit=ownsSpriteMaterial=false;
         }
     }
 }

@@ -22,6 +22,10 @@ namespace CyberExtraction.Players
         float lastFire;
         double lastInputTime;
         Vector2 previousPosition;
+        uint inputSequence,lastSequence;
+        float nextInputSend;
+        Vector2 sentMove;
+        float sentFacing;
 
         // 0 = parado, 1 = velocidade maxima (controla a abertura do cone de mira)
         public float Speed01 { get; private set; }
@@ -34,12 +38,6 @@ namespace CyberExtraction.Players
             rb.gravityScale = 0f;
             rb.freezeRotation = true;
             GetComponent<NetworkTransform>().AuthorityMode = NetworkTransform.AuthorityModes.Server;
-
-            var nose = new GameObject("Nose");
-            nose.transform.SetParent(transform, false);
-            nose.transform.localPosition = new Vector3(0.5f, 0f, 0f);
-            nose.transform.localScale = new Vector3(0.5f, 0.25f, 1f);
-            SpriteFactory.Setup(nose.AddComponent<SpriteRenderer>(), SpriteFactory.Square, Color.white, 6);
         }
 
         public override void OnNetworkSpawn()
@@ -55,7 +53,7 @@ namespace CyberExtraction.Players
             if (cam != null)
             {
                 cam.orthographic = true;
-                cam.orthographicSize = 7f;
+                cam.orthographicSize = GameConfig.ExpeditionCameraSize;
                 cam.backgroundColor = Color.black;
                 var follow = cam.GetComponent<CameraFollow>();
                 if (follow == null) follow = cam.gameObject.AddComponent<CameraFollow>();
@@ -79,12 +77,14 @@ namespace CyberExtraction.Players
             fireHeld = false;
 
             var mm = MatchManager.Instance;
-            bool canAct = mm != null && mm.CurrentState == MatchState.Running && inv.IsAlive;
+            bool canAct = mm != null && mm.CurrentState == MatchState.Running && inv.IsAlive && !CyberExtraction.UI.UiLayout.BlocksGameplay && inv.FishingPhase.Value == 0;
             if (!canAct) return;
 
             ReadInput();
+            if (GameInput.ReloadPressed) shooter.RequestReload();
+            if (GameInput.WeaponPressed) inv.RequestNextWeapon();
 
-            if (fireHeld && Time.time - lastFire >= GameConfig.FireCooldown)
+            if (fireHeld && Time.time - lastFire >= shooter.FireCooldown)
             {
                 lastFire = Time.time;
                 shooter.RequestFire(facing);
@@ -93,21 +93,26 @@ namespace CyberExtraction.Players
 
         private void FixedUpdate()
         {
-            if (IsOwner) SubmitInputServerRpc(moveInput, facing);
+            if(IsOwner && (Time.unscaledTime>=nextInputSend || (moveInput-sentMove).sqrMagnitude>.001f || Mathf.Abs(Mathf.DeltaAngle(facing,sentFacing))>1))
+            {
+                SubmitInputServerRpc(moveInput,facing,++inputSequence); sentMove=moveInput; sentFacing=facing; nextInputSend=Time.unscaledTime+1f/30;
+            }
             if (!IsServer) return;
             var mm = MatchManager.Instance;
-            bool canAct = mm != null && mm.CurrentState == MatchState.Running && inv.IsAlive;
+            bool canAct = mm != null && mm.CurrentState == MatchState.Running && inv.IsAlive && !inv.Lockpicking.Value && inv.FishingPhase.Value==0;
             rb.linearVelocity = canAct && Time.timeAsDouble - lastInputTime < 0.5
-                ? moveInput * GameConfig.PlayerSpeed : Vector2.zero;
+                ? moveInput * GameConfig.PlayerSpeed * inv.ServerMovementMultiplier : Vector2.zero;
             if (canAct) rb.rotation = facing;
         }
 
-        [ServerRpc]
-        void SubmitInputServerRpc(Vector2 movement, float angle)
+        [ServerRpc(Delivery=RpcDelivery.Unreliable)]
+        void SubmitInputServerRpc(Vector2 movement, float angle, uint sequence)
         {
             if (float.IsNaN(movement.x) || float.IsInfinity(movement.x) ||
                 float.IsNaN(movement.y) || float.IsInfinity(movement.y) ||
                 float.IsNaN(angle) || float.IsInfinity(angle)) return;
+            if(unchecked((int)(sequence-lastSequence))<=0) return;
+            lastSequence=sequence;
             moveInput = Vector2.ClampMagnitude(movement, 1f);
             facing = Mathf.Repeat(angle, 360f);
             lastInputTime = Time.timeAsDouble;
@@ -126,23 +131,17 @@ namespace CyberExtraction.Players
             }
             else
             {
-                var kb = Keyboard.current;
-                if (kb != null)
-                {
-                    float x = 0f, y = 0f;
-                    if (kb.aKey.isPressed || kb.leftArrowKey.isPressed) x -= 1f;
-                    if (kb.dKey.isPressed || kb.rightArrowKey.isPressed) x += 1f;
-                    if (kb.sKey.isPressed || kb.downArrowKey.isPressed) y -= 1f;
-                    if (kb.wKey.isPressed || kb.upArrowKey.isPressed) y += 1f;
-                    moveInput = new Vector2(x, y);
-                }
+                moveInput=GameInput.Move;
+                var stick=GameInput.GamepadAim;
+                if(stick.sqrMagnitude>.0625f) facing=Angle(stick);
+                fireHeld=GameInput.Fire;
                 var ms = Mouse.current;
                 if (ms != null && cam != null)
                 {
                     Vector2 w = cam.ScreenToWorldPoint(ms.position.ReadValue());
                     Vector2 d = w - (Vector2)transform.position;
                     if (d.sqrMagnitude > 0.01f) facing = Angle(d);
-                    fireHeld = ms.leftButton.isPressed && !CyberExtraction.UI.Quickbar.ContainsScreenPoint(ms.position.ReadValue());
+                    fireHeld = GameInput.Fire && !CyberExtraction.UI.UiLayout.ContainsControl(ms.position.ReadValue());
                 }
             }
             moveInput = Vector2.ClampMagnitude(moveInput, 1f);

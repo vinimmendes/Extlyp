@@ -21,7 +21,7 @@ namespace CyberExtraction.Diagnostics
                 if (args[i] == "-expected-humans") int.TryParse(args[i + 1], out expected);
             double deadline = Time.realtimeSinceStartupAsDouble + 55;
             while (MatchManager.Instance == null || MatchManager.Instance.CurrentState != MatchState.Running ||
-                PlayerInventory.All.Count < GameConfig.MatchCapacity)
+                MatchManager.Instance.HumanCount.Value+MatchManager.Instance.BotCount.Value < GameConfig.MatchCapacity)
             {
                 if (Time.realtimeSinceStartupAsDouble > deadline)
                 { Fail($"A partida nao iniciou com {GameConfig.MatchCapacity} participantes dentro do prazo."); yield break; }

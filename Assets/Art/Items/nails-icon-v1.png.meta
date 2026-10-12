@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: d01a60f1f3915a54f922cda16c0b4dc0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9193418855560123879
+    second: nails-icon-v1_0
+  - first:
+      213: -1972827041017948908
+    second: nails-icon-v1_1
+  - first:
+      213: 8899678708047113062
+    second: nails-icon-v1_2
+  - first:
+      213: -8238426953293317145
+    second: nails-icon-v1_3
+  - first:
+      213: 5147009469062663825
+    second: nails-icon-v1_4
+  - first:
+      213: -6645572283477352293
+    second: nails-icon-v1_5
+  - first:
+      213: -103114938805550161
+    second: nails-icon-v1_6
+  - first:
+      213: 3278372783047372034
+    second: nails-icon-v1_7
+  - first:
+      213: 8132526266540575291
+    second: nails-icon-v1_8
+  - first:
+      213: -5540188719264472229
+    second: nails-icon-v1_9
+  - first:
+      213: -5539714580898342143
+    second: nails-icon-v1_10
+  - first:
+      213: -5233294276995328343
+    second: nails-icon-v1_11
+  - first:
+      213: 345457717549820609
+    second: nails-icon-v1_12
+  - first:
+      213: -459819896199177136
+    second: nails-icon-v1_13
+  - first:
+      213: 5281820025317940419
+    second: nails-icon-v1_14
+  - first:
+      213: 7512800427569460367
+    second: nails-icon-v1_15
+  - first:
+      213: -8128640228539426209
+    second: nails-icon-v1_16
+  - first:
+      213: -7330098170755420150
+    second: nails-icon-v1_17
+  - first:
+      213: 2310707587552911593
+    second: nails-icon-v1_18
+  - first:
+      213: -1882828706238928302
+    second: nails-icon-v1_19
+  - first:
+      213: 1656749356382924659
+    second: nails-icon-v1_20
+  - first:
+      213: 6231155139997708827
+    second: nails-icon-v1_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nails-icon-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1241
+        height: 1236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e51a058db5959f70800000000000000
+      internalID: 9193418855560123879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_1
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1068
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41517d8324c1f94e0800000000000000
+      internalID: -1972827041017948908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_2
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1066
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b6148e1a2028b70800000000000000
+      internalID: 8899678708047113062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_3
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1046
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ebb2f4c55a3bad80800000000000000
+      internalID: -8238426953293317145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1041
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e4d0397d9dd6740800000000000000
+      internalID: 5147009469062663825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1012
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90a62ac73f26c3a0800000000000000
+      internalID: -6645572283477352293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1013
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3857d6289a19ef0800000000000000
+      internalID: -103114938805550161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1000
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20de8d63dae1f7d20800000000000000
+      internalID: 3278372783047372034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 998
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a4fab2d898cd070800000000000000
+      internalID: 8132526266540575291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_9
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 987
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b536d9786bb4d13b0800000000000000
+      internalID: -5540188719264472229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_10
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 256
+        width: 282
+        height: 711
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b908870fafe13b0800000000000000
+      internalID: -5539714580898342143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 226
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6db9e059a9f57b0800000000000000
+      internalID: -5233294276995328343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_12
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca697bb6ff4bc400800000000000000
+      internalID: 345457717549820609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 89
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c146a9d346e99f0800000000000000
+      internalID: -459819896199177136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_14
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 87
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ccde98245bcc4940800000000000000
+      internalID: 5281820025317940419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_15
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 79
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f843ea13f24d24860800000000000000
+      internalID: 7512800427569460367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_16
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 26
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a15fe87c4413f80800000000000000
+      internalID: -8128640228539426209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_17
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 43
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00f16bdc82464a90800000000000000
+      internalID: -7330098170755420150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_18
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e024e7ee48411020800000000000000
+      internalID: 2310707587552911593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_19
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 15
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a68bf6449ded5e0800000000000000
+      internalID: -1882828706238928302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_20
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 6
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37faf0503c4fdf610800000000000000
+      internalID: 1656749356382924659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nails-icon-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 0
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12b9e3f592897650800000000000000
+      internalID: 6231155139997708827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nails-icon-v1_0: 9193418855560123879
+      nails-icon-v1_1: -1972827041017948908
+      nails-icon-v1_10: -5539714580898342143
+      nails-icon-v1_11: -5233294276995328343
+      nails-icon-v1_12: 345457717549820609
+      nails-icon-v1_13: -459819896199177136
+      nails-icon-v1_14: 5281820025317940419
+      nails-icon-v1_15: 7512800427569460367
+      nails-icon-v1_16: -8128640228539426209
+      nails-icon-v1_17: -7330098170755420150
+      nails-icon-v1_18: 2310707587552911593
+      nails-icon-v1_19: -1882828706238928302
+      nails-icon-v1_2: 8899678708047113062
+      nails-icon-v1_20: 1656749356382924659
+      nails-icon-v1_21: 6231155139997708827
+      nails-icon-v1_3: -8238426953293317145
+      nails-icon-v1_4: 5147009469062663825
+      nails-icon-v1_5: -6645572283477352293
+      nails-icon-v1_6: -103114938805550161
+      nails-icon-v1_7: 3278372783047372034
+      nails-icon-v1_8: 8132526266540575291
+      nails-icon-v1_9: -5540188719264472229
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

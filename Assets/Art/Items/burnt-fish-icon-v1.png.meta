@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: bdd1f60a81cc13b4494ff7e38dba19a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7125828209974822039
+    second: burnt-fish-icon-v1_0
+  - first:
+      213: -4454623331558176851
+    second: burnt-fish-icon-v1_1
+  - first:
+      213: 2208689248400517836
+    second: burnt-fish-icon-v1_2
+  - first:
+      213: -7436653607026987157
+    second: burnt-fish-icon-v1_3
+  - first:
+      213: -5717664217018493
+    second: burnt-fish-icon-v1_4
+  - first:
+      213: 4163875124947455256
+    second: burnt-fish-icon-v1_5
+  - first:
+      213: -4926103223976300477
+    second: burnt-fish-icon-v1_6
+  - first:
+      213: 3253279247383239611
+    second: burnt-fish-icon-v1_7
+  - first:
+      213: 4104951200653311269
+    second: burnt-fish-icon-v1_8
+  - first:
+      213: -2343404335145530529
+    second: burnt-fish-icon-v1_9
+  - first:
+      213: 8617294630556896564
+    second: burnt-fish-icon-v1_10
+  - first:
+      213: -333147195226714523
+    second: burnt-fish-icon-v1_11
+  - first:
+      213: -2412270159053228462
+    second: burnt-fish-icon-v1_12
+  - first:
+      213: -7643441199668048604
+    second: burnt-fish-icon-v1_13
+  - first:
+      213: 3653204583710779044
+    second: burnt-fish-icon-v1_14
+  - first:
+      213: -8998668580494455327
+    second: burnt-fish-icon-v1_15
+  - first:
+      213: -7742087783379363312
+    second: burnt-fish-icon-v1_16
+  - first:
+      213: -86563345741925139
+    second: burnt-fish-icon-v1_17
+  - first:
+      213: 2050808804442773047
+    second: burnt-fish-icon-v1_18
+  - first:
+      213: -2624038673081141309
+    second: burnt-fish-icon-v1_19
+  - first:
+      213: 8505164935602098505
+    second: burnt-fish-icon-v1_20
+  - first:
+      213: -9178060667643990818
+    second: burnt-fish-icon-v1_21
+  - first:
+      213: 3285255920858474428
+    second: burnt-fish-icon-v1_22
+  - first:
+      213: 1026638317566476068
+    second: burnt-fish-icon-v1_23
+  - first:
+      213: -1484864258747436741
+    second: burnt-fish-icon-v1_24
+  - first:
+      213: 2034184939603176542
+    second: burnt-fish-icon-v1_25
+  - first:
+      213: 1794467591104101362
+    second: burnt-fish-icon-v1_26
+  - first:
+      213: 1036780923483783455
+    second: burnt-fish-icon-v1_27
+  - first:
+      213: -7905743077334508135
+    second: burnt-fish-icon-v1_28
+  - first:
+      213: -5540919537888758263
+    second: burnt-fish-icon-v1_29
+  - first:
+      213: 1821994378347952995
+    second: burnt-fish-icon-v1_30
+  - first:
+      213: -3765228988819546176
+    second: burnt-fish-icon-v1_31
+  - first:
+      213: -3561147316037220634
+    second: burnt-fish-icon-v1_32
+  - first:
+      213: -467980246781841540
+    second: burnt-fish-icon-v1_33
+  - first:
+      213: 4923660875766857116
+    second: burnt-fish-icon-v1_34
+  - first:
+      213: -1668247585005922852
+    second: burnt-fish-icon-v1_35
+  - first:
+      213: -3463046224483980483
+    second: burnt-fish-icon-v1_36
+  - first:
+      213: 5719986503363400182
+    second: burnt-fish-icon-v1_37
+  - first:
+      213: -5952868946433236852
+    second: burnt-fish-icon-v1_38
+  - first:
+      213: 4721012273216452484
+    second: burnt-fish-icon-v1_39
+  - first:
+      213: 2660614628478543861
+    second: burnt-fish-icon-v1_40
+  - first:
+      213: -9041676091510171841
+    second: burnt-fish-icon-v1_41
+  - first:
+      213: -7214150359637004282
+    second: burnt-fish-icon-v1_42
+  - first:
+      213: -2243370658013868493
+    second: burnt-fish-icon-v1_43
+  - first:
+      213: -7996465626996783293
+    second: burnt-fish-icon-v1_44
+  - first:
+      213: -4456963753839760025
+    second: burnt-fish-icon-v1_45
+  - first:
+      213: -246783524453004690
+    second: burnt-fish-icon-v1_46
+  - first:
+      213: -6135196422473389002
+    second: burnt-fish-icon-v1_47
+  - first:
+      213: -1880586590576830597
+    second: burnt-fish-icon-v1_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 955
+        width: 272
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794c102b00704e260800000000000000
+      internalID: 7125828209974822039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1052
+        width: 188
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7ce4a7eaffd22c0800000000000000
+      internalID: -4454623331558176851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_2
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1148
+        width: 178
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca23265b27d6ae10800000000000000
+      internalID: 2208689248400517836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_3
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1016
+        width: 194
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f678b02f2bbc890800000000000000
+      internalID: -7436653607026987157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_4
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1173
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f466f80dfabeff0800000000000000
+      internalID: -5717664217018493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_5
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1118
+        width: 98
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d049f6d5e09c930800000000000000
+      internalID: 4163875124947455256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 964
+        width: 162
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3407cf7a737f2abb0800000000000000
+      internalID: -4926103223976300477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_7
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1018
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb9d672d38f52d20800000000000000
+      internalID: 3253279247383239611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_8
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1036
+        width: 51
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52df0473e57b7f830800000000000000
+      internalID: 4104951200653311269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 988
+        width: 52
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b4a8e4c2e8a7fd0800000000000000
+      internalID: -2343404335145530529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_10
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1127
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d89336fc7c69770800000000000000
+      internalID: 8617294630556896564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1132
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e089a146c606bf0800000000000000
+      internalID: -333147195226714523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 1221
+        height: 957
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2567b533215e58ed0800000000000000
+      internalID: -2412270159053228462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_13
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 939
+        width: 75
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d4330c9ba0de590800000000000000
+      internalID: -7643441199668048604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 869
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6e8ef963ac2b230800000000000000
+      internalID: 3653204583710779044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_15
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 357
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1edc8206a9e4e1380800000000000000
+      internalID: -8998668580494455327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_16
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 353
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a18cb2e249e8490800000000000000
+      internalID: -7742087783379363312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 353
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4bb7e78177ccef0800000000000000
+      internalID: -86563345741925139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 339
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7361e03fdbfe57c10800000000000000
+      internalID: 2050808804442773047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_19
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 326
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c77c16caba859bd0800000000000000
+      internalID: -2624038673081141309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_20
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 337
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941dba6527a680670800000000000000
+      internalID: 8505164935602098505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_21
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 345
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc6812437af0a080800000000000000
+      internalID: -9178060667643990818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 343
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7a40f9ad2979d20800000000000000
+      internalID: 3285255920858474428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_23
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 320
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fba574c1a5f3e00800000000000000
+      internalID: 1026638317566476068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 308
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b317fa5e2d3b46be0800000000000000
+      internalID: -1484864258747436741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_25
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 316
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c2f7ccc60ea3c10800000000000000
+      internalID: 2034184939603176542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_26
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 312
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbf5b044ca37e810800000000000000
+      internalID: 1794467591104101362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_27
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 319
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11072eb1c2636e00800000000000000
+      internalID: 1036780923483783455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_28
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 295
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d19fdbe88294290800000000000000
+      internalID: -7905743077334508135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_29
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 264
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9067e1f8903ba13b0800000000000000
+      internalID: -5540919537888758263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_30
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 254
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b3038db36094910800000000000000
+      internalID: 1821994378347952995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_31
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 265
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf58670f283fbbc0800000000000000
+      internalID: -3765228988819546176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_32
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 264
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e604c24263449ec0800000000000000
+      internalID: -3561147316037220634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_33
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 246
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f2bace1766189f0800000000000000
+      internalID: -467980246781841540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_34
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d7296da7b545440800000000000000
+      internalID: 4923660875766857116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_35
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 206
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5915209a139d8e0800000000000000
+      internalID: -1668247585005922852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_36
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 216
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3befdc8ec9c0ffc0800000000000000
+      internalID: -3463046224483980483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_37
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 223
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f111054b69716f40800000000000000
+      internalID: 5719986503363400182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_38
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 224
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80a46d9b39236da0800000000000000
+      internalID: -5952868946433236852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_39
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 218
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487735546a7648140800000000000000
+      internalID: 4721012273216452484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_40
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 168
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7eba678e66ce420800000000000000
+      internalID: 2660614628478543861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_41
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 160
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37d467ef73858280800000000000000
+      internalID: -9041676091510171841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_42
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 152
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6007499587032eb90800000000000000
+      internalID: -7214150359637004282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_43
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 93
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e8c8db542fdd0e0800000000000000
+      internalID: -2243370658013868493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_44
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 99
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3474c3c11e8d60190800000000000000
+      internalID: -7996465626996783293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_45
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 103
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76de693741fa522c0800000000000000
+      internalID: -4456963753839760025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_46
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 95
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a4f8821bf339cf0800000000000000
+      internalID: -246783524453004690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_47
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 83
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ce9330c576bdaa0800000000000000
+      internalID: -6135196422473389002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burnt-fish-icon-v1_48
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 23
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b771e4ba570d6e5e0800000000000000
+      internalID: -1880586590576830597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      burnt-fish-icon-v1_0: 7125828209974822039
+      burnt-fish-icon-v1_1: -4454623331558176851
+      burnt-fish-icon-v1_10: 8617294630556896564
+      burnt-fish-icon-v1_11: -333147195226714523
+      burnt-fish-icon-v1_12: -2412270159053228462
+      burnt-fish-icon-v1_13: -7643441199668048604
+      burnt-fish-icon-v1_14: 3653204583710779044
+      burnt-fish-icon-v1_15: -8998668580494455327
+      burnt-fish-icon-v1_16: -7742087783379363312
+      burnt-fish-icon-v1_17: -86563345741925139
+      burnt-fish-icon-v1_18: 2050808804442773047
+      burnt-fish-icon-v1_19: -2624038673081141309
+      burnt-fish-icon-v1_2: 2208689248400517836
+      burnt-fish-icon-v1_20: 8505164935602098505
+      burnt-fish-icon-v1_21: -9178060667643990818
+      burnt-fish-icon-v1_22: 3285255920858474428
+      burnt-fish-icon-v1_23: 1026638317566476068
+      burnt-fish-icon-v1_24: -1484864258747436741
+      burnt-fish-icon-v1_25: 2034184939603176542
+      burnt-fish-icon-v1_26: 1794467591104101362
+      burnt-fish-icon-v1_27: 1036780923483783455
+      burnt-fish-icon-v1_28: -7905743077334508135
+      burnt-fish-icon-v1_29: -5540919537888758263
+      burnt-fish-icon-v1_3: -7436653607026987157
+      burnt-fish-icon-v1_30: 1821994378347952995
+      burnt-fish-icon-v1_31: -3765228988819546176
+      burnt-fish-icon-v1_32: -3561147316037220634
+      burnt-fish-icon-v1_33: -467980246781841540
+      burnt-fish-icon-v1_34: 4923660875766857116
+      burnt-fish-icon-v1_35: -1668247585005922852
+      burnt-fish-icon-v1_36: -3463046224483980483
+      burnt-fish-icon-v1_37: 5719986503363400182
+      burnt-fish-icon-v1_38: -5952868946433236852
+      burnt-fish-icon-v1_39: 4721012273216452484
+      burnt-fish-icon-v1_4: -5717664217018493
+      burnt-fish-icon-v1_40: 2660614628478543861
+      burnt-fish-icon-v1_41: -9041676091510171841
+      burnt-fish-icon-v1_42: -7214150359637004282
+      burnt-fish-icon-v1_43: -2243370658013868493
+      burnt-fish-icon-v1_44: -7996465626996783293
+      burnt-fish-icon-v1_45: -4456963753839760025
+      burnt-fish-icon-v1_46: -246783524453004690
+      burnt-fish-icon-v1_47: -6135196422473389002
+      burnt-fish-icon-v1_48: -1880586590576830597
+      burnt-fish-icon-v1_5: 4163875124947455256
+      burnt-fish-icon-v1_6: -4926103223976300477
+      burnt-fish-icon-v1_7: 3253279247383239611
+      burnt-fish-icon-v1_8: 4104951200653311269
+      burnt-fish-icon-v1_9: -2343404335145530529
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

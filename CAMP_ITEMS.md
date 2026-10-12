@@ -1,5 +1,9 @@
 # Acampamento e itens — prototipo
 
+Estado atual: acampamento online, persistencia e minigames autoritativos no servidor. Veja SERVER_SETUP.md.
+
+Historico — esta etapa foi ampliada: regras atuais de mochila/baus com nove slots, pistola, fabricacao, Reciclador e minigames estao em EXPANSION_SETUP.md. A pesca nao concede mais buff automaticamente; e necessario preparar e comer o peixe. As secoes abaixo registram a etapa anterior.
+
 ## Fluxo
 
 O cliente abre em um acampamento pessoal. Caminhe com WASD/setas no PC ou com o joystick esquerdo no celular. Aproxime-se de uma estrutura e pressione E ou toque no botao de interacao.

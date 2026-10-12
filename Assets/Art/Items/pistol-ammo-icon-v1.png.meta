@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 95df05001e976144699ec89d65498121
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 282614172376340255
+    second: pistol-ammo-icon-v1_0
+  - first:
+      213: -2883830948964995397
+    second: pistol-ammo-icon-v1_1
+  - first:
+      213: 2226737316349041396
+    second: pistol-ammo-icon-v1_2
+  - first:
+      213: 15052503095846621
+    second: pistol-ammo-icon-v1_3
+  - first:
+      213: 4755311027159619110
+    second: pistol-ammo-icon-v1_4
+  - first:
+      213: 6848395987314246906
+    second: pistol-ammo-icon-v1_5
+  - first:
+      213: 738737215688899182
+    second: pistol-ammo-icon-v1_6
+  - first:
+      213: 8758028527665286948
+    second: pistol-ammo-icon-v1_7
+  - first:
+      213: -8543570038844474288
+    second: pistol-ammo-icon-v1_8
+  - first:
+      213: -1184536850230374365
+    second: pistol-ammo-icon-v1_9
+  - first:
+      213: 6834683197034635086
+    second: pistol-ammo-icon-v1_10
+  - first:
+      213: 7931715738260704720
+    second: pistol-ammo-icon-v1_11
+  - first:
+      213: 3225639256124318764
+    second: pistol-ammo-icon-v1_12
+  - first:
+      213: 278007256186022888
+    second: pistol-ammo-icon-v1_13
+  - first:
+      213: 2800012796414989213
+    second: pistol-ammo-icon-v1_14
+  - first:
+      213: -4383215013991418819
+    second: pistol-ammo-icon-v1_15
+  - first:
+      213: 1512207376330054797
+    second: pistol-ammo-icon-v1_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_0
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1199
+        width: 74
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f179bf8a71c0ce300800000000000000
+      internalID: 282614172376340255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 1167
+        height: 1183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbee9a6f7039af7d0800000000000000
+      internalID: -2883830948964995397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_2
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1173
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa571d9ac5f6ee10800000000000000
+      internalID: 2226737316349041396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_3
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1144
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6220cfb2a753000800000000000000
+      internalID: 15052503095846621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_4
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1147
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626d85a3f224ef140800000000000000
+      internalID: 4755311027159619110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_5
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1146
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af48319bdd36a0f50800000000000000
+      internalID: 6848395987314246906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 982
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a7f7b6595804a00800000000000000
+      internalID: 738737215688899182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 914
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f0a3c3b84ca8970800000000000000
+      internalID: 8758028527665286948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 811
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c3101c0542f6980800000000000000
+      internalID: -8543570038844474288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_9
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 791
+        width: 106
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32098aab20eaf8fe0800000000000000
+      internalID: -1184536850230374365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 682
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f949fe72ca9de50800000000000000
+      internalID: 6834683197034635086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 513
+        width: 22
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd876e907d131e60800000000000000
+      internalID: 7931715738260704720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 433
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2468d230d5c3cc20800000000000000
+      internalID: 3225639256124318764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 413
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebe2f5602eabd300800000000000000
+      internalID: 278007256186022888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 391
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d931dd0adc4abd620800000000000000
+      internalID: 2800012796414989213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 288
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34f1e40b21bb23c0800000000000000
+      internalID: -4383215013991418819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol-ammo-icon-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 272
+        width: 30
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cd0e4c8907cf410800000000000000
+      internalID: 1512207376330054797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pistol-ammo-icon-v1_0: 282614172376340255
+      pistol-ammo-icon-v1_1: -2883830948964995397
+      pistol-ammo-icon-v1_10: 6834683197034635086
+      pistol-ammo-icon-v1_11: 7931715738260704720
+      pistol-ammo-icon-v1_12: 3225639256124318764
+      pistol-ammo-icon-v1_13: 278007256186022888
+      pistol-ammo-icon-v1_14: 2800012796414989213
+      pistol-ammo-icon-v1_15: -4383215013991418819
+      pistol-ammo-icon-v1_16: 1512207376330054797
+      pistol-ammo-icon-v1_2: 2226737316349041396
+      pistol-ammo-icon-v1_3: 15052503095846621
+      pistol-ammo-icon-v1_4: 4755311027159619110
+      pistol-ammo-icon-v1_5: 6848395987314246906
+      pistol-ammo-icon-v1_6: 738737215688899182
+      pistol-ammo-icon-v1_7: 8758028527665286948
+      pistol-ammo-icon-v1_8: -8543570038844474288
+      pistol-ammo-icon-v1_9: -1184536850230374365
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

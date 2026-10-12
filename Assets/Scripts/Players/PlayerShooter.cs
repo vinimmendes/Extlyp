@@ -7,144 +7,123 @@ using CyberExtraction.Items;
 
 namespace CyberExtraction.Players
 {
-    // Tiro 100% decidido no servidor: sorteia a direcao dentro do cone de mira e faz o raycast.
+    // All weapon timing, ammunition and pellet damage are resolved on the server.
     public class PlayerShooter : NetworkBehaviour
     {
         PlayerInventory inv;
-        LineRenderer tracer;
-        float tracerUntil;
-        float lastShot = -10f;
-        float recycledMetal;
-        public NetworkVariable<double> ReloadEndsAt = new NetworkVariable<double>(0);
-        public bool Reloading => ReloadEndsAt.Value > NetworkManager.ServerTime.Time;
-        public int Magazine => inv != null ? inv.PistolRounds : 0;
-        public int Reserve => inv != null ? inv.Count(ItemId.PistolAmmo) : 0;
-
-        // velocidade medida no servidor (para abrir/fechar o cone)
+        float recycledMetal, serverSpeed;
         Vector2 lastPos;
-        float serverSpeed;
-
-        private void Awake()
+        double nextShotAt;
+        int reloadSlot = -1;
+        ItemStack reloadStack;
+        public NetworkVariable<double> ReloadEndsAt = new NetworkVariable<double>(0);
+        public NetworkVariable<double> BoltEndsAt = new NetworkVariable<double>(0);
+        double Now => NetworkManager != null ? NetworkManager.ServerTime.Time : 0;
+        public bool Reloading => ReloadEndsAt.Value > Now;
+        public bool CyclingBolt => BoltEndsAt.Value > Now;
+        public WeaponDefinition Weapon => inv != null ? inv.ActiveWeapon : null;
+        public int Magazine => inv != null ? inv.WeaponRounds : 0;
+        public int Reserve => Weapon != null ? inv.Count(Weapon.Ammo) : 0;
+        public float FireCooldown => Weapon != null ? Weapon.Cooldown : GameConfig.FireCooldown;
+        public float Range => Weapon != null ? Weapon.Range : GameConfig.AimRange;
+        public Vector2 MuzzlePosition
         {
-            inv = GetComponent<PlayerInventory>();
-
-            var go = new GameObject("Tracer");
-            tracer = go.AddComponent<LineRenderer>();
-            tracer.useWorldSpace = true;
-            tracer.positionCount = 2;
-            tracer.startWidth = tracer.endWidth = 0.06f;
-            tracer.startColor = tracer.endColor = new Color(1f, 0.9f, 0.5f, 0.9f);
-            tracer.sortingOrder = 8;
-            var m = SpriteFactory.Unlit;
-            if (m != null) tracer.sharedMaterial = m;
-            tracer.enabled = false;
-        }
-
-        public override void OnDestroy()
-        {
-            if (tracer != null) Destroy(tracer.gameObject);
-            base.OnDestroy();
-        }
-
-        private void Update()
-        {
-            if (tracer.enabled && Time.time >= tracerUntil) tracer.enabled = false;
-
-            if (!IsServer) return;
-            if (ReloadEndsAt.Value > 0 && NetworkManager.ServerTime.Time >= ReloadEndsAt.Value)
+            get
             {
-                ReloadEndsAt.Value = 0;
-                if (inv.IsAlive && inv.PistolSlot() >= 0 && MatchManager.Instance != null && MatchManager.Instance.CurrentState == MatchState.Running)
+                // Model coordinates projected by the 2.65-unit orthographic render
+                // into a 3.4-unit sprite. Upper body and weapon stay fixed across frames.
+                float modelLength = Weapon == null ? 0f : Weapon.Item == ItemId.Mosin ? 1.15f :
+                    Weapon.Item == ItemId.DoubleBarrelShotgun ? 1.10f : 1.025f;
+                return transform.TransformPoint(new Vector3(modelLength * (3.4f / 2.65f), 0f, 0f));
+            }
+        }
+        bool CanAct => IsServer && inv != null && inv.IsAlive && !inv.Lockpicking.Value && inv.FishingPhase.Value == 0 &&
+            Weapon != null && MatchManager.Instance != null && MatchManager.Instance.CurrentState == MatchState.Running;
+        bool SameReloadWeapon => reloadSlot >= 0 && inv.ActiveWeaponSlot == reloadSlot &&
+            reloadSlot < inv.Slots.Count && inv.Slots[reloadSlot].Equals(reloadStack);
+        void Awake()
+        {
+            inv=GetComponent<PlayerInventory>(); lastPos=transform.position;
+            if(GetComponent<WeaponVisual>()==null) gameObject.AddComponent<WeaponVisual>();
+        }
+        public override void OnNetworkSpawn() { lastPos=transform.position; }
+        void Update()
+        {
+            if(!IsServer) return;
+            if(ReloadEndsAt.Value>0)
+            {
+                if(!CanAct || !SameReloadWeapon) ServerCancelReload();
+                else if(Now>=ReloadEndsAt.Value)
                 {
-                    int amount = Mathf.Min(12 - Magazine, Reserve);
-                    if (amount > 0 && inv.ServerRemoveItem(ItemId.PistolAmmo, amount)) inv.ServerSetRounds(Magazine + amount);
+                    var weapon=Weapon; int amount=Mathf.Min(weapon.Capacity-Magazine,Reserve), rounds=Magazine;
+                    ServerCancelReload();
+                    if(amount>0 && inv.ServerRemoveItem(weapon.Ammo,amount)) inv.ServerSetRounds(rounds+amount);
                 }
             }
-            Vector2 p = transform.position;
-            float dt = Time.deltaTime;
-            if (dt > 0f)
-            {
-                float inst = (p - lastPos).magnitude / dt;
-                serverSpeed = Mathf.Lerp(serverSpeed, inst, 0.2f);
-            }
-            lastPos = p;
+            if(BoltEndsAt.Value>0 && (!CanAct || Now>=BoltEndsAt.Value)) BoltEndsAt.Value=0;
+            Vector2 position=transform.position;
+            if(Time.deltaTime>0) serverSpeed=Mathf.Lerp(serverSpeed,(position-lastPos).magnitude/Time.deltaTime,.2f);
+            lastPos=position;
         }
-
-        public void RequestFire(float angleDeg) { FireServerRpc(angleDeg); }
-        public void RequestReload() { if (IsOwner) ReloadServerRpc(); }
+        public void RequestFire(float angle) { if(IsOwner) FireServerRpc(angle); }
+        public void RequestReload() { if(IsOwner) ReloadServerRpc(); }
+        [ServerRpc] void FireServerRpc(float angle) { ServerFire(angle); }
         [ServerRpc] void ReloadServerRpc() { ServerReload(); }
+        public void ServerCancelReload()
+        {
+            if(!IsServer) return;
+            ReloadEndsAt.Value=0; reloadSlot=-1; reloadStack=default;
+        }
         public void ServerReload()
         {
-            if (!IsServer || !inv.IsAlive || inv.PistolSlot() < 0 || Magazine >= 12 || Reserve <= 0 || Reloading ||
-                MatchManager.Instance == null || MatchManager.Instance.CurrentState != MatchState.Running) return;
-            ReloadEndsAt.Value = NetworkManager.ServerTime.Time + 1.5;
+            if(!CanAct || Reloading || CyclingBolt || Magazine>=Weapon.Capacity || Reserve<=0) return;
+            reloadSlot=inv.ActiveWeaponSlot; reloadStack=inv.Slots[reloadSlot];
+            ReloadEndsAt.Value=Now+Weapon.ReloadSeconds;
         }
-
-        [ServerRpc]
-        void FireServerRpc(float angleDeg)
+        public void ServerFire(float angle)
         {
-            ServerFire(angleDeg);
-        }
-
-        // Bots usam a mesma resolucao/cadencia/dano, sem simular entrada do cliente.
-        public void ServerFire(float angleDeg)
-        {
-            if (!IsServer) return;
-            if (float.IsNaN(angleDeg) || float.IsInfinity(angleDeg)) return;
-            var mm = MatchManager.Instance;
-            if (mm == null || mm.CurrentState != MatchState.Running) return;
-            if (inv == null || !inv.IsAlive) return;
-            if (inv.PistolSlot() < 0 || Reloading) return;
-            if (Magazine <= 0) { ServerReload(); return; }
-            if (Time.time - lastShot < GameConfig.FireCooldown * 0.9f) return;
-            lastShot = Time.time;
-            inv.ServerSetRounds(Magazine - 1);
-            int level = Mathf.Clamp(inv.RecyclerLevel.Value, 0, 3);
-            recycledMetal += 0.25f * level * 0.1f;
-            if (recycledMetal >= 1f)
+            if(!CanAct || float.IsNaN(angle) || float.IsInfinity(angle) || Reloading || CyclingBolt || Now<nextShotAt) return;
+            if(Magazine<=0) { ServerReload(); return; }
+            var weapon=Weapon;
+            Vector2 origin=MuzzlePosition;
+            // A protruding sprite must not let the barrel shoot through an obstacle.
+            // Reject before spending rounds or starting cooldown when the barrel is blocked.
+            if(Physics2D.Linecast(transform.position,origin,GameConfig.WallMask).collider!=null ||
+                Physics2D.OverlapPoint(origin,GameConfig.WallMask)!=null) return;
+            nextShotAt=Now+weapon.Cooldown;
+            if(weapon.BoltSeconds>0) BoltEndsAt.Value=Now+weapon.BoltSeconds;
+            inv.ServerSetRounds(Magazine-1);
+            recycledMetal+=(float)GameplayDefinition.Current.MetalRecipeCost/WeaponCatalog.RecipeOutput(weapon.Ammo)*Mathf.Clamp(inv.RecyclerLevel.Value,0,3)*.1f;
+            if(recycledMetal>=1)
             {
-                recycledMetal -= 1f;
-                if (!inv.ServerAddItem(ItemId.Metal, 1)) MatchManager.Instance.ServerDropItem(transform.position, ItemId.Metal, 1);
+                recycledMetal-=1;
+                if(!inv.ServerAddItem(ItemId.Metal,1)) MatchManager.Instance.ServerDropItem(transform.position,ItemId.Metal,1);
             }
-
-            float speed01 = Mathf.Clamp01(serverSpeed / GameConfig.PlayerSpeed);
-            float half = Mathf.Lerp(GameConfig.AimHalfAngleStill, GameConfig.AimHalfAngleMoving, speed01);
-            float a = (angleDeg + Random.Range(-half, half)) * Mathf.Deg2Rad;
-
-            Vector2 origin = transform.position;
-            Vector2 dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
-            Vector2 end = origin + dir * GameConfig.AimRange;
-
-            var hits = Physics2D.RaycastAll(origin, dir, GameConfig.AimRange);
-            foreach (var hit in hits)
+            float half=weapon.HalfAngle(serverSpeed/GameConfig.PlayerSpeed);
+            for(int pellet=0;pellet<weapon.Pellets;pellet++)
             {
-                // Areas de coleta/extracao nao sao cobertura. Filtro local ao tiro:
-                // nao altera a configuracao global de consultas da fisica/visao.
-                if (hit.collider.isTrigger) continue;
-                if (hit.collider.GetComponentInParent<NetworkObject>() == NetworkObject) continue; // ignora a si mesmo
-                var h = hit.collider.GetComponentInParent<Health>();
-                if (h != null)
+                float radians=(angle+Random.Range(-half,half))*Mathf.Deg2Rad;
+                Vector2 direction=new Vector2(Mathf.Cos(radians),Mathf.Sin(radians)), end=origin+direction*weapon.Range;
+                Health victim=null;
+                foreach(var hit in Physics2D.RaycastAll(origin,direction,weapon.Range))
                 {
-                    if (h.IsDead) continue;
-                    h.ServerTakeDamage(GameConfig.ShotDamage);
-                    end = hit.point;
-                    break;
+                    var monster=hit.collider.GetComponentInParent<CyberExtraction.Enemies.Monster>();
+                    if(hit.collider.isTrigger && (monster==null || !monster.Disguised)) continue;
+                    if(hit.collider.GetComponentInParent<NetworkObject>()==NetworkObject) continue;
+                    var h=hit.collider.GetComponentInParent<Health>();
+                    if(h!=null && h.IsDead) continue;
+                    victim=h; end=hit.point; break;
                 }
-                end = hit.point; // parede
-                break;
+                if(CyberExtraction.Enemies.MonsterWorld.ShootWeb(origin,direction,Vector2.Distance(origin,end),out var webImpact)) end=webImpact;
+                else if(victim!=null)
+                {
+                    int damage=weapon.DamageAt(Vector2.Distance(origin,end));
+                    var monster=victim.GetComponent<CyberExtraction.Enemies.Monster>();
+                    victim.ServerTakeDamage(monster!=null ? monster.ProjectileDamage(damage,origin) : damage);
+                }
+                CyberExtraction.UI.NetworkBootstrap.Instance.BroadcastShot(origin,end,pellet==0,weapon.NoiseRadius);
             }
-
-            Noise.Emit(origin, GameConfig.ShotNoiseRadius);
-            ShotFxClientRpc(origin, end);
-        }
-
-        [ClientRpc]
-        void ShotFxClientRpc(Vector2 from, Vector2 to)
-        {
-            tracer.SetPosition(0, from);
-            tracer.SetPosition(1, to);
-            tracer.enabled = true;
-            tracerUntil = Time.time + 0.06f;
+            Noise.Emit(origin,weapon.NoiseRadius);
         }
     }
 }

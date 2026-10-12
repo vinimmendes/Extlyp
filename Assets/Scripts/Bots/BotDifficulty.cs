@@ -34,6 +34,7 @@ namespace CyberExtraction.Bots
     {
         public bool Active, HasThreat, ThreatIsMonster, KnownLoot, HeardNoise, FinishedExploring;
         public float HealthRatio, ThreatDistance;
+        public float ExtractionTravelSeconds;
         public int Loot, SecondsLeft;
     }
 
@@ -48,7 +49,8 @@ namespace CyberExtraction.Bots
             if (!s.Active) return BotState.Idle;
             if (s.HasThreat && (s.HealthRatio <= p.RetreatHealth ||
                 (s.ThreatIsMonster && s.ThreatDistance < 3.5f))) return BotState.Retreat;
-            if (CanExtract(s.SecondsLeft) && (!s.HasThreat || s.ThreatDistance > 4f)) return BotState.Extract;
+            if ((CanExtract(s.SecondsLeft) || s.ExtractionTravelSeconds > 0 && s.SecondsLeft <= s.ExtractionTravelSeconds + 18f) &&
+                (!s.HasThreat || s.ThreatDistance > 4f)) return BotState.Extract;
             if (s.HasThreat) return BotState.Engage;
             if (s.KnownLoot) return BotState.Collect;
             if (s.HeardNoise && s.Loot == 0) return BotState.Investigate;

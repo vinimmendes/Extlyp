@@ -78,9 +78,13 @@ namespace CyberExtraction.Items
             else { Slots[source] = existing; destination.Slots[target] = moving; }
             return true;
         }
-        public static InventoryGrid Starter()
+        public static InventoryGrid Starter(bool includeLockpicks = true)
         {
-            var grid = new InventoryGrid(); grid.Add(new ItemStack(ItemId.Pistol, 1, 0, 12)); grid.Add(new ItemStack(ItemId.PistolAmmo, 24)); return grid;
+            var grid = new InventoryGrid();
+            grid.Add(new ItemStack(ItemId.Pistol, 1, 0, CyberExtraction.Core.GameplayDefinition.Current.Magazine));
+            grid.Add(new ItemStack(ItemId.PistolAmmo, 24));
+            if (includeLockpicks) grid.Add(new ItemStack(ItemId.Lockpick, 2));
+            return grid;
         }
     }
 }

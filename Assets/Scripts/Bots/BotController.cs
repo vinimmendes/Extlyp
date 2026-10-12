@@ -31,7 +31,7 @@ namespace CyberExtraction.Bots
         float retreatUntil, nextError, aimError;
         float bodyRadius;
         int routeOffset;
-        readonly bool[] explored = new bool[MapBuilder.LootPoints.Length];
+        bool[] explored;
         readonly Dictionary<ulong, KnownLoot> lootMemory = new Dictionary<ulong, KnownLoot>();
         readonly List<ulong> removeKeys = new List<ulong>();
         readonly HashSet<ulong> visibleLoot = new HashSet<ulong>();
@@ -40,22 +40,18 @@ namespace CyberExtraction.Bots
         {
             public Vector2 position;
             public int value;
+            public CyberExtraction.Items.ItemStack stack;
         }
 
         private void Awake()
         {
+            explored = new bool[MapBuilder.LootPoints.Length];
             rb = GetComponent<Rigidbody2D>();
             inventory = GetComponent<PlayerInventory>();
             shooter = GetComponent<PlayerShooter>();
             health = GetComponent<Health>();
             rb.gravityScale = 0f;
             rb.freezeRotation = true;
-            // Mesmo marcador de direcao do player; nao instala camera nem controles.
-            var nose = new GameObject("Nose");
-            nose.transform.SetParent(transform, false);
-            nose.transform.localPosition = new Vector3(0.5f, 0f, 0f);
-            nose.transform.localScale = new Vector3(0.5f, 0.25f, 1f);
-            SpriteFactory.Setup(nose.AddComponent<SpriteRenderer>(), SpriteFactory.Square, Color.white, 6);
         }
 
         public override void OnNetworkSpawn()
@@ -103,13 +99,13 @@ namespace CyberExtraction.Bots
             if (distance > GameConfig.VisionRange) return false;
             if (distance <= GameConfig.NearRadius) return true;
             float angle = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
-            return Mathf.Abs(Mathf.DeltaAngle(facing, angle)) <= GameConfig.VisionAngle * 0.5f;
+            return distance <= GameConfig.VisionRadiusAtAngle(Mathf.DeltaAngle(facing, angle));
         }
 
         bool CanSee(Vector2 point)
         {
             return InVision(rb.position, rb.rotation, point) &&
-                Physics2D.Linecast(rb.position, point, GameConfig.WallMask).collider == null;
+                Physics2D.Linecast(rb.position, point, GameConfig.VisionMask).collider == null;
         }
 
         Health FindThreat()
@@ -119,6 +115,8 @@ namespace CyberExtraction.Bots
             foreach (var candidate in Health.All)
             {
                 if (candidate == null || candidate == health || candidate.IsDead || !candidate.IsSpawned) continue;
+                var monster=candidate.GetComponent<Monster>();
+                if(monster!=null && monster.Disguised) continue;
                 var inv = candidate.GetComponent<PlayerInventory>();
                 if (inv != null && !inv.IsAlive) continue;
                 Vector2 position = candidate.transform.position;
@@ -126,7 +124,7 @@ namespace CyberExtraction.Bots
                 float distance = Vector2.Distance(position, rb.position);
                 // Monstro perto tem prioridade: nao deixa melee atacar enquanto mira outro player.
                 float score = 12f - distance;
-                if (candidate.GetComponent<Monster>() != null && distance < 4f) score += 5f;
+                if ((monster != null || candidate.GetComponent<PlantCreature>() != null) && distance < 4f) score += 5f;
                 if (candidate == threat) score += 0.75f; // evita trocar de alvo a cada decisao
                 if (score <= bestScore) continue;
                 bestScore = score;
@@ -140,9 +138,10 @@ namespace CyberExtraction.Bots
             visibleLoot.Clear();
             foreach (var loot in LootPickup.All)
             {
-                if (loot == null || !loot.IsSpawned || !CanSee(loot.transform.position)) continue;
+                if (loot == null || !loot.IsSpawned || loot.Chest.Value || !CanSee(loot.transform.position)) continue;
                 visibleLoot.Add(loot.NetworkObjectId);
-                lootMemory[loot.NetworkObjectId] = new KnownLoot { position = loot.transform.position, value = loot.Value.Value };
+                lootMemory[loot.NetworkObjectId] = new KnownLoot { position = loot.transform.position, value = loot.Value.Value,
+                    stack=new CyberExtraction.Items.ItemStack((CyberExtraction.Items.ItemId)loot.Item.Value,loot.Quantity.Value,loot.Quality.Value,loot.Data.Value) };
             }
             // Um loot sumir da rede nao revela a coleta atraves da parede.
             // Corrige a memoria apenas quando ve novamente o local onde ele estava.
@@ -156,9 +155,11 @@ namespace CyberExtraction.Bots
         {
             position = rb.position;
             float bestScore = float.NegativeInfinity;
+            var capacity=inventory.Grid();
             foreach (var pair in lootMemory)
             {
                 var loot = pair.Value;
+                if(capacity.FreeFor(loot.stack)<loot.stack.Quantity) continue;
                 float distance = Vector2.Distance(rb.position, loot.position);
                 float danger = Time.time < noiseUntil ? Mathf.Max(0f, 6f - Vector2.Distance(loot.position, heardPosition)) : 0f;
                 float score = loot.value / Mathf.Max(1f, distance) - danger * profile.CoverPreference;
@@ -221,11 +222,12 @@ namespace CyberExtraction.Bots
             {
                 Active = inventory.IsAlive && mm.CurrentState == MatchState.Running,
                 HasThreat = threat != null,
-                ThreatIsMonster = threat != null && threat.GetComponent<Monster>() != null,
+                ThreatIsMonster = threat != null && (threat.GetComponent<Monster>() != null || threat.GetComponent<PlantCreature>() != null),
                 ThreatDistance = threat != null ? Vector2.Distance(rb.position, lastSeen) : float.PositiveInfinity,
                 HealthRatio = (float)health.Current.Value / health.maxHealth,
                 KnownLoot = knownLoot, HeardNoise = Time.time < noiseUntil || Time.time < memoryUntil,
-                FinishedExploring = FinishedExploring(), Loot = inventory.LootValue.Value, SecondsLeft = mm.SecondsLeft.Value
+                FinishedExploring = FinishedExploring(), Loot = inventory.LootValue.Value, SecondsLeft = mm.SecondsLeft.Value,
+                ExtractionTravelSeconds=ExtractionDistance()/GameConfig.PlayerSpeed*1.25f+GameConfig.ExtractionHoldTime
             };
             BotState chosen = BotDecision.Select(situation, profile);
             // Recua por um pequeno periodo, mesmo se o inimigo sair momentaneamente do cone.
@@ -241,7 +243,7 @@ namespace CyberExtraction.Bots
                     if (Vector2.Distance(rb.position, destination) < 0.8f)
                     { memoryUntil = noiseUntil = 0f; destination = ExploreDestination(); }
                     break;
-                case BotState.Extract: destination = MapBuilder.NearestExtraction(rb.position); break;
+                case BotState.Extract: destination = ExtractionDestination(); break;
                 case BotState.Retreat:
                     if (Time.time >= repositionAt || Vector2.Distance(rb.position, destination) < 0.6f)
                     {
@@ -276,7 +278,7 @@ namespace CyberExtraction.Bots
                 Vector2 candidate = rb.position + new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * ring * 2f;
                 if (Mathf.Abs(candidate.x) > MapBuilder.Width / 2 - .6f || Mathf.Abs(candidate.y) > MapBuilder.Height / 2 - .6f ||
                     Physics2D.OverlapCircle(candidate, bodyRadius + 0.05f, GameConfig.WallMask) != null) continue;
-                bool hidden = Physics2D.Linecast(enemy, candidate, GameConfig.WallMask).collider != null;
+                bool hidden = Physics2D.Linecast(enemy, candidate, GameConfig.VisionMask).collider != null;
                 float distance = Vector2.Distance(candidate, enemy);
                 float travel = Vector2.Distance(candidate, rb.position);
                 bool nearCover = Physics2D.OverlapCircle(candidate, 1.5f, GameConfig.WallMask) != null;
@@ -297,6 +299,9 @@ namespace CyberExtraction.Bots
             return best;
         }
 
+        int KnownExit() => MapBuilder.Current==ExpeditionMap.Large ? LargeMapPlan.BestExit(rb.position,inventory.KnownActiveExits.Value) : -1;
+        Vector2 ExtractionDestination() { int exit=KnownExit(); return exit>=0 ? LargeMapPlan.Exits[exit].Position : MapBuilder.NearestExtraction(rb.position); }
+        float ExtractionDistance() { int exit=KnownExit(); return exit>=0 ? LargeMapPlan.TravelDistance(rb.position,exit) : Vector2.Distance(rb.position,ExtractionDestination()); }
         private void FixedUpdate()
         {
             if (!IsServer) return;
@@ -331,12 +336,12 @@ namespace CyberExtraction.Bots
             bool brace = CurrentState == BotState.Engage && visibleThreat && Time.time >= reactionAt &&
                 nextShot - Time.time < (difficulty == BotDifficulty.Easy ? 0.05f : 0.15f);
             rb.linearVelocity = brace ? Vector2.zero : travel.normalized *
-                Mathf.Min(GameConfig.PlayerSpeed, travel.magnitude / Time.fixedDeltaTime);
+                Mathf.Min(GameConfig.PlayerSpeed * inventory.ServerMovementMultiplier, travel.magnitude / Time.fixedDeltaTime);
             if (!visibleThreat || Time.time < reactionAt || Time.time < nextShot) return;
             float targetAngle = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg;
             if (Mathf.Abs(Mathf.DeltaAngle(rb.rotation, targetAngle)) > profile.AimError + 3f) return;
             shooter.ServerFire(rb.rotation);
-            nextShot = Time.time + GameConfig.FireCooldown * (difficulty == BotDifficulty.Easy ? 1.5f : 1f);
+            nextShot = Time.time + shooter.FireCooldown * (difficulty == BotDifficulty.Easy ? 1.5f : 1f);
         }
 
         private void OnDrawGizmosSelected()

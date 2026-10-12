@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 704b541e84585604d848d7a894f3effb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3525292634862472820
+    second: cooked-fish-icon-v1_0
+  - first:
+      213: -241410059983781602
+    second: cooked-fish-icon-v1_1
+  - first:
+      213: 8187841729418073467
+    second: cooked-fish-icon-v1_2
+  - first:
+      213: 5256741356598245215
+    second: cooked-fish-icon-v1_3
+  - first:
+      213: 8872894460934381470
+    second: cooked-fish-icon-v1_4
+  - first:
+      213: 918034336653924054
+    second: cooked-fish-icon-v1_5
+  - first:
+      213: 1802521892461982809
+    second: cooked-fish-icon-v1_6
+  - first:
+      213: 5329295872517254695
+    second: cooked-fish-icon-v1_7
+  - first:
+      213: 8997561074789554718
+    second: cooked-fish-icon-v1_8
+  - first:
+      213: -69725719319396664
+    second: cooked-fish-icon-v1_9
+  - first:
+      213: -2542224673494874251
+    second: cooked-fish-icon-v1_10
+  - first:
+      213: -8783111072868907911
+    second: cooked-fish-icon-v1_11
+  - first:
+      213: -5084039565689911669
+    second: cooked-fish-icon-v1_12
+  - first:
+      213: 6144259462360596415
+    second: cooked-fish-icon-v1_13
+  - first:
+      213: -392735388427795756
+    second: cooked-fish-icon-v1_14
+  - first:
+      213: 9103413934573087050
+    second: cooked-fish-icon-v1_15
+  - first:
+      213: -2694869039393329928
+    second: cooked-fish-icon-v1_16
+  - first:
+      213: -393578872266561328
+    second: cooked-fish-icon-v1_17
+  - first:
+      213: -4234734399052348042
+    second: cooked-fish-icon-v1_18
+  - first:
+      213: 7382445496745036986
+    second: cooked-fish-icon-v1_19
+  - first:
+      213: 2839498499793406084
+    second: cooked-fish-icon-v1_20
+  - first:
+      213: 5422568735803261771
+    second: cooked-fish-icon-v1_21
+  - first:
+      213: -1499552822266566277
+    second: cooked-fish-icon-v1_22
+  - first:
+      213: 7091251838708125294
+    second: cooked-fish-icon-v1_23
+  - first:
+      213: -2326414518790637077
+    second: cooked-fish-icon-v1_24
+  - first:
+      213: -5005720162880761482
+    second: cooked-fish-icon-v1_25
+  - first:
+      213: -9006656065796321483
+    second: cooked-fish-icon-v1_26
+  - first:
+      213: 382384819296395811
+    second: cooked-fish-icon-v1_27
+  - first:
+      213: -3684993301354607223
+    second: cooked-fish-icon-v1_28
+  - first:
+      213: -1495693930521664126
+    second: cooked-fish-icon-v1_29
+  - first:
+      213: 6788949304890055318
+    second: cooked-fish-icon-v1_30
+  - first:
+      213: -804318423919826221
+    second: cooked-fish-icon-v1_31
+  - first:
+      213: 5390295138221206876
+    second: cooked-fish-icon-v1_32
+  - first:
+      213: -448881363676324790
+    second: cooked-fish-icon-v1_33
+  - first:
+      213: -286989739158844995
+    second: cooked-fish-icon-v1_34
+  - first:
+      213: -7082746903373338983
+    second: cooked-fish-icon-v1_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 964
+        width: 214
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81b8b1c605a31fc0800000000000000
+      internalID: -3525292634862472820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 1225
+        height: 959
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11067954d656acf0800000000000000
+      internalID: -241410059983781602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 974
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75951ffbae01a170800000000000000
+      internalID: 8187841729418073467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 975
+        width: 245
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57b4249962b3f840800000000000000
+      internalID: 5256741356598245215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_4
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 947
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f5689608ad22b70800000000000000
+      internalID: 8872894460934381470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_5
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 955
+        width: 610
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d65edf7d538dbc00800000000000000
+      internalID: 918034336653924054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_6
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1036
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954bf0c6c18d30910800000000000000
+      internalID: 1802521892461982809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_7
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1031
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ea8583c5675f940800000000000000
+      internalID: 5329295872517254695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_8
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1044
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a96bb5022cddc70800000000000000
+      internalID: 8997561074789554718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_9
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1006
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce3244e3d8480ff0800000000000000
+      internalID: -69725719319396664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_10
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1002
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577ca15f02438bcd0800000000000000
+      internalID: -2542224673494874251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_11
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 951
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97449de930f1c1680800000000000000
+      internalID: -8783111072868907911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_12
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 954
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86850f83fcd179b0800000000000000
+      internalID: -5084039565689911669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 937
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbff5d56d6bc44550800000000000000
+      internalID: 6144259462360596415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 939
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2490abe39bc8af0800000000000000
+      internalID: -392735388427795756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 935
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49e195ddb2d55e70800000000000000
+      internalID: 9103413934573087050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_16
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 274
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc23cef2e6e99ad0800000000000000
+      internalID: -2694869039393329928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_17
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 286
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8e377d91ab98af0800000000000000
+      internalID: -393578872266561328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_18
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 278
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6758b5a20833b35c0800000000000000
+      internalID: -4234734399052348042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_19
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 274
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc8b2fb017b37660800000000000000
+      internalID: 7382445496745036986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_20
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 272
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488c07c57dce76720800000000000000
+      internalID: 2839498499793406084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_21
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 272
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4341b30985d04b40800000000000000
+      internalID: 5422568735803261771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_22
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 256
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79edd237a4803be0800000000000000
+      internalID: -1499552822266566277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_23
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 254
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e880be9ff296260800000000000000
+      internalID: 7091251838708125294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_24
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 210
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be93c2f225ae6bfd0800000000000000
+      internalID: -2326414518790637077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_25
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 224
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6715b76880c188ab0800000000000000
+      internalID: -5005720162880761482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_26
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 192
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fc718070ee10380800000000000000
+      internalID: -9006656065796321483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_27
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 192
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322e9a997f08e4500800000000000000
+      internalID: 382384819296395811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_28
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 168
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d8019cd164cdcc0800000000000000
+      internalID: -3684993301354607223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 136
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2856c827b4a3e3be0800000000000000
+      internalID: -1495693930521664126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_30
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 132
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a5b146c61373e50800000000000000
+      internalID: 6788949304890055318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_31
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 102
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dae4f7a7ac76d4f0800000000000000
+      internalID: -804318423919826221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_32
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 111
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5da0348edc2eca40800000000000000
+      internalID: 5390295138221206876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_33
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 64
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c97cb27c045c9f0800000000000000
+      internalID: -448881363676324790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_34
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 57
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9414f4a58640cf0800000000000000
+      internalID: -286989739158844995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooked-fish-icon-v1_35
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 57
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9962f66a73705bd90800000000000000
+      internalID: -7082746903373338983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cooked-fish-icon-v1_0: -3525292634862472820
+      cooked-fish-icon-v1_1: -241410059983781602
+      cooked-fish-icon-v1_10: -2542224673494874251
+      cooked-fish-icon-v1_11: -8783111072868907911
+      cooked-fish-icon-v1_12: -5084039565689911669
+      cooked-fish-icon-v1_13: 6144259462360596415
+      cooked-fish-icon-v1_14: -392735388427795756
+      cooked-fish-icon-v1_15: 9103413934573087050
+      cooked-fish-icon-v1_16: -2694869039393329928
+      cooked-fish-icon-v1_17: -393578872266561328
+      cooked-fish-icon-v1_18: -4234734399052348042
+      cooked-fish-icon-v1_19: 7382445496745036986
+      cooked-fish-icon-v1_2: 8187841729418073467
+      cooked-fish-icon-v1_20: 2839498499793406084
+      cooked-fish-icon-v1_21: 5422568735803261771
+      cooked-fish-icon-v1_22: -1499552822266566277
+      cooked-fish-icon-v1_23: 7091251838708125294
+      cooked-fish-icon-v1_24: -2326414518790637077
+      cooked-fish-icon-v1_25: -5005720162880761482
+      cooked-fish-icon-v1_26: -9006656065796321483
+      cooked-fish-icon-v1_27: 382384819296395811
+      cooked-fish-icon-v1_28: -3684993301354607223
+      cooked-fish-icon-v1_29: -1495693930521664126
+      cooked-fish-icon-v1_3: 5256741356598245215
+      cooked-fish-icon-v1_30: 6788949304890055318
+      cooked-fish-icon-v1_31: -804318423919826221
+      cooked-fish-icon-v1_32: 5390295138221206876
+      cooked-fish-icon-v1_33: -448881363676324790
+      cooked-fish-icon-v1_34: -286989739158844995
+      cooked-fish-icon-v1_35: -7082746903373338983
+      cooked-fish-icon-v1_4: 8872894460934381470
+      cooked-fish-icon-v1_5: 918034336653924054
+      cooked-fish-icon-v1_6: 1802521892461982809
+      cooked-fish-icon-v1_7: 5329295872517254695
+      cooked-fish-icon-v1_8: 8997561074789554718
+      cooked-fish-icon-v1_9: -69725719319396664
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

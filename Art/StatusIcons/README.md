@@ -1,0 +1,15 @@
+# Ícones de status — proposta visual v1
+
+Gerado com a ferramenta integrada imagegen. PNG com fundo transparente; folha de 4 colunas por 2 linhas, última célula vazia. Ainda não integrado ao HUD.
+
+Ordem: vida, cura, bem alimentado, recarga; extração, perigo de ácido, lentidão da aranha, vazio.
+
+O perigo de ácido é um indicador visual proposto, não um novo debuff. A lentidão corresponde às teias existentes no jogo.
+
+## Prompt inicial
+
+Use case: stylized-concept. Asset type: one transparent sprite sheet of six small player-status HUD icons for Cyber Extraction, a top-down 2D sci-fi survival extraction game. Create a cohesive 3-column by 2-row grid on a square canvas, each icon isolated and centered in its own equal cell with generous transparent padding, no overlaps. Reading order: top-left HEALTH a bold red anatomical-inspired simplified heart; top-middle HEALING a cream white adhesive bandage with a small mint medical cross; top-right WELL FED a golden cooked fish with one simple upward arrow; bottom-left RELOADING two chunky brass cartridges with a cyan circular arrow; bottom-middle EXTRACTION a mint green doorway with a bold outward arrow; bottom-right ACID DANGER a lime green corrosive droplet eating into a small dark metal plate. Style: polished hand-painted 2D game inventory pictograms, restrained cyberpunk detailing, very bold silhouettes, thick dark navy outlines with tiny light edge highlights, mostly flat saturated color fills and minimal shading. Must remain distinct and readable at 32 to 48 pixels per icon. Same scale, stroke weight, visual density, front view, no perspective scenery. True transparent alpha background, including gutters, no panels, no tile backgrounds, no labels, no letters, no numbers, no watermark, no ornamental circuitry, no blur, no cast shadows, no surrounding glow. Six icons exactly.
+
+## Prompt final de edição
+
+Edit the referenced transparent sprite sheet into a cohesive SEVEN-icon HUD sprite sheet. Preserve the designs, colors and hand-painted outlined style of all six existing icons. Re-layout into exactly four equal columns and two equal rows on a wide landscape canvas with generous fully transparent gutters. Top row left to right: red heart, healing bandage, well-fed golden fish with up arrow, reloading cartridges with cyan circular arrow. Bottom row left to right: extraction doorway, corrosive acid droplet, NEW SPIDER SLOWNESS icon, empty transparent fourth cell. The new slowness icon is a single chunky dark navy boot whose toe is trapped in a simple ivory and lavender spiderweb, with a small lavender downward arrow, a bold compact silhouette readable at 32 to 48 pixels; use very few thick web strands, no tiny spider, no text. Exactly seven icons, consistent scale and outlines, all completely contained in their own cells, no backgrounds or tile panels, true transparent alpha canvas, no letters, no watermark, no glow or shadow outside icons. Intended as separate small player status sprites for a 2D survival game.

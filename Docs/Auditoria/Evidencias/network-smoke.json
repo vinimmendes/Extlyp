@@ -1,0 +1,7 @@
+{
+  "serverLog": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Logs\\skills-implementation\\smoke\\104d39197fbb453ca9e9a2d8e6548209-server.log",
+  "passed": true,
+  "protocol": 11,
+  "clientLog": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Logs\\skills-implementation\\smoke\\104d39197fbb453ca9e9a2d8e6548209-client.log",
+  "scope": "Two Windows processes, isolated camp fixture; AI damage disabled for deterministic transaction test"
+}

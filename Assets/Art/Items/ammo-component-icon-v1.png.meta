@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 01c857093f852984c8e6554060095ecf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6694128875802661409
+    second: ammo-component-icon-v1_0
+  - first:
+      213: -3048553224168943393
+    second: ammo-component-icon-v1_1
+  - first:
+      213: 7259439666587947794
+    second: ammo-component-icon-v1_2
+  - first:
+      213: 8938822428020039011
+    second: ammo-component-icon-v1_3
+  - first:
+      213: -8721274532297930771
+    second: ammo-component-icon-v1_4
+  - first:
+      213: -2921535641164406969
+    second: ammo-component-icon-v1_5
+  - first:
+      213: -6214018803137837971
+    second: ammo-component-icon-v1_6
+  - first:
+      213: 7340898197389862172
+    second: ammo-component-icon-v1_7
+  - first:
+      213: -2566881360794715813
+    second: ammo-component-icon-v1_8
+  - first:
+      213: -884969656071650674
+    second: ammo-component-icon-v1_9
+  - first:
+      213: 248202274985817147
+    second: ammo-component-icon-v1_10
+  - first:
+      213: 8159541690460914766
+    second: ammo-component-icon-v1_11
+  - first:
+      213: 2791470980716677548
+    second: ammo-component-icon-v1_12
+  - first:
+      213: 6807101546849624633
+    second: ammo-component-icon-v1_13
+  - first:
+      213: -5027199286936421324
+    second: ammo-component-icon-v1_14
+  - first:
+      213: -178725863846725216
+    second: ammo-component-icon-v1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1235
+        height: 1232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12217eadeb256ec50800000000000000
+      internalID: 6694128875802661409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1205
+        width: 5
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0d98a9efc51b5d0800000000000000
+      internalID: -3048553224168943393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1197
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213da532ae5beb460800000000000000
+      internalID: 7259439666587947794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_3
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1171
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ddd6c63a31d0c70800000000000000
+      internalID: 8938822428020039011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1160
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de788b9250fc7f680800000000000000
+      internalID: -8721274532297930771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 81
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f90c530de9477d0800000000000000
+      internalID: -2921535641164406969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 646
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d640f5362de53c9a0800000000000000
+      internalID: -6214018803137837971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 532
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c156abb440c10e560800000000000000
+      internalID: 7340898197389862172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_8
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 98
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b597245900b906cd0800000000000000
+      internalID: -2566881360794715813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_9
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 82
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8289dc59c4f7b3f0800000000000000
+      internalID: -884969656071650674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_10
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 85
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3439f077aac17300800000000000000
+      internalID: 248202274985817147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_11
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 22
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44c9e5bfe38c3170800000000000000
+      internalID: 8159541690460914766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_12
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 33
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9cd6e211c4db620800000000000000
+      internalID: 2791470980716677548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 38
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932ebf19acea77e50800000000000000
+      internalID: 6807101546849624633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 23
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cbe0f32eccb3ab0800000000000000
+      internalID: -5027199286936421324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo-component-icon-v1_15
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 23
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9bd3516c9058df0800000000000000
+      internalID: -178725863846725216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ammo-component-icon-v1_0: 6694128875802661409
+      ammo-component-icon-v1_1: -3048553224168943393
+      ammo-component-icon-v1_10: 248202274985817147
+      ammo-component-icon-v1_11: 8159541690460914766
+      ammo-component-icon-v1_12: 2791470980716677548
+      ammo-component-icon-v1_13: 6807101546849624633
+      ammo-component-icon-v1_14: -5027199286936421324
+      ammo-component-icon-v1_15: -178725863846725216
+      ammo-component-icon-v1_2: 7259439666587947794
+      ammo-component-icon-v1_3: 8938822428020039011
+      ammo-component-icon-v1_4: -8721274532297930771
+      ammo-component-icon-v1_5: -2921535641164406969
+      ammo-component-icon-v1_6: -6214018803137837971
+      ammo-component-icon-v1_7: 7340898197389862172
+      ammo-component-icon-v1_8: -2566881360794715813
+      ammo-component-icon-v1_9: -884969656071650674
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

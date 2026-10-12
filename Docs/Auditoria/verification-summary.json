@@ -1,0 +1,16 @@
+{
+  "dateLocal": "2026-10-09",
+  "runtimeCompilation": "passed_csharp_only",
+  "editorCompilation": "passed_csharp_only",
+  "ruleChecks": 16,
+  "unexpectedRuleResults": 0,
+  "operationalPowerShellFiles": 5,
+  "operationalPowerShellSyntax": "passed",
+  "playMode": "not_run",
+  "androidDevice": "not_run",
+  "profiler": "not_run",
+  "serverRestart": "not_run",
+  "sourceScripts": 41,
+  "editorScripts": 5,
+  "installedSkills": 9
+}

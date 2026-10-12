@@ -36,9 +36,18 @@ foreach ($roomIndex in 1..$Rooms) {
     }
     $roomLogName = if ($roomIndex -eq 1) { 'server.log' } else { "server-room-$roomIndex.log" }
     $roomLogPath = Join-Path $serverLogDirectory $roomLogName
+    $roomReadyPath = Join-Path $serverLogDirectory "room-$roomIndex.ready"
+    if (Test-Path -LiteralPath $roomReadyPath) { Remove-Item -LiteralPath $roomReadyPath -Force }
     $roomArguments = '-batchmode -nographics -server -port ' + $roomPort + ' -room ' + $roomIndex +
-        ' -cluster-id ' + $clusterId + ' -logFile "' + $roomLogPath + '"'
+        ' -cluster-id ' + $clusterId + ' -ready-file "' + $roomReadyPath + '" -logFile "' + $roomLogPath + '"'
     $roomProcess = Start-Process -FilePath $serverExecutable -ArgumentList $roomArguments -WorkingDirectory $PSScriptRoot -WindowStyle Hidden -PassThru
+    $roomReadyDeadline = [DateTime]::UtcNow.AddSeconds(30)
+    while (-not (Test-Path -LiteralPath $roomReadyPath) -and [DateTime]::UtcNow -lt $roomReadyDeadline) {
+        $roomProcess.Refresh()
+        if ($roomProcess.HasExited) { throw "A sala $roomIndex encerrou durante a inicializacao. Consulte $roomLogPath" }
+        Start-Sleep -Milliseconds 200
+    }
+    if (-not (Test-Path -LiteralPath $roomReadyPath)) { throw "A sala $roomIndex nao confirmou prontidao. Consulte $roomLogPath" }
     Write-Output "Sala $roomIndex iniciada. Processo: $($roomProcess.Id). Porta UDP: $roomPort."
 }
 Write-Output "Ate $Rooms partidas simultaneas. Para encerrar todas as salas, abra Parar-Servidor.bat."
