@@ -12,6 +12,20 @@ class CookingInventoryProbe
     static void Main(string[] args)
     {
         bool before=args.Length>0 && args[0]=="--expect-bug";
+        if(!before)
+        {
+            var picks=new InventoryGrid();
+            Check(picks.Add(new ItemStack(ItemId.Lockpick,20)) && picks.Slots[0].Quantity==20 && picks.Slots[1].Empty,"twenty lockpicks share one slot");
+            Check(WeaponSwitchTiming.Duration((byte)ItemId.Pistol,(byte)ItemId.DoubleBarrelShotgun)==32d/24,"shotgun draw lock matches 32 frames");
+            Check(WeaponSwitchTiming.Duration((byte)ItemId.Mosin,(byte)ItemId.DoubleBarrelShotgun)==36d/24,"rifle to shotgun lock matches 36 frames");
+            var full=new CampProgress { PierRepaired=true,Pack=new InventoryGrid(),Chest=new InventoryGrid() };
+            for(int i=0;i<9;i++) full.Pack.Slots[i]=new ItemStack(ItemId.Wood,20);
+            var fishActivity=new CampActivity();
+            Check(!fishActivity.BeginFishing(full,0) && !fishActivity.Busy && fishActivity.FishingRejection!=null,"full backpack blocks fishing even with empty safe chest");
+            Check(!full.CompleteFishing(ItemId.FishCommon) && full.Chest.Count(ItemId.FishCommon)==0,"catch never goes to another inventory");
+            full.Pack.Slots[0]=default;
+            Check(fishActivity.BeginFishing(full,0),"free player slot enables fishing");
+        }
         var p=CampTestResources.Create(); var a=new CampActivity();
         Check(Cook(a,p,ItemId.FishCommon,100,Perfect),"first fish cooks with one empty slot");
         bool second=Cook(a,p,ItemId.FishRare,110,Perfect);

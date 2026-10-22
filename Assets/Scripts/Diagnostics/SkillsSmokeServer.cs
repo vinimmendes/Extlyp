@@ -39,13 +39,13 @@ namespace CyberExtraction.Diagnostics
             var chestObject=Instantiate(mm.lootPrefab,player.transform.position+Vector3.right,Quaternion.identity);
             var chest=chestObject.GetComponent<LootPickup>(); chest.initialChest=true; chest.initialRarity=2; chest.initialQuantity=0;
             chestObject.GetComponent<NetworkObject>().Spawn();
-            while(inv.PistolRounds>10) yield return null;
+            while(player.GetComponent<PlayerShooter>().ShotSequence.Value<1) yield return null;
             if(hp.Maximum.Value!=125 || inv.Bandages.Value!=3) throw new Exception("SKILLS SERVER equipment/buff");
             hp.ServerTakeDamage(40); if(!inv.ServerUseBandage() || hp.Current.Value!=110) throw new Exception("SKILLS SERVER heal");
             inv.BandageReadyAt.Value=0; if(!inv.ServerUseBandage() || hp.Current.Value!=125) throw new Exception("SKILLS SERVER max heal");
             mm.ServerParticipantExtracted(inv); mm.ServerParticipantExtracted(inv);
             var join=NetworkBootstrap.Instance.RequestFor(inv.OwnerClientId); var profile=CampRepository.Get(join.Session);
-            if(profile.Pack.Count(ItemId.Pistol)!=1 || profile.Pack.Count(ItemId.Bandage)!=1 || profile.ExpeditionState!=0) throw new Exception("SKILLS SERVER extraction accounting");
+            if(!profile.HasAnyWeapon || profile.Pack.Count(ItemId.Bandage)!=1 || profile.ExpeditionState!=0) throw new Exception("SKILLS SERVER extraction accounting");
             Debug.Log("SKILLS SMOKE SERVER PASS: server authority, heal, extraction exactly once"); completed=true; stopAt=Time.realtimeSinceStartup+15;
         }
     }

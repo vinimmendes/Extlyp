@@ -1,0 +1,7 @@
+{
+  "method": "alpha-bounds normalized contour overlay, separate canonical camera",
+  "source": "reference.png",
+  "target": "topdown frame 1",
+  "exact_pose_alignment": false,
+  "remaining_difference": "single painted reference differs in pose, perspective, proportions and surface detail; v2 is a stylized reconstruction"
+}

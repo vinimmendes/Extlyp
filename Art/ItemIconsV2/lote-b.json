@@ -1,0 +1,40 @@
+{
+  "Batch": "B",
+  "Date": "2026-10-19",
+  "Tool": "imagegen integrado",
+  "StyleReference": "Art/ItemIconsV2/Originals/Pistol.png",
+  "Items": {
+    "PistolAmmo": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-79fa9656-003e-4ba9-bb49-b5a2d14e0824.png",
+      "PromptFile": "Art/ItemIconsV2/PistolAmmo-prompt.txt"
+    },
+    "RifleAmmo": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-4e08bce8-9bc0-4039-a042-e5f75b42e20d.png",
+      "PromptFile": "Art/ItemIconsV2/RifleAmmo-prompt.txt"
+    },
+    "ShotgunShell": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-847ec646-e9a0-4cff-a407-7ad96c4ff9bb.png",
+      "PromptFile": "Art/ItemIconsV2/ShotgunShell-prompt.txt"
+    },
+    "Mosin": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-22fb1c8e-17a6-4e84-92a2-afc0ae0b7e53.png",
+      "PromptFile": "Art/ItemIconsV2/Mosin-prompt.txt"
+    },
+    "DoubleBarrelShotgun": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-6aa9b319-13c2-4cba-87f2-8502d4df8e9e.png",
+      "PromptFile": "Art/ItemIconsV2/DoubleBarrelShotgun-prompt.txt"
+    },
+    "ShortSword": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-8e24c8bb-db7d-4659-a8d2-60a8ee0d19e2.png",
+      "PromptFile": "Art/ItemIconsV2/ShortSword-prompt.txt"
+    },
+    "BattleAxe": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-26a68925-56e4-4183-9372-3e2cf9816c21.png",
+      "PromptFile": "Art/ItemIconsV2/BattleAxe-prompt.txt"
+    },
+    "Spear": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-716d28f5-9173-4ca2-b2aa-cae2d1da2516.png",
+      "PromptFile": "Art/ItemIconsV2/Spear-prompt.txt"
+    }
+  }
+}

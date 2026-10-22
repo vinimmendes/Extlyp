@@ -1,0 +1,3811 @@
+{
+  "version": 1,
+  "stage": "planejamento, sem integração runtime",
+  "date": "2026-10-19",
+  "coordinateSystem": "relativeCells: origem centro do mapa; worldUnits = cells × 1.06; y positivo norte",
+  "sources": [
+    "DungeonLayout.cs",
+    "DungeonLayout.Canal.cs",
+    "DungeonContent.cs",
+    "DungeonDetails.cs",
+    "DungeonBreakableLayout.cs",
+    "BreakablesCatalog.json"
+  ],
+  "placementStatus": "Zonas e envelopes são propostas. Não validam encaixe visual, física, fog ou navegação em Unity.",
+  "rooms": [
+    {
+      "id": "R00",
+      "roomIndex": 0,
+      "name": "Entrada do sino",
+      "sector": 0,
+      "roomBounds": {
+        "relativeCells": [
+          -57,
+          35,
+          10,
+          10
+        ],
+        "worldUnits": [
+          -60.42,
+          37.1,
+          10.6,
+          10.6
+        ]
+      },
+      "pilot": false,
+      "primary": "memorial",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          -57,
+          37,
+          3,
+          6
+        ],
+        "worldUnits": [
+          -60.42,
+          39.22,
+          3.18,
+          6.36
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "reuseFamilies": [
+        "CAT-A09",
+        "CAT-P03",
+        "CAT-D07",
+        "CAT-D12"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        0
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conjunto pequeno lateral; centro e aproximação do spawn livres."
+      ]
+    },
+    {
+      "id": "R01",
+      "roomIndex": 1,
+      "name": "Entrada das urnas",
+      "sector": 0,
+      "roomBounds": {
+        "relativeCells": [
+          -45,
+          47,
+          10,
+          10
+        ],
+        "worldUnits": [
+          -47.7,
+          49.82,
+          10.6,
+          10.6
+        ]
+      },
+      "pilot": false,
+      "primary": "sepultura",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          -38,
+          49,
+          3,
+          6
+        ],
+        "worldUnits": [
+          -40.28,
+          51.94,
+          3.18,
+          6.36
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "reuseFamilies": [
+        "CAT-P01",
+        "CAT-P02",
+        "CAT-P10",
+        "CAT-D11"
+      ],
+      "newArt": [
+        "N01"
+      ],
+      "breakableCandidateIds": [
+        1
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conjunto pequeno lateral; centro e aproximação do spawn livres."
+      ]
+    },
+    {
+      "id": "R02",
+      "roomIndex": 2,
+      "name": "Entrada dos nomes",
+      "sector": 0,
+      "roomBounds": {
+        "relativeCells": [
+          35,
+          47,
+          10,
+          10
+        ],
+        "worldUnits": [
+          37.1,
+          49.82,
+          10.6,
+          10.6
+        ]
+      },
+      "pilot": false,
+      "primary": "memorial",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          35,
+          49,
+          3,
+          6
+        ],
+        "worldUnits": [
+          37.1,
+          51.94,
+          3.18,
+          6.36
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "reuseFamilies": [
+        "CAT-A09",
+        "CAT-P03",
+        "CAT-D07",
+        "CAT-D12"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        2
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conjunto pequeno lateral; centro e aproximação do spawn livres."
+      ]
+    },
+    {
+      "id": "R03",
+      "roomIndex": 3,
+      "name": "Entrada das grades",
+      "sector": 0,
+      "roomBounds": {
+        "relativeCells": [
+          47,
+          35,
+          10,
+          10
+        ],
+        "worldUnits": [
+          49.82,
+          37.1,
+          10.6,
+          10.6
+        ]
+      },
+      "pilot": false,
+      "primary": "cela",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          54,
+          37,
+          3,
+          6
+        ],
+        "worldUnits": [
+          57.24,
+          39.22,
+          3.18,
+          6.36
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "reuseFamilies": [
+        "CAT-A11",
+        "CAT-A12",
+        "CAT-D09",
+        "CAT-D10"
+      ],
+      "newArt": [
+        "N06",
+        "N07"
+      ],
+      "breakableCandidateIds": [
+        3
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conjunto pequeno lateral; centro e aproximação do spawn livres."
+      ]
+    },
+    {
+      "id": "R04",
+      "roomIndex": 4,
+      "name": "Entrada das raízes",
+      "sector": 0,
+      "roomBounds": {
+        "relativeCells": [
+          -57,
+          -45,
+          10,
+          10
+        ],
+        "worldUnits": [
+          -60.42,
+          -47.7,
+          10.6,
+          10.6
+        ]
+      },
+      "pilot": false,
+      "primary": "ossario",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          -57,
+          -43,
+          3,
+          6
+        ],
+        "worldUnits": [
+          -60.42,
+          -45.58,
+          3.18,
+          6.36
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "reuseFamilies": [
+        "CAT-A08",
+        "CAT-P04",
+        "CAT-D01",
+        "CAT-D02",
+        "CAT-D06"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        4
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conjunto pequeno lateral; centro e aproximação do spawn livres."
+      ]
+    },
+    {
+      "id": "R05",
+      "roomIndex": 5,
+      "name": "Entrada das velas",
+      "sector": 0,
+      "roomBounds": {
+        "relativeCells": [
+          -45,
+          -57,
+          10,
+          10
+        ],
+        "worldUnits": [
+          -47.7,
+          -60.42,
+          10.6,
+          10.6
+        ]
+      },
+      "pilot": false,
+      "primary": "ritual",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          -38,
+          -55,
+          3,
+          6
+        ],
+        "worldUnits": [
+          -40.28,
+          -58.3,
+          3.18,
+          6.36
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "reuseFamilies": [
+        "CAT-P06",
+        "CAT-D07",
+        "CAT-D11",
+        "CAT-D12"
+      ],
+      "newArt": [
+        "N05"
+      ],
+      "breakableCandidateIds": [
+        5
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conjunto pequeno lateral; centro e aproximação do spawn livres."
+      ]
+    },
+    {
+      "id": "R06",
+      "roomIndex": 6,
+      "name": "Entrada do cortejo",
+      "sector": 0,
+      "roomBounds": {
+        "relativeCells": [
+          11,
+          -61,
+          10,
+          10
+        ],
+        "worldUnits": [
+          11.66,
+          -64.66,
+          10.6,
+          10.6
+        ]
+      },
+      "pilot": false,
+      "primary": "memorial",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          11,
+          -59,
+          3,
+          6
+        ],
+        "worldUnits": [
+          11.66,
+          -62.54,
+          3.18,
+          6.36
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "reuseFamilies": [
+        "CAT-A09",
+        "CAT-P03",
+        "CAT-D07",
+        "CAT-D12"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        6
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conjunto pequeno lateral; centro e aproximação do spawn livres."
+      ]
+    },
+    {
+      "id": "R07",
+      "roomIndex": 7,
+      "name": "Entrada do canal",
+      "sector": 0,
+      "roomBounds": {
+        "relativeCells": [
+          47,
+          -21,
+          10,
+          10
+        ],
+        "worldUnits": [
+          49.82,
+          -22.26,
+          10.6,
+          10.6
+        ]
+      },
+      "pilot": false,
+      "primary": "enchente",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          54,
+          -19,
+          3,
+          6
+        ],
+        "worldUnits": [
+          57.24,
+          -20.14,
+          3.18,
+          6.36
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "reuseFamilies": [
+        "CAT-F09",
+        "CAT-D03",
+        "CAT-D08",
+        "CAT-P10"
+      ],
+      "newArt": [
+        "N08",
+        "N09"
+      ],
+      "breakableCandidateIds": [
+        7
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conjunto pequeno lateral; centro e aproximação do spawn livres.",
+        "Conferir água; nenhuma colocação automática dentro de CanalReserved."
+      ]
+    },
+    {
+      "id": "R08",
+      "roomIndex": 8,
+      "name": "Galeria das urnas",
+      "sector": 1,
+      "roomBounds": {
+        "relativeCells": [
+          -34,
+          34,
+          20,
+          16
+        ],
+        "worldUnits": [
+          -36.04,
+          36.04,
+          21.2,
+          16.96
+        ]
+      },
+      "pilot": true,
+      "primary": "sepultura",
+      "secondaryOptional": "colapso",
+      "searchZone": {
+        "relativeCells": [
+          -34,
+          36,
+          3,
+          12
+        ],
+        "worldUnits": [
+          -36.04,
+          38.16,
+          3.18,
+          12.72
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-P01",
+        "CAT-P02",
+        "CAT-P10",
+        "CAT-D11"
+      ],
+      "newArt": [
+        "N01"
+      ],
+      "breakableCandidateIds": [
+        8,
+        9,
+        10
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R09",
+      "roomIndex": 9,
+      "name": "Nomes raspados",
+      "sector": 1,
+      "roomBounds": {
+        "relativeCells": [
+          -9,
+          36,
+          18,
+          16
+        ],
+        "worldUnits": [
+          -9.54,
+          38.16,
+          19.08,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "memorial",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          6,
+          38,
+          3,
+          12
+        ],
+        "worldUnits": [
+          6.36,
+          40.28,
+          3.18,
+          12.72
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-A09",
+        "CAT-P03",
+        "CAT-D07",
+        "CAT-D12"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        11,
+        12,
+        13
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R10",
+      "roomIndex": 10,
+      "name": "Celas dos penitentes",
+      "sector": 5,
+      "roomBounds": {
+        "relativeCells": [
+          14,
+          34,
+          20,
+          16
+        ],
+        "worldUnits": [
+          14.84,
+          36.04,
+          21.2,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "cela",
+      "secondaryOptional": "memorial",
+      "searchZone": {
+        "relativeCells": [
+          14,
+          36,
+          3,
+          12
+        ],
+        "worldUnits": [
+          14.84,
+          38.16,
+          3.18,
+          12.72
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-A11",
+        "CAT-A12",
+        "CAT-D09",
+        "CAT-D10"
+      ],
+      "newArt": [
+        "N06",
+        "N07"
+      ],
+      "breakableCandidateIds": [
+        14,
+        15,
+        16
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Composição subordinada à extração ou pedestal existente."
+      ]
+    },
+    {
+      "id": "R11",
+      "roomIndex": 11,
+      "name": "Sala das correntes",
+      "sector": 5,
+      "roomBounds": {
+        "relativeCells": [
+          35,
+          12,
+          18,
+          16
+        ],
+        "worldUnits": [
+          37.1,
+          12.72,
+          19.08,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "cela",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          50,
+          14,
+          3,
+          12
+        ],
+        "worldUnits": [
+          53.0,
+          14.84,
+          3.18,
+          12.72
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-A11",
+        "CAT-A12",
+        "CAT-D09",
+        "CAT-D10"
+      ],
+      "newArt": [
+        "N06",
+        "N07"
+      ],
+      "breakableCandidateIds": [
+        17,
+        18,
+        19
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R12",
+      "roomIndex": 12,
+      "name": "Salão das águas",
+      "sector": 4,
+      "roomBounds": {
+        "relativeCells": [
+          35,
+          -14,
+          18,
+          20
+        ],
+        "worldUnits": [
+          37.1,
+          -14.84,
+          19.08,
+          21.2
+        ]
+      },
+      "pilot": false,
+      "primary": "enchente",
+      "secondaryOptional": "colapso",
+      "searchZone": {
+        "relativeCells": [
+          35,
+          -12,
+          3,
+          16
+        ],
+        "worldUnits": [
+          37.1,
+          -12.72,
+          3.18,
+          16.96
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-F09",
+        "CAT-D03",
+        "CAT-D08",
+        "CAT-P10"
+      ],
+      "newArt": [
+        "N08",
+        "N09"
+      ],
+      "breakableCandidateIds": [
+        20,
+        21,
+        22
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conferir água; nenhuma colocação automática dentro de CanalReserved."
+      ]
+    },
+    {
+      "id": "R13",
+      "roomIndex": 13,
+      "name": "Embarcadouro funerário",
+      "sector": 4,
+      "roomBounds": {
+        "relativeCells": [
+          34,
+          -56,
+          20,
+          16
+        ],
+        "worldUnits": [
+          36.04,
+          -59.36,
+          21.2,
+          16.96
+        ]
+      },
+      "pilot": true,
+      "primary": "enchente",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          34,
+          -54,
+          3,
+          12
+        ],
+        "worldUnits": [
+          36.04,
+          -57.24,
+          3.18,
+          12.72
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-F09",
+        "CAT-D03",
+        "CAT-D08",
+        "CAT-P10"
+      ],
+      "newArt": [
+        "N08",
+        "N09"
+      ],
+      "breakableCandidateIds": [
+        23,
+        24,
+        25
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conferir água; nenhuma colocação automática dentro de CanalReserved.",
+        "Piloto manual na margem oeste; preservar cais, embarque e saída sul."
+      ]
+    },
+    {
+      "id": "R14",
+      "roomIndex": 14,
+      "name": "Escadaria do cortejo",
+      "sector": 1,
+      "roomBounds": {
+        "relativeCells": [
+          15,
+          -52,
+          18,
+          16
+        ],
+        "worldUnits": [
+          15.9,
+          -55.12,
+          19.08,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "memorial",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          15,
+          -50,
+          3,
+          12
+        ],
+        "worldUnits": [
+          15.9,
+          -53.0,
+          3.18,
+          12.72
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-A09",
+        "CAT-P03",
+        "CAT-D07",
+        "CAT-D12"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        26,
+        27,
+        28
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Composição subordinada à extração ou pedestal existente."
+      ]
+    },
+    {
+      "id": "R15",
+      "roomIndex": 15,
+      "name": "Galeria dos relevos",
+      "sector": 1,
+      "roomBounds": {
+        "relativeCells": [
+          -9,
+          -52,
+          18,
+          16
+        ],
+        "worldUnits": [
+          -9.54,
+          -55.12,
+          19.08,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "memorial",
+      "secondaryOptional": null,
+      "searchZone": {
+        "relativeCells": [
+          6,
+          -50,
+          3,
+          12
+        ],
+        "worldUnits": [
+          6.36,
+          -53.0,
+          3.18,
+          12.72
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-A09",
+        "CAT-P03",
+        "CAT-D07",
+        "CAT-D12"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        29,
+        30,
+        31
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R16",
+      "roomIndex": 16,
+      "name": "Claustro das velas",
+      "sector": 3,
+      "roomBounds": {
+        "relativeCells": [
+          -34,
+          -50,
+          20,
+          16
+        ],
+        "worldUnits": [
+          -36.04,
+          -53.0,
+          21.2,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "ritual",
+      "secondaryOptional": "memorial",
+      "searchZone": {
+        "relativeCells": [
+          -34,
+          -48,
+          3,
+          12
+        ],
+        "worldUnits": [
+          -36.04,
+          -50.88,
+          3.18,
+          12.72
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-P06",
+        "CAT-D07",
+        "CAT-D11",
+        "CAT-D12"
+      ],
+      "newArt": [
+        "N05"
+      ],
+      "breakableCandidateIds": [
+        32,
+        33,
+        34
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R17",
+      "roomIndex": 17,
+      "name": "Ossário inferior",
+      "sector": 2,
+      "roomBounds": {
+        "relativeCells": [
+          -53,
+          -28,
+          18,
+          16
+        ],
+        "worldUnits": [
+          -56.18,
+          -29.68,
+          19.08,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "ossario",
+      "secondaryOptional": "sepultura",
+      "searchZone": {
+        "relativeCells": [
+          -38,
+          -26,
+          3,
+          12
+        ],
+        "worldUnits": [
+          -40.28,
+          -27.56,
+          3.18,
+          12.72
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-A08",
+        "CAT-P04",
+        "CAT-D01",
+        "CAT-D02",
+        "CAT-D06"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        35,
+        36,
+        37
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R18",
+      "roomIndex": 18,
+      "name": "Ossário das raízes",
+      "sector": 2,
+      "roomBounds": {
+        "relativeCells": [
+          -53,
+          -6,
+          18,
+          20
+        ],
+        "worldUnits": [
+          -56.18,
+          -6.36,
+          19.08,
+          21.2
+        ]
+      },
+      "pilot": false,
+      "primary": "ossario",
+      "secondaryOptional": "sepultura",
+      "searchZone": {
+        "relativeCells": [
+          -53,
+          -4,
+          3,
+          16
+        ],
+        "worldUnits": [
+          -56.18,
+          -4.24,
+          3.18,
+          16.96
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-A08",
+        "CAT-P04",
+        "CAT-D01",
+        "CAT-D02",
+        "CAT-D06"
+      ],
+      "newArt": [],
+      "breakableCandidateIds": [
+        38,
+        39,
+        40
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Composição subordinada à extração ou pedestal existente."
+      ]
+    },
+    {
+      "id": "R19",
+      "roomIndex": 19,
+      "name": "Câmara dos contrapesos",
+      "sector": 7,
+      "roomBounds": {
+        "relativeCells": [
+          -38,
+          16,
+          20,
+          16
+        ],
+        "worldUnits": [
+          -40.28,
+          16.96,
+          21.2,
+          16.96
+        ]
+      },
+      "pilot": true,
+      "primary": "coveiros",
+      "secondaryOptional": "colapso",
+      "searchZone": {
+        "relativeCells": [
+          -21,
+          18,
+          3,
+          12
+        ],
+        "worldUnits": [
+          -22.26,
+          19.08,
+          3.18,
+          12.72
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-P07",
+        "CAT-D10"
+      ],
+      "newArt": [
+        "N02",
+        "N03",
+        "N04"
+      ],
+      "breakableCandidateIds": [
+        41,
+        42,
+        43
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Composição subordinada à extração ou pedestal existente."
+      ]
+    },
+    {
+      "id": "R20",
+      "roomIndex": 20,
+      "name": "Pátio das vigílias",
+      "sector": 3,
+      "roomBounds": {
+        "relativeCells": [
+          -19,
+          -10,
+          18,
+          20
+        ],
+        "worldUnits": [
+          -20.14,
+          -10.6,
+          19.08,
+          21.2
+        ]
+      },
+      "pilot": false,
+      "primary": "ritual",
+      "secondaryOptional": "expedicao",
+      "searchZone": {
+        "relativeCells": [
+          -19,
+          -8,
+          3,
+          16
+        ],
+        "worldUnits": [
+          -20.14,
+          -8.48,
+          3.18,
+          16.96
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-P06",
+        "CAT-D07",
+        "CAT-D11",
+        "CAT-D12"
+      ],
+      "newArt": [
+        "N05"
+      ],
+      "breakableCandidateIds": [
+        44,
+        45,
+        46
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R21",
+      "roomIndex": 21,
+      "name": "Capela invertida",
+      "sector": 6,
+      "roomBounds": {
+        "relativeCells": [
+          2,
+          -10,
+          20,
+          20
+        ],
+        "worldUnits": [
+          2.12,
+          -10.6,
+          21.2,
+          21.2
+        ]
+      },
+      "pilot": false,
+      "primary": "ritual",
+      "secondaryOptional": "memorial",
+      "searchZone": {
+        "relativeCells": [
+          19,
+          -8,
+          3,
+          16
+        ],
+        "worldUnits": [
+          20.14,
+          -8.48,
+          3.18,
+          16.96
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-P06",
+        "CAT-D07",
+        "CAT-D11",
+        "CAT-D12"
+      ],
+      "newArt": [
+        "N05"
+      ],
+      "breakableCandidateIds": [
+        47,
+        48,
+        49
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R22",
+      "roomIndex": 22,
+      "name": "Sacristia partida",
+      "sector": 6,
+      "roomBounds": {
+        "relativeCells": [
+          3,
+          16,
+          18,
+          16
+        ],
+        "worldUnits": [
+          3.18,
+          16.96,
+          19.08,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "sepultura",
+      "secondaryOptional": "expedicao",
+      "searchZone": {
+        "relativeCells": [
+          3,
+          18,
+          3,
+          12
+        ],
+        "worldUnits": [
+          3.18,
+          19.08,
+          3.18,
+          12.72
+        ],
+        "side": "oeste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-P01",
+        "CAT-P02",
+        "CAT-P10",
+        "CAT-D11"
+      ],
+      "newArt": [
+        "N01"
+      ],
+      "breakableCandidateIds": [
+        50,
+        51,
+        52
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras."
+      ]
+    },
+    {
+      "id": "R23",
+      "roomIndex": 23,
+      "name": "Cisterna dos lamentos",
+      "sector": 4,
+      "roomBounds": {
+        "relativeCells": [
+          0,
+          -32,
+          16,
+          16
+        ],
+        "worldUnits": [
+          0.0,
+          -33.92,
+          16.96,
+          16.96
+        ]
+      },
+      "pilot": false,
+      "primary": "enchente",
+      "secondaryOptional": "colapso",
+      "searchZone": {
+        "relativeCells": [
+          13,
+          -30,
+          3,
+          12
+        ],
+        "worldUnits": [
+          13.78,
+          -31.8,
+          3.18,
+          12.72
+        ],
+        "side": "leste",
+        "status": "proposta; não é posição aprovada"
+      },
+      "envelopeCells": [
+        4,
+        3
+      ],
+      "reuseFamilies": [
+        "CAT-F09",
+        "CAT-D03",
+        "CAT-D08",
+        "CAT-P10"
+      ],
+      "newArt": [
+        "N08",
+        "N09"
+      ],
+      "breakableCandidateIds": [
+        53,
+        54,
+        55
+      ],
+      "notes": [
+        "Conferir bounds da arte existente e aberturas antes de fixar âncoras.",
+        "Conferir água; nenhuma colocação automática dentro de CanalReserved."
+      ]
+    }
+  ],
+  "corridors": [
+    {
+      "id": "C00",
+      "rooms": [
+        0,
+        18
+      ],
+      "relativeCellPolyline": [
+        [
+          -52,
+          40
+        ],
+        [
+          -52,
+          4
+        ],
+        [
+          -44,
+          4
+        ]
+      ],
+      "family": "ossario",
+      "targetGroups": 1,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C01",
+      "rooms": [
+        1,
+        8
+      ],
+      "relativeCellPolyline": [
+        [
+          -40,
+          52
+        ],
+        [
+          -40,
+          42
+        ],
+        [
+          -24,
+          42
+        ]
+      ],
+      "family": "sepultura",
+      "targetGroups": 1,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C02",
+      "rooms": [
+        2,
+        10
+      ],
+      "relativeCellPolyline": [
+        [
+          40,
+          52
+        ],
+        [
+          40,
+          42
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "family": "cela",
+      "targetGroups": 1,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C03",
+      "rooms": [
+        3,
+        11
+      ],
+      "relativeCellPolyline": [
+        [
+          52,
+          40
+        ],
+        [
+          52,
+          20
+        ],
+        [
+          44,
+          20
+        ]
+      ],
+      "family": "cela",
+      "targetGroups": 1,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C04",
+      "rooms": [
+        4,
+        17
+      ],
+      "relativeCellPolyline": [
+        [
+          -52,
+          -40
+        ],
+        [
+          -52,
+          -20
+        ],
+        [
+          -44,
+          -20
+        ]
+      ],
+      "family": "ossario",
+      "targetGroups": 1,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C05",
+      "rooms": [
+        5,
+        16
+      ],
+      "relativeCellPolyline": [
+        [
+          -40,
+          -52
+        ],
+        [
+          -40,
+          -42
+        ],
+        [
+          -24,
+          -42
+        ]
+      ],
+      "family": "ritual",
+      "targetGroups": 1,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C06",
+      "rooms": [
+        6,
+        14
+      ],
+      "relativeCellPolyline": [
+        [
+          16,
+          -56
+        ],
+        [
+          16,
+          -44
+        ],
+        [
+          24,
+          -44
+        ]
+      ],
+      "family": "memorial",
+      "targetGroups": 1,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C07",
+      "rooms": [
+        7,
+        12
+      ],
+      "relativeCellPolyline": [
+        [
+          52,
+          -16
+        ],
+        [
+          52,
+          -4
+        ],
+        [
+          44,
+          -4
+        ]
+      ],
+      "family": "enchente",
+      "targetGroups": 1,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C08",
+      "rooms": [
+        8,
+        9
+      ],
+      "relativeCellPolyline": [
+        [
+          -24,
+          42
+        ],
+        [
+          0,
+          42
+        ],
+        [
+          0,
+          44
+        ]
+      ],
+      "family": "sepultura",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C09",
+      "rooms": [
+        9,
+        10
+      ],
+      "relativeCellPolyline": [
+        [
+          0,
+          44
+        ],
+        [
+          24,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "family": "memorial",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C10",
+      "rooms": [
+        10,
+        11
+      ],
+      "relativeCellPolyline": [
+        [
+          24,
+          42
+        ],
+        [
+          44,
+          42
+        ],
+        [
+          44,
+          20
+        ]
+      ],
+      "family": "cela",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C11",
+      "rooms": [
+        11,
+        12
+      ],
+      "relativeCellPolyline": [
+        [
+          44,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          44,
+          -4
+        ]
+      ],
+      "family": "cela",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C12",
+      "rooms": [
+        14,
+        15
+      ],
+      "relativeCellPolyline": [
+        [
+          24,
+          -44
+        ],
+        [
+          0,
+          -44
+        ],
+        [
+          0,
+          -44
+        ]
+      ],
+      "family": "memorial",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C13",
+      "rooms": [
+        15,
+        16
+      ],
+      "relativeCellPolyline": [
+        [
+          0,
+          -44
+        ],
+        [
+          -24,
+          -44
+        ],
+        [
+          -24,
+          -42
+        ]
+      ],
+      "family": "memorial",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C14",
+      "rooms": [
+        16,
+        17
+      ],
+      "relativeCellPolyline": [
+        [
+          -24,
+          -42
+        ],
+        [
+          -44,
+          -42
+        ],
+        [
+          -44,
+          -20
+        ]
+      ],
+      "family": "ritual",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C15",
+      "rooms": [
+        17,
+        18
+      ],
+      "relativeCellPolyline": [
+        [
+          -44,
+          -20
+        ],
+        [
+          -44,
+          -20
+        ],
+        [
+          -44,
+          4
+        ]
+      ],
+      "family": "ossario",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C16",
+      "rooms": [
+        18,
+        19
+      ],
+      "relativeCellPolyline": [
+        [
+          -44,
+          4
+        ],
+        [
+          -28,
+          4
+        ],
+        [
+          -28,
+          24
+        ]
+      ],
+      "family": "ossario",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C17",
+      "rooms": [
+        19,
+        8
+      ],
+      "relativeCellPolyline": [
+        [
+          -28,
+          24
+        ],
+        [
+          -24,
+          24
+        ],
+        [
+          -24,
+          42
+        ]
+      ],
+      "family": "coveiros",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C18",
+      "rooms": [
+        19,
+        20
+      ],
+      "relativeCellPolyline": [
+        [
+          -28,
+          24
+        ],
+        [
+          -10,
+          24
+        ],
+        [
+          -10,
+          0
+        ]
+      ],
+      "family": "coveiros",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C19",
+      "rooms": [
+        20,
+        21
+      ],
+      "relativeCellPolyline": [
+        [
+          -10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          0
+        ]
+      ],
+      "family": "ritual",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C20",
+      "rooms": [
+        21,
+        12
+      ],
+      "relativeCellPolyline": [
+        [
+          12,
+          0
+        ],
+        [
+          44,
+          0
+        ],
+        [
+          44,
+          -4
+        ]
+      ],
+      "family": "ritual",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C21",
+      "rooms": [
+        21,
+        22
+      ],
+      "relativeCellPolyline": [
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          24
+        ]
+      ],
+      "family": "ritual",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C22",
+      "rooms": [
+        22,
+        9
+      ],
+      "relativeCellPolyline": [
+        [
+          12,
+          24
+        ],
+        [
+          0,
+          24
+        ],
+        [
+          0,
+          44
+        ]
+      ],
+      "family": "sepultura",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C23",
+      "rooms": [
+        22,
+        10
+      ],
+      "relativeCellPolyline": [
+        [
+          12,
+          24
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "family": "sepultura",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C24",
+      "rooms": [
+        20,
+        23
+      ],
+      "relativeCellPolyline": [
+        [
+          -10,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          -24
+        ]
+      ],
+      "family": "ritual",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C25",
+      "rooms": [
+        23,
+        15
+      ],
+      "relativeCellPolyline": [
+        [
+          8,
+          -24
+        ],
+        [
+          0,
+          -24
+        ],
+        [
+          0,
+          -44
+        ]
+      ],
+      "family": "enchente",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C26",
+      "rooms": [
+        20,
+        16
+      ],
+      "relativeCellPolyline": [
+        [
+          -10,
+          0
+        ],
+        [
+          -24,
+          0
+        ],
+        [
+          -24,
+          -42
+        ]
+      ],
+      "family": "ritual",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "C27",
+      "rooms": [
+        18,
+        20
+      ],
+      "relativeCellPolyline": [
+        [
+          -44,
+          4
+        ],
+        [
+          -10,
+          4
+        ],
+        [
+          -10,
+          0
+        ]
+      ],
+      "family": "ossario",
+      "targetGroups": 2,
+      "placement": "Laterais fora das salas; excluir aberturas e cruzamentos; não sobrepor rotas compartilhadas.",
+      "status": "trecho mapeado; âncoras finais pendentes"
+    },
+    {
+      "id": "CA01",
+      "name": "Galeria longa do canal",
+      "bounds": {
+        "relativeCells": [
+          24,
+          -52,
+          6,
+          40
+        ],
+        "worldUnits": [
+          25.44,
+          -55.12,
+          6.36,
+          42.4
+        ]
+      },
+      "family": "enchente",
+      "targetGroups": 2,
+      "placement": "Somente projeto manual de margens; ponte, faixa de passagem e percurso do barco livres.",
+      "status": "reserva existente preservada; sem autorização de colocação automática"
+    },
+    {
+      "id": "CA02",
+      "name": "Ponte da comporta",
+      "bounds": {
+        "relativeCells": [
+          42,
+          -28,
+          4,
+          8
+        ],
+        "worldUnits": [
+          44.52,
+          -29.68,
+          4.24,
+          8.48
+        ]
+      },
+      "family": "enchente",
+      "targetGroups": 0,
+      "placement": "Somente projeto manual de margens; ponte, faixa de passagem e percurso do barco livres.",
+      "status": "reserva existente preservada; sem autorização de colocação automática"
+    },
+    {
+      "id": "CA03",
+      "name": "Rio e saída da barca",
+      "bounds": {
+        "relativeCells": [
+          54,
+          -64,
+          8,
+          44
+        ],
+        "worldUnits": [
+          57.24,
+          -67.84,
+          8.48,
+          46.64
+        ]
+      },
+      "family": "enchente",
+      "targetGroups": 0,
+      "placement": "Somente projeto manual de margens; ponte, faixa de passagem e percurso do barco livres.",
+      "status": "reserva existente preservada; sem autorização de colocação automática"
+    }
+  ],
+  "compositions": {
+    "memorial": [
+      "Memorial apagado",
+      [
+        "CAT-A09",
+        "CAT-P03",
+        "CAT-D07",
+        "CAT-D12"
+      ],
+      []
+    ],
+    "sepultura": [
+      "Sepultura violada",
+      [
+        "CAT-P01",
+        "CAT-P02",
+        "CAT-P10",
+        "CAT-D11"
+      ],
+      [
+        "N01"
+      ]
+    ],
+    "ossario": [
+      "Ossário retomado por raízes",
+      [
+        "CAT-A08",
+        "CAT-P04",
+        "CAT-D01",
+        "CAT-D02",
+        "CAT-D06"
+      ],
+      []
+    ],
+    "ritual": [
+      "Ritual interrompido",
+      [
+        "CAT-P06",
+        "CAT-D07",
+        "CAT-D11",
+        "CAT-D12"
+      ],
+      [
+        "N05"
+      ]
+    ],
+    "cela": [
+      "Cela esquecida",
+      [
+        "CAT-A11",
+        "CAT-A12",
+        "CAT-D09",
+        "CAT-D10"
+      ],
+      [
+        "N06",
+        "N07"
+      ]
+    ],
+    "coveiros": [
+      "Trabalho dos coveiros",
+      [
+        "CAT-P07",
+        "CAT-D10"
+      ],
+      [
+        "N02",
+        "N03",
+        "N04"
+      ]
+    ],
+    "enchente": [
+      "Margem após a enchente",
+      [
+        "CAT-F09",
+        "CAT-D03",
+        "CAT-D08",
+        "CAT-P10"
+      ],
+      [
+        "N08",
+        "N09"
+      ]
+    ],
+    "expedicao": [
+      "Expedição perdida",
+      [
+        "CAT-D09",
+        "CAT-D11"
+      ],
+      [
+        "N10",
+        "N11"
+      ]
+    ],
+    "colapso": [
+      "Colapso antigo",
+      [
+        "CAT-A05",
+        "CAT-P08",
+        "CAT-P09",
+        "CAT-D12"
+      ],
+      []
+    ]
+  },
+  "newArt": [
+    {
+      "id": "N01",
+      "name": "Mortalha rasgada",
+      "priority": "piloto",
+      "envelopeCells": "2×1",
+      "notes": "Pano funerário plano; não usar silhueta de cadáver ou monstro."
+    },
+    {
+      "id": "N02",
+      "name": "Caixão inacabado",
+      "priority": "piloto",
+      "envelopeCells": "3×1",
+      "notes": "Volume em recesso ou bloqueio existente; distinto de baú."
+    },
+    {
+      "id": "N03",
+      "name": "Ferramentas de coveiro",
+      "priority": "piloto",
+      "envelopeCells": "2×1",
+      "notes": "Pá e ferramentas em conjunto; sem brilho de pickup."
+    },
+    {
+      "id": "N04",
+      "name": "Padiola funerária",
+      "priority": "posterior",
+      "envelopeCells": "3×1",
+      "notes": "Compor área de serviço; carro quebrado fica como variante posterior."
+    },
+    {
+      "id": "N05",
+      "name": "Incensário caído",
+      "priority": "posterior",
+      "envelopeCells": "1×1",
+      "notes": "Sem fumaça ou luz nova."
+    },
+    {
+      "id": "N06",
+      "name": "Tigela e utensílios de cela",
+      "priority": "posterior",
+      "envelopeCells": "1×1",
+      "notes": "Cerâmica fosca; sem estado de saque."
+    },
+    {
+      "id": "N07",
+      "name": "Palha deteriorada",
+      "priority": "posterior",
+      "envelopeCells": "2×1",
+      "notes": "Decalque de baixo contraste."
+    },
+    {
+      "id": "N08",
+      "name": "Madeira encharcada encalhada",
+      "priority": "piloto",
+      "envelopeCells": "3×1",
+      "notes": "Fragmentos junto à margem; não sugerir ponte."
+    },
+    {
+      "id": "N09",
+      "name": "Sedimentos e detritos de margem",
+      "priority": "piloto",
+      "envelopeCells": "3×1",
+      "notes": "Decalque, sem ocultar o limite físico da água."
+    },
+    {
+      "id": "N10",
+      "name": "Mochila rasgada decorativa",
+      "priority": "posterior",
+      "envelopeCells": "1×1",
+      "notes": "Vazia e danificada, distinta dos pickups."
+    },
+    {
+      "id": "N11",
+      "name": "Acampamento apagado",
+      "priority": "posterior",
+      "envelopeCells": "2×2",
+      "notes": "Cinzas e utensílios; sem fogo, loot ou interação nova."
+    }
+  ],
+  "protectedPoints": [
+    {
+      "id": "S00",
+      "kind": "spawn",
+      "worldPosition": [
+        -55.12,
+        42.4
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "S01",
+      "kind": "spawn",
+      "worldPosition": [
+        -42.4,
+        55.12
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "S02",
+      "kind": "spawn",
+      "worldPosition": [
+        42.4,
+        55.12
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "S03",
+      "kind": "spawn",
+      "worldPosition": [
+        55.12,
+        42.4
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "S04",
+      "kind": "spawn",
+      "worldPosition": [
+        -55.12,
+        -42.4
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "S05",
+      "kind": "spawn",
+      "worldPosition": [
+        -42.4,
+        -55.12
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "S06",
+      "kind": "spawn",
+      "worldPosition": [
+        16.96,
+        -59.36
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "S07",
+      "kind": "spawn",
+      "worldPosition": [
+        55.12,
+        -16.96
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "E0",
+      "kind": "extraction",
+      "worldPosition": [
+        25.44,
+        -42.64
+      ],
+      "radiusUnits": 5
+    },
+    {
+      "id": "E1",
+      "kind": "extraction",
+      "worldPosition": [
+        -46.64,
+        8.24
+      ],
+      "radiusUnits": 5
+    },
+    {
+      "id": "E2",
+      "kind": "extraction",
+      "worldPosition": [
+        59.36,
+        -53.0
+      ],
+      "radiusUnits": 5
+    },
+    {
+      "id": "M0",
+      "kind": "mechanism",
+      "worldPosition": [
+        22.94,
+        -44.64
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "M1",
+      "kind": "mechanism",
+      "worldPosition": [
+        -49.14,
+        6.24
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "M2",
+      "kind": "mechanism",
+      "worldPosition": [
+        55.12,
+        -53.0
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "M3",
+      "kind": "mechanism",
+      "worldPosition": [
+        49.82,
+        -19.08
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "Crank",
+      "kind": "pedestal",
+      "worldPosition": [
+        -29.68,
+        28.44
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "Key",
+      "kind": "pedestal",
+      "worldPosition": [
+        25.44,
+        47.52
+      ],
+      "radiusUnits": 3
+    },
+    {
+      "id": "L00",
+      "kind": "loot",
+      "worldPosition": [
+        -27.44,
+        43.52
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L01",
+      "kind": "loot",
+      "worldPosition": [
+        -2.0,
+        45.64
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L02",
+      "kind": "loot",
+      "worldPosition": [
+        23.44,
+        43.52
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L03",
+      "kind": "loot",
+      "worldPosition": [
+        44.64,
+        20.2
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L04",
+      "kind": "loot",
+      "worldPosition": [
+        49.94,
+        -5.24
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L05",
+      "kind": "loot",
+      "worldPosition": [
+        44.64,
+        -51.88
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L06",
+      "kind": "loot",
+      "worldPosition": [
+        23.44,
+        -47.64
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L07",
+      "kind": "loot",
+      "worldPosition": [
+        -2.0,
+        -47.64
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L08",
+      "kind": "loot",
+      "worldPosition": [
+        -27.44,
+        -45.52
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L09",
+      "kind": "loot",
+      "worldPosition": [
+        -48.64,
+        -22.2
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L10",
+      "kind": "loot",
+      "worldPosition": [
+        -48.64,
+        3.24
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L11",
+      "kind": "loot",
+      "worldPosition": [
+        -31.68,
+        24.44
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L12",
+      "kind": "loot",
+      "worldPosition": [
+        -12.6,
+        -1.0
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L13",
+      "kind": "loot",
+      "worldPosition": [
+        10.72,
+        -1.0
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L14",
+      "kind": "loot",
+      "worldPosition": [
+        10.72,
+        24.44
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L15",
+      "kind": "loot",
+      "worldPosition": [
+        6.48,
+        -26.44
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L16",
+      "kind": "loot",
+      "worldPosition": [
+        -23.44,
+        40.52
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L17",
+      "kind": "loot",
+      "worldPosition": [
+        27.44,
+        40.52
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L18",
+      "kind": "loot",
+      "worldPosition": [
+        51.94,
+        -8.24
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L19",
+      "kind": "loot",
+      "worldPosition": [
+        -27.68,
+        21.44
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L20",
+      "kind": "loot",
+      "worldPosition": [
+        -8.6,
+        -4.0
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L21",
+      "kind": "loot",
+      "worldPosition": [
+        14.72,
+        -4.0
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L22",
+      "kind": "loot",
+      "worldPosition": [
+        14.72,
+        21.44
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "L23",
+      "kind": "loot",
+      "worldPosition": [
+        10.48,
+        -29.44
+      ],
+      "radiusUnits": 2.8
+    },
+    {
+      "id": "F00",
+      "kind": "Weaver",
+      "worldPosition": [
+        -50.64,
+        1.24
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F01",
+      "kind": "Weaver",
+      "worldPosition": [
+        -42.64,
+        0.24
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F02",
+      "kind": "Weaver",
+      "worldPosition": [
+        -48.64,
+        -19.2
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F03",
+      "kind": "Weaver",
+      "worldPosition": [
+        -42.64,
+        -25.2
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F04",
+      "kind": "Weaver",
+      "worldPosition": [
+        28.44,
+        -38.64
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F05",
+      "kind": "Weaver",
+      "worldPosition": [
+        28.44,
+        -51.64
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F06",
+      "kind": "Weaver",
+      "worldPosition": [
+        4.48,
+        -28.44
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F07",
+      "kind": "Weaver",
+      "worldPosition": [
+        8.48,
+        -20.44
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F08",
+      "kind": "Weaver",
+      "worldPosition": [
+        -27.44,
+        42.52
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F09",
+      "kind": "Weaver",
+      "worldPosition": [
+        -33.68,
+        22.44
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F10",
+      "kind": "Stalker",
+      "worldPosition": [
+        22.44,
+        44.52
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F11",
+      "kind": "Stalker",
+      "worldPosition": [
+        47.64,
+        25.2
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F12",
+      "kind": "Stalker",
+      "worldPosition": [
+        0.0,
+        42.64
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F13",
+      "kind": "Stalker",
+      "worldPosition": [
+        8.72,
+        23.44
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F14",
+      "kind": "Stalker",
+      "worldPosition": [
+        2.0,
+        -43.64
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F15",
+      "kind": "Shell",
+      "worldPosition": [
+        -26.68,
+        22.44
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F16",
+      "kind": "Shell",
+      "worldPosition": [
+        12.72,
+        -2.0
+      ],
+      "radiusUnits": 2
+    },
+    {
+      "id": "F17",
+      "kind": "Shell",
+      "worldPosition": [
+        41.64,
+        -4.24
+      ],
+      "radiusUnits": 2
+    }
+  ],
+  "protectedCanalRectangles": {
+    "CanalArea": {
+      "relativeCells": [
+        30,
+        -64,
+        34,
+        50
+      ],
+      "worldUnits": [
+        31.8,
+        -67.84,
+        36.04,
+        53.0
+      ]
+    },
+    "CanalEastRiver": {
+      "relativeCells": [
+        32,
+        -28,
+        32,
+        8
+      ],
+      "worldUnits": [
+        33.92,
+        -29.68,
+        33.92,
+        8.48
+      ]
+    },
+    "CanalSouthRiver": {
+      "relativeCells": [
+        54,
+        -64,
+        8,
+        44
+      ],
+      "worldUnits": [
+        57.24,
+        -67.84,
+        8.48,
+        46.64
+      ]
+    },
+    "CanalBridge": {
+      "relativeCells": [
+        42,
+        -28,
+        4,
+        8
+      ],
+      "worldUnits": [
+        44.52,
+        -29.68,
+        4.24,
+        8.48
+      ]
+    },
+    "CanalDetour": {
+      "relativeCells": [
+        24,
+        -52,
+        6,
+        40
+      ],
+      "worldUnits": [
+        25.44,
+        -55.12,
+        6.36,
+        42.4
+      ]
+    },
+    "CanalBoarding": {
+      "relativeCells": [
+        54,
+        -51,
+        4,
+        2
+      ],
+      "worldUnits": [
+        57.24,
+        -54.06,
+        4.24,
+        2.12
+      ]
+    }
+  },
+  "breakableReservations": {
+    "worldFootprint": 0.9,
+    "paddingUnits": 0.2,
+    "candidates": [
+      {
+        "id": 0,
+        "room": 0,
+        "group": "Entry",
+        "cellX": 8,
+        "cellY": 102,
+        "x": -58.83,
+        "y": 40.81,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 0
+      },
+      {
+        "id": 1,
+        "room": 1,
+        "group": "Entry",
+        "cellX": 20,
+        "cellY": 114,
+        "x": -46.11,
+        "y": 53.53,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 90
+      },
+      {
+        "id": 2,
+        "room": 2,
+        "group": "Entry",
+        "cellX": 100,
+        "cellY": 114,
+        "x": 38.69,
+        "y": 53.53,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 180
+      },
+      {
+        "id": 3,
+        "room": 3,
+        "group": "Entry",
+        "cellX": 112,
+        "cellY": 102,
+        "x": 51.41,
+        "y": 40.81,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 270
+      },
+      {
+        "id": 4,
+        "room": 4,
+        "group": "Entry",
+        "cellX": 8,
+        "cellY": 20,
+        "x": -58.83,
+        "y": -46.11,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 0
+      },
+      {
+        "id": 5,
+        "room": 5,
+        "group": "Entry",
+        "cellX": 20,
+        "cellY": 8,
+        "x": -46.11,
+        "y": -58.83,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 90
+      },
+      {
+        "id": 6,
+        "room": 6,
+        "group": "Entry",
+        "cellX": 76,
+        "cellY": 4,
+        "x": 13.25,
+        "y": -63.07,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 180
+      },
+      {
+        "id": 7,
+        "room": 7,
+        "group": "Entry",
+        "cellX": 114,
+        "cellY": 44,
+        "x": 53.53,
+        "y": -20.67,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 270
+      },
+      {
+        "id": 8,
+        "room": 8,
+        "group": "Room",
+        "cellX": 33,
+        "cellY": 99,
+        "x": -32.33,
+        "y": 37.63,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 0
+      },
+      {
+        "id": 9,
+        "room": 8,
+        "group": "Room",
+        "cellX": 48,
+        "cellY": 112,
+        "x": -16.43,
+        "y": 51.41,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 90
+      },
+      {
+        "id": 10,
+        "room": 8,
+        "group": "Room",
+        "cellX": 31,
+        "cellY": 112,
+        "x": -34.45,
+        "y": 51.41,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 180
+      },
+      {
+        "id": 11,
+        "room": 9,
+        "group": "Room",
+        "cellX": 58,
+        "cellY": 101,
+        "x": -5.83,
+        "y": 39.75,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 270
+      },
+      {
+        "id": 12,
+        "room": 9,
+        "group": "Room",
+        "cellX": 71,
+        "cellY": 114,
+        "x": 7.95,
+        "y": 53.53,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 0
+      },
+      {
+        "id": 13,
+        "room": 9,
+        "group": "Room",
+        "cellX": 56,
+        "cellY": 114,
+        "x": -7.95,
+        "y": 53.53,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 90
+      },
+      {
+        "id": 14,
+        "room": 10,
+        "group": "Room",
+        "cellX": 81,
+        "cellY": 99,
+        "x": 18.55,
+        "y": 37.63,
+        "family": "Crate",
+        "variant": 3,
+        "angle": 180
+      },
+      {
+        "id": 15,
+        "room": 10,
+        "group": "Room",
+        "cellX": 96,
+        "cellY": 112,
+        "x": 34.45,
+        "y": 51.41,
+        "family": "Crate",
+        "variant": 1,
+        "angle": 270
+      },
+      {
+        "id": 16,
+        "room": 10,
+        "group": "Room",
+        "cellX": 79,
+        "cellY": 112,
+        "x": 16.43,
+        "y": 51.41,
+        "family": "Crate",
+        "variant": 2,
+        "angle": 0
+      },
+      {
+        "id": 17,
+        "room": 11,
+        "group": "Room",
+        "cellX": 102,
+        "cellY": 77,
+        "x": 40.81,
+        "y": 14.31,
+        "family": "Crate",
+        "variant": 3,
+        "angle": 90
+      },
+      {
+        "id": 18,
+        "room": 11,
+        "group": "Room",
+        "cellX": 113,
+        "cellY": 88,
+        "x": 52.47,
+        "y": 25.97,
+        "family": "Crate",
+        "variant": 1,
+        "angle": 180
+      },
+      {
+        "id": 19,
+        "room": 11,
+        "group": "Room",
+        "cellX": 100,
+        "cellY": 90,
+        "x": 38.69,
+        "y": 28.09,
+        "family": "Crate",
+        "variant": 2,
+        "angle": 270
+      },
+      {
+        "id": 20,
+        "room": 12,
+        "group": "Room",
+        "cellX": 102,
+        "cellY": 51,
+        "x": 40.81,
+        "y": -13.25,
+        "family": "Barrel",
+        "variant": 3,
+        "angle": 0
+      },
+      {
+        "id": 21,
+        "room": 12,
+        "group": "Room",
+        "cellX": 115,
+        "cellY": 68,
+        "x": 54.59,
+        "y": 4.77,
+        "family": "Barrel",
+        "variant": 1,
+        "angle": 90
+      },
+      {
+        "id": 22,
+        "room": 12,
+        "group": "Room",
+        "cellX": 100,
+        "cellY": 68,
+        "x": 38.69,
+        "y": 4.77,
+        "family": "Barrel",
+        "variant": 2,
+        "angle": 180
+      },
+      {
+        "id": 23,
+        "room": 13,
+        "group": "Room",
+        "cellX": 108,
+        "cellY": 9,
+        "x": 47.17,
+        "y": -57.77,
+        "family": "Barrel",
+        "variant": 3,
+        "angle": 270
+      },
+      {
+        "id": 24,
+        "room": 13,
+        "group": "Room",
+        "cellX": 99,
+        "cellY": 22,
+        "x": 37.63,
+        "y": -43.99,
+        "family": "Barrel",
+        "variant": 1,
+        "angle": 0
+      },
+      {
+        "id": 25,
+        "room": 13,
+        "group": "Room",
+        "cellX": 116,
+        "cellY": 22,
+        "x": 55.65,
+        "y": -43.99,
+        "family": "Barrel",
+        "variant": 2,
+        "angle": 90
+      },
+      {
+        "id": 26,
+        "room": 14,
+        "group": "Room",
+        "cellX": 82,
+        "cellY": 13,
+        "x": 19.61,
+        "y": -53.53,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 180
+      },
+      {
+        "id": 27,
+        "room": 14,
+        "group": "Room",
+        "cellX": 93,
+        "cellY": 26,
+        "x": 31.27,
+        "y": -39.75,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 270
+      },
+      {
+        "id": 28,
+        "room": 14,
+        "group": "Room",
+        "cellX": 80,
+        "cellY": 26,
+        "x": 17.49,
+        "y": -39.75,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 0
+      },
+      {
+        "id": 29,
+        "room": 15,
+        "group": "Room",
+        "cellX": 58,
+        "cellY": 13,
+        "x": -5.83,
+        "y": -53.53,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 90
+      },
+      {
+        "id": 30,
+        "room": 15,
+        "group": "Room",
+        "cellX": 71,
+        "cellY": 26,
+        "x": 7.95,
+        "y": -39.75,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 180
+      },
+      {
+        "id": 31,
+        "room": 15,
+        "group": "Room",
+        "cellX": 56,
+        "cellY": 26,
+        "x": -7.95,
+        "y": -39.75,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 270
+      },
+      {
+        "id": 32,
+        "room": 16,
+        "group": "Room",
+        "cellX": 33,
+        "cellY": 15,
+        "x": -32.33,
+        "y": -51.41,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 0
+      },
+      {
+        "id": 33,
+        "room": 16,
+        "group": "Room",
+        "cellX": 48,
+        "cellY": 28,
+        "x": -16.43,
+        "y": -37.63,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 90
+      },
+      {
+        "id": 34,
+        "room": 16,
+        "group": "Room",
+        "cellX": 31,
+        "cellY": 28,
+        "x": -34.45,
+        "y": -37.63,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 180
+      },
+      {
+        "id": 35,
+        "room": 17,
+        "group": "Room",
+        "cellX": 24,
+        "cellY": 37,
+        "x": -41.87,
+        "y": -28.09,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 270
+      },
+      {
+        "id": 36,
+        "room": 17,
+        "group": "Room",
+        "cellX": 12,
+        "cellY": 50,
+        "x": -54.59,
+        "y": -14.31,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 0
+      },
+      {
+        "id": 37,
+        "room": 17,
+        "group": "Room",
+        "cellX": 27,
+        "cellY": 50,
+        "x": -38.69,
+        "y": -14.31,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 90
+      },
+      {
+        "id": 38,
+        "room": 18,
+        "group": "Room",
+        "cellX": 14,
+        "cellY": 59,
+        "x": -52.47,
+        "y": -4.77,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 180
+      },
+      {
+        "id": 39,
+        "room": 18,
+        "group": "Room",
+        "cellX": 27,
+        "cellY": 76,
+        "x": -38.69,
+        "y": 13.25,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 270
+      },
+      {
+        "id": 40,
+        "room": 18,
+        "group": "Room",
+        "cellX": 27,
+        "cellY": 62,
+        "x": -38.69,
+        "y": -1.59,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 0
+      },
+      {
+        "id": 41,
+        "room": 19,
+        "group": "Room",
+        "cellX": 29,
+        "cellY": 81,
+        "x": -36.57,
+        "y": 18.55,
+        "family": "Crate",
+        "variant": 3,
+        "angle": 90
+      },
+      {
+        "id": 42,
+        "room": 19,
+        "group": "Room",
+        "cellX": 44,
+        "cellY": 94,
+        "x": -20.67,
+        "y": 32.33,
+        "family": "Crate",
+        "variant": 1,
+        "angle": 180
+      },
+      {
+        "id": 43,
+        "room": 19,
+        "group": "Room",
+        "cellX": 27,
+        "cellY": 94,
+        "x": -38.69,
+        "y": 32.33,
+        "family": "Crate",
+        "variant": 2,
+        "angle": 270
+      },
+      {
+        "id": 44,
+        "room": 20,
+        "group": "Room",
+        "cellX": 48,
+        "cellY": 55,
+        "x": -16.43,
+        "y": -9.01,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 0
+      },
+      {
+        "id": 45,
+        "room": 20,
+        "group": "Room",
+        "cellX": 61,
+        "cellY": 72,
+        "x": -2.65,
+        "y": 9.01,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 90
+      },
+      {
+        "id": 46,
+        "room": 20,
+        "group": "Room",
+        "cellX": 46,
+        "cellY": 72,
+        "x": -18.55,
+        "y": 9.01,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 180
+      },
+      {
+        "id": 47,
+        "room": 21,
+        "group": "Room",
+        "cellX": 76,
+        "cellY": 55,
+        "x": 13.25,
+        "y": -9.01,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 270
+      },
+      {
+        "id": 48,
+        "room": 21,
+        "group": "Room",
+        "cellX": 67,
+        "cellY": 72,
+        "x": 3.71,
+        "y": 9.01,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 0
+      },
+      {
+        "id": 49,
+        "room": 21,
+        "group": "Room",
+        "cellX": 84,
+        "cellY": 71,
+        "x": 21.73,
+        "y": 7.95,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 90
+      },
+      {
+        "id": 50,
+        "room": 22,
+        "group": "Room",
+        "cellX": 70,
+        "cellY": 81,
+        "x": 6.89,
+        "y": 18.55,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 180
+      },
+      {
+        "id": 51,
+        "room": 22,
+        "group": "Room",
+        "cellX": 83,
+        "cellY": 94,
+        "x": 20.67,
+        "y": 32.33,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 270
+      },
+      {
+        "id": 52,
+        "room": 22,
+        "group": "Room",
+        "cellX": 68,
+        "cellY": 94,
+        "x": 4.77,
+        "y": 32.33,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 0
+      },
+      {
+        "id": 53,
+        "room": 23,
+        "group": "Room",
+        "cellX": 68,
+        "cellY": 33,
+        "x": 4.77,
+        "y": -32.33,
+        "family": "Barrel",
+        "variant": 3,
+        "angle": 90
+      },
+      {
+        "id": 54,
+        "room": 23,
+        "group": "Room",
+        "cellX": 78,
+        "cellY": 46,
+        "x": 15.37,
+        "y": -18.55,
+        "family": "Barrel",
+        "variant": 1,
+        "angle": 180
+      },
+      {
+        "id": 55,
+        "room": 23,
+        "group": "Room",
+        "cellX": 65,
+        "cellY": 46,
+        "x": 1.59,
+        "y": -18.55,
+        "family": "Barrel",
+        "variant": 2,
+        "angle": 270
+      },
+      {
+        "id": 56,
+        "room": -1,
+        "group": "Corridor",
+        "cellX": 85,
+        "cellY": 56,
+        "x": 22.79,
+        "y": -7.95,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 0
+      },
+      {
+        "id": 57,
+        "room": -1,
+        "group": "Corridor",
+        "cellX": 41,
+        "cellY": 50,
+        "x": -23.85,
+        "y": -14.31,
+        "family": "Crate",
+        "variant": 1,
+        "angle": 90
+      },
+      {
+        "id": 58,
+        "room": -1,
+        "group": "Corridor",
+        "cellX": 18,
+        "cellY": 31,
+        "x": -48.23,
+        "y": -34.45,
+        "family": "Urn",
+        "variant": 2,
+        "angle": 180
+      },
+      {
+        "id": 59,
+        "room": -1,
+        "group": "Corridor",
+        "cellX": 105,
+        "cellY": 44,
+        "x": 43.99,
+        "y": -20.67,
+        "family": "Crate",
+        "variant": 3,
+        "angle": 270
+      },
+      {
+        "id": 60,
+        "room": -1,
+        "group": "Corridor",
+        "cellX": 106,
+        "cellY": 73,
+        "x": 45.05,
+        "y": 10.07,
+        "family": "Urn",
+        "variant": 1,
+        "angle": 0
+      },
+      {
+        "id": 61,
+        "room": -1,
+        "group": "Corridor",
+        "cellX": 38,
+        "cellY": 65,
+        "x": -27.03,
+        "y": 1.59,
+        "family": "Crate",
+        "variant": 2,
+        "angle": 90
+      },
+      {
+        "id": 62,
+        "room": -1,
+        "group": "Corridor",
+        "cellX": 107,
+        "cellY": 44,
+        "x": 46.11,
+        "y": -20.67,
+        "family": "Urn",
+        "variant": 3,
+        "angle": 180
+      },
+      {
+        "id": 63,
+        "room": -1,
+        "group": "Corridor",
+        "cellX": 41,
+        "cellY": 33,
+        "x": -23.85,
+        "y": -32.33,
+        "family": "Crate",
+        "variant": 1,
+        "angle": 270
+      }
+    ]
+  },
+  "boatSweep": {
+    "startWorld": [
+      59.36,
+      -53.0
+    ],
+    "translationWorld": [
+      0.0,
+      -16.96
+    ],
+    "visualEnvelopeCells": [
+      2,
+      4
+    ],
+    "note": "Retângulo varrido e margem adicional a conferir com bounds após rotação; não usar antigo sweep horizontal."
+  }
+}

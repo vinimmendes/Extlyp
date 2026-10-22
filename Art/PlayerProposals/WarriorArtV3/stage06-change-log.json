@@ -1,0 +1,833 @@
+{
+  "stage": 6,
+  "source": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step05-cloth-leather.blend",
+  "saved_as": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step06-materials.blend",
+  "blender": "5.2.2 LTS",
+  "materials_modified": [
+    "MAT-weathered-steel",
+    "MAT-blade-steel",
+    "MAT-antique-brass",
+    "MAT-worn-brown-leather",
+    "MAT-crimson-woven-cloth",
+    "MAT-dark-joints",
+    "MAT-torch-wood",
+    "MAT-chainmail"
+  ],
+  "mesh_attributes": {
+    "cuirass": {
+      "vertices": 160,
+      "edge_seeds": 120,
+      "crease_seeds": 0
+    },
+    "waist-cuirass-trim": {
+      "vertices": 392,
+      "edge_seeds": 392,
+      "crease_seeds": 0
+    },
+    "chest-central-ridge": {
+      "vertices": 32,
+      "edge_seeds": 32,
+      "crease_seeds": 3
+    },
+    "belt": {
+      "vertices": 392,
+      "edge_seeds": 298,
+      "crease_seeds": 0
+    },
+    "helmet-lower-rim": {
+      "vertices": 392,
+      "edge_seeds": 392,
+      "crease_seeds": 0
+    },
+    "GEO-helmet-crown-ridge-step04.001": {
+      "vertices": 33,
+      "edge_seeds": 33,
+      "crease_seeds": 0
+    },
+    "GEO-visor-faceplate-step04.001": {
+      "vertices": 119,
+      "edge_seeds": 74,
+      "crease_seeds": 0
+    },
+    "visor-eye-slit": {
+      "vertices": 200,
+      "edge_seeds": 200,
+      "crease_seeds": 0
+    },
+    "visor-brow": {
+      "vertices": 200,
+      "edge_seeds": 200,
+      "crease_seeds": 0
+    },
+    "GEO-visor-nasal-step04.001": {
+      "vertices": 9,
+      "edge_seeds": 9,
+      "crease_seeds": 0
+    },
+    "scarf-wrap": {
+      "vertices": 392,
+      "edge_seeds": 392,
+      "crease_seeds": 0
+    },
+    "scarf-fold-0": {
+      "vertices": 392,
+      "edge_seeds": 392,
+      "crease_seeds": 0
+    },
+    "scarf-fold-1": {
+      "vertices": 392,
+      "edge_seeds": 392,
+      "crease_seeds": 0
+    },
+    "scarf-fold-2": {
+      "vertices": 392,
+      "edge_seeds": 392,
+      "crease_seeds": 0
+    },
+    "red-tabard": {
+      "vertices": 81,
+      "edge_seeds": 49,
+      "crease_seeds": 7
+    },
+    "short-red-cape": {
+      "vertices": 99,
+      "edge_seeds": 55,
+      "crease_seeds": 18
+    },
+    "thigh-strap-L": {
+      "vertices": 392,
+      "edge_seeds": 298,
+      "crease_seeds": 0
+    },
+    "greave-ridge-L": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "ankle-leather-L": {
+      "vertices": 392,
+      "edge_seeds": 392,
+      "crease_seeds": 0
+    },
+    "thigh-strap-R": {
+      "vertices": 392,
+      "edge_seeds": 298,
+      "crease_seeds": 0
+    },
+    "greave-ridge-R": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "ankle-leather-R": {
+      "vertices": 392,
+      "edge_seeds": 392,
+      "crease_seeds": 0
+    },
+    "GEO-sword-crossguard-step04": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "GEO-sword-blade-step04": {
+      "vertices": 61,
+      "edge_seeds": 37,
+      "crease_seeds": 11
+    },
+    "GEO-helmet-forged-shell-v2-step04.001": {
+      "vertices": 145,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "GEO-helmet-steel-crest-step04.001": {
+      "vertices": 33,
+      "edge_seeds": 33,
+      "crease_seeds": 0
+    },
+    "GEO-pauldron-shell-L-step03-mesh": {
+      "vertices": 96,
+      "edge_seeds": 52,
+      "crease_seeds": 0
+    },
+    "pauldron-rim-L": {
+      "vertices": 200,
+      "edge_seeds": 200,
+      "crease_seeds": 0
+    },
+    "GEO-pauldron-lame-v2-L-0-step03-mesh": {
+      "vertices": 51,
+      "edge_seeds": 36,
+      "crease_seeds": 0
+    },
+    "GEO-pauldron-lame-v2-L-1-step03-mesh": {
+      "vertices": 51,
+      "edge_seeds": 36,
+      "crease_seeds": 0
+    },
+    "GEO-pauldron-shell-R-step03-mesh": {
+      "vertices": 96,
+      "edge_seeds": 52,
+      "crease_seeds": 0
+    },
+    "pauldron-rim-R": {
+      "vertices": 200,
+      "edge_seeds": 200,
+      "crease_seeds": 0
+    },
+    "GEO-pauldron-lame-v2-R-0-step03-mesh": {
+      "vertices": 51,
+      "edge_seeds": 36,
+      "crease_seeds": 0
+    },
+    "GEO-pauldron-lame-v2-R-1-step03-mesh": {
+      "vertices": 51,
+      "edge_seeds": 36,
+      "crease_seeds": 0
+    },
+    "breastplate-front": {
+      "vertices": 9,
+      "edge_seeds": 9,
+      "crease_seeds": 0
+    },
+    "breastplate-edge--1": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 4
+    },
+    "breastplate-edge-1": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 4
+    },
+    "sabatons-plate-L-0": {
+      "vertices": 39,
+      "edge_seeds": 28,
+      "crease_seeds": 0
+    },
+    "sabatons-plate-L-1": {
+      "vertices": 39,
+      "edge_seeds": 28,
+      "crease_seeds": 0
+    },
+    "sabatons-plate-L-2": {
+      "vertices": 39,
+      "edge_seeds": 28,
+      "crease_seeds": 0
+    },
+    "sabatons-plate-L-3": {
+      "vertices": 39,
+      "edge_seeds": 28,
+      "crease_seeds": 0
+    },
+    "gauntlet-back-L": {
+      "vertices": 4,
+      "edge_seeds": 4,
+      "crease_seeds": 0
+    },
+    "curled-finger-L-0": {
+      "vertices": 32,
+      "edge_seeds": 32,
+      "crease_seeds": 10
+    },
+    "curled-finger-L-1": {
+      "vertices": 32,
+      "edge_seeds": 32,
+      "crease_seeds": 10
+    },
+    "curled-finger-L-2": {
+      "vertices": 32,
+      "edge_seeds": 32,
+      "crease_seeds": 10
+    },
+    "bracer-seam-L": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "sabatons-plate-R-0": {
+      "vertices": 39,
+      "edge_seeds": 28,
+      "crease_seeds": 0
+    },
+    "sabatons-plate-R-1": {
+      "vertices": 39,
+      "edge_seeds": 28,
+      "crease_seeds": 0
+    },
+    "sabatons-plate-R-2": {
+      "vertices": 39,
+      "edge_seeds": 28,
+      "crease_seeds": 0
+    },
+    "sabatons-plate-R-3": {
+      "vertices": 39,
+      "edge_seeds": 28,
+      "crease_seeds": 0
+    },
+    "gauntlet-back-R": {
+      "vertices": 4,
+      "edge_seeds": 4,
+      "crease_seeds": 0
+    },
+    "curled-finger-R-0": {
+      "vertices": 32,
+      "edge_seeds": 32,
+      "crease_seeds": 10
+    },
+    "curled-finger-R-1": {
+      "vertices": 32,
+      "edge_seeds": 32,
+      "crease_seeds": 10
+    },
+    "curled-finger-R-2": {
+      "vertices": 32,
+      "edge_seeds": 32,
+      "crease_seeds": 10
+    },
+    "bracer-seam-R": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "GEO-cape-hem-step05-mesh": {
+      "vertices": 66,
+      "edge_seeds": 66,
+      "crease_seeds": 16
+    },
+    "GEO-cape-side-L-step05-mesh": {
+      "vertices": 54,
+      "edge_seeds": 54,
+      "crease_seeds": 0
+    },
+    "GEO-cape-side-R-step05-mesh": {
+      "vertices": 54,
+      "edge_seeds": 54,
+      "crease_seeds": 0
+    },
+    "GEO-tabard-hem-step05-mesh": {
+      "vertices": 54,
+      "edge_seeds": 54,
+      "crease_seeds": 8
+    },
+    "GEO-tabard-side-L-step05-mesh": {
+      "vertices": 54,
+      "edge_seeds": 54,
+      "crease_seeds": 4
+    },
+    "GEO-tabard-side-R-step05-mesh": {
+      "vertices": 54,
+      "edge_seeds": 54,
+      "crease_seeds": 4
+    },
+    "GEO-belt-edge-lower-step05-mesh": {
+      "vertices": 390,
+      "edge_seeds": 390,
+      "crease_seeds": 0
+    },
+    "GEO-belt-edge-upper-step05-mesh": {
+      "vertices": 390,
+      "edge_seeds": 390,
+      "crease_seeds": 0
+    },
+    "GEO-thigh-strap-edge-L-lower-step05-mesh": {
+      "vertices": 246,
+      "edge_seeds": 246,
+      "crease_seeds": 0
+    },
+    "GEO-thigh-strap-edge-L-upper-step05-mesh": {
+      "vertices": 246,
+      "edge_seeds": 246,
+      "crease_seeds": 0
+    },
+    "GEO-thigh-strap-edge-R-lower-step05-mesh": {
+      "vertices": 246,
+      "edge_seeds": 246,
+      "crease_seeds": 0
+    },
+    "GEO-thigh-strap-edge-R-upper-step05-mesh": {
+      "vertices": 246,
+      "edge_seeds": 246,
+      "crease_seeds": 0
+    },
+    "Sphere": {
+      "vertices": 266,
+      "edge_seeds": 0,
+      "crease_seeds": 0
+    },
+    "Sphere.001": {
+      "vertices": 266,
+      "edge_seeds": 0,
+      "crease_seeds": 0
+    },
+    "belt-buckle-frame-step05": {
+      "vertices": 16,
+      "edge_seeds": 16,
+      "crease_seeds": 8
+    },
+    "Cube.002": {
+      "vertices": 8,
+      "edge_seeds": 8,
+      "crease_seeds": 0
+    },
+    "Sphere.002": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.003": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.004": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.005": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.006": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.007": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.008": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.009": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.010": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.011": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.012": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.013": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.014": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.015": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.016": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.017": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.018": {
+      "vertices": 266,
+      "edge_seeds": 0,
+      "crease_seeds": 0
+    },
+    "Cube.003": {
+      "vertices": 8,
+      "edge_seeds": 8,
+      "crease_seeds": 0
+    },
+    "Sphere.019": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.021": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.022": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.023": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.024": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.025": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.026": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.027": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.028": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Cone": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "GEO-thigh-plate-L-step03-mesh": {
+      "vertices": 52,
+      "edge_seeds": 30,
+      "crease_seeds": 0
+    },
+    "GEO-knee-cap-L-step03-mesh": {
+      "vertices": 30,
+      "edge_seeds": 20,
+      "crease_seeds": 0
+    },
+    "Cone.001": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Sphere.031": {
+      "vertices": 266,
+      "edge_seeds": 22,
+      "crease_seeds": 0
+    },
+    "Cube.004": {
+      "vertices": 8,
+      "edge_seeds": 8,
+      "crease_seeds": 0
+    },
+    "Cone.002": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "GEO-elbow-L-step03-mesh": {
+      "vertices": 24,
+      "edge_seeds": 16,
+      "crease_seeds": 0
+    },
+    "Cone.003": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.004": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.005": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.006": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Sphere.038": {
+      "vertices": 266,
+      "edge_seeds": 0,
+      "crease_seeds": 0
+    },
+    "Sphere.039": {
+      "vertices": 134,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.040": {
+      "vertices": 134,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.041": {
+      "vertices": 134,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.042": {
+      "vertices": 134,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.043": {
+      "vertices": 266,
+      "edge_seeds": 0,
+      "crease_seeds": 0
+    },
+    "Cone.007": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "GEO-thigh-plate-R-step03-mesh": {
+      "vertices": 52,
+      "edge_seeds": 30,
+      "crease_seeds": 0
+    },
+    "GEO-knee-cap-R-step03-mesh": {
+      "vertices": 30,
+      "edge_seeds": 20,
+      "crease_seeds": 0
+    },
+    "Cone.008": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Sphere.046": {
+      "vertices": 266,
+      "edge_seeds": 22,
+      "crease_seeds": 0
+    },
+    "Cube.005": {
+      "vertices": 8,
+      "edge_seeds": 8,
+      "crease_seeds": 0
+    },
+    "Cone.009": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "GEO-elbow-R-step03-mesh": {
+      "vertices": 24,
+      "edge_seeds": 16,
+      "crease_seeds": 0
+    },
+    "Cone.010": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.011": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.012": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.013": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Sphere.053": {
+      "vertices": 266,
+      "edge_seeds": 0,
+      "crease_seeds": 0
+    },
+    "Sphere.054": {
+      "vertices": 134,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.055": {
+      "vertices": 134,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.056": {
+      "vertices": 134,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.057": {
+      "vertices": 134,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.058": {
+      "vertices": 266,
+      "edge_seeds": 0,
+      "crease_seeds": 0
+    },
+    "Cone.014": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "GEO-sword-pommel-step04": {
+      "vertices": 64,
+      "edge_seeds": 32,
+      "crease_seeds": 0
+    },
+    "Cone.015": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.016": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.017": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.018": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.019": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.020": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.021": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.022": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Cone.023": {
+      "vertices": 40,
+      "edge_seeds": 40,
+      "crease_seeds": 0
+    },
+    "Sphere.060": {
+      "vertices": 178,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.061": {
+      "vertices": 178,
+      "edge_seeds": 34,
+      "crease_seeds": 0
+    },
+    "Sphere.062": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.063": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.064": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.065": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.066": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.067": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.068": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "Sphere.069": {
+      "vertices": 134,
+      "edge_seeds": 60,
+      "crease_seeds": 0
+    },
+    "sword-leather-winding-step04": {
+      "vertices": 500,
+      "edge_seeds": 206,
+      "crease_seeds": 500
+    },
+    "GEO-glove-seam-L--1-step05-mesh": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "GEO-glove-seam-L-1-step05-mesh": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "GEO-glove-seam-R--1-step05-mesh": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "GEO-glove-seam-R-1-step05-mesh": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 0
+    },
+    "GEO-belt-buckle-pin-step05-mesh": {
+      "vertices": 18,
+      "edge_seeds": 18,
+      "crease_seeds": 0
+    },
+    "GEO-pouch-flap-seam-step05-mesh": {
+      "vertices": 24,
+      "edge_seeds": 24,
+      "crease_seeds": 8
+    }
+  },
+  "wear_method": "Static vertex masks from boundary/convex dihedral edges; distance falloff over mesh edges. Concave-crease mask approximates local dirt, not physical occlusion.",
+  "texture_space": "ArtRestPosition captures original local positions; point attributes deform with meshes. No world-space or camera-space texture coordinates.",
+  "preserved": "Mesh positions/topology, weights, rig, Actions, keyframes, flame shaders, lights, cameras and color management.",
+  "review": "Frame 1 viewport inspection only; no playback, renders, simulations, Unity tests or builds. Temporal stability and final lighting remain unverified.",
+  "skill_limit": "Dedicated blender-materials skill not installed locally; applied installed orchestration/pro-workflow guidance without installing package skills."
+}

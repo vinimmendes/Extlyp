@@ -1,0 +1,1767 @@
+{
+  "source": "Direct read of unmodified v3 copy of supplied v2; no scripts or animation playback",
+  "inspected_with_blender": "5.2.2 LTS",
+  "source_blender_reported_by_package": "4.3.2",
+  "scene": "Scene",
+  "frames": [
+    1,
+    36
+  ],
+  "current_frame": 1,
+  "fps": 30,
+  "fps_base": 1.0,
+  "active_camera": "CAM-game-topdown",
+  "resolution": [
+    640,
+    640,
+    100
+  ],
+  "engine": "CYCLES",
+  "render_output_stored_in_source": "/workspace\\warrior-3d-v2\\frames\\walk_",
+  "samples": 64,
+  "denoising": false,
+  "color_management": {
+    "view_transform": "Standard",
+    "look": "None",
+    "exposure": -0.6499999761581421,
+    "gamma": 1.0
+  },
+  "transparent": true,
+  "cameras": [
+    {
+      "name": "CAM-game-topdown",
+      "location": [
+        0.2800000011920929,
+        -2.5999999046325684,
+        6.0
+      ],
+      "rotation_euler": [
+        0.4795192778110504,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "type": "ORTHO",
+      "lens": 50.0,
+      "ortho_scale": 2.8499999046325684,
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "clip": [
+        0.10000000149011612,
+        1000.0
+      ]
+    },
+    {
+      "name": "CAM-vertical-topdown",
+      "location": [
+        0.2800000011920929,
+        0.0,
+        6.0
+      ],
+      "rotation_euler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "type": "ORTHO",
+      "lens": 50.0,
+      "ortho_scale": 2.8499999046325684,
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "clip": [
+        0.10000000149011612,
+        1000.0
+      ]
+    },
+    {
+      "name": "CAM-perspective-proof",
+      "location": [
+        3.799999952316284,
+        -5.699999809265137,
+        3.5999999046325684
+      ],
+      "rotation_euler": [
+        1.1975568532943726,
+        3.9436763188405166e-08,
+        0.5633163452148438
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "type": "ORTHO",
+      "lens": 50.0,
+      "ortho_scale": 3.049999952316284,
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "clip": [
+        0.10000000149011612,
+        1000.0
+      ]
+    }
+  ],
+  "lights": [
+    {
+      "name": "LGT-key",
+      "location": [
+        -2.0,
+        -3.0,
+        5.0
+      ],
+      "rotation_euler": [
+        0.7335814833641052,
+        -2.274588872808181e-08,
+        -0.5880025625228882
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "type": "AREA",
+      "energy": 420.0,
+      "color": [
+        1.0,
+        0.9399999976158142,
+        0.8399999737739563
+      ],
+      "size": 3.0
+    },
+    {
+      "name": "LGT-fill",
+      "location": [
+        3.0,
+        1.0,
+        4.0
+      ],
+      "rotation_euler": [
+        0.8117261528968811,
+        2.9187710026690183e-08,
+        1.8925468921661377
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "type": "AREA",
+      "energy": 180.0,
+      "color": [
+        0.7900000214576721,
+        0.8600000143051147,
+        1.0
+      ],
+      "size": 3.0
+    },
+    {
+      "name": "LGT-rim",
+      "location": [
+        -2.0,
+        3.0,
+        3.0
+      ],
+      "rotation_euler": [
+        1.0643517971038818,
+        -4.995768687621194e-09,
+        -2.5535900592803955
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "type": "AREA",
+      "energy": 260.0,
+      "color": [
+        0.8299999833106995,
+        0.8799999952316284,
+        1.0
+      ],
+      "size": 2.5
+    }
+  ],
+  "materials": [
+    {
+      "name": "MAT-antique-brass",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 1.0,
+            "Roughness": 0.3199999928474426,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 85.0,
+            "Detail": 3.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          }
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.07999999821186066,
+            "Distance": 0.0020000000949949026,
+            "Filter Width": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ]
+    },
+    {
+      "name": "MAT-blade-steel",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 1.0,
+            "Roughness": 0.2199999988079071,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 85.0,
+            "Detail": 3.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          }
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.029999999329447746,
+            "Distance": 0.0020000000949949026,
+            "Filter Width": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ]
+    },
+    {
+      "name": "MAT-chainmail",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": [
+              0.11999999731779099,
+              0.14499999582767487,
+              0.1599999964237213,
+              1.0
+            ],
+            "Metallic": 1.0,
+            "Roughness": 0.550000011920929,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Voronoi Texture",
+          "type": "ShaderNodeTexVoronoi",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 150.0,
+            "Detail": 0.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Smoothness": 1.0,
+            "Exponent": 0.5,
+            "Randomness": 1.0
+          }
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.5,
+            "Distance": 0.0010000000474974513,
+            "Filter Width": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Voronoi Texture",
+          "from_socket": "Distance",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        }
+      ]
+    },
+    {
+      "name": "MAT-crimson-woven-cloth",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.03500000014901161,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 85.0,
+            "Detail": 3.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          }
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.11999999731779099,
+            "Distance": 0.0020000000949949026,
+            "Filter Width": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ]
+    },
+    {
+      "name": "MAT-dark-joints",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "Roughness": 0.800000011920929,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 85.0,
+            "Detail": 3.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          }
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.20000000298023224,
+            "Distance": 0.0020000000949949026,
+            "Filter Width": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ]
+    },
+    {
+      "name": "MAT-fire-0",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Emission",
+          "type": "ShaderNodeEmission",
+          "inputs": {
+            "Strength": 1.600000023841858,
+            "Weight": 0.0
+          }
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Texture Coordinate",
+          "from_socket": "Generated",
+          "to_node": "Separate XYZ",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Separate XYZ",
+          "from_socket": "Z",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Emission",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Emission",
+          "from_socket": "Emission",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    {
+      "name": "MAT-fire-1",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Emission",
+          "type": "ShaderNodeEmission",
+          "inputs": {
+            "Strength": 1.7999999523162842,
+            "Weight": 0.0
+          }
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Texture Coordinate",
+          "from_socket": "Generated",
+          "to_node": "Separate XYZ",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Separate XYZ",
+          "from_socket": "Z",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Emission",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Emission",
+          "from_socket": "Emission",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    {
+      "name": "MAT-fire-2",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Emission",
+          "type": "ShaderNodeEmission",
+          "inputs": {
+            "Strength": 2.0,
+            "Weight": 0.0
+          }
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Texture Coordinate",
+          "from_socket": "Generated",
+          "to_node": "Separate XYZ",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Separate XYZ",
+          "from_socket": "Z",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Emission",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Emission",
+          "from_socket": "Emission",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    {
+      "name": "MAT-torch-wood",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "Roughness": 0.800000011920929,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 85.0,
+            "Detail": 3.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          }
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.25,
+            "Distance": 0.0020000000949949026,
+            "Filter Width": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ]
+    },
+    {
+      "name": "MAT-weathered-steel",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 1.0,
+            "Roughness": 0.46000000834465027,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 85.0,
+            "Detail": 3.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          }
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.054999999701976776,
+            "Distance": 0.0020000000949949026,
+            "Filter Width": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ]
+    },
+    {
+      "name": "MAT-worn-brown-leather",
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "Roughness": 0.6700000166893005,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 85.0,
+            "Detail": 3.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          }
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.25,
+            "Distance": 0.0020000000949949026,
+            "Filter Width": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Factor",
+          "to_node": "Color Ramp",
+          "to_socket": "Factor"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ]
+    }
+  ],
+  "armatures": [
+    {
+      "name": "ARM-warrior-3D",
+      "bones": 23,
+      "active_action": "Walk_Heavy_36f_IK"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Fire_0_Alert_30f",
+      "frame_range": [
+        1.0,
+        31.0
+      ]
+    },
+    {
+      "name": "Fire_0_Heavy_36f",
+      "frame_range": [
+        1.0,
+        37.0
+      ]
+    },
+    {
+      "name": "Fire_1_Alert_30f",
+      "frame_range": [
+        1.0,
+        31.0
+      ]
+    },
+    {
+      "name": "Fire_1_Heavy_36f",
+      "frame_range": [
+        1.0,
+        37.0
+      ]
+    },
+    {
+      "name": "Fire_2_Alert_30f",
+      "frame_range": [
+        1.0,
+        31.0
+      ]
+    },
+    {
+      "name": "Fire_2_Heavy_36f",
+      "frame_range": [
+        1.0,
+        37.0
+      ]
+    },
+    {
+      "name": "Walk_Alert_30f_IK",
+      "frame_range": [
+        1.0,
+        31.0
+      ]
+    },
+    {
+      "name": "Walk_Heavy_36f_IK",
+      "frame_range": [
+        1.0,
+        37.0
+      ]
+    }
+  ],
+  "mesh_objects": 148,
+  "images": [
+    {
+      "name": "Render Result",
+      "filepath": "",
+      "packed": false
+    }
+  ]
+}

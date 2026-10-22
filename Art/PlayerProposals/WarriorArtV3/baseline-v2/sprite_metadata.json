@@ -1,0 +1,24 @@
+{
+  "image": "warrior_v2_spritesheet.png",
+  "frame_width": 640,
+  "frame_height": 640,
+  "columns": 6,
+  "rows": 6,
+  "frames": 36,
+  "fps": 30,
+  "seconds": 1.2,
+  "loop": true,
+  "pivot": [
+    257.123,
+    423.602
+  ],
+  "direction": "right",
+  "movement": "in place",
+  "equipment": {
+    "sword": "anatomical right",
+    "torch": "anatomical left"
+  },
+  "source": "3D model and IK rig",
+  "root_speed_equivalent_m_s": 0.638888888888889,
+  "pivot_space": "pixels from top-left; projection of stationary 3D root"
+}

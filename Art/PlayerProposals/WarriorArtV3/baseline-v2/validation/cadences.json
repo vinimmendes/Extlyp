@@ -1,0 +1,16 @@
+[
+  {
+    "cadence": "heavy",
+    "frames": 36,
+    "loop_matrix_error": 2.9391522145938313e-18,
+    "fire_loop_error": 0.0,
+    "passed": true
+  },
+  {
+    "cadence": "alert",
+    "frames": 30,
+    "loop_matrix_error": 2.9391522145938313e-18,
+    "fire_loop_error": 0.0,
+    "passed": true
+  }
+]

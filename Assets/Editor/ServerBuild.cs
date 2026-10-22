@@ -26,6 +26,13 @@ public static class ServerBuild
     [MenuItem("Cyber Extraction/Servidor/Gerar APK Android para teste")]
     public static void BuildAndroid()
     {
+        var connection=CyberExtraction.Core.ServerConnectionSettings.Load();
+        string androidAddress=connection!=null ? connection.ResolveAddress(true) : "";
+        if(!System.Net.IPAddress.TryParse(androidAddress,out var endpoint) ||
+            endpoint.AddressFamily!=System.Net.Sockets.AddressFamily.InterNetwork ||
+            System.Net.IPAddress.IsLoopback(endpoint) || endpoint.Equals(System.Net.IPAddress.Any) ||
+            endpoint.GetAddressBytes()[0]>=224)
+            throw new Exception("Configure um IPv4 de servidor acessivel pelo celular em ServerConnectionSettings.androidAddress antes de gerar o APK.");
         const string output = "Builds/Android/CyberExtraction.apk";
         Directory.CreateDirectory(Path.GetDirectoryName(output));
         EditorUserBuildSettings.buildAppBundle = false;
@@ -74,6 +81,6 @@ public static class ServerBuild
         if (report.summary.result != BuildResult.Succeeded)
             throw new Exception("Falha ao gerar: " + output + ". Veja os erros no Console.");
         Debug.Log("Build pronto: " + Path.GetFullPath(output));
-        File.WriteAllText(Path.Combine(Path.GetDirectoryName(output),"build-manifest.json"),"{\"version\":\""+PlayerSettings.bundleVersion+"\",\"protocol\":16,\"release\":"+(Release ? "true" : "false")+"}");
+        File.WriteAllText(Path.Combine(Path.GetDirectoryName(output),"build-manifest.json"),"{\"version\":\""+PlayerSettings.bundleVersion+"\",\"protocol\":"+CyberExtraction.Core.GameConfig.NetworkProtocol+",\"release\":"+(Release ? "true" : "false")+"}");
     }
 }

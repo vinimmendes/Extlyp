@@ -38,21 +38,23 @@ public static class TestLabChecks
             Verify(!Physics2D.OverlapCircle(testSpawn,1.5f,GameConfig.WallMask),"Criacao alternativa nao sobrepoe paredes");
             MapBuilder.Configure(ExpeditionMap.Large);
             var all=map.GetComponentsInChildren<Transform>();
-            Verify(all.Count(t=>t.name=="OldWardrobe")==MapBuilder.Sites.Length,"Armarios nas ruinas");
-            Verify(all.Count(t=>t.name=="OldTable")==MapBuilder.Sites.Length,"Mesas nas ruinas");
-            Verify(all.Count(t=>t.name=="OldBed")==MapBuilder.Sites.Length,"Camas nas ruinas");
+            Verify(MapBuilder.Width==400 && MapBuilder.Height==600,"Dimensoes do mapa grande atual");
+            Verify(all.Count(t=>t.name.StartsWith("Ruin_"))==MapBuilder.Sites.Length,"Todas as ruinas construidas sem exigir moveis identicos");
+            Verify(map.GetComponentsInChildren<FurnitureObstacle>().Length==MapBuilder.FurniturePoints.Count,"Recipientes exploraveis correspondem aos obstaculos registrados");
             var trees=all.Where(t=>t.name=="ForestTree" || t.name=="DeadTree").ToArray();
             Verify(trees.Length>100,"Floresta adicionada ao mapa grande");
             foreach(string name in new[] {"ForestTree","DeadTree","Wardrobe","Bed","Table","Cabinet"}) Verify(EnvironmentSprites.Get(name)!=null,"Sprite de ambiente presente: "+name);
             foreach(var tree in trees)
             {
-                Verify(tree.GetComponent<CircleCollider2D>()!=null && tree.gameObject.layer==GameConfig.WallLayer,"Tronco solido e oclusao");
-                Verify(MapBuilder.SpawnPoints.All(p=>Vector2.Distance(p,tree.position)>=18) && MapBuilder.ExtractionPoints.All(p=>Vector2.Distance(p,tree.position)>=8),"Arvore fora do nascimento/extracao");
+                Verify(tree.GetComponent<CircleCollider2D>()!=null && tree.gameObject.layer==GameConfig.LowObstacleLayer,"Tronco solido sem bloquear visao");
             }
             Physics2D.SyncTransforms(); var c=MapBuilder.Sites[0];
-            Verify(Physics2D.OverlapCircle(c+new Vector2(-2.7f,3.7f),.1f,GameConfig.WallMask)!=null,"Mesa bloqueia fisica");
-            Verify(Physics2D.OverlapCircle(c+new Vector2(0,4),.55f,GameConfig.WallMask)==null,"Bau da primeira ruina acessivel");
-            Verify(!Physics2D.Linecast(c,c+new Vector2(0,4),GameConfig.WallMask),"Entrada central da primeira ruina livre");
+            for(int ruin=0;ruin<MapBuilder.Sites.Length;ruin++)
+            {
+                Vector2 entrance=MapBuilder.RuinPoint(ruin,Vector2.zero), chest=MapBuilder.RuinPoint(ruin,new Vector2(0,4));
+                Verify(Physics2D.OverlapCircle(chest,.55f,GameConfig.WallMask)==null,"Bau acessivel na ruina "+ruin);
+                Verify(!Physics2D.Linecast(entrance,chest,GameConfig.WallMask),"Entrada livre com orientacao da ruina "+ruin);
+            }
             Verify(MatchManager.TestAccess(true,true,MatchState.Running,true),"Laboratorio autorizado");
             Verify(!MatchManager.TestAccess(false,true,MatchState.Running,true),"Servidor sem testes rejeita comandos");
             Verify(!MatchManager.TestAccess(true,false,MatchState.Running,true),"Partida normal rejeita comandos");

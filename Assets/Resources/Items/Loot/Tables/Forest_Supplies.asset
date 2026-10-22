@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8c6a2c7e0c469e82886b5a9e41e5a8, type: 3}
+  m_Name: Forest_Supplies
+  m_EditorClassIdentifier:
+  Map: 1
+  Source: 1
+  PresencePercent: 100
+  MinimumStacks: 2
+  MaximumStacks: 2
+  GuaranteeEquipment: 0
+  Categories:
+  - Category: 0
+    Weight: 30
+  - Category: 1
+    Weight: 70
+  - Category: 2
+    Weight: 0
+  - Category: 3
+    Weight: 0
+  - Category: 4
+    Weight: 0
+  Entries:
+  - Item: 0
+    Category: 0
+    Weight: 20
+    Minimum: 3
+    Maximum: 7
+    Themes: 15
+  - Item: 1
+    Category: 0
+    Weight: 20
+    Minimum: 3
+    Maximum: 8
+    Themes: 15
+  - Item: 3
+    Category: 0
+    Weight: 20
+    Minimum: 2
+    Maximum: 5
+    Themes: 15
+  - Item: 4
+    Category: 0
+    Weight: 12
+    Minimum: 1
+    Maximum: 2
+    Themes: 15
+  - Item: 5
+    Category: 0
+    Weight: 12
+    Minimum: 1
+    Maximum: 3
+    Themes: 15
+  - Item: 2
+    Category: 1
+    Weight: 20
+    Minimum: 1
+    Maximum: 2
+    Themes: 15
+  - Item: 61
+    Category: 1
+    Weight: 50
+    Minimum: 6
+    Maximum: 12
+    Themes: 15
+  - Item: 18
+    Category: 1
+    Weight: 8
+    Minimum: 1
+    Maximum: 1
+    Themes: 15
+  - Item: 19
+    Category: 1
+    Weight: 3
+    Minimum: 1
+    Maximum: 1
+    Themes: 15
+  - Item: 20
+    Category: 1
+    Weight: 3
+    Minimum: 1
+    Maximum: 1
+    Themes: 15
+  - Item: 21
+    Category: 1
+    Weight: 3
+    Minimum: 1
+    Maximum: 1
+    Themes: 15
+  Rarities:
+  - Common: 80
+    Uncommon: 19
+    Rare: 1
+  - Common: 60
+    Uncommon: 35
+    Rare: 5
+  - Common: 35
+    Uncommon: 50
+    Rare: 15

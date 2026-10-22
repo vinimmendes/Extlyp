@@ -53,6 +53,11 @@ namespace CyberExtraction.Enemies
                 { geometryVersion=LargeMapPlan.GeometryVersion; initialized=false; nextRepath=0; globalPath=false; }
                 if(!ClearSegment(from,goal) && LargeMapPlan.TryWaypoint(from,goal,out var routePoint)) goal=routePoint;
             }
+            if(MapBuilder.Current==ExpeditionMap.Dungeon)
+            {
+                if(geometryVersion!=DungeonLayout.GeometryVersion) { geometryVersion=DungeonLayout.GeometryVersion; initialized=false; nextRepath=0; globalPath=false; }
+                if(!ClearSegment(from,goal) && DungeonLayout.TryWaypoint(from,goal,radius,out var dungeonPoint)) goal=dungeonPoint;
+            }
             next = from;
             if((goal-previousGoal).sqrMagnitude>4) { nextRepath=0; previousGoal=goal; globalPath=false; }
             if (ClearSegment(from, goal))

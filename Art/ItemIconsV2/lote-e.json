@@ -1,0 +1,32 @@
+{
+  "Batch": "E",
+  "Date": "2026-10-19",
+  "Tool": "imagegen integrado",
+  "StyleReference": "Art/ItemIconsV2/Originals/GuardianHelm.png",
+  "Items": {
+    "AncientCoin": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-9dd67b5d-d447-48fe-872d-509c9483103a.png",
+      "PromptFile": "Art/ItemIconsV2/AncientCoin-prompt.txt"
+    },
+    "Reliquary": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-ac30930d-58e1-4716-a0c3-c3402ca0f92e.png",
+      "PromptFile": "Art/ItemIconsV2/Reliquary-prompt.txt"
+    },
+    "FuneraryIdol": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-6391cbaf-d183-4790-969b-e5d19f1d7cee.png",
+      "PromptFile": "Art/ItemIconsV2/FuneraryIdol-prompt.txt"
+    },
+    "ValuableScrap": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-28778078-7e19-4a89-942e-db6afc9eb088.png",
+      "PromptFile": "Art/ItemIconsV2/ValuableScrap-prompt.txt"
+    },
+    "AntiqueObject": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-397a8242-3f14-4a72-bb0f-ce8ff49c4cad.png",
+      "PromptFile": "Art/ItemIconsV2/AntiqueObject-prompt.txt"
+    },
+    "CollectorsDocument": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-71c4b7d6-e454-4584-95c5-e53e89fc2f24.png",
+      "PromptFile": "Art/ItemIconsV2/CollectorsDocument-prompt.txt"
+    }
+  }
+}

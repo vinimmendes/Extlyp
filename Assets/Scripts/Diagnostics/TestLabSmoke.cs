@@ -78,7 +78,8 @@ namespace CyberExtraction.Diagnostics
             for(int i=0;i<MatchManager.TestWeapons.Length;i++)
             {
                 yield return Command(TestAction.Weapon,i);
-                Verify(inv.ActiveWeapon.Item==MatchManager.TestWeapons[i] && inv.WeaponRounds==inv.ActiveWeapon.Capacity && inv.Count(inv.ActiveWeapon.Ammo)==60,"Arma e reserva "+i);
+                Verify(inv.ActiveWeapon.Item==MatchManager.TestWeapons[i] && inv.WeaponRounds==inv.ActiveWeapon.Capacity &&
+                    (inv.ActiveWeapon.IsMelee ? player.GetComponent<PlayerShooter>().Reserve==0 : inv.Count(inv.ActiveWeapon.Ammo)==60),"Arma e reserva "+i);
             }
             yield return Command(TestAction.Bots,2); Verify(match.BotCount.Value==2,"Criar dois bots via RPC");
             yield return Command(TestAction.Bots,0); Verify(match.BotCount.Value==0,"Remover bots via RPC");

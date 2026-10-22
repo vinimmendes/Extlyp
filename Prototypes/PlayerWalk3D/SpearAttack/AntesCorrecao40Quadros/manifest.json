@@ -1,0 +1,18 @@
+{
+  "frames": 20,
+  "impactFrame": 9,
+  "bodyAtlas": "SpearAttack_1.png",
+  "weaponAtlas": "SpearWeapon_1.png",
+  "cell": 256,
+  "bodyWorldSize": 3.4,
+  "weaponWorldSize": 5.1,
+  "weaponPixelsPerUnit": 50.196078431372555,
+  "windup": 0.3,
+  "recovery": 0.5,
+  "worldGuid": "45e73f625b11418299001e843938306a",
+  "tipAtImpact": [
+    2.2000000715255736,
+    0.0
+  ],
+  "applyWeaponGripAgain": false
+}

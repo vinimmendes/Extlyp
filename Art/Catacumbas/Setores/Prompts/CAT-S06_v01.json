@@ -1,0 +1,8 @@
+{
+  "id": "CAT-S06_v01",
+  "w": 4,
+  "h": 3,
+  "subject": "Horizontal prison memorial masonry slab with a recessed square iron grille, two forged iron wall rings and short coiled chains contained inside stone border. Grille is closed, not a passage.",
+  "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S06_v01. Subject: Horizontal prison memorial masonry slab with a recessed square iron grille, two forged iron wall rings and short coiled chains contained inside stone border. Grille is closed, not a passage.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 4:3. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-a4ffb973-7c3f-4caf-8fb5-e365dd190144.png"
+}

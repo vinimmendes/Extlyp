@@ -39,6 +39,20 @@ Leia a skill correspondente ao assunto antes de implementar ou revisar. Nao e ne
 | APK, builds Windows e automacao | `.agents/skills/unity-build-pipeline/SKILL.md` |
 | Dados de balanceamento e eventos | `.agents/skills/unity-scriptableobjects/SKILL.md` |
 | Bugs e comportamento inesperado | `.agents/skills/systematic-debugging/SKILL.md` |
+| Orientacao e coordenacao de tarefas Blender | `.agents/skills/text-to-blender/SKILL.md` |
+| Planejamento e etapas de producao no Blender | `.agents/skills/blender-pro-workflow/SKILL.md` |
+| Modelagem, malhas e modificadores no Blender | `.agents/skills/blender-modeling/SKILL.md` |
+| Animacao, keyframes, F-curves e NLA no Blender | `.agents/skills/blender-animation/SKILL.md` |
+| Exportacao de assets do Blender para Unity | `.agents/skills/blender-export/SKILL.md` |
+
+## Uso obrigatorio das skills Blender
+
+- Em toda tarefa de criacao, alteracao ou revisao de assets no Blender, leia primeiro `text-to-blender` e as skills instaladas correspondentes ao trabalho. Use `blender-pro-workflow` para planejar trabalhos com varias etapas, `blender-modeling` para geometria e modificadores e `blender-export` antes de exportar assets.
+- Antes de controlar Blender, consulte `.agents/skills/text-to-blender/references/mcp-backends.md`, confira a versao real instalada e os recursos disponiveis. Adapte receitas a essa versao; nao instale ou atualize Blender, add-ons ou MCP implicitamente.
+- Preserve cenas, arquivos `.blend`, assets e alteracoes locais existentes. A leitura das skills nao autoriza sobrescrever trabalho existente nem alterar a arquitetura Unity/URP 2D do projeto.
+- Para assets destinados ao jogo, aplique as referencias permanentes de mapas e interface conforme o assunto e adapte a exportacao ao pipeline existente, inclusive sprites renderizados quando aplicavel.
+- As instrucoes do usuario e as preferencias de verificacao deste arquivo prevalecem sobre receitas externas de testes, renders de validacao, builds e delegacao. Se uma skill referenciada adicional nao estiver instalada, registre a limitacao e use as quatro disponiveis conforme o escopo; nao instale dependencias adicionais implicitamente.
+- Origem das quatro skills: `RobLe3/cc-blender-skill`, pasta `plugin/skills`, descobertas no skills.sh e instaladas localmente em `.agents/skills`.
 
 ## Evidencias e verificacao
 

@@ -36,19 +36,24 @@ namespace CyberExtraction.Camp
         public int LastCookingQuality { get; private set; }=-1;
         public string CookingRejection { get; private set; }
         public string LastCookingStorage { get; private set; }
+        public string FishingRejection { get; private set; }
         float started;
         ItemId catchItem;
         public bool Busy=>Phase!=0;
         public void Cancel() { Phase=0; Nibble=false; }
         public bool BeginFishing(CampProgress profile,float now)
         {
+            FishingRejection=null;
             if(Busy || !profile.PierRepaired) return false;
             catchItem=CampProgress.CatchItem(Guid.NewGuid().ToString("N"));
+            if(profile.Pack.FreeFor(new ItemStack(catchItem,1))<1)
+            { FishingRejection="Mochila cheia. Libere espaco para pescar."; return false; }
             Phase=2; started=now; Progress=0; Tension=.5f; Nibble=false; fishing.Begin(catchItem,now); return true;
         }
         public bool BeginCooking(CampProgress profile,int slot,float now,double? synchronizedNow=null)
         {
             if(Busy || slot<0 || slot>=profile.Pack.Slots.Length) return false;
+            if(!profile.CanStoreCooking(slot)) { CookingRejection="Libere um espaco na mochila ou no bau para guardar o preparo."; return false; }
             var fish=profile.Pack.Slots[slot]; if(fish.Empty || !(ItemCatalog.Fish(fish.Item) || fish.Item==ItemId.RawFish)) return false;
             Phase=6; Slot=slot; Side=0; HeatA=HeatB=CookMarker=0; started=now; CookStartedAt=synchronizedNow ?? now; LastCookingQuality=-1; LastCookingStorage=null; CookingRejection=null; return true;
         }

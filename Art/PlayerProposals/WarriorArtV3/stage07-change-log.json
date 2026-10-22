@@ -1,0 +1,65 @@
+{
+  "stage": 7,
+  "source": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step06-materials.blend",
+  "saved_as": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step07-flame.blend",
+  "blender": "5.2.2 LTS",
+  "main_flames_modified": [
+    {
+      "object": "GEO-torch-flame-0",
+      "shape_keys": [
+        "Basis",
+        "Flicker"
+      ],
+      "vertices": 161,
+      "attachment_ring": "unchanged"
+    },
+    {
+      "object": "GEO-torch-flame-1",
+      "shape_keys": [
+        "Basis",
+        "Flicker"
+      ],
+      "vertices": 161,
+      "attachment_ring": "unchanged"
+    },
+    {
+      "object": "GEO-torch-flame-2",
+      "shape_keys": [
+        "Basis",
+        "Flicker"
+      ],
+      "vertices": 161,
+      "attachment_ring": "unchanged"
+    }
+  ],
+  "secondary_tongues": [
+    {
+      "object": "GEO-torch-tongue-A-step07",
+      "source_flicker": "GEO-torch-flame-0",
+      "relative_scale": [
+        0.68,
+        0.65,
+        0.76
+      ],
+      "driver": "source_flicker; no new keyframes or cadence"
+    },
+    {
+      "object": "GEO-torch-tongue-B-step07",
+      "source_flicker": "GEO-torch-flame-0",
+      "relative_scale": [
+        0.55,
+        0.58,
+        0.6
+      ],
+      "driver": "source_flicker; no new keyframes or cadence"
+    }
+  ],
+  "materials_modified": [
+    "MAT-fire-0",
+    "MAT-fire-1",
+    "MAT-fire-2"
+  ],
+  "animation": "Original Flicker shape keys and Heavy/Alert Actions remain. Extra tongues follow the outer Flicker via drivers and static asymmetric geometry; no independently timed motion was added.",
+  "preserved": "Hand.L anchors, torch shaft/bowl, rig, walk Actions/keyframes, cameras, lights, stages 3-6 materials and geometry.",
+  "review": "Static frame 1 viewport only. Full-cycle silhouette, temporal behavior, layer overlap and framing are pending stage 9. No playback, render, simulation, Unity test or build."
+}

@@ -1,0 +1,866 @@
+[
+  {
+    "family": "A01",
+    "v": 1,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Straight horizontal limestone wall module. Solid cutaway top surface fills the square footprint edge to edge, dark stone on upper half, softly worn lighter south-facing edge along BOTTOM edge; connects seamlessly to left and right modules.",
+    "id": "CAT-A01_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A01_v01, variant 1/3, production medieval dungeon architecture sprite. Straight horizontal limestone wall module. Solid cutaway top surface fills the square footprint edge to edge, dark stone on upper half, softly worn lighter south-facing edge along BOTTOM edge; connects seamlessly to left and right modules. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A01_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      26,
+      450,
+      1228,
+      804
+    ],
+    "sprite_region_pixels": [
+      450,
+      450,
+      804,
+      804
+    ]
+  },
+  {
+    "family": "A01",
+    "v": 2,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Straight horizontal limestone wall module. Solid cutaway top surface fills the square footprint edge to edge, dark stone on upper half, softly worn lighter south-facing edge along BOTTOM edge; connects seamlessly to left and right modules.",
+    "id": "CAT-A01_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A01_v02, variant 2/3, production medieval dungeon architecture sprite. Straight horizontal limestone wall module. Solid cutaway top surface fills the square footprint edge to edge, dark stone on upper half, softly worn lighter south-facing edge along BOTTOM edge; connects seamlessly to left and right modules. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A01_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      22,
+      426,
+      1232,
+      829
+    ],
+    "sprite_region_pixels": [
+      425,
+      426,
+      828,
+      829
+    ]
+  },
+  {
+    "family": "A01",
+    "v": 3,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Straight horizontal limestone wall module. Solid cutaway top surface fills the square footprint edge to edge, dark stone on upper half, softly worn lighter south-facing edge along BOTTOM edge; connects seamlessly to left and right modules.",
+    "id": "CAT-A01_v03",
+    "prompt": "Use case: stylized-concept. Asset CAT-A01_v03, variant 3/3, production medieval dungeon architecture sprite. Straight horizontal limestone wall module. Solid cutaway top surface fills the square footprint edge to edge, dark stone on upper half, softly worn lighter south-facing edge along BOTTOM edge; connects seamlessly to left and right modules. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A01_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      22,
+      421,
+      1234,
+      803
+    ],
+    "sprite_region_pixels": [
+      437,
+      421,
+      819,
+      803
+    ]
+  },
+  {
+    "family": "A02",
+    "v": 1,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Convex external corner of a thick limestone wall, top-down solid square cutaway footprint, worn exposed edges along BOTTOM and RIGHT sides; connects to wall mass above and left.",
+    "id": "CAT-A02_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A02_v01, variant 1/3, production medieval dungeon architecture sprite. Convex external corner of a thick limestone wall, top-down solid square cutaway footprint, worn exposed edges along BOTTOM and RIGHT sides; connects to wall mass above and left. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A02_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      89,
+      66,
+      1173,
+      1177
+    ],
+    "sprite_region_pixels": [
+      89,
+      66,
+      1173,
+      1177
+    ]
+  },
+  {
+    "family": "A02",
+    "v": 2,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Convex external corner of a thick limestone wall, top-down solid square cutaway footprint, worn exposed edges along BOTTOM and RIGHT sides; connects to wall mass above and left.",
+    "id": "CAT-A02_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A02_v02, variant 2/3, production medieval dungeon architecture sprite. Convex external corner of a thick limestone wall, top-down solid square cutaway footprint, worn exposed edges along BOTTOM and RIGHT sides; connects to wall mass above and left. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A02_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      75,
+      87,
+      1186,
+      1162
+    ],
+    "sprite_region_pixels": [
+      75,
+      87,
+      1186,
+      1162
+    ]
+  },
+  {
+    "family": "A02",
+    "v": 3,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Convex external corner of a thick limestone wall, top-down solid square cutaway footprint, worn exposed edges along BOTTOM and RIGHT sides; connects to wall mass above and left.",
+    "id": "CAT-A02_v03",
+    "prompt": "Use case: stylized-concept. Asset CAT-A02_v03, variant 3/3, production medieval dungeon architecture sprite. Convex external corner of a thick limestone wall, top-down solid square cutaway footprint, worn exposed edges along BOTTOM and RIGHT sides; connects to wall mass above and left. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A02_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      134,
+      112,
+      1147,
+      1108
+    ],
+    "sprite_region_pixels": [
+      134,
+      112,
+      1147,
+      1108
+    ]
+  },
+  {
+    "family": "A03",
+    "v": 1,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Concave internal corner limestone wall cutaway top, solid square footprint; shallow inset joins BOTTOM and RIGHT visible boundary edges, no hollow walkable hole; connects to stone wall mass above and left.",
+    "id": "CAT-A03_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A03_v01, variant 1/3, production medieval dungeon architecture sprite. Concave internal corner limestone wall cutaway top, solid square footprint; shallow inset joins BOTTOM and RIGHT visible boundary edges, no hollow walkable hole; connects to stone wall mass above and left. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A03_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      104,
+      104,
+      1153,
+      1135
+    ],
+    "sprite_region_pixels": [
+      104,
+      104,
+      1153,
+      1135
+    ]
+  },
+  {
+    "family": "A03",
+    "v": 2,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Concave internal corner limestone wall cutaway top, solid square footprint; shallow inset joins BOTTOM and RIGHT visible boundary edges, no hollow walkable hole; connects to stone wall mass above and left.",
+    "id": "CAT-A03_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A03_v02, variant 2/3, production medieval dungeon architecture sprite. Concave internal corner limestone wall cutaway top, solid square footprint; shallow inset joins BOTTOM and RIGHT visible boundary edges, no hollow walkable hole; connects to stone wall mass above and left. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A03_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      131,
+      143,
+      1123,
+      1112
+    ],
+    "sprite_region_pixels": [
+      131,
+      143,
+      1123,
+      1112
+    ]
+  },
+  {
+    "family": "A03",
+    "v": 3,
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Concave internal corner limestone wall cutaway top, solid square footprint; shallow inset joins BOTTOM and RIGHT visible boundary edges, no hollow walkable hole; connects to stone wall mass above and left.",
+    "id": "CAT-A03_v03",
+    "prompt": "Use case: stylized-concept. Asset CAT-A03_v03, variant 3/3, production medieval dungeon architecture sprite. Concave internal corner limestone wall cutaway top, solid square footprint; shallow inset joins BOTTOM and RIGHT visible boundary edges, no hollow walkable hole; connects to stone wall mass above and left. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A03_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      124,
+      129,
+      1137,
+      1120
+    ],
+    "sprite_region_pixels": [
+      124,
+      129,
+      1137,
+      1120
+    ]
+  },
+  {
+    "family": "A04",
+    "v": 1,
+    "count": 2,
+    "w": 1,
+    "h": 1,
+    "subject": "End cap of thick horizontal limestone wall, solid square top footprint, rounded worn terminating RIGHT edge; connects to wall on left; top-down cutaway.",
+    "id": "CAT-A04_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A04_v01, variant 1/2, production medieval dungeon architecture sprite. End cap of thick horizontal limestone wall, solid square top footprint, rounded worn terminating RIGHT edge; connects to wall on left; top-down cutaway. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A04_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      27,
+      279,
+      1230,
+      977
+    ],
+    "sprite_region_pixels": [
+      532,
+      279,
+      1230,
+      977
+    ]
+  },
+  {
+    "family": "A04",
+    "v": 2,
+    "count": 2,
+    "w": 1,
+    "h": 1,
+    "subject": "End cap of thick horizontal limestone wall, solid square top footprint, rounded worn terminating RIGHT edge; connects to wall on left; top-down cutaway.",
+    "id": "CAT-A04_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A04_v02, variant 2/2, production medieval dungeon architecture sprite. End cap of thick horizontal limestone wall, solid square top footprint, rounded worn terminating RIGHT edge; connects to wall on left; top-down cutaway. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 1:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A04_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      84,
+      254,
+      1189,
+      1003
+    ],
+    "sprite_region_pixels": [
+      440,
+      254,
+      1189,
+      1003
+    ]
+  },
+  {
+    "family": "A05",
+    "v": 1,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Broken horizontal limestone wall module; shallow chipped top and crumbled SOUTH edge, solid continuous stone footprint, small rubble entirely within footprint, never an open doorway; straight upper edge, two-cell wide.",
+    "id": "CAT-A05_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A05_v01, variant 1/3, production medieval dungeon architecture sprite. Broken horizontal limestone wall module; shallow chipped top and crumbled SOUTH edge, solid continuous stone footprint, small rubble entirely within footprint, never an open doorway; straight upper edge, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A05_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      90,
+      231,
+      1684,
+      656
+    ],
+    "sprite_region_pixels": [
+      90,
+      231,
+      1684,
+      656
+    ]
+  },
+  {
+    "family": "A05",
+    "v": 2,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Broken horizontal limestone wall module; shallow chipped top and crumbled SOUTH edge, solid continuous stone footprint, small rubble entirely within footprint, never an open doorway; straight upper edge, two-cell wide.",
+    "id": "CAT-A05_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A05_v02, variant 2/3, production medieval dungeon architecture sprite. Broken horizontal limestone wall module; shallow chipped top and crumbled SOUTH edge, solid continuous stone footprint, small rubble entirely within footprint, never an open doorway; straight upper edge, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A05_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      57,
+      196,
+      1724,
+      712
+    ],
+    "sprite_region_pixels": [
+      57,
+      196,
+      1724,
+      712
+    ]
+  },
+  {
+    "family": "A05",
+    "v": 3,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Broken horizontal limestone wall module; shallow chipped top and crumbled SOUTH edge, solid continuous stone footprint, small rubble entirely within footprint, never an open doorway; straight upper edge, two-cell wide.",
+    "id": "CAT-A05_v03",
+    "prompt": "Use case: stylized-concept. Asset CAT-A05_v03, variant 3/3, production medieval dungeon architecture sprite. Broken horizontal limestone wall module; shallow chipped top and crumbled SOUTH edge, solid continuous stone footprint, small rubble entirely within footprint, never an open doorway; straight upper edge, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A05_v03.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      130,
+      219,
+      1645,
+      669
+    ],
+    "sprite_region_pixels": [
+      130,
+      219,
+      1645,
+      669
+    ]
+  },
+  {
+    "family": "A06",
+    "v": 1,
+    "count": 2,
+    "w": 4,
+    "h": 1,
+    "subject": "Top-down cutaway medieval stone doorway arch trim across four-cell wide passage, very shallow flat relief directly overhead. CLEAR transparent central aisle across full depth and middle 80% of width, only thin carved stone jamb trim at extreme LEFT and RIGHT ends and a faint inlaid curved lintel line along TOP edge. No closed door, no dark central fill, no apparent solid bar across passage.",
+    "id": "CAT-A06_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A06_v01, variant 1/2, production medieval dungeon architecture sprite. Top-down cutaway medieval stone doorway arch trim across four-cell wide passage, very shallow flat relief directly overhead. CLEAR transparent central aisle across full depth and middle 80% of width, only thin carved stone jamb trim at extreme LEFT and RIGHT ends and a faint inlaid curved lintel line along TOP edge. No closed door, no dark central fill, no apparent solid bar across passage. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 4:1. Wide 4:1 body on 3:1 canvas, use transparent padding vertically. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A06_v01.png",
+    "source_pixels": [
+      2172,
+      724
+    ],
+    "alpha_body_bounds": [
+      78,
+      123,
+      2094,
+      594
+    ],
+    "sprite_region_pixels": [
+      78,
+      123,
+      2094,
+      594
+    ]
+  },
+  {
+    "family": "A06",
+    "v": 2,
+    "count": 2,
+    "w": 4,
+    "h": 1,
+    "subject": "Top-down cutaway medieval stone doorway arch trim across four-cell wide passage, very shallow flat relief directly overhead. CLEAR transparent central aisle across full depth and middle 80% of width, only thin carved stone jamb trim at extreme LEFT and RIGHT ends and a faint inlaid curved lintel line along TOP edge. No closed door, no dark central fill, no apparent solid bar across passage.",
+    "id": "CAT-A06_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A06_v02, variant 2/2, production medieval dungeon architecture sprite. Top-down cutaway medieval stone doorway arch trim across four-cell wide passage, very shallow flat relief directly overhead. CLEAR transparent central aisle across full depth and middle 80% of width, only thin carved stone jamb trim at extreme LEFT and RIGHT ends and a faint inlaid curved lintel line along TOP edge. No closed door, no dark central fill, no apparent solid bar across passage. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 4:1. Wide 4:1 body on 3:1 canvas, use transparent padding vertically. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A06_v02.png",
+    "source_pixels": [
+      2172,
+      724
+    ],
+    "alpha_body_bounds": [
+      36,
+      123,
+      2136,
+      550
+    ],
+    "sprite_region_pixels": [
+      36,
+      123,
+      2136,
+      550
+    ]
+  },
+  {
+    "family": "A07",
+    "v": 1,
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Square massive limestone pillar top seen directly overhead, whole compact two-cell square stone footprint, layered worn cornice and central cutaway block, subtle cracks and short contact shadow entirely within footprint.",
+    "id": "CAT-A07_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A07_v01, variant 1/3, production medieval dungeon architecture sprite. Square massive limestone pillar top seen directly overhead, whole compact two-cell square stone footprint, layered worn cornice and central cutaway block, subtle cracks and short contact shadow entirely within footprint. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:2. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A07_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      135,
+      156,
+      1123,
+      1107
+    ],
+    "sprite_region_pixels": [
+      135,
+      156,
+      1123,
+      1107
+    ]
+  },
+  {
+    "family": "A07",
+    "v": 2,
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Square massive limestone pillar top seen directly overhead, whole compact two-cell square stone footprint, layered worn cornice and central cutaway block, subtle cracks and short contact shadow entirely within footprint.",
+    "id": "CAT-A07_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A07_v02, variant 2/3, production medieval dungeon architecture sprite. Square massive limestone pillar top seen directly overhead, whole compact two-cell square stone footprint, layered worn cornice and central cutaway block, subtle cracks and short contact shadow entirely within footprint. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:2. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A07_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      71,
+      77,
+      1183,
+      1175
+    ],
+    "sprite_region_pixels": [
+      71,
+      77,
+      1183,
+      1175
+    ]
+  },
+  {
+    "family": "A07",
+    "v": 3,
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Square massive limestone pillar top seen directly overhead, whole compact two-cell square stone footprint, layered worn cornice and central cutaway block, subtle cracks and short contact shadow entirely within footprint.",
+    "id": "CAT-A07_v03",
+    "prompt": "Use case: stylized-concept. Asset CAT-A07_v03, variant 3/3, production medieval dungeon architecture sprite. Square massive limestone pillar top seen directly overhead, whole compact two-cell square stone footprint, layered worn cornice and central cutaway block, subtle cracks and short contact shadow entirely within footprint. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:2. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A07_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      82,
+      87,
+      1173,
+      1167
+    ],
+    "sprite_region_pixels": [
+      82,
+      87,
+      1173,
+      1167
+    ]
+  },
+  {
+    "family": "A08",
+    "v": 1,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Horizontal shallow funerary niche frame inset into limestone wall, top-down cutaway view, dark recessed rectangular centre and restrained thick chipped limestone frame; empty, no bones or urns, two-cell wide.",
+    "id": "CAT-A08_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A08_v01, variant 1/3, production medieval dungeon architecture sprite. Horizontal shallow funerary niche frame inset into limestone wall, top-down cutaway view, dark recessed rectangular centre and restrained thick chipped limestone frame; empty, no bones or urns, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A08_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      99,
+      175,
+      1675,
+      711
+    ],
+    "sprite_region_pixels": [
+      99,
+      175,
+      1675,
+      711
+    ]
+  },
+  {
+    "family": "A08",
+    "v": 2,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Horizontal shallow funerary niche frame inset into limestone wall, top-down cutaway view, dark recessed rectangular centre and restrained thick chipped limestone frame; empty, no bones or urns, two-cell wide.",
+    "id": "CAT-A08_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A08_v02, variant 2/3, production medieval dungeon architecture sprite. Horizontal shallow funerary niche frame inset into limestone wall, top-down cutaway view, dark recessed rectangular centre and restrained thick chipped limestone frame; empty, no bones or urns, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A08_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      39,
+      209,
+      1735,
+      684
+    ],
+    "sprite_region_pixels": [
+      39,
+      209,
+      1735,
+      684
+    ]
+  },
+  {
+    "family": "A08",
+    "v": 3,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Horizontal shallow funerary niche frame inset into limestone wall, top-down cutaway view, dark recessed rectangular centre and restrained thick chipped limestone frame; empty, no bones or urns, two-cell wide.",
+    "id": "CAT-A08_v03",
+    "prompt": "Use case: stylized-concept. Asset CAT-A08_v03, variant 3/3, production medieval dungeon architecture sprite. Horizontal shallow funerary niche frame inset into limestone wall, top-down cutaway view, dark recessed rectangular centre and restrained thick chipped limestone frame; empty, no bones or urns, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A08_v03.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      65,
+      162,
+      1709,
+      721
+    ],
+    "sprite_region_pixels": [
+      65,
+      162,
+      1709,
+      721
+    ]
+  },
+  {
+    "family": "A09",
+    "v": 1,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Horizontal medieval funerary stone wall plaque seen directly overhead, scratched erased illegible incised names, shallow stone relief, no readable text or glowing symbols, two-cell wide.",
+    "id": "CAT-A09_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A09_v01, variant 1/3, production medieval dungeon architecture sprite. Horizontal medieval funerary stone wall plaque seen directly overhead, scratched erased illegible incised names, shallow stone relief, no readable text or glowing symbols, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A09_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      35,
+      144,
+      1739,
+      743
+    ],
+    "sprite_region_pixels": [
+      35,
+      144,
+      1739,
+      743
+    ]
+  },
+  {
+    "family": "A09",
+    "v": 2,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Horizontal medieval funerary stone wall plaque seen directly overhead, scratched erased illegible incised names, shallow stone relief, no readable text or glowing symbols, two-cell wide.",
+    "id": "CAT-A09_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A09_v02, variant 2/3, production medieval dungeon architecture sprite. Horizontal medieval funerary stone wall plaque seen directly overhead, scratched erased illegible incised names, shallow stone relief, no readable text or glowing symbols, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A09_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      55,
+      132,
+      1720,
+      755
+    ],
+    "sprite_region_pixels": [
+      55,
+      132,
+      1720,
+      755
+    ]
+  },
+  {
+    "family": "A09",
+    "v": 3,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Horizontal medieval funerary stone wall plaque seen directly overhead, scratched erased illegible incised names, shallow stone relief, no readable text or glowing symbols, two-cell wide.",
+    "id": "CAT-A09_v03",
+    "prompt": "Use case: stylized-concept. Asset CAT-A09_v03, variant 3/3, production medieval dungeon architecture sprite. Horizontal medieval funerary stone wall plaque seen directly overhead, scratched erased illegible incised names, shallow stone relief, no readable text or glowing symbols, two-cell wide. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A09_v03.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      21,
+      159,
+      1754,
+      729
+    ],
+    "sprite_region_pixels": [
+      21,
+      159,
+      1754,
+      729
+    ]
+  },
+  {
+    "family": "A10",
+    "v": 1,
+    "count": 2,
+    "w": 4,
+    "h": 1,
+    "subject": "Flat funerary doorway threshold across four-cell wide passage seen directly overhead, worn limestone inlay and shallow erased funerary grooves, flat ground-level stone sill. No steps, no wall crossing centre, no door, no vertical obstacle; unmistakably walkable flat paving.",
+    "id": "CAT-A10_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A10_v01, variant 1/2, production medieval dungeon architecture sprite. Flat funerary doorway threshold across four-cell wide passage seen directly overhead, worn limestone inlay and shallow erased funerary grooves, flat ground-level stone sill. No steps, no wall crossing centre, no door, no vertical obstacle; unmistakably walkable flat paving. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 4:1. Wide flat 4:1 body on 3:1 canvas. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A10_v01.png",
+    "source_pixels": [
+      2172,
+      724
+    ],
+    "alpha_body_bounds": [
+      17,
+      119,
+      2155,
+      581
+    ],
+    "sprite_region_pixels": [
+      402,
+      119,
+      1770,
+      581
+    ]
+  },
+  {
+    "family": "A10",
+    "v": 2,
+    "count": 2,
+    "w": 4,
+    "h": 1,
+    "subject": "Flat funerary doorway threshold across four-cell wide passage seen directly overhead, worn limestone inlay and shallow erased funerary grooves, flat ground-level stone sill. No steps, no wall crossing centre, no door, no vertical obstacle; unmistakably walkable flat paving.",
+    "id": "CAT-A10_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A10_v02, variant 2/2, production medieval dungeon architecture sprite. Flat funerary doorway threshold across four-cell wide passage seen directly overhead, worn limestone inlay and shallow erased funerary grooves, flat ground-level stone sill. No steps, no wall crossing centre, no door, no vertical obstacle; unmistakably walkable flat paving. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 4:1. Wide flat 4:1 body on 3:1 canvas. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A10_v02.png",
+    "source_pixels": [
+      2172,
+      724
+    ],
+    "alpha_body_bounds": [
+      13,
+      59,
+      2160,
+      627
+    ],
+    "sprite_region_pixels": [
+      399,
+      59,
+      1774,
+      627
+    ]
+  },
+  {
+    "family": "A11",
+    "v": 1,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Medieval forged iron cell grille embedded on shallow stone wall niche, directly overhead cutaway projection, dark iron and rust on limestone frame, horizontal two-cell wide, no floor backdrop. VARIANT_STATE",
+    "id": "CAT-A11_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A11_v01, variant 1/3, production medieval dungeon architecture sprite. Medieval forged iron cell grille embedded on shallow stone wall niche, directly overhead cutaway projection, dark iron and rust on limestone frame, horizontal two-cell wide, no floor backdrop. Intact grille, bars closed within wall recess. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A11_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      26,
+      174,
+      1749,
+      718
+    ],
+    "sprite_region_pixels": [
+      26,
+      174,
+      1749,
+      718
+    ]
+  },
+  {
+    "family": "A11",
+    "v": 2,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Medieval forged iron cell grille embedded on shallow stone wall niche, directly overhead cutaway projection, dark iron and rust on limestone frame, horizontal two-cell wide, no floor backdrop. VARIANT_STATE",
+    "id": "CAT-A11_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A11_v02, variant 2/3, production medieval dungeon architecture sprite. Medieval forged iron cell grille embedded on shallow stone wall niche, directly overhead cutaway projection, dark iron and rust on limestone frame, horizontal two-cell wide, no floor backdrop. Damaged bent grille, still part of wall recess. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A11_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      41,
+      128,
+      1734,
+      757
+    ],
+    "sprite_region_pixels": [
+      41,
+      128,
+      1734,
+      757
+    ]
+  },
+  {
+    "family": "A11",
+    "v": 3,
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Medieval forged iron cell grille embedded on shallow stone wall niche, directly overhead cutaway projection, dark iron and rust on limestone frame, horizontal two-cell wide, no floor backdrop. VARIANT_STATE",
+    "id": "CAT-A11_v03",
+    "prompt": "Use case: stylized-concept. Asset CAT-A11_v03, variant 3/3, production medieval dungeon architecture sprite. Medieval forged iron cell grille embedded on shallow stone wall niche, directly overhead cutaway projection, dark iron and rust on limestone frame, horizontal two-cell wide, no floor backdrop. Open grille folded flat against left wall jamb, no passage added. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A11_v03.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      59,
+      95,
+      1717,
+      796
+    ],
+    "sprite_region_pixels": [
+      59,
+      95,
+      1717,
+      796
+    ]
+  },
+  {
+    "family": "A12",
+    "v": 1,
+    "count": 2,
+    "w": 2,
+    "h": 1,
+    "subject": "Medieval heavy dark oak cell door set in shallow limestone wall recess, directly overhead cutaway projection, horizontal two-cell wide footprint, forged iron straps, no modern parts. VARIANT_STATE",
+    "id": "CAT-A12_v01",
+    "prompt": "Use case: stylized-concept. Asset CAT-A12_v01, variant 1/2, production medieval dungeon architecture sprite. Medieval heavy dark oak cell door set in shallow limestone wall recess, directly overhead cutaway projection, horizontal two-cell wide footprint, forged iron straps, no modern parts. Closed door slab contained in blocked wall recess, hinge at LEFT end. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A12_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      30,
+      153,
+      1746,
+      734
+    ],
+    "sprite_region_pixels": [
+      30,
+      153,
+      1746,
+      734
+    ]
+  },
+  {
+    "family": "A12",
+    "v": 2,
+    "count": 2,
+    "w": 2,
+    "h": 1,
+    "subject": "Medieval heavy dark oak cell door set in shallow limestone wall recess, directly overhead cutaway projection, horizontal two-cell wide footprint, forged iron straps, no modern parts. VARIANT_STATE",
+    "id": "CAT-A12_v02",
+    "prompt": "Use case: stylized-concept. Asset CAT-A12_v02, variant 2/2, production medieval dungeon architecture sprite. Medieval heavy dark oak cell door set in shallow limestone wall recess, directly overhead cutaway projection, horizontal two-cell wide footprint, forged iron straps, no modern parts. Open door folded flat into LEFT side of the same wall recess, hinge at LEFT end, same canvas and pivot as closed door, no passage added. Original art. EXACT orthographic camera straight down, view only top horizontal surfaces/cutaway, NO frontal elevation, NO isometric, NO perspective. Painterly convincing material, broad readable forms; muted limestone #68645B #969082, deep crevices #292D2E, damp #444D4C, oak #45372B, iron #393C3C rust #815C43. Soft neutral lighting, short contact shading only. Isolated genuine RGBA transparent background. No ground backdrop, no characters, no technology, no text, no long cast shadow. Horizontal body aspect ratio 2:1. Fit body tightly with small consistent transparent safety margin. Asset dimensions are modular; never add scenery outside body.",
+    "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A12_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      45,
+      96,
+      1731,
+      792
+    ],
+    "sprite_region_pixels": [
+      45,
+      96,
+      1731,
+      792
+    ]
+  }
+]

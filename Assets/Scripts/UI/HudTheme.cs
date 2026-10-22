@@ -11,6 +11,16 @@ namespace CyberExtraction.UI
         static readonly GUISkin[] skins=new GUISkin[2];
         static readonly GUIStyle[] circles=new GUIStyle[2];
         static readonly List<Texture2D> textures=new List<Texture2D>();
+        static readonly Dictionary<int,GUIStyle> labels=new Dictionary<int,GUIStyle>();
+        static GUIStyle invisibleButton;
+        static Font regularFont,numberFont;
+        static bool fontsLoaded;
+        static void LoadFonts()
+        {
+            if(fontsLoaded) return;
+            regularFont=Resources.Load<Font>("UI/Fonts/BarlowCondensed-Regular");
+            numberFont=Resources.Load<Font>("UI/Fonts/BarlowCondensed-SemiBold"); fontsLoaded=true;
+        }
         public static HudAppearance Appearance { get { if(!loaded) { appearance=(HudAppearance)Mathf.Clamp(PlayerPrefs.GetInt("hud_theme",0),0,1); loaded=true; } return appearance; } }
         public static bool Somber=>Appearance==HudAppearance.Somber;
         public static Color Text=>Somber ? new Color(.9f,.85f,.73f) : new Color(.94f,.97f,.94f);
@@ -26,6 +36,7 @@ namespace CyberExtraction.UI
             if(skins[index]!=null) return skins[index];
             // IMGUI is retained so scenes and existing network prefabs do not need replacement.
             var skin=Object.Instantiate(original); skin.name="HUD "+Appearance; skin.hideFlags=HideFlags.HideAndDontSave;
+            LoadFonts(); if(regularFont!=null) skin.font=regularFont;
             var panel=Texture(Panel,Accent,Somber ? 2 : 8,Somber);
             var button=Texture(Somber ? new Color(.12f,.135f,.09f,.98f) : new Color(.15f,.22f,.18f),Accent,Somber ? 3 : 8,Somber);
             var active=Texture(Color.Lerp(Panel,Accent,.35f),Accent,Somber ? 3 : 8,Somber);
@@ -47,6 +58,12 @@ namespace CyberExtraction.UI
             style.onNormal.textColor=style.onHover.textColor=style.onActive.textColor=style.onFocused.textColor=Text;
             style.border=new RectOffset(8,8,8,8); style.padding=new RectOffset(8,8,5,5);
         }
+        // Shared with retained uGUI panels so migration keeps the original finish.
+        internal static Texture2D Surface(bool button)
+        {
+            var fill=button ? (Somber ? new Color(.12f,.135f,.09f,.98f) : new Color(.15f,.22f,.18f)) : Panel;
+            return Texture(fill,Accent,Somber ? (button ? 3 : 2) : 8,Somber);
+        }
         static Texture2D Texture(Color fill,Color edge,int radius,bool grain)
         {
             const int size=64;
@@ -64,7 +81,14 @@ namespace CyberExtraction.UI
             texture.SetPixels(pixels); texture.Apply(false,true); textures.Add(texture); return texture;
         }
         public static GUIStyle Label(int size=18,TextAnchor alignment=TextAnchor.UpperLeft)
-            =>new GUIStyle(GUI.skin.label) { fontSize=size,alignment=alignment,wordWrap=true };
+        {
+            int key=((int)Appearance*10+(int)alignment)*100+size;
+            if(!labels.TryGetValue(key,out var style))
+            { LoadFonts(); style=new GUIStyle(GUI.skin.label) { fontSize=size,alignment=alignment,wordWrap=true,padding=new RectOffset(),margin=new RectOffset() };
+              var font=size>=22 ? numberFont : regularFont; if(font!=null) style.font=font; labels.Add(key,style); }
+            style.normal.textColor=Text; return style;
+        }
+        public static GUIStyle InvisibleButton=>invisibleButton ?? (invisibleButton=new GUIStyle(GUIStyle.none));
         public static GUIStyle ActionStyle
         {
             get
@@ -88,16 +112,13 @@ namespace CyberExtraction.UI
         public static void Meter(Rect rect,float value,Color color)
         { Fill(rect,new Color(.5f,.5f,.5f,.18f)); Fill(new Rect(rect.x,rect.y,rect.width*Mathf.Clamp01(value),rect.height),color); }
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)] static void Reset()
-        { foreach(var skin in skins) if(skin!=null) Object.Destroy(skin); skins[0]=skins[1]=null; circles[0]=circles[1]=null; foreach(var texture in textures) if(texture!=null) Object.Destroy(texture); textures.Clear(); loaded=false; }
+        { foreach(var skin in skins) if(skin!=null) Object.Destroy(skin); skins[0]=skins[1]=null; circles[0]=circles[1]=null; foreach(var texture in textures) if(texture!=null) Object.Destroy(texture); textures.Clear(); labels.Clear(); invisibleButton=null; regularFont=numberFont=null; fontsLoaded=loaded=false; }
     }
-    public static class HudLayout
+    public enum HudControl { Health, Food, Spores, Clock, Map, Menu, Weapon, Heal, Swap, Reload, Backpack, Move, Aim, Fire, Interaction, Minimap, Sprint, Stamina }
+    [System.Serializable]
+    public struct HudPlacement
     {
-        public static bool Touch=>Players.GameInput.TouchActive;
-        public static float ActionSize=>Touch ? Mathf.Max(78,44/UiLayout.Scale) : 78;
-        public static Rect Menu=>new Rect(UiLayout.Width-118,14,104,42);
-        public static Rect Actions=>new Rect(UiLayout.Width-14-(Touch ? 128 : 0)-(ActionSize+8)*4,UiLayout.Height-14-ActionSize,(ActionSize+8)*4,ActionSize);
-        public static Rect Weapon=>Touch ? new Rect(UiLayout.Width-202,UiLayout.Height-ActionSize-126,188,82) : new Rect(Actions.x-202,Actions.y,188,ActionSize);
-        public static Rect Interaction=>new Rect((UiLayout.Width-320)/2,Touch ? 388 : 428,320,48);
-        public static Rect CampInventory=>new Rect(UiLayout.Width-162,UiLayout.Height-70,148,50);
+        public Vector2 Anchor, Offset, Size;
+        public HudPlacement(Vector2 anchor,Vector2 offset,Vector2 size) { Anchor=anchor; Offset=offset; Size=size; }
     }
 }

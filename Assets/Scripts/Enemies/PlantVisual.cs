@@ -89,7 +89,7 @@ namespace CyberExtraction.Enemies
             var player = nm.SpawnManager.GetLocalPlayerObject();
             var inv = player != null ? player.GetComponent<PlayerInventory>() : null;
             if (inv == null || !inv.IsAlive) return false;
-            return BotController.InVision(player.transform.position, player.transform.eulerAngles.z, point) &&
+            return BotController.InVision(player.transform.position, player.transform.eulerAngles.z, point,inv) &&
                 Physics2D.Linecast(player.transform.position, point, GameConfig.VisionMask).collider == null;
         }
         void LateUpdate()

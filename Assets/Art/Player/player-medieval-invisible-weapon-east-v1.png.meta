@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 779e676a88354444bbdee2c74424e803
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7424547400979603000
+    second: player-medieval-invisible-weapon-east-v1_0
+  - first:
+      213: 2931967158091521191
+    second: player-medieval-invisible-weapon-east-v1_1
+  - first:
+      213: 6090682557321156532
+    second: player-medieval-invisible-weapon-east-v1_2
+  - first:
+      213: -3907698306047115852
+    second: player-medieval-invisible-weapon-east-v1_3
+  - first:
+      213: 2141892064674895864
+    second: player-medieval-invisible-weapon-east-v1_4
+  - first:
+      213: 8039970791360888622
+    second: player-medieval-invisible-weapon-east-v1_5
+  - first:
+      213: 2933566068489659902
+    second: player-medieval-invisible-weapon-east-v1_6
+  - first:
+      213: 9178587048795389564
+    second: player-medieval-invisible-weapon-east-v1_7
+  - first:
+      213: 1203489498437800948
+    second: player-medieval-invisible-weapon-east-v1_8
+  - first:
+      213: 8680572686471576468
+    second: player-medieval-invisible-weapon-east-v1_9
+  - first:
+      213: 3007343285881737816
+    second: player-medieval-invisible-weapon-east-v1_10
+  - first:
+      213: -2010139371595014538
+    second: player-medieval-invisible-weapon-east-v1_11
+  - first:
+      213: 9119380502291698727
+    second: player-medieval-invisible-weapon-east-v1_12
+  - first:
+      213: 5647943174502533706
+    second: player-medieval-invisible-weapon-east-v1_13
+  - first:
+      213: 7725453646075606273
+    second: player-medieval-invisible-weapon-east-v1_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1241
+        height: 1238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1af8ac975b6f890800000000000000
+      internalID: -7424547400979603000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_1
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1157
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac1827989070b820800000000000000
+      internalID: 2931967158091521191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_2
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1126
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b79bcc1483768450800000000000000
+      internalID: 6090682557321156532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_3
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1100
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd7aa2381115c9c0800000000000000
+      internalID: -3907698306047115852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_4
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1080
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7dc2e0c7789bd10800000000000000
+      internalID: 2141892064674895864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_5
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1059
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ff49f46d6b39f60800000000000000
+      internalID: 8039970791360888622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_6
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1068
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5277debce16b820800000000000000
+      internalID: 2933566068489659902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 419
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e33776a44e06f70800000000000000
+      internalID: 9178587048795389564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 405
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f35c4d8257a3b010800000000000000
+      internalID: 1203489498437800948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 308
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bb810edd6977870800000000000000
+      internalID: 8680572686471576468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 232
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85213a0f8ca3cb920800000000000000
+      internalID: 3007343285881737816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 230
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e5d0744ec8a14e0800000000000000
+      internalID: -2010139371595014538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 218
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72458b2104c8e8e70800000000000000
+      internalID: 9119380502291698727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_13
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 31
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ac0d3a466816e40800000000000000
+      internalID: 5647943174502533706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-medieval-invisible-weapon-east-v1_14
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 43
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105351fe823563b60800000000000000
+      internalID: 7725453646075606273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      player-medieval-invisible-weapon-east-v1_0: -7424547400979603000
+      player-medieval-invisible-weapon-east-v1_1: 2931967158091521191
+      player-medieval-invisible-weapon-east-v1_10: 3007343285881737816
+      player-medieval-invisible-weapon-east-v1_11: -2010139371595014538
+      player-medieval-invisible-weapon-east-v1_12: 9119380502291698727
+      player-medieval-invisible-weapon-east-v1_13: 5647943174502533706
+      player-medieval-invisible-weapon-east-v1_14: 7725453646075606273
+      player-medieval-invisible-weapon-east-v1_2: 6090682557321156532
+      player-medieval-invisible-weapon-east-v1_3: -3907698306047115852
+      player-medieval-invisible-weapon-east-v1_4: 2141892064674895864
+      player-medieval-invisible-weapon-east-v1_5: 8039970791360888622
+      player-medieval-invisible-weapon-east-v1_6: 2933566068489659902
+      player-medieval-invisible-weapon-east-v1_7: 9178587048795389564
+      player-medieval-invisible-weapon-east-v1_8: 1203489498437800948
+      player-medieval-invisible-weapon-east-v1_9: 8680572686471576468
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

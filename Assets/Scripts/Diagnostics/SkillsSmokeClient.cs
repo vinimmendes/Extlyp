@@ -52,8 +52,10 @@ namespace CyberExtraction.Diagnostics
             yield return new WaitForSecondsRealtime(.4f); InputSystem.QueueStateEvent(keyboard,new KeyboardState());
             yield return new WaitForSecondsRealtime(.3f);
             Check(player.transform.position.x>before.x+.1f,"Movimento atraves da rede");
-            int rounds=inv.PistolRounds; player.GetComponent<PlayerShooter>().RequestFire(0);
-            yield return Wait(()=>inv.PistolRounds<rounds);
+            var shooter=player.GetComponent<PlayerShooter>();
+            if(shooter.Magazine==0) { shooter.RequestReload(); yield return Wait(()=>shooter.Magazine>0); }
+            int rounds=inv.WeaponRounds; shooter.RequestFire(0);
+            yield return Wait(()=>inv.WeaponRounds<rounds);
             Debug.Log("SKILLS CLIENT MOVEMENT/FIRE PASS");
             yield return Wait(()=>LootPickup.NearestChest(player.transform.position)!=null);
             var chest=LootPickup.NearestChest(player.transform.position); InventoryWindow.Instance.Interact();
@@ -65,7 +67,7 @@ namespace CyberExtraction.Diagnostics
             NetworkManager.Singleton.Shutdown(); yield return Wait(()=>!NetworkManager.Singleton.IsListening && !NetworkManager.Singleton.ShutdownInProgress);
             NetworkBootstrap.Instance.BeginCamp("127.0.0.1");
             yield return Wait(()=>CampSession.Synchronized && NetworkBootstrap.Instance.CampConnection && !CampSession.Pending);
-            Check(CampSession.Progress.PierRepaired && !CampSession.Progress.WellFed && CampSession.Progress.Pack.Count(ItemId.Pistol)==1,"Reconexao carrega progresso confirmado");
+            Check(CampSession.Progress.PierRepaired && !CampSession.Progress.WellFed && CampSession.Progress.HasAnyWeapon,"Reconexao carrega progresso confirmado");
             Debug.Log("SKILLS SMOKE CLIENT PASS: signed camp, cooking, transfer, buff, movement, fire, extraction, reconnect");
             NetworkManager.Singleton.Shutdown(); yield return new WaitForSecondsRealtime(.5f); Application.Quit(0);
         }

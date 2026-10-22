@@ -1,0 +1,19 @@
+Use case: stylized-concept.
+Create ONE high-quality comparison board of FOUR ordinary rustic WOODEN LOOT CHEST design options for an original top-down woodland survival-horror extraction game. These are normal containers, not monsters. The game's mimic must later use EXACTLY the chosen closed chest shape, so NO organic hints, eyes, teeth, limbs, glowing details or fantasy ornaments. Ordinary weathered useful storage chests with an understandable hinged lid. Practical to model and animate in Blender as simple boxes, thick planks, bevels, hinges, metal straps and locks. No intricate ornamentation.
+Landscape charcoal neutral studio background, four equal columns and subtle dividers. Each column shows:
+TOP: one large complete three-quarter elevated perspective of the CLOSED chest.
+MIDDLE: strict VERTICAL ORTHOGRAPHIC OVERHEAD view of the SAME CLOSED chest.
+BOTTOM: strict VERTICAL ORTHOGRAPHIC OVERHEAD view of the SAME chest OPEN, lid hinging to the far/top side with believable pivot and a clear dark EMPTY interior. No loot items inside, no monster elements. Closed/open versions must match dimensions, plank structure, hinges, latches, materials exactly. Entire silhouettes with generous margins, no cropping, no ground scene or props.
+Consistent scale across candidates, rectangular footprint suitable as readable game loot container. Polished textured 3D concept-render quality, weathered wood with simple visible grain and restrained scratches, dull aged iron, muted brown/tan/gray palette. Diffuse directional studio lighting and self-shading, readable on dark background. No neon, fantasy gold, bright sparkle, text on actual chest, futuristic materials, machine parts, detailed chains or padlock clutter.
+Title exactly "BAÚ — OPÇÕES VISUAIS". Column labels exactly:
+"1 — MADEIRA REFORÇADA"
+"2 — CAIXA DE DEPÓSITO"
+"3 — BAÚ DE VIAGEM"
+"4 — CAIXOTE REMENDADO"
+
+1 MADEIRA REFORÇADA: traditional low rectangular chest, slightly rounded lid made of three broad wood planks, two dark dull iron straps around front/lid/back, simple central small iron lock plate, medium brown worn wood. Grounded conventional storage shape; not a pirate treasure chest.
+2 CAIXA DE DEPÓSITO: broad low squat box, FLAT lid, four thick dark brown planks, reinforced wooden corner blocks, two simple recessed side handles and a rectangular small iron sliding latch centered front. Dusty desaturated gray-brown wood, utilitarian chest found in lumber mill or farm. No text, shipping labels or exposed contents.
+3 BAÚ DE VIAGEM: narrow deep sturdy wooden travel chest with a gently bowed lid, worn dark leather corner protection and two broad aged leather straps with dull metal buckles, simple rectangular center latch; muted tan wood and darker leather. No canvas bag, not a suitcase made only of leather, no bright brass, no exterior bundles. Still clearly a wooden storage chest, compact rugged profile.
+4 CAIXOTE REMENDADO: improvised rugged storage box, flat thick hinged lid, mismatched but tidy usable wood planks in two subdued brown tones, one diagonal wooden reinforcing strip across the top, simple dark iron corner brackets and central hasp latch. All boards coherent and solid, no huge holes revealing contents, no broken-open lid. Slightly asymmetric patched design, practical abandoned workshop chest.
+
+Closed overhead silhouettes must remain legible at small sprite sizes. The open views should read as searchable empty storage, never as a mouth. These are AI visual concepts for future Blender modeling, not actual existing editable models. Exact title and specified labels only, no watermark or other text.

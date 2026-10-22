@@ -1,0 +1,60 @@
+{
+  "tool": "image_gen built-in",
+  "background": "transparent",
+  "assets": [
+    {
+      "id": "N04",
+      "name": "Padiola funerária",
+      "envelope": [
+        3,
+        1
+      ],
+      "prompt": "Use case: stylized-concept. Production isolated 2D environment sprite for a dark medieval flooded catacomb, matching painted realistic game materials: weathered dark oak, tarnished forged iron, dirty grey-beige cloth, muted brown leather, dull terracotta and low-saturation olive. Almost directly overhead orthographic view with only a very slight tilt, no vanishing points, no isometric scene. Broad readable shapes at small scale, subdued neutral lighting, no long cast shadow or glow. True transparent RGBA background, no floor tile or scene, no text, no symbols, no UI border, no watermark, no people, no monsters, no skulls or bodies. Entire silhouette visible with at least 8% transparent padding. One empty medieval funeral stretcher, long horizontal 3:1 shape: two rough dark wooden carrying poles with short handles at the ends, three cross slats, a sagging strip of torn coarse grey canvas attached between the poles. Old and partly broken, low profile, abandoned. Not a coffin, not a bed, no mattress, no person, no wheels, no metal medical equipment."
+    },
+    {
+      "id": "N05",
+      "name": "Incensário caído",
+      "envelope": [
+        1,
+        1
+      ],
+      "prompt": "Use case: stylized-concept. Production isolated 2D environment sprite for a dark medieval flooded catacomb, matching painted realistic game materials: weathered dark oak, tarnished forged iron, dirty grey-beige cloth, muted brown leather, dull terracotta and low-saturation olive. Almost directly overhead orthographic view with only a very slight tilt, no vanishing points, no isometric scene. Broad readable shapes at small scale, subdued neutral lighting, no long cast shadow or glow. True transparent RGBA background, no floor tile or scene, no text, no symbols, no UI border, no watermark, no people, no monsters, no skulls or bodies. Entire silhouette visible with at least 8% transparent padding. One small fallen medieval incense censer lying on its side, dull tarnished bronze and dark iron, a short slack chain curled tightly beside it, detached small lid resting close to the body, a tiny dusting of cold ash. Compact roughly square composition. No fire, smoke, candles, jewels, gold shine, cross or religious lettering."
+    },
+    {
+      "id": "N06",
+      "name": "Tigela e utensílios de cela",
+      "envelope": [
+        1,
+        1
+      ],
+      "prompt": "Use case: stylized-concept. Production isolated 2D environment sprite for a dark medieval flooded catacomb, matching painted realistic game materials: weathered dark oak, tarnished forged iron, dirty grey-beige cloth, muted brown leather, dull terracotta and low-saturation olive. Almost directly overhead orthographic view with only a very slight tilt, no vanishing points, no isometric scene. Broad readable shapes at small scale, subdued neutral lighting, no long cast shadow or glow. True transparent RGBA background, no floor tile or scene, no text, no symbols, no UI border, no watermark, no people, no monsters, no skulls or bodies. Entire silhouette visible with at least 8% transparent padding. One compact floor grouping of an empty chipped dull earthenware bowl, a worn short wooden spoon lying beside it and two small broken clay fragments. Tight roughly square composition. Objects resting flat. No food, soup, potions, coins, candles or treasure. Crude prison utensils, no modern cutlery."
+    },
+    {
+      "id": "N07",
+      "name": "Palha deteriorada",
+      "envelope": [
+        2,
+        1
+      ],
+      "prompt": "Use case: stylized-concept. Production isolated 2D environment sprite for a dark medieval flooded catacomb, matching painted realistic game materials: weathered dark oak, tarnished forged iron, dirty grey-beige cloth, muted brown leather, dull terracotta and low-saturation olive. Almost directly overhead orthographic view with only a very slight tilt, no vanishing points, no isometric scene. Broad readable shapes at small scale, subdued neutral lighting, no long cast shadow or glow. True transparent RGBA background, no floor tile or scene, no text, no symbols, no UI border, no watermark, no people, no monsters, no skulls or bodies. Entire silhouette visible with at least 8% transparent padding. A single completely FLAT sparse floor DECAL of old decayed straw, short broken dry reeds and tiny dirty fibres, flattened and irregularly scattered in a horizontal 2:1 shape. Muted grey-brown olive, very low contrast. Thin sparse edges fading into transparency with clear gaps. No hay bale, mattress, rope, wooden boards, stones, ground backing, rectangular tile, raised pile or cast shadow."
+    },
+    {
+      "id": "N10",
+      "name": "Mochila rasgada decorativa",
+      "envelope": [
+        1,
+        1
+      ],
+      "prompt": "Use case: stylized-concept. Production isolated 2D environment sprite for a dark medieval flooded catacomb, matching painted realistic game materials: weathered dark oak, tarnished forged iron, dirty grey-beige cloth, muted brown leather, dull terracotta and low-saturation olive. Almost directly overhead orthographic view with only a very slight tilt, no vanishing points, no isometric scene. Broad readable shapes at small scale, subdued neutral lighting, no long cast shadow or glow. True transparent RGBA background, no floor tile or scene, no text, no symbols, no UI border, no watermark, no people, no monsters, no skulls or bodies. Entire silhouette visible with at least 8% transparent padding. One EMPTY ruined medieval traveller's backpack slumped flat on the ground, coarse dark brown leather and torn beige canvas, collapsed open flap showing empty lining, one broken dull iron buckle, slack narrow straps tucked beside it. Compact square shape. Clearly unusable ragged old equipment. No zipper, modern stitching pattern, military webbing, weapon, treasure, loot glow or emblem."
+    },
+    {
+      "id": "N11",
+      "name": "Acampamento apagado",
+      "envelope": [
+        2,
+        2
+      ],
+      "prompt": "Use case: stylized-concept. Production isolated 2D environment sprite for a dark medieval flooded catacomb, matching painted realistic game materials: weathered dark oak, tarnished forged iron, dirty grey-beige cloth, muted brown leather, dull terracotta and low-saturation olive. Almost directly overhead orthographic view with only a very slight tilt, no vanishing points, no isometric scene. Broad readable shapes at small scale, subdued neutral lighting, no long cast shadow or glow. True transparent RGBA background, no floor tile or scene, no text, no symbols, no UI border, no watermark, no people, no monsters, no skulls or bodies. Entire silhouette visible with at least 8% transparent padding. One small compact abandoned medieval campsite ground grouping, square 1:1 composition: a sparse shallow patch of COLD dark ashes and five small charred twig fragments, a loosely rolled tattered grey bedcloth to one side and a dented dull clay cup beside it. Low and flat, asymmetrical and sparsely grouped with transparent gaps. No flame, smoke, spark, light source, tent, standing poles, large rocks, firepit circle, food, chest, loot, backpack, weapons or people. No ground tile behind the objects."
+    }
+  ]
+}

@@ -1,0 +1,4457 @@
+{
+  "kind": "Static file inventory; no runtime validation",
+  "packs": {
+    "Pisos": 40,
+    "Arquitetura": 32,
+    "Sepulturas": 28,
+    "Setores": 15,
+    "Extracoes": 23,
+    "Detalhes": 37
+  },
+  "selected_pngs": 175,
+  "sprite_regions": 189,
+  "findings": [],
+  "assets": [
+    {
+      "id": "CAT-F01_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F01_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F01_v01.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F01_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F01_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F01_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F01_v02.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F01_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F01_v03",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F01_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F01_v03.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F01_v03",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F01_v04",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F01_v04.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F01_v04.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F01_v04",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F02_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F02_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F02_v01.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F02_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F02_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F02_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F02_v02.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F02_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F02_v03",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F02_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F02_v03.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F02_v03",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F02_v04",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F02_v04.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F02_v04.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F02_v04",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F03_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F03_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F03_v01.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F03_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F03_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F03_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F03_v02.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F03_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F03_v03",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F03_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F03_v03.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F03_v03",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F04_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F04_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F04_v01.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F04_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F04_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F04_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F04_v02.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F04_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F04_v03",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F04_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F04_v03.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F04_v03",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F05_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F05_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F05_v01.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F05_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F05_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F05_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F05_v02.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F05_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F05_v03",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F05_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F05_v03.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F05_v03",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F06_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F06_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F06_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F06_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F06_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F06_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F06_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F06_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F06_v03",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F06_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F06_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F06_v03",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F06_v04",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F06_v04.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F06_v04.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F06_v04",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F06_v05",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F06_v05.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F06_v05.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F06_v05",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F06_v06",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F06_v06.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F06_v06.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F06_v06",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F06_v07",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F06_v07.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F06_v07.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F06_v07",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F06_v08",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F06_v08.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F06_v08.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F06_v08",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F07_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F07_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F07_v01.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-F07_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F07_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F07_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F07_v02.png",
+      "same_bytes": true,
+      "mode": "RGB",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-F07_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F08_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F08_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F08_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F08_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F08_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F08_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F08_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F08_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F08_v03",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F08_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F08_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F08_v03",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F08_v04",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F08_v04.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F08_v04.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F08_v04",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F08_v05",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F08_v05.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F08_v05.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F08_v05",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F08_v06",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F08_v06.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F08_v06.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F08_v06",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F08_v07",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F08_v07.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F08_v07.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F08_v07",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F08_v08",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F08_v08.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F08_v08.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-F08_v08",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F09_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F09_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F09_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-F09_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F09_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F09_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F09_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-F09_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F09_v03",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F09_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F09_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-F09_v03",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F10_v01",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F10_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F10_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-F10_v01",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-F10_v02",
+      "pack": "Pisos",
+      "source": "Art/Catacumbas/Pisos/Fontes/CAT-F10_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Floors/CAT-F10_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-F10_v02",
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "id": "CAT-A01_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A01_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A01_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A01_v01",
+          "x": 0.3588516746411483,
+          "y": 0.3588516746411483,
+          "width": 0.2822966507177033,
+          "height": 0.2822966507177033,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A01_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A01_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A01_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A01_v02",
+          "x": 0.33891547049441784,
+          "y": 0.33891547049441784,
+          "width": 0.32137161084529503,
+          "height": 0.32137161084529503,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A01_v03",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A01_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A01_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A01_v03",
+          "x": 0.3484848484848485,
+          "y": 0.35964912280701755,
+          "width": 0.30462519936204147,
+          "height": 0.30462519936204147,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A02_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A02_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A02_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-A02_v01",
+          "x": 0.07097288676236045,
+          "y": 0.06140350877192982,
+          "width": 0.8644338118022329,
+          "height": 0.8859649122807017,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A02_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A02_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A02_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-A02_v02",
+          "x": 0.05980861244019139,
+          "y": 0.0733652312599681,
+          "width": 0.8859649122807017,
+          "height": 0.8572567783094099,
+          "rotation": -90
+        }
+      ]
+    },
+    {
+      "id": "CAT-A02_v03",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A02_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A02_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-A02_v03",
+          "x": 0.10685805422647528,
+          "y": 0.11642743221690591,
+          "width": 0.8078149920255183,
+          "height": 0.7942583732057417,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A03_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A03_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A03_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-A03_v01",
+          "x": 0.08293460925039872,
+          "y": 0.094896331738437,
+          "width": 0.8365231259968102,
+          "height": 0.8221690590111643,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A03_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A03_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A03_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-A03_v02",
+          "x": 0.10446570972886762,
+          "y": 0.11323763955342903,
+          "width": 0.7910685805422647,
+          "height": 0.7727272727272727,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A03_v03",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A03_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A03_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-A03_v03",
+          "x": 0.09888357256778309,
+          "y": 0.10685805422647528,
+          "width": 0.8078149920255183,
+          "height": 0.7902711323763956,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A04_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A04_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A04_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-A04_v01",
+          "x": 0.42424242424242425,
+          "y": 0.22089314194577353,
+          "width": 0.5566188197767146,
+          "height": 0.5566188197767146,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A04_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A04_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A04_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-A04_v02",
+          "x": 0.3508771929824561,
+          "y": 0.20015948963317384,
+          "width": 0.5972886762360446,
+          "height": 0.5972886762360446,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A05_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A05_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A05_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A05_v01",
+          "x": 0.05073280721533258,
+          "y": 0.26042841037204056,
+          "width": 0.8985343855693348,
+          "height": 0.4791431792559188,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A05_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A05_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A05_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A05_v02",
+          "x": 0.032130777903043965,
+          "y": 0.19729425028184894,
+          "width": 0.939684329199549,
+          "height": 0.5817361894024803,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A05_v03",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A05_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A05_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A05_v03",
+          "x": 0.07328072153325817,
+          "y": 0.24577226606538896,
+          "width": 0.8540022547914318,
+          "height": 0.5073280721533259,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A06_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A06_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A06_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        2172,
+        724
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-A06_v01",
+          "x": 0.03591160220994475,
+          "y": 0.17955801104972377,
+          "width": 0.9281767955801105,
+          "height": 0.6505524861878453,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A06_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A06_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A06_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        2172,
+        724
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-A06_v02",
+          "x": 0.016574585635359115,
+          "y": 0.24033149171270718,
+          "width": 0.9668508287292817,
+          "height": 0.5897790055248618,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A07_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A07_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A07_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A07_v01",
+          "x": 0.1076555023923445,
+          "y": 0.11722488038277512,
+          "width": 0.7878787878787878,
+          "height": 0.7583732057416268,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A07_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A07_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A07_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A07_v02",
+          "x": 0.05661881977671451,
+          "y": 0.06299840510366826,
+          "width": 0.886762360446571,
+          "height": 0.8755980861244019,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A07_v03",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A07_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A07_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A07_v03",
+          "x": 0.06539074960127592,
+          "y": 0.06937799043062201,
+          "width": 0.8700159489633174,
+          "height": 0.861244019138756,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A08_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A08_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A08_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A08_v01",
+          "x": 0.05580608793686584,
+          "y": 0.1984216459977452,
+          "width": 0.8883878241262683,
+          "height": 0.6042841037204059,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A08_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A08_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A08_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A08_v02",
+          "x": 0.021984216459977453,
+          "y": 0.22886133032694475,
+          "width": 0.9560315670800451,
+          "height": 0.5355129650507328,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A08_v03",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A08_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A08_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A08_v03",
+          "x": 0.03664036076662908,
+          "y": 0.1871476888387824,
+          "width": 0.9267192784667418,
+          "height": 0.6302142051860203,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A09_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A09_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A09_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A09_v01",
+          "x": 0.019729425028184894,
+          "y": 0.16234498308906425,
+          "width": 0.9605411499436303,
+          "height": 0.6753100338218715,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A09_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A09_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A09_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A09_v02",
+          "x": 0.03100338218714769,
+          "y": 0.1488162344983089,
+          "width": 0.9385569334836528,
+          "height": 0.7023675310033822,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A09_v03",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A09_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A09_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A09_v03",
+          "x": 0.011837655016910935,
+          "y": 0.17812852311161217,
+          "width": 0.9768883878241262,
+          "height": 0.6426155580608793,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A10_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A10_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A10_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        2172,
+        724
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-A10_v01",
+          "x": 0.1850828729281768,
+          "y": 0.19751381215469613,
+          "width": 0.6298342541436464,
+          "height": 0.638121546961326,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A10_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A10_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A10_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        2172,
+        724
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-A10_v02",
+          "x": 0.18370165745856354,
+          "y": 0.13397790055248618,
+          "width": 0.6330570902394107,
+          "height": 0.7845303867403315,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A11_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A11_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A11_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A11_v01",
+          "x": 0.014656144306651634,
+          "y": 0.19052987598647125,
+          "width": 0.9712514092446449,
+          "height": 0.6133032694475761,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A11_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A11_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A11_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A11_v02",
+          "x": 0.023111612175873732,
+          "y": 0.14656144306651633,
+          "width": 0.9543404735062007,
+          "height": 0.7091319052987599,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A11_v03",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A11_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A11_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A11_v03",
+          "x": 0.03325817361894025,
+          "y": 0.10259301014656144,
+          "width": 0.9346110484780158,
+          "height": 0.790304396843292,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A12_v01",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A12_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A12_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A12_v01",
+          "x": 0.016910935738444193,
+          "y": 0.17249154453213078,
+          "width": 0.9673055242390078,
+          "height": 0.6550169109357384,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-A12_v02",
+      "pack": "Arquitetura",
+      "source": "Art/Catacumbas/Arquitetura/Fontes/CAT-A12_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Architecture/CAT-A12_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-A12_v02",
+          "x": 0.02536640360766629,
+          "y": 0.10710259301014656,
+          "width": 0.9503945885005637,
+          "height": 0.7846674182638106,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "CAT-P01_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P01_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P01_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P01_v01",
+          "x": 0.08771929824561403,
+          "y": 0.09409888357256778,
+          "width": 0.8277511961722488,
+          "height": 0.8078149920255183
+        }
+      ]
+    },
+    {
+      "id": "CAT-P01_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P01_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P01_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P01_v02",
+          "x": 0.08293460925039872,
+          "y": 0.09569377990430622,
+          "width": 0.8365231259968102,
+          "height": 0.8078149920255183
+        }
+      ]
+    },
+    {
+      "id": "CAT-P01_v03",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P01_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P01_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P01_v03",
+          "x": 0.10207336523125997,
+          "y": 0.11722488038277512,
+          "width": 0.79585326953748,
+          "height": 0.7655502392344498
+        }
+      ]
+    },
+    {
+      "id": "CAT-P02_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P02_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P02_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P02_v01",
+          "x": 0.06140350877192982,
+          "y": 0.06698564593301436,
+          "width": 0.8787878787878788,
+          "height": 0.8676236044657097
+        }
+      ]
+    },
+    {
+      "id": "CAT-P02_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P02_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P02_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P02_v02",
+          "x": 0.05901116427432217,
+          "y": 0.06937799043062201,
+          "width": 0.8819776714513556,
+          "height": 0.8644338118022329
+        }
+      ]
+    },
+    {
+      "id": "CAT-P02_v03",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P02_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P02_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P02_v03",
+          "x": 0.08054226475279107,
+          "y": 0.0861244019138756,
+          "width": 0.8397129186602871,
+          "height": 0.8229665071770335
+        }
+      ]
+    },
+    {
+      "id": "CAT-P03_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P03_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P03_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P03_v01",
+          "x": 0.06299840510366826,
+          "y": 0.07974481658692185,
+          "width": 0.8748006379585327,
+          "height": 0.8429027113237639
+        }
+      ]
+    },
+    {
+      "id": "CAT-P03_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P03_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P03_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P03_v02",
+          "x": 0.11562998405103668,
+          "y": 0.12041467304625199,
+          "width": 0.7719298245614035,
+          "height": 0.7607655502392344
+        }
+      ]
+    },
+    {
+      "id": "CAT-P03_v03",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P03_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P03_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P03_v03",
+          "x": 0.0733652312599681,
+          "y": 0.08213716108452951,
+          "width": 0.8572567783094099,
+          "height": 0.8317384370015949
+        }
+      ]
+    },
+    {
+      "id": "CAT-P04_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P04_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P04_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P04_v01",
+          "x": 0.029312288613303268,
+          "y": 0.19503945885005636,
+          "width": 0.9408117249154453,
+          "height": 0.6110484780157835
+        }
+      ]
+    },
+    {
+      "id": "CAT-P04_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P04_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P04_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P04_v02",
+          "x": 0.016347237880496055,
+          "y": 0.2254791431792559,
+          "width": 0.9667418263810598,
+          "height": 0.5490417136414881
+        }
+      ]
+    },
+    {
+      "id": "CAT-P04_v03",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P04_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P04_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P04_v03",
+          "x": 0.03156708004509583,
+          "y": 0.22435174746335965,
+          "width": 0.9374295377677565,
+          "height": 0.5456595264937993
+        }
+      ]
+    },
+    {
+      "id": "CAT-P05_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P05_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P05_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P05_v01",
+          "x": 0.09409888357256778,
+          "y": 0.09409888357256778,
+          "width": 0.8125996810207337,
+          "height": 0.8118022328548644
+        }
+      ]
+    },
+    {
+      "id": "CAT-P05_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P05_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P05_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P05_v02",
+          "x": 0.07974481658692185,
+          "y": 0.08213716108452951,
+          "width": 0.8405103668261563,
+          "height": 0.8365231259968102
+        }
+      ]
+    },
+    {
+      "id": "CAT-P05_v03",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P05_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P05_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P05_v03",
+          "x": 0.08133971291866028,
+          "y": 0.07575757575757576,
+          "width": 0.8373205741626795,
+          "height": 0.8413078149920256
+        }
+      ]
+    },
+    {
+      "id": "CAT-P06_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P06_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P06_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P06_v01",
+          "x": 0.019165727170236752,
+          "y": 0.1939120631341601,
+          "width": 0.9622322435174746,
+          "height": 0.6076662908680946
+        }
+      ]
+    },
+    {
+      "id": "CAT-P06_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P06_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P06_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P06_v02",
+          "x": 0.02762119503945885,
+          "y": 0.16234498308906425,
+          "width": 0.9458850056369785,
+          "height": 0.6651634723788049
+        }
+      ]
+    },
+    {
+      "id": "CAT-P07_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P07_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P07_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        2172,
+        724
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P07_v01",
+          "x": 0.02992633517495396,
+          "y": 0.18370165745856354,
+          "width": 0.9401473296500921,
+          "height": 0.6339779005524862
+        }
+      ]
+    },
+    {
+      "id": "CAT-P07_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P07_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P07_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        2172,
+        724
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P07_v02",
+          "x": 0.017495395948434623,
+          "y": 0.13535911602209943,
+          "width": 0.9654696132596685,
+          "height": 0.7541436464088398
+        }
+      ]
+    },
+    {
+      "id": "CAT-P08_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P08_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P08_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P08_v01",
+          "x": 0.09170653907496013,
+          "y": 0.08851674641148326,
+          "width": 0.8189792663476874,
+          "height": 0.8197767145135566
+        }
+      ]
+    },
+    {
+      "id": "CAT-P08_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P08_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P08_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P08_v02",
+          "x": 0.09888357256778309,
+          "y": 0.10685805422647528,
+          "width": 0.8054226475279107,
+          "height": 0.7886762360446571
+        }
+      ]
+    },
+    {
+      "id": "CAT-P08_v03",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P08_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P08_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P08_v03",
+          "x": 0.10047846889952153,
+          "y": 0.08452950558213716,
+          "width": 0.8086124401913876,
+          "height": 0.8189792663476874
+        }
+      ]
+    },
+    {
+      "id": "CAT-P09_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P09_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P09_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P09_v01",
+          "x": 0.10606060606060606,
+          "y": 0.11562998405103668,
+          "width": 0.7910685805422647,
+          "height": 0.7727272727272727
+        }
+      ]
+    },
+    {
+      "id": "CAT-P09_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P09_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P09_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P09_v02",
+          "x": 0.08373205741626795,
+          "y": 0.094896331738437,
+          "width": 0.8389154704944178,
+          "height": 0.8133971291866029
+        }
+      ]
+    },
+    {
+      "id": "CAT-P09_v03",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P09_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P09_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-P09_v03",
+          "x": 0.10845295055821372,
+          "y": 0.10606060606060606,
+          "width": 0.7902711323763956,
+          "height": 0.7791068580542265
+        }
+      ]
+    },
+    {
+      "id": "CAT-P10_v01",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P10_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P10_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P10_v01",
+          "x": 0.24800637958532695,
+          "y": 0.24720893141945774,
+          "width": 0.5047846889952153,
+          "height": 0.5047846889952153
+        }
+      ]
+    },
+    {
+      "id": "CAT-P10_v02",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P10_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P10_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P10_v02",
+          "x": 0.20494417862838915,
+          "y": 0.215311004784689,
+          "width": 0.5925039872408293,
+          "height": 0.5717703349282297
+        }
+      ]
+    },
+    {
+      "id": "CAT-P10_v03",
+      "pack": "Sepulturas",
+      "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P10_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Props/CAT-P10_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-P10_v03",
+          "x": 0.22248803827751196,
+          "y": 0.2503987240829346,
+          "width": 0.5462519936204147,
+          "height": 0.5087719298245614
+        }
+      ]
+    },
+    {
+      "id": "CAT-S01_v01",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S01_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-S01_v01",
+          "x": 0.009019165727170236,
+          "y": 0.15332581736189402,
+          "width": 0.9825253664036077,
+          "height": 0.6922209695603156
+        }
+      ]
+    },
+    {
+      "id": "CAT-S01_v02",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S01_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-S01_v02",
+          "x": 0.015783540022547914,
+          "y": 0.17812852311161217,
+          "width": 0.9684329199549042,
+          "height": 0.6459977452085682
+        }
+      ]
+    },
+    {
+      "id": "CAT-S01_v03",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S01_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-S01_v03",
+          "x": 0.032130777903043965,
+          "y": 0.1600901916572717,
+          "width": 0.9363021420518602,
+          "height": 0.6888387824126269
+        }
+      ]
+    },
+    {
+      "id": "CAT-S01_v04",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v04.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S01_v04.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-S01_v04",
+          "x": 0.048478015783540024,
+          "y": 0.17925591882750846,
+          "width": 0.9036076662908681,
+          "height": 0.644870349492672
+        }
+      ]
+    },
+    {
+      "id": "CAT-S01_v05",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v05.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S01_v05.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-S01_v05",
+          "x": 0.03269447576099211,
+          "y": 0.13641488162344984,
+          "width": 0.9351747463359639,
+          "height": 0.7260428410372041
+        }
+      ]
+    },
+    {
+      "id": "CAT-S01_v06",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v06.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S01_v06.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-S01_v06",
+          "x": 0.02536640360766629,
+          "y": 0.15219842164599776,
+          "width": 0.9498308906426156,
+          "height": 0.6989853438556933
+        }
+      ]
+    },
+    {
+      "id": "CAT-S01_v07",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v07.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S01_v07.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-S01_v07",
+          "x": 0.020856820744081173,
+          "y": 0.18940248027057496,
+          "width": 0.9594137542277339,
+          "height": 0.6189402480270575
+        }
+      ]
+    },
+    {
+      "id": "CAT-S01_v08",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v08.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S01_v08.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-S01_v08",
+          "x": 0.015783540022547914,
+          "y": 0.2040586245772266,
+          "width": 0.967869222096956,
+          "height": 0.6133032694475761
+        }
+      ]
+    },
+    {
+      "id": "CAT-S02_v01",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S02_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S02_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1448,
+        1086
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-S02_v01",
+          "x": 0.03660220994475138,
+          "y": 0.10220994475138122,
+          "width": 0.9267955801104972,
+          "height": 0.8001841620626151
+        }
+      ]
+    },
+    {
+      "id": "CAT-S03_v01",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S03_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S03_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1448,
+        1086
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-S03_v01",
+          "x": 0.022790055248618785,
+          "y": 0.1427255985267035,
+          "width": 0.955110497237569,
+          "height": 0.7136279926335175
+        }
+      ]
+    },
+    {
+      "id": "CAT-S04_v01",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S04_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S04_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1448,
+        1086
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-S04_v01",
+          "x": 0.028314917127071824,
+          "y": 0.17955801104972377,
+          "width": 0.9433701657458563,
+          "height": 0.6390423572744015
+        }
+      ]
+    },
+    {
+      "id": "CAT-S05_v01",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S05_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S05_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1448,
+        1086
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-S05_v01",
+          "x": 0.021408839779005526,
+          "y": 0.0856353591160221,
+          "width": 0.9571823204419889,
+          "height": 0.8305709023941068
+        }
+      ]
+    },
+    {
+      "id": "CAT-S06_v01",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S06_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S06_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1448,
+        1086
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-S06_v01",
+          "x": 0.07596685082872928,
+          "y": 0.16482504604051565,
+          "width": 0.8501381215469613,
+          "height": 0.6915285451197053
+        }
+      ]
+    },
+    {
+      "id": "CAT-S07_v01",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S07_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S07_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1448,
+        1086
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-S07_v01",
+          "x": 0.015193370165745856,
+          "y": 0.16022099447513813,
+          "width": 0.9751381215469613,
+          "height": 0.6767955801104972
+        }
+      ]
+    },
+    {
+      "id": "CAT-S08_v01",
+      "pack": "Setores",
+      "source": "Art/Catacumbas/Setores/Fontes/CAT-S08_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Sectors/CAT-S08_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1448,
+        1086
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-S08_v01",
+          "x": 0.022790055248618785,
+          "y": 0.13535911602209943,
+          "width": 0.9537292817679558,
+          "height": 0.7081031307550645
+        }
+      ]
+    },
+    {
+      "id": "CAT-E01_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E01_v01-r02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E01_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-E01_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E01_v01",
+          "x": 0.06539074960127592,
+          "y": 0.08692185007974482,
+          "width": 0.8700159489633174,
+          "height": 0.8277511961722488,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E02_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E02_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E02_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1536,
+        1024
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-E02_v01_f01",
+          "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+          "x": 0.0234375,
+          "y": 0.771484375,
+          "width": 0.4576822916666667,
+          "height": 0.146484375,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "id": "CAT-E02_v01_f02",
+          "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+          "x": 0.5201822916666666,
+          "y": 0.771484375,
+          "width": 0.4576822916666667,
+          "height": 0.146484375,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "id": "CAT-E02_v01_f03",
+          "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+          "x": 0.0234375,
+          "y": 0.544921875,
+          "width": 0.4576822916666667,
+          "height": 0.146484375,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "id": "CAT-E02_v01_f04",
+          "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+          "x": 0.5201822916666666,
+          "y": 0.544921875,
+          "width": 0.4576822916666667,
+          "height": 0.146484375,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "id": "CAT-E02_v01_f05",
+          "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+          "x": 0.0234375,
+          "y": 0.3125,
+          "width": 0.4576822916666667,
+          "height": 0.146484375,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "id": "CAT-E02_v01_f06",
+          "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+          "x": 0.5201822916666666,
+          "y": 0.3125,
+          "width": 0.4576822916666667,
+          "height": 0.146484375,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "id": "CAT-E02_v01_f07",
+          "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+          "x": 0.0234375,
+          "y": 0.0830078125,
+          "width": 0.4576822916666667,
+          "height": 0.1484375,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "id": "CAT-E02_v01_f08",
+          "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+          "x": 0.5201822916666666,
+          "y": 0.083984375,
+          "width": 0.4576822916666667,
+          "height": 0.146484375,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E03_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E03_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E03_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-E03_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E03_v01",
+          "x": 0.09330143540669857,
+          "y": 0.09569377990430622,
+          "width": 0.8149920255183413,
+          "height": 0.8205741626794258,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E04_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E04_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E04_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-E04_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E04_v01",
+          "x": 0.02711323763955343,
+          "y": 0.03907496012759171,
+          "width": 0.9457735247208932,
+          "height": 0.9186602870813397,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E05_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E05_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E05_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-E05_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E05_v01",
+          "x": 0.05901116427432217,
+          "y": 0.06299840510366826,
+          "width": 0.8827751196172249,
+          "height": 0.8899521531100478,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E06_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E06_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E06_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-E06_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E06_v01",
+          "x": 0.10685805422647528,
+          "y": 0.10925039872408293,
+          "width": 0.8429027113237639,
+          "height": 0.7783094098883573,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E07_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E07_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E07_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        725,
+        2169
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-E07_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E07_v01",
+          "x": 0.21241379310344827,
+          "y": 0.016136468418626097,
+          "width": 0.5779310344827586,
+          "height": 0.9732595666205625,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E07_v02",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E07_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E07_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        725,
+        2169
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-E07_v02",
+          "resource": "Environment/Dungeon/Exits/CAT-E07_v02",
+          "x": 0.2317241379310345,
+          "y": 0.03319502074688797,
+          "width": 0.5365517241379311,
+          "height": 0.9414476717381282,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E07_v03",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E07_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E07_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        725,
+        2170
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-E07_v03",
+          "resource": "Environment/Dungeon/Exits/CAT-E07_v03",
+          "x": 0.31862068965517243,
+          "y": 0.03456221198156682,
+          "width": 0.3641379310344828,
+          "height": 0.9336405529953917,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E08_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E08_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E08_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-E08_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E08_v01",
+          "x": 0.006764374295377677,
+          "y": 0.16459977452085683,
+          "width": 0.9875986471251409,
+          "height": 0.6888387824126269,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E09_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E09_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E09_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-E09_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E09_v01",
+          "x": 0.04171364148816235,
+          "y": 0.21195039458850057,
+          "width": 0.9278466741826381,
+          "height": 0.5873731679819617,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E10_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E10_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E10_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1983,
+        793
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-E10_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E10_v01",
+          "x": 0.010085728693898134,
+          "y": 0.3455233291298865,
+          "width": 0.9803328290468987,
+          "height": 0.29255989911727615,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E10_v02",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E10_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E10_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        2172,
+        724
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-E10_v02",
+          "resource": "Environment/Dungeon/Exits/CAT-E10_v02",
+          "x": 0.016114180478821363,
+          "y": 0.3397790055248619,
+          "width": 0.9682320441988951,
+          "height": 0.3356353591160221,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E11_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E11_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E11_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1265,
+        1244
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-E11_v01_f01",
+          "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+          "x": 0.15177865612648223,
+          "y": 0.75,
+          "width": 0.341501976284585,
+          "height": 0.25,
+          "pivotX": 0.5,
+          "pivotY": 0.5238585209003216
+        },
+        {
+          "id": "CAT-E11_v01_f02",
+          "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+          "x": 0.5043478260869565,
+          "y": 0.75,
+          "width": 0.341501976284585,
+          "height": 0.25,
+          "pivotX": 0.5011574074074074,
+          "pivotY": 0.5254019292604502
+        },
+        {
+          "id": "CAT-E11_v01_f03",
+          "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+          "x": 0.15177865612648223,
+          "y": 0.5,
+          "width": 0.341501976284585,
+          "height": 0.25,
+          "pivotX": 0.5,
+          "pivotY": 0.517427652733119
+        },
+        {
+          "id": "CAT-E11_v01_f04",
+          "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+          "x": 0.5043478260869565,
+          "y": 0.5,
+          "width": 0.341501976284585,
+          "height": 0.25,
+          "pivotX": 0.5011574074074074,
+          "pivotY": 0.5189710610932475
+        },
+        {
+          "id": "CAT-E11_v01_f05",
+          "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+          "x": 0.15177865612648223,
+          "y": 0.25,
+          "width": 0.341501976284585,
+          "height": 0.25,
+          "pivotX": 0.5011574074074074,
+          "pivotY": 0.5125401929260449
+        },
+        {
+          "id": "CAT-E11_v01_f06",
+          "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+          "x": 0.5051383399209486,
+          "y": 0.25,
+          "width": 0.341501976284585,
+          "height": 0.25,
+          "pivotX": 0.5,
+          "pivotY": 0.5109967845659167
+        },
+        {
+          "id": "CAT-E11_v01_f07",
+          "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+          "x": 0.15177865612648223,
+          "y": 0.0,
+          "width": 0.341501976284585,
+          "height": 0.25,
+          "pivotX": 0.5,
+          "pivotY": 0.5045659163987141
+        },
+        {
+          "id": "CAT-E11_v01_f08",
+          "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+          "x": 0.5067193675889328,
+          "y": 0.0,
+          "width": 0.341501976284585,
+          "height": 0.25,
+          "pivotX": 0.5,
+          "pivotY": 0.5014790996784567
+        }
+      ]
+    },
+    {
+      "id": "CAT-E12_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E12_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E12_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        887,
+        1774
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 1024,
+      "regions": [
+        {
+          "id": "CAT-E12_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E12_v01",
+          "x": 0.038331454340473504,
+          "y": 0.02480270574971815,
+          "width": 0.9244644870349493,
+          "height": 0.47519729425028184,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E12_v02",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E12_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E12_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        887,
+        1774
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 2048,
+      "regions": [
+        {
+          "id": "CAT-E12_v02",
+          "resource": "Environment/Dungeon/Exits/CAT-E12_v02",
+          "x": 0.21984216459977451,
+          "y": 0.003945885005636978,
+          "width": 0.560315670800451,
+          "height": 0.9937993235625705,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E13_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E13_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E13_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-E13_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E13_v01",
+          "x": 0.03110047846889952,
+          "y": 0.2511961722488038,
+          "width": 0.9393939393939394,
+          "height": 0.474481658692185,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E14_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E14_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E14_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-E14_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E14_v01",
+          "x": 0.03668261562998405,
+          "y": 0.04784688995215311,
+          "width": 0.9090909090909091,
+          "height": 0.9090909090909091,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E15_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E15_v01.png",
+      "runtime": "Assets/Resources/Items/Dungeon/CAT-E15.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-E15_v01",
+          "resource": "Items/Dungeon/CAT-E15",
+          "x": 0.02631578947368421,
+          "y": 0.18740031897926634,
+          "width": 0.9481658692185008,
+          "height": 0.6618819776714514,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E16_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E16_v01.png",
+      "runtime": "Assets/Resources/Items/Dungeon/CAT-E16.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 128,
+      "regions": [
+        {
+          "id": "CAT-E16_v01",
+          "resource": "Items/Dungeon/CAT-E16",
+          "x": 0.037480063795853266,
+          "y": 0.03588516746411483,
+          "width": 0.9242424242424242,
+          "height": 0.9210526315789473,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E17_v01",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E17_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E17_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-E17_v01",
+          "resource": "Environment/Dungeon/Exits/CAT-E17_v01",
+          "x": 0.05582137161084529,
+          "y": 0.0645933014354067,
+          "width": 0.8931419457735247,
+          "height": 0.8620414673046252,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E17_v02",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E17_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E17_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-E17_v02",
+          "resource": "Environment/Dungeon/Exits/CAT-E17_v02",
+          "x": 0.04784688995215311,
+          "y": 0.05980861244019139,
+          "width": 0.9043062200956937,
+          "height": 0.879585326953748,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-E17_v03",
+      "pack": "Extracoes",
+      "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E17_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Exits/CAT-E17_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-E17_v03",
+          "resource": "Environment/Dungeon/Exits/CAT-E17_v03",
+          "x": 0.06220095693779904,
+          "y": 0.07575757575757576,
+          "width": 0.8787878787878788,
+          "height": 0.8476874003189793,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    },
+    {
+      "id": "CAT-D01_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D01_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D01_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D01_v01",
+          "x": 0.03349282296650718,
+          "y": 0.03668261562998405,
+          "width": 0.9393939393939394,
+          "height": 0.8995215311004785
+        }
+      ]
+    },
+    {
+      "id": "CAT-D01_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D01_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D01_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D01_v02",
+          "x": 0.04226475279106858,
+          "y": 0.030303030303030304,
+          "width": 0.9417862838915471,
+          "height": 0.9282296650717703
+        }
+      ]
+    },
+    {
+      "id": "CAT-D01_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D01_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D01_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D01_v03",
+          "x": 0.037480063795853266,
+          "y": 0.05342902711323764,
+          "width": 0.9370015948963317,
+          "height": 0.8875598086124402
+        }
+      ]
+    },
+    {
+      "id": "CAT-D01_v04",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D01_v04.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D01_v04.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D01_v04",
+          "x": 0.06379585326953748,
+          "y": 0.019138755980861243,
+          "width": 0.9098883572567783,
+          "height": 0.9425837320574163
+        }
+      ]
+    },
+    {
+      "id": "CAT-D02_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D02_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D02_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D02_v01",
+          "x": 0.05073280721533258,
+          "y": 0.07215332581736189,
+          "width": 0.9177001127395716,
+          "height": 0.8139797068771139
+        }
+      ]
+    },
+    {
+      "id": "CAT-D02_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D02_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D02_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D02_v02",
+          "x": 0.04735062006764374,
+          "y": 0.06764374295377677,
+          "width": 0.9126268320180383,
+          "height": 0.7091319052987599
+        }
+      ]
+    },
+    {
+      "id": "CAT-D02_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D02_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D02_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D02_v03",
+          "x": 0.010710259301014656,
+          "y": 0.004509582863585118,
+          "width": 0.979706877113867,
+          "height": 0.9774520856820744
+        }
+      ]
+    },
+    {
+      "id": "CAT-D03_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D03_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D03_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D03_v01",
+          "x": 0.0645933014354067,
+          "y": 0.030303030303030304,
+          "width": 0.8851674641148325,
+          "height": 0.9330143540669856
+        }
+      ]
+    },
+    {
+      "id": "CAT-D03_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D03_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D03_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D03_v02",
+          "x": 0.04784688995215311,
+          "y": 0.02073365231259968,
+          "width": 0.9090909090909091,
+          "height": 0.9585326953748007
+        }
+      ]
+    },
+    {
+      "id": "CAT-D03_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D03_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D03_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D03_v03",
+          "x": 0.05422647527910686,
+          "y": 0.030303030303030304,
+          "width": 0.8859649122807017,
+          "height": 0.9226475279106858
+        }
+      ]
+    },
+    {
+      "id": "CAT-D04_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D04_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D04_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D04_v01",
+          "x": 0.023125996810207338,
+          "y": 0.028708133971291867,
+          "width": 0.9513556618819776,
+          "height": 0.9409888357256778
+        }
+      ]
+    },
+    {
+      "id": "CAT-D04_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D04_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D04_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D04_v02",
+          "x": 0.049441786283891544,
+          "y": 0.028708133971291867,
+          "width": 0.9354066985645934,
+          "height": 0.9441786283891547
+        }
+      ]
+    },
+    {
+      "id": "CAT-D04_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D04_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D04_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D04_v03",
+          "x": 0.03110047846889952,
+          "y": 0.008771929824561403,
+          "width": 0.930622009569378,
+          "height": 0.981658692185008
+        }
+      ]
+    },
+    {
+      "id": "CAT-D04_v04",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D04_v04.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D04_v04.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D04_v04",
+          "x": 0.09888357256778309,
+          "y": 0.0215311004784689,
+          "width": 0.8532695374800638,
+          "height": 0.9401913875598086
+        }
+      ]
+    },
+    {
+      "id": "CAT-D05_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D05_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D05_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D05_v01",
+          "x": 0.1850079744816587,
+          "y": 0.06698564593301436,
+          "width": 0.6331738437001595,
+          "height": 0.8660287081339713
+        }
+      ]
+    },
+    {
+      "id": "CAT-D05_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D05_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D05_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D05_v02",
+          "x": 0.044657097288676235,
+          "y": 0.21929824561403508,
+          "width": 0.9250398724082934,
+          "height": 0.5598086124401914
+        }
+      ]
+    },
+    {
+      "id": "CAT-D06_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D06_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D06_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D06_v01",
+          "x": 0.12679425837320574,
+          "y": 0.1419457735247209,
+          "width": 0.7854864433811802,
+          "height": 0.7033492822966507
+        }
+      ]
+    },
+    {
+      "id": "CAT-D06_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D06_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D06_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D06_v02",
+          "x": 0.08133971291866028,
+          "y": 0.13955342902711323,
+          "width": 0.8389154704944178,
+          "height": 0.74481658692185
+        }
+      ]
+    },
+    {
+      "id": "CAT-D06_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D06_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D06_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D06_v03",
+          "x": 0.18580542264752792,
+          "y": 0.2240829346092504,
+          "width": 0.6259968102073366,
+          "height": 0.5422647527910686
+        }
+      ]
+    },
+    {
+      "id": "CAT-D07_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D07_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D07_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D07_v01",
+          "x": 0.028708133971291867,
+          "y": 0.13556618819776714,
+          "width": 0.9417862838915471,
+          "height": 0.7496012759170654
+        }
+      ]
+    },
+    {
+      "id": "CAT-D07_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D07_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D07_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D07_v02",
+          "x": 0.189792663476874,
+          "y": 0.22169059011164274,
+          "width": 0.7137161084529505,
+          "height": 0.5709728867623605
+        }
+      ]
+    },
+    {
+      "id": "CAT-D07_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D07_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D07_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D07_v03",
+          "x": 0.045454545454545456,
+          "y": 0.15311004784688995,
+          "width": 0.9090909090909091,
+          "height": 0.6929824561403509
+        }
+      ]
+    },
+    {
+      "id": "CAT-D08_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D08_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D08_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D08_v01",
+          "x": 0.058213716108452954,
+          "y": 0.045454545454545456,
+          "width": 0.8883572567783095,
+          "height": 0.8732057416267942
+        }
+      ]
+    },
+    {
+      "id": "CAT-D08_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D08_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D08_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D08_v02",
+          "x": 0.049441786283891544,
+          "y": 0.07496012759170653,
+          "width": 0.9130781499202552,
+          "height": 0.8405103668261563
+        }
+      ]
+    },
+    {
+      "id": "CAT-D08_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D08_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D08_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D08_v03",
+          "x": 0.04864433811802233,
+          "y": 0.027910685805422646,
+          "width": 0.9274322169059012,
+          "height": 0.937799043062201
+        }
+      ]
+    },
+    {
+      "id": "CAT-D09_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D09_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D09_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D09_v01",
+          "x": 0.02705749718151071,
+          "y": 0.24689966178128522,
+          "width": 0.9368658399098083,
+          "height": 0.47125140924464487
+        }
+      ]
+    },
+    {
+      "id": "CAT-D09_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D09_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D09_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D09_v02",
+          "x": 0.046223224351747465,
+          "y": 0.1882750845546787,
+          "width": 0.9199549041713642,
+          "height": 0.5828635851183765
+        }
+      ]
+    },
+    {
+      "id": "CAT-D09_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D09_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D09_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D09_v03",
+          "x": 0.02705749718151071,
+          "y": 0.1826381059751973,
+          "width": 0.9374295377677565,
+          "height": 0.6234498308906427
+        }
+      ]
+    },
+    {
+      "id": "CAT-D10_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D10_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D10_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D10_v01",
+          "x": 0.10127591706539076,
+          "y": 0.10446570972886762,
+          "width": 0.8309409888357256,
+          "height": 0.8141945773524721
+        }
+      ]
+    },
+    {
+      "id": "CAT-D10_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D10_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D10_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D10_v02",
+          "x": 0.20494417862838915,
+          "y": 0.0733652312599681,
+          "width": 0.594896331738437,
+          "height": 0.828548644338118
+        }
+      ]
+    },
+    {
+      "id": "CAT-D10_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D10_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D10_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D10_v03",
+          "x": 0.06778309409888357,
+          "y": 0.12679425837320574,
+          "width": 0.8947368421052632,
+          "height": 0.7328548644338118
+        }
+      ]
+    },
+    {
+      "id": "CAT-D11_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D11_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D11_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        887,
+        1774
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D11_v01",
+          "x": 0.15670800450958286,
+          "y": 0.014656144306651634,
+          "width": 0.6798196166854565,
+          "height": 0.967869222096956
+        }
+      ]
+    },
+    {
+      "id": "CAT-D11_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D11_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D11_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        887,
+        1774
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D11_v02",
+          "x": 0.2547914317925592,
+          "y": 0.019165727170236752,
+          "width": 0.5073280721533259,
+          "height": 0.9599774520856821
+        }
+      ]
+    },
+    {
+      "id": "CAT-D11_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D11_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D11_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        887,
+        1774
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 512,
+      "regions": [
+        {
+          "id": "CAT-D11_v03",
+          "x": 0.2638105975197294,
+          "y": 0.007328072153325817,
+          "width": 0.4791431792559188,
+          "height": 0.9774520856820744
+        }
+      ]
+    },
+    {
+      "id": "CAT-D12_v01",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D12_v01.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D12_v01.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D12_v01",
+          "x": 0.09409888357256778,
+          "y": 0.12759170653907495,
+          "width": 0.80622009569378,
+          "height": 0.7456140350877193
+        }
+      ]
+    },
+    {
+      "id": "CAT-D12_v02",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D12_v02.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D12_v02.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D12_v02",
+          "x": 0.06299840510366826,
+          "y": 0.10127591706539076,
+          "width": 0.8700159489633174,
+          "height": 0.7687400318979266
+        }
+      ]
+    },
+    {
+      "id": "CAT-D12_v03",
+      "pack": "Detalhes",
+      "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D12_v03.png",
+      "runtime": "Assets/Resources/Environment/Dungeon/Details/CAT-D12_v03.png",
+      "same_bytes": true,
+      "mode": "RGBA",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "import_max_size": 256,
+      "regions": [
+        {
+          "id": "CAT-D12_v03",
+          "x": 0.12041467304625199,
+          "y": 0.18181818181818182,
+          "width": 0.7631578947368421,
+          "height": 0.6363636363636364
+        }
+      ]
+    }
+  ]
+}

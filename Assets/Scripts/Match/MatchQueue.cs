@@ -15,10 +15,10 @@ namespace CyberExtraction.Match
             return Math.Max(0, (int)Math.Ceiling(deadline - now));
         }
 
-        public bool ShouldStart(int readyPlayers, double now) =>
-            readyPlayers > 0 && (SecondsLeft(readyPlayers, now) == 0 || readyPlayers >= GameConfig.MatchCapacity);
+        public bool ShouldStart(int readyPlayers, double now, int capacity=GameConfig.MatchCapacity) =>
+            readyPlayers > 0 && (SecondsLeft(readyPlayers, now) == 0 || readyPlayers >= capacity);
 
-        public static int BotsNeeded(int readyPlayers) => Math.Max(0, GameConfig.MatchCapacity - readyPlayers);
+        public static int BotsNeeded(int readyPlayers,int capacity=GameConfig.MatchCapacity) => Math.Max(0, capacity - readyPlayers);
         public void Reset() { deadline = double.NaN; }
     }
 }

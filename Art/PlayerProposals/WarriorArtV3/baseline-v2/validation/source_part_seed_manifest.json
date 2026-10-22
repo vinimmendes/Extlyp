@@ -1,0 +1,67 @@
+{
+  "schema": "source_part_seed_manifest.v1",
+  "image": "reference.png",
+  "method": "manual bbox seeds multiplied by reference alpha; ambiguous overlaps retained",
+  "parts": [
+    {
+      "name": "helmet",
+      "bbox": [
+        540,
+        440,
+        260,
+        235
+      ],
+      "mode": "non_background"
+    },
+    {
+      "name": "body",
+      "bbox": [
+        290,
+        410,
+        380,
+        430
+      ],
+      "mode": "non_background"
+    },
+    {
+      "name": "torch_hand",
+      "bbox": [
+        775,
+        290,
+        165,
+        145
+      ],
+      "mode": "non_background"
+    },
+    {
+      "name": "sword_hand",
+      "bbox": [
+        510,
+        875,
+        140,
+        140
+      ],
+      "mode": "non_background"
+    },
+    {
+      "name": "sword_blade",
+      "bbox": [
+        640,
+        940,
+        625,
+        220
+      ],
+      "mode": "non_background"
+    },
+    {
+      "name": "torch_flame",
+      "bbox": [
+        1020,
+        40,
+        260,
+        255
+      ],
+      "mode": "non_background"
+    }
+  ]
+}

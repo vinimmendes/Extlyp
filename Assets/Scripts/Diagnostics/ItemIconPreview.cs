@@ -19,7 +19,7 @@ namespace CyberExtraction.Diagnostics
             var camera = cameraObject.AddComponent<Camera>(); camera.orthographic = true;
             camera.backgroundColor = new Color(.09f, .11f, .09f);
             camera.clearFlags = CameraClearFlags.SolidColor;
-            CampSession.Progress = new CampProgress { Pack = new InventoryGrid(), Chest = new InventoryGrid() };
+            CampSession.Progress = new CampProgress { Pack = new InventoryGrid(ItemCatalog.BackpackSlots), Chest = new InventoryGrid(ItemCatalog.SafeChestSlots) };
             for (int i = 0; i < 18; i++)
                 (i < 9 ? CampSession.Progress.Pack : CampSession.Progress.Chest).Slots[i % 9] =
                     new ItemStack((ItemId)i, ItemCatalog.Weapon((ItemId)i) ? 1 : i + 1, 1, ItemCatalog.Weapon((ItemId)i) ? 2 : 0);

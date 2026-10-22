@@ -1,0 +1,123 @@
+[
+  {
+    "id": "R08-shroud",
+    "boundsRelativeCells": [
+      -29.85,
+      38.6,
+      -28.15,
+      39.4
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R08-displaced-lid",
+    "boundsRelativeCells": [
+      -35.8,
+      45.2,
+      -34.2,
+      46.8
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R08-shards",
+    "boundsRelativeCells": [
+      -31.849999999999998,
+      45.1,
+      -30.95,
+      45.9
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R19-unfinished-coffin",
+    "boundsRelativeCells": [
+      -38.0,
+      32.1,
+      -35.0,
+      33.1
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R19-tools",
+    "boundsRelativeCells": [
+      -35.0,
+      30.375,
+      -33.0,
+      31.225
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R19-chain",
+    "boundsRelativeCells": [
+      -31.35,
+      30.65,
+      -30.65,
+      31.35
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R13-bank-silt",
+    "boundsRelativeCells": [
+      52.3,
+      -45.15,
+      53.3,
+      -42.449999999999996
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R13-bank-timber",
+    "boundsRelativeCells": [
+      52.5,
+      -44.9,
+      53.099999999999994,
+      -42.699999999999996
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R13-west-silt",
+    "boundsRelativeCells": [
+      34.5,
+      -54.9,
+      37.5,
+      -53.9
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R13-damp",
+    "boundsRelativeCells": [
+      38.3,
+      -54.9,
+      39.7,
+      -54.1
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  },
+  {
+    "id": "R13-shards",
+    "boundsRelativeCells": [
+      37.6,
+      -51.9,
+      38.4,
+      -51.1
+    ],
+    "sourceGeometryConflicts": [],
+    "pending": "Native sprite bounds and existing art checked by runtime placement guards; user visual review pending."
+  }
+]

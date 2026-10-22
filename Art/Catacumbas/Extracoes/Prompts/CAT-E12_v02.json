@@ -1,0 +1,13 @@
+{
+  "id": "CAT-E12_v02",
+  "family": 12,
+  "variant": 2,
+  "w": 4,
+  "h": 8,
+  "frames": 1,
+  "columns": 1,
+  "rows": 1,
+  "subject": "A vertically oriented medieval timber footbridge, fully EXTENDED, exactly twice as long as wide, parallel planks and side iron rails, low flat walkable deck, no upright railings, anchored at BOTTOM edge. No water or floor.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E12_v02.\nSubject: A vertically oriented medieval timber footbridge, fully EXTENDED, exactly twice as long as wide, parallel planks and side iron rails, low flat walkable deck, no upright railings, anchored at BOTTOM edge. No water or floor.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 4.24:8.48.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-d4be6348-a205-4a79-8c7b-1888b855efdb.png"
+}

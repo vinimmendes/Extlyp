@@ -1,0 +1,39 @@
+{
+  "schema": "animation_contact_sheet_report.v1",
+  "frames": [
+    "/workspace/warrior-3d-v2/frames/walk_0001.png",
+    "/workspace/warrior-3d-v2/frames/walk_0007.png",
+    "/workspace/warrior-3d-v2/frames/walk_0013.png",
+    "/workspace/warrior-3d-v2/frames/walk_0019.png",
+    "/workspace/warrior-3d-v2/frames/walk_0025.png",
+    "/workspace/warrior-3d-v2/frames/walk_0031.png"
+  ],
+  "frame_diff": [
+    {
+      "from": "walk_0001.png",
+      "to": "walk_0007.png",
+      "mean_rgb_diff": 2.2726863606770835
+    },
+    {
+      "from": "walk_0007.png",
+      "to": "walk_0013.png",
+      "mean_rgb_diff": 2.4421240234375
+    },
+    {
+      "from": "walk_0013.png",
+      "to": "walk_0019.png",
+      "mean_rgb_diff": 1.7899568684895832
+    },
+    {
+      "from": "walk_0019.png",
+      "to": "walk_0025.png",
+      "mean_rgb_diff": 2.7705737304687497
+    },
+    {
+      "from": "walk_0025.png",
+      "to": "walk_0031.png",
+      "mean_rgb_diff": 2.1649894205729168
+    }
+  ],
+  "warnings": []
+}

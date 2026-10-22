@@ -1,0 +1,890 @@
+[
+  {
+    "id": "CAT-D01_v01",
+    "w": 2,
+    "h": 2,
+    "subject": "two thick forked old roots with three broad branches, short contact depth, no stone backing",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D01_v01. Subject: two thick forked old roots with three broad branches, short contact depth, no stone backing.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D01_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      42,
+      80,
+      1220,
+      1208
+    ],
+    "sprite_region_pixels": [
+      42,
+      80,
+      1220,
+      1208
+    ]
+  },
+  {
+    "id": "CAT-D01_v02",
+    "w": 2,
+    "h": 2,
+    "subject": "a large gnarled root elbow splitting into two unequal limbs, no backing",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D01_v02. Subject: a large gnarled root elbow splitting into two unequal limbs, no backing.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D01_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      53,
+      52,
+      1234,
+      1216
+    ],
+    "sprite_region_pixels": [
+      53,
+      52,
+      1234,
+      1216
+    ]
+  },
+  {
+    "id": "CAT-D01_v03",
+    "w": 2,
+    "h": 2,
+    "subject": "a thick root Y junction with blunt broken tip, irregular silhouette, no backing",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D01_v03. Subject: a thick root Y junction with blunt broken tip, irregular silhouette, no backing.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D01_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      47,
+      74,
+      1222,
+      1187
+    ],
+    "sprite_region_pixels": [
+      47,
+      74,
+      1222,
+      1187
+    ]
+  },
+  {
+    "id": "CAT-D01_v04",
+    "w": 2,
+    "h": 2,
+    "subject": "two broad intertwining root branches growing along a right-angle wall corner, no backing",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D01_v04. Subject: two broad intertwining root branches growing along a right-angle wall corner, no backing.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D01_v04.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      80,
+      48,
+      1221,
+      1230
+    ],
+    "sprite_region_pixels": [
+      80,
+      48,
+      1221,
+      1230
+    ]
+  },
+  {
+    "id": "CAT-D02_v01",
+    "w": 2,
+    "h": 1,
+    "subject": "a shallow flattened old root fork lying along a horizontal floor edge",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D02_v01. Subject: a shallow flattened old root fork lying along a horizontal floor edge.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D02_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      90,
+      101,
+      1718,
+      823
+    ],
+    "sprite_region_pixels": [
+      90,
+      101,
+      1718,
+      823
+    ]
+  },
+  {
+    "id": "CAT-D02_v02",
+    "w": 2,
+    "h": 1,
+    "subject": "two thin worn roots lying flat parallel with small side branches",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D02_v02. Subject: two thin worn roots lying flat parallel with small side branches.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D02_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      84,
+      198,
+      1703,
+      827
+    ],
+    "sprite_region_pixels": [
+      84,
+      198,
+      1703,
+      827
+    ]
+  },
+  {
+    "id": "CAT-D02_v03",
+    "w": 2,
+    "h": 1,
+    "subject": "a flat broad root elbow partly eroded into dusty brown fibres",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D02_v03. Subject: a flat broad root elbow partly eroded into dusty brown fibres.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D02_v03.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      19,
+      16,
+      1757,
+      883
+    ],
+    "sprite_region_pixels": [
+      19,
+      16,
+      1757,
+      883
+    ]
+  },
+  {
+    "id": "CAT-D03_v01",
+    "w": 1,
+    "h": 1,
+    "subject": "a sparse irregular flat patch of dull olive moss with translucent ragged edges",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D03_v01. Subject: a sparse irregular flat patch of dull olive moss with translucent ragged edges.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D03_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      81,
+      46,
+      1191,
+      1216
+    ],
+    "sprite_region_pixels": [
+      81,
+      46,
+      1191,
+      1216
+    ]
+  },
+  {
+    "id": "CAT-D03_v02",
+    "w": 1,
+    "h": 1,
+    "subject": "three small islands of dark muted moss, one grouped decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D03_v02. Subject: three small islands of dark muted moss, one grouped decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D03_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      60,
+      26,
+      1200,
+      1228
+    ],
+    "sprite_region_pixels": [
+      60,
+      26,
+      1200,
+      1228
+    ]
+  },
+  {
+    "id": "CAT-D03_v03",
+    "w": 1,
+    "h": 1,
+    "subject": "a worn crescent of brown-green moss, low contrast flat decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D03_v03. Subject: a worn crescent of brown-green moss, low contrast flat decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D03_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      68,
+      59,
+      1179,
+      1216
+    ],
+    "sprite_region_pixels": [
+      68,
+      59,
+      1179,
+      1216
+    ]
+  },
+  {
+    "id": "CAT-D04_v01",
+    "w": 2,
+    "h": 2,
+    "subject": "a few fine dusty grey cobweb threads stretching across a wall corner, open asymmetrical triangle, mostly empty space",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D04_v01. Subject: a few fine dusty grey cobweb threads stretching across a wall corner, open asymmetrical triangle, mostly empty space.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D04_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      29,
+      38,
+      1222,
+      1218
+    ],
+    "sprite_region_pixels": [
+      29,
+      38,
+      1222,
+      1218
+    ]
+  },
+  {
+    "id": "CAT-D04_v02",
+    "w": 2,
+    "h": 2,
+    "subject": "a thin broken sagging corner cobweb with long loose strands, no circular radial web",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D04_v02. Subject: a thin broken sagging corner cobweb with long loose strands, no circular radial web.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D04_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      62,
+      34,
+      1235,
+      1218
+    ],
+    "sprite_region_pixels": [
+      62,
+      34,
+      1235,
+      1218
+    ]
+  },
+  {
+    "id": "CAT-D04_v03",
+    "w": 2,
+    "h": 2,
+    "subject": "a sparse wedge of old dusty cobweb with gaps and irregular anchors, no radial wheel",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D04_v03. Subject: a sparse wedge of old dusty cobweb with gaps and irregular anchors, no radial wheel.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D04_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      39,
+      12,
+      1206,
+      1243
+    ],
+    "sprite_region_pixels": [
+      39,
+      12,
+      1206,
+      1243
+    ]
+  },
+  {
+    "id": "CAT-D04_v04",
+    "w": 2,
+    "h": 2,
+    "subject": "a narrow crooked corner cobweb of fine dull grey threads with one broken edge",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D04_v04. Subject: a narrow crooked corner cobweb of fine dull grey threads with one broken edge.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D04_v04.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      124,
+      48,
+      1194,
+      1227
+    ],
+    "sprite_region_pixels": [
+      124,
+      48,
+      1194,
+      1227
+    ]
+  },
+  {
+    "id": "CAT-D05_v01",
+    "w": 1,
+    "h": 1,
+    "subject": "one small tightly wrapped dusty silk cocoon shaped like an inert uneven oval bundle, no living creature anatomy or eggs",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D05_v01. Subject: one small tightly wrapped dusty silk cocoon shaped like an inert uneven oval bundle, no living creature anatomy or eggs.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D05_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      232,
+      84,
+      1026,
+      1170
+    ],
+    "sprite_region_pixels": [
+      232,
+      84,
+      1026,
+      1170
+    ]
+  },
+  {
+    "id": "CAT-D05_v02",
+    "w": 1,
+    "h": 1,
+    "subject": "one small collapsed silk bundle flattened and torn at one end, inert dry debris",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D05_v02. Subject: one small collapsed silk bundle flattened and torn at one end, inert dry debris.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D05_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      56,
+      277,
+      1216,
+      979
+    ],
+    "sprite_region_pixels": [
+      56,
+      277,
+      1216,
+      979
+    ]
+  },
+  {
+    "id": "CAT-D06_v01",
+    "w": 1,
+    "h": 1,
+    "subject": "three small dark aged bone fragments scattered unevenly, sparse flat decal, no skull or complete skeleton",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D06_v01. Subject: three small dark aged bone fragments scattered unevenly, sparse flat decal, no skull or complete skeleton.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D06_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      159,
+      194,
+      1144,
+      1076
+    ],
+    "sprite_region_pixels": [
+      159,
+      194,
+      1144,
+      1076
+    ]
+  },
+  {
+    "id": "CAT-D06_v02",
+    "w": 1,
+    "h": 1,
+    "subject": "one broken rib and two tiny brown bone chips, low contrast sparse flat decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D06_v02. Subject: one broken rib and two tiny brown bone chips, low contrast sparse flat decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D06_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      102,
+      145,
+      1154,
+      1079
+    ],
+    "sprite_region_pixels": [
+      102,
+      145,
+      1154,
+      1079
+    ]
+  },
+  {
+    "id": "CAT-D06_v03",
+    "w": 1,
+    "h": 1,
+    "subject": "two short worn bone splinters and a small dull tooth fragment, asymmetrical flat grouping",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D06_v03. Subject: two short worn bone splinters and a small dull tooth fragment, asymmetrical flat grouping.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D06_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      233,
+      293,
+      1018,
+      973
+    ],
+    "sprite_region_pixels": [
+      233,
+      293,
+      1018,
+      973
+    ]
+  },
+  {
+    "id": "CAT-D07_v01",
+    "w": 1,
+    "h": 1,
+    "subject": "two short extinguished candles on a small dull wrought iron drip tray, black wicks, old dull ivory wax",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D07_v01. Subject: two short extinguished candles on a small dull wrought iron drip tray, black wicks, old dull ivory wax.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D07_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      36,
+      144,
+      1217,
+      1084
+    ],
+    "sprite_region_pixels": [
+      36,
+      144,
+      1217,
+      1084
+    ]
+  },
+  {
+    "id": "CAT-D07_v02",
+    "w": 1,
+    "h": 1,
+    "subject": "one short burning candle on a small dull wrought iron drip tray, a SINGLE tiny amber flame seen from directly above, NO halo or bloom or light pool",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D07_v02. Subject: one short burning candle on a small dull wrought iron drip tray, a SINGLE tiny amber flame seen from directly above, NO halo or bloom or light pool.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D07_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      238,
+      260,
+      1133,
+      976
+    ],
+    "sprite_region_pixels": [
+      238,
+      260,
+      1133,
+      976
+    ]
+  },
+  {
+    "id": "CAT-D07_v03",
+    "w": 1,
+    "h": 1,
+    "subject": "one completely consumed candle stump in old wax on a small dull wrought iron tray, extinguished",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D07_v03. Subject: one completely consumed candle stump in old wax on a small dull wrought iron tray, extinguished.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D07_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      57,
+      193,
+      1197,
+      1062
+    ],
+    "sprite_region_pixels": [
+      57,
+      193,
+      1197,
+      1062
+    ]
+  },
+  {
+    "id": "CAT-D08_v01",
+    "w": 1,
+    "h": 1,
+    "subject": "a small dark translucent damp stain with irregular feathered edges, flat decal, no stone backing, no highlights",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D08_v01. Subject: a small dark translucent damp stain with irregular feathered edges, flat decal, no stone backing, no highlights.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D08_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      73,
+      102,
+      1187,
+      1197
+    ],
+    "sprite_region_pixels": [
+      73,
+      102,
+      1187,
+      1197
+    ]
+  },
+  {
+    "id": "CAT-D08_v02",
+    "w": 1,
+    "h": 1,
+    "subject": "a shallow flat dull grey-green puddle stain, low contrast, no specular sparkle or waves or active hazard",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D08_v02. Subject: a shallow flat dull grey-green puddle stain, low contrast, no specular sparkle or waves or active hazard.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D08_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      62,
+      106,
+      1207,
+      1160
+    ],
+    "sprite_region_pixels": [
+      62,
+      106,
+      1207,
+      1160
+    ]
+  },
+  {
+    "id": "CAT-D08_v03",
+    "w": 1,
+    "h": 1,
+    "subject": "a low contrast water tide stain with uneven broken perimeter, flat translucent decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D08_v03. Subject: a low contrast water tide stain with uneven broken perimeter, flat translucent decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D08_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      61,
+      43,
+      1224,
+      1219
+    ],
+    "sprite_region_pixels": [
+      61,
+      43,
+      1224,
+      1219
+    ]
+  },
+  {
+    "id": "CAT-D09_v01",
+    "w": 2,
+    "h": 1,
+    "subject": "a short fixed old drag smear of grey brown dust, horizontal flat decal, no blood and no fresh track",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D09_v01. Subject: a short fixed old drag smear of grey brown dust, horizontal flat decal, no blood and no fresh track.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D09_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      48,
+      250,
+      1710,
+      668
+    ],
+    "sprite_region_pixels": [
+      48,
+      250,
+      1710,
+      668
+    ]
+  },
+  {
+    "id": "CAT-D09_v02",
+    "w": 2,
+    "h": 1,
+    "subject": "one faded pair of ancient worn boot impressions with a short dust scuff, horizontal fixed narrative decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D09_v02. Subject: one faded pair of ancient worn boot impressions with a short dust scuff, horizontal fixed narrative decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D09_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      82,
+      203,
+      1714,
+      720
+    ],
+    "sprite_region_pixels": [
+      82,
+      203,
+      1714,
+      720
+    ]
+  },
+  {
+    "id": "CAT-D09_v03",
+    "w": 2,
+    "h": 1,
+    "subject": "a shallow old scrape through dust with two short parallel scuffs, horizontal flat decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D09_v03. Subject: a shallow old scrape through dust with two short parallel scuffs, horizontal flat decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 2:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D09_v03.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      48,
+      172,
+      1711,
+      725
+    ],
+    "sprite_region_pixels": [
+      48,
+      172,
+      1711,
+      725
+    ]
+  },
+  {
+    "id": "CAT-D10_v01",
+    "w": 1,
+    "h": 1,
+    "subject": "a dull forged iron wall ring and a very short coiled rusty chain, compact grouped object",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D10_v01. Subject: a dull forged iron wall ring and a very short coiled rusty chain, compact grouped object.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D10_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      127,
+      102,
+      1169,
+      1123
+    ],
+    "sprite_region_pixels": [
+      127,
+      102,
+      1169,
+      1123
+    ]
+  },
+  {
+    "id": "CAT-D10_v02",
+    "w": 1,
+    "h": 1,
+    "subject": "two short overlapping links hanging from a square old iron anchor plate, compact grouped object",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D10_v02. Subject: two short overlapping links hanging from a square old iron anchor plate, compact grouped object.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D10_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      257,
+      123,
+      1003,
+      1162
+    ],
+    "sprite_region_pixels": [
+      257,
+      123,
+      1003,
+      1162
+    ]
+  },
+  {
+    "id": "CAT-D10_v03",
+    "w": 1,
+    "h": 1,
+    "subject": "a weathered iron ring with broken chain end gathered in a small coil, compact grouped object",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D10_v03. Subject: a weathered iron ring with broken chain end gathered in a small coil, compact grouped object.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D10_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      85,
+      176,
+      1207,
+      1095
+    ],
+    "sprite_region_pixels": [
+      85,
+      176,
+      1207,
+      1095
+    ]
+  },
+  {
+    "id": "CAT-D11_v01",
+    "w": 1,
+    "h": 2,
+    "subject": "a narrow vertical ragged funerary cloth, taupe grey, flattened fabric folds and torn bottom, plain with NO insignia, isolated from its wall",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D11_v01. Subject: a narrow vertical ragged funerary cloth, taupe grey, flattened fabric folds and torn bottom, plain with NO insignia, isolated from its wall.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D11_v01.png",
+    "source_pixels": [
+      887,
+      1774
+    ],
+    "alpha_body_bounds": [
+      139,
+      31,
+      742,
+      1748
+    ],
+    "sprite_region_pixels": [
+      139,
+      31,
+      742,
+      1748
+    ]
+  },
+  {
+    "id": "CAT-D11_v02",
+    "w": 1,
+    "h": 2,
+    "subject": "a long worn dark brown linen banner with a simple horizontal seam, narrow vertical body, no writing or symbols or pole",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D11_v02. Subject: a long worn dark brown linen banner with a simple horizontal seam, narrow vertical body, no writing or symbols or pole.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D11_v02.png",
+    "source_pixels": [
+      887,
+      1774
+    ],
+    "alpha_body_bounds": [
+      226,
+      37,
+      676,
+      1740
+    ],
+    "sprite_region_pixels": [
+      226,
+      37,
+      676,
+      1740
+    ]
+  },
+  {
+    "id": "CAT-D11_v03",
+    "w": 1,
+    "h": 2,
+    "subject": "a narrow faded grey taupe funerary shroud strip with two large tears, vertical, flat folded cloth, no backing, insignia or pole",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D11_v03. Subject: a narrow faded grey taupe funerary shroud strip with two large tears, vertical, flat folded cloth, no backing, insignia or pole.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:2. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D11_v03.png",
+    "source_pixels": [
+      887,
+      1774
+    ],
+    "alpha_body_bounds": [
+      234,
+      27,
+      659,
+      1761
+    ],
+    "sprite_region_pixels": [
+      234,
+      27,
+      659,
+      1761
+    ]
+  },
+  {
+    "id": "CAT-D12_v01",
+    "w": 1,
+    "h": 1,
+    "subject": "a small grouped island of dull dried wax flakes and tiny mortar chips, sparse flat decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D12_v01. Subject: a small grouped island of dull dried wax flakes and tiny mortar chips, sparse flat decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D12_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      118,
+      159,
+      1129,
+      1094
+    ],
+    "sprite_region_pixels": [
+      118,
+      159,
+      1129,
+      1094
+    ]
+  },
+  {
+    "id": "CAT-D12_v02",
+    "w": 1,
+    "h": 1,
+    "subject": "a small worn mortar dust patch and a few tiny limestone crumbs, low contrast flat decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D12_v02. Subject: a small worn mortar dust patch and a few tiny limestone crumbs, low contrast flat decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D12_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      79,
+      163,
+      1170,
+      1127
+    ],
+    "sprite_region_pixels": [
+      79,
+      163,
+      1170,
+      1127
+    ]
+  },
+  {
+    "id": "CAT-D12_v03",
+    "w": 1,
+    "h": 1,
+    "subject": "three small old wax drips amid brown stone grit, grouped flat decal",
+    "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D12_v03. Subject: three small old wax drips amid brown stone grit, grouped flat decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+    "source": "Art/Catacumbas/Detalhes/Fontes/CAT-D12_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      151,
+      228,
+      1108,
+      1026
+    ],
+    "sprite_region_pixels": [
+      151,
+      228,
+      1108,
+      1026
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "CAT-E02_v01",
+  "family": 2,
+  "variant": 1,
+  "w": 2.830188679245283,
+  "h": 0.2830188679245283,
+  "frames": 8,
+  "columns": 2,
+  "rows": 4,
+  "subject": "ANIMATION SHEET: 8 frames, exactly TWO columns and FOUR rows, equal cells, row-major. Same top-down horizontal sliding forged iron gate seen edge-on from above, thin rectangular beam width ten times depth. Frame 1 closed beam spanning full width; frames 2-7 progressively retract beam to the LEFT housing; frame 8 beam stowed in left housing, clear empty gap. One fixed left housing anchor and fixed camera in all cells; no labels or grid lines. Each cell has ample equal transparent padding above/below; entire bar contained inside its cell. NOT a frontal vertical portcullis. Metal is dull grey wrought iron. No text. All eight cells required.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E02_v01.\nSubject: ANIMATION SHEET: 8 frames, exactly TWO columns and FOUR rows, equal cells, row-major. Same top-down horizontal sliding forged iron gate seen edge-on from above, thin rectangular beam width ten times depth. Frame 1 closed beam spanning full width; frames 2-7 progressively retract beam to the LEFT housing; frame 8 beam stowed in left housing, clear empty gap. One fixed left housing anchor and fixed camera in all cells; no labels or grid lines. Each cell has ample equal transparent padding above/below; entire bar contained inside its cell. NOT a frontal vertical portcullis. Metal is dull grey wrought iron. No text. All eight cells required.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Exact equal grid and constant frame registration are essential.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-97f2db93-9f1a-4cbe-9128-72326cac1058.png"
+}

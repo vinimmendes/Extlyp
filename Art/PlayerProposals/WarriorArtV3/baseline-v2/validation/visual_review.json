@@ -1,0 +1,22 @@
+{
+  "reviewed": [
+    "topdown_contact_sheet.png",
+    "perspective_contact_sheet.png",
+    "vertical_contact_sheet.png",
+    "neutral_topdown.png",
+    "neutral_perspective.png",
+    "reference_v1_v2.png",
+    "readability_64_128_256.png"
+  ],
+  "framing": "passed all exported frames in three cameras",
+  "equipment": "sword right, torch left",
+  "motion": "alternating IK steps and lifted swing feet; cloth moves clear of tested leg surfaces",
+  "appearance": "darker red cloth, tapered helmet, overlapping plate shells, visible toe plates, yellow-orange flame",
+  "small_size_review": {
+    "64": "detail loss; silhouette and bright torch dominate",
+    "128": "equipment and motion readable",
+    "256": "best detail among tested game sizes"
+  },
+  "source_fidelity": "stylized interpretation; painted detail and proportions are not an exact reconstruction",
+  "passed": true
+}

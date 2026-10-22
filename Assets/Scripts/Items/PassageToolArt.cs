@@ -5,10 +5,12 @@ namespace CyberExtraction.Items
     // Readable provisional tool silhouettes; the current painted item atlas is preserved.
     static class PassageToolArt
     {
-        static readonly Sprite[] sprites=new Sprite[5];
+        static readonly Sprite[] sprites=new Sprite[7];
         public static Sprite Get(ItemId item)
         {
-            int id=(int)item-(int)ItemId.BoltCutters;
+            var dungeonIcon=DungeonToolArt.GetIcon(item);
+            if(dungeonIcon!=null) return dungeonIcon;
+            int id=item==ItemId.DungeonCrank ? 5 : item==ItemId.DungeonKey ? 6 : (int)item-(int)ItemId.BoltCutters;
             if(id<0 || id>=sprites.Length) return null;
             if(sprites[id]!=null) return sprites[id];
             const int size=96;
@@ -36,6 +38,10 @@ namespace CyberExtraction.Items
             {
                 Line(18,35,65,54,13,steel); Line(65,54,78,62,9,handle); Line(78,62,70,79,8,handle);
                 for(int i=0;i<7;i++) Line(20+i*6,24+i*2,24+i*6,19+i*2,3,steel);
+            }
+            else if(id==5)
+            {
+                Line(20,20,20,47,7,handle); Line(20,47,69,47,6,steel); Line(69,47,69,78,6,steel); Line(56,78,80,78,7,handle);
             }
             else
             {

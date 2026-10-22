@@ -283,7 +283,7 @@ MonoBehaviour:
   patrolSpeed: 0.8
   chaseSpeed: 1.7
   detectRadius: 6
-  attackRange: 1.5
+  attackRange: 1.8
   attackCooldown: 1.2
   attackDamage: 15
 --- !u!114 &7259253739719442113

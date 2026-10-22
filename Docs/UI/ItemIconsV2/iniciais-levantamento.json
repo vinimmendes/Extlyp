@@ -1,0 +1,68 @@
+[
+  {
+    "item": "ImprovisedHandCrossbow",
+    "id": 59,
+    "sourcePixels": [
+      1254,
+      1254
+    ],
+    "alphaBounds": [
+      17,
+      79,
+      1232,
+      1212
+    ],
+    "importMaxSize": 512,
+    "previewPixels": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ]
+  },
+  {
+    "item": "RustySword",
+    "id": 60,
+    "sourcePixels": [
+      1254,
+      1254
+    ],
+    "alphaBounds": [
+      33,
+      23,
+      1240,
+      1230
+    ],
+    "importMaxSize": 512,
+    "previewPixels": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ]
+  },
+  {
+    "item": "CrossbowBolt",
+    "id": 61,
+    "sourcePixels": [
+      1254,
+      1254
+    ],
+    "alphaBounds": [
+      0,
+      21,
+      1232,
+      1238
+    ],
+    "importMaxSize": 512,
+    "previewPixels": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ]
+  }
+]

@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "N01",
+      "resource": "Environment/Dungeon/Narrative/CAT-N01_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.9994363021420518,
+      "height": 1.0,
+      "sourcePixels": [
+        1774,
+        887
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        1773,
+        887
+      ]
+    },
+    {
+      "id": "N02",
+      "resource": "Environment/Dungeon/Narrative/CAT-N02_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.9917127071823204,
+      "height": 1.0,
+      "sourcePixels": [
+        2172,
+        724
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        2154,
+        724
+      ]
+    },
+    {
+      "id": "N03",
+      "resource": "Environment/Dungeon/Narrative/CAT-N03_v01",
+      "x": 0.0,
+      "y": 0.02142051860202931,
+      "width": 0.9954904171364148,
+      "height": 0.9785794813979707,
+      "sourcePixels": [
+        1774,
+        887
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        1766,
+        868
+      ]
+    },
+    {
+      "id": "N08",
+      "resource": "Environment/Dungeon/Narrative/CAT-N08_v01",
+      "x": 0.0,
+      "y": 0.03314917127071823,
+      "width": 0.9972375690607734,
+      "height": 0.9668508287292817,
+      "sourcePixels": [
+        2172,
+        724
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        2166,
+        700
+      ]
+    },
+    {
+      "id": "N09",
+      "resource": "Environment/Dungeon/Narrative/CAT-N09_v02",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1.0,
+      "height": 1.0,
+      "sourcePixels": [
+        2172,
+        724
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        2172,
+        724
+      ]
+    },
+    {
+      "id": "CAT-P02_v01",
+      "x": 0.06140350877192982,
+      "y": 0.06698564593301436,
+      "width": 0.8787878787878788,
+      "height": 0.8676236044657097,
+      "resource": "Environment/Dungeon/Props/CAT-P02_v01"
+    },
+    {
+      "id": "CAT-P10_v01",
+      "x": 0.24800637958532695,
+      "y": 0.24720893141945774,
+      "width": 0.5047846889952153,
+      "height": 0.5047846889952153,
+      "resource": "Environment/Dungeon/Props/CAT-P10_v01"
+    },
+    {
+      "id": "CAT-D10_v01",
+      "x": 0.10127591706539076,
+      "y": 0.10446570972886762,
+      "width": 0.8309409888357256,
+      "height": 0.8141945773524721,
+      "resource": "Environment/Dungeon/Details/CAT-D10_v01"
+    },
+    {
+      "id": "CAT-D08_v01",
+      "x": 0.058213716108452954,
+      "y": 0.045454545454545456,
+      "width": 0.8883572567783095,
+      "height": 0.8732057416267942,
+      "resource": "Environment/Dungeon/Details/CAT-D08_v01"
+    }
+  ],
+  "pieces": [
+    {
+      "id": "R08-shroud",
+      "room": 8,
+      "art": "N01",
+      "x": -29,
+      "y": 39,
+      "width": 1.7,
+      "height": 0.8,
+      "support": "Cover",
+      "angle": 0,
+      "opacity": 1,
+      "order": -2,
+      "layerGroup": "R08-shroud"
+    },
+    {
+      "id": "R08-displaced-lid",
+      "room": 8,
+      "art": "CAT-P02_v01",
+      "x": -35,
+      "y": 46,
+      "width": 1.6,
+      "height": 1.6,
+      "support": "Stone",
+      "angle": 0,
+      "opacity": 1,
+      "order": -3,
+      "layerGroup": "R08-displaced-lid"
+    },
+    {
+      "id": "R08-shards",
+      "room": 8,
+      "art": "CAT-P10_v01",
+      "x": -31.4,
+      "y": 45.5,
+      "width": 0.9,
+      "height": 0.8,
+      "support": "Floor",
+      "angle": 0,
+      "opacity": 0.85,
+      "order": -7,
+      "layerGroup": "R08-shards"
+    },
+    {
+      "id": "R19-unfinished-coffin",
+      "room": 19,
+      "art": "N02",
+      "x": -36.5,
+      "y": 32.6,
+      "width": 3,
+      "height": 1,
+      "support": "Stone",
+      "angle": 0,
+      "opacity": 1,
+      "order": -3,
+      "layerGroup": "R19-unfinished-coffin"
+    },
+    {
+      "id": "R19-tools",
+      "room": 19,
+      "art": "N03",
+      "x": -34,
+      "y": 30.8,
+      "width": 2,
+      "height": 0.85,
+      "support": "Floor",
+      "angle": 0,
+      "opacity": 0.95,
+      "order": -7,
+      "layerGroup": "R19-tools"
+    },
+    {
+      "id": "R19-chain",
+      "room": 19,
+      "art": "CAT-D10_v01",
+      "x": -31,
+      "y": 31,
+      "width": 0.7,
+      "height": 0.7,
+      "support": "Floor",
+      "angle": 0,
+      "opacity": 0.8,
+      "order": -7,
+      "layerGroup": "R19-chain"
+    },
+    {
+      "id": "R13-bank-silt",
+      "room": 13,
+      "art": "N09",
+      "x": 52.8,
+      "y": -43.8,
+      "width": 2.7,
+      "height": 1,
+      "support": "Floor",
+      "angle": 90,
+      "opacity": 0.5,
+      "order": -7,
+      "layerGroup": "R13-bank"
+    },
+    {
+      "id": "R13-bank-timber",
+      "room": 13,
+      "art": "N08",
+      "x": 52.8,
+      "y": -43.8,
+      "width": 2.2,
+      "height": 0.6,
+      "support": "Floor",
+      "angle": 90,
+      "opacity": 0.9,
+      "order": -6,
+      "layerGroup": "R13-bank"
+    },
+    {
+      "id": "R13-west-silt",
+      "room": 13,
+      "art": "N09",
+      "x": 36,
+      "y": -54.4,
+      "width": 3,
+      "height": 1,
+      "support": "Floor",
+      "angle": 0,
+      "opacity": 0.42,
+      "order": -7,
+      "layerGroup": "R13-west-silt"
+    },
+    {
+      "id": "R13-damp",
+      "room": 13,
+      "art": "CAT-D08_v01",
+      "x": 39,
+      "y": -54.5,
+      "width": 1.4,
+      "height": 0.8,
+      "support": "Floor",
+      "angle": 0,
+      "opacity": 0.45,
+      "order": -7,
+      "layerGroup": "R13-damp"
+    },
+    {
+      "id": "R13-shards",
+      "room": 13,
+      "art": "CAT-P10_v01",
+      "x": 38,
+      "y": -51.5,
+      "width": 0.8,
+      "height": 0.8,
+      "support": "Floor",
+      "angle": 0,
+      "opacity": 0.8,
+      "order": -7,
+      "layerGroup": "R13-shards"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "CAT-E17_v02",
+  "family": 17,
+  "variant": 2,
+  "w": 1,
+  "h": 1,
+  "frames": 1,
+  "columns": 1,
+  "rows": 1,
+  "subject": "Square worn limestone WAYFINDING relief: simple square well ring enclosing a lift platform silhouette carved shallow, no lettering or arrows.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E17_v02.\nSubject: Square worn limestone WAYFINDING relief: simple square well ring enclosing a lift platform silhouette carved shallow, no lettering or arrows.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1.06:1.06.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-7edfa8d7-155f-4b68-bc78-844f4ec8c591.png"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "CAT-D03_v02",
+  "w": 1,
+  "h": 1,
+  "subject": "three small islands of dark muted moss, one grouped decal",
+  "prompt": "Use case: stylized-concept. Production 2D environmental detail sprite CAT-D03_v02. Subject: three small islands of dark muted moss, one grouped decal.\nEXACT orthographic TOP DOWN 90 degree camera, no isometric, no frontal view, no perspective. Original abandoned medieval catacomb. Painterly convincing worn material with broad quiet forms, minimal fine noise. Body aspect 1:1. Genuine transparent RGBA background, complete isolated object with safety margin, no background floor, scenery or stone slab unless explicitly requested. Neutral soft diffuse shading, no long cast shadows. Muted root #454B36 #75614A, iron #393C3C, aged bone #A99E83 (dark and sparse), wax #A88A55, cloth #665B50 #8B7B66, crevice #292D2E. NO neon, white bright outlines, glow, halo, light pool, technology, characters, spider/monster silhouette, loot indicator, text, UI or active hazard. Cobwebs must be thin dusty abandoned decoration, not bright radial combat traps.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-b9462f07-b071-4c65-9393-1913e74c4a6d.png"
+}

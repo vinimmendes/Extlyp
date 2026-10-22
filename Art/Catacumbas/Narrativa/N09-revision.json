@@ -1,0 +1,8 @@
+{
+  "tool": "image_gen built-in",
+  "selected": "CAT-N09_v02.png",
+  "discarded": "CAT-N09_v01.png",
+  "reason": "Primeira versão parecia uma estrutura de madeira; rejeitada para uso como decalque de sedimentos.",
+  "prompt": "Use case: stylized-concept. Single game FLOOR DECAL: a small elongated irregular smudge of wet grey-brown muddy SILT and fine sand with a few tiny pebbles and sparse tiny terracotta chips. Only fine sediment, maximum particle size like a coin; absolutely NO wooden boards, NO beams, NO poles, NO iron straps, NO objects, NO structure, NO door, NO bridge, NO water, NO backdrop. Completely FLAT top-down overhead orthographic texture for a dark medieval catacomb. Muted low contrast grey-brown, soft scattered edges with many transparent gaps, very sparse particles, thinner at edges. Horizontal 3:1 shape filling 80% of landscape frame. Entirely true transparent RGBA background around and between particles. Painted natural materials, no text, no glow, no shadows, no border.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-5fc73a41-03e4-4c1e-87b4-60863948c5dd.png"
+}

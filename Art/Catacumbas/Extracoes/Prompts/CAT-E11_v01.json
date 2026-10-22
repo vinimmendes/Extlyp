@@ -1,0 +1,13 @@
+{
+  "id": "CAT-E11_v01",
+  "family": 11,
+  "variant": 1,
+  "w": 0.7547169811320755,
+  "h": 0.7547169811320755,
+  "frames": 8,
+  "columns": 2,
+  "rows": 4,
+  "subject": "ANIMATION SHEET: exactly 8 equal SQUARE cells in TWO columns and FOUR rows, row-major, same top-down small square medieval wooden sluice locking mechanism on stone footing. Square lock housing and iron latch anchored identically in every cell. Frame1 latch closed across central socket, frames2-7 progressively rotate latch clockwise, frame8 latch fully swung clear. No physical water gate, water, key or large door. Constant scale, canvas, pivot and lighting, transparent gutters, no labels or grid lines. All eight frames required.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E11_v01.\nSubject: ANIMATION SHEET: exactly 8 equal SQUARE cells in TWO columns and FOUR rows, row-major, same top-down small square medieval wooden sluice locking mechanism on stone footing. Square lock housing and iron latch anchored identically in every cell. Frame1 latch closed across central socket, frames2-7 progressively rotate latch clockwise, frame8 latch fully swung clear. No physical water gate, water, key or large door. Constant scale, canvas, pivot and lighting, transparent gutters, no labels or grid lines. All eight frames required.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Exact equal grid and constant frame registration are essential.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-10fa5df9-5a0b-4529-96c3-11f44728db69.png"
+}

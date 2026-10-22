@@ -16,7 +16,7 @@ namespace CyberExtraction.Enemies
         public float patrolSpeed = 1.2f;
         public float chaseSpeed = 3.4f;
         public float detectRadius = 6f;
-        public float attackRange = 1.2f;
+        public float attackRange = 1.5f;
         public float attackCooldown = 0.8f;
         public int attackDamage = 15;
         public float chargeAimSeconds = 3f, chargeSpeed = 38f, chargeDuration = .5f, chargeRecovery = 2f, chargeCooldown = 8f;
@@ -28,7 +28,7 @@ namespace CyberExtraction.Enemies
         public NetworkVariable<float> ChargeAim = new NetworkVariable<float>(0);
         public NetworkVariable<float> ChargeReach = new NetworkVariable<float>(0);
         public NetworkVariable<bool> ChargeIndicatorEnabled = new NetworkVariable<bool>(true);
-        float chargeUntil, nextCharge;
+        float chargeUntil, nextCharge, nextChargeTracking;
         Vector2 chargeDirection;
         PlayerInventory chargeTarget;
         CircleCollider2D bodyCollider;
@@ -72,27 +72,31 @@ namespace CyberExtraction.Enemies
                 ? circle.radius * Mathf.Max(Mathf.Abs(transform.lossyScale.x), Mathf.Abs(transform.lossyScale.y))
                 : 0.55f;
             navigation = new MonsterNavigation(worldRadius);
+            InitializeBehaviour();
             ChargeIndicatorEnabled.Value = showChargeIndicator;
             Noise.OnNoise += HandleNoise;
             health.OnDiedServer += HandleDeath;
+            health.OnDamagedServer += HandleStagger;
         }
 
         public override void OnNetworkDespawn()
         {
+            if(meleeVisualRoot!=null) meleeVisualRoot.SetActive(false);
+            if(indicatorRoot!=null) indicatorRoot.SetActive(false);
             All.Remove(this);
             Archetype.OnValueChanged -= RebuildAppearance;
             if (!IsServer) return;
             RestoreMonsterCollisions();
             Noise.OnNoise -= HandleNoise;
             if (health != null) health.OnDiedServer -= HandleDeath;
+            if (health != null) health.OnDamagedServer -= HandleStagger;
         }
 
         void HandleNoise(Vector2 pos, float radius)
         {
             if (Kind == MonsterKind.Mimic && AbilityState.Value == 0) return;
             if (Vector2.Distance(pos, rb.position) > (Kind == MonsterKind.Listener ? Mathf.Min(50, radius * 2.5f) : radius)) return;
-            alertPos = pos;
-            alertUntil = Time.time + 6f;
+            ServerAlert(pos);
         }
 
         void HandleDeath(Health h)
@@ -101,7 +105,9 @@ namespace CyberExtraction.Enemies
             if (MatchManager.Instance != null)
             {
                 MonsterWorld.AddCorpse(transform.position);
-                MatchManager.Instance.ServerDropLoot(transform.position, GameConfig.MonsterLootValue);
+                var theme=spores!=null || Kind==MonsterKind.Weaver ? CyberExtraction.Items.LootTheme.Organic :
+                    Kind==MonsterKind.Shell ? CyberExtraction.Items.LootTheme.Armored : Kind==MonsterKind.Acid ? CyberExtraction.Items.LootTheme.Corrosive : CyberExtraction.Items.LootTheme.General;
+                MatchManager.Instance.ServerDropLoot(transform.position, GameConfig.MonsterLootValue,theme);
             }
             NetworkObject.Despawn();
         }
@@ -111,26 +117,31 @@ namespace CyberExtraction.Enemies
             if (!IsServer || health == null || health.IsDead) return;
             ChargeIndicatorEnabled.Value = showChargeIndicator;
             if (MatchManager.Instance == null || MatchManager.Instance.CurrentState != MatchState.Running)
-            { rb.linearVelocity = Vector2.zero; ChargeState.Value = 0; ChargeReach.Value = 0; chargeTarget = null; RestoreMonsterCollisions(); return; }
-            if (spores != null && spores.IsPreparing) { rb.linearVelocity = Vector2.zero; return; }
+            { CancelMelee(); CancelWeaverCombat(); rb.linearVelocity = Vector2.zero; ChargeState.Value = 0; ChargeReach.Value = 0; chargeTarget = null; RestoreMonsterCollisions(); return; }
+            if(Kind==MonsterKind.Weaver && StepWeaverEntry()) return;
+            if (spores != null && spores.IsPreparing) { progressAt=Time.time; rb.linearVelocity = Vector2.zero; return; }
 
-            bool nearby = false;
-            foreach (var participant in PlayerInventory.All)
-                if (participant != null && participant.IsAlive && Vector2.Distance(participant.transform.position,rb.position)<65) { nearby=true; break; }
-            if (!nearby && ChargeState.Value == 0) { rb.linearVelocity=Vector2.zero; return; }
+            if (ReturnIfNeeded()) return;
+            if (StepWeaverDash()) return;
+            if (StepMelee()) return;
+            if (!HasNearbyPlayers() && ChargeState.Value == 0 && AbilityState.Value != 1)
+            { rb.linearVelocity=Vector2.zero; progressAt=Time.time; return; }
 
             if (Kind != MonsterKind.Charger) { StepArchetype(); return; }
 
             Vector2 pos = rb.position;
             if (ChargeState.Value == 1)
             {
+                progressAt=Time.time;
                 rb.linearVelocity=Vector2.zero;
                 if (chargeTarget == null || !chargeTarget.IsSpawned || !chargeTarget.IsAlive) { Recover(); return; }
-                // Mantem o alvo original mesmo fora do raio de aquisicao. Paredes ainda bloqueiam a visao.
-                if (Physics2D.Linecast(pos,chargeTarget.transform.position,GameConfig.WallMask).collider == null)
+                // Preparation locks its original target: normal acquisition radius/cone no longer applies.
+                // Track at 8 Hz only while visible; behind cover the last aim is preserved.
+                if (Time.time>=nextChargeTracking)
                 {
-                    Vector2 direction=(Vector2)chargeTarget.transform.position-pos;
-                    if(direction.sqrMagnitude>.0001f) ChargeAim.Value=Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg;
+                    nextChargeTracking=Time.time+.125f;
+                    Vector2 point=chargeTarget.transform.position;
+                    if(TryTrackChargeAim(pos,point,out var aim)) ChargeAim.Value=aim;
                 }
                 rb.rotation=ChargeAim.Value;
                 if (Time.time>=chargeUntil)
@@ -149,62 +160,25 @@ namespace CyberExtraction.Enemies
                 return;
             }
             if (ChargeState.Value == 3)
-            { rb.linearVelocity=Vector2.zero; if(Time.time>=chargeUntil) ChargeState.Value=0; return; }
+            { progressAt=Time.time; rb.linearVelocity=Vector2.zero; if(Time.time>=chargeUntil) ChargeState.Value=0; return; }
             Transform target = FindTarget(pos);
-            if (spores==null && target!=null && Time.time>=nextCharge)
+            if (spores==null && target!=null && Time.time>=nextCharge && CanStartCharge(pos))
             {
                 chargeTarget=target.GetComponent<PlayerInventory>();
-                Vector2 direction=(Vector2)target.position-pos;
+                nextChargeTracking=Time.time;
+                Vector2 direction=observedPosition-pos;
                 ChargeAim.Value=direction.sqrMagnitude>.0001f ? Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg : rb.rotation;
                 rb.rotation=ChargeAim.Value; ChargeReach.Value=Mathf.Max(0,chargeSpeed)*Mathf.Max(0,chargeDuration);
                 ChargeState.Value=1; chargeUntil=Time.time+Mathf.Max(0,chargeAimSeconds); rb.linearVelocity=Vector2.zero; return;
             }
-            Vector2 dest;
-            float speed;
-
-            if (target != null)
+            Vector2 dest; float speed;
+            if(target!=null)
             {
-                dest = target.position;
-                speed = chaseSpeed;
-                // Ao perder a linha de visao numa quina, contorna ate a ultima
-                // posicao vista, sem conhecer a posicao escondida do jogador.
-                alertPos = dest;
-                alertUntil = Time.time + 6f;
-                if (Vector2.Distance(pos, dest) <= attackRange && Time.time >= nextAttack)
-                {
-                    nextAttack = Time.time + attackCooldown;
-                    var th = target.GetComponent<Health>();
-                    if (th != null) th.ServerTakeDamage(attackDamage);
-                }
+                if(TryMelee(target)) return;
+                dest=observedPosition; speed=chaseSpeed;
             }
-            else if (Time.time < alertUntil)
-            {
-                dest = alertPos;
-                speed = chaseSpeed * 0.7f;
-                if (Vector2.Distance(pos, dest) < 0.6f) alertUntil = 0f;
-            }
-            else
-            {
-                if (Time.time >= nextWander || Vector2.Distance(pos, wanderTarget) < 0.3f)
-                {
-                    wanderTarget = home + Random.insideUnitCircle * 3f;
-                    nextWander = Time.time + Random.Range(3f, 6f);
-                }
-                dest = wanderTarget;
-                speed = patrolSpeed;
-            }
-
-            if (navigation.TryGetWaypoint(pos, dest, out Vector2 waypoint))
-            {
-                Vector2 to = waypoint - pos;
-                float distance = to.magnitude;
-                rb.linearVelocity = to.normalized * Mathf.Min(speed, distance / Time.fixedDeltaTime);
-                if (distance > 0.01f) rb.rotation = Mathf.Atan2(to.y, to.x) * Mathf.Rad2Deg;
-            }
-            else
-            {
-                rb.linearVelocity = Vector2.zero;
-            }
+            else IdleDestination(out dest,out speed);
+            MoveTo(dest,speed);
         }
 
         void StepCharge(Vector2 pos)
@@ -226,7 +200,7 @@ namespace CyberExtraction.Enemies
                 if(victim!=null)
                 {
                     var victimHealth=victim.GetComponent<Health>();
-                    if(victimHealth!=null) victimHealth.ServerTakeDamage(chargeDamage);
+                    if(victimHealth!=null) victimHealth.ServerTakeDamage(chargeDamage,creatureName:DisplayName);
                 }
                 Recover(); return;
             }
@@ -274,11 +248,11 @@ namespace CyberExtraction.Enemies
 
         void LateUpdate()
         {
-            if(IsSpawned) UpdateAppearance();
+            if(IsSpawned) { UpdateAppearance(); UpdateMeleeVisual(); }
             bool visible=IsSpawned && ChargeIndicatorEnabled.Value && (ChargeState.Value==1 || ChargeState.Value==2) && !health.IsDead;
             var nm=Unity.Netcode.NetworkManager.Singleton;
             var local=nm!=null && nm.IsClient && nm.SpawnManager!=null ? nm.SpawnManager.GetLocalPlayerObject() : null;
-            visible=visible && local!=null && CyberExtraction.Bots.BotController.InVision(local.transform.position,local.transform.eulerAngles.z,transform.position) &&
+            visible=visible && local!=null && CyberExtraction.Bots.BotController.InVision(local.transform.position,local.transform.eulerAngles.z,transform.position,local.GetComponent<PlayerInventory>()) &&
                 Physics2D.Linecast(local.transform.position,transform.position,GameConfig.VisionMask).collider==null;
             if(!visible) { if(indicatorRoot!=null) indicatorRoot.SetActive(false); return; }
             if(indicatorRoot==null)
@@ -307,7 +281,7 @@ namespace CyberExtraction.Enemies
         }
         public override void OnDestroy()
         {
-            RestoreMonsterCollisions(); if(indicatorRoot!=null) Destroy(indicatorRoot); base.OnDestroy();
+            RestoreMonsterCollisions(); if(meleeVisualRoot!=null) Destroy(meleeVisualRoot); if(meleeWarningMesh!=null) Destroy(meleeWarningMesh); if(indicatorRoot!=null) Destroy(indicatorRoot); base.OnDestroy();
         }
 
         void OnGUI()
@@ -315,7 +289,7 @@ namespace CyberExtraction.Enemies
             DrawAbilityWarning();
             if(IsServer || !IsSpawned || ChargeState.Value==0 || Camera.main==null) return;
             var local=NetworkManager.SpawnManager.GetLocalPlayerObject();
-            if(local==null || !CyberExtraction.Bots.BotController.InVision(local.transform.position,local.transform.eulerAngles.z,transform.position) ||
+            if(local==null || !CyberExtraction.Bots.BotController.InVision(local.transform.position,local.transform.eulerAngles.z,transform.position,local.GetComponent<PlayerInventory>()) ||
                 Physics2D.Linecast(local.transform.position,transform.position,GameConfig.VisionMask).collider!=null) return;
             var point=Camera.main.WorldToScreenPoint(transform.position); var old=GUI.matrix; GUI.matrix=Matrix4x4.identity;
             var style=new GUIStyle(GUI.skin.box) { fontSize=20,alignment=TextAnchor.MiddleCenter };
@@ -329,21 +303,6 @@ namespace CyberExtraction.Enemies
             navigation.DrawPath();
         }
 
-        Transform FindTarget(Vector2 pos)
-        {
-            Transform best = null;
-            float bestD = detectRadius;
-            foreach (var inv in PlayerInventory.All)
-            {
-                if (inv == null || !inv.IsAlive) continue;
-                Vector2 p = inv.transform.position;
-                float d = Vector2.Distance(pos, p);
-                if (d > bestD) continue;
-                if (Physics2D.Linecast(pos, p, GameConfig.VisionMask)) continue;
-                bestD = d;
-                best = inv.transform;
-            }
-            return best;
-        }
+        Transform FindTarget(Vector2 pos) => PerceptionTarget();
     }
 }

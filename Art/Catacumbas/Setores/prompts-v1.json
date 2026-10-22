@@ -1,0 +1,362 @@
+[
+  {
+    "id": "CAT-S01_v01",
+    "w": 2,
+    "h": 1,
+    "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding a shallow cracked bell silhouette. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 1 of eight.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v01. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding a shallow cracked bell silhouette. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 1 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      16,
+      137,
+      1759,
+      751
+    ],
+    "sprite_region_pixels": [
+      16,
+      137,
+      1759,
+      751
+    ]
+  },
+  {
+    "id": "CAT-S01_v02",
+    "w": 2,
+    "h": 1,
+    "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding a sealed urn silhouette. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 2 of eight.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v02. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding a sealed urn silhouette. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 2 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      28,
+      156,
+      1746,
+      729
+    ],
+    "sprite_region_pixels": [
+      28,
+      156,
+      1746,
+      729
+    ]
+  },
+  {
+    "id": "CAT-S01_v03",
+    "w": 2,
+    "h": 1,
+    "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding three scraped blank name bands. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 3 of eight.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v03. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding three scraped blank name bands. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 3 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v03.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      57,
+      134,
+      1718,
+      745
+    ],
+    "sprite_region_pixels": [
+      57,
+      134,
+      1718,
+      745
+    ]
+  },
+  {
+    "id": "CAT-S01_v04",
+    "w": 2,
+    "h": 1,
+    "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding four short parallel grille grooves. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 4 of eight.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v04. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding four short parallel grille grooves. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 4 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v04.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      86,
+      156,
+      1689,
+      728
+    ],
+    "sprite_region_pixels": [
+      86,
+      156,
+      1689,
+      728
+    ]
+  },
+  {
+    "id": "CAT-S01_v05",
+    "w": 2,
+    "h": 1,
+    "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding a single branching root carving. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 5 of eight.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v05. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding a single branching root carving. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 5 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v05.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      58,
+      122,
+      1717,
+      766
+    ],
+    "sprite_region_pixels": [
+      58,
+      122,
+      1717,
+      766
+    ]
+  },
+  {
+    "id": "CAT-S01_v06",
+    "w": 2,
+    "h": 1,
+    "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding three extinguished candle carvings. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 6 of eight.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v06. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding three extinguished candle carvings. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 6 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v06.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      45,
+      132,
+      1730,
+      752
+    ],
+    "sprite_region_pixels": [
+      45,
+      132,
+      1730,
+      752
+    ]
+  },
+  {
+    "id": "CAT-S01_v07",
+    "w": 2,
+    "h": 1,
+    "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding a geometric funeral procession chevron. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 7 of eight.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v07. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding a geometric funeral procession chevron. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 7 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v07.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      37,
+      170,
+      1739,
+      719
+    ],
+    "sprite_region_pixels": [
+      37,
+      170,
+      1739,
+      719
+    ]
+  },
+  {
+    "id": "CAT-S01_v08",
+    "w": 2,
+    "h": 1,
+    "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding three still-water wave grooves. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 8 of eight.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v08. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding three still-water wave grooves. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 8 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S01_v08.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      28,
+      162,
+      1745,
+      706
+    ],
+    "sprite_region_pixels": [
+      28,
+      162,
+      1745,
+      706
+    ]
+  },
+  {
+    "id": "CAT-S02_v01",
+    "w": 4,
+    "h": 3,
+    "subject": "Large horizontal funerary limestone relief slab with three bands of deeply scraped-away inscriptions, names deliberately erased into irregular chisel scars. No readable writing. Strong simple blank bands.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S02_v01. Subject: Large horizontal funerary limestone relief slab with three bands of deeply scraped-away inscriptions, names deliberately erased into irregular chisel scars. No readable writing. Strong simple blank bands.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 4:3. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S02_v01.png",
+    "source_pixels": [
+      1448,
+      1086
+    ],
+    "alpha_body_bounds": [
+      53,
+      106,
+      1395,
+      975
+    ],
+    "sprite_region_pixels": [
+      53,
+      106,
+      1395,
+      975
+    ]
+  },
+  {
+    "id": "CAT-S03_v01",
+    "w": 4,
+    "h": 3,
+    "subject": "Horizontal mortuary stone slab, thick dark brown tree roots splitting its masonry joints around a small contained bone recess. Roots form three broad branches, no spider-like radial legs, no skull carpet.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S03_v01. Subject: Horizontal mortuary stone slab, thick dark brown tree roots splitting its masonry joints around a small contained bone recess. Roots form three broad branches, no spider-like radial legs, no skull carpet.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 4:3. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S03_v01.png",
+    "source_pixels": [
+      1448,
+      1086
+    ],
+    "alpha_body_bounds": [
+      33,
+      156,
+      1416,
+      931
+    ],
+    "sprite_region_pixels": [
+      33,
+      156,
+      1416,
+      931
+    ]
+  },
+  {
+    "id": "CAT-S04_v01",
+    "w": 4,
+    "h": 3,
+    "subject": "Horizontal weathered cloister memorial plinth with two low bench ends along the short sides, central bare limestone and a few broad pools of old dead candle wax. All candles extinguished, no flames.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S04_v01. Subject: Horizontal weathered cloister memorial plinth with two low bench ends along the short sides, central bare limestone and a few broad pools of old dead candle wax. All candles extinguished, no flames.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 4:3. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S04_v01.png",
+    "source_pixels": [
+      1448,
+      1086
+    ],
+    "alpha_body_bounds": [
+      41,
+      197,
+      1407,
+      891
+    ],
+    "sprite_region_pixels": [
+      41,
+      197,
+      1407,
+      891
+    ]
+  },
+  {
+    "id": "CAT-S05_v01",
+    "w": 4,
+    "h": 3,
+    "subject": "Horizontal cistern masonry memorial plinth, defined pale limestone rim, three dark horizontal flood-level stains, a shallow dry runoff groove. No open water surface, no bridge, no traversable opening.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S05_v01. Subject: Horizontal cistern masonry memorial plinth, defined pale limestone rim, three dark horizontal flood-level stains, a shallow dry runoff groove. No open water surface, no bridge, no traversable opening.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 4:3. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S05_v01.png",
+    "source_pixels": [
+      1448,
+      1086
+    ],
+    "alpha_body_bounds": [
+      31,
+      91,
+      1417,
+      993
+    ],
+    "sprite_region_pixels": [
+      31,
+      91,
+      1417,
+      993
+    ]
+  },
+  {
+    "id": "CAT-S06_v01",
+    "w": 4,
+    "h": 3,
+    "subject": "Horizontal prison memorial masonry slab with a recessed square iron grille, two forged iron wall rings and short coiled chains contained inside stone border. Grille is closed, not a passage.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S06_v01. Subject: Horizontal prison memorial masonry slab with a recessed square iron grille, two forged iron wall rings and short coiled chains contained inside stone border. Grille is closed, not a passage.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 4:3. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S06_v01.png",
+    "source_pixels": [
+      1448,
+      1086
+    ],
+    "alpha_body_bounds": [
+      110,
+      156,
+      1341,
+      907
+    ],
+    "sprite_region_pixels": [
+      110,
+      156,
+      1341,
+      907
+    ]
+  },
+  {
+    "id": "CAT-S07_v01",
+    "w": 4,
+    "h": 3,
+    "subject": "Horizontal broken chapel altar memorial, two large split stone halves surrounding a worn abstract funerary geometric relief, restrained dark oak fragments. One strong asymmetric break, no religious text, no loot.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S07_v01. Subject: Horizontal broken chapel altar memorial, two large split stone halves surrounding a worn abstract funerary geometric relief, restrained dark oak fragments. One strong asymmetric break, no religious text, no loot.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 4:3. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S07_v01.png",
+    "source_pixels": [
+      1448,
+      1086
+    ],
+    "alpha_body_bounds": [
+      22,
+      177,
+      1434,
+      912
+    ],
+    "sprite_region_pixels": [
+      22,
+      177,
+      1434,
+      912
+    ]
+  },
+  {
+    "id": "CAT-S08_v01",
+    "w": 4,
+    "h": 3,
+    "subject": "Horizontal medieval counterweight storage plinth: two large wooden pulley wheels lying flat, thick forged chain bundles and a squared stone counterweight, all contained within an old limestone foundation. Inert display, no crank handle, no controls.",
+    "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S08_v01. Subject: Horizontal medieval counterweight storage plinth: two large wooden pulley wheels lying flat, thick forged chain bundles and a squared stone counterweight, all contained within an old limestone foundation. Inert display, no crank handle, no controls.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 4:3. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+    "source": "Art/Catacumbas/Setores/Fontes/CAT-S08_v01.png",
+    "source_pixels": [
+      1448,
+      1086
+    ],
+    "alpha_body_bounds": [
+      33,
+      170,
+      1414,
+      939
+    ],
+    "sprite_region_pixels": [
+      33,
+      170,
+      1414,
+      939
+    ]
+  }
+]

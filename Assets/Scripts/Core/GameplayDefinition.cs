@@ -11,7 +11,8 @@ namespace CyberExtraction.Core
         [Header("Encontros da expedicao")]
         [Range(0,100)] public int MonsterSpawnChancePercent=45;
         [Range(0,100)] public int PlantSpawnChancePercent=45, SporeSpawnChancePercent=60;
-        [Header("Loot sorteado no servidor")]
+        // Retained for serialized compatibility. Stage-8 loot uses Resources/Items/Loot/Tables.
+        [Header("Loot legado — substituido por LootTableDefinition")]
         [Range(0,100)] public int GroundLootChancePercent=65, ChestLootChancePercent=85, MonsterLootChancePercent=60;
         [Range(0,100)] public int LootWeaponChancePercent=10, LootAmmoChancePercent=30;
         [Range(0,100)] public int TwoLootItemsChancePercent=30, ThreeLootItemsChancePercent=15;

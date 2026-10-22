@@ -1,0 +1,8 @@
+{
+  "id": "CAT-S01_v07",
+  "w": 2,
+  "h": 1,
+  "subject": "Flat inset funerary threshold plaque, low stone arch outline surrounding a geometric funeral procession chevron. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 7 of eight.",
+  "prompt": "Use case: stylized-concept. Production 2D game environment sprite CAT-S01_v07. Subject: Flat inset funerary threshold plaque, low stone arch outline surrounding a geometric funeral procession chevron. NOT an upright arch. Weathered flat stone, restrained relief, entire horizontal 2:1 body. Distinct entry mark 7 of eight.\nEXACT orthographic top-down camera at 90 degrees. Only top-facing surfaces and short contact depth, no isometric, perspective or frontal elevation. Original medieval abandoned catacomb visual landmark. Painterly convincing aged material, broad low-noise readable shapes. Body aspect 2:1. Neutral diffuse soft shading, no long shadow. Muted limestone #68645B #969082, crevices #292D2E, dark oak #45372B #75614A, sparse bone #A99E83, dull iron #454641. No technology, neon, bright white, emissive glow, humans, monsters, loot, UI, letters or numbers. One isolated complete object with genuine transparent RGBA background and small safety margin, no scenery or surrounding floor. All decorative elements contained within the rectangular body footprint.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-ef5ef085-ed5e-425d-9b19-be7db8337a68.png"
+}

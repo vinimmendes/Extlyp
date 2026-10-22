@@ -8,44 +8,61 @@ namespace CyberExtraction.UI
 {
     public class Quickbar : MonoBehaviour
     {
-        public static Rect Bounds=>HudLayout.Actions;
         static bool Visible
         {
             get { var inv=InventoryWindow.Local(); return !Camp.CampController.Active && !UiLayout.BlocksGameplay && inv!=null && inv.IsAlive && inv.FishingPhase.Value==0 && MatchManager.Instance!=null && MatchManager.Instance.CurrentState==MatchState.Running; }
         }
-        public static bool ContainsScreenPoint(Vector2 point)=>Visible && (Bounds.Contains(UiLayout.Point(point)) || HudLayout.Weapon.Contains(UiLayout.Point(point))) || InventoryWindow.ContainsControlPoint(point) || Minimap.ContainsScreenPoint(point);
+        public static bool ContainsScreenPoint(Vector2 point)
+        {
+            var p=UiLayout.Point(point);
+            return Visible && (HudLayout.HitBounds(HudControl.Heal).Contains(p) || HudLayout.HitBounds(HudControl.Swap).Contains(p) ||
+                HudLayout.HitBounds(HudControl.Reload).Contains(p) || HudLayout.HitBounds(HudControl.Backpack).Contains(p) || HudLayout.Weapon.Contains(p)) ||
+                InventoryWindow.ContainsControlPoint(point) || Minimap.ContainsScreenPoint(point);
+        }
         void Update()
         {
             var inv=InventoryWindow.Local(); if(inv==null || UiLayout.BlocksGameplay) return;
             if(GameInput.BandagePressed) inv.RequestBandage();
         }
-        bool Action(Rect rect,ItemId? icon,string text)
+        bool Action(HudControl control,HudSymbol icon,string text)
         {
-            bool clicked=GUI.Button(rect,GUIContent.none,HudTheme.ActionStyle);
-            if(icon.HasValue) ItemIconGui.Draw(new Rect(rect.center.x-17,rect.y+8,34,28),icon.Value);
-            GUI.Label(new Rect(rect.x+3,rect.y+(icon.HasValue ? 35 : 8),rect.width-6,rect.height-(icon.HasValue ? 38 : 12)),text,HudTheme.Label(14,TextAnchor.MiddleCenter));
+            var rect=HudLayout.Bounds(control); bool enabled=GUI.enabled;
+            bool clicked=GUI.Button(HudLayout.HitBounds(control),GUIContent.none,HudTheme.InvisibleButton);
+            HudArt.Circle(rect,held:enabled && HudLayout.HitBounds(control).Contains(Event.current.mousePosition) && InputHeld());
+            var tint=HudTheme.Text; if(!enabled) tint.a=.4f;
+            float size=rect.width*.55f;
+            HudArt.Icon(new Rect(rect.center.x-size/2,rect.center.y-size/2,size,size),icon,tint);
+            var previous=GUI.color; GUI.color=enabled ? Color.white : new Color(1,1,1,.45f);
+            float labelScale=rect.width/HudLayout.DefaultSize(control).x;
+            GUI.Label(new Rect(rect.center.x-38*labelScale,rect.yMax+3,76*labelScale,40*labelScale),text,HudTheme.Label(HudLayout.TextSize(control,13),TextAnchor.UpperCenter)); GUI.color=previous;
             return clicked;
         }
+        static bool InputHeld()=>Event.current.type==EventType.MouseDown || GUIUtility.hotControl!=0;
         void OnGUI()
         {
+            if(UguiGameHud.Active) return;
             if(!Visible) return;
             using var frame=UiLayout.Begin();
             var inv=InventoryWindow.Local(); var hp=inv.GetComponent<Health>(); var shooter=inv.GetComponent<PlayerShooter>();
-            var weapon=HudLayout.Weapon; GUI.Box(weapon,"");
-            string name=shooter.Weapon==null ? "SEM ARMA" : shooter.Weapon.Item==ItemId.Mosin ? "RIFLE" : shooter.Weapon.Item==ItemId.DoubleBarrelShotgun ? "ESPINGARDA" : "PISTOLA";
-            GUI.Label(new Rect(weapon.x+10,weapon.y+6,weapon.width-20,22),name,HudTheme.Label(15));
-            GUI.Label(new Rect(weapon.x+10,weapon.y+25,weapon.width-20,30),shooter.Magazine+" / "+(shooter.Weapon!=null ? shooter.Weapon.Capacity : 0),HudTheme.Label(26));
-            GUI.Label(new Rect(weapon.x+90,weapon.y+36,weapon.width-100,26),"Reserva "+shooter.Reserve,HudTheme.Label(13));
-            var bounds=Bounds; float size=HudLayout.ActionSize; bool before=GUI.enabled;
+            bool melee=shooter.Weapon!=null && shooter.Weapon.IsMelee;
+            var weapon=HudLayout.Weapon; HudArt.Panel(weapon);
+            string name=shooter.Weapon==null ? "SEM ARMA" : ItemCatalog.Name(shooter.Weapon.Item);
+            if(shooter.Weapon!=null)
+                ItemIconGui.Draw(HudLayout.Detail(HudControl.Weapon,7,17,34,34),shooter.Weapon.Item);
+            if(melee) name=ItemCatalog.Name(shooter.Weapon.Item).ToUpperInvariant();
+            GUI.Label(HudLayout.Detail(HudControl.Weapon,47,4,93,16),name,HudTheme.Label(HudLayout.TextSize(HudControl.Weapon,12)));
+            GUI.Label(HudLayout.Detail(HudControl.Weapon,47,19,93,26),melee ? shooter.MeleeDamage+" dano" : shooter.Magazine+" / "+(shooter.Weapon!=null ? shooter.Weapon.Capacity : 0),HudTheme.Label(HudLayout.TextSize(HudControl.Weapon,22)));
+            GUI.Label(HudLayout.Detail(HudControl.Weapon,47,46,93,16),melee ? shooter.Weapon.StaminaCost+" stamina" : "Reserva "+shooter.Reserve,HudTheme.Label(HudLayout.TextSize(HudControl.Weapon,12)));
+            bool before=GUI.enabled;
             double cooldown=System.Math.Max(0,inv.BandageReadyAt.Value-NetworkManager.Singleton.ServerTime.Time);
             GUI.enabled=inv.IsAlive && inv.Bandages.Value>0 && hp.Current.Value<hp.Maximum.Value && cooldown<=0;
-            if(Action(new Rect(bounds.x,bounds.y,size,size),ItemId.Bandage,(cooldown>0 ? System.Math.Ceiling(cooldown)+"s" : "Curar ×"+inv.Bandages.Value)+(HudLayout.Touch ? "" : " [1]"))) inv.RequestBandage();
-            GUI.enabled=inv.WeaponCount>1;
-            if(Action(new Rect(bounds.x+size+8,bounds.y,size,size),shooter.Weapon!=null ? (ItemId?)shooter.Weapon.Item : null,HudLayout.Touch ? "Trocar" : "Trocar [Q]")) inv.RequestNextWeapon();
+            if(Action(HudControl.Heal,HudSymbol.Heal,cooldown>0 ? "Curar\n"+System.Math.Ceiling(cooldown)+" s" : "Curar\n×"+inv.Bandages.Value)) inv.RequestBandage();
+            GUI.enabled=inv.WeaponCount>1 && !shooter.MeleeAttacking;
+            if(Action(HudControl.Swap,HudSymbol.Swap,"Trocar")) inv.RequestNextWeapon();
             GUI.enabled=shooter.Weapon!=null && !shooter.Reloading && !shooter.CyclingBolt && shooter.Reserve>0 && shooter.Magazine<shooter.Weapon.Capacity;
-            if(Action(new Rect(bounds.x+(size+8)*2,bounds.y,size,size),shooter.Weapon!=null ? (ItemId?)shooter.Weapon.Ammo : null,shooter.Reloading ? "Recarga..." : shooter.CyclingBolt ? "Ferrolho" : HudLayout.Touch ? "Recarregar" : "Recarga [R]")) shooter.RequestReload();
+            if(Action(HudControl.Reload,HudSymbol.Ammo,shooter.Reloading ? "Recarga..." : shooter.CyclingBolt ? "Ferrolho" : "Recarregar")) shooter.RequestReload();
             GUI.enabled=before;
-            if(Action(new Rect(bounds.x+(size+8)*3,bounds.y,size,size),null,HudLayout.Touch ? "Mochila" : "Mochila [I]")) InventoryWindow.Instance.ToggleBag();
+            if(Action(HudControl.Backpack,HudSymbol.Backpack,"Mochila")) InventoryWindow.Instance.ToggleBag();
         }
     }
 }

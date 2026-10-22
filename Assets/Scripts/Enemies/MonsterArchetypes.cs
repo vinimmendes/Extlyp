@@ -19,10 +19,29 @@ namespace CyberExtraction.Enemies
         // 0 idle/disguised, 1 preparation/feeding/transformation, 2 revealed mimic.
         public NetworkVariable<byte> AbilityState = new NetworkVariable<byte>(0);
         public NetworkVariable<double> AbilityEnds = new NetworkVariable<double>(0);
+        public NetworkVariable<double> WebReleasedAt = new NetworkVariable<double>(-1);
         public NetworkVariable<int> Growth = new NetworkVariable<int>(0);
         public MonsterKind Kind => (MonsterKind)Archetype.Value;
+        public string DisplayName => spores!=null ? "Esporífero" : Kind switch
+        {
+            MonsterKind.Charger => "Investidor",
+            MonsterKind.Listener => "Ouvinte",
+            MonsterKind.Shell => "Couraçado",
+            MonsterKind.Weaver => "Aranha",
+            MonsterKind.Herald => "Arauto",
+            MonsterKind.Mimic => "Mímico",
+            MonsterKind.Acid => "Corrosivo",
+            MonsterKind.Stalker => "Espreitador",
+            MonsterKind.Devourer => "Devorador",
+            _ => "Criatura"
+        };
+        // Authored reward tier, independent of current/max health and temporary growth.
+        public int ExperienceReward => Kind==MonsterKind.Charger || Kind==MonsterKind.Shell || Kind==MonsterKind.Mimic || Kind==MonsterKind.Devourer ? 20 : 10;
         public bool Disguised => Kind == MonsterKind.Mimic && AbilityState.Value == 0;
-        float nextAbility, nextTrap;
+        float nextAbility;
+        public const float AcidWindupSeconds=.8f;
+        const float AcidRecoverySeconds=.65f, AcidShotRange=10f, AcidShotSpeed=6f;
+        float acidRecoveryUntil;
         int preparationDamage, corpseId;
         Vector2 abilityPoint;
         Transform abilityTarget;
@@ -66,19 +85,22 @@ namespace CyberExtraction.Enemies
                 nextAbility = Time.time + 2;
             }
             Archetype.OnValueChanged += RebuildAppearance;
+            InitializeWeaver();
             BuildAppearance();
         }
 
         public void ServerAlert(Vector2 point)
         {
-            if (!IsServer || Disguised) return;
-            alertPos = point; alertUntil = Time.time + 10;
+            if (!IsServer || Disguised || returning || WeaverInCeiling) return;
+            alertPos = BoundToHome(point); alertUntil = Time.time + 10; searchUntil=0;
+            escapeDirection=Vector2.zero; nextPerception=Time.time;
         }
 
         // Direction is the shooter's location, so rear and side hits bypass the front plates.
         public int ProjectileDamage(int damage, Vector2 source)
         {
-            if (Disguised && IsServer) Reveal(null);
+            RevealFromDamage(damage);
+            if(IsServer && damage>0) ServerAlert(source);
             if (Kind == MonsterKind.Shell)
             {
                 Vector2 forward = transform.right;
@@ -109,43 +131,38 @@ namespace CyberExtraction.Enemies
                 Physics2D.Linecast(inv.transform.position, transform.position, GameConfig.WallMask).collider != null) return;
             Reveal(inv.transform);
         }
+        void RevealFromDamage(int damage)
+        {
+            // Shared by projectile preparation and confirmed Health damage (including melee).
+            // Leaving Disguised makes repeated hits/pellets unable to restart this transition.
+            if(IsServer && IsSpawned && damage>0 && Disguised) Reveal(null);
+        }
         void Reveal(Transform target)
         {
             AbilityState.Value = 1; AbilityEnds.Value = NetworkManager.ServerTime.Time + .75;
+            if(target!=null) abilityPoint=target.position;
             abilityTarget = target; nextAbility = Time.time + 4;
             if (bodyCollider != null) bodyCollider.isTrigger = false;
         }
 
         bool Illuminated(Transform target)
         {
-            return target != null && BotController.InVision(target.position, target.eulerAngles.z, transform.position) &&
+            return target != null && BotController.InVision(target.position, target.eulerAngles.z, transform.position,target.GetComponent<PlayerInventory>()) &&
                 Physics2D.Linecast(target.position, transform.position, GameConfig.VisionMask).collider == null;
         }
-        Transform ArchetypeTarget()
-        {
-            if (Kind != MonsterKind.Stalker) return FindTarget(rb.position);
-            Transform best = null; float score = float.MinValue;
-            foreach (var inv in PlayerInventory.All)
-            {
-                if (inv == null || !inv.IsAlive) continue;
-                float distance = Vector2.Distance(rb.position, inv.transform.position);
-                if (distance > detectRadius || Physics2D.Linecast(rb.position, inv.transform.position, GameConfig.VisionMask).collider != null) continue;
-                int neighbors = 0;
-                foreach (var other in PlayerInventory.All)
-                    if (other != null && other != inv && other.IsAlive && Vector2.Distance(other.transform.position, inv.transform.position) < 8) neighbors++;
-                float candidate = 30 - distance - neighbors * 12 - (Illuminated(inv.transform) ? 8 : 0);
-                if (candidate > score) { score = candidate; best = inv.transform; }
-            }
-            return best;
-        }
+        Transform ArchetypeTarget() => PerceptionTarget();
 
         void StepArchetype()
         {
+            if(Kind==MonsterKind.Weaver) { StepWeaverCombat(); return; }
             Vector2 pos = rb.position;
             if (Disguised) { rb.linearVelocity = Vector2.zero; return; }
+            if(Kind==MonsterKind.Acid && Time.time<acidRecoveryUntil)
+            { rb.linearVelocity=Vector2.zero; progressAt=Time.time; return; }
             Transform target = ArchetypeTarget();
             if (AbilityState.Value == 1)
             {
+                progressAt=Time.time;
                 rb.linearVelocity = Vector2.zero;
                 bool interrupted = (Kind == MonsterKind.Herald || Kind == MonsterKind.Devourer) && health.DamageVersion.Value != preparationDamage;
                 if (interrupted) { AbilityState.Value = 0; AbilityEnds.Value = 0; nextAbility = Time.time + 5; return; }
@@ -169,63 +186,76 @@ namespace CyberExtraction.Enemies
                         // Keep collision and navigation clearance fixed as the silhouette grows.
                     }
                 }
-                else if (Kind == MonsterKind.Weaver || Kind == MonsterKind.Acid)
+                else if (Kind == MonsterKind.Acid)
                 {
-                    MonsterWorld.Add(Kind == MonsterKind.Weaver ? MonsterEffectKind.WebShot : MonsterEffectKind.AcidShot,
-                        pos, abilityPoint, .25f, Mathf.Clamp(Vector2.Distance(pos, abilityPoint) / 10, .2f, 1.5f));
+                    // Aim was committed at preparation start. Travel past the old target
+                    // position instead of homing or instantly appearing at its new location.
+                    Vector2 direction=(abilityPoint-pos).normalized;
+                    MonsterWorld.Add(MonsterEffectKind.AcidShot,
+                        pos, pos+direction*AcidShotRange, .25f, AcidShotRange/AcidShotSpeed);
+                    acidRecoveryUntil=Time.time+AcidRecoverySeconds;
                 }
-                else if (Kind == MonsterKind.Mimic && abilityTarget != null) ServerAlert(abilityTarget.position);
+                else if (Kind == MonsterKind.Mimic && abilityTarget != null) ServerAlert(abilityPoint);
                 return;
             }
+            if(Kind==MonsterKind.Acid) { StepAcidCombat(target); return; }
             if (target != null && Time.time >= nextAbility)
             {
-                if (Kind == MonsterKind.Herald) { Prepare(target.position, 2); nextAbility = Time.time + 12; return; }
-                if ((Kind == MonsterKind.Weaver || Kind == MonsterKind.Acid) && Vector2.Distance(pos, target.position) > 2)
-                { Prepare(target.position, Kind == MonsterKind.Acid ? 1.2 : .8); nextAbility = Time.time + 6; return; }
+                if (Kind == MonsterKind.Herald) { Prepare(observedPosition, 2); nextAbility = Time.time + 12; return; }
             }
-            if (Kind == MonsterKind.Devourer && Time.time >= nextAbility && MonsterWorld.FindCorpse(pos, 12, out var corpse))
+            if (Kind == MonsterKind.Devourer && target == null && Time.time >= nextAbility && MonsterWorld.FindCorpse(pos, 12, out var corpse) && Vector2.Distance(home,corpse.To)<LeashRadius)
             {
                 if (Vector2.Distance(pos, corpse.To) < 1.3f && Physics2D.Linecast(pos,corpse.To,GameConfig.WallMask).collider==null)
                 { corpseId = corpse.Id; Prepare(corpse.To, 2.5); nextAbility = Time.time + 4; return; }
                 MoveTo(corpse.To, chaseSpeed); return;
             }
-            if (Kind == MonsterKind.Weaver && Time.time >= nextTrap && (target != null || Time.time < alertUntil))
-            {
-                if (MonsterWorld.CountNear(MonsterEffectKind.Web, pos, 15) < 3)
-                    MonsterWorld.Add(MonsterEffectKind.Web, pos, pos, 1.3f, 25);
-                nextTrap = Time.time + 9;
-            }
             Vector2 dest; float speed;
             if (target != null)
             {
-                dest = target.position; speed = chaseSpeed;
-                alertPos = dest; alertUntil = Time.time + 6;
+                dest = observedPosition; speed = chaseSpeed;
                 float distance = Vector2.Distance(pos, dest);
                 if (Kind == MonsterKind.Stalker)
                 {
-                    bool lit = Illuminated(target);
+                    bool lit = observedLit;
                     speed = lit ? 1.5f : chaseSpeed;
-                    if (!lit && distance > 1.5f) dest = (Vector2)target.position - (Vector2)target.right * 1.4f;
+                    if (!lit && distance > 1.5f) dest = observedPosition - observedFacing * 1.4f;
                 }
-                if ((Kind == MonsterKind.Acid || Kind == MonsterKind.Weaver) && distance < 4 && distance > attackRange)
-                    dest = pos + (pos - (Vector2)target.position).normalized * 3;
-                if (distance <= attackRange && Time.time >= nextAttack)
-                {
-                    nextAttack = Time.time + attackCooldown;
-                    int damage = attackDamage;
-                    if (Kind == MonsterKind.Stalker && Vector2.Dot((pos - (Vector2)target.position).normalized, target.right) < -.5f) damage = 30;
-                    target.GetComponent<Health>()?.ServerTakeDamage(damage);
-                }
+                if (TryMelee(target)) return;
             }
-            else if (Time.time < alertUntil)
-            { dest = alertPos; speed = chaseSpeed; if (Vector2.Distance(pos, dest) < .6f) alertUntil = 0; }
-            else
-            {
-                if (Time.time >= nextWander || Vector2.Distance(pos, wanderTarget) < .3f)
-                { wanderTarget = home + Random.insideUnitCircle * 4; nextWander = Time.time + Random.Range(3f, 6f); }
-                dest = wanderTarget; speed = patrolSpeed;
-            }
+            else IdleDestination(out dest,out speed);
             MoveTo(dest, speed);
+        }
+        void StepAcidCombat(Transform target)
+        {
+            if(target==null)
+            { IdleDestination(out var dest,out var speed); MoveTo(dest,speed); return; }
+            Vector2 offset=observedPosition-rb.position;
+            float distance=offset.magnitude;
+            if(distance>8) { MoveTo(observedPosition,chaseSpeed); return; }
+            if(distance<5)
+            {
+                // Retreat only through a clear corridor; try sideways when backed against cover.
+                Vector2 away=distance>.01f ? -offset/distance : -(Vector2)transform.right;
+                for(int i=0;i<7;i++)
+                {
+                    float angle=(i==0 ? 0 : ((i+1)/2)*30*(i%2==1 ? 1 : -1))*Mathf.Deg2Rad;
+                    Vector2 direction=new Vector2(away.x*Mathf.Cos(angle)-away.y*Mathf.Sin(angle),away.x*Mathf.Sin(angle)+away.y*Mathf.Cos(angle));
+                    Vector2 point=rb.position+direction*3;
+                    if(Vector2.Distance(home,point)>=LeashRadius ||
+                        Physics2D.CircleCast(rb.position,worldRadius+.04f,direction,3,GameConfig.WallMask).collider!=null) continue;
+                    MoveTo(point,chaseSpeed*.75f); return;
+                }
+                // A cornered creature can still defend itself instead of freezing against a wall.
+                if(TryMelee(target)) return;
+            }
+            rb.linearVelocity=Vector2.zero; progressAt=Time.time;
+            if(distance>.01f) rb.rotation=Mathf.Atan2(offset.y,offset.x)*Mathf.Rad2Deg;
+            if(distance>2 && Time.time>=nextAbility && Time.time>=staggerUntil &&
+                Physics2D.Linecast(rb.position,observedPosition,GameConfig.WallMask).collider==null)
+            {
+                abilityTarget=target; Prepare(observedPosition,AcidWindupSeconds);
+                nextAbility=Time.time+AcidWindupSeconds+AcidRecoverySeconds+2;
+            }
         }
         void Prepare(Vector2 point, double seconds)
         {
@@ -234,12 +264,6 @@ namespace CyberExtraction.Enemies
             var dir = point - rb.position; if (dir.sqrMagnitude > .01f) rb.rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             rb.linearVelocity = Vector2.zero;
         }
-        void MoveTo(Vector2 dest, float speed)
-        {
-            if (!navigation.TryGetWaypoint(rb.position, dest, out var waypoint)) { rb.linearVelocity = Vector2.zero; return; }
-            Vector2 dir = waypoint - rb.position;
-            rb.linearVelocity = dir.normalized * Mathf.Min(speed, dir.magnitude / Time.fixedDeltaTime);
-            if (dir.sqrMagnitude > .0001f) rb.rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        }
+        void MoveTo(Vector2 dest, float speed) => MoveBehaviour(dest,speed);
     }
 }

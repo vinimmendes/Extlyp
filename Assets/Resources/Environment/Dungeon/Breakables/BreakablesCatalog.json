@@ -1,0 +1,993 @@
+{
+  "version": 1,
+  "cellSize": 1.06,
+  "worldFootprint": 0.9,
+  "art": [
+    {
+      "family": "Urn",
+      "variant": 1,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Props/CAT-P05_v01",
+      "rect": {
+        "x": 0.09409888357256778,
+        "y": 0.09409888357256778,
+        "width": 0.8125996810207337,
+        "height": 0.8118022328548644
+      }
+    },
+    {
+      "family": "Urn",
+      "variant": 1,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Props/CAT-P10_v01",
+      "rect": {
+        "x": 0.24800637958532695,
+        "y": 0.24720893141945774,
+        "width": 0.5047846889952153,
+        "height": 0.5047846889952153
+      }
+    },
+    {
+      "family": "Crate",
+      "variant": 1,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Breakables/Crate_v01",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Crate",
+      "variant": 1,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Breakables/Crate_v01",
+      "rect": {
+        "x": 0.5,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Barrel",
+      "variant": 1,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Breakables/Barrel_v01",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Barrel",
+      "variant": 1,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Breakables/Barrel_v01",
+      "rect": {
+        "x": 0.5,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Urn",
+      "variant": 2,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Props/CAT-P05_v02",
+      "rect": {
+        "x": 0.07974481658692185,
+        "y": 0.08213716108452951,
+        "width": 0.8405103668261563,
+        "height": 0.8365231259968102
+      }
+    },
+    {
+      "family": "Urn",
+      "variant": 2,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Props/CAT-P10_v02",
+      "rect": {
+        "x": 0.20494417862838915,
+        "y": 0.215311004784689,
+        "width": 0.5925039872408293,
+        "height": 0.5717703349282297
+      }
+    },
+    {
+      "family": "Crate",
+      "variant": 2,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Breakables/Crate_v02",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Crate",
+      "variant": 2,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Breakables/Crate_v02",
+      "rect": {
+        "x": 0.5,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Barrel",
+      "variant": 2,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Breakables/Barrel_v02",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Barrel",
+      "variant": 2,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Breakables/Barrel_v02",
+      "rect": {
+        "x": 0.5,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Urn",
+      "variant": 3,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Props/CAT-P05_v03",
+      "rect": {
+        "x": 0.08133971291866028,
+        "y": 0.07575757575757576,
+        "width": 0.8373205741626795,
+        "height": 0.8413078149920256
+      }
+    },
+    {
+      "family": "Urn",
+      "variant": 3,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Props/CAT-P10_v03",
+      "rect": {
+        "x": 0.22248803827751196,
+        "y": 0.2503987240829346,
+        "width": 0.5462519936204147,
+        "height": 0.5087719298245614
+      }
+    },
+    {
+      "family": "Crate",
+      "variant": 3,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Breakables/Crate_v03",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Crate",
+      "variant": 3,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Breakables/Crate_v03",
+      "rect": {
+        "x": 0.5,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Barrel",
+      "variant": 3,
+      "state": "Intact",
+      "resource": "Environment/Dungeon/Breakables/Barrel_v03",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    },
+    {
+      "family": "Barrel",
+      "variant": 3,
+      "state": "Broken",
+      "resource": "Environment/Dungeon/Breakables/Barrel_v03",
+      "rect": {
+        "x": 0.5,
+        "y": 0,
+        "width": 0.5,
+        "height": 1
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "id": 0,
+      "room": 0,
+      "group": "Entry",
+      "cellX": 8,
+      "cellY": 102,
+      "x": -58.83,
+      "y": 40.81,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 0
+    },
+    {
+      "id": 1,
+      "room": 1,
+      "group": "Entry",
+      "cellX": 20,
+      "cellY": 114,
+      "x": -46.11,
+      "y": 53.53,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 90
+    },
+    {
+      "id": 2,
+      "room": 2,
+      "group": "Entry",
+      "cellX": 100,
+      "cellY": 114,
+      "x": 38.69,
+      "y": 53.53,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 180
+    },
+    {
+      "id": 3,
+      "room": 3,
+      "group": "Entry",
+      "cellX": 112,
+      "cellY": 102,
+      "x": 51.41,
+      "y": 40.81,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 270
+    },
+    {
+      "id": 4,
+      "room": 4,
+      "group": "Entry",
+      "cellX": 8,
+      "cellY": 20,
+      "x": -58.83,
+      "y": -46.11,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 0
+    },
+    {
+      "id": 5,
+      "room": 5,
+      "group": "Entry",
+      "cellX": 20,
+      "cellY": 8,
+      "x": -46.11,
+      "y": -58.83,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 90
+    },
+    {
+      "id": 6,
+      "room": 6,
+      "group": "Entry",
+      "cellX": 76,
+      "cellY": 4,
+      "x": 13.25,
+      "y": -63.07,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 180
+    },
+    {
+      "id": 7,
+      "room": 7,
+      "group": "Entry",
+      "cellX": 114,
+      "cellY": 44,
+      "x": 53.53,
+      "y": -20.67,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 270
+    },
+    {
+      "id": 8,
+      "room": 8,
+      "group": "Room",
+      "cellX": 33,
+      "cellY": 99,
+      "x": -32.33,
+      "y": 37.63,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 0
+    },
+    {
+      "id": 9,
+      "room": 8,
+      "group": "Room",
+      "cellX": 48,
+      "cellY": 112,
+      "x": -16.43,
+      "y": 51.41,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 90
+    },
+    {
+      "id": 10,
+      "room": 8,
+      "group": "Room",
+      "cellX": 31,
+      "cellY": 112,
+      "x": -34.45,
+      "y": 51.41,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 180
+    },
+    {
+      "id": 11,
+      "room": 9,
+      "group": "Room",
+      "cellX": 58,
+      "cellY": 101,
+      "x": -5.83,
+      "y": 39.75,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 270
+    },
+    {
+      "id": 12,
+      "room": 9,
+      "group": "Room",
+      "cellX": 71,
+      "cellY": 114,
+      "x": 7.95,
+      "y": 53.53,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 0
+    },
+    {
+      "id": 13,
+      "room": 9,
+      "group": "Room",
+      "cellX": 56,
+      "cellY": 114,
+      "x": -7.95,
+      "y": 53.53,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 90
+    },
+    {
+      "id": 14,
+      "room": 10,
+      "group": "Room",
+      "cellX": 81,
+      "cellY": 99,
+      "x": 18.55,
+      "y": 37.63,
+      "family": "Crate",
+      "variant": 3,
+      "angle": 180
+    },
+    {
+      "id": 15,
+      "room": 10,
+      "group": "Room",
+      "cellX": 96,
+      "cellY": 112,
+      "x": 34.45,
+      "y": 51.41,
+      "family": "Crate",
+      "variant": 1,
+      "angle": 270
+    },
+    {
+      "id": 16,
+      "room": 10,
+      "group": "Room",
+      "cellX": 79,
+      "cellY": 112,
+      "x": 16.43,
+      "y": 51.41,
+      "family": "Crate",
+      "variant": 2,
+      "angle": 0
+    },
+    {
+      "id": 17,
+      "room": 11,
+      "group": "Room",
+      "cellX": 102,
+      "cellY": 77,
+      "x": 40.81,
+      "y": 14.31,
+      "family": "Crate",
+      "variant": 3,
+      "angle": 90
+    },
+    {
+      "id": 18,
+      "room": 11,
+      "group": "Room",
+      "cellX": 113,
+      "cellY": 88,
+      "x": 52.47,
+      "y": 25.97,
+      "family": "Crate",
+      "variant": 1,
+      "angle": 180
+    },
+    {
+      "id": 19,
+      "room": 11,
+      "group": "Room",
+      "cellX": 100,
+      "cellY": 90,
+      "x": 38.69,
+      "y": 28.09,
+      "family": "Crate",
+      "variant": 2,
+      "angle": 270
+    },
+    {
+      "id": 20,
+      "room": 12,
+      "group": "Room",
+      "cellX": 102,
+      "cellY": 51,
+      "x": 40.81,
+      "y": -13.25,
+      "family": "Barrel",
+      "variant": 3,
+      "angle": 0
+    },
+    {
+      "id": 21,
+      "room": 12,
+      "group": "Room",
+      "cellX": 115,
+      "cellY": 68,
+      "x": 54.59,
+      "y": 4.77,
+      "family": "Barrel",
+      "variant": 1,
+      "angle": 90
+    },
+    {
+      "id": 22,
+      "room": 12,
+      "group": "Room",
+      "cellX": 100,
+      "cellY": 68,
+      "x": 38.69,
+      "y": 4.77,
+      "family": "Barrel",
+      "variant": 2,
+      "angle": 180
+    },
+    {
+      "id": 23,
+      "room": 13,
+      "group": "Room",
+      "cellX": 108,
+      "cellY": 9,
+      "x": 47.17,
+      "y": -57.77,
+      "family": "Barrel",
+      "variant": 3,
+      "angle": 270
+    },
+    {
+      "id": 24,
+      "room": 13,
+      "group": "Room",
+      "cellX": 99,
+      "cellY": 22,
+      "x": 37.63,
+      "y": -43.99,
+      "family": "Barrel",
+      "variant": 1,
+      "angle": 0
+    },
+    {
+      "id": 25,
+      "room": 13,
+      "group": "Room",
+      "cellX": 116,
+      "cellY": 22,
+      "x": 55.65,
+      "y": -43.99,
+      "family": "Barrel",
+      "variant": 2,
+      "angle": 90
+    },
+    {
+      "id": 26,
+      "room": 14,
+      "group": "Room",
+      "cellX": 82,
+      "cellY": 13,
+      "x": 19.61,
+      "y": -53.53,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 180
+    },
+    {
+      "id": 27,
+      "room": 14,
+      "group": "Room",
+      "cellX": 93,
+      "cellY": 26,
+      "x": 31.27,
+      "y": -39.75,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 270
+    },
+    {
+      "id": 28,
+      "room": 14,
+      "group": "Room",
+      "cellX": 80,
+      "cellY": 26,
+      "x": 17.49,
+      "y": -39.75,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 0
+    },
+    {
+      "id": 29,
+      "room": 15,
+      "group": "Room",
+      "cellX": 58,
+      "cellY": 13,
+      "x": -5.83,
+      "y": -53.53,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 90
+    },
+    {
+      "id": 30,
+      "room": 15,
+      "group": "Room",
+      "cellX": 71,
+      "cellY": 26,
+      "x": 7.95,
+      "y": -39.75,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 180
+    },
+    {
+      "id": 31,
+      "room": 15,
+      "group": "Room",
+      "cellX": 56,
+      "cellY": 26,
+      "x": -7.95,
+      "y": -39.75,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 270
+    },
+    {
+      "id": 32,
+      "room": 16,
+      "group": "Room",
+      "cellX": 33,
+      "cellY": 15,
+      "x": -32.33,
+      "y": -51.41,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 0
+    },
+    {
+      "id": 33,
+      "room": 16,
+      "group": "Room",
+      "cellX": 48,
+      "cellY": 28,
+      "x": -16.43,
+      "y": -37.63,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 90
+    },
+    {
+      "id": 34,
+      "room": 16,
+      "group": "Room",
+      "cellX": 31,
+      "cellY": 28,
+      "x": -34.45,
+      "y": -37.63,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 180
+    },
+    {
+      "id": 35,
+      "room": 17,
+      "group": "Room",
+      "cellX": 24,
+      "cellY": 37,
+      "x": -41.87,
+      "y": -28.09,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 270
+    },
+    {
+      "id": 36,
+      "room": 17,
+      "group": "Room",
+      "cellX": 12,
+      "cellY": 50,
+      "x": -54.59,
+      "y": -14.31,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 0
+    },
+    {
+      "id": 37,
+      "room": 17,
+      "group": "Room",
+      "cellX": 27,
+      "cellY": 50,
+      "x": -38.69,
+      "y": -14.31,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 90
+    },
+    {
+      "id": 38,
+      "room": 18,
+      "group": "Room",
+      "cellX": 14,
+      "cellY": 59,
+      "x": -52.47,
+      "y": -4.77,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 180
+    },
+    {
+      "id": 39,
+      "room": 18,
+      "group": "Room",
+      "cellX": 27,
+      "cellY": 76,
+      "x": -38.69,
+      "y": 13.25,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 270
+    },
+    {
+      "id": 40,
+      "room": 18,
+      "group": "Room",
+      "cellX": 27,
+      "cellY": 62,
+      "x": -38.69,
+      "y": -1.59,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 0
+    },
+    {
+      "id": 41,
+      "room": 19,
+      "group": "Room",
+      "cellX": 29,
+      "cellY": 81,
+      "x": -36.57,
+      "y": 18.55,
+      "family": "Crate",
+      "variant": 3,
+      "angle": 90
+    },
+    {
+      "id": 42,
+      "room": 19,
+      "group": "Room",
+      "cellX": 44,
+      "cellY": 94,
+      "x": -20.67,
+      "y": 32.33,
+      "family": "Crate",
+      "variant": 1,
+      "angle": 180
+    },
+    {
+      "id": 43,
+      "room": 19,
+      "group": "Room",
+      "cellX": 27,
+      "cellY": 94,
+      "x": -38.69,
+      "y": 32.33,
+      "family": "Crate",
+      "variant": 2,
+      "angle": 270
+    },
+    {
+      "id": 44,
+      "room": 20,
+      "group": "Room",
+      "cellX": 48,
+      "cellY": 55,
+      "x": -16.43,
+      "y": -9.01,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 0
+    },
+    {
+      "id": 45,
+      "room": 20,
+      "group": "Room",
+      "cellX": 61,
+      "cellY": 72,
+      "x": -2.65,
+      "y": 9.01,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 90
+    },
+    {
+      "id": 46,
+      "room": 20,
+      "group": "Room",
+      "cellX": 46,
+      "cellY": 72,
+      "x": -18.55,
+      "y": 9.01,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 180
+    },
+    {
+      "id": 47,
+      "room": 21,
+      "group": "Room",
+      "cellX": 76,
+      "cellY": 55,
+      "x": 13.25,
+      "y": -9.01,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 270
+    },
+    {
+      "id": 48,
+      "room": 21,
+      "group": "Room",
+      "cellX": 67,
+      "cellY": 72,
+      "x": 3.71,
+      "y": 9.01,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 0
+    },
+    {
+      "id": 49,
+      "room": 21,
+      "group": "Room",
+      "cellX": 84,
+      "cellY": 71,
+      "x": 21.73,
+      "y": 7.95,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 90
+    },
+    {
+      "id": 50,
+      "room": 22,
+      "group": "Room",
+      "cellX": 70,
+      "cellY": 81,
+      "x": 6.89,
+      "y": 18.55,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 180
+    },
+    {
+      "id": 51,
+      "room": 22,
+      "group": "Room",
+      "cellX": 83,
+      "cellY": 94,
+      "x": 20.67,
+      "y": 32.33,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 270
+    },
+    {
+      "id": 52,
+      "room": 22,
+      "group": "Room",
+      "cellX": 68,
+      "cellY": 94,
+      "x": 4.77,
+      "y": 32.33,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 0
+    },
+    {
+      "id": 53,
+      "room": 23,
+      "group": "Room",
+      "cellX": 68,
+      "cellY": 33,
+      "x": 4.77,
+      "y": -32.33,
+      "family": "Barrel",
+      "variant": 3,
+      "angle": 90
+    },
+    {
+      "id": 54,
+      "room": 23,
+      "group": "Room",
+      "cellX": 78,
+      "cellY": 46,
+      "x": 15.37,
+      "y": -18.55,
+      "family": "Barrel",
+      "variant": 1,
+      "angle": 180
+    },
+    {
+      "id": 55,
+      "room": 23,
+      "group": "Room",
+      "cellX": 65,
+      "cellY": 46,
+      "x": 1.59,
+      "y": -18.55,
+      "family": "Barrel",
+      "variant": 2,
+      "angle": 270
+    },
+    {
+      "id": 56,
+      "room": -1,
+      "group": "Corridor",
+      "cellX": 85,
+      "cellY": 56,
+      "x": 22.79,
+      "y": -7.95,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 0
+    },
+    {
+      "id": 57,
+      "room": -1,
+      "group": "Corridor",
+      "cellX": 41,
+      "cellY": 50,
+      "x": -23.85,
+      "y": -14.31,
+      "family": "Crate",
+      "variant": 1,
+      "angle": 90
+    },
+    {
+      "id": 58,
+      "room": -1,
+      "group": "Corridor",
+      "cellX": 18,
+      "cellY": 31,
+      "x": -48.23,
+      "y": -34.45,
+      "family": "Urn",
+      "variant": 2,
+      "angle": 180
+    },
+    {
+      "id": 59,
+      "room": -1,
+      "group": "Corridor",
+      "cellX": 105,
+      "cellY": 44,
+      "x": 43.99,
+      "y": -20.67,
+      "family": "Crate",
+      "variant": 3,
+      "angle": 270
+    },
+    {
+      "id": 60,
+      "room": -1,
+      "group": "Corridor",
+      "cellX": 106,
+      "cellY": 73,
+      "x": 45.05,
+      "y": 10.07,
+      "family": "Urn",
+      "variant": 1,
+      "angle": 0
+    },
+    {
+      "id": 61,
+      "room": -1,
+      "group": "Corridor",
+      "cellX": 38,
+      "cellY": 65,
+      "x": -27.03,
+      "y": 1.59,
+      "family": "Crate",
+      "variant": 2,
+      "angle": 90
+    },
+    {
+      "id": 62,
+      "room": -1,
+      "group": "Corridor",
+      "cellX": 107,
+      "cellY": 44,
+      "x": 46.11,
+      "y": -20.67,
+      "family": "Urn",
+      "variant": 3,
+      "angle": 180
+    },
+    {
+      "id": 63,
+      "room": -1,
+      "group": "Corridor",
+      "cellX": 41,
+      "cellY": 33,
+      "x": -23.85,
+      "y": -32.33,
+      "family": "Crate",
+      "variant": 1,
+      "angle": 270
+    }
+  ]
+}

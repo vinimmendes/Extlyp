@@ -36,6 +36,7 @@ namespace CyberExtraction.Enemies
         MonsterNavigation navigation;
         PlantVisual visual;
         double nextSpawn, nextHeal, nextAttack, pendingHealAt;
+        double staggerUntil;
         NetworkObjectReference pendingHealMother;
         Vector2 lastSeen;
         double investigateUntil;
@@ -68,6 +69,7 @@ namespace CyberExtraction.Enemies
                 MatureAt.Value = initialKind == PlantKind.AttackBulb ? Now + PlantRules.MaturationSeconds : 0;
                 nextSpawn = Now + 2; nextHeal = Now + PlantRules.HealInterval;
                 Health.OnDiedServer += Died;
+                Health.OnDamagedServer += MinionStagger;
             }
             ApplyKind();
         }
@@ -76,6 +78,7 @@ namespace CyberExtraction.Enemies
             if (IsServer)
             {
                 Health.OnDiedServer -= Died;
+                Health.OnDamagedServer -= MinionStagger;
                 if (CurrentKind == PlantKind.Mother) ClearChildren();
             }
             Kind.OnValueChanged -= KindChanged; All.Remove(this);
@@ -209,11 +212,13 @@ namespace CyberExtraction.Enemies
                 if (Vector2.Distance(pos, goal) <= PlantRules.AttackRange && Now >= nextAttack)
                 {
                     nextAttack = Now + PlantRules.AttackCooldown;
-                    target.GetComponent<Health>()?.ServerTakeDamage(PlantRules.AttackDamage);
+                    target.GetComponent<Health>()?.ServerTakeDamage(PlantRules.AttackDamage,creatureName:
+                        CurrentKind==PlantKind.AttackBulb ? "Bulbo de ataque" : "Servo vegetal");
                 }
             }
             else if (Now < investigateUntil) goal = lastSeen;
             else if (Vector2.Distance(pos, motherPos) < 2.2f) { body.linearVelocity = Vector2.zero; return; }
+            if(Now<staggerUntil) { body.linearVelocity=Vector2.zero; return; }
             if (navigation == null) navigation = new MonsterNavigation(PlantRules.Radius(CurrentKind));
             if (!navigation.TryGetWaypoint(pos, goal, out Vector2 waypoint)) { body.linearVelocity = Vector2.zero; return; }
             Vector2 delta = waypoint - pos;
@@ -228,9 +233,14 @@ namespace CyberExtraction.Enemies
             if (CurrentKind == PlantKind.Mother)
             {
                 ClearChildren();
-                MatchManager.Instance?.ServerDropLoot(transform.position, GameConfig.MonsterLootValue);
+                MatchManager.Instance?.ServerDropLoot(transform.position, GameConfig.MonsterLootValue,CyberExtraction.Items.LootTheme.Organic);
             }
             NetworkObject.Despawn();
+        }
+        void MinionStagger(Health source,int damage)
+        {
+            if(CurrentKind!=PlantKind.Minion || damage<=0 || source.IsDead) return;
+            staggerUntil=Now+.1; body.linearVelocity=Vector2.zero;
         }
         void ClearChildren()
         {

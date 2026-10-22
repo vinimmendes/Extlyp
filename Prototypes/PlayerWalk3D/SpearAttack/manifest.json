@@ -1,0 +1,38 @@
+{
+  "frames": 40,
+  "impactFrame": 16,
+  "fps": 50,
+  "bodyAtlas": "SpearAttack_1.png",
+  "weaponAtlas": "SpearWeapon_1.png",
+  "cell": 256,
+  "bodyWorldSize": 3.4,
+  "weaponWorldSize": 5.1,
+  "weaponPixelsPerUnit": 50.196078431372555,
+  "windup": 0.3,
+  "recovery": 0.5,
+  "worldGuid": "45e73f625b11418299001e843938306a",
+  "tipAtImpact": [
+    2.1534857034683226,
+    -0.4500000238418579
+  ],
+  "applyWeaponGripAgain": false,
+  "motionReview": {
+    "maxGripStep": 0.09829981327056883,
+    "limit": 0.1,
+    "lateralMin": -0.4500000238418579,
+    "lateralMax": -0.4500000238418579,
+    "handSpacingMin": 0.39999987483024596,
+    "handSpacingMax": 0.40000017881393435,
+    "heightMin": 1.7000000476837158,
+    "heightMax": 1.7000000476837158,
+    "impactRadius": 2.2000001582954782,
+    "guardReturnDifference": 0.0,
+    "drawbackFromGuard": 0.6199999630451203,
+    "thrustTravel": 0.7234855353832244,
+    "maximumRecoilFrame": 8,
+    "peakThrustStep": 0.09829981327056883,
+    "gifFrames": 40,
+    "gifDurationMs": 800,
+    "gifFrameDurationMs": 20
+  }
+}

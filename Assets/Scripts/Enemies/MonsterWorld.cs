@@ -11,7 +11,7 @@ using CyberExtraction.Bots;
 
 namespace CyberExtraction.Enemies
 {
-    public enum MonsterEffectKind : byte { WebShot, AcidShot, Web, AcidPool, Corpse, Shout }
+    public enum MonsterEffectKind : byte { WebShot, AcidShot, Web, AcidPool, Corpse, Shout, WebWarning }
     [Serializable]
     public struct MonsterEffect : INetworkSerializable, IEquatable<MonsterEffect>
     {
@@ -33,13 +33,14 @@ namespace CyberExtraction.Enemies
         static readonly Dictionary<int,GameObject> visuals=new Dictionary<int,GameObject>();
         static readonly List<int> stale=new List<int>();
         static MatchManager Manager => MatchManager.Instance;
-        public static void Add(MonsterEffectKind kind,Vector2 from,Vector2 to,float radius,float seconds)
+        public static bool Add(MonsterEffectKind kind,Vector2 from,Vector2 to,float radius,float seconds)
         {
-            var m=Manager; if(m==null || !m.IsServer || m.CurrentState!=MatchState.Running) return;
+            var m=Manager; if(m==null || !m.IsServer || m.CurrentState!=MatchState.Running) return false;
             // Bound long-lived traps/corpses to keep replication finite in long sessions.
-            if(m.MonsterEffects.Count>=256) return;
+            if(m.MonsterEffects.Count>=256) return false;
             double now=m.NetworkManager.ServerTime.Time;
             m.MonsterEffects.Add(new MonsterEffect {Id=++nextId,Kind=kind,From=from,To=to,Radius=radius,Start=now,End=now+seconds});
+            return true;
         }
         public static void AddCorpse(Vector2 point) { Add(MonsterEffectKind.Corpse,point,point,.6f,45); }
         public static int CountNear(MonsterEffectKind kind,Vector2 point,float radius)
@@ -68,6 +69,15 @@ namespace CyberExtraction.Enemies
             for(int i=m.MonsterEffects.Count-1;i>=0;i--)
             {
                 var e=m.MonsterEffects[i];
+                if(e.Kind==MonsterEffectKind.WebWarning)
+                {
+                    if(now>=e.End)
+                    {
+                        e.Kind=MonsterEffectKind.Web; e.Start=now; e.End=now+8;
+                        m.MonsterEffects[i]=e;
+                    }
+                    continue;
+                }
                 bool shot=e.Kind==MonsterEffectKind.WebShot || e.Kind==MonsterEffectKind.AcidShot;
                 if(shot)
                 {
@@ -82,7 +92,7 @@ namespace CyberExtraction.Enemies
                             bool wall=(GameConfig.WallMask & (1<<hit.collider.gameObject.layer))!=0;
                             if(!wall && (victim==null || !victim.IsAlive)) continue;
                             impact=true; impactPoint=hit.centroid;
-                            if(victim!=null && e.Kind==MonsterEffectKind.AcidShot) victim.GetComponent<Health>().ServerTakeDamage(10);
+                            if(victim!=null && e.Kind==MonsterEffectKind.AcidShot) victim.GetComponent<Health>().ServerTakeDamage(10,null,DamageKind.Environmental,"Corrosivo");
                             break;
                         }
                     }
@@ -101,7 +111,7 @@ namespace CyberExtraction.Enemies
                     if(inv==null || !inv.IsAlive || Vector2.Distance(inv.transform.position,e.To)>e.Radius+.35f ||
                         Physics2D.Linecast(e.To,inv.transform.position,GameConfig.WallMask).collider!=null) continue;
                     if(e.Kind==MonsterEffectKind.Web) inv.ServerSlowUntil=Mathf.Max(inv.ServerSlowUntil,Time.time+1);
-                    else if(acidTick) inv.GetComponent<Health>().ServerTakeDamage(4);
+                    else if(acidTick) inv.GetComponent<Health>().ServerTakeDamage(4,null,DamageKind.Environmental,"Corrosivo");
                 }
             }
         }
@@ -112,7 +122,7 @@ namespace CyberExtraction.Enemies
             int index=-1; float nearest=distance;
             for(int i=0;i<m.MonsterEffects.Count;i++)
             {
-                var e=m.MonsterEffects[i]; if(e.Kind!=MonsterEffectKind.Web) continue;
+                var e=m.MonsterEffects[i]; if(e.Kind!=MonsterEffectKind.Web && e.Kind!=MonsterEffectKind.WebWarning) continue;
                 Vector2 delta=e.To-origin; float along=Vector2.Dot(delta,direction);
                 float perpendicular=delta.sqrMagnitude-along*along;
                 if(perpendicular>e.Radius*e.Radius) continue;
@@ -140,14 +150,16 @@ namespace CyberExtraction.Enemies
                 bool shot=e.Kind==MonsterEffectKind.WebShot || e.Kind==MonsterEffectKind.AcidShot;
                 Vector2 point=shot ? Position(e,now) : e.To;
                 go.transform.position=point;
-                bool visible=local!=null && BotController.InVision(local.transform.position,local.transform.eulerAngles.z,point) &&
+                bool visible=local!=null && BotController.InVision(local.transform.position,local.transform.eulerAngles.z,point,local) &&
                     Physics2D.Linecast(local.transform.position,point,GameConfig.VisionMask).collider==null;
                 go.SetActive(visible);
                 var sr=go.GetComponent<SpriteRenderer>();
                 Color tint=e.Kind==MonsterEffectKind.Corpse ? new Color(.4f,.08f,.09f) : e.Kind==MonsterEffectKind.Shout ? new Color(1,.2f,.5f,.2f) :
                     e.Kind==MonsterEffectKind.Web || e.Kind==MonsterEffectKind.WebShot ? new Color(.8f,.7f,1,.65f) : new Color(.45f,.9f,.05f,.65f);
-                bool groundHazard=e.Kind==MonsterEffectKind.Web || e.Kind==MonsterEffectKind.AcidPool;
-                SpriteFactory.Setup(sr,groundHazard ? MonsterHazardArt.Get(e.Kind) : SpriteFactory.Circle,groundHazard ? Color.white : tint,shot ? 7 : 2);
+                bool warning=e.Kind==MonsterEffectKind.WebWarning;
+                bool groundHazard=warning || e.Kind==MonsterEffectKind.Web || e.Kind==MonsterEffectKind.AcidPool;
+                var groundColor=warning ? new Color(1,.82f,.52f,.35f+.3f*(float)Mathf.Clamp01((float)((now-e.Start)/.8))) : Color.white;
+                SpriteFactory.Setup(sr,groundHazard ? MonsterHazardArt.Get(warning ? MonsterEffectKind.Web : e.Kind) : SpriteFactory.Circle,groundHazard ? groundColor : tint,shot ? 7 : 2);
                 float size=shot ? .4f : e.Radius*2;
                 if(e.Kind==MonsterEffectKind.Shout) size *= (float)Mathf.Clamp01((float)(now-e.Start));
                 go.transform.localScale=Vector3.one*size;

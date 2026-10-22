@@ -9,7 +9,7 @@ $cookInventoryArgs+=Get-ChildItem -LiteralPath $cookInventoryRuntime.FullName -F
     try { [Reflection.AssemblyName]::GetAssemblyName($_.FullName) | Out-Null; '/r:"'+$_.FullName+'"' }
     catch [System.BadImageFormatException] { }
 }
-$cookInventoryArgs+=@('Tools/Audit/CookingInventoryProbe.cs','Assets/Scripts/Items/InventoryGrid.cs','Assets/Scripts/Items/ItemCatalog.cs','Assets/Scripts/Items/FishingGame.cs','Assets/Scripts/Camp/CampModels.cs','Assets/Scripts/Camp/CampActivity.cs','Assets/Scripts/Camp/CampTestResources.cs') | ForEach-Object { '"'+(Join-Path $cookInventoryRoot $_)+'"' }
+$cookInventoryArgs+=@('Tools/Audit/CookingInventoryProbe.cs','Assets/Scripts/Items/InventoryGrid.cs','Assets/Scripts/Items/ItemCatalog.cs','Assets/Scripts/Items/WeaponSwitchTiming.cs','Assets/Scripts/Items/FishingGame.cs','Assets/Scripts/Camp/CampModels.cs','Assets/Scripts/Camp/CampActivity.cs','Assets/Scripts/Camp/CampTestResources.cs') | ForEach-Object { '"'+(Join-Path $cookInventoryRoot $_)+'"' }
 $cookInventoryResponse=Join-Path $cookInventoryOutput 'compile.rsp'
 $cookInventoryArgs | Set-Content -LiteralPath $cookInventoryResponse
 $cookInventoryDotnet=Join-Path $UnityRoot 'Data/NetCoreRuntime/dotnet.exe'

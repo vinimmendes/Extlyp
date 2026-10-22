@@ -24,7 +24,7 @@ namespace CyberExtraction.Match
             if(inv==null || !inv.IsAlive || inv.Lockpicking.Value) return;
             foreach(var gate in ForestPassage.All)
                 if(gate.RouteId==id && gate.Route.Condition==RouteCondition.Gated && gate.CanOperate(inv))
-                { OpenedPassages.Value|=1u<<id; return; }
+                { OpenedPassages.Value|=1u<<id; inv.ServerAwardObjective("passage:"+id,15); return; }
         }
     }
 }

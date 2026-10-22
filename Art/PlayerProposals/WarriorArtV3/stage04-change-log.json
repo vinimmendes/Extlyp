@@ -1,0 +1,63 @@
+{
+  "stage": 4,
+  "source": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step03-armor.blend",
+  "saved_as": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step04-equipment.blend",
+  "blender": "5.2.2 LTS",
+  "modified_surfaces": [
+    {
+      "object": "GEO-helmet-forged-shell-v2",
+      "vertices": 145,
+      "faces": 145,
+      "bone": "head"
+    },
+    {
+      "object": "GEO-helmet-steel-crest",
+      "vertices": 18,
+      "faces": 10,
+      "bone": "head"
+    },
+    {
+      "object": "GEO-helmet-crown-ridge",
+      "vertices": 18,
+      "faces": 10,
+      "bone": "head"
+    },
+    {
+      "object": "GEO-visor-faceplate",
+      "vertices": 119,
+      "faces": 80,
+      "bone": "head"
+    },
+    {
+      "object": "GEO-visor-nasal",
+      "vertices": 9,
+      "faces": 4,
+      "bone": "head"
+    },
+    {
+      "object": "GEO-sword-blade",
+      "vertices": 61,
+      "faces": 61,
+      "bone": "hand.R"
+    },
+    {
+      "object": "GEO-sword-crossguard",
+      "vertices": 24,
+      "faces": 22,
+      "bone": "hand.R"
+    },
+    {
+      "object": "GEO-sword-pommel",
+      "vertices": 64,
+      "faces": 50,
+      "bone": "hand.R"
+    }
+  ],
+  "additional_changes": [
+    "Eye slit cross section sharpened",
+    "One leather grip winding added"
+  ],
+  "blade_roll_degrees": 9,
+  "preserved": "Hand positions, sword axis/length, torch, rig, keyframes, Actions, materials, cameras, lights, cloth and stage 3 armor",
+  "review": "Static viewport review at frame 1 only. Full-cycle clearance and final render appearance remain unverified."
+}

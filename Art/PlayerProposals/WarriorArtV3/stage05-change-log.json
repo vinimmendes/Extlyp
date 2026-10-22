@@ -1,0 +1,43 @@
+{
+  "stage": 5,
+  "source": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step04-equipment.blend",
+  "saved_as": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step05-cloth-leather.blend",
+  "blender": "5.2.2 LTS",
+  "modified_objects": [
+    "GEO-short-red-cape",
+    "GEO-red-tabard",
+    "GEO-scarf-wrap",
+    "GEO-scarf-fold-0",
+    "GEO-scarf-fold-1",
+    "GEO-scarf-fold-2",
+    "GEO-belt",
+    "GEO-thigh-strap-L",
+    "GEO-glove-L",
+    "GEO-thigh-strap-R",
+    "GEO-glove-R",
+    "GEO-belt-buckle"
+  ],
+  "added_construction_details": [
+    "GEO-cape-hem-step05",
+    "GEO-cape-side-L-step05",
+    "GEO-cape-side-R-step05",
+    "GEO-tabard-hem-step05",
+    "GEO-tabard-side-L-step05",
+    "GEO-tabard-side-R-step05",
+    "GEO-belt-edge-lower-step05",
+    "GEO-belt-edge-upper-step05",
+    "GEO-thigh-strap-edge-L-lower-step05",
+    "GEO-thigh-strap-edge-L-upper-step05",
+    "GEO-glove-seam-L--1-step05",
+    "GEO-glove-seam-L-1-step05",
+    "GEO-thigh-strap-edge-R-lower-step05",
+    "GEO-thigh-strap-edge-R-upper-step05",
+    "GEO-glove-seam-R--1-step05",
+    "GEO-glove-seam-R-1-step05",
+    "GEO-belt-buckle-pin-step05",
+    "GEO-pouch-flap-seam-step05"
+  ],
+  "cloth_method": "Existing vertex topology, indices and weights retained; positions only. Hems inherit the sampled edge vertex weights.",
+  "preserved": "Rig, Actions, keyframes, hand contacts, equipment, prior armor/helmet/sword edits, materials, lighting and cameras.",
+  "review": "Static frame 1 viewport only; cloth clearance throughout the cycle is not validated. No playback, renders, simulations, Unity tests or builds."
+}

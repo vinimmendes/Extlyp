@@ -1,0 +1,71 @@
+{
+  "stage": 8,
+  "file": "C:/Users/Vinni/Documents/GitHub/Extlyp/Art/PlayerProposals/WarriorArtV3/working-v3/warrior_v3-step08-lighting.blend",
+  "blender": "5.2.2 LTS",
+  "frame": 1,
+  "camera": "CAM-game-topdown",
+  "resolution": [
+    640,
+    640
+  ],
+  "engine": "CYCLES",
+  "samples": 128,
+  "denoising": true,
+  "color": {
+    "transform": "Standard",
+    "exposure": -0.3499999940395355
+  },
+  "lights": [
+    {
+      "name": "LGT-key",
+      "type": "AREA",
+      "energy": 470.0,
+      "color": [
+        1.0,
+        0.9200000166893005,
+        0.8100000023841858
+      ],
+      "size": 4.0,
+      "parent_bone": ""
+    },
+    {
+      "name": "LGT-fill",
+      "type": "AREA",
+      "energy": 130.0,
+      "color": [
+        0.7799999713897705,
+        0.8600000143051147,
+        1.0
+      ],
+      "size": 4.0,
+      "parent_bone": ""
+    },
+    {
+      "name": "LGT-rim",
+      "type": "AREA",
+      "energy": 170.0,
+      "color": [
+        0.8199999928474426,
+        0.8799999952316284,
+        1.0
+      ],
+      "size": 3.0,
+      "parent_bone": ""
+    },
+    {
+      "name": "LGT-torch-warm-step08",
+      "type": "POINT",
+      "energy": 42.0,
+      "color": [
+        1.0,
+        0.36000001430511475,
+        0.07500000298023224
+      ],
+      "size": null,
+      "parent_bone": "hand.L"
+    }
+  ],
+  "comparison": "Both v2 and v3 rendered at frame 1 in Blender 5.2.2, 640px, Cycles 128 samples and denoising. Same camera and framing. V2 retains original illumination/materials/color exposure; v3 shows stage 8 art direction. No frame alignment by cropping or shifting.",
+  "review": "Single-frame art deliverable inspected. No cycle playback/render, simulation, Unity test or build. Not temporal or collision validation.",
+  "approval": "Pending user review before stage 9."
+}

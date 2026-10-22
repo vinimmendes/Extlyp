@@ -1,0 +1,12 @@
+{
+  "Assets\\Resources\\UI\\Prefabs\\Activities.prefab": "ba047e90393dff98a78760b7a0aa78cec98ffa4ff96f0034fa5107977756ab24",
+  "Assets\\Resources\\UI\\Prefabs\\Cabin.prefab": "6a97843c561c9638dca1ebbb1af7d28bc79b7244118e691ba0ae2a7a344e24da",
+  "Assets\\Resources\\UI\\Prefabs\\Expedition.prefab": "c6b99cedb5666d3d6721df2e8272bfc51cb7ae731ddd3a9659c49a2fbd6c3c56",
+  "Assets\\Resources\\UI\\Prefabs\\Hud.prefab": "8ff526e7b08e66ed1e25a68a51d3e3ffbe986c8c58b89520cae2282c319dc168",
+  "Assets\\Resources\\UI\\Prefabs\\Inventory.prefab": "d8d5e23a9bddb42dba24d9e995b3ca76ba2e54c73a0c26a118883336abe943d2",
+  "Assets\\Resources\\UI\\Prefabs\\ItemSlot.prefab": "b3ba95308290c26de11ce31fcb9e03d3f757887f8c472f1e298bf75864765333",
+  "Assets\\Resources\\UI\\Prefabs\\Menus.prefab": "7857b01ad475b7b57aa192cf1b1e66e5033e419308cd49f1b246755f41c62665",
+  "Assets\\Resources\\UI\\Prefabs\\Organizer.prefab": "b6f14e3ddd9537aecb7e93a2bfb79bd4339397a23bab391ab7cf83a14b4e19af",
+  "Assets\\Resources\\UI\\Prefabs\\PlayerInterface.prefab": "a67b73d7926f551b1ec92b3e71292e4cbbbe184f00087c8f7177a395ce88ed28",
+  "Assets\\Resources\\UI\\Prefabs\\Results.prefab": "3b13f03e99b9ae8bf78c7f59963d34e5b894f5e1469685fcbc72a7baa3dbb145"
+}

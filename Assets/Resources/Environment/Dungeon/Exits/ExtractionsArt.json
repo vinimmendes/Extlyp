@@ -1,0 +1,374 @@
+{
+  "assets": [
+    {
+      "id": "CAT-E01_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E01_v01",
+      "x": 0.06539074960127592,
+      "y": 0.08692185007974482,
+      "width": 0.8700159489633174,
+      "height": 0.8277511961722488,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E02_v01_f01",
+      "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+      "x": 0.0234375,
+      "y": 0.771484375,
+      "width": 0.4576822916666667,
+      "height": 0.146484375,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E02_v01_f02",
+      "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+      "x": 0.5201822916666666,
+      "y": 0.771484375,
+      "width": 0.4576822916666667,
+      "height": 0.146484375,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E02_v01_f03",
+      "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+      "x": 0.0234375,
+      "y": 0.544921875,
+      "width": 0.4576822916666667,
+      "height": 0.146484375,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E02_v01_f04",
+      "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+      "x": 0.5201822916666666,
+      "y": 0.544921875,
+      "width": 0.4576822916666667,
+      "height": 0.146484375,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E02_v01_f05",
+      "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+      "x": 0.0234375,
+      "y": 0.3125,
+      "width": 0.4576822916666667,
+      "height": 0.146484375,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E02_v01_f06",
+      "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+      "x": 0.5201822916666666,
+      "y": 0.3125,
+      "width": 0.4576822916666667,
+      "height": 0.146484375,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E02_v01_f07",
+      "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+      "x": 0.0234375,
+      "y": 0.0830078125,
+      "width": 0.4576822916666667,
+      "height": 0.1484375,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E02_v01_f08",
+      "resource": "Environment/Dungeon/Exits/CAT-E02_v01",
+      "x": 0.5201822916666666,
+      "y": 0.083984375,
+      "width": 0.4576822916666667,
+      "height": 0.146484375,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E03_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E03_v01",
+      "x": 0.09330143540669857,
+      "y": 0.09569377990430622,
+      "width": 0.8149920255183413,
+      "height": 0.8205741626794258,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E04_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E04_v01",
+      "x": 0.02711323763955343,
+      "y": 0.03907496012759171,
+      "width": 0.9457735247208932,
+      "height": 0.9186602870813397,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E05_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E05_v01",
+      "x": 0.05901116427432217,
+      "y": 0.06299840510366826,
+      "width": 0.8827751196172249,
+      "height": 0.8899521531100478,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E06_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E06_v01",
+      "x": 0.10685805422647528,
+      "y": 0.10925039872408293,
+      "width": 0.8429027113237639,
+      "height": 0.7783094098883573,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E07_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E07_v01",
+      "x": 0.21241379310344827,
+      "y": 0.016136468418626097,
+      "width": 0.5779310344827586,
+      "height": 0.9732595666205625,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E07_v02",
+      "resource": "Environment/Dungeon/Exits/CAT-E07_v02",
+      "x": 0.2317241379310345,
+      "y": 0.03319502074688797,
+      "width": 0.5365517241379311,
+      "height": 0.9414476717381282,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E07_v03",
+      "resource": "Environment/Dungeon/Exits/CAT-E07_v03",
+      "x": 0.31862068965517243,
+      "y": 0.03456221198156682,
+      "width": 0.3641379310344828,
+      "height": 0.9336405529953917,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E08_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E08_v01",
+      "x": 0.006764374295377677,
+      "y": 0.16459977452085683,
+      "width": 0.9875986471251409,
+      "height": 0.6888387824126269,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E09_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E09_v01",
+      "x": 0.04171364148816235,
+      "y": 0.21195039458850057,
+      "width": 0.9278466741826381,
+      "height": 0.5873731679819617,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E10_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E10_v01",
+      "x": 0.010085728693898134,
+      "y": 0.3455233291298865,
+      "width": 0.9803328290468987,
+      "height": 0.29255989911727615,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E10_v02",
+      "resource": "Environment/Dungeon/Exits/CAT-E10_v02",
+      "x": 0.016114180478821363,
+      "y": 0.3397790055248619,
+      "width": 0.9682320441988951,
+      "height": 0.3356353591160221,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E11_v01_f01",
+      "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+      "x": 0.15177865612648223,
+      "y": 0.75,
+      "width": 0.341501976284585,
+      "height": 0.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5238585209003216
+    },
+    {
+      "id": "CAT-E11_v01_f02",
+      "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+      "x": 0.5043478260869565,
+      "y": 0.75,
+      "width": 0.341501976284585,
+      "height": 0.25,
+      "pivotX": 0.5011574074074074,
+      "pivotY": 0.5254019292604502
+    },
+    {
+      "id": "CAT-E11_v01_f03",
+      "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+      "x": 0.15177865612648223,
+      "y": 0.5,
+      "width": 0.341501976284585,
+      "height": 0.25,
+      "pivotX": 0.5,
+      "pivotY": 0.517427652733119
+    },
+    {
+      "id": "CAT-E11_v01_f04",
+      "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+      "x": 0.5043478260869565,
+      "y": 0.5,
+      "width": 0.341501976284585,
+      "height": 0.25,
+      "pivotX": 0.5011574074074074,
+      "pivotY": 0.5189710610932475
+    },
+    {
+      "id": "CAT-E11_v01_f05",
+      "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+      "x": 0.15177865612648223,
+      "y": 0.25,
+      "width": 0.341501976284585,
+      "height": 0.25,
+      "pivotX": 0.5011574074074074,
+      "pivotY": 0.5125401929260449
+    },
+    {
+      "id": "CAT-E11_v01_f06",
+      "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+      "x": 0.5051383399209486,
+      "y": 0.25,
+      "width": 0.341501976284585,
+      "height": 0.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5109967845659167
+    },
+    {
+      "id": "CAT-E11_v01_f07",
+      "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+      "x": 0.15177865612648223,
+      "y": 0.0,
+      "width": 0.341501976284585,
+      "height": 0.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5045659163987141
+    },
+    {
+      "id": "CAT-E11_v01_f08",
+      "resource": "Environment/Dungeon/Exits/CAT-E11_v01",
+      "x": 0.5067193675889328,
+      "y": 0.0,
+      "width": 0.341501976284585,
+      "height": 0.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5014790996784567
+    },
+    {
+      "id": "CAT-E12_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E12_v01",
+      "x": 0.038331454340473504,
+      "y": 0.02480270574971815,
+      "width": 0.9244644870349493,
+      "height": 0.47519729425028184,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E12_v02",
+      "resource": "Environment/Dungeon/Exits/CAT-E12_v02",
+      "x": 0.21984216459977451,
+      "y": 0.003945885005636978,
+      "width": 0.560315670800451,
+      "height": 0.9937993235625705,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E13_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E13_v01",
+      "x": 0.03110047846889952,
+      "y": 0.2511961722488038,
+      "width": 0.9393939393939394,
+      "height": 0.474481658692185,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E14_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E14_v01",
+      "x": 0.03668261562998405,
+      "y": 0.04784688995215311,
+      "width": 0.9090909090909091,
+      "height": 0.9090909090909091,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E15_v01",
+      "resource": "Items/Dungeon/CAT-E15",
+      "x": 0.02631578947368421,
+      "y": 0.18740031897926634,
+      "width": 0.9481658692185008,
+      "height": 0.6618819776714514,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E16_v01",
+      "resource": "Items/Dungeon/CAT-E16",
+      "x": 0.037480063795853266,
+      "y": 0.03588516746411483,
+      "width": 0.9242424242424242,
+      "height": 0.9210526315789473,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E17_v01",
+      "resource": "Environment/Dungeon/Exits/CAT-E17_v01",
+      "x": 0.05582137161084529,
+      "y": 0.0645933014354067,
+      "width": 0.8931419457735247,
+      "height": 0.8620414673046252,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E17_v02",
+      "resource": "Environment/Dungeon/Exits/CAT-E17_v02",
+      "x": 0.04784688995215311,
+      "y": 0.05980861244019139,
+      "width": 0.9043062200956937,
+      "height": 0.879585326953748,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "id": "CAT-E17_v03",
+      "resource": "Environment/Dungeon/Exits/CAT-E17_v03",
+      "x": 0.06220095693779904,
+      "y": 0.07575757575757576,
+      "width": 0.8787878787878788,
+      "height": 0.8476874003189793,
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    }
+  ]
+}

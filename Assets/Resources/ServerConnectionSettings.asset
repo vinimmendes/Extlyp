@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: ServerConnectionSettings
   m_EditorClassIdentifier: 
   address: 127.0.0.1
+  androidAddress: 187.126.57.131
   basePort: 7777

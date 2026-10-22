@@ -12,6 +12,7 @@ using CyberExtraction.Bots;
 using CyberExtraction.Core;
 using CyberExtraction.Match;
 using CyberExtraction.Camp;
+using CyberExtraction.Players;
 
 namespace CyberExtraction.UI
 {
@@ -51,6 +52,8 @@ namespace CyberExtraction.UI
         readonly string instanceId = Guid.NewGuid().ToString("N");
         double nextLeaseRefresh;
         CampNetwork campNetwork;
+        float nextExperienceRetry;
+        long refreshedExperienceGeneration;
         bool campRegistered;
         bool campSandbox;
         float nextEffectSync;
@@ -77,6 +80,7 @@ namespace CyberExtraction.UI
             gameObject.AddComponent<ServerVisibility>();
             gameObject.AddComponent<GameHelp>();
             gameObject.AddComponent<GameOptionsMenu>();
+            gameObject.AddComponent<HudLayoutEditor>();
             gameObject.AddComponent<TestLabPanel>();
             gameObject.AddComponent<LockpickWindow>();
             gameObject.AddComponent<CampTestPanel>();
@@ -84,6 +88,7 @@ namespace CyberExtraction.UI
             gameObject.AddComponent<Quickbar>();
             gameObject.AddComponent<InventoryWindow>();
             gameObject.AddComponent<Minimap>();
+            if(!Application.isBatchMode) gameObject.AddComponent<UguiGameHud>();
             gameObject.AddComponent<ServerDebugPanel>();
             manager = NetworkManager.Singleton;
             if (manager == null) { Debug.LogError("NetworkManager nao encontrado."); return; }
@@ -92,15 +97,16 @@ namespace CyberExtraction.UI
             Register(CyberExtraction.Enemies.PlantEncounter.Prefab);
             Register(CyberExtraction.Enemies.SporeEncounter.Prefab);
             Register(Resources.Load<GameObject>("Spores/SporeCloud"));
+            Register(DungeonBreakables.Prefab);
             manager.NetworkConfig.PlayerPrefab = playerPrefab;
-            manager.NetworkConfig.ProtocolVersion = 16;
+            manager.NetworkConfig.ProtocolVersion = GameConfig.NetworkProtocol;
             campNetwork=new CampNetwork(manager,this);
             manager.NetworkConfig.ConnectionApproval = true;
             manager.ConnectionApprovalCallback = ApproveConnection;
             manager.OnClientDisconnectCallback += Disconnected;
             manager.OnClientConnectedCallback += Connected;
             var connectionSettings=ServerConnectionSettings.Load();
-            ip=connectionSettings!=null && !string.IsNullOrWhiteSpace(connectionSettings.address) ? connectionSettings.address.Trim() : "127.0.0.1";
+            ip=connectionSettings!=null ? connectionSettings.ResolveAddress(Application.platform==RuntimePlatform.Android) : "127.0.0.1";
             port=(ushort)Mathf.Clamp(connectionSettings!=null ? connectionSettings.basePort : 7777,1,65533);
             gameObject.AddComponent<ExpeditionMenu>();
             if(!GameConfig.AllowQuickTest && !ClientEnvironment.Chosen) ClientEnvironment.Select(CampEnvironment.Normal);
@@ -191,7 +197,7 @@ namespace CyberExtraction.UI
                 {
                     Vector2 point=e.Kind==CyberExtraction.Enemies.MonsterEffectKind.WebShot || e.Kind==CyberExtraction.Enemies.MonsterEffectKind.AcidShot
                         ? Vector2.Lerp(e.From,e.To,(float)((manager.ServerTime.Time-e.Start)/Math.Max(.001,e.End-e.Start))) : e.To;
-                    if(ServerVisibility.CanSee(player.transform.position,player.transform.eulerAngles.z,point))
+                    if(ServerVisibility.CanSee(player.transform.position,player.transform.eulerAngles.z,point,player.GetComponent<PlayerInventory>()))
                     {
                         var view=e;
                         if(e.Kind==CyberExtraction.Enemies.MonsterEffectKind.WebShot || e.Kind==CyberExtraction.Enemies.MonsterEffectKind.AcidShot)
@@ -209,16 +215,18 @@ namespace CyberExtraction.UI
             if(!manager.IsClient || sender!=NetworkManager.ServerClientId) return;
             reader.ReadValueSafe(out Vector2 from); reader.ReadValueSafe(out Vector2 to); reader.ReadValueSafe(out bool visual);
             reader.ReadValueSafe(out bool sound); reader.ReadValueSafe(out float noiseRadius);
-            CyberExtraction.Combat.ShotPresentation.Play(from,to,visual,sound,noiseRadius);
+            byte weapon=(byte)CyberExtraction.Items.ItemId.ImprovisedHandCrossbow;
+            if(reader.Length-reader.Position>=1) reader.ReadValueSafe(out weapon);
+            CyberExtraction.Combat.ShotPresentation.Play(from,to,visual,sound,noiseRadius,(CyberExtraction.Items.ItemId)weapon);
         }
-        public void BroadcastShot(Vector2 from,Vector2 to,bool sound=true,float noiseRadius=GameConfig.ShotNoiseRadius)
+        public void BroadcastShot(Vector2 from,Vector2 to,bool sound=true,float noiseRadius=GameConfig.ShotNoiseRadius,CyberExtraction.Items.ItemId weapon=CyberExtraction.Items.ItemId.ImprovisedHandCrossbow)
         {
             if(!manager.IsServer) return;
             foreach(var client in manager.ConnectedClientsList)
             {
                 if(client.PlayerObject==null || IsCampClient(client.ClientId)) continue;
                 var player=client.PlayerObject;
-                bool visual=ServerVisibility.CanSee(player.transform.position,player.transform.eulerAngles.z,from);
+                bool visual=ServerVisibility.CanSee(player.transform.position,player.transform.eulerAngles.z,from,player.GetComponent<PlayerInventory>());
                 if(!visual && (!sound || Vector2.Distance(from,player.transform.position)>noiseRadius)) continue;
                 // Hidden shooters emit a coarse sound cue, without endpoint or object identity.
                 var origin=visual ? from : new Vector2(Mathf.Round(from.x/2)*2,Mathf.Round(from.y/2)*2);
@@ -226,6 +234,7 @@ namespace CyberExtraction.UI
                 {
                     writer.WriteValueSafe(origin); writer.WriteValueSafe(visual ? to : origin); writer.WriteValueSafe(visual);
                     writer.WriteValueSafe(sound); writer.WriteValueSafe(noiseRadius);
+                    writer.WriteValueSafe((byte)weapon);
                     manager.CustomMessagingManager.SendNamedMessage("ce-shot",client.ClientId,writer,NetworkDelivery.Unreliable);
                 }
             }
@@ -238,21 +247,37 @@ namespace CyberExtraction.UI
             {
                 if(request.Payload==null || request.Payload.Length>4096) throw new FormatException();
                 join=JsonUtility.FromJson<CampJoinRequest>(Encoding.UTF8.GetString(request.Payload));
-                if(join==null || join.Map>(byte)ExpeditionMap.Large || join.QuickBots<0 || join.QuickBots>=GameConfig.MatchCapacity || !CampRepository.Authenticate(join)) throw new FormatException();
+                if(join==null || join.Map>(byte)ExpeditionMap.Dungeon || join.QuickBots<0 || join.QuickBots>=MapBuilder.CapacityFor((ExpeditionMap)join.Map)) throw new FormatException();
             }
             catch { response.Reason="INVALID|Identidade ou versao invalida. Atualize o cliente e confira o relogio do aparelho."; return; }
+            try
+            {
+                if(!CampRepository.Authenticate(join))
+                { response.Reason="INVALID|Autenticacao recusada. Confira o relogio do aparelho e tente novamente."; return; }
+            }
+            catch(Exception error)
+            {
+                Debug.LogError("Falha interna ao carregar o acampamento durante o login: "+error);
+                response.Reason="SERVER_ERROR|O servidor nao conseguiu carregar o acampamento. Consulte o log do servidor.";
+                return;
+            }
             if(join.CampSandbox && (!join.CampOnly || !GameConfig.AllowQuickTest)) { response.Reason="INVALID|Acampamento de teste desativado neste servidor."; return; }
             var mm=MatchManager.Instance;
             if(mm==null) { response.Reason="ROOM_BUSY|Sala iniciando."; return; }
             int slot=0;
             if(!join.CampOnly)
             {
-                if(!join.QuickTest && join.Map!=(byte)ExpeditionMap.Large)
-                { response.Reason="INVALID|A expedicao normal disponivel e Floresta Velha. Atualize o cliente."; return; }
+                if(!join.QuickTest && join.Map==(byte)ExpeditionMap.Test)
+                { response.Reason="INVALID|Selecione Floresta Velha ou Catacumbas dos Afogados."; return; }
                 if(mm.CurrentState!=MatchState.Waiting) { response.Reason="ROOM_BUSY|Partida em andamento."; return; }
-                int capacity=mm.QuickTest.Value ? 1 : GameConfig.MatchCapacity;
-                while(slot<capacity && slots.ContainsValue(slot)) slot++;
-                if(slot==capacity) { response.Reason="ROOM_FULL|Sala cheia."; return; }
+                int capacity=MapBuilder.CapacityFor((ExpeditionMap)join.Map);
+                if(slots.Count>=(join.QuickTest ? 1 : capacity)) { response.Reason="ROOM_FULL|Sala cheia."; return; }
+                // Reservoir sampling: every unreserved map point has equal chance.
+                // The slot is the spawn ID, shared with bots and return-to-shelter.
+                int available=0;
+                for(int candidate=0;candidate<capacity;candidate++)
+                    if(!slots.ContainsValue(candidate) && UnityEngine.Random.Range(0,++available)==0) slot=candidate;
+                if(available==0) { response.Reason="ROOM_FULL|Sem ponto de entrada livre."; return; }
                 if(slots.Count>0 && (mm.MapSelection.Value!=join.Map || mm.QuickTest.Value!=join.QuickTest || join.QuickTest && mm.QuickBots.Value!=join.QuickBots))
                 { response.Reason="MODE_MISMATCH|Sala usa outro mapa ou modo."; return; }
                 if(!GameConfig.AllowQuickTest && join.QuickTest) { response.Reason="INVALID|Modo de teste desativado neste servidor."; return; }
@@ -280,6 +305,7 @@ namespace CyberExtraction.UI
         void Connected(ulong client)
         {
             if (!manager.IsServer) { if(CampConnection) SendCamp(new CampCommand { Kind=CampCommandKind.Sync }); return; }
+            if(!requests.ContainsKey(client)) { manager.DisconnectClient(client,"SESSION_LOST|A sessao foi encerrada. Conecte novamente."); return; }
             if(IsCampClient(client)) { campNetwork.Sync(client); return; }
             // Esta notificacao so chega depois que o cliente sincronizou a cena.
             if (MatchManager.Instance != null && MatchManager.Instance.CurrentState == MatchState.Waiting)
@@ -290,20 +316,22 @@ namespace CyberExtraction.UI
 
         void Disconnected(ulong client)
         {
-            if (manager.IsServer && requests.TryGetValue(client, out var leaving))
+            try
             {
-                if(!leaving.CampOnly && !leaving.QuickTest)
-                {
-                    var profile=CampRepository.Get(leaving.Session);
-                    if(profile.ExpeditionState==2) CampRepository.Lose(leaving.Session,profile.ExpeditionId);
-                    else if(profile.ExpeditionState==1) CampRepository.Rollback(leaving.Session,profile.ExpeditionId);
-                }
-                CampRepository.Release(leaving.Session, LeaseOwner(client));
+                if(manager.IsServer && requests.TryGetValue(client,out var leaving))
+                    CampRepository.EndConnection(leaving.Session,LeaseOwner(client),!leaving.CampOnly && !leaving.QuickTest);
             }
-            campNetwork?.Remove(client);
-            slots.Remove(client);
-            readyClients.Remove(client);
-            requests.Remove(client);
+            catch(Exception error) { Debug.LogError("Falha ao finalizar conexao de acampamento: "+error); }
+            finally
+            {
+                try { campNetwork?.Remove(client); }
+                finally
+                {
+                    slots.Remove(client);
+                    readyClients.Remove(client);
+                    requests.Remove(client);
+                }
+            }
             if (manager.IsServer) return;
             if (client == manager.LocalClientId)
             {
@@ -325,15 +353,45 @@ namespace CyberExtraction.UI
             }
         }
 
+        void RetryExperienceRewards()
+        {
+            if(manager==null || !manager.IsServer || Time.unscaledTime<nextExperienceRetry) return;
+            nextExperienceRetry=Time.unscaledTime+2;
+            try
+            {
+                CampRepository.FlushPendingExperience();
+                long generation=CampRepository.ExperienceGeneration;
+                if(generation==refreshedExperienceGeneration) return;
+                foreach(var player in new List<PlayerInventory>(PlayerInventory.All))
+                    if(player!=null) player.ServerRefreshProgress();
+                refreshedExperienceGeneration=generation;
+            }
+            catch(Exception error) { Debug.LogError("Recompensa de XP ainda pendente de persistencia/publicacao: "+error.Message); }
+        }
         void Update()
         {
+            RetryExperienceRewards();
             if(manager!=null && !manager.IsListening) campRegistered=false;
             campNetwork?.Tick();
             if(manager!=null && manager.IsListening) BroadcastEffects();
             if (manager != null && manager.IsServer && Time.realtimeSinceStartupAsDouble >= nextLeaseRefresh)
             {
                 nextLeaseRefresh = Time.realtimeSinceStartupAsDouble + 20;
-                foreach (var entry in requests) CampRepository.Refresh(entry.Value.Session, LeaseOwner(entry.Key));
+                // Disconnect callbacks can change requests immediately; iterate a snapshot.
+                foreach(var client in new List<ulong>(requests.Keys))
+                {
+                    if(!requests.TryGetValue(client,out var join)) continue;
+                    try
+                    {
+                        if(!CampRepository.Refresh(join.Session,LeaseOwner(client)))
+                            DisconnectCampSession(client,"SESSION_LOST|Esta sala perdeu a sessao do acampamento. Conecte novamente.");
+                    }
+                    catch(Exception error)
+                    {
+                        Debug.LogError("Falha ao renovar sessao de acampamento: "+error);
+                        DisconnectCampSession(client,"SERVER_ERROR|Nao foi possivel renovar a sessao. Conecte novamente.");
+                    }
+                }
             }
             if (searching || changingConnection) return;
             if (manager == null || !reconnectMenu || manager.IsListening || manager.ShutdownInProgress ||
@@ -383,8 +441,8 @@ namespace CyberExtraction.UI
         {
             campSandbox=TestEnvironmentSelected && GameConfig.AllowQuickTest;
             quickTest=campSandbox;
-            selectedMap=campSandbox ? (ExpeditionMap)Mathf.Clamp(PlayerPrefs.GetInt("test_expedition_map",0),0,1) : ExpeditionMap.Large;
-            quickBots=campSandbox ? Mathf.Clamp(PlayerPrefs.GetInt("test_quick_bots",1),0,GameConfig.MatchCapacity-1) : 0;
+            selectedMap=campSandbox ? (ExpeditionMap)Mathf.Clamp(PlayerPrefs.GetInt("test_expedition_map",0),0,2) : ExpeditionMap.Large;
+            quickBots=campSandbox ? Mathf.Clamp(PlayerPrefs.GetInt("test_quick_bots",1),0,MapBuilder.CapacityFor(selectedMap)-1) : 0;
         }
         void SaveTestPreferences()
         {
@@ -400,11 +458,12 @@ namespace CyberExtraction.UI
             PlayerPrefs.DeleteKey("connection_message"); message="";
             BeginCamp(ip);
         }
-        public void ConfigureTestExpedition(ExpeditionMap map,int bots)
+        public void ConfigureTestExpedition(ExpeditionMap map,int bots) => ConfigureExpedition(map,bots);
+        public void ConfigureExpedition(ExpeditionMap map,int bots)
         {
-            if(!InTestCamp || ConnectionBusy) return;
-            var nextMap=map==ExpeditionMap.Large ? ExpeditionMap.Large : ExpeditionMap.Test;
-            int nextBots=Mathf.Clamp(bots,0,GameConfig.MatchCapacity-1);
+            if(!CampConnection || !CampSession.Synchronized || ConnectionBusy) return;
+            var nextMap=map==ExpeditionMap.Dungeon ? map : map==ExpeditionMap.Large || !IsTestEnvironment ? ExpeditionMap.Large : ExpeditionMap.Test;
+            int nextBots=IsTestEnvironment ? Mathf.Clamp(bots,0,MapBuilder.CapacityFor(nextMap)-1) : 0;
             if(selectedMap==nextMap && quickBots==nextBots) return;
             selectedMap=nextMap; quickBots=nextBots; SaveTestPreferences();
         }
@@ -430,7 +489,7 @@ namespace CyberExtraction.UI
         {
             bool testing=TestEnvironmentSelected && GameConfig.AllowQuickTest;
             var request = CampSession.Request(); request.CampOnly=CampConnection; request.CampSandbox=CampConnection && campSandbox && testing;
-            request.Map=(byte)(testing ? selectedMap : ExpeditionMap.Large); request.QuickTest=!CampConnection && testing && quickTest;
+            request.Map=(byte)selectedMap; request.QuickTest=!CampConnection && testing && quickTest;
             request.QuickBots=testing ? quickBots : 0;
             CampIdentity.Sign(request);
             manager.NetworkConfig.ConnectionData = Encoding.UTF8.GetBytes(JsonUtility.ToJson(request));
@@ -448,7 +507,7 @@ namespace CyberExtraction.UI
             if(TestEnvironmentSelected!=CampView.TestMode)
             { message="O ambiente recebido do servidor não corresponde ao escolhido. Volte e entre novamente."; return; }
             quickTest=IsTestEnvironment;
-            if(!quickTest) { selectedMap=ExpeditionMap.Large; quickBots=0; }
+            if(!quickTest) { if(selectedMap==ExpeditionMap.Test) selectedMap=ExpeditionMap.Large; quickBots=0; }
             StartCoroutine(ChangeToExpedition(address));
         }
         IEnumerator ChangeToExpedition(string address)
@@ -515,7 +574,7 @@ namespace CyberExtraction.UI
                 reachedRoom |= !string.IsNullOrEmpty(attemptReason);
                 string reason = attemptReason;
                 yield return StopClientConnection();
-                if (reason != null && (reason.StartsWith("INVALID|") || reason.StartsWith("DUPLICATE|")))
+                if (reason != null && (reason.StartsWith("INVALID|") || reason.StartsWith("DUPLICATE|") || reason.StartsWith("SERVER_ERROR|")))
                 { message = FriendlyReason(reason); break; }
                 message = reachedRoom ? "Não há sala disponível para esta expedição. Tente novamente em instantes." : "Não foi possível conectar ao servidor. Tente novamente.";
             }
@@ -524,7 +583,22 @@ namespace CyberExtraction.UI
             if (CampController.Instance != null) CampController.Instance.FocusCamera();
         }
 
-        string LeaseOwner(ulong client) => instanceId + ":" + client;
+        internal string LeaseOwner(ulong client) => instanceId + ":" + client;
+        internal void DisconnectCampSession(ulong client,string reason)
+        {
+            if(manager==null || !manager.IsServer || !requests.ContainsKey(client)) return;
+            campNetwork?.Remove(client);
+            // NGO despawns the player before invoking Disconnected. A superseded
+            // participant must not drop its old inventory into this room during that despawn.
+            if(manager.ConnectedClients.TryGetValue(client,out var connection) && connection.PlayerObject!=null)
+            {
+                var inv=connection.PlayerObject.GetComponent<PlayerInventory>();
+                if(inv!=null && inv.IsSpawned) inv.ServerSetStatus(PlayerStatus.TimeUp);
+            }
+            try { manager.DisconnectClient(client,reason); }
+            catch(Exception error) { Debug.LogError("Falha ao desconectar sessao de acampamento: "+error); }
+            finally { if(requests.ContainsKey(client)) Disconnected(client); }
+        }
         static string FriendlyReason(string reason)
         {
             if(string.IsNullOrEmpty(reason)) return "";

@@ -72,11 +72,12 @@ namespace CyberExtraction.Match
                     return;
                 }
                 WaitingSeconds.Value = queue.SecondsLeft(ready, Time.timeAsDouble);
-                if (queue.ShouldStart(ready, Time.timeAsDouble)) StartMatch();
+                if (queue.ShouldStart(ready, Time.timeAsDouble, MapBuilder.Capacity)) StartMatch();
             }
             else if (CurrentState == MatchState.Running)
             {
                 MonsterWorld.ServerTick(this);
+                TickDungeon();
                 timeLeft -= Time.deltaTime;
                 int s = Mathf.CeilToInt(Mathf.Max(0f, timeLeft));
                 if (s != SecondsLeft.Value) SecondsLeft.Value = s;
@@ -126,10 +127,12 @@ namespace CyberExtraction.Match
         {
             var spawnClock=System.Diagnostics.Stopwatch.StartNew();
             OpenedPassages.Value=0;
+            ResetDungeon();
             LayoutSeed.Value=Random.Range(1,int.MaxValue);
             MapBuilder.Configure((ExpeditionMap)MapSelection.Value,LayoutSeed.Value);
-            ActiveExtractions.Value=MapBuilder.Current==ExpeditionMap.Large ? LargeMapPlan.ChooseExits(LayoutSeed.Value,MapBuilder.SpawnPoints) : (ushort)1;
+            ActiveExtractions.Value=MapBuilder.Current==ExpeditionMap.Large ? LargeMapPlan.ChooseExits(LayoutSeed.Value,MapBuilder.SpawnPoints) : MapBuilder.Current==ExpeditionMap.Dungeon ? (ushort)0 : (ushort)1;
             timeLeft = GameConfig.MatchDuration;
+            DungeonBreakables.ServerSpawn();
             SecondsLeft.Value = (int)GameConfig.MatchDuration;
 
             // As vagas humanas sao reservadas pela aprovacao de conexao.
@@ -149,12 +152,13 @@ namespace CyberExtraction.Match
                     nm.DisconnectClient(client.ClientId, "A sincronizacao nao terminou a tempo. Inicie uma nova busca.");
             }
             BotCount.Value = 0;
-            int botsRequired = QuickTest.Value ? Mathf.Clamp(QuickBots.Value,0,GameConfig.MatchCapacity-1) : GameConfig.MatchCapacity - occupied.Count;
-            int firstSlot = QuickTest.Value ? (MapBuilder.Current == ExpeditionMap.Test ? (GameConfig.MatchCapacity + 1) / 2 : 1) : 0;
-            for (int index = 0; index < GameConfig.MatchCapacity && BotCount.Value < botsRequired; index++)
+            int botsRequired = QuickTest.Value ? Mathf.Clamp(QuickBots.Value,0,MapBuilder.Capacity-1) : MapBuilder.Capacity - occupied.Count;
+            var freeSlots=new List<int>();
+            for(int slot=0;slot<MapBuilder.Capacity;slot++) if(!occupied.Contains(slot)) freeSlots.Add(slot);
+            while(freeSlots.Count>0 && BotCount.Value<botsRequired)
             {
-                int slot = (firstSlot + index) % GameConfig.MatchCapacity;
-                if (occupied.Contains(slot)) continue;
+                int pick=Random.Range(0,freeSlots.Count),slot=freeSlots[pick];
+                freeSlots.RemoveAt(pick);
                 var bot = Instantiate(botPrefab, MapBuilder.ParticipantSpawn(slot),
                     Quaternion.Euler(0, 0, MapBuilder.ParticipantFacing(slot)));
                 bot.GetComponent<BotController>().difficulty = botDifficulty;
@@ -164,11 +168,14 @@ namespace CyberExtraction.Match
                 BotCount.Value++;
             }
 
-            for (int i = 0; i < MapBuilder.LootPoints.Length; i++)
+            for (int i = 0; i < (MapBuilder.Current==ExpeditionMap.Dungeon ? 0 : MapBuilder.LootPoints.Length); i++)
             {
-                SpawnRolledLoot(MapBuilder.LootPoints[i],GameplayDefinition.Current.GroundLootChancePercent);
+                // These two existing slots carry authored passage keys, outside random loot.
+                if(MapBuilder.Current==ExpeditionMap.Large && ForestLootContent.TryObjective(i,out var objective))
+                    SpawnItem(MapBuilder.LootPoints[i],objective,1);
+                else SpawnRolledLoot(MapBuilder.LootPoints[i],new LootContext(MapBuilder.Current,LootSource.Ground));
             }
-            for (int i=0;i<MapBuilder.Sites.Length;i++)
+            for (int i=0;i<(MapBuilder.Current==ExpeditionMap.Dungeon ? 0 : MapBuilder.Sites.Length);i++)
             {
                 // One server-side roll per chest slot each match, not a fixed map pattern.
                 if(monsterPrefab!=null && Random.Range(0,100)<Mathf.Clamp(GameplayDefinition.Current.MimicChestChancePercent,0,100) &&
@@ -177,8 +184,10 @@ namespace CyberExtraction.Match
                     continue;
                 }
                 var chest=Instantiate(lootPrefab,MapBuilder.Current==ExpeditionMap.Large ? MapBuilder.RuinPoint(i,new Vector2(0,4)) : MapBuilder.Sites[i]+new Vector2(0,4),Quaternion.identity);
-                var loot=chest.GetComponent<LootPickup>(); loot.initialChest=true; loot.initialRarity=ExpeditionRolls.Rarity(); loot.initialQuantity=0;
+                var loot=chest.GetComponent<LootPickup>(); loot.initialChest=true; loot.initialRarity=ExpeditionRolls.ContainerGrade(); loot.initialQuantity=0;
                 loot.initialLocked=loot.initialRarity>0 || ExpeditionRolls.Chance(30); loot.initialLockGrade=loot.initialRarity;
+                loot.ConfigureLoot(new LootContext(MapBuilder.Current,loot.initialLocked ? LootSource.ValuableContainer : LootSource.CommonContainer,
+                    loot.initialLocked ? LootRisk.Medium : LootRisk.Low));
                 chest.GetComponent<NetworkObject>().Spawn();
             }
             foreach(var fixture in MapBuilder.FurniturePoints)
@@ -186,11 +195,13 @@ namespace CyberExtraction.Match
                 var container=Instantiate(lootPrefab,fixture.Position,Quaternion.Euler(0,0,fixture.Angle));
                 var loot=container.GetComponent<LootPickup>();
                 loot.initialChest=true; loot.initialQuantity=0; loot.initialFixtureKind=fixture.Kind;
-                loot.initialRarity=ExpeditionRolls.Rarity();
+                loot.initialRarity=ExpeditionRolls.ContainerGrade();
                 loot.initialLocked=ExpeditionRolls.Chance(30); loot.initialLockGrade=loot.initialRarity;
+                loot.ConfigureLoot(new LootContext(MapBuilder.Current,loot.initialLocked ? LootSource.ValuableContainer : fixture.Source,
+                    loot.initialLocked ? LootRisk.Medium : fixture.Risk));
                 container.GetComponent<NetworkObject>().Spawn();
             }
-            if (monsterPrefab != null)
+            if (monsterPrefab != null && MapBuilder.Current!=ExpeditionMap.Dungeon)
             {
                 var positions = MapBuilder.Current == ExpeditionMap.Test ? new[] { MapBuilder.MonsterSpawn } : MapBuilder.Sites;
                 for(int i=0;i<positions.Length;i++)
@@ -212,6 +223,7 @@ namespace CyberExtraction.Match
                 foreach(var route in LargeMapPlan.Routes)
                     if(route.Condition==RouteCondition.Horde)
                         for(int member=0;member<3;member++) SpawnMonster(route.Gate+new Vector2(member*2-2,2),member==0 ? MonsterKind.Shell : MonsterKind.Listener);
+            if(MapBuilder.Current==ExpeditionMap.Dungeon) SpawnDungeonContent();
             foreach(var inv in PlayerInventory.All) if(inv!=null && inv.NetworkObject.IsPlayerObject) inv.ServerCommitExpedition();
             State.Value = (byte)MatchState.Running;
             spawnClock.Stop(); CyberExtraction.Diagnostics.MatchTelemetry.Record("spawn-ms",0,(int)spawnClock.ElapsedMilliseconds);
@@ -254,6 +266,7 @@ namespace CyberExtraction.Match
 
         void ResetRoom()
         {
+            ResetDungeon(true);
             var nm = NetworkManager.Singleton;
             var clients = new List<ulong>(nm.ConnectedClientsIds);
             foreach (ulong client in clients) if(!CyberExtraction.UI.NetworkBootstrap.Instance.IsCampClient(client)) nm.DisconnectClient(client, "Partida encerrada. Inicie uma nova busca.");
@@ -287,20 +300,23 @@ namespace CyberExtraction.Match
             if (inv != null && inv.IsSpawned && inv.IsAlive)
             {
                 CyberExtraction.Diagnostics.MatchTelemetry.Record("extraction",inv.NetworkObjectId,SecondsLeft.Value);
+                if(MapBuilder.Current==ExpeditionMap.Dungeon && (inv.CurrentExtractionExit.Value<0 || !DungeonReady(inv.CurrentExtractionExit.Value) || inv.ExtractionProgress.Value<1 || inv.Lockpicking.Value || inv.DungeonAction.Value>=0 || Vector2.Distance(inv.transform.position,DungeonLayout.ExitPositions[inv.CurrentExtractionExit.Value])>2.2f)) return;
                 if(inv.NetworkObject.IsPlayerObject && !inv.ServerBankExtraction()) return;
+                ServerReleaseDungeonTools(inv);
                 inv.ServerSetStatus(PlayerStatus.Extracted);
             }
         }
 
-        public void ServerDropLoot(Vector2 position, int value)
+        public void ServerDropLoot(Vector2 position, int value,LootTheme theme=LootTheme.General)
         {
             if (!IsServer || value <= 0) return;
-            SpawnRolledLoot(position,GameplayDefinition.Current.MonsterLootChancePercent);
+            SpawnRolledLoot(position,new LootContext(MapBuilder.Current,LootSource.Monster,LootRisk.Low,theme));
         }
 
-        void SpawnRolledLoot(Vector2 position,int chance)
+        void SpawnRolledLoot(Vector2 position,LootContext context)
         {
-            var stacks=ExpeditionRolls.Loot(chance);
+            if(!IsServer) return;
+            var stacks=LootRoller.Roll(context);
             float angle=Random.Range(0f,Mathf.PI*2);
             for(int i=0;i<stacks.Length;i++)
             {
@@ -320,7 +336,7 @@ namespace CyberExtraction.Match
 
         public void ServerDropStack(Vector2 position, ItemStack stack, ulong ignoreObject = 0)
         {
-            if (!IsServer || stack.Empty || !ItemCatalog.Valid(stack.Item)) return;
+            if (!IsServer || stack.Empty || !ItemCatalog.Valid(stack.Item) || !EquipmentCatalog.ValidInstance(stack) || RecoveryRules.Bound(stack)) return;
             SpawnStack(position, stack, ignoreObject);
             if(ignoreObject!=0) Noise.Emit(position,10);
         }
@@ -345,6 +361,7 @@ namespace CyberExtraction.Match
             pickup.initialItem = stack.Item;
             pickup.initialQuantity = stack.Quantity;
             pickup.initialQuality = stack.Quality; pickup.initialData = stack.Data;
+            pickup.initialInstance=stack.Instance;
             pickup.ignoreObject = ignoreObject; pickup.ignoreUntil = Time.time + 3;
             go.GetComponent<NetworkObject>().Spawn();
         }

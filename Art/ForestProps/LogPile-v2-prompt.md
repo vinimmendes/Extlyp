@@ -1,0 +1,7 @@
+# Toras amarradas — v2
+
+Gerada com image_gen integrado, usando LogPile-v1.png como referência. Fundo transparente. Salva como LogPile-v2.png; ainda não aplicada ao mapa. Área de destino: 7 × 1,8 unidades, com ajuste das margens na integração.
+
+## Prompt
+
+Rework this reference sprite into a polished game-ready timber bundle for a grim 2D overhead forest extraction game. Preserve horizontal orientation and approximately 3.89:1 visible footprint (7 x 1.8 world units), transparent background. Improve substantially: four neatly cut straight logs tightly packed side by side, secured together by TWO thick weathered tan rope lashings crossing vertically over ALL four logs at 22% and 78% of the length, visibly continuous lashings with several tight parallel rope turns and small credible knots. True orthographic directly overhead view. Clean saw-cut ends with tiny irregular variation, no shredded ends or protruding branches. Hand-painted high quality game asset, large deliberate bark forms, restrained fine detail, crisp edges, subtle rounded volume, dark umber bark with muted warm brown highlights. Strong readable silhouette and clear ropes at a display size of 146 by 38 pixels. Atmosphere of abandoned sawmill, original art. Avoid noisy photographic texture, mushy texture, oversharpening, photoreal collage, strong cast shadows, floor, background, perspective, text. Single isolated complete object centered on true alpha transparency, landscape canvas.

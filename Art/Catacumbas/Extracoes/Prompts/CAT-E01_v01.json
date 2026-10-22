@@ -1,0 +1,17 @@
+{
+  "id": "CAT-E01_v01",
+  "family": 1,
+  "variant": 1,
+  "w": 2.830188679245283,
+  "h": 2.830188679245283,
+  "frames": 1,
+  "columns": 1,
+  "rows": 1,
+  "subject": "A square medieval stone stairwell mouth, five descending steps directed upward in the image toward a dark continuation, continuous worn limestone side curbs, no roof or scenery.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E01_v01.\nSubject: A square medieval stone stairwell mouth, five descending steps directed upward in the image toward a dark continuation, continuous worn limestone side curbs, no roof or scenery.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 3:3.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-5f4d61d5-ae47-4ace-ad50-2acf3811e815.png",
+  "selected_source": "Art/Catacumbas/Extracoes/Fontes/CAT-E01_v01-r02.png",
+  "revisions": [
+    "Art/Catacumbas/Extracoes/Prompts/CAT-E01_v01-r02.json"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "Batch": "D",
+  "Date": "2026-10-19",
+  "Tool": "imagegen integrado",
+  "StyleReference": "Art/ItemIconsV2/Originals/GuardianHelm.png",
+  "Items": {
+    "WatchmanHood": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-e39acf4e-02ac-4f18-9a7c-d9a152835bb4.png",
+      "PromptFile": "Art/ItemIconsV2/WatchmanHood-prompt.txt"
+    },
+    "MarksmanMask": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-d62f003e-60b3-4c4e-9a55-490eaa6928c5.png",
+      "PromptFile": "Art/ItemIconsV2/MarksmanMask-prompt.txt",
+      "InitialSource": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-b889de8b-c870-417f-b368-b109833c49e8.png"
+    },
+    "ScoutJerkin": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-0eaa645a-d3e4-4f2f-904c-535538f0d541.png",
+      "PromptFile": "Art/ItemIconsV2/ScoutJerkin-prompt.txt"
+    },
+    "FighterMail": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-346077fb-f2e8-4069-afc5-83c0f66be142.png",
+      "PromptFile": "Art/ItemIconsV2/FighterMail-prompt.txt"
+    },
+    "GuardianCuirass": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-b17cdfea-e9b6-4ada-bf13-f95d39c1ac08.png",
+      "PromptFile": "Art/ItemIconsV2/GuardianCuirass-prompt.txt"
+    },
+    "MarksmanGloves": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-fcf8baa8-1d78-4a63-9d76-aa8c8724fef3.png",
+      "PromptFile": "Art/ItemIconsV2/MarksmanGloves-prompt.txt"
+    },
+    "FighterGauntlets": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-2b41aa5d-fdf6-40f1-b5ae-52fc5a5df8c5.png",
+      "PromptFile": "Art/ItemIconsV2/FighterGauntlets-prompt.txt"
+    },
+    "ExplorerGloves": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-ebf31299-5078-4d24-b9cf-198e950961d3.png",
+      "PromptFile": "Art/ItemIconsV2/ExplorerGloves-prompt.txt"
+    },
+    "WandererBoots": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-328fc3e6-89ab-42c3-94e0-fe4c27c49243.png",
+      "PromptFile": "Art/ItemIconsV2/WandererBoots-prompt.txt"
+    },
+    "DuelistBoots": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-553a59bf-82ed-4ef8-a4b3-e9e16aabd23c.png",
+      "PromptFile": "Art/ItemIconsV2/DuelistBoots-prompt.txt"
+    },
+    "GuardianGreaves": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-913361b0-58b7-48e5-8fb3-252dcd9d4d29.png",
+      "PromptFile": "Art/ItemIconsV2/GuardianGreaves-prompt.txt"
+    },
+    "EyeMedallion": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-899d6258-43d5-46a4-b0a7-4603121f1f2a.png",
+      "PromptFile": "Art/ItemIconsV2/EyeMedallion-prompt.txt",
+      "InitialSource": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-a536c00c-2ba8-4a40-93b4-a1c010382fbc.png"
+    },
+    "BreathTalisman": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-8035c433-bfbd-4ab2-af3f-c888a7c6c5f3.png",
+      "PromptFile": "Art/ItemIconsV2/BreathTalisman-prompt.txt"
+    },
+    "FighterFang": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-df8c74d2-41ba-4593-89e3-13499855d9d5.png",
+      "PromptFile": "Art/ItemIconsV2/FighterFang-prompt.txt",
+      "InitialSource": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-672280f9-f41d-48a2-a874-13486c960574.png"
+    },
+    "SteadyHandRing": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-e55b792b-58e4-4d0e-8652-2e1549310dbe.png",
+      "PromptFile": "Art/ItemIconsV2/SteadyHandRing-prompt.txt"
+    },
+    "StrongPulseRing": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-28222771-6014-4627-8b43-e73b2e39a7d9.png",
+      "PromptFile": "Art/ItemIconsV2/StrongPulseRing-prompt.txt"
+    },
+    "PersistenceRing": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-88a39162-ff56-4d18-8981-e2c04b0882f1.png",
+      "PromptFile": "Art/ItemIconsV2/PersistenceRing-prompt.txt"
+    }
+  }
+}

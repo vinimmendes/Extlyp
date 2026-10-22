@@ -1,0 +1,14 @@
+{
+  "method": "Static authored-geometry survey; no Unity, physics, network or playtest executed",
+  "grid_step": 0.25,
+  "player_world_radius": 0.4,
+  "dungeon_cell_size": 1.06,
+  "test_connected_walkable_area": 1169.5,
+  "dungeon_connected_walkable_area": 7117.0,
+  "dungeon_all_walkable_area": 7117.0,
+  "area_ratio": 6.085506626763574,
+  "rooms": 24,
+  "links": 31,
+  "canal_open": true,
+  "note": "Static floor and body clearance; cistern crossing open."
+}

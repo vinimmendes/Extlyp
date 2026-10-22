@@ -1,0 +1,13 @@
+{
+  "method": "Static authored-geometry survey; no Unity, physics, network or playtest executed",
+  "grid_step": 0.25,
+  "player_world_radius": 0.4,
+  "dungeon_cell_size": 1.06,
+  "test_connected_walkable_area": 1169.5,
+  "dungeon_connected_walkable_area": 7070.75,
+  "dungeon_all_walkable_area": 7070.75,
+  "area_ratio": 6.045959811885421,
+  "rooms": 24,
+  "links": 31,
+  "note": "All solid footprints removed, including low cover and cistern water. Stage 1 has no gates."
+}

@@ -10,21 +10,22 @@ namespace CyberExtraction.UI
     {
         static TestLabPanel instance;
         bool open, initialized;
-        int tab, weapon, monster, item, lockKind, lockGrade;
+        int tab, weapon, monster, item, rarity, lockKind, lockGrade;
         Vector2 scroll;
         int focus=2, controlCount, drawnControls;
         float nextNavigation;
         Camera dockedCamera;
         Rect cameraRect;
         bool submit, focusMoved, inScroll;
-        readonly string[] itemNames=new string[ItemCatalog.Count];
+        readonly ItemId[] itemIds=System.Array.FindAll((ItemId[])System.Enum.GetValues(typeof(ItemId)),ItemCatalog.Available);
+        string[] itemNames;
         public static bool Available => NetworkBootstrap.Instance!=null && NetworkBootstrap.Instance.IsTestEnvironment && MatchManager.Instance!=null && MatchManager.Instance.Sandbox && MatchManager.Instance.CurrentState==MatchState.Running && InventoryWindow.Local()!=null;
         public static bool IsOpen => Available && instance!=null && instance.open;
         public static int CurrentTab => instance!=null ? instance.tab : 0;
         public static Rect ButtonBounds => new Rect(UiLayout.Width-164,276,150,42);
         public static Rect Bounds { get { float width=HudLayout.Touch ? Mathf.Min(760,UiLayout.Width-32) : Mathf.Min(500,UiLayout.Width*.48f); return new Rect(HudLayout.Touch ? (UiLayout.Width-width)/2 : UiLayout.Width-width-16,70,width,480); } }
-        public static bool Contains(Vector2 point) => Available && (IsOpen || ButtonBounds.Contains(UiLayout.Point(point)));
-        void Awake() { instance=this; for(int i=0;i<itemNames.Length;i++) itemNames[i]=ItemCatalog.Name((ItemId)i); }
+        public static bool Contains(Vector2 point) => Available && (IsOpen || !InventoryWindow.IsOpen && ButtonBounds.Contains(UiLayout.Point(point)));
+        void Awake() { instance=this; itemNames=new string[itemIds.Length]; for(int i=0;i<itemNames.Length;i++) itemNames[i]=ItemCatalog.Name(itemIds[i]); }
         void OnDestroy() { RestoreCamera(); if(instance==this) instance=null; }
         public static void Show() { if(Available && instance!=null) instance.Open(); }
         void Update()
@@ -85,6 +86,7 @@ namespace CyberExtraction.UI
         void OnGUI()
         {
             if(GameOptionsMenu.IsOpen) return;
+            if(InventoryWindow.IsOpen && !open) return;
             if(!Available || Application.isBatchMode) return;
             drawnControls=0; inScroll=false;
             using var frame=UiLayout.Begin();
@@ -102,17 +104,24 @@ namespace CyberExtraction.UI
             if(selected!=tab) { tab=selected; scroll=Vector2.zero; }
             Rect view=new Rect(panel.x+16,panel.y+90,panel.width-32,310);
             float width=view.width-22;
-            float itemGridHeight=width<550 ? 385 : 266;
-            scroll=GUI.BeginScrollView(view,scroll,new Rect(0,0,width,tab==0 ? 227+itemGridHeight : tab==1 ? 398 : 390));
+            float itemGridHeight=Mathf.CeilToInt(itemNames.Length/3f)*(width<550 ? 58 : 48);
+            scroll=GUI.BeginScrollView(view,scroll,new Rect(0,0,width,tab==0 ? 338+itemGridHeight : tab==1 ? 398 : 390));
             inScroll=true;
             if(tab==0)
             {
                 GUI.Label(new Rect(0,0,width,24),"Escolha a arma (trocar substitui a mochila de teste):",label);
-                weapon=LabGrid(new Rect(0,30,width,44),weapon,new[] {"Pistola","Rifle de ferrolho","Espingarda"},3,button);
-                if(LabButton(new Rect(0,82,width,36),"Equipar arma + municao + bandagens",button)) Send(TestAction.Weapon,weapon);
-                GUI.Label(new Rect(0,130,width,24),"Entregar item para testar inventario, loot e pesca:",label);
-                item=LabGrid(new Rect(0,162,width,itemGridHeight),item,itemNames,3,button);
-                if(LabButton(new Rect(0,174+itemGridHeight,width,38),"Entregar item escolhido (mochila cheia: cai no chao)",button)) Send(TestAction.Item,item);
+                weapon=LabGrid(new Rect(0,30,width,88),weapon,new[] {"Espada curta","Machado","Lança","Besta de mão","Espada enferrujada"},3,button);
+                if(LabButton(new Rect(0,126,width,36),"Equipar arma + suprimentos",button)) Send(TestAction.Weapon,weapon);
+                GUI.Label(new Rect(0,174,width,24),"Entregar item para testar inventario, loot e pesca:",label);
+                item=LabGrid(new Rect(0,206,width,itemGridHeight),item,itemNames,3,button);
+                GUI.Label(new Rect(0,218+itemGridHeight,width,24),"Raridade das peças definitivas:",label);
+                rarity=LabGrid(new Rect(0,247+itemGridHeight,width,36),rarity,new[]{"Comum","Incomum","Raro"},3,button);
+                if(LabButton(new Rect(0,292+itemGridHeight,width,38),"Entregar item escolhido (mochila cheia: cai no chao)",button))
+                {
+                    var selectedItem=itemIds[item];
+                    if(EquipmentCatalog.IsDefined(selectedItem)) Send(TestAction.Equipment,(int)selectedItem*3+rarity);
+                    else Send(TestAction.Item,(int)selectedItem);
+                }
             }
             else if(tab==1)
             {
@@ -127,7 +136,9 @@ namespace CyberExtraction.UI
             else if(tab==2)
             {
                 GUI.Label(new Rect(0,0,width,25),"Bots — trocar recria os bots com equipamento inicial:",label);
-                int bots=LabGrid(new Rect(0,31,width,38),MatchManager.Instance.QuickBots.Value,new[] {"Sem bots","1 bot","2 bots","3 bots","4 bots"},5,button);
+                var botLabels=new string[MapBuilder.Capacity];
+                for(int i=0;i<botLabels.Length;i++) botLabels[i]=i==0 ? "Sem bots" : i+" bots";
+                int bots=LabGrid(new Rect(0,31,width,38),MatchManager.Instance.QuickBots.Value,botLabels,botLabels.Length,button);
                 if(bots!=MatchManager.Instance.QuickBots.Value) Send(TestAction.Bots,bots);
                 if(LabButton(new Rect(0,85,width,35),MatchManager.Instance.TestProtection.Value ? "Protecao LIGADA — desligar" : "Protecao DESLIGADA — ligar",button)) Send(TestAction.Invulnerable,MatchManager.Instance.TestProtection.Value ? 0 : 1);
                 if(LabButton(new Rect(0,136,width,38),"Restaurar vida, municao e remover status",button)) Send(TestAction.Restore);

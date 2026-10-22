@@ -8,7 +8,7 @@ Protocolo 16. Acampamento online e persistente, minigames autoritativos no servi
 
 Salve o projeto, abra Iniciar-Servidor.bat e aguarde a atualizacao automatica do servidor. Na Unity, abra Game e aperte Play. Caminhe ate o portao do acampamento e entre em 127.0.0.1. As tres salas continuam com cinco participantes cada.
 
-Atualizacao em 11/10/2026: protocolo 16 para extrações, conhecimento individual e passagens desbloqueáveis. A alteracao atual teve revisao estatica, sem testes Unity, APK ou builds. Cliente e servidor precisam ser recompilados na mesma versao para jogar em rede. O servidor em execucao nao foi reiniciado.
+Atualizacao em 12/10/2026: protocolo 17 inclui aviso de golpe dos monstros, além de extrações, conhecimento individual e passagens desbloqueáveis. A alteracao atual teve revisao estatica, sem testes Unity, APK ou builds. Cliente e servidor precisam ser recompilados na mesma versao para jogar em rede. O servidor em execucao nao foi reiniciado.
 
 ## Controles
 

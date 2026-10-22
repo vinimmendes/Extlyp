@@ -1,0 +1,19 @@
+{
+  "Items": {
+    "ImprovisedHandCrossbow": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-0d12332a-d2f4-48ad-b117-dfb5fe7f5045.png",
+      "PromptFile": "Art/ItemIconsV2/ImprovisedHandCrossbow-prompt.txt",
+      "World": "Explicit shared sprite; stable pickup scale"
+    },
+    "RustySword": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-27a83ad1-94eb-4567-a085-1c0ee64d74cb.png",
+      "PromptFile": "Art/ItemIconsV2/RustySword-prompt.txt",
+      "World": "Explicit shared sprite; stable pickup scale"
+    },
+    "CrossbowBolt": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-4a6ffd4b-2f69-47e8-8b27-81ad037a5a90.png",
+      "PromptFile": "Art/ItemIconsV2/CrossbowBolt-prompt.txt",
+      "World": "Explicit shared sprite; stable pickup scale"
+    }
+  }
+}

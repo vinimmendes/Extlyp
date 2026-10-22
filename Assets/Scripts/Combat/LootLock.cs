@@ -137,9 +137,9 @@ namespace CyberExtraction.Combat
 
         void BeginLock(PlayerInventory inv,ulong actor)
         {
-            if(!IsServer || !Locked.Value || lockPlayer!=null || inv.Lockpicking.Value || inv.FishingPhase.Value!=0) return;
+            if(!IsServer || !Locked.Value || lockPlayer!=null || inv.Lockpicking.Value || inv.FishingPhase.Value!=0 || inv.GetComponent<PlayerShooter>() is PlayerShooter attacker && attacker.MeleeAttacking) return;
             int slot=-1;
-            for(int i=0;i<inv.Slots.Count;i++) if(!inv.Slots[i].Empty && inv.Slots[i].Item==ItemId.Lockpick && inv.Slots[i].Quantity==1) { slot=i; break; }
+            for(int i=0;i<inv.Slots.Count;i++) if(!inv.Slots[i].Empty && inv.Slots[i].Item==ItemId.Lockpick && inv.Slots[i].Quantity>0) { slot=i; break; }
             if(slot<0) { SendLock(actor,false,"Precisa de uma gazua. No laboratorio, use Kit de gazuas."); return; }
             boundTool=inv.Slots[slot];
             pick=new LockpickTool(()=>Math.Min(.999999999,(double)UnityEngine.Random.value),accumulatedErrors:Mathf.Max(0,boundTool.Data));
@@ -154,7 +154,7 @@ namespace CyberExtraction.Combat
             if(signal==LockpickSignal.Mistake)
             {
                 var grid=lockPlayer.Grid(); var stack=grid.Slots[lockSlot];
-                if(pick.Broken) grid.Slots[lockSlot]=default;
+                if(pick.Broken) { stack.Quantity--; stack.Data=0; grid.Slots[lockSlot]=stack.Quantity>0 ? stack : default; }
                 else { stack.Data=pick.AccumulatedErrors; grid.Slots[lockSlot]=stack; boundTool=stack; }
                 lockPlayer.ServerSetGrid(grid); Noise.Emit(transform.position,14);
                 lockMessage=pick.Broken ? "A gazua quebrou. Use outra para continuar." : "O metal rangeu. O pino escapou.";

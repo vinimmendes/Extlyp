@@ -1,0 +1,10 @@
+{
+  "fps": 24,
+  "walk_frames": 32,
+  "closure_frame": 33,
+  "attack_frames": 20,
+  "impact_frame": 12,
+  "preparation_seconds_game": 0.3,
+  "root_motion": false,
+  "blender": "5.2.2 LTS"
+}

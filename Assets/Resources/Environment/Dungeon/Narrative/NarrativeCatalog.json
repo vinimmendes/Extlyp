@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "stage": 3,
+  "assets": [
+    {
+      "id": "N01",
+      "name": "Mortalha rasgada",
+      "resource": "Environment/Dungeon/Narrative/CAT-N01_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.9994363021420518,
+      "height": 1.0,
+      "sourcePixels": [
+        1774,
+        887
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        1773,
+        887
+      ],
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "family": "sepultura",
+      "support": "CoverOrFloor",
+      "suggestedOpacity": 0.9,
+      "notes": "Integrado no piloto R08."
+    },
+    {
+      "id": "N02",
+      "name": "Caixão inacabado",
+      "resource": "Environment/Dungeon/Narrative/CAT-N02_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.9917127071823204,
+      "height": 1.0,
+      "sourcePixels": [
+        2172,
+        724
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        2154,
+        724
+      ],
+      "envelopeCells": [
+        3,
+        1
+      ],
+      "family": "coveiros",
+      "support": "Stone",
+      "suggestedOpacity": 1,
+      "notes": "Volume apenas sobre área inacessível; piloto R19."
+    },
+    {
+      "id": "N03",
+      "name": "Ferramentas de coveiro",
+      "resource": "Environment/Dungeon/Narrative/CAT-N03_v01",
+      "x": 0.0,
+      "y": 0.02142051860202931,
+      "width": 0.9954904171364148,
+      "height": 0.9785794813979707,
+      "sourcePixels": [
+        1774,
+        887
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        1766,
+        868
+      ],
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "family": "coveiros",
+      "support": "Floor",
+      "suggestedOpacity": 0.95,
+      "notes": "Peças rasas, sem interação; piloto R19."
+    },
+    {
+      "id": "N04",
+      "name": "Padiola funerária",
+      "resource": "Environment/Dungeon/Narrative/CAT-N04_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.9935543278084714,
+      "height": 0.9682320441988951,
+      "sourcePixels": [
+        2172,
+        724
+      ],
+      "alphaBoundsPixels": [
+        0,
+        23,
+        2158,
+        724
+      ],
+      "envelopeCells": [
+        3,
+        1
+      ],
+      "family": "coveiros",
+      "support": "Stone",
+      "suggestedOpacity": 0.95,
+      "notes": "Volume em recesso; não criar cobertura ou pôr no eixo de circulação."
+    },
+    {
+      "id": "N05",
+      "name": "Incensário caído",
+      "resource": "Environment/Dungeon/Narrative/CAT-N05_v01",
+      "x": 0.029505582137161084,
+      "y": 0.019138755980861243,
+      "width": 0.9417862838915471,
+      "height": 0.9258373205741627,
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "alphaBoundsPixels": [
+        37,
+        69,
+        1218,
+        1230
+      ],
+      "envelopeCells": [
+        1,
+        1
+      ],
+      "family": "ritual",
+      "support": "Floor",
+      "suggestedOpacity": 0.85,
+      "notes": "Sem luz, fumaça ou fogo; fora de interações."
+    },
+    {
+      "id": "N06",
+      "name": "Tigela e utensílios de cela",
+      "resource": "Environment/Dungeon/Narrative/CAT-N06_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.988835725677831,
+      "height": 0.9856459330143541,
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "alphaBoundsPixels": [
+        0,
+        18,
+        1240,
+        1254
+      ],
+      "envelopeCells": [
+        1,
+        1
+      ],
+      "family": "cela",
+      "support": "Floor",
+      "suggestedOpacity": 0.8,
+      "notes": "Objeto pequeno em bordas; não é recipiente de loot."
+    },
+    {
+      "id": "N07",
+      "name": "Palha deteriorada",
+      "resource": "Environment/Dungeon/Narrative/CAT-N07_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.9994363021420518,
+      "height": 0.9875986471251409,
+      "sourcePixels": [
+        1774,
+        887
+      ],
+      "alphaBoundsPixels": [
+        0,
+        11,
+        1773,
+        887
+      ],
+      "envelopeCells": [
+        2,
+        1
+      ],
+      "family": "cela",
+      "support": "Floor",
+      "suggestedOpacity": 0.4,
+      "notes": "Decalque raso e discreto; não é cama ou obstáculo."
+    },
+    {
+      "id": "N08",
+      "name": "Madeira encalhada",
+      "resource": "Environment/Dungeon/Narrative/CAT-N08_v01",
+      "x": 0.0,
+      "y": 0.03314917127071823,
+      "width": 0.9972375690607734,
+      "height": 0.9668508287292817,
+      "sourcePixels": [
+        2172,
+        724
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        2166,
+        700
+      ],
+      "envelopeCells": [
+        3,
+        1
+      ],
+      "family": "enchente",
+      "support": "Floor",
+      "suggestedOpacity": 0.9,
+      "notes": "Fragmentos rasos na margem seca; piloto R13. Não formar ponte."
+    },
+    {
+      "id": "N09",
+      "name": "Sedimentos de margem",
+      "resource": "Environment/Dungeon/Narrative/CAT-N09_v02",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1.0,
+      "height": 1.0,
+      "sourcePixels": [
+        2172,
+        724
+      ],
+      "alphaBoundsPixels": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "envelopeCells": [
+        3,
+        1
+      ],
+      "family": "enchente",
+      "support": "Floor",
+      "suggestedOpacity": 0.5,
+      "notes": "Decalque plano; versão 1 rejeitada, somente v02 selecionada."
+    },
+    {
+      "id": "N10",
+      "name": "Mochila rasgada decorativa",
+      "resource": "Environment/Dungeon/Narrative/CAT-N10_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.9824561403508771,
+      "height": 0.9848484848484849,
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "alphaBoundsPixels": [
+        0,
+        19,
+        1232,
+        1254
+      ],
+      "envelopeCells": [
+        1,
+        1
+      ],
+      "family": "expedicao",
+      "support": "Floor",
+      "suggestedOpacity": 0.75,
+      "notes": "Vazia e inutilizável. Não usar ItemIconLibrary ou aparência de pickup."
+    },
+    {
+      "id": "N11",
+      "name": "Acampamento apagado",
+      "resource": "Environment/Dungeon/Narrative/CAT-N11_v01",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 0.988835725677831,
+      "height": 0.9840510366826156,
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "alphaBoundsPixels": [
+        0,
+        20,
+        1240,
+        1254
+      ],
+      "envelopeCells": [
+        2,
+        2
+      ],
+      "family": "expedicao",
+      "support": "Floor",
+      "suggestedOpacity": 0.65,
+      "notes": "Cinzas e objetos rasos; sem fogo, interação, novo loot ou zona segura."
+    }
+  ],
+  "placementStatus": "Art catalogue only; no additional map placements in stage 3.",
+  "geometry": "Envelopes in cells, not colliders. Fit sprite uniformly inside envelope.",
+  "referenceCellSize": 1.06
+}

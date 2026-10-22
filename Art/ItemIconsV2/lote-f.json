@@ -1,0 +1,32 @@
+{
+  "Batch": "F",
+  "Date": "2026-10-19",
+  "Tool": "imagegen integrado",
+  "StyleReference": "Art/ItemIconsV2/Originals/ScoutJerkin.png",
+  "Items": {
+    "TrainingHead": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-136e2c04-fadb-41d1-8271-c56654eb630f.png",
+      "PromptFile": "Art/ItemIconsV2/TrainingHead-prompt.txt"
+    },
+    "TrainingTorso": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-58923bec-53dc-4f78-b12b-38fc31029f2c.png",
+      "PromptFile": "Art/ItemIconsV2/TrainingTorso-prompt.txt"
+    },
+    "TrainingHands": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-1f77e6fc-1c79-4ee6-908b-4b9fbb66343d.png",
+      "PromptFile": "Art/ItemIconsV2/TrainingHands-prompt.txt"
+    },
+    "TrainingFeet": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-72181eb7-f57b-46aa-8adb-db8bf0132d27.png",
+      "PromptFile": "Art/ItemIconsV2/TrainingFeet-prompt.txt"
+    },
+    "TrainingAmulet": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-eecea5ac-2b87-4d2e-9e02-531b2309e61b.png",
+      "PromptFile": "Art/ItemIconsV2/TrainingAmulet-prompt.txt"
+    },
+    "TrainingRing": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-f9e197c1-c410-4e82-95e9-076f13069aa9.png",
+      "PromptFile": "Art/ItemIconsV2/TrainingRing-prompt.txt"
+    }
+  }
+}

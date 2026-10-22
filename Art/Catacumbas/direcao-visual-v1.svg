@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080">
+<rect width="1440" height="1080" fill="#171a1c"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#e6d9ba">
+<text x="48" y="58" font-size="30" font-weight="bold">CATACUMBAS DOS AFOGADOS</text>
+<text x="48" y="91" font-size="17" fill="#b0a88a">Direção visual 3.1 · paleta e identidade · prancha esquemática, sem sprites finais</text>
+<rect x="48" y="123" width="150" height="76" rx="5" fill="#68645B"/>
+<text x="48" y="222" font-size="15">Calcário seco</text>
+<text x="48" y="244" font-size="13" fill="#b0a88a">#68645B</text>
+<rect x="216" y="123" width="150" height="76" rx="5" fill="#444D4C"/>
+<text x="216" y="222" font-size="15">Pedra úmida</text>
+<text x="216" y="244" font-size="13" fill="#b0a88a">#444D4C</text>
+<rect x="384" y="123" width="150" height="76" rx="5" fill="#45372B"/>
+<text x="384" y="222" font-size="15">Madeira</text>
+<text x="384" y="244" font-size="13" fill="#b0a88a">#45372B</text>
+<rect x="552" y="123" width="150" height="76" rx="5" fill="#815C43"/>
+<text x="552" y="222" font-size="15">Ferro oxidado</text>
+<text x="552" y="244" font-size="13" fill="#b0a88a">#815C43</text>
+<rect x="720" y="123" width="150" height="76" rx="5" fill="#A99E83"/>
+<text x="720" y="222" font-size="15">Osso</text>
+<text x="720" y="244" font-size="13" fill="#b0a88a">#A99E83</text>
+<rect x="888" y="123" width="150" height="76" rx="5" fill="#454B36"/>
+<text x="888" y="222" font-size="15">Raízes/musgo</text>
+<text x="888" y="244" font-size="13" fill="#b0a88a">#454B36</text>
+<rect x="1056" y="123" width="150" height="76" rx="5" fill="#263B40"/>
+<text x="1056" y="222" font-size="15">Água</text>
+<text x="1056" y="244" font-size="13" fill="#b0a88a">#263B40</text>
+<rect x="1224" y="123" width="150" height="76" rx="5" fill="#A88A55"/>
+<text x="1224" y="222" font-size="15">Cera/luz</text>
+<text x="1224" y="244" font-size="13" fill="#b0a88a">#A88A55</text>
+<rect x="48" y="280" width="660" height="136" rx="6" fill="#24282a" stroke="#41443d"/>
+<rect x="48" y="280" width="12" height="136" fill="#817555"/>
+<text x="76" y="312" font-size="20" font-weight="bold">1. Vestíbulos dos Enlutados</text>
+<text x="76" y="344" font-size="16" fill="#c6b99f">Urnas e soleiras</text>
+<text x="76" y="374" font-size="15" fill="#b0a88a">Arco funerário e marca de entrada</text>
+<rect x="732" y="280" width="660" height="136" rx="6" fill="#24282a" stroke="#41443d"/>
+<rect x="732" y="280" width="12" height="136" fill="#8D8777"/>
+<text x="760" y="312" font-size="20" font-weight="bold">2. Galeria dos Nomes Raspados</text>
+<text x="760" y="344" font-size="16" fill="#c6b99f">Inscrições e nichos</text>
+<text x="760" y="374" font-size="15" fill="#b0a88a">Faixas de nomes apagados</text>
+<rect x="48" y="434" width="660" height="136" rx="6" fill="#24282a" stroke="#41443d"/>
+<rect x="48" y="434" width="12" height="136" fill="#66704F"/>
+<text x="76" y="466" font-size="20" font-weight="bold">3. Ossário das Raízes</text>
+<text x="76" y="498" font-size="16" fill="#c6b99f">Osso e matéria orgânica</text>
+<text x="76" y="528" font-size="15" fill="#b0a88a">Raízes rompendo juntas de pedra</text>
+<rect x="732" y="434" width="660" height="136" rx="6" fill="#24282a" stroke="#41443d"/>
+<rect x="732" y="434" width="12" height="136" fill="#9A865F"/>
+<text x="760" y="466" font-size="20" font-weight="bold">4. Claustro das Velas Mortas</text>
+<text x="760" y="498" font-size="16" fill="#c6b99f">Arcos e cera</text>
+<text x="760" y="528" font-size="15" fill="#b0a88a">Bancos laterais e pedra exposta</text>
+<rect x="48" y="588" width="660" height="136" rx="6" fill="#24282a" stroke="#41443d"/>
+<rect x="48" y="588" width="12" height="136" fill="#4E6C70"/>
+<text x="76" y="620" font-size="20" font-weight="bold">5. Cisternas do Pranto</text>
+<text x="76" y="652" font-size="16" fill="#c6b99f">Água e pedra úmida</text>
+<text x="76" y="682" font-size="15" fill="#b0a88a">Margens claras e marcas de inundação</text>
+<rect x="732" y="588" width="660" height="136" rx="6" fill="#24282a" stroke="#41443d"/>
+<rect x="732" y="588" width="12" height="136" fill="#666268"/>
+<text x="760" y="620" font-size="20" font-weight="bold">6. Prisão dos Penitentes</text>
+<text x="760" y="652" font-size="16" fill="#c6b99f">Ferro forjado e sombra</text>
+<text x="760" y="682" font-size="15" fill="#b0a88a">Argolas, grades e correntes</text>
+<rect x="48" y="742" width="660" height="136" rx="6" fill="#24282a" stroke="#41443d"/>
+<rect x="48" y="742" width="12" height="136" fill="#8C736B"/>
+<text x="76" y="774" font-size="20" font-weight="bold">7. Capela Invertida</text>
+<text x="76" y="806" font-size="16" fill="#c6b99f">Pedra partida e tecido</text>
+<text x="76" y="836" font-size="15" fill="#b0a88a">Altar quebrado e relevo funerário</text>
+<rect x="732" y="742" width="660" height="136" rx="6" fill="#24282a" stroke="#41443d"/>
+<rect x="732" y="742" width="12" height="136" fill="#80674A"/>
+<text x="760" y="774" font-size="20" font-weight="bold">8. Câmara dos Contrapesos</text>
+<text x="760" y="806" font-size="16" fill="#c6b99f">Madeira, corda e pedra</text>
+<text x="760" y="836" font-size="15" fill="#b0a88a">Polias grandes e feixes de correntes</text>
+<text x="48" y="940" font-size="20" font-weight="bold">ATORES / PERIGO → INTERAÇÃO → COBERTURA → ARQUITETURA → DETALHE</text>
+<text x="48" y="975" font-size="16" fill="#b0a88a">Vista superior ortográfica · matéria medieval · contraste por forma e valor · sem tecnologia ambiental</text>
+<text x="48" y="1004" font-size="16" fill="#b0a88a">1 célula = 1,06 u · 128 px de corpo por célula · encaixe no filho visual · preservar colisões e regras</text>
+<text x="48" y="1037" font-size="14" fill="#8b8e82">Bases de material sob leitura neutra. Escuridão e fog continuam no sistema existente. Não é captura do jogo.</text>
+</g></svg>

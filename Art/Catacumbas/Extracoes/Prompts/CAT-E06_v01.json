@@ -1,0 +1,13 @@
+{
+  "id": "CAT-E06_v01",
+  "family": 6,
+  "variant": 1,
+  "w": 0.7547169811320755,
+  "h": 0.7547169811320755,
+  "frames": 1,
+  "columns": 1,
+  "rows": 1,
+  "subject": "A small medieval well winch on a square oak base, flat wooden pulley, forged axle and clearly EMPTY square crank socket, no detachable handle, viewed exactly from above.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E06_v01.\nSubject: A small medieval well winch on a square oak base, flat wooden pulley, forged axle and clearly EMPTY square crank socket, no detachable handle, viewed exactly from above.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 0.8:0.8.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-777b7adc-c0d8-48a6-a2ec-d77dea685c5f.png"
+}

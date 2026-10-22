@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5395e8d6fd404f82fb902cc6f59e16, type: 3}
+  m_Name: ItemVisualCatalog
+  m_EditorClassIdentifier:
+  Version: 1
+  Entries:
+  - Id: 0
+    InterfaceIcon: {fileID: 21300000, guid: 513390b9b33f438e873cfa0bd2fecddf, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 1
+    InterfaceIcon: {fileID: 21300000, guid: f5913680ebd44e3083526de0c166e1df, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 2
+    InterfaceIcon: {fileID: 21300000, guid: b21620a444934379a12fbad952c73986, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 3
+    InterfaceIcon: {fileID: 21300000, guid: f861d8aefb7649009d4d57859d7e41a9, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 4
+    InterfaceIcon: {fileID: 21300000, guid: 5cef80a38b964d76a919fcb9799bbfd0, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 5
+    InterfaceIcon: {fileID: 21300000, guid: 664d2d5a645641f981b2fb08afbfcdea, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 6
+    InterfaceIcon: {fileID: 21300000, guid: a5692f05f699464bab7360d46396c31f, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 7
+    InterfaceIcon: {fileID: 21300000, guid: edd675c40dc24e99929f5995ae722ca3, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 8
+    InterfaceIcon: {fileID: 21300000, guid: d80790e1742c40f09c53eacff42648ca, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 9
+    InterfaceIcon: {fileID: 21300000, guid: 4f2aebaa12504f1a9f4386845e1cd538, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 10
+    InterfaceIcon: {fileID: 21300000, guid: eeac873c3c9f4d25bf50de5c54e0f64a, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 11
+    InterfaceIcon: {fileID: 21300000, guid: 31ca0ce182bd496da78eb008a0d4e5bc, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 12
+    InterfaceIcon: {fileID: 21300000, guid: f07edbac6b9444eb8240c7fa6774519f, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 13
+    InterfaceIcon: {fileID: 21300000, guid: aeb50098c4bb40789d85e98851dbf4f2, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 14
+    InterfaceIcon: {fileID: 21300000, guid: da9aa0cd34664a6f8975dbf5b1327d8f, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 15
+    InterfaceIcon: {fileID: 21300000, guid: ed7f5b23b3bf42c19dd61efb07c40f86, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 16
+    InterfaceIcon: {fileID: 21300000, guid: 5134493696464c7a9762783e2c3b0692, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 17
+    InterfaceIcon: {fileID: 21300000, guid: 204be0fce8964308976fe06731015ede, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 18
+    InterfaceIcon: {fileID: 21300000, guid: 4243e1f4c6cc4bae99b69ab2b9b40b72, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 19
+    InterfaceIcon: {fileID: 21300000, guid: 0587d68904b448048060d05710aff607, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 20
+    InterfaceIcon: {fileID: 21300000, guid: 7fcfb27362de4ed280b7ba29bfe43e17, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 21
+    InterfaceIcon: {fileID: 21300000, guid: 0e3d53c04e5f4ec480c2ea864c47a331, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 22
+    InterfaceIcon: {fileID: 21300000, guid: 5ee0e4079b4546b7b261f93258a742be, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 23
+    InterfaceIcon: {fileID: 21300000, guid: 1146ef175e9649eeaa10c56394d66f4f, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 24
+    InterfaceIcon: {fileID: 21300000, guid: 19e42fad5bbe41689011acac445fc15d, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 25
+    InterfaceIcon: {fileID: 21300000, guid: e6f2bd9e8bdc45a48e1e18e019586f2d, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 26
+    InterfaceIcon: {fileID: 21300000, guid: b034e1d0bdb14a5a8b1373015de17610, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 27
+    InterfaceIcon: {fileID: 21300000, guid: ae9488c2698b4767a444cba32db7942d, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 28
+    InterfaceIcon: {fileID: 21300000, guid: e33706114c7f45e29df5cbf37cc40105, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 29
+    InterfaceIcon: {fileID: 21300000, guid: 93ecd496685e47d8be986bd886d7de0d, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 30
+    InterfaceIcon: {fileID: 21300000, guid: 847de49dd9ca476394954a13f8e2cc3a, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 31
+    InterfaceIcon: {fileID: 21300000, guid: 271cb80575aa4f15a118f20496e6db9d, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 32
+    InterfaceIcon: {fileID: 21300000, guid: cd77fde90b6243cea0c0e15aea36d686, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 33
+    InterfaceIcon: {fileID: 21300000, guid: 8cd5daed831642ff97d67631b3736b0a, type: 3}
+    WorldIcon: {fileID: 21300000, guid: e2187f86ab9b494584e21c1fd155604a, type: 3}
+  - Id: 34
+    InterfaceIcon: {fileID: 21300000, guid: 9bf75dc0ad604b04854c57e9da86d54b, type: 3}
+    WorldIcon: {fileID: 21300000, guid: 45e73f625b11418299001e843938306a, type: 3}
+  - Id: 35
+    InterfaceIcon: {fileID: 21300000, guid: d70b09babb954a85b5580fadd2e2655f, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 36
+    InterfaceIcon: {fileID: 21300000, guid: fc3aaf8201244d119dc18eafe8ee8ca0, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 37
+    InterfaceIcon: {fileID: 21300000, guid: e4bbff9f84ba40a1a44f226c98356411, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 38
+    InterfaceIcon: {fileID: 21300000, guid: ad4b47b11e5141f7ae555f55bc60ba9e, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 39
+    InterfaceIcon: {fileID: 21300000, guid: 775eda87fda242d2ac0f279b1e38bb58, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 40
+    InterfaceIcon: {fileID: 21300000, guid: 4f6161bb050648e1bc79f20d2bec310b, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 41
+    InterfaceIcon: {fileID: 21300000, guid: 73edd5fd4fd745c0ad4ed158ca2c1af0, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 42
+    InterfaceIcon: {fileID: 21300000, guid: 38078547820d496a86772865ef7dd103, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 43
+    InterfaceIcon: {fileID: 21300000, guid: 70d47bea3bf341ce9d76eda5f412c8ff, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 44
+    InterfaceIcon: {fileID: 21300000, guid: abeecd37a7044c22968af31c0cb1eba6, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 45
+    InterfaceIcon: {fileID: 21300000, guid: 769406f51fce44e9af532c883c2bfc58, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 46
+    InterfaceIcon: {fileID: 21300000, guid: 0ae6bb04f99041779dd399797c4f8ddb, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 47
+    InterfaceIcon: {fileID: 21300000, guid: 1662c163965e4ccc86ca2153b2a38e33, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 48
+    InterfaceIcon: {fileID: 21300000, guid: 456a6774a6df4f09b3225f1fc555c941, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 49
+    InterfaceIcon: {fileID: 21300000, guid: 6cf8c371b8c9454a9651d3fe00fb4647, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 50
+    InterfaceIcon: {fileID: 21300000, guid: 79a19ee0614f4ef59b7a5f8896be9d22, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 51
+    InterfaceIcon: {fileID: 21300000, guid: 2865694622094f64a69791084a841287, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 52
+    InterfaceIcon: {fileID: 21300000, guid: 5a67312e71fa492aa24da1d777ff6042, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 53
+    InterfaceIcon: {fileID: 21300000, guid: 488dcdf21934487698915a9634aff73c, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 54
+    InterfaceIcon: {fileID: 21300000, guid: 4d5ca8452c864dee9ed8e326bd79f803, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 55
+    InterfaceIcon: {fileID: 21300000, guid: 249c8f56e5ff46d4a22a7c2b9ee15554, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 56
+    InterfaceIcon: {fileID: 21300000, guid: d5c8a7c8932844c09fdb6a30ac22ea8d, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 57
+    InterfaceIcon: {fileID: 21300000, guid: 0e49aebc2768470eaa9e0a87bfabaebc, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 58
+    InterfaceIcon: {fileID: 21300000, guid: ab70eff707d7421790107498efc8dec1, type: 3}
+    WorldIcon: {fileID: 0}
+  - Id: 59
+    InterfaceIcon: {fileID: 21300000, guid: 53f113c58bc147919081dcb8738280cc, type: 3}
+    WorldIcon: {fileID: 21300000, guid: 53f113c58bc147919081dcb8738280cc, type: 3}
+  - Id: 60
+    InterfaceIcon: {fileID: 21300000, guid: 3578618db6ea4287932b56c810c12621, type: 3}
+    WorldIcon: {fileID: 21300000, guid: 3578618db6ea4287932b56c810c12621, type: 3}
+  - Id: 61
+    InterfaceIcon: {fileID: 21300000, guid: 51a2989c153e48bebb23d75d06edf024, type: 3}
+    WorldIcon: {fileID: 21300000, guid: 51a2989c153e48bebb23d75d06edf024, type: 3}

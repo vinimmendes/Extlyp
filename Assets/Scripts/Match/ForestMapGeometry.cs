@@ -80,7 +80,7 @@ namespace CyberExtraction.Match
                 for(int j=furnitureStart;j<FurniturePoints.Count;j++)
                 {
                     var old=FurniturePoints[j];
-                    FurniturePoints[j]=new SearchableFurniture(RuinPoint(i,old.Position-largeSites[i]),old.Angle+heading,old.Kind);
+                    FurniturePoints[j]=new SearchableFurniture(RuinPoint(i,old.Position-largeSites[i]),old.Angle+heading,old.Kind,old.Source,old.Risk);
                 }
             }
             Physics2D.SyncTransforms();
@@ -179,6 +179,7 @@ namespace CyberExtraction.Match
             Vector2 delta=to-from;
             var road=Block("ForestTrail",(from+to)*.5f,new Vector2(delta.magnitude,width),color,-8);
             road.transform.rotation=Quaternion.Euler(0,0,Mathf.Atan2(delta.y,delta.x)*Mathf.Rad2Deg);
+            terrainRoads.Add(new TerrainRoad(from,to,width,road.GetComponent<SpriteRenderer>()));
         }
         void BuildRouteCondition(ForestRoute route)
         {

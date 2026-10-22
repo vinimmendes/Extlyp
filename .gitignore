@@ -29,3 +29,22 @@
 # OS
 .DS_Store
 Thumbs.db
+
+# Arquivos locais de trabalho e backups
+/.utmp/
+/.codex-remote-attachments/
+/Backups/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.blend[0-9]*
+
+# Credenciais e chaves locais
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.pfx
+*.pem

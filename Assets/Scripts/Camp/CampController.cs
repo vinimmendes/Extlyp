@@ -14,7 +14,26 @@ namespace CyberExtraction.Camp
         public static bool Active => ClientEnvironment.Chosen && Instance!=null && NetworkManager.Singleton!=null && (!NetworkManager.Singleton.IsListening || (NetworkBootstrap.Instance!=null && NetworkBootstrap.Instance.CampConnection));
         public bool ExpeditionPanelOpen;
         public bool HasActivity => activity!=0;
-        public bool CanMove => Active && !ExpeditionMenu.IsOpen && !GameOptionsMenu.IsOpen && !CampTestPanel.IsOpen && !ExpeditionPanelOpen && !InventoryWindow.IsOpen && !HasActivity;
+        public bool MinigameActive=>fishing.Phase!=0 || cooking.Active;
+        public int PresentationActivity=>activity;
+        public int NearbyInteraction=>Nearby();
+        public void RequestInteraction()=>Interact();
+        public void ClosePreparation()
+        {
+            if(viewActivity() && !NetworkBootstrap.Instance.SendCamp(new CampCommand {Kind=CampCommandKind.Cancel})) return;
+            activity=0;
+        }
+        public void Craft(ItemId ammo)=>CampSession.Act(new CampAction {Kind=CampActionKind.CraftAmmo,Result=(int)ammo});
+        public void UpgradeRecycler()=>CampSession.Act(new CampAction {Kind=CampActionKind.UpgradeRecycler});
+        public void BuyComponent()=>CampSession.Act(new CampAction {Kind=CampActionKind.BuyComponent});
+        public void ChooseFish(int slot)
+        {
+            if(!CampSession.Synchronized || CampSession.Pending || slot<0 || slot>=CampSession.Progress.Pack.Slots.Length) return;
+            var item=CampSession.Progress.Pack.Slots[slot]; if(item.Empty) return;
+            if(item.Item==ItemId.CookedFish) CampSession.Act(new CampAction {Kind=CampActionKind.Eat,Source=slot});
+            else if(ItemCatalog.Fish(item.Item) || item.Item==ItemId.RawFish) NetworkBootstrap.Instance.SendCamp(new CampCommand {Kind=CampCommandKind.BeginCooking,Slot=slot});
+        }
+        public bool CanMove => avatar!=null && Active && !HudLayoutEditor.IsOpen && !ExpeditionMenu.IsOpen && !GameOptionsMenu.IsOpen && !CampTestPanel.IsOpen && !ExpeditionPanelOpen && !InventoryWindow.IsOpen && !HasActivity;
         public static Rect InteractionBounds => new Rect((UiLayout.Width-350)/2,UiLayout.Height-74,350,50);
         readonly Vector2 origin=new Vector2(2000,0), depot=CabinScenery.Depot, gate=CabinScenery.Gate,
             pier=CabinScenery.Fishing, bench=CabinScenery.Bench, fire=CabinScenery.Stove;
@@ -29,7 +48,10 @@ namespace CyberExtraction.Camp
         string message="";
         void Awake()
         {
-            Instance=this; root=new GameObject("PersonalCabin"); root.transform.position=origin;
+            Instance=this; CampSession.Progress.Ensure();
+            // Physical cabin retained only for the explicit legacy art preview.
+            if(System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"-camp-preview")<0) return;
+            root=new GameObject("PersonalCabin"); root.transform.position=origin;
             scenery=new CabinScenery(root.transform);
             var player=Block("CampPlayer",CabinScenery.Spawn,Vector2.one,new Color(.2f,.75f,.65f),5);
             player.GetComponent<SpriteRenderer>().sprite=SpriteFactory.Circle; player.AddComponent<CircleCollider2D>().radius=CabinScenery.PlayerRadius;
@@ -43,7 +65,7 @@ namespace CyberExtraction.Camp
         }
         public void FocusCamera()
         {
-            var camera=Camera.main; if(camera==null) return;
+            var camera=Camera.main; if(camera==null || avatar==null) return;
             camera.orthographic=true; camera.orthographicSize=GameConfig.CampCameraSize; camera.transform.position=new Vector3(avatar.position.x,avatar.position.y,-10);
             var follow=camera.GetComponent<CameraFollow>() ?? camera.gameObject.AddComponent<CameraFollow>(); follow.SetTarget(avatar.transform);
             follow.SetBounds(new Rect(origin-CabinScenery.Size*.5f,CabinScenery.Size));
@@ -55,10 +77,18 @@ namespace CyberExtraction.Camp
         }
         void Update()
         {
-            root.SetActive(Active); if(!Active) { fishing.Reset(); cooking.Reset(); return; }
+            if(root!=null) root.SetActive(Active); if(!Active) { fishing.Reset(); cooking.Reset(); return; }
             UpdateFishing();
             UpdateCooking();
-            if(GameOptionsMenu.IsOpen || CampTestPanel.IsOpen || GameOptionsMenu.ConsumedBack) return;
+            if(HudLayoutEditor.IsOpen || HudLayoutEditor.ConsumedBack || GameOptionsMenu.IsOpen || CampTestPanel.IsOpen || GameOptionsMenu.ConsumedBack) return;
+            if(root==null)
+            {
+                var snapshot=NetworkBootstrap.Instance.CampView;
+                if(snapshot.Activity!=0) activity=snapshot.Activity;
+                else if(activity>=2 && activity<=4 || activity==6) activity=activity==6 ? 5 : 0;
+                if(GameInput.BackPressed && MinigameActive && !UguiBaseHub.ConsumedBack) ClosePreparation();
+                return;
+            }
             scenery.Refresh(CampSession.Progress.PierRepaired);
             foreach(var drop in CampSession.Progress.Ground) SpawnDrop(drop.Id,drop.Stack);
             for(int i=groundViews.Count-1;i>=0;i--)
@@ -95,6 +125,7 @@ namespace CyberExtraction.Camp
         }
         void FixedUpdate()
         {
+            if(avatar==null) return;
             if(!CanMove) { avatar.linearVelocity=Vector2.zero; return; }
             Vector2 movement=Vector2.zero; var touch=TouchControls.Instance;
             if(touch!=null && touch.IsTouch) movement=touch.Move;
@@ -105,12 +136,22 @@ namespace CyberExtraction.Camp
         }
         int Nearby()
         {
+            if(avatar==null) return 0;
             var local=avatar.position-origin;
             if(Vector2.Distance(local,bench)<2.5f) return 4;
             if(Vector2.Distance(local,fire)<2.5f) return 5;
             if(Vector2.Distance(local,depot)<2.8f) return 1;
             if(Vector2.Distance(local,gate)<2.4f) return 2;
             if(Vector2.Distance(local,pier)<2.5f) return 3; return 0;
+        }
+        bool ReadyForActivity => Active && CampSession.Synchronized && !CampSession.Pending && !HasActivity && CampSession.Progress.ExpeditionState==0;
+        public void OpenBench() { if(ReadyForActivity) activity=1; }
+        public void OpenKitchen() { if(ReadyForActivity) activity=5; }
+        public void OpenFishing()
+        {
+            if(!ReadyForActivity) return;
+            if(!CampSession.Progress.PierRepaired) CampSession.Act(new CampAction {Kind=CampActionKind.Repair});
+            else NetworkBootstrap.Instance.SendCamp(new CampCommand {Kind=CampCommandKind.BeginFishing});
         }
         void Interact()
         {
@@ -129,7 +170,7 @@ namespace CyberExtraction.Camp
         }
         public void SpawnDrop(string id,ItemStack stack)
         {
-            if(groundViews.Exists(drop=>drop.Id==id)) return;
+            if(root==null || avatar==null || groundViews.Exists(drop=>drop.Id==id)) return;
             var obj=Block("Dropped_"+ItemCatalog.Icon(stack.Item),avatar.position-origin+Vector2.down*1.5f,new Vector2(.6f,.6f),ItemCatalog.Tint(stack.Item),4);
             ItemIconLibrary.ApplyWorld(obj,stack.Item);
             groundViews.Add(new GroundView { Id=id,Object=obj,ReadyAt=Time.time+2 });
@@ -140,6 +181,7 @@ namespace CyberExtraction.Camp
         }
         void OnGUI()
         {
+            if(HudLayoutEditor.IsOpen) return;
             if(ExpeditionMenu.IsOpen) return;
             if(GameOptionsMenu.IsOpen) return;
             using var themeFrame=UiLayout.Begin();
@@ -163,8 +205,10 @@ namespace CyberExtraction.Camp
                 GUI.matrix=old;
                 return;
             }
+            if(UguiGameHud.Active) { GUI.matrix=old; return; }
             GUI.Box(new Rect(14,14,260,78),"");
             GUI.Label(new Rect(26,22,236,54),"M "+profile.Wood+"   P "+profile.Nails+"   B "+profile.Bandages+(profile.WellFed ? "\nBem alimentado pronto" : "\nMochila e bau pessoais"),HudTheme.Label(17));
+            if(root==null) { GUI.matrix=old; return; }
             GUI.Label(new Rect(UiLayout.Width/2-160,16,320,38),"CABANA",HudTheme.Label(26,TextAnchor.MiddleCenter));
             Rect panel=new Rect(UiLayout.Width*.12f,90,UiLayout.Width*.76f,390);
             if(activity!=0)
@@ -172,39 +216,59 @@ namespace CyberExtraction.Camp
                 GUI.Box(panel,"");
                 if(activity==1)
                 {
-                    GUI.Label(new Rect(panel.x+10,panel.y+10,panel.width-20,60),"BANCADA DE MUNICOES",label);
-                    var ammoTypes=new[] { ItemId.PistolAmmo,ItemId.RifleAmmo,ItemId.ShotgunShell };
+                    GUI.Label(new Rect(panel.x+10,panel.y+10,panel.width-20,60),"BANCADA",label);
+                    var ammoTypes=System.Array.Empty<ItemId>();
                     for(int i=0;i<ammoTypes.Length;i++)
                         if(ItemIconGui.Button(new Rect(panel.x+15+i*(panel.width-30)/3,panel.y+75,(panel.width-30)/3-5,65),ammoTypes[i],"x"+WeaponCatalog.RecipeOutput(ammoTypes[i])+"\nFabricar",button))
                             CampSession.Act(new CampAction { Kind=CampActionKind.CraftAmmo,Result=(int)ammoTypes[i] });
-                    GUI.Label(new Rect(panel.x+10,panel.y+140,panel.width-20,30),"Custo: 3 metal + 1 polvora + 1 componente",new GUIStyle(label) { fontSize=18 });
+                    GUI.Label(new Rect(panel.x+10,panel.y+140,panel.width-20,30),"Nenhuma receita de munição disponível.",new GUIStyle(label) { fontSize=18 });
                     if(GUI.Button(new Rect(panel.x+15,panel.y+155,panel.width-30,65),"Reciclador nivel "+profile.RecyclerLevel+" -> melhorar ("+((profile.RecyclerLevel+1)*10)+" metais)",button)) message=CampSession.Act(new CampAction { Kind=CampActionKind.UpgradeRecycler }) ? "Reciclador melhorado." : "Nivel maximo ou metal insuficiente.";
                     if(GUI.Button(new Rect(panel.x+15,panel.y+230,panel.width-30,55),"Adquirir 1 componente por 2 metais",button)) message=CampSession.Act(new CampAction { Kind=CampActionKind.BuyComponent }) ? "Componente adquirido." : "Metal insuficiente ou slots cheios.";
                 }
                 else if(activity==5)
                 {
-                    GUI.Label(new Rect(panel.x+10,panel.y+10,panel.width-20,45),"Escolha um peixe da mochila",label);
-                    for(int i=0;i<9;i++)
-                    {
-                        var stack=profile.Pack.Slots[i];
-                        if(!stack.Empty && (ItemCatalog.Fish(stack.Item) || stack.Item==ItemId.RawFish || stack.Item==ItemId.CookedFish))
-                            if(ItemIconGui.Button(new Rect(panel.x+15+(i%3)*panel.width/3,panel.y+70+(i/3)*65,panel.width/3-25,55),stack.Item,ItemCatalog.Name(stack.Item)+" x"+stack.Quantity,button))
-                            {
-                                if(stack.Item==ItemId.CookedFish) message=CampSession.Act(new CampAction { Kind=CampActionKind.Eat,Source=i }) ? "Bem alimentado preparado." : "Nao foi possivel comer.";
-                                else NetworkBootstrap.Instance.SendCamp(new CampCommand { Kind=CampCommandKind.BeginCooking,Slot=i });
-                            }
-                    }
+                    DrawStoveInventory(panel,profile);
                 }
                 if(GUI.Button(new Rect(panel.x+20,panel.yMax-55,panel.width-40,45),"Voltar",button)) { if(viewActivity()) NetworkBootstrap.Instance.SendCamp(new CampCommand { Kind=CampCommandKind.Cancel }); activity=0; }
             }
             else
             {
-                int near=Nearby(); string text=near==1 ? "Abrir bau [E]" : near==2 ? "Preparar expedicao [E]" : near==3 ? (profile.PierRepaired ? "Pescar [E]" : "Habilitar pesca: M 20 + P 10 [E]") : near==4 ? "Bancada de municoes [E]" : near==5 ? "Fogao a lenha [E]" : "WASD / joystick: caminhar pela cabana";
+                int near=Nearby(); string text=near==1 ? "Abrir bau [E]" : near==2 ? "Preparar expedicao [E]" : near==3 ? (profile.PierRepaired ? "Pescar [E]" : "Habilitar pesca: M 20 + P 10 [E]") : near==4 ? "Bancada [E]" : near==5 ? "Fogao a lenha [E]" : "WASD / joystick: caminhar pela cabana";
                 bool enabled=GUI.enabled; GUI.enabled=near!=0; if(GUI.Button(InteractionBounds,text,button)) Interact(); GUI.enabled=enabled;
             }
             message=CampSession.Message;
             if(!string.IsNullOrEmpty(message)) GUI.Label(new Rect(20,activity!=0 ? panel.yMax+6 : UiLayout.Height*.74f,UiLayout.Width-40,UiLayout.Height*.07f),message,label);
             GUI.matrix=old;
+        }
+        void DrawStoveInventory(Rect panel,CampProgress profile)
+        {
+            GUI.Label(new Rect(panel.x+10,panel.y+8,panel.width-20,40),"MOCHILA — escolha um peixe",HudTheme.Label(20,TextAnchor.MiddleCenter));
+            float size=Mathf.Min((panel.width-40)/3,(panel.height-145)/3);
+            float left=panel.center.x-size*1.5f;
+            bool hasFish=false;
+            for(int slot=0;slot<profile.Pack.Slots.Length;slot++)
+            {
+                var stack=profile.Pack.Slots[slot];
+                bool eligible=!stack.Empty && (ItemCatalog.Fish(stack.Item) || stack.Item==ItemId.RawFish || stack.Item==ItemId.CookedFish);
+                hasFish|=eligible;
+                var rect=new Rect(left+slot%3*size,panel.y+55+slot/3*size,size-5,size-5);
+                bool previous=GUI.enabled;
+                GUI.enabled=previous && eligible && CampSession.Synchronized && !CampSession.Pending;
+                bool clicked=GUI.Button(rect,GUIContent.none);
+                if(stack.Empty) GUI.Label(rect,"—",HudTheme.Label(16,TextAnchor.MiddleCenter));
+                else
+                {
+                    ItemIconGui.Draw(new Rect(rect.x+5,rect.y+4,rect.width-10,rect.height*.48f),stack.Item);
+                    GUI.Label(new Rect(rect.x+3,rect.y+rect.height*.52f,rect.width-6,rect.height*.45f),ItemCatalog.Name(stack.Item)+" x"+stack.Quantity,HudTheme.Label(12,TextAnchor.MiddleCenter));
+                }
+                GUI.enabled=previous;
+                if(clicked)
+                {
+                    if(stack.Item==ItemId.CookedFish) CampSession.Act(new CampAction { Kind=CampActionKind.Eat,Source=slot });
+                    else NetworkBootstrap.Instance.SendCamp(new CampCommand { Kind=CampCommandKind.BeginCooking,Slot=slot });
+                }
+            }
+            GUI.Label(new Rect(panel.x+10,panel.yMax-88,panel.width-20,26),hasFish ? "Peixe cru: cozinhar · Peixe cozido: comer" : "Nenhum peixe na mochila.",HudTheme.Label(14,TextAnchor.MiddleCenter));
         }
         bool viewActivity()=>NetworkBootstrap.Instance.CampView.Activity!=0;
         void OnDisable()

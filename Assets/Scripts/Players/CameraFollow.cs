@@ -23,6 +23,7 @@ namespace CyberExtraction.Players
         }
 
         public void SetTarget(Transform t) { target = t; bounded=false; velocity=Vector3.zero; }
+        public bool Follows(Transform value) => target==value;
         public void SetBounds(Rect value) { bounds=value; bounded=true; transform.position=ClampToBounds(transform.position); }
 
         Vector3 ClampToBounds(Vector3 value)

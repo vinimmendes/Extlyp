@@ -1,0 +1,13 @@
+{
+  "id": "CAT-E13_v01",
+  "family": 13,
+  "variant": 1,
+  "w": 0.7547169811320755,
+  "h": 0.7547169811320755,
+  "frames": 1,
+  "columns": 1,
+  "rows": 1,
+  "subject": "A detachable medieval Z-shaped hand crank, dull forged iron offset bent shaft, one dark oak revolving grip. Exact top-down, strong readable silhouette, no base or housing.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E13_v01.\nSubject: A detachable medieval Z-shaped hand crank, dull forged iron offset bent shaft, one dark oak revolving grip. Exact top-down, strong readable silhouette, no base or housing.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 0.8:0.8.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-aac14365-36bc-47b6-8aa9-9322bf95247e.png"
+}

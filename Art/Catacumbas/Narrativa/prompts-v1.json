@@ -1,0 +1,31 @@
+{
+  "tool": "image_gen built-in",
+  "background": "transparent",
+  "assets": [
+    {
+      "id": "N01",
+      "prompt": "Use case: stylized-concept. Production game sprite for a dark medieval flooded catacomb, painted realistic materials matching worn brown timber, limestone, rusty iron, muted olive and bone ivory. Camera almost directly overhead, very slight tilt only, orthographic without perspective vanishing points. Single isolated horizontal prop occupying 85% of a landscape canvas, entire silhouette inside frame with generous transparent margins. Soft neutral ambient illumination, short contact shadows only within object, no long cast shadows, no glow, no floor, no background, no text, no frames, no watermark, no humans. True transparent RGBA background. Readable broad shapes at small game scale. A single empty torn funeral shroud of dirty grey beige linen spread flat in loose folds, elongated horizontal 2:1 footprint, irregular frayed hem, a few tears. Empty cloth, no body, no bones, no humanoid shape.",
+      "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-652c9db0-edc9-49d2-956f-67c5f9859511.png"
+    },
+    {
+      "id": "N02",
+      "prompt": "Use case: stylized-concept. Production game sprite for a dark medieval flooded catacomb, painted realistic materials matching worn brown timber, limestone, rusty iron, muted olive and bone ivory. Camera almost directly overhead, very slight tilt only, orthographic without perspective vanishing points. Single isolated horizontal prop occupying 85% of a landscape canvas, entire silhouette inside frame with generous transparent margins. Soft neutral ambient illumination, short contact shadows only within object, no long cast shadows, no glow, no floor, no background, no text, no frames, no watermark, no humans. True transparent RGBA background. Readable broad shapes at small game scale. One unfinished empty wooden coffin, long horizontal 3:1 footprint, open top clearly visible, rough dark oak boards, missing a small section of side boards exposing construction, a couple of rusty forged nails, no lid, no handles or treasure, no corpse. Low profile modestly visible inner walls.",
+      "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-8340ae44-1b0e-410e-b17a-8162f4f7c85e.png"
+    },
+    {
+      "id": "N03",
+      "prompt": "Use case: stylized-concept. Production game sprite for a dark medieval flooded catacomb, painted realistic materials matching worn brown timber, limestone, rusty iron, muted olive and bone ivory. Camera almost directly overhead, very slight tilt only, orthographic without perspective vanishing points. Single isolated horizontal prop occupying 85% of a landscape canvas, entire silhouette inside frame with generous transparent margins. Soft neutral ambient illumination, short contact shadows only within object, no long cast shadows, no glow, no floor, no background, no text, no frames, no watermark, no humans. True transparent RGBA background. Readable broad shapes at small game scale. A small flat grave-digger tool grouping, horizontal 2:1 footprint: one old spade with wooden shaft and rusty broad metal blade lying diagonally, one short wooden mallet beside it and a compact coil of worn rope, grouped closely. No floating items, no sparkles.",
+      "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-d4d42e7e-05ff-45b6-950d-57f67831ca45.png"
+    },
+    {
+      "id": "N08",
+      "prompt": "Use case: stylized-concept. Production game sprite for a dark medieval flooded catacomb, painted realistic materials matching worn brown timber, limestone, rusty iron, muted olive and bone ivory. Camera almost directly overhead, very slight tilt only, orthographic without perspective vanishing points. Single isolated horizontal prop occupying 85% of a landscape canvas, entire silhouette inside frame with generous transparent margins. Soft neutral ambient illumination, short contact shadows only within object, no long cast shadows, no glow, no floor, no background, no text, no frames, no watermark, no humans. True transparent RGBA background. Readable broad shapes at small game scale. A single compact bank deposit of three waterlogged splintered timber fragments and a short snagged dark rope. Horizontal irregular 3:1 footprint, dark damp oak with restrained moss and silt stains. Broken unconnected wood lying flat, must NOT resemble a bridge, raft or boat. No water surface, no shore ground.",
+      "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-c1fbcd68-fa14-47af-8a0f-13b69aaa99d0.png"
+    },
+    {
+      "id": "N09",
+      "prompt": "Use case: stylized-concept. Production game sprite for a dark medieval flooded catacomb, painted realistic materials matching worn brown timber, limestone, rusty iron, muted olive and bone ivory. Camera almost directly overhead, very slight tilt only, orthographic without perspective vanishing points. Single isolated horizontal prop occupying 85% of a landscape canvas, entire silhouette inside frame with generous transparent margins. Soft neutral ambient illumination, short contact shadows only within object, no long cast shadows, no glow, no floor, no background, no text, no frames, no watermark, no humans. True transparent RGBA background. Readable broad shapes at small game scale. One thin irregular horizontal 3:1 floor decal island of dried grey brown flood silt, sparse small river pebbles, tiny terracotta fragments and decomposed reed fragments, sparse broken edges fading to transparency. Flat low contrast dirt deposition without raised rock piles, no puddle, no water surface, no terrain tile or rectangular backing.",
+      "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-3cfc271a-a514-472a-8b31-0c2bb4d09baf.png"
+    }
+  ]
+}

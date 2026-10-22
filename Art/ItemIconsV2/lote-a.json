@@ -1,0 +1,52 @@
+{
+  "Batch": "A",
+  "Date": "2026-10-19",
+  "Tool": "imagegen integrado",
+  "StyleReference": "Art/ItemIconsV2/Originals/Bandage.png",
+  "Items": {
+    "Wood": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-fff596a0-b710-4942-ba1e-d403cc3e59c6.png",
+      "PromptFile": "Art/ItemIconsV2/Wood-prompt.txt"
+    },
+    "Nails": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-f100c7d2-b6f2-4d79-a7ca-5055cf62e969.png",
+      "PromptFile": "Art/ItemIconsV2/Nails-prompt.txt"
+    },
+    "Metal": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-b6c8965a-a8d3-4fbc-9758-54b80e41c0e5.png",
+      "PromptFile": "Art/ItemIconsV2/Metal-prompt.txt"
+    },
+    "Gunpowder": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-49d26a4e-25f9-464b-9267-5372416dc86b.png",
+      "PromptFile": "Art/ItemIconsV2/Gunpowder-prompt.txt"
+    },
+    "AmmoComponent": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-beff907a-3263-4149-ab48-d81a0575f3ee.png",
+      "PromptFile": "Art/ItemIconsV2/AmmoComponent-prompt.txt"
+    },
+    "FishCommon": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-31c1b0a0-62b9-4ab4-88fe-1f22629addb3.png",
+      "PromptFile": "Art/ItemIconsV2/FishCommon-prompt.txt"
+    },
+    "FishRare": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-05a3f933-fc83-4fab-9cb3-0fa71a630dc2.png",
+      "PromptFile": "Art/ItemIconsV2/FishRare-prompt.txt"
+    },
+    "FishLarge": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-99d93a72-2a23-4a84-814d-db3eb50ecdd7.png",
+      "PromptFile": "Art/ItemIconsV2/FishLarge-prompt.txt"
+    },
+    "CookedFish": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-cb66efb7-5b32-4c53-9800-148dc2652aa2.png",
+      "PromptFile": "Art/ItemIconsV2/CookedFish-prompt.txt"
+    },
+    "BurntFish": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-2f3b0207-66c0-408b-b380-114581e987ea.png",
+      "PromptFile": "Art/ItemIconsV2/BurntFish-prompt.txt"
+    },
+    "RawFish": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-a02faae5-3a09-46e6-ae10-5cd3e04d525f.png",
+      "PromptFile": "Art/ItemIconsV2/RawFish-prompt.txt"
+    }
+  }
+}

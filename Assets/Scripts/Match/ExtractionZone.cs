@@ -24,6 +24,14 @@ namespace CyberExtraction.Match
             timers[inv.NetworkObjectId] = 0f;
         }
 
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            // A preparation can complete while someone is already on the platform.
+            if(!IsServer || !Active || MapBuilder.Current!=ExpeditionMap.Dungeon) return;
+            var inv=other.GetComponentInParent<PlayerInventory>();
+            if(inv!=null && inv.IsSpawned && inv.IsAlive && !timers.ContainsKey(inv.NetworkObjectId)) timers[inv.NetworkObjectId]=0;
+        }
+
         private void OnTriggerExit2D(Collider2D other)
         {
             if (!IsServer) return;
@@ -39,7 +47,7 @@ namespace CyberExtraction.Match
         {
             if (!IsServer) return;
             var mm = MatchManager.Instance;
-            if (mm == null || mm.CurrentState != MatchState.Running || !Active) { timers.Clear(); return; }
+            if (mm == null || mm.CurrentState != MatchState.Running || !Active) { ClearTimers(); return; }
             keys.Clear();
             keys.AddRange(timers.Keys);
             foreach (var id in keys)
@@ -47,7 +55,10 @@ namespace CyberExtraction.Match
                 if (!NetworkManager.Singleton.SpawnManager.SpawnedObjects.TryGetValue(id, out var obj))
                 { timers.Remove(id); continue; }
                 var inv = obj.GetComponent<PlayerInventory>();
-                if (inv == null || !inv.IsAlive) { timers.Remove(id); continue; }
+                if (inv == null || !inv.IsAlive) { if(inv!=null) ResetProgress(inv); timers.Remove(id); continue; }
+                if(inv.ChangingEquipment || obj.GetComponent<PlayerShooter>() is PlayerShooter attacker && attacker.MeleeAttacking) { timers[id]=0; ResetProgress(inv); continue; }
+                if(MapBuilder.Current==ExpeditionMap.Dungeon && (inv.Lockpicking.Value || inv.DungeonAction.Value>=0))
+                { timers[id]=0; ResetProgress(inv); continue; }
                 if (obj.GetComponent<BotController>() != null && !BotDecision.CanExtract(mm.SecondsLeft.Value))
                 { timers[id] = 0f; continue; }
                 timers[id] += Time.deltaTime;
@@ -58,6 +69,16 @@ namespace CyberExtraction.Match
                 mm.ServerParticipantExtracted(inv);
                 inv.ExtractionProgress.Value=0; inv.CurrentExtractionExit.Value=-1;
             }
+        }
+        void ResetProgress(PlayerInventory inv)
+        { if(inv.IsSpawned && inv.CurrentExtractionExit.Value==ExitId) { inv.ExtractionProgress.Value=0; inv.CurrentExtractionExit.Value=-1; } }
+        void ClearTimers()
+        {
+            var manager=NetworkManager.Singleton;
+            if(manager==null || manager.SpawnManager==null) { timers.Clear(); return; }
+            foreach(var id in timers.Keys) if(manager.SpawnManager.SpawnedObjects.TryGetValue(id,out var obj))
+            { var inv=obj.GetComponent<PlayerInventory>(); if(inv!=null) ResetProgress(inv); }
+            timers.Clear();
         }
     }
 }

@@ -1,0 +1,14 @@
+{
+  "png_frames": 104,
+  "walk_atlas": [
+    2048,
+    1024
+  ],
+  "attack_atlas": [
+    2048,
+    768
+  ],
+  "clipping": "no alpha touches frame edges in all top-down frames",
+  "gif_attack_preparation_ms": 300,
+  "integration": "not performed"
+}

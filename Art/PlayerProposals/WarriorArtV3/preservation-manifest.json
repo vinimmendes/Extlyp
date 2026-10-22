@@ -1,0 +1,12 @@
+{
+  "source_zip": "C:/Users/Vinni/Downloads/warrior_v2_bundle.zip",
+  "source_zip_sha256": "2DDBC6E973774B10E5F19BCE41A134F12B8711D0942B44A586C9C7F7978521C6",
+  "archive_copy_sha256": "2DDBC6E973774B10E5F19BCE41A134F12B8711D0942B44A586C9C7F7978521C6",
+  "source_archive_preserved": true,
+  "v2_blend_sha256": "F35F0D1DD99ED954AA0851A60F2960046D56AF44D4F241850C81B4B4E32DF0E4",
+  "initial_v3_blend_sha256": "F35F0D1DD99ED954AA0851A60F2960046D56AF44D4F241850C81B4B4E32DF0E4",
+  "v3_initially_identical": true,
+  "package_scripts_executed": false,
+  "package_skills": "Preserved only inside original ZIP; not installed or applied",
+  "stage": "1-2: baseline preservation and visual brief"
+}

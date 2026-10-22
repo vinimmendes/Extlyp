@@ -20,6 +20,9 @@ namespace CyberExtraction.Bots
         public NetworkVariable<byte> State = new NetworkVariable<byte>((byte)BotState.Idle);
         public NetworkVariable<byte> Difficulty = new NetworkVariable<byte>((byte)BotDifficulty.Medium);
         public BotState CurrentState => (BotState)State.Value;
+        static readonly string[] Callsigns = { "Corvo", "Vulto", "Cinza", "Ferro", "Gralha", "Sombra", "Lince", "Falcao", "Lobo", "Bruma", "Espinho", "Cervo" };
+        // NetworkObjectId is shared by all observers; the suffix prevents duplicate names.
+        public string DisplayName => Callsigns[(int)(NetworkObjectId%(ulong)Callsigns.Length)]+"-"+NetworkObjectId.ToString("D2");
 
         const float DetourFactor = 1.35f; // caminhos reais sao mais longos que a linha reta
 
@@ -87,6 +90,7 @@ namespace CyberExtraction.Bots
 
         public override void OnNetworkSpawn()
         {
+            gameObject.name=DisplayName;
             if (!IsServer) { rb.bodyType = RigidbodyType2D.Kinematic; return; }
             Difficulty.Value = (byte)difficulty;
             profile = BotProfile.For(difficulty);
@@ -146,19 +150,19 @@ namespace CyberExtraction.Bots
             }
         }
 
-        public static bool InVision(Vector2 origin, float facing, Vector2 point)
+        public static bool InVision(Vector2 origin, float facing, Vector2 point,PlayerInventory observer=null)
         {
             Vector2 delta = point - origin;
             float distance = delta.magnitude;
             if (distance > GameConfig.VisionRange) return false;
             if (distance <= GameConfig.NearRadius) return true;
             float angle = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
-            return distance <= GameConfig.VisionRadiusAtAngle(Mathf.DeltaAngle(facing, angle));
+            return distance <= (observer!=null ? observer.VisionRadiusAtAngle(Mathf.DeltaAngle(facing,angle)) : GameConfig.VisionRadiusAtAngle(Mathf.DeltaAngle(facing, angle)));
         }
 
         bool CanSee(Vector2 point)
         {
-            return InVision(rb.position, rb.rotation, point) &&
+            return InVision(rb.position, rb.rotation, point,inventory) &&
                 Physics2D.Linecast(rb.position, point, GameConfig.VisionMask).collider == null;
         }
 
@@ -372,10 +376,12 @@ namespace CyberExtraction.Bots
             }
             return best;
         }
-        float ExitDistance(Vector2 from) => MapBuilder.Current==ExpeditionMap.Large && chosenExitId>=0
+        float ExitDistance(Vector2 from) => MapBuilder.Current==ExpeditionMap.Dungeon && chosenExitId>=0
+            ? DungeonExitDistance(from) : MapBuilder.Current==ExpeditionMap.Large && chosenExitId>=0
             ? LargeMapPlan.TravelDistance(from,chosenExitId) : Vector2.Distance(from,chosenExit)*DetourFactor;
         Vector2 ChooseExit()
         {
+            if(MapBuilder.Current==ExpeditionMap.Dungeon) return ChooseDungeonExit();
             if(MapBuilder.Current!=ExpeditionMap.Large) { chosenExitId=-1; return MapBuilder.ExtractionPoints[0]; }
             ushort known=inventory.KnownActiveExits.Value;
             int best=-1; float score=float.NegativeInfinity;
@@ -392,6 +398,41 @@ namespace CyberExtraction.Bots
             chosenExitId=best;
             // No access to the global active mask: only confirmed/discovered exits.
             return best>=0 ? LargeMapPlan.Exits[best].Position : rb.position;
+        }
+
+        float DungeonExitDistance(Vector2 from)
+        {
+            var mm=MatchManager.Instance;
+            float distance=DungeonLayout.TravelDistance(from,DungeonLayout.ExitPositions[chosenExitId]);
+            if(chosenExitId==2 && !mm.DungeonShortcut.Value && inventory.Count(CyberExtraction.Items.ItemId.DungeonKey)>0)
+                distance=DungeonLayout.TravelDistance(from,DungeonContent.ShortcutControl)+DungeonLayout.TravelDistance(DungeonContent.ShortcutControl,DungeonLayout.ExitPositions[2])+4*GameConfig.PlayerSpeed;
+            return distance+(mm.DungeonReady(chosenExitId) ? 0 : DungeonContent.Duration(chosenExitId)*GameConfig.PlayerSpeed);
+        }
+        Vector2 ChooseDungeonExit()
+        {
+            var mm=MatchManager.Instance; int best=-1; float score=float.NegativeInfinity;
+            for(int i=0;i<3;i++)
+            {
+                if(i==1 && !mm.DungeonReady(i) && inventory.Count(CyberExtraction.Items.ItemId.DungeonCrank)<1) continue;
+                float cost=DungeonLayout.TravelDistance(rb.position,DungeonLayout.ExitPositions[i]);
+                if(!mm.DungeonReady(i)) cost+=DungeonContent.Duration(i)*GameConfig.PlayerSpeed;
+                if(i==chosenExitId) cost-=4;
+                if(Time.time<avoidExitUntil && (DungeonLayout.ExitPositions[i]-avoidExit).sqrMagnitude<1) cost+=50;
+                if(-cost>score) { score=-cost; best=i; }
+            }
+            chosenExitId=best; return best>=0 ? DungeonLayout.ExitPositions[best] : rb.position;
+        }
+        Vector2 DungeonExitGoal(int seconds)
+        {
+            var mm=MatchManager.Instance; if(chosenExitId<0) chosenExit=ChooseDungeonExit();
+            if(chosenExitId<0) return rb.position;
+            int action=chosenExitId==2 && !mm.DungeonShortcut.Value && inventory.Count(CyberExtraction.Items.ItemId.DungeonKey)>0 ? 3 : !mm.DungeonReady(chosenExitId) ? chosenExitId : -1;
+            if(action>=0)
+            {
+                if(threat==null && inventory.DungeonAction.Value<0 && mm.CanOperateDungeon(inventory,action)) mm.ServerBeginDungeonAction(inventory,action);
+                return DungeonContent.Mechanism(action);
+            }
+            return BotDecision.CanExtract(seconds) ? chosenExit : Overwatch(chosenExit);
         }
 
         // Ponto de espera ~10 m antes da zona; ali o bot aguarda a liberacao da extracao.
@@ -499,7 +540,7 @@ namespace CyberExtraction.Bots
                     }
                     break;
                 case BotState.Extract:
-                    destination = BotDecision.CanExtract(mm.SecondsLeft.Value) ? chosenExit : Overwatch(chosenExit);
+                    destination = MapBuilder.Current==ExpeditionMap.Dungeon ? DungeonExitGoal(mm.SecondsLeft.Value) : BotDecision.CanExtract(mm.SecondsLeft.Value) ? chosenExit : Overwatch(chosenExit);
                     break;
                 case BotState.Retreat:
                     if (Time.time >= repositionAt || Vector2.Distance(rb.position, destination) < 0.6f)
@@ -636,6 +677,11 @@ namespace CyberExtraction.Bots
                 return;
             }
             if (Time.time >= nextThink) Think();
+            if(inventory.DungeonAction.Value>=0)
+            {
+                if(threat!=null && !threat.IsDead && CanSee(threat.transform.position)) MatchManager.Instance.ServerBeginDungeonAction(inventory,-1);
+                else { rb.linearVelocity=Vector2.zero; return; }
+            }
 
             if (Time.time >= stuckCheckAt)
             {

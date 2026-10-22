@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "meshes": 146,
+  "base_vertices": 18580,
+  "bones": 23,
+  "frames": 36,
+  "fps": 30,
+  "speed_m_s": 0.638888888888889,
+  "support_fraction": 0.6,
+  "cadences": [
+    "Walk_Heavy_36f_IK",
+    "Walk_Alert_30f_IK"
+  ],
+  "pole_angles": {
+    "L": 0.0872664600610733,
+    "R": 0.0872664600610733
+  }
+}

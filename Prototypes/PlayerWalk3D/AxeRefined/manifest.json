@@ -1,0 +1,17 @@
+{
+  "bodyAtlas": "AxeAttack_1.png",
+  "weaponAtlas": "AxeWeapon_1.png",
+  "frames": 26,
+  "impactFrame": 11,
+  "cell": 256,
+  "bodyWorldSize": 3.4,
+  "weaponWorldSize": 5.1,
+  "weaponPixelsPerUnit": 50.196078431372555,
+  "worldAsset": "Assets\\Resources\\Items\\Weapons\\BattleAxeWorld.png",
+  "worldGuid": "e2187f86ab9b494584e21c1fd155604a",
+  "timing": {
+    "windup": 0.4,
+    "recovery": 0.65
+  },
+  "applyWeaponGripAgain": false
+}

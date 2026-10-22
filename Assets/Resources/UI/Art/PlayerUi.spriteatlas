@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlayerUi
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c45b033bcddb5c689985e064cd97fc5f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 0882d38053605cbf9763aa10dd1f5c98: 21300000
+    - 953180b1f2d804645a6aff85463afc0b: -937031466809732605
+    - b21215222aee5b54b476fb387aa6203e: 21300000
+    - d020cc2280d8503b953e8eabb6d5e345: 21300000
+    - 4589d713527b523a8c4a41d6c4910fdb: 21300000
+    - 36e6dc73e4a45867974cf8281bd36251: 21300000
+    - f37edbd3cb035367ab5ff5ecff28d0d3: 21300000
+    - 274150f354e9a5d4091e1de3c531d3f9: -4609370935123158228
+    - 8374b634c07d59af898f617dc4638170: 21300000
+    - 3f175a35f00f5f45a7a7578a5fb6d1d2: 21300000
+    - 0787d6766b195e6aba8d6e9617ee716e: 21300000
+    - 60cacb47fd05537683ad11c301ffe2c4: 21300000
+    - 5e22b9c815195511bddf963651b42290: 21300000
+    - b50b8339fbb75cf485b6317057146cf7: 21300000
+    - 4b68ff59fb1952ab9d1f6cbd62ca0c50: 21300000
+    - 01806769a68655f69a310643e0c09da6: 21300000
+    - 9cfa5a79a1ff5511acf99dabae8285ea: 21300000
+    - 2e753abac3235127be69dd0377ca6476: 21300000
+    - 2673af5b272ab3340a4834863305af2a: -6108026521242804589
+    - 5e3371db075250d796c068d1dcb27b4f: 21300000
+    - a3238c7cd2ba5d46b299a699bfc4d53a: 21300000
+    - 933022fcf71451ca95fb97f909fd6231: 21300000
+    - bcaac43dd97bdc845a99df261d909a50: 8516601137791761549
+    - 149cb89ddc785d17b36a21b0895d3190: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 0882d38053605cbf9763aa10dd1f5c98, type: 3}
+  - {fileID: -937031466809732605, guid: 953180b1f2d804645a6aff85463afc0b, type: 3}
+  - {fileID: 21300000, guid: b21215222aee5b54b476fb387aa6203e, type: 3}
+  - {fileID: 21300000, guid: d020cc2280d8503b953e8eabb6d5e345, type: 3}
+  - {fileID: 21300000, guid: 4589d713527b523a8c4a41d6c4910fdb, type: 3}
+  - {fileID: 21300000, guid: 36e6dc73e4a45867974cf8281bd36251, type: 3}
+  - {fileID: 21300000, guid: f37edbd3cb035367ab5ff5ecff28d0d3, type: 3}
+  - {fileID: -4609370935123158228, guid: 274150f354e9a5d4091e1de3c531d3f9, type: 3}
+  - {fileID: 21300000, guid: 8374b634c07d59af898f617dc4638170, type: 3}
+  - {fileID: 21300000, guid: 3f175a35f00f5f45a7a7578a5fb6d1d2, type: 3}
+  - {fileID: 21300000, guid: 0787d6766b195e6aba8d6e9617ee716e, type: 3}
+  - {fileID: 21300000, guid: 60cacb47fd05537683ad11c301ffe2c4, type: 3}
+  - {fileID: 21300000, guid: 5e22b9c815195511bddf963651b42290, type: 3}
+  - {fileID: 21300000, guid: b50b8339fbb75cf485b6317057146cf7, type: 3}
+  - {fileID: 21300000, guid: 4b68ff59fb1952ab9d1f6cbd62ca0c50, type: 3}
+  - {fileID: 21300000, guid: 01806769a68655f69a310643e0c09da6, type: 3}
+  - {fileID: 21300000, guid: 9cfa5a79a1ff5511acf99dabae8285ea, type: 3}
+  - {fileID: 21300000, guid: 2e753abac3235127be69dd0377ca6476, type: 3}
+  - {fileID: -6108026521242804589, guid: 2673af5b272ab3340a4834863305af2a, type: 3}
+  - {fileID: 21300000, guid: 5e3371db075250d796c068d1dcb27b4f, type: 3}
+  - {fileID: 21300000, guid: a3238c7cd2ba5d46b299a699bfc4d53a, type: 3}
+  - {fileID: 21300000, guid: 933022fcf71451ca95fb97f909fd6231, type: 3}
+  - {fileID: 8516601137791761549, guid: bcaac43dd97bdc845a99df261d909a50, type: 3}
+  - {fileID: 21300000, guid: 149cb89ddc785d17b36a21b0895d3190, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Swap
+  - EntryNormalCabin_0
+  - Food
+  - PanelSomber
+  - Wind
+  - Arrow
+  - Rifle
+  - EntryCabinBackground_0
+  - Spores
+  - Chest
+  - Aim
+  - Menu
+  - Backpack
+  - Shotgun
+  - Map
+  - Ammo
+  - Pistol
+  - Exit
+  - ExpeditionForestBackdrop_0
+  - Bullet
+  - Heal
+  - PanelSimple
+  - EntryTestWorkshop_0
+  - Knob
+  m_RenderDataMap: {}
+  m_Tag: PlayerUi
+  m_IsVariant: 0

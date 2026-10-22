@@ -1,0 +1,19 @@
+{
+  "maxGripStep": 0.0988366484642029,
+  "limit": 0.1,
+  "lateralMin": -0.4500000238418579,
+  "lateralMax": -0.4500000238418579,
+  "handSpacingMin": 0.39999997615814203,
+  "handSpacingMax": 0.4000001788139343,
+  "heightMin": 1.7000000476837158,
+  "heightMax": 1.7000000476837158,
+  "impactRadius": 2.2000001582954782,
+  "guardReturnDifference": 0.0,
+  "drawbackFromGuard": 0.4500000238418579,
+  "thrustTravel": 0.5534855961799621,
+  "maximumRecoilFrame": 9,
+  "peakThrustStep": 0.0988366484642029,
+  "gifFrames": 40,
+  "gifDurationMs": 800,
+  "gifFrameDurationMs": 20
+}

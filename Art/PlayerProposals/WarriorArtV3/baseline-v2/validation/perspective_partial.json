@@ -1,0 +1,33 @@
+{
+  "schema": "animation_contact_sheet_report.v1",
+  "frames": [
+    "/workspace/warrior-3d-v2/perspective_frames/view_0001.png",
+    "/workspace/warrior-3d-v2/perspective_frames/view_0005.png",
+    "/workspace/warrior-3d-v2/perspective_frames/view_0009.png",
+    "/workspace/warrior-3d-v2/perspective_frames/view_0013.png",
+    "/workspace/warrior-3d-v2/perspective_frames/view_0017.png"
+  ],
+  "frame_diff": [
+    {
+      "from": "view_0001.png",
+      "to": "view_0005.png",
+      "mean_rgb_diff": 2.6385777791341147
+    },
+    {
+      "from": "view_0005.png",
+      "to": "view_0009.png",
+      "mean_rgb_diff": 3.2451489766438804
+    },
+    {
+      "from": "view_0009.png",
+      "to": "view_0013.png",
+      "mean_rgb_diff": 3.1538073221842446
+    },
+    {
+      "from": "view_0013.png",
+      "to": "view_0017.png",
+      "mean_rgb_diff": 3.2360458374023438
+    }
+  ],
+  "warnings": []
+}

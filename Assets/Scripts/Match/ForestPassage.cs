@@ -47,6 +47,7 @@ namespace CyberExtraction.Match
         public bool CanOperate(PlayerInventory player)
         {
             if(player==null || Route==null || Open || player.Count(Route.RequiredItem)<1 || Vector2.Distance(player.transform.position,transform.position)>3) return false;
+            if(player.GetComponent<PlayerShooter>() is PlayerShooter attacker && attacker.MeleeAttacking) return false;
             var hit=Physics2D.Linecast(player.transform.position,transform.position,CyberExtraction.Core.GameConfig.WallMask).collider;
             return hit==null || hit.transform.IsChildOf(transform);
         }

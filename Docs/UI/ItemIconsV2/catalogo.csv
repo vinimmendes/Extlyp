@@ -1,0 +1,63 @@
+﻿Id,Item,Nome,Lote,OrigemInterfaceAnterior,OrigemMundoPreservada,RecursoV2,Estado
+0,Wood,Madeira,A,Assets/Art/Items/wood-icon-v1.png,Assets/Art/Items/wood-icon-v1.png,Items/IconsV2/Wood,Integrado; avaliação prática pendente
+1,Nails,Pregos,A,Assets/Art/Items/nails-icon-v1.png,Assets/Art/Items/nails-icon-v1.png,Items/IconsV2/Nails,Integrado; avaliação prática pendente
+2,Bandage,Bandagem,A,Assets/Art/Items/bandage-icon-v1.png,Assets/Art/Items/bandage-icon-v1.png,Items/IconsV2/Bandage,Integrado; avaliação prática pendente
+3,Metal,Metal,A,Assets/Art/Items/metal-icon-v1.png,Assets/Art/Items/metal-icon-v1.png,Items/IconsV2/Metal,Integrado; avaliação prática pendente
+4,Gunpowder,Polvora,A,Assets/Art/Items/gunpowder-icon-v1.png,Assets/Art/Items/gunpowder-icon-v1.png,Items/IconsV2/Gunpowder,Integrado; avaliação prática pendente
+5,AmmoComponent,Componentes,A,Assets/Art/Items/ammo-component-icon-v1.png,Assets/Art/Items/ammo-component-icon-v1.png,Items/IconsV2/AmmoComponent,Integrado; avaliação prática pendente
+6,Pistol,Pistola,B,Assets/Art/Items/pistol-icon-v1.png,Assets/Art/Items/pistol-icon-v1.png,Items/IconsV2/Pistol,Integrado; avaliação prática pendente
+7,PistolAmmo,Municao de pistola,B,Assets/Art/Items/pistol-ammo-icon-v1.png,Assets/Art/Items/pistol-ammo-icon-v1.png,Items/IconsV2/PistolAmmo,Integrado; avaliação prática pendente
+8,FishCommon,Peixe comum,A,Assets/Art/Items/fish-common-icon-v1.png,Assets/Art/Items/fish-common-icon-v1.png,Items/IconsV2/FishCommon,Integrado; avaliação prática pendente
+9,FishRare,Peixe raro,A,Assets/Art/Items/fish-rare-icon-v1.png,Assets/Art/Items/fish-rare-icon-v1.png,Items/IconsV2/FishRare,Integrado; avaliação prática pendente
+10,FishLarge,Peixe grande,A,Assets/Art/Items/fish-large-icon-v1.png,Assets/Art/Items/fish-large-icon-v1.png,Items/IconsV2/FishLarge,Integrado; avaliação prática pendente
+11,CookedFish,Peixe assado,A,Assets/Art/Items/cooked-fish-icon-v1.png,Assets/Art/Items/cooked-fish-icon-v1.png,Items/IconsV2/CookedFish,Integrado; avaliação prática pendente
+12,BurntFish,Peixe queimado,A,Assets/Art/Items/burnt-fish-icon-v1.png,Assets/Art/Items/burnt-fish-icon-v1.png,Items/IconsV2/BurntFish,Integrado; avaliação prática pendente
+13,RawFish,Peixe cru,A,Assets/Art/Items/raw-fish-icon-v1.png,Assets/Art/Items/raw-fish-icon-v1.png,Items/IconsV2/RawFish,Integrado; avaliação prática pendente
+14,Mosin,Rifle de ferrolho,B,Assets/Art/Items/bolt-rifle-icon-v1.png,Assets/Art/Items/bolt-rifle-icon-v1.png,Items/IconsV2/Mosin,Integrado; avaliação prática pendente
+15,RifleAmmo,Municao de rifle,B,Assets/Art/Items/rifle-ammo-icon-v1.png,Assets/Art/Items/rifle-ammo-icon-v1.png,Items/IconsV2/RifleAmmo,Integrado; avaliação prática pendente
+16,DoubleBarrelShotgun,Espingarda de dois canos,B,Assets/Art/Items/double-barrel-shotgun-icon-v1.png,Assets/Art/Items/double-barrel-shotgun-icon-v1.png,Items/IconsV2/DoubleBarrelShotgun,Integrado; avaliação prática pendente
+17,ShotgunShell,Cartucho de espingarda,B,Assets/Art/Items/shotgun-shell-icon-v1.png,Assets/Art/Items/shotgun-shell-icon-v1.png,Items/IconsV2/ShotgunShell,Integrado; avaliação prática pendente
+18,Lockpick,Gazua,C,Assets/Resources/Items/Lockpick.png,Assets/Resources/Items/Lockpick.png,Items/IconsV2/Lockpick,Integrado; avaliação prática pendente
+19,BoltCutters,Alicate de corte,C,PassageToolArt.Get (raster procedural),PassageToolArt.Get (raster procedural),Items/IconsV2/BoltCutters,Integrado; avaliação prática pendente
+20,Crowbar,Pé de cabra,C,PassageToolArt.Get (raster procedural),PassageToolArt.Get (raster procedural),Items/IconsV2/Crowbar,Integrado; avaliação prática pendente
+21,HandSaw,Serra manual,C,PassageToolArt.Get (raster procedural),PassageToolArt.Get (raster procedural),Items/IconsV2/HandSaw,Integrado; avaliação prática pendente
+22,ServiceKey,Chave de serviço,C,PassageToolArt.Get (raster procedural),PassageToolArt.Get (raster procedural),Items/IconsV2/ServiceKey,Integrado; avaliação prática pendente
+23,DepotKey,Chave do depósito,C,PassageToolArt.Get (raster procedural),PassageToolArt.Get (raster procedural),Items/IconsV2/DepotKey,Integrado; avaliação prática pendente
+24,DungeonCrank,Manivela dos coveiros,C,DungeonToolArt.GetIcon / ExtractionsArt manifest,DungeonToolArt.GetWorld / ExtractionsArt manifest,Items/IconsV2/DungeonCrank,Integrado; avaliação prática pendente
+25,DungeonKey,Chave do canal,C,DungeonToolArt.GetIcon / ExtractionsArt manifest,DungeonToolArt.GetWorld / ExtractionsArt manifest,Items/IconsV2/DungeonKey,Integrado; avaliação prática pendente
+26,TrainingHead,TrainingHead,F,SpriteFactory.Square (treinamento),SpriteFactory.Square (treinamento),Items/IconsV2/TrainingHead,Integrado; avaliação prática pendente
+27,TrainingTorso,TrainingTorso,F,SpriteFactory.Square (treinamento),SpriteFactory.Square (treinamento),Items/IconsV2/TrainingTorso,Integrado; avaliação prática pendente
+28,TrainingHands,TrainingHands,F,SpriteFactory.Square (treinamento),SpriteFactory.Square (treinamento),Items/IconsV2/TrainingHands,Integrado; avaliação prática pendente
+29,TrainingFeet,TrainingFeet,F,SpriteFactory.Square (treinamento),SpriteFactory.Square (treinamento),Items/IconsV2/TrainingFeet,Integrado; avaliação prática pendente
+30,TrainingAmulet,TrainingAmulet,F,SpriteFactory.Square (treinamento),SpriteFactory.Square (treinamento),Items/IconsV2/TrainingAmulet,Integrado; avaliação prática pendente
+31,TrainingRing,TrainingRing,F,SpriteFactory.Square (treinamento),SpriteFactory.Square (treinamento),Items/IconsV2/TrainingRing,Integrado; avaliação prática pendente
+32,ShortSword,Espada curta,B,MeleeWeaponArt.Get (128x128 procedural),MeleeWeaponArt.Get (128x128 procedural),Items/IconsV2/ShortSword,Integrado; avaliação prática pendente
+33,BattleAxe,Machado,B,MeleeWeaponArt.Get (128x128 procedural),MeleeWeaponArt.Get (128x128 procedural),Items/IconsV2/BattleAxe,Integrado; avaliação prática pendente
+34,Spear,Lança,B,MeleeWeaponArt.Get (128x128 procedural),MeleeWeaponArt.Get (128x128 procedural),Items/IconsV2/Spear,Integrado; avaliação prática pendente
+35,WatchmanHood,Capuz do Vigia,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/WatchmanHood,Integrado; avaliação prática pendente
+36,GuardianHelm,Elmo do Guardião,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/GuardianHelm,Integrado; avaliação prática pendente
+37,MarksmanMask,Máscara do Atirador,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/MarksmanMask,Integrado; avaliação prática pendente
+38,ScoutJerkin,Gibão do Batedor,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/ScoutJerkin,Integrado; avaliação prática pendente
+39,FighterMail,Cota do Combatente,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/FighterMail,Integrado; avaliação prática pendente
+40,GuardianCuirass,Couraça do Guardião,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/GuardianCuirass,Integrado; avaliação prática pendente
+41,MarksmanGloves,Luvas do Atirador,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/MarksmanGloves,Integrado; avaliação prática pendente
+42,FighterGauntlets,Manoplas do Combatente,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/FighterGauntlets,Integrado; avaliação prática pendente
+43,ExplorerGloves,Luvas do Explorador,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/ExplorerGloves,Integrado; avaliação prática pendente
+44,WandererBoots,Botas do Andarilho,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/WandererBoots,Integrado; avaliação prática pendente
+45,DuelistBoots,Botas do Duelista,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/DuelistBoots,Integrado; avaliação prática pendente
+46,GuardianGreaves,Grevas do Guardião,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/GuardianGreaves,Integrado; avaliação prática pendente
+47,EyeMedallion,Medalhão do Olho,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/EyeMedallion,Integrado; avaliação prática pendente
+48,BreathTalisman,Talismã do Fôlego,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/BreathTalisman,Integrado; avaliação prática pendente
+49,FighterFang,Presa do Combatente,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/FighterFang,Integrado; avaliação prática pendente
+50,SteadyHandRing,Anel da Mão Firme,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/SteadyHandRing,Integrado; avaliação prática pendente
+51,StrongPulseRing,Anel do Pulso Forte,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/StrongPulseRing,Integrado; avaliação prática pendente
+52,PersistenceRing,Anel da Persistência,D,EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),EquipmentCatalog.Icon ou EquipmentArt.Get (128x128 procedural),Items/IconsV2/PersistenceRing,Integrado; avaliação prática pendente
+53,AncientCoin,Moeda antiga,E,TreasureCatalog.Icon ou TreasureArt.Get (procedural),TreasureCatalog.Icon ou TreasureArt.Get (procedural),Items/IconsV2/AncientCoin,Integrado; avaliação prática pendente
+54,Reliquary,Relicário,E,TreasureCatalog.Icon ou TreasureArt.Get (procedural),TreasureCatalog.Icon ou TreasureArt.Get (procedural),Items/IconsV2/Reliquary,Integrado; avaliação prática pendente
+55,FuneraryIdol,Ídolo funerário,E,TreasureCatalog.Icon ou TreasureArt.Get (procedural),TreasureCatalog.Icon ou TreasureArt.Get (procedural),Items/IconsV2/FuneraryIdol,Integrado; avaliação prática pendente
+56,ValuableScrap,Sucata valiosa,E,TreasureCatalog.Icon ou TreasureArt.Get (procedural),TreasureCatalog.Icon ou TreasureArt.Get (procedural),Items/IconsV2/ValuableScrap,Integrado; avaliação prática pendente
+57,AntiqueObject,Objeto antigo,E,TreasureCatalog.Icon ou TreasureArt.Get (procedural),TreasureCatalog.Icon ou TreasureArt.Get (procedural),Items/IconsV2/AntiqueObject,Integrado; avaliação prática pendente
+58,CollectorsDocument,Documento de coleção,E,TreasureCatalog.Icon ou TreasureArt.Get (procedural),TreasureCatalog.Icon ou TreasureArt.Get (procedural),Items/IconsV2/CollectorsDocument,Integrado; avaliação prática pendente
+59,ImprovisedHandCrossbow,Besta de mão improvisada,I,Novo item,ItemVisualCatalog.World explícito,Items/IconsV2/ImprovisedHandCrossbow,Integrado; avaliação prática pendente
+60,RustySword,Espada enferrujada,I,Novo item,ItemVisualCatalog.World explícito,Items/IconsV2/RustySword,Integrado; avaliação prática pendente
+61,CrossbowBolt,Virotes,I,Novo item,ItemVisualCatalog.World explícito,Items/IconsV2/CrossbowBolt,Integrado; avaliação prática pendente

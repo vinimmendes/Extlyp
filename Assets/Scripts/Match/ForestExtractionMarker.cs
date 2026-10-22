@@ -41,9 +41,9 @@ namespace CyberExtraction.Match
                 }
             }
         }
-        public bool Inspectable(Vector2 origin,float facing)
+        public bool Inspectable(Vector2 origin,float facing,CyberExtraction.Players.PlayerInventory observer=null)
         {
-            if(!CyberExtraction.Bots.BotController.InVision(origin,facing,transform.position)) return false;
+            if(!CyberExtraction.Bots.BotController.InVision(origin,facing,transform.position,observer)) return false;
             var hit=Physics2D.Linecast(origin,transform.position,GameConfig.VisionMask).collider;
             return hit==null || hit.transform.IsChildOf(transform);
         }

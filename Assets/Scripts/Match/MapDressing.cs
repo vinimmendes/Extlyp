@@ -13,7 +13,12 @@ namespace CyberExtraction.Match
             public readonly Vector2 Position;
             public readonly float Angle;
             public readonly byte Kind;
-            public SearchableFurniture(Vector2 position,float angle,byte kind) { Position=position; Angle=angle; Kind=kind; }
+            public readonly CyberExtraction.Items.LootSource Source;
+            public readonly CyberExtraction.Items.LootRisk Risk;
+            public SearchableFurniture(Vector2 position,float angle,byte kind,
+                CyberExtraction.Items.LootSource source=CyberExtraction.Items.LootSource.CommonContainer,
+                CyberExtraction.Items.LootRisk risk=CyberExtraction.Items.LootRisk.Low)
+            { Position=position; Angle=angle; Kind=kind; Source=source; Risk=risk; }
         }
         public static readonly List<SearchableFurniture> FurniturePoints=new List<SearchableFurniture>();
         static readonly Color oldWood=new Color(.30f,.23f,.16f), woodEdge=new Color(.15f,.12f,.09f), rust=new Color(.37f,.22f,.13f);
@@ -26,20 +31,20 @@ namespace CyberExtraction.Match
             // The central aisle and chest at c+(0,4) remain unobstructed in all variants.
             if(variant==0)
             {
-                Furniture("OldWardrobe",At(-2.6f,7.5f),new Vector2(1.7f,1.3f),0);
+                Furniture("OldWardrobe",At(-2.6f,7.5f),new Vector2(1.7f,1.3f),0,At(0,5));
                 Furniture("OldBed",At(2.9f,5.8f),new Vector2(1.7f,2.7f),1);
                 Furniture("OldTable",At(-2.9f,3.7f),new Vector2(1.6f,1.3f),2);
             }
             else if(variant==1)
             {
                 Furniture("WorkshopBench",At(-2.8f,6.8f),new Vector2(2.1f,1.3f),2);
-                Furniture("RustyCabinet",At(2.8f,7.9f),new Vector2(1.4f,1.1f),3);
+                Furniture("RustyCabinet",At(2.8f,7.9f),new Vector2(1.4f,1.1f),3,At(0,5));
                 Block("WorkshopCrate",At(2.9f,3.4f),new Vector2(1.3f,1.1f),oldWood,-3,true);
             }
             else if(variant==2)
             {
-                Furniture("StoreWardrobe",At(-4.4f,7.5f),new Vector2(1.7f,1.3f),0);
-                Furniture("RustyCabinet",At(4.3f,7.5f),new Vector2(1.4f,1.1f),3);
+                Furniture("StoreWardrobe",At(-4.4f,7.5f),new Vector2(1.7f,1.3f),0,At(0,5));
+                Furniture("RustyCabinet",At(4.3f,7.5f),new Vector2(1.4f,1.1f),3,At(0,5));
                 Block("StoreCrate",At(-3.4f,3.8f),new Vector2(1.5f,1.5f),oldWood,-3,true);
                 Block("StoreCrate",At(3.4f,4.8f),new Vector2(1.5f,1.5f),oldWood,-3,true);
             }
@@ -54,16 +59,24 @@ namespace CyberExtraction.Match
             for(int debris=0;debris<3;debris++)
                 Block("Debris",At(2.2f+debris*.6f,3+debris*.18f),new Vector2(.3f,.12f),rust,-4).transform.rotation=Quaternion.Euler(0,0,debris*37+variant*9);
         }
-        void Furniture(string name,Vector2 center,Vector2 size,int kind)
+        void Furniture(string name,Vector2 center,Vector2 size,int kind,Vector2? roomInterior=null)
         {
             int choice=(int)((uint)Mathf.RoundToInt(center.x*17+center.y*31)^ (uint)LayoutSeed)%4;
             choice=Mathf.Abs(choice);
             float angle=kind==0 ? (choice%2)*180f : kind==3 ? (choice%2)*90f :
                 kind==1 ? (choice%2)*90f : choice==0 ? 0f : choice==1 ? 90f : choice==2 ? 18f : -18f;
+            if((kind==0 || kind==3) && roomInterior.HasValue)
+            {
+                // The sprite opens toward local -Y. Face the room, never randomly toward its wall.
+                // The entire ruin's later rotation is applied to both its furniture and walls.
+                Vector2 inward=roomInterior.Value-center;
+                angle=Mathf.Abs(inward.x)>Mathf.Abs(inward.y) ? (inward.x>0 ? 90f : 270f) : (inward.y>0 ? 180f : 0f);
+            }
             if(kind==0 || kind==3)
             {
                 // Network loot fixture owns both the visual and the solid collider.
-                FurniturePoints.Add(new SearchableFurniture(center,angle,(byte)(kind==0 ? 1 : 2)));
+                FurniturePoints.Add(new SearchableFurniture(center,angle,(byte)(kind==0 ? 1 : 2),
+                    kind==3 ? CyberExtraction.Items.LootSource.Supplies : CyberExtraction.Items.LootSource.CommonContainer));
                 var obstacle=Block(name,center,size,woodEdge,-4,true);
                 obstacle.transform.rotation=Quaternion.Euler(0,0,angle);
                 obstacle.layer=kind==0 ? GameConfig.WallLayer : GameConfig.LowObstacleLayer;

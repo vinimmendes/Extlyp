@@ -1,12 +1,12 @@
 # Cyber Extraction - Documento de Design (MVP)
 
-Versao atual: protocolo 11 — 10/10/2026. Resumo tecnico e validacao em README.md, SERVER_SETUP.md e Docs/Auditoria/IMPLEMENTACAO_2026-10-10.md.
+Estado atual em 12/10/2026: protocolo 18, mapa grande 400 x 600, expedicoes de 10 minutos, cinco participantes e extrações variáveis. Pesca exclusivamente na cabana. Animações Blender de troca/recarga das três armas, Rastejante e Corrosivo integradas ao código e assets; validação prática pendente. Guias operacionais em README.md, SERVER_SETUP.md e EXPANSION_SETUP.md; evidências de entregas anteriores são históricas.
 
 O MVP e as tabelas abaixo conservam o historico de design; secoes antigas nao substituem o estado atual descrito no topo.
 
 Versao original 0.1 - 08/10/2026
 
-Nova etapa autorizada: mapa de expedicao 900 x 1380, pistola com carregador 12/reserva 24/recarga 1,5s, mochila e bau seguro de nove slots e pilhas de 20. Fabricacao de 12 tiros por 3 metais + 1 polvora + 1 componente; Reciclador de 10/20/30%; baus de exploracao com abertura em 2/4/6s. Pesca com tensao e fogueira com controle de cozimento substituem o buff automatico do pier. Detalhes e controles em EXPANSION_SETUP.md.
+Etapa histórica anterior: mapa de expedicao 900 x 1380, pistola com carregador 12/reserva 24/recarga 1,5s, mochila e bau seguro de nove slots e pilhas de 20. Fabricacao de 12 tiros por 3 metais + 1 polvora + 1 componente; Reciclador de 10/20/30%; baus de exploracao com abertura em 2/4/6s. Pesca com tensao e fogueira com controle de cozimento substituem o buff automatico do pier. Para regras atuais, consultar EXPANSION_SETUP.md e Gameplay.asset.
 
 Atualizacao do prototipo: servidor dedicado no PC, partidas de 5 participantes com preenchimento por bots apos 30 segundos e acampamento pessoal jogavel. Madeira (M), pregos (P) e bandagens (B) substituem o loot generico. Reparo do pier, pesca e buff Bem alimentado definem o inicio da meta-progressao. Regras e limites atuais estao em CAMP_ITEMS.md e SERVER_SETUP.md; as secoes originais abaixo documentam o MVP anterior.
 

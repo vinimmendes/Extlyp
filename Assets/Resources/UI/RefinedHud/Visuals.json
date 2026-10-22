@@ -1,0 +1,271 @@
+{
+  "Version": 1,
+  "Slots": [
+    {
+      "Name": "Button",
+      "Atlas": 0,
+      "X": 8,
+      "Y": 824,
+      "Width": 192,
+      "Height": 192,
+      "Border": 0
+    },
+    {
+      "Name": "Fire",
+      "Atlas": 0,
+      "X": 216,
+      "Y": 760,
+      "Width": 256,
+      "Height": 256,
+      "Border": 0
+    },
+    {
+      "Name": "SimpleButton",
+      "Atlas": 0,
+      "X": 488,
+      "Y": 824,
+      "Width": 192,
+      "Height": 192,
+      "Border": 0
+    },
+    {
+      "Name": "SimpleFire",
+      "Atlas": 0,
+      "X": 696,
+      "Y": 824,
+      "Width": 192,
+      "Height": 192,
+      "Border": 0
+    },
+    {
+      "Name": "Panel",
+      "Atlas": 0,
+      "X": 8,
+      "Y": 648,
+      "Width": 128,
+      "Height": 96,
+      "Border": 12
+    },
+    {
+      "Name": "SimplePanel",
+      "Atlas": 0,
+      "X": 152,
+      "Y": 648,
+      "Width": 128,
+      "Height": 96,
+      "Border": 12
+    },
+    {
+      "Name": "Move",
+      "Atlas": 0,
+      "X": 296,
+      "Y": 552,
+      "Width": 192,
+      "Height": 192,
+      "Border": 0
+    },
+    {
+      "Name": "Knob",
+      "Atlas": 0,
+      "X": 504,
+      "Y": 552,
+      "Width": 192,
+      "Height": 192,
+      "Border": 0
+    },
+    {
+      "Name": "Heal",
+      "Atlas": 1,
+      "X": 8,
+      "Y": 888,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Swap",
+      "Atlas": 1,
+      "X": 152,
+      "Y": 888,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Ammo",
+      "Atlas": 1,
+      "X": 296,
+      "Y": 888,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Backpack",
+      "Atlas": 1,
+      "X": 440,
+      "Y": 888,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Sprint",
+      "Atlas": 1,
+      "X": 584,
+      "Y": 888,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Menu",
+      "Atlas": 1,
+      "X": 728,
+      "Y": 888,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Aim",
+      "Atlas": 1,
+      "X": 872,
+      "Y": 888,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Bullet",
+      "Atlas": 1,
+      "X": 8,
+      "Y": 744,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Arrow",
+      "Atlas": 1,
+      "X": 152,
+      "Y": 744,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Pistol",
+      "Atlas": 1,
+      "X": 296,
+      "Y": 776,
+      "Width": 128,
+      "Height": 96,
+      "Border": 0
+    },
+    {
+      "Name": "Rifle",
+      "Atlas": 1,
+      "X": 440,
+      "Y": 800,
+      "Width": 128,
+      "Height": 72,
+      "Border": 0
+    },
+    {
+      "Name": "Shotgun",
+      "Atlas": 1,
+      "X": 584,
+      "Y": 804,
+      "Width": 128,
+      "Height": 68,
+      "Border": 0
+    },
+    {
+      "Name": "Sword",
+      "Atlas": 1,
+      "X": 728,
+      "Y": 744,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Axe",
+      "Atlas": 1,
+      "X": 872,
+      "Y": 744,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Spear",
+      "Atlas": 1,
+      "X": 8,
+      "Y": 600,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Chest",
+      "Atlas": 1,
+      "X": 152,
+      "Y": 600,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Exit",
+      "Atlas": 1,
+      "X": 296,
+      "Y": 600,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Food",
+      "Atlas": 1,
+      "X": 440,
+      "Y": 600,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Spores",
+      "Atlas": 1,
+      "X": 584,
+      "Y": 600,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    },
+    {
+      "Name": "Wind",
+      "Atlas": 1,
+      "X": 728,
+      "Y": 600,
+      "Width": 128,
+      "Height": 128,
+      "Border": 0
+    }
+  ],
+  "Themes": [
+    {
+      "Somber": true,
+      "Button": "Button",
+      "Fire": "Fire",
+      "Panel": "Panel"
+    },
+    {
+      "Somber": false,
+      "Button": "SimpleButton",
+      "Fire": "SimpleFire",
+      "Panel": "SimplePanel"
+    }
+  ]
+}

@@ -54,7 +54,7 @@ namespace CyberExtraction.Combat
             if (damageClock >= 1f)
             {
                 damageClock -= 1f;
-                health.ServerTakeDamage(SporeRules.DamagePerSecond);
+                health.ServerTakeDamage(SporeRules.DamagePerSecond,null,DamageKind.Poison,"Esporífero");
             }
             if (coughClock >= 2f && !health.IsDead)
             {

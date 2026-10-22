@@ -18,7 +18,7 @@ namespace CyberExtraction.UI
         public static Matrix4x4 Matrix => Matrix4x4.TRS(new Vector3(SafeScreen.x,Screen.height-SafeScreen.yMax,0),Quaternion.identity,Vector3.one*Scale);
         public static Vector2 Point(Vector2 screenPoint) => new Vector2((screenPoint.x-SafeScreen.x)/Scale,(SafeScreen.yMax-screenPoint.y)/Scale);
         public static Rect Region(float x,float y,float width,float height)=>new Rect(Width*x,Height*y,Width*width,Height*height);
-        public static bool BlocksGameplay => ExpeditionMenu.IsOpen || GameOptionsMenu.IsOpen || CampTestPanel.IsOpen || LockpickWindow.IsOpen || TestLabPanel.IsOpen || InventoryWindow.IsOpen || (Camp.CampController.Active && (Camp.CampController.Instance.HasActivity || Camp.CampController.Instance.ExpeditionPanelOpen));
-        public static bool ContainsControl(Vector2 point)=>ExpeditionMenu.IsOpen || GameOptionsMenu.IsOpen || GameOptionsMenu.ButtonBounds.Contains(Point(point)) || LockpickWindow.IsOpen || CampTestPanel.Contains(point) || TestLabPanel.Contains(point) || Quickbar.ContainsScreenPoint(point);
+        public static bool BlocksGameplay => UguiBaseHub.Active || HudLayoutEditor.IsOpen || ExpeditionMenu.IsOpen || GameOptionsMenu.IsOpen || Minimap.IsExpanded || CampTestPanel.IsOpen || LockpickWindow.IsOpen || TestLabPanel.IsOpen || InventoryWindow.IsOpen || (Camp.CampController.Active && (Camp.CampController.Instance.HasActivity || Camp.CampController.Instance.ExpeditionPanelOpen));
+        public static bool ContainsControl(Vector2 point)=>UiScreenCoordinator.PointerOverUi(point) || ExpeditionMenu.IsOpen || GameOptionsMenu.IsOpen || HudLayout.HitBounds(HudControl.Menu).Contains(Point(point)) || LockpickWindow.IsOpen || CampTestPanel.Contains(point) || TestLabPanel.Contains(point) || Quickbar.ContainsScreenPoint(point);
     }
 }

@@ -6,6 +6,8 @@ $smokeProject = [IO.Path]::GetFullPath($Project)
 if (-not $smokeProject.StartsWith((Join-Path $smokeRoot 'Builds') + [IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) { throw 'Smoke requires an isolated checkout under Builds.' }
 $smokeServer = Join-Path $smokeProject 'Builds/Server/CyberExtractionServer.exe'
 $smokeClient = Join-Path $smokeProject 'Builds/Client/CyberExtraction.exe'
+$smokeManifestPath = Join-Path (Split-Path -Parent $smokeServer) 'build-manifest.json'
+$smokeProtocol = if (Test-Path -LiteralPath $smokeManifestPath) { (Get-Content -LiteralPath $smokeManifestPath -Raw | ConvertFrom-Json).protocol } else { $null }
 $smokeLogDir = Join-Path $smokeRoot 'Logs/skills-implementation/smoke'
 New-Item -ItemType Directory -Force -Path $smokeLogDir | Out-Null
 $smokeRunId = [Guid]::NewGuid().ToString('N')
@@ -30,7 +32,7 @@ try {
     if (-not $smokeClientProcess.WaitForExit(210000)) { throw "Client timeout: $smokeClientLog" }
     if ($smokeClientProcess.ExitCode -ne 0 -or -not (Select-String -LiteralPath $smokeClientLog -Pattern 'SKILLS SMOKE CLIENT PASS' -Quiet)) { throw "Client failed: $smokeClientLog" }
     if (-not (Select-String -LiteralPath $smokeServerLog -Pattern 'SKILLS SMOKE SERVER PASS' -Quiet)) { throw "Server checks failed: $smokeServerLog" }
-    @{ passed=$true; clientLog=$smokeClientLog; serverLog=$smokeServerLog; protocol=11; scope='Two Windows processes, isolated camp fixture; AI damage disabled for deterministic transaction test' } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $smokeLogDir 'result.json') -Encoding UTF8
+    @{ passed=$true; clientLog=$smokeClientLog; serverLog=$smokeServerLog; protocol=$smokeProtocol; scope='Two Windows processes, isolated camp fixture; AI damage disabled for deterministic transaction test' } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $smokeLogDir 'result.json') -Encoding UTF8
     Write-Output 'SKILLS SMOKE PASS'
 } finally {
     foreach ($smokeProcess in @($smokeClientProcess,$smokeServerProcess)) {

@@ -1,0 +1,758 @@
+[
+  {
+    "family": "P01",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Low squat SQUARE limestone sarcophagus BASE, exactly square footprint, viewed straight down. Thick worn square rim around a dark shallow EMPTY SQUARE burial recess; no lid, no bones, no loot. Compact massive burial block, all four sides equally long.",
+    "v": 1,
+    "id": "CAT-P01_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P01_v01, variant 1/3. Low squat SQUARE limestone sarcophagus BASE, exactly square footprint, viewed straight down. Thick worn square rim around a dark shallow EMPTY SQUARE burial recess; no lid, no bones, no loot. Compact massive burial block, all four sides equally long. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P01_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      110,
+      123,
+      1148,
+      1136
+    ],
+    "sprite_region_pixels": [
+      110,
+      123,
+      1148,
+      1136
+    ]
+  },
+  {
+    "family": "P01",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Low squat SQUARE limestone sarcophagus BASE, exactly square footprint, viewed straight down. Thick worn square rim around a dark shallow EMPTY SQUARE burial recess; no lid, no bones, no loot. Compact massive burial block, all four sides equally long.",
+    "v": 2,
+    "id": "CAT-P01_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P01_v02, variant 2/3. Low squat SQUARE limestone sarcophagus BASE, exactly square footprint, viewed straight down. Thick worn square rim around a dark shallow EMPTY SQUARE burial recess; no lid, no bones, no loot. Compact massive burial block, all four sides equally long. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P01_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      104,
+      121,
+      1153,
+      1134
+    ],
+    "sprite_region_pixels": [
+      104,
+      121,
+      1153,
+      1134
+    ]
+  },
+  {
+    "family": "P01",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Low squat SQUARE limestone sarcophagus BASE, exactly square footprint, viewed straight down. Thick worn square rim around a dark shallow EMPTY SQUARE burial recess; no lid, no bones, no loot. Compact massive burial block, all four sides equally long.",
+    "v": 3,
+    "id": "CAT-P01_v03",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P01_v03, variant 3/3. Low squat SQUARE limestone sarcophagus BASE, exactly square footprint, viewed straight down. Thick worn square rim around a dark shallow EMPTY SQUARE burial recess; no lid, no bones, no loot. Compact massive burial block, all four sides equally long. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P01_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      128,
+      147,
+      1126,
+      1107
+    ],
+    "sprite_region_pixels": [
+      128,
+      147,
+      1126,
+      1107
+    ]
+  },
+  {
+    "family": "P02",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "SQUARE flat limestone sarcophagus LID, exactly square perimeter, seen straight down, shallow erased funerary relief and subtle cracks. It covers a square stone burial base with identical outer silhouette. No separate base, no human figure, no skull silhouette, no readable writing.",
+    "v": 1,
+    "id": "CAT-P02_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P02_v01, variant 1/3. SQUARE flat limestone sarcophagus LID, exactly square perimeter, seen straight down, shallow erased funerary relief and subtle cracks. It covers a square stone burial base with identical outer silhouette. No separate base, no human figure, no skull silhouette, no readable writing. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P02_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      77,
+      82,
+      1179,
+      1170
+    ],
+    "sprite_region_pixels": [
+      77,
+      82,
+      1179,
+      1170
+    ]
+  },
+  {
+    "family": "P02",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "SQUARE flat limestone sarcophagus LID, exactly square perimeter, seen straight down, shallow erased funerary relief and subtle cracks. It covers a square stone burial base with identical outer silhouette. No separate base, no human figure, no skull silhouette, no readable writing.",
+    "v": 2,
+    "id": "CAT-P02_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P02_v02, variant 2/3. SQUARE flat limestone sarcophagus LID, exactly square perimeter, seen straight down, shallow erased funerary relief and subtle cracks. It covers a square stone burial base with identical outer silhouette. No separate base, no human figure, no skull silhouette, no readable writing. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P02_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      74,
+      83,
+      1180,
+      1167
+    ],
+    "sprite_region_pixels": [
+      74,
+      83,
+      1180,
+      1167
+    ]
+  },
+  {
+    "family": "P02",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "SQUARE flat limestone sarcophagus LID, exactly square perimeter, seen straight down, shallow erased funerary relief and subtle cracks. It covers a square stone burial base with identical outer silhouette. No separate base, no human figure, no skull silhouette, no readable writing.",
+    "v": 3,
+    "id": "CAT-P02_v03",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P02_v03, variant 3/3. SQUARE flat limestone sarcophagus LID, exactly square perimeter, seen straight down, shallow erased funerary relief and subtle cracks. It covers a square stone burial base with identical outer silhouette. No separate base, no human figure, no skull silhouette, no readable writing. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P02_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      101,
+      114,
+      1154,
+      1146
+    ],
+    "sprite_region_pixels": [
+      101,
+      114,
+      1154,
+      1146
+    ]
+  },
+  {
+    "family": "P03",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Small worn medieval grave marker slab, compact square footprint, lying/inset flat in a stone funerary niche. Directly overhead upper surface only, faint erased grooves, no upright frontal gravestone silhouette, no readable text.",
+    "v": 1,
+    "id": "CAT-P03_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P03_v01, variant 1/3. Small worn medieval grave marker slab, compact square footprint, lying/inset flat in a stone funerary niche. Directly overhead upper surface only, faint erased grooves, no upright frontal gravestone silhouette, no readable text. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P03_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      79,
+      97,
+      1176,
+      1154
+    ],
+    "sprite_region_pixels": [
+      79,
+      97,
+      1176,
+      1154
+    ]
+  },
+  {
+    "family": "P03",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Small worn medieval grave marker slab, compact square footprint, lying/inset flat in a stone funerary niche. Directly overhead upper surface only, faint erased grooves, no upright frontal gravestone silhouette, no readable text.",
+    "v": 2,
+    "id": "CAT-P03_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P03_v02, variant 2/3. Small worn medieval grave marker slab, compact square footprint, lying/inset flat in a stone funerary niche. Directly overhead upper surface only, faint erased grooves, no upright frontal gravestone silhouette, no readable text. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P03_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      145,
+      149,
+      1113,
+      1103
+    ],
+    "sprite_region_pixels": [
+      145,
+      149,
+      1113,
+      1103
+    ]
+  },
+  {
+    "family": "P03",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Small worn medieval grave marker slab, compact square footprint, lying/inset flat in a stone funerary niche. Directly overhead upper surface only, faint erased grooves, no upright frontal gravestone silhouette, no readable text.",
+    "v": 3,
+    "id": "CAT-P03_v03",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P03_v03, variant 3/3. Small worn medieval grave marker slab, compact square footprint, lying/inset flat in a stone funerary niche. Directly overhead upper surface only, faint erased grooves, no upright frontal gravestone silhouette, no readable text. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P03_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      92,
+      108,
+      1167,
+      1151
+    ],
+    "sprite_region_pixels": [
+      92,
+      108,
+      1167,
+      1151
+    ]
+  },
+  {
+    "family": "P04",
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Shallow horizontal ossuary niche INSERT: a restrained small bundle of aged brown-grey bones contained tightly in dark rectangular limestone recess, rim minimal so it fits inside existing stone niche frame. No large bright skull, no loose bones outside recess.",
+    "v": 1,
+    "id": "CAT-P04_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P04_v01, variant 1/3. Shallow horizontal ossuary niche INSERT: a restrained small bundle of aged brown-grey bones contained tightly in dark rectangular limestone recess, rim minimal so it fits inside existing stone niche frame. No large bright skull, no loose bones outside recess. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:1; horizontal wide canvas, body fits tightly. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P04_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      52,
+      172,
+      1721,
+      714
+    ],
+    "sprite_region_pixels": [
+      52,
+      172,
+      1721,
+      714
+    ]
+  },
+  {
+    "family": "P04",
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Shallow horizontal ossuary niche INSERT: a restrained small bundle of aged brown-grey bones contained tightly in dark rectangular limestone recess, rim minimal so it fits inside existing stone niche frame. No large bright skull, no loose bones outside recess.",
+    "v": 2,
+    "id": "CAT-P04_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P04_v02, variant 2/3. Shallow horizontal ossuary niche INSERT: a restrained small bundle of aged brown-grey bones contained tightly in dark rectangular limestone recess, rim minimal so it fits inside existing stone niche frame. No large bright skull, no loose bones outside recess. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:1; horizontal wide canvas, body fits tightly. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P04_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      29,
+      200,
+      1744,
+      687
+    ],
+    "sprite_region_pixels": [
+      29,
+      200,
+      1744,
+      687
+    ]
+  },
+  {
+    "family": "P04",
+    "count": 3,
+    "w": 2,
+    "h": 1,
+    "subject": "Shallow horizontal ossuary niche INSERT: a restrained small bundle of aged brown-grey bones contained tightly in dark rectangular limestone recess, rim minimal so it fits inside existing stone niche frame. No large bright skull, no loose bones outside recess.",
+    "v": 3,
+    "id": "CAT-P04_v03",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P04_v03, variant 3/3. Shallow horizontal ossuary niche INSERT: a restrained small bundle of aged brown-grey bones contained tightly in dark rectangular limestone recess, rim minimal so it fits inside existing stone niche frame. No large bright skull, no loose bones outside recess. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:1; horizontal wide canvas, body fits tightly. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P04_v03.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      56,
+      204,
+      1719,
+      688
+    ],
+    "sprite_region_pixels": [
+      56,
+      204,
+      1719,
+      688
+    ]
+  },
+  {
+    "family": "P05",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Single sealed medieval ceramic funerary urn seen EXACTLY straight down: round chipped clay lid, short thick circular shoulder visible around it, dark muted aged clay. No upright frontal vase, no glow, no pickup symbol, no contents spilling out.",
+    "v": 1,
+    "id": "CAT-P05_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P05_v01, variant 1/3. Single sealed medieval ceramic funerary urn seen EXACTLY straight down: round chipped clay lid, short thick circular shoulder visible around it, dark muted aged clay. No upright frontal vase, no glow, no pickup symbol, no contents spilling out. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P05_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      118,
+      118,
+      1137,
+      1136
+    ],
+    "sprite_region_pixels": [
+      118,
+      118,
+      1137,
+      1136
+    ]
+  },
+  {
+    "family": "P05",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Single sealed medieval ceramic funerary urn seen EXACTLY straight down: round chipped clay lid, short thick circular shoulder visible around it, dark muted aged clay. No upright frontal vase, no glow, no pickup symbol, no contents spilling out.",
+    "v": 2,
+    "id": "CAT-P05_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P05_v02, variant 2/3. Single sealed medieval ceramic funerary urn seen EXACTLY straight down: round chipped clay lid, short thick circular shoulder visible around it, dark muted aged clay. No upright frontal vase, no glow, no pickup symbol, no contents spilling out. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P05_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      100,
+      102,
+      1154,
+      1151
+    ],
+    "sprite_region_pixels": [
+      100,
+      102,
+      1154,
+      1151
+    ]
+  },
+  {
+    "family": "P05",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Single sealed medieval ceramic funerary urn seen EXACTLY straight down: round chipped clay lid, short thick circular shoulder visible around it, dark muted aged clay. No upright frontal vase, no glow, no pickup symbol, no contents spilling out.",
+    "v": 3,
+    "id": "CAT-P05_v03",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P05_v03, variant 3/3. Single sealed medieval ceramic funerary urn seen EXACTLY straight down: round chipped clay lid, short thick circular shoulder visible around it, dark muted aged clay. No upright frontal vase, no glow, no pickup symbol, no contents spilling out. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P05_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      102,
+      104,
+      1152,
+      1159
+    ],
+    "sprite_region_pixels": [
+      102,
+      104,
+      1152,
+      1159
+    ]
+  },
+  {
+    "family": "P06",
+    "count": 2,
+    "w": 2,
+    "h": 1,
+    "subject": "Tumbled low medieval wooden funeral bench seen EXACTLY straight down, two-cell wide rectangular footprint, dark thick worn planks and stout broken supports folded tightly inside outline, no fabric, no bones, no floor background.",
+    "v": 1,
+    "id": "CAT-P06_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P06_v01, variant 1/2. Tumbled low medieval wooden funeral bench seen EXACTLY straight down, two-cell wide rectangular footprint, dark thick worn planks and stout broken supports folded tightly inside outline, no fabric, no bones, no floor background. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:1; horizontal wide canvas, body fits tightly. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P06_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      34,
+      176,
+      1741,
+      715
+    ],
+    "sprite_region_pixels": [
+      34,
+      176,
+      1741,
+      715
+    ]
+  },
+  {
+    "family": "P06",
+    "count": 2,
+    "w": 2,
+    "h": 1,
+    "subject": "Tumbled low medieval wooden funeral bench seen EXACTLY straight down, two-cell wide rectangular footprint, dark thick worn planks and stout broken supports folded tightly inside outline, no fabric, no bones, no floor background.",
+    "v": 2,
+    "id": "CAT-P06_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P06_v02, variant 2/2. Tumbled low medieval wooden funeral bench seen EXACTLY straight down, two-cell wide rectangular footprint, dark thick worn planks and stout broken supports folded tightly inside outline, no fabric, no bones, no floor background. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:1; horizontal wide canvas, body fits tightly. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P06_v02.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "alpha_body_bounds": [
+      49,
+      153,
+      1727,
+      743
+    ],
+    "sprite_region_pixels": [
+      49,
+      153,
+      1727,
+      743
+    ]
+  },
+  {
+    "family": "P07",
+    "count": 2,
+    "w": 3,
+    "h": 1,
+    "subject": "Long narrow medieval funeral preparation table seen EXACTLY straight down, dark oak tabletop with restrained forged iron corner straps, all legs hidden under tabletop outline. Empty surface, no tools no candles no cloth, no modern metal.",
+    "v": 1,
+    "id": "CAT-P07_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P07_v01, variant 1/2. Long narrow medieval funeral preparation table seen EXACTLY straight down, dark oak tabletop with restrained forged iron corner straps, all legs hidden under tabletop outline. Empty surface, no tools no candles no cloth, no modern metal. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 3:1; horizontal wide canvas, body fits tightly. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P07_v01.png",
+    "source_pixels": [
+      2172,
+      724
+    ],
+    "alpha_body_bounds": [
+      65,
+      132,
+      2107,
+      591
+    ],
+    "sprite_region_pixels": [
+      65,
+      132,
+      2107,
+      591
+    ]
+  },
+  {
+    "family": "P07",
+    "count": 2,
+    "w": 3,
+    "h": 1,
+    "subject": "Long narrow medieval funeral preparation table seen EXACTLY straight down, dark oak tabletop with restrained forged iron corner straps, all legs hidden under tabletop outline. Empty surface, no tools no candles no cloth, no modern metal.",
+    "v": 2,
+    "id": "CAT-P07_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P07_v02, variant 2/2. Long narrow medieval funeral preparation table seen EXACTLY straight down, dark oak tabletop with restrained forged iron corner straps, all legs hidden under tabletop outline. Empty surface, no tools no candles no cloth, no modern metal. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 3:1; horizontal wide canvas, body fits tightly. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P07_v02.png",
+    "source_pixels": [
+      2172,
+      724
+    ],
+    "alpha_body_bounds": [
+      38,
+      80,
+      2135,
+      626
+    ],
+    "sprite_region_pixels": [
+      38,
+      80,
+      2135,
+      626
+    ]
+  },
+  {
+    "family": "P08",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Single heavy fallen SQUARE limestone masonry block seen EXACTLY straight down. Broad readable compact square top, broken corner and restrained cracks, short contact shading inside square footprint; no rubble scattered outside.",
+    "v": 1,
+    "id": "CAT-P08_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P08_v01, variant 1/3. Single heavy fallen SQUARE limestone masonry block seen EXACTLY straight down. Broad readable compact square top, broken corner and restrained cracks, short contact shading inside square footprint; no rubble scattered outside. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P08_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      115,
+      115,
+      1142,
+      1143
+    ],
+    "sprite_region_pixels": [
+      115,
+      115,
+      1142,
+      1143
+    ]
+  },
+  {
+    "family": "P08",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Single heavy fallen SQUARE limestone masonry block seen EXACTLY straight down. Broad readable compact square top, broken corner and restrained cracks, short contact shading inside square footprint; no rubble scattered outside.",
+    "v": 2,
+    "id": "CAT-P08_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P08_v02, variant 2/3. Single heavy fallen SQUARE limestone masonry block seen EXACTLY straight down. Broad readable compact square top, broken corner and restrained cracks, short contact shading inside square footprint; no rubble scattered outside. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P08_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      124,
+      131,
+      1134,
+      1120
+    ],
+    "sprite_region_pixels": [
+      124,
+      131,
+      1134,
+      1120
+    ]
+  },
+  {
+    "family": "P08",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Single heavy fallen SQUARE limestone masonry block seen EXACTLY straight down. Broad readable compact square top, broken corner and restrained cracks, short contact shading inside square footprint; no rubble scattered outside.",
+    "v": 3,
+    "id": "CAT-P08_v03",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P08_v03, variant 3/3. Single heavy fallen SQUARE limestone masonry block seen EXACTLY straight down. Broad readable compact square top, broken corner and restrained cracks, short contact shading inside square footprint; no rubble scattered outside. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P08_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      126,
+      121,
+      1140,
+      1148
+    ],
+    "sprite_region_pixels": [
+      126,
+      121,
+      1140,
+      1148
+    ]
+  },
+  {
+    "family": "P09",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Compact SQUARE pile of collapsed medieval limestone masonry, low solid cover, large broad fragments with clearly defined square perimeter, gaps dark, minimal tiny debris, no pieces outside footprint, no bones.",
+    "v": 1,
+    "id": "CAT-P09_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P09_v01, variant 1/3. Compact SQUARE pile of collapsed medieval limestone masonry, low solid cover, large broad fragments with clearly defined square perimeter, gaps dark, minimal tiny debris, no pieces outside footprint, no bones. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P09_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      133,
+      140,
+      1125,
+      1109
+    ],
+    "sprite_region_pixels": [
+      133,
+      140,
+      1125,
+      1109
+    ]
+  },
+  {
+    "family": "P09",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Compact SQUARE pile of collapsed medieval limestone masonry, low solid cover, large broad fragments with clearly defined square perimeter, gaps dark, minimal tiny debris, no pieces outside footprint, no bones.",
+    "v": 2,
+    "id": "CAT-P09_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P09_v02, variant 2/3. Compact SQUARE pile of collapsed medieval limestone masonry, low solid cover, large broad fragments with clearly defined square perimeter, gaps dark, minimal tiny debris, no pieces outside footprint, no bones. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P09_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      105,
+      115,
+      1157,
+      1135
+    ],
+    "sprite_region_pixels": [
+      105,
+      115,
+      1157,
+      1135
+    ]
+  },
+  {
+    "family": "P09",
+    "count": 3,
+    "w": 2,
+    "h": 2,
+    "subject": "Compact SQUARE pile of collapsed medieval limestone masonry, low solid cover, large broad fragments with clearly defined square perimeter, gaps dark, minimal tiny debris, no pieces outside footprint, no bones.",
+    "v": 3,
+    "id": "CAT-P09_v03",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P09_v03, variant 3/3. Compact SQUARE pile of collapsed medieval limestone masonry, low solid cover, large broad fragments with clearly defined square perimeter, gaps dark, minimal tiny debris, no pieces outside footprint, no bones. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 2:2; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P09_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      136,
+      144,
+      1127,
+      1121
+    ],
+    "sprite_region_pixels": [
+      136,
+      144,
+      1127,
+      1121
+    ]
+  },
+  {
+    "family": "P10",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Flat decal of a few broken medieval funerary ceramic fragments lying on ground, no ground texture included. Thin small dark dull brown-grey pottery shards sparsely grouped in compact square footprint, no raised vase, no white or shiny fragments.",
+    "v": 1,
+    "id": "CAT-P10_v01",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P10_v01, variant 1/3. Flat decal of a few broken medieval funerary ceramic fragments lying on ground, no ground texture included. Thin small dark dull brown-grey pottery shards sparsely grouped in compact square footprint, no raised vase, no white or shiny fragments. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P10_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      311,
+      311,
+      944,
+      944
+    ],
+    "sprite_region_pixels": [
+      311,
+      311,
+      944,
+      944
+    ]
+  },
+  {
+    "family": "P10",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Flat decal of a few broken medieval funerary ceramic fragments lying on ground, no ground texture included. Thin small dark dull brown-grey pottery shards sparsely grouped in compact square footprint, no raised vase, no white or shiny fragments.",
+    "v": 2,
+    "id": "CAT-P10_v02",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P10_v02, variant 2/3. Flat decal of a few broken medieval funerary ceramic fragments lying on ground, no ground texture included. Thin small dark dull brown-grey pottery shards sparsely grouped in compact square footprint, no raised vase, no white or shiny fragments. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P10_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      257,
+      267,
+      1000,
+      984
+    ],
+    "sprite_region_pixels": [
+      257,
+      267,
+      1000,
+      984
+    ]
+  },
+  {
+    "family": "P10",
+    "count": 3,
+    "w": 1,
+    "h": 1,
+    "subject": "Flat decal of a few broken medieval funerary ceramic fragments lying on ground, no ground texture included. Thin small dark dull brown-grey pottery shards sparsely grouped in compact square footprint, no raised vase, no white or shiny fragments.",
+    "v": 3,
+    "id": "CAT-P10_v03",
+    "prompt": "Use case: stylized-concept. Production dungeon prop sprite CAT-P10_v03, variant 3/3. Flat decal of a few broken medieval funerary ceramic fragments lying on ground, no ground texture included. Thin small dark dull brown-grey pottery shards sparsely grouped in compact square footprint, no raised vase, no white or shiny fragments. EXACT orthographic top-down camera at 90 degrees, no isometric, no frontal elevation, no perspective. Painterly convincing aged material with broad low-noise shapes. Original medieval abandoned catacombs. Muted limestone #68645B #969082, dark crevices #292D2E, oak #45372B #75614A, sparse bone #A99E83, dull pottery #665B50; no neon no bright white. Soft neutral diffuse shading, no long cast shadow. Genuine transparent RGBA background, object isolated with small 16px-equivalent safety margin, no scenery or text, no other objects or characters. Body aspect 1:1; square canvas and square body footprint. No loot indicator, no active hazard.",
+    "source": "Art/Catacumbas/Sepulturas/Fontes/CAT-P10_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "alpha_body_bounds": [
+      279,
+      302,
+      964,
+      940
+    ],
+    "sprite_region_pixels": [
+      279,
+      302,
+      964,
+      940
+    ]
+  }
+]

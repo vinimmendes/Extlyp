@@ -11,7 +11,7 @@ using CyberExtraction.Players;
 
 namespace CyberExtraction.Match
 {
-    public enum TestAction : byte { Weapon, Monster, ClearEnemies, Bots, Restore, ReturnToShelter, Invulnerable, Item, Web, Acid, ClearEffects, Teleport, LockKit, CreateLock, ClearLocks }
+    public enum TestAction : byte { Weapon, Monster, ClearEnemies, Bots, Restore, ReturnToShelter, Invulnerable, Item, Web, Acid, ClearEffects, Teleport, LockKit, CreateLock, ClearLocks, Equipment }
 
     public partial class MatchManager
     {
@@ -20,7 +20,7 @@ namespace CyberExtraction.Match
         public NetworkVariable<FixedString128Bytes> TestMessage = new NetworkVariable<FixedString128Bytes>();
         public NetworkVariable<int> TestRevision = new NetworkVariable<int>(0);
         readonly Dictionary<ulong,double> nextTestCommand = new Dictionary<ulong,double>();
-        public static readonly ItemId[] TestWeapons = { ItemId.Pistol, ItemId.Mosin, ItemId.DoubleBarrelShotgun };
+        public static readonly ItemId[] TestWeapons = { ItemId.ShortSword, ItemId.BattleAxe, ItemId.Spear, ItemId.ImprovisedHandCrossbow, ItemId.RustySword };
         public static readonly string[] TestMonsters = { "Investidor", "Ouvinte", "Couracado", "Aranha", "Arauto", "Mimico", "Corrosivo", "Espreitador", "Devorador", "Esporifero", "Planta-mae", "Bulbo de ataque", "Bulbo de cura", "Servo vegetal" };
 
         public static bool TestAccess(bool allowed, bool quick, MatchState state, bool hasParticipant) =>
@@ -48,7 +48,7 @@ namespace CyberExtraction.Match
             var bootstrap=CyberExtraction.UI.NetworkBootstrap.Instance;
             var player=NetworkManager.ConnectedClients.TryGetValue(sender,out var client) ? client.PlayerObject : null;
             bool participant=player!=null && bootstrap!=null && bootstrap.ClientReady(sender) && !bootstrap.IsCampClient(sender);
-            if(!TestAccess(GameConfig.AllowQuickTest,Sandbox,CurrentState,participant) || action>(byte)TestAction.ClearLocks) return false;
+            if(!TestAccess(GameConfig.AllowQuickTest,Sandbox,CurrentState,participant) || action>(byte)TestAction.Equipment) return false;
             var inv=player.GetComponent<PlayerInventory>(); var hp=player.GetComponent<Health>();
             Debug.Log("TEST LAB COMMAND: "+(TestAction)action+" "+value+" at "+player.transform.position);
             switch((TestAction)action)
@@ -56,12 +56,15 @@ namespace CyberExtraction.Match
                 case TestAction.Weapon:
                     if(value<0 || value>=TestWeapons.Length || !inv.IsAlive) return false;
                     var weapon=WeaponCatalog.Get(TestWeapons[value]);
-                    var grid=new InventoryGrid(); grid.Add(new ItemStack(weapon.Item,1,0,weapon.Capacity));
-                    grid.Add(new ItemStack(weapon.Ammo,60)); grid.Add(new ItemStack(ItemId.Bandage,10));
-                    inv.FishingPhase.Value=0; inv.ServerSetGrid(grid); inv.EquippedSlot.Value=0;
+                    var grid=new InventoryGrid(ItemCatalog.BackpackSlots); grid.Add(new ItemStack(weapon.Item,1,0,weapon.Capacity));
+                    if(!weapon.IsMelee) grid.Add(new ItemStack(weapon.Ammo,60)); grid.Add(new ItemStack(ItemId.Bandage,10));
+                    var testLoadout=inv.Loadout();
+                    testLoadout.Slots[EquipmentLoadout.WeaponA]=default; testLoadout.Slots[EquipmentLoadout.WeaponB]=default;
+                    testLoadout.FillWeapons(grid); inv.ServerSetLoadout(testLoadout);
+                    inv.FishingPhase.Value=0; inv.ServerSetGrid(grid);
                     player.GetComponent<PlayerShooter>().ServerCancelReload();
                     player.GetComponent<PlayerShooter>().BoltEndsAt.Value=0;
-                    Say("Arma equipada com 60 tiros de reserva."); break;
+                    Say(weapon.IsMelee ? "Arma corpo a corpo equipada; ataque usa stamina." : "Arma equipada com 60 tiros de reserva."); break;
                 case TestAction.Monster:
                     if(value<0 || value>=TestMonsters.Length || Monster.All.Count+PlantCreature.All.Count>=40) return false;
                     if(!FindTestPoint(player.transform.position,player.transform.right,1.5f,out var point)) { Say("Sem espaco livre por perto. Mude de posicao."); return false; }
@@ -83,15 +86,24 @@ namespace CyberExtraction.Match
                 case TestAction.ClearEnemies:
                     ClearTestEnemies(); Say("Monstros, teias, acido e nuvens removidos."); break;
                 case TestAction.Bots:
-                    if(value<0 || value>=GameConfig.MatchCapacity) return false;
+                    if(value<0 || value>=MapBuilder.Capacity) return false;
                     foreach(var other in new List<PlayerInventory>(PlayerInventory.All))
                         if(other!=null && other.GetComponent<BotController>()!=null && other.IsSpawned) other.NetworkObject.Despawn();
                     BotCount.Value=0; QuickBots.Value=value;
-                    for(int i=0;i<value;i++)
+                    var freeBotSlots=new List<int>();
+                    for(int candidate=0;candidate<MapBuilder.Capacity;candidate++)
                     {
-                        int slot=i+1;
+                        bool reserved=false;
+                        foreach(var spawnClient in NetworkManager.Singleton.ConnectedClientsList)
+                            if(bootstrap.SlotFor(spawnClient.ClientId)==candidate) { reserved=true; break; }
+                        if(!reserved) freeBotSlots.Add(candidate);
+                    }
+                    for(int i=0;i<value && freeBotSlots.Count>0;i++)
+                    {
+                        int pick=Random.Range(0,freeBotSlots.Count),slot=freeBotSlots[pick];
+                        freeBotSlots.RemoveAt(pick);
                         Vector2 at=MapBuilder.ParticipantSpawn(slot);
-                        if(!PlantEncounter.ClearSpawn(at,.5f) && !FindTestPoint(MapBuilder.SpawnPoints[1],Vector2.right,.6f,out at)) continue;
+                        if(!PlantEncounter.ClearSpawn(at,.5f)) continue;
                         var bot=Instantiate(botPrefab,at,Quaternion.Euler(0,0,MapBuilder.ParticipantFacing(slot)));
                         bot.GetComponent<BotController>().difficulty=botDifficulty;
                         bot.GetComponent<NetworkObject>().Spawn(); bot.GetComponent<PlayerInventory>().ServerBeginExpedition(); BotCount.Value++;
@@ -103,19 +115,35 @@ namespace CyberExtraction.Match
                     hp.Current.Value=hp.Maximum.Value; inv.ServerSetStatus(PlayerStatus.Alive);
                     var exposure=player.GetComponent<SporeContamination>(); if(exposure!=null) exposure.ServerResetExposure();
                     if((TestAction)action==TestAction.ReturnToShelter) TestMove(player,MapBuilder.ParticipantSpawn(bootstrap.SlotFor(sender)));
-                    if(inv.ActiveWeapon==null) inv.ServerSetGrid(InventoryGrid.Starter());
-                    inv.ServerSetRounds(inv.ActiveWeapon.Capacity); int missing=60-inv.Count(inv.ActiveWeapon.Ammo);
+                    if(inv.ActiveWeapon==null) { var starter=InventoryGrid.Starter(); var starterLoadout=inv.Loadout(); starterLoadout.FillWeapons(starter); inv.ServerSetLoadout(starterLoadout); inv.ServerSetGrid(starter); }
+                    inv.ServerSetRounds(inv.ActiveWeapon.Capacity); int missing=inv.ActiveWeapon.IsMelee ? 0 : 60-inv.Count(inv.ActiveWeapon.Ammo);
                     if(missing>0) inv.ServerAddItem(inv.ActiveWeapon.Ammo,missing);
+                    player.GetComponent<PlayerShooter>().ServerCancelMelee();
+                    player.GetComponent<PlayerController>()?.ServerResetStamina();
                     player.GetComponent<PlayerShooter>().ServerCancelReload(); player.GetComponent<PlayerShooter>().BoltEndsAt.Value=0;
                     Say("Vida e carregador restaurados; reserva reposta se houver espaco."); break;
                 case TestAction.Invulnerable:
                     if(value!=0 && value!=1) return false;
                     hp.TestInvulnerable=value==1; TestProtection.Value=value==1; Say(value==1 ? "Protecao ligada: dano bloqueado." : "Protecao desligada: dano normal."); break;
                 case TestAction.Item:
-                    if(value<0 || value>=ItemCatalog.Count || !inv.IsAlive) return false;
-                    var item=(ItemId)value; var stack=new ItemStack(item,ItemCatalog.Weapon(item) ? 1 : 5,0,ItemCatalog.Weapon(item) ? WeaponCatalog.Get(item).Capacity : 0);
+                    if(value<0 || value>=ItemCatalog.Count || !ItemCatalog.Available((ItemId)value) || !inv.IsAlive) return false;
+                    var item=(ItemId)value; var stack=new ItemStack(item,Mathf.Min(5,ItemCatalog.Limit(item)),0,ItemCatalog.Weapon(item) ? WeaponCatalog.Get(item).Capacity : 0);
+                    if(ItemCatalog.Equipment(item) && !EquipmentCatalog.IsDefined(item))
+                    {
+                        var bonuses=new AttributeValues();
+                        switch(ItemCatalog.EquipmentSlotFor(item))
+                        { case EquipmentSlot.Head: bonuses.Perception=1; break; case EquipmentSlot.Torso: bonuses.Vitality=1; break;
+                          case EquipmentSlot.Hands: bonuses.Strength=1; break; case EquipmentSlot.Feet: bonuses.Vigor=1; break;
+                          case EquipmentSlot.Amulet: bonuses.Perception=1; break; case EquipmentSlot.Ring: bonuses.Dexterity=1; break; }
+                        stack.Instance.Bonuses=bonuses;
+                    }
                     if(!inv.ServerAddStack(stack)) ServerDropStack(player.transform.position+player.transform.right*1.5f,stack);
                     Say("Item de teste entregue."); break;
+                case TestAction.Equipment:
+                    if(value<(int)ItemId.WatchmanHood*3 || value>(int)ItemId.PersistenceRing*3+2 || !inv.IsAlive) return false;
+                    var equipment=EquipmentCatalog.Create((ItemId)(value/3),(ItemRarity)(value%3));
+                    if(!inv.ServerAddStack(equipment)) ServerDropStack(player.transform.position+player.transform.right*1.5f,equipment);
+                    Say(ItemCatalog.Name(equipment.Item)+" · "+EquipmentCatalog.RarityName(equipment.Instance.Rarity)+" entregue."); break;
                 case TestAction.Web:
                 case TestAction.Acid:
                     if(MonsterEffects.Count>=256) return false;
@@ -134,7 +162,7 @@ namespace CyberExtraction.Match
                 case TestAction.LockKit:
                     if(!inv.IsAlive || inv.Lockpicking.Value) return false;
                     var lockKit=InventoryGrid.Starter(false); lockKit.Add(new ItemStack(ItemId.Lockpick,3)); lockKit.Add(new ItemStack(ItemId.Bandage,5));
-                    inv.ServerSetGrid(lockKit); Say("Kit pronto: 3 gazuas novas, pistola e bandagens."); break;
+                    inv.ServerSetGrid(lockKit); Say("Kit pronto: 3 gazuas, besta de mão, espada enferrujada, virotes e bandagens."); break;
                 case TestAction.CreateLock:
                     if(value<0 || value>=12 || !inv.IsAlive || inv.Lockpicking.Value) return false;
                     int count=0; foreach(var existing in LootPickup.All) if(existing!=null && existing.LabLock.Value) count++;

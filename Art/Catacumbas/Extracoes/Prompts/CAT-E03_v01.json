@@ -1,0 +1,13 @@
+{
+  "id": "CAT-E03_v01",
+  "family": 3,
+  "variant": 1,
+  "w": 0.7547169811320755,
+  "h": 0.7547169811320755,
+  "frames": 1,
+  "columns": 1,
+  "rows": 1,
+  "subject": "A small medieval hand-operated wooden capstan seen from above, square oak footing, circular rope spool and central socket, NO detachable crank handle installed.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E03_v01.\nSubject: A small medieval hand-operated wooden capstan seen from above, square oak footing, circular rope spool and central socket, NO detachable crank handle installed.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 0.8:0.8.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-450ce9d5-db9d-464b-b5ba-7cb6f2d251cc.png"
+}

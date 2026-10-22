@@ -1,0 +1,168 @@
+{
+  "stage": 3,
+  "source": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3.blend",
+  "saved_as": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\PlayerProposals\\WarriorArtV3\\working-v3\\warrior_v3-step03-armor.blend",
+  "blender": "5.2.2 LTS",
+  "changed_surfaces": [
+    {
+      "object": "GEO-pauldron-shell-L",
+      "before_vertices_faces": [
+        144,
+        121
+      ],
+      "after_vertices_faces": [
+        96,
+        73
+      ],
+      "rigid_bone": "upper_arm.L",
+      "thickness_m": 0.009
+    },
+    {
+      "object": "GEO-pauldron-lame-v2-L-0",
+      "before_vertices_faces": [
+        39,
+        24
+      ],
+      "after_vertices_faces": [
+        51,
+        32
+      ],
+      "rigid_bone": "upper_arm.L",
+      "thickness_m": 0.007
+    },
+    {
+      "object": "GEO-pauldron-lame-v2-L-1",
+      "before_vertices_faces": [
+        39,
+        24
+      ],
+      "after_vertices_faces": [
+        51,
+        32
+      ],
+      "rigid_bone": "upper_arm.L",
+      "thickness_m": 0.007
+    },
+    {
+      "object": "GEO-knee-cap-L",
+      "before_vertices_faces": [
+        266,
+        288
+      ],
+      "after_vertices_faces": [
+        30,
+        21
+      ],
+      "rigid_bone": "shin.L",
+      "thickness_m": 0.006
+    },
+    {
+      "object": "GEO-elbow-L",
+      "before_vertices_faces": [
+        266,
+        288
+      ],
+      "after_vertices_faces": [
+        24,
+        17
+      ],
+      "rigid_bone": "forearm.L",
+      "thickness_m": 0.006
+    },
+    {
+      "object": "GEO-thigh-plate-L",
+      "before_vertices_faces": [
+        266,
+        288
+      ],
+      "after_vertices_faces": [
+        52,
+        36
+      ],
+      "rigid_bone": "thigh.L",
+      "thickness_m": 0.007
+    },
+    {
+      "object": "GEO-pauldron-shell-R",
+      "before_vertices_faces": [
+        144,
+        121
+      ],
+      "after_vertices_faces": [
+        96,
+        73
+      ],
+      "rigid_bone": "upper_arm.R",
+      "thickness_m": 0.009
+    },
+    {
+      "object": "GEO-pauldron-lame-v2-R-0",
+      "before_vertices_faces": [
+        39,
+        24
+      ],
+      "after_vertices_faces": [
+        51,
+        32
+      ],
+      "rigid_bone": "upper_arm.R",
+      "thickness_m": 0.007
+    },
+    {
+      "object": "GEO-pauldron-lame-v2-R-1",
+      "before_vertices_faces": [
+        39,
+        24
+      ],
+      "after_vertices_faces": [
+        51,
+        32
+      ],
+      "rigid_bone": "upper_arm.R",
+      "thickness_m": 0.007
+    },
+    {
+      "object": "GEO-knee-cap-R",
+      "before_vertices_faces": [
+        266,
+        288
+      ],
+      "after_vertices_faces": [
+        30,
+        21
+      ],
+      "rigid_bone": "shin.R",
+      "thickness_m": 0.006
+    },
+    {
+      "object": "GEO-elbow-R",
+      "before_vertices_faces": [
+        266,
+        288
+      ],
+      "after_vertices_faces": [
+        24,
+        17
+      ],
+      "rigid_bone": "forearm.R",
+      "thickness_m": 0.006
+    },
+    {
+      "object": "GEO-thigh-plate-R",
+      "before_vertices_faces": [
+        266,
+        288
+      ],
+      "after_vertices_faces": [
+        52,
+        36
+      ],
+      "rigid_bone": "thigh.R",
+      "thickness_m": 0.007
+    }
+  ],
+  "rivets_repositioned": 8,
+  "scope": "Shoulder shells/lames, knee/elbow guards, thigh plates. No rig, keyframe, material, camera, equipment or light edits.",
+  "verification": "Static authoring review only; no animation playback, simulation, render, Unity test or build.",
+  "limitations": "Articulation clearance over the full cycle awaits stage 9; no claim of collision-free animation."
+}

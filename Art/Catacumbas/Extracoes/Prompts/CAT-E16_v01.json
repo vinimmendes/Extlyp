@@ -1,0 +1,13 @@
+{
+  "id": "CAT-E16_v01",
+  "family": 16,
+  "variant": 1,
+  "w": 0.9433962264150942,
+  "h": 0.9433962264150942,
+  "frames": 1,
+  "columns": 1,
+  "rows": 1,
+  "subject": "INVENTORY ICON of a large medieval iron canal key, circular bow and two square teeth. Large simple clear equipment silhouette, subdued ivory edge highlights, square composition. No border, panel, ornament, text or glow. Readable in simple and dark HUD themes.",
+  "prompt": "Use case: stylized-concept. Production 2D dungeon extraction inventory icon CAT-E16_v01.\nSubject: INVENTORY ICON of a large medieval iron canal key, circular bow and two square teeth. Large simple clear equipment silhouette, subdued ivory edge highlights, square composition. No border, panel, ornament, text or glow. Readable in simple and dark HUD themes.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1:1.",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a13aa5-abe5-78c3-ac75-3524a7a30d6d\\exec-021ac0bd-f2d8-406e-b155-6f8dcf42423d.png"
+}

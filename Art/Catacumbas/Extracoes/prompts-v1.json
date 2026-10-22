@@ -1,0 +1,692 @@
+[
+  {
+    "id": "CAT-E01_v01",
+    "family": 1,
+    "variant": 1,
+    "w": 2.830188679245283,
+    "h": 2.830188679245283,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A square medieval stone stairwell mouth, five descending steps directed upward in the image toward a dark continuation, continuous worn limestone side curbs, no roof or scenery.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E01_v01.\nSubject: A square medieval stone stairwell mouth, five descending steps directed upward in the image toward a dark continuation, continuous worn limestone side curbs, no roof or scenery.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 3:3.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E01_v01-r02.png",
+    "selected_source": "Art/Catacumbas/Extracoes/Fontes/CAT-E01_v01-r02.png",
+    "revisions": [
+      "Art/Catacumbas/Extracoes/Prompts/CAT-E01_v01-r02.json"
+    ],
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        82,
+        107,
+        1173,
+        1145
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E01_v01",
+    "revision_prompts": [
+      "Edit this medieval top-down stairwell sprite for an EXTRACTION TO THE SURFACE. Preserve the isolated square limestone footprint, worn material, palette, genuine transparent background and exact overhead projection. Reverse the architectural reading: the five treads ASCEND toward the TOP of the image, ending in a pale worn stone landing continuing out beyond the upper edge. Remove the deep dark pit and descending shaft: no black opening at the top. Slightly lighter top landing suggests the route upward without any glow, outdoor scenery, sky, vegetation or sunlight beams. Keep side curbs low and all body inside the same square. No text, people or machinery."
+    ]
+  },
+  {
+    "id": "CAT-E02_v01",
+    "family": 2,
+    "variant": 1,
+    "w": 2.830188679245283,
+    "h": 0.2830188679245283,
+    "frames": 8,
+    "columns": 2,
+    "rows": 4,
+    "subject": "ANIMATION SHEET: 8 frames, exactly TWO columns and FOUR rows, equal cells, row-major. Same top-down horizontal sliding forged iron gate seen edge-on from above, thin rectangular beam width ten times depth. Frame 1 closed beam spanning full width; frames 2-7 progressively retract beam to the LEFT housing; frame 8 beam stowed in left housing, clear empty gap. One fixed left housing anchor and fixed camera in all cells; no labels or grid lines. Each cell has ample equal transparent padding above/below; entire bar contained inside its cell. NOT a frontal vertical portcullis. Metal is dull grey wrought iron. No text. All eight cells required.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E02_v01.\nSubject: ANIMATION SHEET: 8 frames, exactly TWO columns and FOUR rows, equal cells, row-major. Same top-down horizontal sliding forged iron gate seen edge-on from above, thin rectangular beam width ten times depth. Frame 1 closed beam spanning full width; frames 2-7 progressively retract beam to the LEFT housing; frame 8 beam stowed in left housing, clear empty gap. One fixed left housing anchor and fixed camera in all cells; no labels or grid lines. Each cell has ample equal transparent padding above/below; entire bar contained inside its cell. NOT a frontal vertical portcullis. Metal is dull grey wrought iron. No text. All eight cells required.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Exact equal grid and constant frame registration are essential.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E02_v01.png",
+    "source_pixels": [
+      1536,
+      1024
+    ],
+    "sprite_regions_pixels": [
+      [
+        36,
+        84,
+        739,
+        234
+      ],
+      [
+        799,
+        84,
+        1502,
+        234
+      ],
+      [
+        36,
+        316,
+        739,
+        466
+      ],
+      [
+        799,
+        316,
+        1502,
+        466
+      ],
+      [
+        36,
+        554,
+        739,
+        704
+      ],
+      [
+        799,
+        554,
+        1502,
+        704
+      ],
+      [
+        36,
+        787,
+        739,
+        939
+      ],
+      [
+        799,
+        788,
+        1502,
+        938
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E02_v01"
+  },
+  {
+    "id": "CAT-E03_v01",
+    "family": 3,
+    "variant": 1,
+    "w": 0.7547169811320755,
+    "h": 0.7547169811320755,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A small medieval hand-operated wooden capstan seen from above, square oak footing, circular rope spool and central socket, NO detachable crank handle installed.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E03_v01.\nSubject: A small medieval hand-operated wooden capstan seen from above, square oak footing, circular rope spool and central socket, NO detachable crank handle installed.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 0.8:0.8.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E03_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        117,
+        105,
+        1139,
+        1134
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E03_v01"
+  },
+  {
+    "id": "CAT-E04_v01",
+    "family": 4,
+    "variant": 1,
+    "w": 3.773584905660377,
+    "h": 3.773584905660377,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A square old stone well shaft rim seen exactly from above, limestone corners, square opening entirely TRANSPARENT at centre, no floor inside opening, no platform or rope, complete rim.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E04_v01.\nSubject: A square old stone well shaft rim seen exactly from above, limestone corners, square opening entirely TRANSPARENT at centre, no floor inside opening, no platform or rope, complete rim.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 4:4.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E04_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        34,
+        53,
+        1220,
+        1205
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E04_v01"
+  },
+  {
+    "id": "CAT-E05_v01",
+    "family": 5,
+    "variant": 1,
+    "w": 2.3584905660377355,
+    "h": 2.3584905660377355,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A square timber lift platform seen from above, oak planks in iron perimeter braces and four rope attachment corner rings. Empty deck, no shaft, no rope crossing centre.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E05_v01.\nSubject: A square timber lift platform seen from above, oak planks in iron perimeter braces and four rope attachment corner rings. Empty deck, no shaft, no rope crossing centre.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 2.5:2.5.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E05_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        74,
+        59,
+        1181,
+        1175
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E05_v01"
+  },
+  {
+    "id": "CAT-E06_v01",
+    "family": 6,
+    "variant": 1,
+    "w": 0.7547169811320755,
+    "h": 0.7547169811320755,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A small medieval well winch on a square oak base, flat wooden pulley, forged axle and clearly EMPTY square crank socket, no detachable handle, viewed exactly from above.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E06_v01.\nSubject: A small medieval well winch on a square oak base, flat wooden pulley, forged axle and clearly EMPTY square crank socket, no detachable handle, viewed exactly from above.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 0.8:0.8.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E06_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        134,
+        141,
+        1191,
+        1117
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E06_v01"
+  },
+  {
+    "id": "CAT-E07_v01",
+    "family": 7,
+    "variant": 1,
+    "w": 1,
+    "h": 3,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "Vertical thick hemp rope with a compact squared limestone counterweight at the bottom, full piece isolated, exact top-down projection.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E07_v01.\nSubject: Vertical thick hemp rope with a compact squared limestone counterweight at the bottom, full piece isolated, exact top-down projection.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1.06:3.18.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E07_v01.png",
+    "source_pixels": [
+      725,
+      2169
+    ],
+    "sprite_regions_pixels": [
+      [
+        154,
+        23,
+        573,
+        2134
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E07_v01"
+  },
+  {
+    "id": "CAT-E07_v02",
+    "family": 7,
+    "variant": 2,
+    "w": 1,
+    "h": 3,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "Vertical paired hemp ropes and narrow wooden guide, small stone counterweight at bottom, all within a thin rectangular footprint, top-down.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E07_v02.\nSubject: Vertical paired hemp ropes and narrow wooden guide, small stone counterweight at bottom, all within a thin rectangular footprint, top-down.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1.06:3.18.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E07_v02.png",
+    "source_pixels": [
+      725,
+      2169
+    ],
+    "sprite_regions_pixels": [
+      [
+        168,
+        55,
+        557,
+        2097
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E07_v02"
+  },
+  {
+    "id": "CAT-E07_v03",
+    "family": 7,
+    "variant": 3,
+    "w": 1,
+    "h": 3,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "Vertical wrought chain bundle ending in a small rectangular limestone weight, medieval, contained narrow footprint, top-down.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E07_v03.\nSubject: Vertical wrought chain bundle ending in a small rectangular limestone weight, medieval, contained narrow footprint, top-down.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1.06:3.18.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E07_v03.png",
+    "source_pixels": [
+      725,
+      2170
+    ],
+    "sprite_regions_pixels": [
+      [
+        231,
+        69,
+        495,
+        2095
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E07_v03"
+  },
+  {
+    "id": "CAT-E08_v01",
+    "family": 8,
+    "variant": 1,
+    "w": 5.660377358490566,
+    "h": 2.830188679245283,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A horizontal medieval funeral embarkation landing, two short thick dark oak docking edges and pale stone bank ends, central flat empty dark timber boarding deck. Rectangle twice as wide as tall. NO boat, water, rope or people; no unsupported stairs or upright scenery.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E08_v01.\nSubject: A horizontal medieval funeral embarkation landing, two short thick dark oak docking edges and pale stone bank ends, central flat empty dark timber boarding deck. Rectangle twice as wide as tall. NO boat, water, rope or people; no unsupported stairs or upright scenery.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 6:3.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E08_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "sprite_regions_pixels": [
+      [
+        12,
+        130,
+        1764,
+        741
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E08_v01"
+  },
+  {
+    "id": "CAT-E09_v01",
+    "family": 9,
+    "variant": 1,
+    "w": 2.830188679245283,
+    "h": 1.4150943396226414,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A small empty medieval funeral barge, horizontal length twice width, pointed bow explicitly to RIGHT (+X), square stern LEFT, dark aged oak hull and inset planked deck, no sail, mast, motor, oars or coffin. Exact top-down.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E09_v01.\nSubject: A small empty medieval funeral barge, horizontal length twice width, pointed bow explicitly to RIGHT (+X), square stern LEFT, dark aged oak hull and inset planked deck, no sail, mast, motor, oars or coffin. Exact top-down.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 3:1.5.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E09_v01.png",
+    "source_pixels": [
+      1774,
+      887
+    ],
+    "sprite_regions_pixels": [
+      [
+        74,
+        178,
+        1720,
+        699
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E09_v01"
+  },
+  {
+    "id": "CAT-E10_v01",
+    "family": 10,
+    "variant": 1,
+    "w": 1.8867924528301885,
+    "h": 0.1509433962264151,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A thin horizontal straight forged iron mooring chain under tension, anchor ring at left, tight links extend right, exact top-down.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E10_v01.\nSubject: A thin horizontal straight forged iron mooring chain under tension, anchor ring at left, tight links extend right, exact top-down.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 2:0.16.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E10_v01.png",
+    "source_pixels": [
+      1983,
+      793
+    ],
+    "sprite_regions_pixels": [
+      [
+        20,
+        287,
+        1964,
+        519
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E10_v01"
+  },
+  {
+    "id": "CAT-E10_v02",
+    "family": 10,
+    "variant": 2,
+    "w": 1.8867924528301885,
+    "h": 0.1509433962264151,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A thin horizontal released mooring chain, same anchor ring at left, slack end curled at right, overall long narrow footprint, exact top-down.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E10_v02.\nSubject: A thin horizontal released mooring chain, same anchor ring at left, slack end curled at right, overall long narrow footprint, exact top-down.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 2:0.16.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E10_v02.png",
+    "source_pixels": [
+      2172,
+      724
+    ],
+    "sprite_regions_pixels": [
+      [
+        35,
+        235,
+        2138,
+        478
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E10_v02"
+  },
+  {
+    "id": "CAT-E11_v01",
+    "family": 11,
+    "variant": 1,
+    "w": 0.7547169811320755,
+    "h": 0.7547169811320755,
+    "frames": 8,
+    "columns": 2,
+    "rows": 4,
+    "subject": "ANIMATION SHEET: exactly 8 equal SQUARE cells in TWO columns and FOUR rows, row-major, same top-down small square medieval wooden sluice locking mechanism on stone footing. Square lock housing and iron latch anchored identically in every cell. Frame1 latch closed across central socket, frames2-7 progressively rotate latch clockwise, frame8 latch fully swung clear. No physical water gate, water, key or large door. Constant scale, canvas, pivot and lighting, transparent gutters, no labels or grid lines. All eight frames required.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E11_v01.\nSubject: ANIMATION SHEET: exactly 8 equal SQUARE cells in TWO columns and FOUR rows, row-major, same top-down small square medieval wooden sluice locking mechanism on stone footing. Square lock housing and iron latch anchored identically in every cell. Frame1 latch closed across central socket, frames2-7 progressively rotate latch clockwise, frame8 latch fully swung clear. No physical water gate, water, key or large door. Constant scale, canvas, pivot and lighting, transparent gutters, no labels or grid lines. All eight frames required.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Exact equal grid and constant frame registration are essential.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E11_v01.png",
+    "source_pixels": [
+      1265,
+      1244
+    ],
+    "sprite_regions_pixels": [
+      [
+        192,
+        0,
+        624,
+        311
+      ],
+      [
+        638,
+        0,
+        1070,
+        311
+      ],
+      [
+        192,
+        311,
+        624,
+        622
+      ],
+      [
+        638,
+        311,
+        1070,
+        622
+      ],
+      [
+        192,
+        622,
+        624,
+        933
+      ],
+      [
+        639,
+        622,
+        1071,
+        933
+      ],
+      [
+        192,
+        933,
+        624,
+        1244
+      ],
+      [
+        641,
+        933,
+        1073,
+        1244
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E11_v01"
+  },
+  {
+    "id": "CAT-E12_v01",
+    "family": 12,
+    "variant": 1,
+    "w": 4,
+    "h": 2,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A vertically oriented medieval retractable timber footbridge seen directly from above: stowed state, compact stacked oak planks and two fixed mounting rails at BOTTOM edge; rest of tall two-to-one canvas genuinely transparent. No water or floor. Shared body envelope is width one and length two for extended companion.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E12_v01.\nSubject: A vertically oriented medieval retractable timber footbridge seen directly from above: stowed state, compact stacked oak planks and two fixed mounting rails at BOTTOM edge; rest of tall two-to-one canvas genuinely transparent. No water or floor. Shared body envelope is width one and length two for extended companion.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 4.24:8.48.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E12_v01.png",
+    "placement_note": "Retracted body 4x2 cells on the bank; extended deck 4x8 cells, sharing the bank mounting edge.",
+    "source_pixels": [
+      887,
+      1774
+    ],
+    "sprite_regions_pixels": [
+      [
+        34,
+        887,
+        854,
+        1730
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E12_v01"
+  },
+  {
+    "id": "CAT-E12_v02",
+    "family": 12,
+    "variant": 2,
+    "w": 4,
+    "h": 8,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A vertically oriented medieval timber footbridge, fully EXTENDED, exactly twice as long as wide, parallel planks and side iron rails, low flat walkable deck, no upright railings, anchored at BOTTOM edge. No water or floor.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E12_v02.\nSubject: A vertically oriented medieval timber footbridge, fully EXTENDED, exactly twice as long as wide, parallel planks and side iron rails, low flat walkable deck, no upright railings, anchored at BOTTOM edge. No water or floor.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 4.24:8.48.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E12_v02.png",
+    "source_pixels": [
+      887,
+      1774
+    ],
+    "sprite_regions_pixels": [
+      [
+        195,
+        4,
+        692,
+        1767
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E12_v02"
+  },
+  {
+    "id": "CAT-E13_v01",
+    "family": 13,
+    "variant": 1,
+    "w": 0.7547169811320755,
+    "h": 0.7547169811320755,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A detachable medieval Z-shaped hand crank, dull forged iron offset bent shaft, one dark oak revolving grip. Exact top-down, strong readable silhouette, no base or housing.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E13_v01.\nSubject: A detachable medieval Z-shaped hand crank, dull forged iron offset bent shaft, one dark oak revolving grip. Exact top-down, strong readable silhouette, no base or housing.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 0.8:0.8.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E13_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        39,
+        344,
+        1217,
+        939
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E13_v01"
+  },
+  {
+    "id": "CAT-E14_v01",
+    "family": 14,
+    "variant": 1,
+    "w": 0.7547169811320755,
+    "h": 0.7547169811320755,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "A large medieval canal key, dull forged iron round bow and long shank with two square teeth at end, diagonal in square body, top-down, no lock or pedestal.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E14_v01.\nSubject: A large medieval canal key, dull forged iron round bow and long shank with two square teeth at end, diagonal in square body, top-down, no lock or pedestal.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 0.8:0.8.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E14_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        46,
+        54,
+        1186,
+        1194
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E14_v01"
+  },
+  {
+    "id": "CAT-E15_v01",
+    "family": 15,
+    "variant": 1,
+    "w": 0.9433962264150942,
+    "h": 0.9433962264150942,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "INVENTORY ICON of a detachable Z-shaped medieval crank, dull iron with one dark wooden grip. Large simple clear equipment silhouette, subdued ivory edge highlights. Square isolated icon, no border ornament or panel, no text. Readable in simple and dark HUD themes, no glow.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction inventory icon CAT-E15_v01.\nSubject: INVENTORY ICON of a detachable Z-shaped medieval crank, dull iron with one dark wooden grip. Large simple clear equipment silhouette, subdued ivory edge highlights. Square isolated icon, no border ornament or panel, no text. Readable in simple and dark HUD themes, no glow.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1:1.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E15_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        33,
+        189,
+        1222,
+        1019
+      ]
+    ],
+    "resource": "Items/Dungeon/CAT-E15"
+  },
+  {
+    "id": "CAT-E16_v01",
+    "family": 16,
+    "variant": 1,
+    "w": 0.9433962264150942,
+    "h": 0.9433962264150942,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "INVENTORY ICON of a large medieval iron canal key, circular bow and two square teeth. Large simple clear equipment silhouette, subdued ivory edge highlights, square composition. No border, panel, ornament, text or glow. Readable in simple and dark HUD themes.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction inventory icon CAT-E16_v01.\nSubject: INVENTORY ICON of a large medieval iron canal key, circular bow and two square teeth. Large simple clear equipment silhouette, subdued ivory edge highlights, square composition. No border, panel, ornament, text or glow. Readable in simple and dark HUD themes.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1:1.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E16_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        47,
+        54,
+        1206,
+        1209
+      ]
+    ],
+    "resource": "Items/Dungeon/CAT-E16"
+  },
+  {
+    "id": "CAT-E17_v01",
+    "family": 17,
+    "variant": 1,
+    "w": 1,
+    "h": 1,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "Square worn limestone WAYFINDING relief: simple five-step staircase silhouette carved shallow, no lettering or arrows.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E17_v01.\nSubject: Square worn limestone WAYFINDING relief: simple five-step staircase silhouette carved shallow, no lettering or arrows.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1.06:1.06.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E17_v01.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        70,
+        92,
+        1190,
+        1173
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E17_v01"
+  },
+  {
+    "id": "CAT-E17_v02",
+    "family": 17,
+    "variant": 2,
+    "w": 1,
+    "h": 1,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "Square worn limestone WAYFINDING relief: simple square well ring enclosing a lift platform silhouette carved shallow, no lettering or arrows.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E17_v02.\nSubject: Square worn limestone WAYFINDING relief: simple square well ring enclosing a lift platform silhouette carved shallow, no lettering or arrows.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1.06:1.06.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E17_v02.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        60,
+        76,
+        1194,
+        1179
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E17_v02"
+  },
+  {
+    "id": "CAT-E17_v03",
+    "family": 17,
+    "variant": 3,
+    "w": 1,
+    "h": 1,
+    "frames": 1,
+    "columns": 1,
+    "rows": 1,
+    "subject": "Square worn limestone WAYFINDING relief: simple funeral boat silhouette with pointed bow to RIGHT carved shallow, no lettering or arrows.",
+    "prompt": "Use case: stylized-concept. Production 2D dungeon extraction sprite CAT-E17_v03.\nSubject: Square worn limestone WAYFINDING relief: simple funeral boat silhouette with pointed bow to RIGHT carved shallow, no lettering or arrows.\nEXACT ORTHOGRAPHIC TOP DOWN 90 degree camera. No isometric or frontal elevation. Original abandoned medieval catacomb. Painterly aged convincing materials, broad readable low-noise shapes. Muted limestone #68645B #969082, crevices #292D2E, oak #45372B #75614A, dull iron #454641, hemp #89785B. Soft neutral diffuse shading, only tiny contact shadows. Genuine transparent RGBA background, complete isolated object with safety margin. No neon, technology, electric machinery, guns, people, monsters, text, labels, indicators, glow or surrounding scene. Body footprint aspect 1.06:1.06.",
+    "source": "Art/Catacumbas/Extracoes/Fontes/CAT-E17_v03.png",
+    "source_pixels": [
+      1254,
+      1254
+    ],
+    "sprite_regions_pixels": [
+      [
+        78,
+        96,
+        1180,
+        1159
+      ]
+    ],
+    "resource": "Environment/Dungeon/Exits/CAT-E17_v03"
+  }
+]

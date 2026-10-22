@@ -12,6 +12,7 @@ namespace CyberExtraction.Enemies
         {
             var root = new GameObject("ChestAppearance"); root.transform.SetParent(parent,false);
             root.transform.localScale = new Vector3(1/parent.lossyScale.x,1/parent.lossyScale.y,1);
+            if(ChestAnimationArt.TryBuild(root.transform)) return root;
             Part(root.transform,"Wood",SpriteFactory.Square,Vector2.zero,new Vector2(1.5f,1.2f),wood,5);
             Part(root.transform,"Lid",SpriteFactory.Square,new Vector2(0,.25f),new Vector2(1.5f,.15f),wood*.8f,6);
             foreach (float x in new[] { -.5f,.5f }) Part(root.transform,"Band",SpriteFactory.Square,new Vector2(x,0),new Vector2(.12f,1.2f),Color.gray,6);
@@ -29,6 +30,42 @@ namespace CyberExtraction.Enemies
     public partial class Monster
     {
         GameObject appearance, disguise;
+        GameObject meleeVisualRoot;
+        Mesh meleeWarningMesh;
+        readonly Vector3[] meleeWarningVertices=new Vector3[MeleeWarningSegments+2];
+        readonly Color[] meleeWarningColors=new Color[MeleeWarningSegments+2];
+        void UpdateMeleeVisual()
+        {
+            var local=IsClient ? InventoryWindow.Local() : null;
+            bool visible=MeleeEnds.Value>NetworkManager.ServerTime.Time && local!=null && !health.IsDead && BotVisible(local);
+            if(!visible) { if(meleeVisualRoot!=null) meleeVisualRoot.SetActive(false); return; }
+            if(meleeVisualRoot==null)
+            {
+                meleeVisualRoot=new GameObject("MeleeWarning");
+                var renderer=meleeVisualRoot.AddComponent<MeshRenderer>();
+                renderer.sharedMaterial=SpriteFactory.Unlit; renderer.sortingOrder=4;
+                var properties=new MaterialPropertyBlock(); properties.SetTexture("_MainTex",Texture2D.whiteTexture);
+                renderer.SetPropertyBlock(properties);
+                meleeWarningMesh=new Mesh { name="Monster melee sector" }; meleeWarningMesh.MarkDynamic();
+                var triangles=new int[MeleeWarningSegments*3];
+                for(int i=0;i<MeleeWarningSegments;i++)
+                { triangles[i*3]=0; triangles[i*3+1]=i+2; triangles[i*3+2]=i+1; }
+                meleeWarningMesh.vertices=meleeWarningVertices; meleeWarningMesh.triangles=triangles;
+                meleeVisualRoot.AddComponent<MeshFilter>().sharedMesh=meleeWarningMesh;
+            }
+            meleeVisualRoot.SetActive(true);
+            Vector2 origin=transform.position;
+            meleeVisualRoot.transform.position=transform.position;
+            meleeVisualRoot.transform.rotation=Quaternion.identity;
+            meleeVisualRoot.transform.localScale=Vector3.one;
+            float progress=1-Mathf.Clamp01((float)(MeleeEnds.Value-NetworkManager.ServerTime.Time)/MeleeWarning);
+            var color=new Color(1,.35f*(1-progress),.08f,.25f+.35f*progress);
+            meleeWarningVertices[0]=Vector3.zero;
+            for(int i=0;i<=MeleeWarningSegments;i++)
+                meleeWarningVertices[i+1]=MeleeWarningPoint(origin,i);
+            for(int i=0;i<meleeWarningColors.Length;i++) meleeWarningColors[i]=color;
+            meleeWarningMesh.vertices=meleeWarningVertices; meleeWarningMesh.colors=meleeWarningColors; meleeWarningMesh.RecalculateBounds();
+        }
         Transform throat, mouth;
         byte appearanceState = 255;
         void RebuildAppearance(byte previous,byte current) { BuildAppearance(); }
@@ -51,11 +88,25 @@ namespace CyberExtraction.Enemies
                     }
                     Eyes(new Color(.7f,.7f,.55f),.055f); break;
                 case MonsterKind.Shell:
+                    if(!IsClient || SystemInfo.graphicsDeviceType==UnityEngine.Rendering.GraphicsDeviceType.Null) break;
+                    if(MonsterMotionArt.Get(Kind,false)!=null && MonsterMotionArt.Get(Kind,true)!=null)
+                    {
+                        var armored=Part("Couracado",MonsterMotionArt.Get(Kind,true)[26],Vector2.zero,Vector2.one,Color.white);
+                        armored.gameObject.AddComponent<MonsterAnimationVisual>().Configure(Kind);
+                        break;
+                    }
                     Part("Rear",SpriteFactory.Circle,Vector2.zero,new Vector2(1.4f,1.15f),new Color(.8f,.36f,.08f));
                     Part("Shell",SpriteFactory.Polygon(6),new Vector2(.2f,0),new Vector2(1.4f,1.45f),Color.gray);
                     foreach (float y in new[] {-.4f,0,.4f}) Part("FrontPlate",SpriteFactory.Polygon(4),new Vector2(.58f,y),new Vector2(.65f,.65f),new Color(.68f,.69f,.7f),0,7);
                     break;
                 case MonsterKind.Weaver:
+                    if(!IsClient) break;
+                    if(WeaverArt.Walk!=null && WeaverArt.Web!=null)
+                    {
+                        var pale=Part("PaleSpider",WeaverArt.Web[27],Vector2.zero,Vector2.one,Color.white);
+                        pale.gameObject.AddComponent<WeaverVisual>();
+                        break;
+                    }
                     for(int side=-1;side<=1;side+=2) for(int i=0;i<4;i++)
                     { float x=(i-1.5f)*.28f; var knee=new Vector2(x*1.5f,side*.58f); Line(new Vector2(x,side*.2f),knee,purple,.06f); Line(knee,new Vector2(x*1.9f-.15f,side*.85f),purple,.055f); }
                     Part("Abdomen",SpriteFactory.Circle,Vector2.zero,new Vector2(.85f,.7f),purple); Eyes(Color.white,.07f); break;
@@ -72,9 +123,23 @@ namespace CyberExtraction.Enemies
                         Line(new Vector2((i-1)*.4f,side*.3f),new Vector2((i-1)*.65f-.15f,side*.8f),new Color(.4f,.22f,.14f),.1f);
                     Eyes(new Color(1,.7f,.05f),.12f); break;
                 case MonsterKind.Acid:
+                    if(!IsClient || SystemInfo.graphicsDeviceType==UnityEngine.Rendering.GraphicsDeviceType.Null) break;
+                    if(MonsterMotionArt.Get(Kind,false)!=null && MonsterMotionArt.Get(Kind,true)!=null)
+                    {
+                        var corrosive=Part("CorrosivePouch",MonsterMotionArt.Get(Kind,true)[44],Vector2.zero,Vector2.one,Color.white);
+                        corrosive.gameObject.AddComponent<MonsterAnimationVisual>().Configure(Kind);
+                        break;
+                    }
                     Part("Body",SpriteFactory.Polygon(3),Vector2.zero,new Vector2(1.3f,1.3f),new Color(.45f,.8f,.05f));
                     Part("AcidMouth",SpriteFactory.Circle,new Vector2(.48f,0),Vector2.one*.23f,Color.yellow,0,7); break;
                 case MonsterKind.Stalker:
+                    if(!IsClient || SystemInfo.graphicsDeviceType==UnityEngine.Rendering.GraphicsDeviceType.Null) break;
+                    if(MonsterMotionArt.Get(Kind,false)!=null && MonsterMotionArt.Get(Kind,true)!=null)
+                    {
+                        var stalker=Part("HoodedStalker",MonsterMotionArt.Get(Kind,true)[19],Vector2.zero,Vector2.one,Color.white);
+                        stalker.gameObject.AddComponent<MonsterAnimationVisual>().Configure(Kind);
+                        break;
+                    }
                     Part("Body",SpriteFactory.Polygon(4),Vector2.zero,new Vector2(1.55f,.7f),new Color(.06f,.15f,.32f));
                     Eyes(Color.cyan,.1f); break;
                 case MonsterKind.Devourer:
@@ -98,6 +163,7 @@ namespace CyberExtraction.Enemies
         { for(int i=0;i<4;i++) foreach(float side in new[] {-1f,1f}) Part("Tooth",SpriteFactory.Polygon(3),new Vector2(x-.24f+i*.16f,side*y),Vector2.one*.15f,new Color(.9f,.85f,.7f),-side*90,8); }
         void UpdateAppearance()
         {
+            ApplyWeaverCollider();
             if (appearance==null) return;
             if (appearanceState != AbilityState.Value)
             {
@@ -121,7 +187,7 @@ namespace CyberExtraction.Enemies
             GUI.Box(new Rect(p.x-85,Screen.height-p.y-54,170,26),label);
             GUI.matrix=old;
         }
-        bool BotVisible(CyberExtraction.Players.PlayerInventory local) => CyberExtraction.Bots.BotController.InVision(local.transform.position,local.transform.eulerAngles.z,transform.position) &&
+        bool BotVisible(CyberExtraction.Players.PlayerInventory local) => CyberExtraction.Bots.BotController.InVision(local.transform.position,local.transform.eulerAngles.z,transform.position,local) &&
             Physics2D.Linecast(local.transform.position,transform.position,GameConfig.VisionMask).collider==null;
     }
 }

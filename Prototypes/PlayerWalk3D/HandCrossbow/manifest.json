@@ -1,0 +1,38 @@
+[
+  {
+    "clip": "Walk",
+    "frames": 32,
+    "atlas": "Assets\\Resources\\PlayerCharacter\\HandCrossbow.png",
+    "pixels": [
+      2048,
+      1024
+    ]
+  },
+  {
+    "clip": "EmptyWalk",
+    "frames": 32,
+    "atlas": "Assets\\Resources\\PlayerCharacter\\HandCrossbowEmpty.png",
+    "pixels": [
+      2048,
+      1024
+    ]
+  },
+  {
+    "clip": "Reload",
+    "frames": 49,
+    "atlas": "Assets\\Resources\\PlayerCharacter\\Actions\\ReloadCrossbow_1.png",
+    "pixels": [
+      2048,
+      1792
+    ]
+  },
+  {
+    "clip": "Shot",
+    "frames": 8,
+    "atlas": "Assets\\Resources\\PlayerCharacter\\Actions\\ShotCrossbow_1.png",
+    "pixels": [
+      2048,
+      256
+    ]
+  }
+]

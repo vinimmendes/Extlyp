@@ -1,0 +1,40 @@
+{
+  "Batch": "C",
+  "Date": "2026-10-19",
+  "Tool": "imagegen integrado",
+  "StyleReference": "Art/ItemIconsV2/Originals/Pistol.png",
+  "Items": {
+    "Lockpick": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-68720243-2b8b-4ecf-878e-0980a9907d8e.png",
+      "PromptFile": "Art/ItemIconsV2/Lockpick-prompt.txt"
+    },
+    "BoltCutters": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-7f914f88-d4f9-4a53-9cbe-15a135da8224.png",
+      "PromptFile": "Art/ItemIconsV2/BoltCutters-prompt.txt"
+    },
+    "Crowbar": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-dac9a78b-f3b8-40c8-af2d-1705b8fad91e.png",
+      "PromptFile": "Art/ItemIconsV2/Crowbar-prompt.txt"
+    },
+    "HandSaw": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-08040107-932f-4402-8098-269aea2890c4.png",
+      "PromptFile": "Art/ItemIconsV2/HandSaw-prompt.txt"
+    },
+    "ServiceKey": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-3a2659bf-1446-4c2e-b7f0-4ff3c73ede8f.png",
+      "PromptFile": "Art/ItemIconsV2/ServiceKey-prompt.txt"
+    },
+    "DepotKey": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-fc10de02-2ee2-4092-8afc-44a4304ff853.png",
+      "PromptFile": "Art/ItemIconsV2/DepotKey-prompt.txt"
+    },
+    "DungeonCrank": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-14697994-b587-439d-9f09-9eceb1404109.png",
+      "PromptFile": "Art/ItemIconsV2/DungeonCrank-prompt.txt"
+    },
+    "DungeonKey": {
+      "Source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a14ec1-3f32-7202-83b6-27ff99fb7d09\\exec-b2592218-45ec-4824-9b8a-9b24833a1890.png",
+      "PromptFile": "Art/ItemIconsV2/DungeonKey-prompt.txt"
+    }
+  }
+}
