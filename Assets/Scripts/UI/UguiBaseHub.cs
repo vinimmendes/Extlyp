@@ -23,6 +23,7 @@ namespace CyberExtraction.UI
         HudAppearance theme=(HudAppearance)(-1);
         int consumedBack=-1;
         bool compactDestination,compactLayout;
+        bool confirmSeparateProfile;
         int selectedResource=-1;
         readonly UnityEngine.UI.Button[] resourceButtons=new UnityEngine.UI.Button[3];
         static bool WantsCompactLayout => Application.isMobilePlatform || UnityEngine.InputSystem.Touchscreen.current!=null || UiLayout.Width<1280;
@@ -45,8 +46,18 @@ namespace CyberExtraction.UI
             view.Organize.onClick.AddListener(()=>Navigate(BasePage.Inventory));
             view.Depart.onClick.AddListener(()=> { if(Ready) NetworkBootstrap.Instance.BeginExpedition(); });
             view.Cancel.onClick.AddListener(()=>NetworkBootstrap.Instance.CancelConnectionSearch());
-            view.Retry.onClick.AddListener(()=>NetworkBootstrap.Instance.RetryConnection());
-            view.Leave.onClick.AddListener(()=>NetworkBootstrap.Instance.ReturnToEnvironmentSelection());
+            view.Retry.onClick.AddListener(()=>
+            {
+                var net=NetworkBootstrap.Instance;
+                if(!net.DuplicateIdentity) { net.RetryConnection(); return; }
+                if(!confirmSeparateProfile) { confirmSeparateProfile=true; dirty=true; return; }
+                net.CreateSeparateProfileAndRetry(); confirmSeparateProfile=false; dirty=true;
+            });
+            view.Leave.onClick.AddListener(()=>
+            {
+                if(confirmSeparateProfile) { confirmSeparateProfile=false; dirty=true; NetworkBootstrap.Instance.RetryConnection(); }
+                else NetworkBootstrap.Instance.ReturnToEnvironmentSelection();
+            });
             view.Map.onClick.AddListener(()=>
             {
                 var net=NetworkBootstrap.Instance;
@@ -84,6 +95,7 @@ namespace CyberExtraction.UI
             if(view==null) return;
             if(!Active) { view.gameObject.SetActive(false); wasVisible=false; return; }
             var net=NetworkBootstrap.Instance;
+            if(confirmSeparateProfile && !net.DuplicateIdentity) { confirmSeparateProfile=false; dirty=true; }
             bool overlay=GameOptionsMenu.IsOpen || HudLayoutEditor.IsOpen || CampTestPanel.IsOpen || TestLabPanel.IsOpen;
             bool minigame=CampController.Instance!=null && CampController.Instance.MinigameActive;
             bool visible=!overlay && !minigame;
@@ -323,6 +335,8 @@ namespace CyberExtraction.UI
             Label(view.ConnectionText,20,false);
             view.ConnectionText.color=net.ConnectionUnavailable ? Color.Lerp(HudTheme.Danger,HudTheme.Text,.4f) : CampSession.Synchronized && !net.ConnectionBusy ? Color.Lerp(HudTheme.Good,HudTheme.Text,.35f) : HudTheme.Text;
             view.RiskText.text=net.ConnectionUnavailable ? net.ConnectionMessage : "Se morrer, perde os itens da mochila.";
+            if(net.DuplicateIdentity && confirmSeparateProfile)
+                view.RiskText.text="Este celular começará um perfil novo. O perfil anterior continua salvo. Confirmar ou tentar usar o perfil atual?";
             bool canDepart=CampSession.Synchronized && profile.CanPrepareRecoveryEquipment();
             if(Ready && !canDepart) view.RiskText.text="Libere espaço na mochila ou no baú para receber o equipamento básico.";
             Label(view.RiskText,20,false); view.RiskText.color=BaseMenuStyle.Secondary;
@@ -331,6 +345,8 @@ namespace CyberExtraction.UI
             view.Cancel.gameObject.SetActive(net.ConnectionBusy); view.Cancel.interactable=net.Searching;
             view.Retry.gameObject.SetActive(net.ConnectionUnavailable); view.Retry.interactable=!net.ConnectionBusy;
             view.Leave.gameObject.SetActive(net.ConnectionUnavailable);
+            Caption(view.Retry,net.DuplicateIdentity ? confirmSeparateProfile ? "Confirmar novo perfil" : "Criar perfil neste celular" : "Tentar novamente");
+            Caption(view.Leave,confirmSeparateProfile ? "Usar perfil atual" : "Voltar");
             view.Map.gameObject.SetActive(!net.ConnectionBusy && !net.ConnectionUnavailable); view.Map.interactable=Ready;
             Caption(view.Map,"Alterar destino"); Caption(view.Depart,"PARTIR");
             var departText=view.Depart.GetComponentInChildren<TMPro.TextMeshProUGUI>(true); departText.font=UiFontAssets.Bold; departText.fontSize=23;

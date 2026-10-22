@@ -34,6 +34,14 @@ namespace CyberExtraction.UI
         public bool ReadyForMenus => manager!=null && !manager.IsServer && !Application.isBatchMode && !previewOnly;
         public bool ConnectionBusy => searching || changingConnection;
         public bool ConnectionUnavailable => ReadyForMenus && ClientEnvironment.Chosen && !ConnectionBusy && !manager.IsConnectedClient;
+        public bool DuplicateIdentity => ConnectionUnavailable && attemptReason!=null && attemptReason.StartsWith("DUPLICATE|",StringComparison.Ordinal);
+        public void CreateSeparateProfileAndRetry()
+        {
+            if(!DuplicateIdentity || manager.IsListening || manager.ShutdownInProgress || CampSession.Pending) return;
+            try { CampIdentity.CreateSeparateProfile(); }
+            catch(Exception) { message="Nao foi possivel salvar o novo perfil neste aparelho. Tente novamente."; return; }
+            RetryConnection();
+        }
         public string ConnectionMessage
         {
             get

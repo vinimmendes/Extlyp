@@ -4,11 +4,13 @@ Jogo de extracao multiplayer 2D top-down para Android, feito em Unity 6000.0.84f
 
 ## Baixar o APK
 
-[Baixar Cyber Extraction 1.2.2 para Android](https://github.com/vinimmendes/Extlyp/releases/download/v1.2.2/CyberExtraction-1.2.2.apk) · [Versões e notas de entrega](https://github.com/vinimmendes/Extlyp/releases).
+[Baixar Cyber Extraction 1.2.3 para Android](https://github.com/vinimmendes/Extlyp/releases/download/v1.2.3/CyberExtraction-1.2.3.apk) · [Versões e notas de entrega](https://github.com/vinimmendes/Extlyp/releases).
 
 Android 6 ou superior, ARM64. Instale por cima da versão anterior, sem desinstalar, para preservar a identidade do aparelho. Deixe pelo menos 2 GB livres durante a instalação. O repositório e seus downloads são privados: entre no GitHub com uma conta que tenha acesso.
 
-Opções agora tem as categorias **Jogabilidade** e **Gráficos**. Em Jogabilidade, cada aparelho pode escolher mira ao andar, trocar Mira/Atirar, tiro automático, mira por arraste em área livre e recarga automática. Veja [as regras dos controles](Docs/UI/CONTROLES_TOQUE_OPCOES_2026-10-22.md) e [os dados da entrega 1.2.2](Docs/Entregas/ANDROID_1.2.2.md).
+Opções agora tem as categorias **Jogabilidade** e **Gráficos**. Em Jogabilidade, cada aparelho pode escolher mira ao andar, trocar Mira/Atirar, tiro automático, mira por arraste em área livre e recarga automática. Veja [as regras dos controles](Docs/UI/CONTROLES_TOQUE_OPCOES_2026-10-22.md) e [os dados da entrega 1.2.3](Docs/Entregas/ANDROID_1.2.3.md).
+
+A versão 1.2.3 protege a identidade contra backup do Android. Se o segundo celular mostrar “Seu acampamento já está conectado”, use **Criar perfil neste celular > Confirmar novo perfil** somente nele. Ele começará um perfil próprio; o perfil anterior continua salvo. O primeiro celular pode continuar com seu perfil atual.
 
 ## Estado atual — 22/10/2026
 
@@ -34,7 +36,7 @@ As definicoes da pistola e das receitas ficam em `Assets/Resources/Gameplay.asse
 - Integracao de rede isolada: `Tools/Run-SkillsSmoke.ps1`.
 - Regras fora da engine: `Tools/Audit/Run-AuditProbe.ps1`.
 
-Instalação e conexão por dados móveis foram confirmadas pelo usuário em um Galaxy A20 SM-A205G com Android 9, no APK anterior às novas opções. O APK 1.2.2 teve compilação e assinatura conferidas; as novas opções ainda aguardam avaliação no aparelho. Medidas sustentadas de GPU/FPS e playtests de balanceamento continuam pendentes. A assinatura de identidade nao substitui protecao de transporte nem representa um sistema completo de anti-cheat.
+Instalação e conexão por dados móveis foram confirmadas pelo usuário em um Galaxy A20 SM-A205G com Android 9, no APK anterior às novas opções. O APK 1.2.3 teve compilação e assinatura conferidas. A correção de identidade passou 13 verificações focadas fora da Unity, com adaptadores explícitos; identidade e conexão em dois celulares ainda aguardam teste real. Medidas sustentadas de GPU/FPS e playtests de balanceamento continuam pendentes. A assinatura de identidade nao substitui protecao de transporte nem representa um sistema completo de anti-cheat.
 
 ## Clonar o projeto
 
