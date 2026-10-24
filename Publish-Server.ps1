@@ -1,10 +1,18 @@
 # Explicit promotion only: this script never builds, stops or starts a server.
+param([string]$CandidateDirectory)
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'Server-Channel.ps1')
 $stable = Get-ServerChannel Stable
 $development = Get-ServerChannel Development
+$candidate = $development.Directory
+if ($CandidateDirectory) {
+    $candidate = [IO.Path]::GetFullPath($(if ([IO.Path]::IsPathRooted($CandidateDirectory)) { $CandidateDirectory } else { Join-Path $PSScriptRoot $CandidateDirectory })).TrimEnd('\')
+    $allowedRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot 'Builds')).TrimEnd('\') + '\'
+    if (-not $candidate.StartsWith($allowedRoot,[StringComparison]::OrdinalIgnoreCase) -or
+        $candidate -eq $stable.Directory -or $candidate -eq (Join-Path $PSScriptRoot 'Builds/ServerDevelopmentData')) { throw 'Candidato isolado fora do destino permitido.' }
+}
 foreach ($required in @('CyberExtractionServer.exe', 'build-manifest.json', 'source.sha256')) {
-    if (-not (Test-Path -LiteralPath (Join-Path $development.Directory $required) -PathType Leaf)) {
+    if (-not (Test-Path -LiteralPath (Join-Path $candidate $required) -PathType Leaf)) {
         throw "Candidato incompleto: $required. Execute Update-Server.ps1 primeiro."
     }
 }
@@ -25,9 +33,9 @@ foreach ($target in @($staging, $backup, $stable.Directory)) {
 }
 # Stage a complete snapshot; refuse a candidate being changed during the copy.
 New-Item -ItemType Directory -Path $staging -Force | Out-Null
-$sourceFiles = @(Get-ChildItem -LiteralPath $development.Directory -File -Recurse)
+$sourceFiles = @(Get-ChildItem -LiteralPath $candidate -File -Recurse)
 foreach ($file in $sourceFiles) {
-    $relative = $file.FullName.Substring($development.Directory.Length + 1)
+    $relative = $file.FullName.Substring($candidate.Length + 1)
     $target = Join-Path $staging $relative
     $before = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash
     New-Item -ItemType Directory -Force -Path ([IO.Path]::GetDirectoryName($target)) | Out-Null
