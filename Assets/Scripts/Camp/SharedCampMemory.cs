@@ -22,7 +22,7 @@ namespace CyberExtraction.Camp
     }
 
     [Serializable]
-    class CampRecords { public const int CurrentVersion=6; public int Version = CurrentVersion; public CampRecord[] Records; }
+    class CampRecords { public const int CurrentVersion=7; public int Version = CurrentVersion; public CampRecord[] Records; }
 
     // Shared RAM between Windows rooms, with an atomic durable JSON checkpoint.
     // Dois buffers preservam o ultimo estado completo se uma sala cair durante a escrita.

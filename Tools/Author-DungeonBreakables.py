@@ -90,6 +90,13 @@ for n in range(128*128):
     if not any((x+dx,y+dy) not in floor and (x+dx,y+dy) not in water|blocked for dx,dy in ((1,0),(-1,0),(0,1),(0,-1))): continue
     if safe(x,y): add(x,y,-1,'Corridor')
 if len(candidates)!=64: raise ValueError(f'Only {len(candidates)} safe positions available')
+# Authored exception to the automatic spread: R17 stores its remaining urns as
+# one small lot under the southeast ossuary niches. Apply AFTER automatic
+# selection so no other room/corridor changes. Keep IDs, rewards and 2-of-3 spawn.
+ossuary=[p for p in candidates if p['room']==17 and p['group']=='Room']
+for point,(x,y) in zip(ossuary,((27,37),(28,37),(28,38))):
+    wx,wy=world(x+.5,y+.5)
+    point.update(cellX=x,cellY=y,x=round(wx,3),y=round(wy,3))
 out=ROOT/'Assets/Resources/Environment/Dungeon/Breakables'
 out.mkdir(parents=True,exist_ok=True)
 props=json.loads((ROOT/'Assets/Resources/Environment/Dungeon/Props/PropsArt.json').read_text(encoding='utf-8-sig'))['assets']

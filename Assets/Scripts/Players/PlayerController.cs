@@ -104,7 +104,7 @@ namespace CyberExtraction.Players
                 nextAutoFireCheck = Time.unscaledTime + .08f;
                 fireHeld = shooter.HasAutomaticFireTarget(facing);
             }
-            sprintHeld = (GameInput.Sprint || touch!=null && touch.SprintHeld) && !fireHeld;
+            sprintHeld = (GameInput.Sprint || touch!=null && touch.SprintEnabled) && !fireHeld;
             if (GameInput.ReloadPressed) shooter.RequestReload();
             else if (touch != null && touch.IsTouch && TouchAimSettings.AutoReload) shooter.RequestAutomaticReload();
             if (GameInput.WeaponPressed) inv.RequestNextWeapon();

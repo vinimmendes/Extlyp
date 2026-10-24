@@ -8,7 +8,8 @@ namespace CyberExtraction.Match
     {
         [Serializable] public sealed class Candidate
         {
-            public int id,room,cellX,cellY,variant,angle;
+            public int id,room,cellX,cellY,variant;
+            public float angle;
             public string group,family;
             public float x,y;
             public Vector2 Position => new Vector2(x,y);
@@ -33,8 +34,11 @@ namespace CyberExtraction.Match
         }
         static Catalog cached;
         static bool attempted;
+        static string loadedContent;
         public static Catalog Load()
         {
+            DungeonLayout.EnsurePublishedContent();
+            if(loadedContent!=DungeonMapPublication.ContentHash) { attempted=false; cached=null; loadedContent=DungeonMapPublication.ContentHash; }
             if(attempted) return cached;
             attempted=true;
             var source=Resources.Load<TextAsset>("Environment/Dungeon/Breakables/BreakablesCatalog");
@@ -48,6 +52,16 @@ namespace CyberExtraction.Match
             for(int i=0;i<data.candidates.Length;i++)
             {
                 var point=data.candidates[i];
+                if(point!=null && DungeonMapPublication.Current!=null)
+                {
+                    var p=DungeonMapPublication.Point("Breakable/"+point.id,point.Position);
+                    point.x=p.x; point.y=p.y;
+                    point.cellX=Mathf.FloorToInt(p.x/DungeonLayout.CellSize+64);
+                    point.cellY=Mathf.FloorToInt(p.y/DungeonLayout.CellSize+64);
+                    var identity=DungeonMapPublication.Identity("Breakable/"+point.id);
+                    if(identity!=null && identity.variant>=1 && identity.variant<=3)
+                    { point.variant=identity.variant; point.family=identity.family; point.angle=identity.angle; }
+                }
                 if(point==null || !DungeonLayout.IsBaseFloor(point.cellX,point.cellY) || DungeonLayout.IsWater(point.cellX,point.cellY) ||
                     DungeonLayout.IsLowCover(point.cellX,point.cellY) || point.variant<1 || point.variant>3 ||
                     point.id!=i || float.IsNaN(point.x) || float.IsNaN(point.y) ||

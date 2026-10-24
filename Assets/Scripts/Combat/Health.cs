@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using Unity.Collections;
 using UnityEngine;
+using CyberExtraction.Camp;
 
 namespace CyberExtraction.Combat
 {
@@ -17,8 +18,10 @@ namespace CyberExtraction.Combat
         public NetworkVariable<int> DamageVersion = new NetworkVariable<int>(0);
         // Captured on the server at the fatal hit; survives the attacker's despawn.
         // Legacy field name retained: also carries player and bot names.
-        public NetworkVariable<FixedString64Bytes> KillerCreature = new NetworkVariable<FixedString64Bytes>(default);
-        public string DeathMessage => KillerCreature.Value.Length==0 ? "Você morreu" : "Você morreu\nMorto por: "+KillerCreature.Value.ToString();
+        public NetworkVariable<FixedString128Bytes> KillerCreature = new NetworkVariable<FixedString128Bytes>(default);
+        public NetworkVariable<bool> KilledByPlayer = new NetworkVariable<bool>(false);
+        public string DeathMessage => KillerCreature.Value.Length==0 ? "Você morreu" : "Você morreu\n"+
+            (KilledByPlayer.Value ? "Morto pelo player: " : "Morto por: ")+KillerCreature.Value.ToString();
 
         public event Action<Health> OnDiedServer;
         public event Action<Health,int> OnDamagedServer;
@@ -41,12 +44,12 @@ namespace CyberExtraction.Combat
             if(armorReceiver==null) armorReceiver=GetComponent<CyberExtraction.Players.PlayerInventory>();
             All.Add(this);
             if(IsServer) ResetExperienceTracking();
-            if (IsServer) { KillerCreature.Value = default; Maximum.Value = maxHealth; Current.Value = maxHealth; }
+            if (IsServer) { KillerCreature.Value = default; KilledByPlayer.Value=false; Maximum.Value = maxHealth; Current.Value = maxHealth; }
         }
 
         public override void OnNetworkDespawn() { All.Remove(this); }
 
-        public void ServerTakeDamage(int amount,CyberExtraction.Players.PlayerInventory source=null,DamageKind kind=DamageKind.Physical,string creatureName=null)
+        public void ServerTakeDamage(int amount,CyberExtraction.Players.PlayerInventory source=null,DamageKind kind=DamageKind.Physical,string creatureName=null,DamageOrigin? origin=null)
         {
             if (!IsServer || IsDead) return;
             if(TestInvulnerable && CyberExtraction.Match.MatchManager.Instance != null && CyberExtraction.Match.MatchManager.Instance.Sandbox) return;
@@ -58,11 +61,15 @@ namespace CyberExtraction.Combat
             DamageVersion.Value++;
             int previous = Current.Value;
             // Clear previous deaths on the next accepted hit, including after a test revival.
-            string killerName=amount>=previous ? (source!=null ? source.DisplayName : creatureName) : null;
-            KillerCreature.Value = !string.IsNullOrEmpty(killerName) ? new FixedString64Bytes(killerName) : default;
+            var cause=origin ?? (source!=null ? DamageOrigin.Player(source,(CyberExtraction.Items.ItemId)255) : DamageOrigin.Creature(ProfileSpecies.Environment));
+            if(string.IsNullOrEmpty(cause.Name)) cause.Name=source!=null ? source.DisplayName : creatureName;
+            string killerName=amount>=previous ? cause.Name : null;
+            KillerCreature.Value = !string.IsNullOrEmpty(killerName) ? new FixedString128Bytes(killerName) : default;
+            KilledByPlayer.Value=amount>=previous && cause.Species==ProfileSpecies.Human;
             Current.Value = Mathf.Max(0, Current.Value - amount);
             TrackExperienceDamage(source,previous-Current.Value);
-            if(Current.Value<=0) AwardDeathExperience(source);
+            TrackProfileDamage(cause,previous-Current.Value);
+            if(Current.Value<=0) { RecordProfileDeath(cause); AwardDeathExperience(source); }
             OnDamagedServer?.Invoke(this,previous-Current.Value);
             if (Current.Value <= 0) OnDiedServer?.Invoke(this);
         }
@@ -70,7 +77,10 @@ namespace CyberExtraction.Combat
         public bool ServerHeal(int amount)
         {
             if (!IsServer || IsDead || amount <= 0 || Current.Value >= maxHealth) return false;
+            int previous=Current.Value;
             Current.Value = Mathf.Min(maxHealth, Current.Value + amount);
+            if(armorReceiver!=null && armorReceiver.ProgressionActive)
+                CampRepository.QueueProfile(new ProfileEvent {Session=armorReceiver.ProgressionSession,Expedition=armorReceiver.ProgressionExpedition,Healing=Current.Value-previous},true);
             return true;
         }
     }

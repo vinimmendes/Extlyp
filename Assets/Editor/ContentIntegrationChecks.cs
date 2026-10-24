@@ -13,7 +13,7 @@ public static class ContentIntegrationChecks
 {
     static int checks;
     static void Verify(bool ok,string message) { if(!ok) throw new Exception(message); checks++; }
-    [MenuItem("Cyber Extraction/Verificar armas plantas esporos e minigames")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Armas, plantas, esporos e minigames")]
     public static void Run()
     {
         checks=0;

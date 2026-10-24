@@ -17,7 +17,7 @@ rooms = [(name, *map(int, values)) for name, *values in re.findall(r'new Room\("
 links = [tuple(map(int, p)) for p in re.findall(r'\{(\d+),(\d+)\}',source.split('Links={')[1].split('};')[0])]
 cell = float(re.search(r'CellSize=([\d.]+)f',source)[1])
 dry, water = set(), set()
-rects = {name:tuple(map(int, args.split(','))) for name,args in re.findall(r'RectInt (\w+)=CanalCells\(([^)]+)\)',canal)}
+rects = {name:tuple(map(int, args.split(','))) for name,args in re.findall(r'RectInt (\w+)(?:=|=>[^;]*?)CanalCells\(([^)]+)\)',canal)}
 def cells(rect):
     x,y,w,h = rect
     return {(xx,yy) for yy in range(y,y+h) for xx in range(x,x+w)}
@@ -40,7 +40,7 @@ dry -= water
 dry |= cells(rects['CanalBoarding'])
 for args in re.findall(r'AddObstacle\(CanalCells\(([^)]+)\)',canal): dry -= cells(tuple(map(int,args.split(','))))
 bridge = cells(rects['CanalBridge'])
-start = tuple(map(int,re.search(r'CanalControl=CanalPoint\(([^)]+)\)',canal)[1].split(',')))
+start = tuple(map(int,re.search(r'CanalControl(?:=|=>[^;]*?)CanalPoint\(([^)]+)\)',canal)[1].split(',')))
 goal = tuple(map(int,re.search(r'ExitPositions=.*CanalPoint\(([^)]+)\)',source)[1].split(',')))
 def path(mask,a,b):
     q=deque([a]); previous={a:None}

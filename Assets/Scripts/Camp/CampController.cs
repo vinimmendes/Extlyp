@@ -111,9 +111,19 @@ namespace CyberExtraction.Camp
             if(network==null) { fishing.Reset(); return; }
             var view=network.CampView;
             if(view.Activity<2 || view.Activity>4) { fishing.Reset(); return; }
+            fishing.Tick(view,Time.unscaledDeltaTime);
             fishing.ReadInput(!GameOptionsMenu.IsOpen && !CampTestPanel.IsOpen && !InventoryWindow.IsOpen && !ExpeditionPanelOpen);
-            if(fishing.NeedsSend(Time.unscaledTime) && network.SendCamp(new CampCommand { Kind=CampCommandKind.Reel,Held=fishing.Held })) fishing.Sent(Time.unscaledTime);
-            fishing.Tick(view.Activity-1,view.Tension,view.Fish,view.Zone,view.Progress,view.BarVelocity,Time.unscaledDeltaTime);
+            if(fishing.Ready && fishing.Synchronized && !CampSession.Pending)
+            {
+                bool left=Keyboard.current!=null && Keyboard.current.leftArrowKey.wasPressedThisFrame || Gamepad.current!=null && Gamepad.current.dpad.left.wasPressedThisFrame;
+                bool right=Keyboard.current!=null && Keyboard.current.rightArrowKey.wasPressedThisFrame || Gamepad.current!=null && Gamepad.current.dpad.right.wasPressedThisFrame;
+                if(left || right && CampSession.Progress.Count(ItemId.Worm)>0)
+                    network.SendCamp(new CampCommand { Kind=CampCommandKind.SelectFishingBait,UseBait=right });
+                else if(fishing.Pressed) network.SendCamp(new CampCommand { Kind=CampCommandKind.CastFishing });
+            }
+            if(fishing.Pressed && (fishing.Stage==FishingStage.Bite || fishing.Stage==FishingStage.Approaching || fishing.Stage==FishingStage.Investigating))
+                network.SendCamp(new CampCommand { Kind=CampCommandKind.HookFishing });
+            if(fishing.Stage==FishingStage.Capture && fishing.NeedsSend(Time.unscaledTime) && network.SendCamp(new CampCommand { Kind=CampCommandKind.Reel,Held=fishing.Held })) fishing.Sent(Time.unscaledTime);
         }
         void UpdateCooking()
         {

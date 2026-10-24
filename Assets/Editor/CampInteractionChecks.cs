@@ -12,7 +12,7 @@ public static class CampInteractionChecks
     static int checks;
     static void Check(bool ok,string label) { if(!ok) throw new Exception("CAMP INTERACTION FAIL: "+label); checks++; }
     public static void BuildClient() { Run(); ServerBuild.BuildClient(); }
-    [MenuItem("Cyber Extraction/Verificar interacoes do acampamento")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Interações do acampamento")]
     public static void Run()
     {
         if(EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Saia do Play para executar a verificacao isolada.");

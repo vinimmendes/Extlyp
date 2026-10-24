@@ -11,7 +11,7 @@ $labReady = Join-Path $labLogs "$labRun.ready"
 $labServerLog = Join-Path $labLogs "$labRun-server.log"
 $labClientLog = Join-Path $labLogs "$labRun-client.log"
 $labServerArgs = '-batchmode -nographics -server -allow-test -port ' + $Port + ' -cluster-id lab-' + $labRun + ' -camp-data "' + (Join-Path $labLogs "$labRun-data") + '" -ready-file "' + $labReady + '" -logFile "' + $labServerLog + '"'
-$labServerProcess = Start-Process -FilePath (Join-Path $labProject 'Builds/Server/CyberExtractionServer.exe') -ArgumentList $labServerArgs -WorkingDirectory $labProject -WindowStyle Hidden -PassThru
+$labServerProcess = Start-Process -FilePath (Join-Path $labProject 'Builds/ServerDevelopment/CyberExtractionServer.exe') -ArgumentList $labServerArgs -WorkingDirectory $labProject -WindowStyle Hidden -PassThru
 $labClientProcess = $null
 try {
     $labDeadline = [DateTime]::UtcNow.AddSeconds(45)

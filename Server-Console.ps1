@@ -1,16 +1,16 @@
+param([ValidateSet('Stable', 'Development')][string]$Channel = 'Stable')
 $ErrorActionPreference = 'Stop'
 
 function Invoke-ServerConsoleCommand {
     param([string]$Command)
     try {
         switch ($Command) {
-            '1' { & (Join-Path $PSScriptRoot 'Start-Server.ps1') }
-            '2' { & (Join-Path $PSScriptRoot 'Stop-Server.ps1') }
+            '1' { & (Join-Path $PSScriptRoot 'Start-Server.ps1') -Channel $Channel }
+            '2' { & (Join-Path $PSScriptRoot 'Stop-Server.ps1') -Channel $Channel }
             '3' {
-                # Compile before stopping: a failed update preserves running rooms.
-                & (Join-Path $PSScriptRoot 'Update-Server.ps1')
-                & (Join-Path $PSScriptRoot 'Stop-Server.ps1')
-                & (Join-Path $PSScriptRoot 'Start-Server.ps1')
+                $global:LASTEXITCODE = 0
+                & (Join-Path $PSScriptRoot 'Restart-Server.ps1') -Channel $Channel
+                if ($LASTEXITCODE -ne 0) { throw 'Consulte o log de reinicio do canal.' }
                 Write-Host 'Reinicio concluido.' -ForegroundColor Green
             }
             default { Write-Host 'Opcao invalida. Digite 1, 2 ou 3.' -ForegroundColor Yellow }
@@ -21,7 +21,7 @@ function Invoke-ServerConsoleCommand {
     }
 }
 
-Write-Host 'Cyber Extraction - Controle do servidor' -ForegroundColor Cyan
+Write-Host "Cyber Extraction - Servidor $Channel" -ForegroundColor Cyan
 Write-Host 'Fechar esta janela deixa as salas ligadas. Use 2 para desligar.'
 
 while ($true) {

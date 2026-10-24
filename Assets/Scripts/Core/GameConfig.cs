@@ -4,7 +4,7 @@ namespace CyberExtraction.Core
     public static class GameConfig
     {
         // Shared by connection setup and the generated Windows build manifest.
-        public const ushort NetworkProtocol = 41;
+        public const ushort NetworkProtocol = 45;
         // Layer 8 e usada so para paredes (a ferramenta de setup nomeia como "Walls")
         public const int WallLayer = 8;
         public const int LowObstacleLayer = 9;
@@ -28,8 +28,9 @@ namespace CyberExtraction.Core
         public const float ExpeditionCameraSize = 11f;
         public const float DungeonCameraSize = 5.5f;
         public const float CampCameraSize = 9f;
-        public static bool AllowQuickTest => UnityEngine.Application.isEditor || UnityEngine.Debug.isDebugBuild || System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"-allow-test") >= 0;
-        public static bool ShowTemporaryServerRestart => AllowQuickTest;
+        // Local-network permission is checked by the server, including release builds.
+        public static bool AllowQuickTest => System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"-disable-test") < 0;
+        public static bool ShowTemporaryServerRestart => UnityEngine.Application.isEditor || UnityEngine.Debug.isDebugBuild || System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"-allow-test") >= 0;
         public const int PlayerMaxHealth = 100;
 
         // Cone de visao

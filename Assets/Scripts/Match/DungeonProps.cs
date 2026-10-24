@@ -22,7 +22,7 @@ namespace CyberExtraction.Match
             var props=root.AddComponent<DungeonProps>();
             try { props.Load(); props.BuildCovers(); props.FillNiches(); props.BuildFurniture(); props.BuildShards(); props.Commit(); }
             catch(Exception exception)
-            { root.SetActive(false); Destroy(root); Debug.LogWarning("Catacumbas: coberturas anteriores preservadas. "+exception.Message); }
+            { root.SetActive(false); DungeonArtLifetime.Release(root); Debug.LogWarning("Catacumbas: coberturas anteriores preservadas. "+exception.Message); }
         }
         void Load()
         {
@@ -141,6 +141,6 @@ namespace CyberExtraction.Match
             foreach(var renderer in transform.parent.GetComponentsInChildren<SpriteRenderer>())
                 if(renderer.name=="DungeonSarcophagus" || renderer.name=="SarcophagusLid") renderer.enabled=false;
         }
-        void OnDestroy() { foreach(var asset in owned) if(asset!=null) Destroy(asset); }
+        void OnDestroy() { foreach(var asset in owned) if(asset!=null) DungeonArtLifetime.Release(asset); }
     }
 }

@@ -173,7 +173,7 @@ namespace CyberExtraction.Enemies
                 {
                     int damage=attackDamage;
                     if(Kind==MonsterKind.Stalker && Vector2.Dot(-offset.normalized,meleeTarget.transform.right)<-.5f) damage=30;
-                    meleeTarget.GetComponent<CyberExtraction.Combat.Health>()?.ServerTakeDamage(damage,creatureName:DisplayName);
+                    meleeTarget.GetComponent<CyberExtraction.Combat.Health>()?.ServerTakeDamage(damage,creatureName:DisplayName,origin:CyberExtraction.Combat.DamageOrigin.Creature(CyberExtraction.Combat.DamageOrigin.Identify(gameObject)));
                 }
             }
             CancelMelee(); nextAttack=Time.time+attackCooldown; return true;

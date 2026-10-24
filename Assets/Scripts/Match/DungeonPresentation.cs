@@ -58,7 +58,8 @@ namespace CyberExtraction.Match
             if(departure>=0 && Time.unscaledTime-departure>2.5f) { departure=-1; lastExit=-1; }
             float departing=departure>=0 ? Mathf.Clamp01((Time.unscaledTime-departure)/1.5f) : 0;
             float lift=exit==1 ? progress : lastExit==1 && departure>=0 ? departing : 0;
-            platform.transform.position=platformOrigin+Vector3.up*lift*2;
+            var liftVector=DungeonMapPublication.Point("LiftEnd",DungeonLayout.ExitPositions[1]+Vector2.up*2)-DungeonLayout.ExitPositions[1];
+            platform.transform.position=platformOrigin+(Vector3)liftVector*lift;
             platform.transform.localScale=new Vector3(2.5f,2.5f,1)*(1-lift*.35f);
             // Stay moored throughout the server countdown; depart only after extraction.
             float sailing=lastExit==2 && departure>=0 ? departing : 0;

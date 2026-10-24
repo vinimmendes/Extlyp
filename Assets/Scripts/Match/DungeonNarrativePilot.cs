@@ -32,7 +32,7 @@ namespace CyberExtraction.Match
             try { pilot.LoadAndPlace(); }
             catch(Exception exception)
             {
-                root.SetActive(false); Destroy(root);
+                root.SetActive(false); DungeonArtLifetime.Release(root);
                 Debug.LogWarning("Catacumbas: composições decorativas omitidas; cenário anterior preservado. "+exception.Message);
             }
         }
@@ -183,6 +183,6 @@ namespace CyberExtraction.Match
             for(int i=1;i<=7;i++) if(name.StartsWith("CAT-A"+i.ToString("00")+"_",StringComparison.Ordinal)) return true;
             return false;
         }
-        void OnDestroy() { foreach(var sprite in owned) if(sprite!=null) Destroy(sprite); }
+        void OnDestroy() { foreach(var sprite in owned) if(sprite!=null) DungeonArtLifetime.Release(sprite); }
     }
 }

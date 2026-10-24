@@ -7,7 +7,7 @@ using CyberExtraction.UI;
 
 public static class HudBorderChecks
 {
-    [MenuItem("Cyber Extraction/Verificar bordas pequenas da HUD")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Bordas pequenas da HUD")]
     public static void Run()
     {
         if(SystemInfo.graphicsDeviceType==UnityEngine.Rendering.GraphicsDeviceType.Null)

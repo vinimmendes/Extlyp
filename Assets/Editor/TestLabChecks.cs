@@ -13,7 +13,7 @@ public static class TestLabChecks
     public static void PrepareAndRun() { EnvironmentSetup.Prepare(); Run(); }
     public static void Build() { EnvironmentSetup.Prepare(); Run(); ContentIntegrationChecks.Run(); ServerBuild.BuildWindowsBoth(); }
     static void Verify(bool value,string reason) { if(!value) throw new Exception(reason); checks++; }
-    [MenuItem("Cyber Extraction/Verificar laboratorio e cenario grande")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Laboratório e cenário grande")]
     public static void Run()
     {
         if(EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Saia do Play para verificar em uma cena isolada.");

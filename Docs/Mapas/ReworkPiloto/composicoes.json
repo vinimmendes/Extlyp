@@ -1,0 +1,236 @@
+{
+  "units": "cells",
+  "recipes": [
+    {
+      "id": "Burials",
+      "pivot": {
+        "x": 15,
+        "y": 41
+      },
+      "pieces": [
+        {
+          "id": "WestTomb",
+          "art": "CRP_CoffinClosed",
+          "x": 0,
+          "y": 0,
+          "width": 1.8,
+          "height": 1.1,
+          "support": "Cover",
+          "order": -3,
+          "angle": 0,
+          "group": "Burials",
+          "stretch": false
+        },
+        {
+          "id": "EastTomb",
+          "art": "CRP_BoneCasket",
+          "x": 10,
+          "y": 6,
+          "width": 1.85,
+          "height": 1.65,
+          "support": "Cover",
+          "order": -3,
+          "angle": 0,
+          "group": "Burials",
+          "stretch": false
+        }
+      ]
+    },
+    {
+      "id": "NorthOssuary",
+      "pivot": {
+        "x": 13.5,
+        "y": 52.5
+      },
+      "pieces": [
+        {
+          "id": "DamagedNorthEnd",
+          "art": "CRP_DamagedRecess",
+          "x": 0.0,
+          "y": 0.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 180,
+          "group": "NorthOssuary",
+          "stretch": false
+        },
+        {
+          "id": "NorthRecessWest",
+          "art": "CRP_UrnRecess",
+          "x": 2.95,
+          "y": 0.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 0,
+          "group": "NorthOssuary",
+          "stretch": false
+        },
+        {
+          "id": "NorthRecessEastA",
+          "art": "CRP_UrnRecess",
+          "x": 9.95,
+          "y": 0.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 0,
+          "group": "NorthOssuary",
+          "stretch": false
+        },
+        {
+          "id": "NorthRecessEastB",
+          "art": "CRP_UrnRecess",
+          "x": 12.9,
+          "y": 0.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 0,
+          "group": "NorthOssuary",
+          "stretch": false
+        }
+      ]
+    },
+    {
+      "id": "NorthDamage",
+      "pivot": {
+        "x": 12.8,
+        "y": 51.65
+      },
+      "pieces": [
+        {
+          "id": "FineRootIngress",
+          "art": "CRP_FineRoots",
+          "x": 0.0,
+          "y": 0.0,
+          "width": 2.8,
+          "height": 0.7,
+          "support": "Floor",
+          "order": -5,
+          "angle": 0,
+          "group": "NorthDamage",
+          "stretch": true
+        },
+        {
+          "id": "ExposedRemains",
+          "art": "CRP_GatheredBones",
+          "x": 0.0,
+          "y": -0.1,
+          "width": 1.1,
+          "height": 0.65,
+          "support": "Floor",
+          "order": -4,
+          "angle": 0,
+          "group": "NorthDamage",
+          "stretch": false
+        },
+        {
+          "id": "FreshStoneFragments",
+          "art": "CRP_StoneDust",
+          "x": 0.6,
+          "y": -0.05,
+          "width": 1.1,
+          "height": 0.5,
+          "support": "Floor",
+          "order": -5,
+          "angle": 0,
+          "group": "NorthDamage",
+          "stretch": false
+        },
+        {
+          "id": "FallenDustTrail",
+          "art": "CRP_StoneDust",
+          "x": 1.0,
+          "y": -0.75,
+          "width": 0.95,
+          "height": 0.45,
+          "support": "Floor",
+          "order": -5,
+          "angle": 90,
+          "group": "NorthDamage",
+          "stretch": false
+        }
+      ]
+    },
+    {
+      "id": "EastOssuary",
+      "pivot": {
+        "x": 29.5,
+        "y": 49.7
+      },
+      "pieces": [
+        {
+          "id": "EastRecess1",
+          "art": "CRP_UrnRecess",
+          "x": 0.0,
+          "y": 0.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 90,
+          "group": "EastOssuary",
+          "stretch": false
+        },
+        {
+          "id": "EastRecess2",
+          "art": "CRP_UrnRecess",
+          "x": 0.0,
+          "y": -3.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 90,
+          "group": "EastOssuary",
+          "stretch": false
+        },
+        {
+          "id": "EastRecess3",
+          "art": "CRP_UrnRecess",
+          "x": 0.0,
+          "y": -6.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 90,
+          "group": "EastOssuary",
+          "stretch": false
+        },
+        {
+          "id": "EastRecess4",
+          "art": "CRP_UrnRecess",
+          "x": 0.0,
+          "y": -9.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 90,
+          "group": "EastOssuary",
+          "stretch": false
+        },
+        {
+          "id": "EastRecess5",
+          "art": "CRP_UrnRecess",
+          "x": 0.0,
+          "y": -12.0,
+          "width": 2.8,
+          "height": 0.86,
+          "support": "Stone",
+          "order": -3,
+          "angle": 90,
+          "group": "EastOssuary",
+          "stretch": false
+        }
+      ]
+    }
+  ]
+}

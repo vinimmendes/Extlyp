@@ -10,7 +10,7 @@ public static class MonsterAbilityChecks
     static int checks;
     static void Check(bool result,string reason)
     { if(!result) throw new InvalidOperationException(reason); checks++; }
-    [MenuItem("Cyber Extraction/Verificar regras e visuais dos monstros")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Regras e visuais dos monstros")]
     public static void Run()
     {
         checks=0;

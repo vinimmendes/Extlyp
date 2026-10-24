@@ -200,3 +200,6 @@ MonoBehaviour:
   - Id: 61
     InterfaceIcon: {fileID: 21300000, guid: 51a2989c153e48bebb23d75d06edf024, type: 3}
     WorldIcon: {fileID: 21300000, guid: 51a2989c153e48bebb23d75d06edf024, type: 3}
+  - Id: 62
+    InterfaceIcon: {fileID: 21300000, guid: a692c6e335564a8c9973e14566fd3066, type: 3}
+    WorldIcon: {fileID: 21300000, guid: a692c6e335564a8c9973e14566fd3066, type: 3}

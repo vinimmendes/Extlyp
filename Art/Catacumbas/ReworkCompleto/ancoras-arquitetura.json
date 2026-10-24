@@ -1,0 +1,177 @@
+[
+  {
+    "room": 18,
+    "anchor": "WestRecess_1",
+    "side": "W",
+    "along": 2,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 18,
+    "anchor": "WestRecess_2",
+    "side": "W",
+    "along": 7,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 1 célula(s), profundidade 1.2 u. Sem mudança de geometria."
+  },
+  {
+    "room": 18,
+    "anchor": "WestRecess_3",
+    "side": "W",
+    "along": 11,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 1 célula(s), profundidade 1.2 u. Sem mudança de geometria."
+  },
+  {
+    "room": 14,
+    "anchor": "StairMemorial_1",
+    "side": "N",
+    "along": 29,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 14,
+    "anchor": "StairVigils_0",
+    "side": "W",
+    "along": -49,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 1 célula(s), profundidade 0.8 u. Sem mudança de geometria."
+  },
+  {
+    "room": 20,
+    "anchor": "WestVigil_1",
+    "side": "W",
+    "along": 6,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 11,
+    "anchor": "ChainHooks_3",
+    "side": "N",
+    "along": 51,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 11,
+    "anchor": "StoredChainNiche",
+    "side": "E",
+    "along": 25.5,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 1 célula(s), profundidade 1.2 u. Sem mudança de geometria."
+  },
+  {
+    "room": 22,
+    "anchor": "EastStorage_1",
+    "side": "E",
+    "along": 27,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 19,
+    "anchor": "WallPulleys_2",
+    "side": "N",
+    "along": -23,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 12,
+    "anchor": "NorthFloodLine_1",
+    "side": "N",
+    "along": 41,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 12,
+    "anchor": "NorthFloodLine_2",
+    "side": "N",
+    "along": 47,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 12,
+    "anchor": "WestFloodLine_2",
+    "side": "W",
+    "along": -1,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 12,
+    "anchor": "WestFloodLine_3",
+    "side": "W",
+    "along": 2,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 12,
+    "anchor": "EastFloodLine_0",
+    "side": "E",
+    "along": -10,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 12,
+    "anchor": "WaterGauge",
+    "side": "E",
+    "along": -6,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 1 célula(s), profundidade 0.35 u. Sem mudança de geometria."
+  },
+  {
+    "room": 23,
+    "anchor": "NorthFloodLine_1",
+    "side": "N",
+    "along": 5,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 23,
+    "anchor": "NorthFloodLine_2",
+    "side": "N",
+    "along": 11,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 23,
+    "anchor": "WestFloodLine_0",
+    "side": "W",
+    "along": -30,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 2 célula(s), profundidade 0.45 u. Sem mudança de geometria."
+  },
+  {
+    "room": 23,
+    "anchor": "WestFloodLine_1",
+    "side": "W",
+    "along": -27,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 2 célula(s), profundidade 0.45 u. Sem mudança de geometria."
+  },
+  {
+    "room": 23,
+    "anchor": "WestFloodLine_2",
+    "side": "W",
+    "along": -21,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 23,
+    "anchor": "WallDrain",
+    "side": "W",
+    "along": -24,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 2 célula(s), profundidade 0.8 u. Sem mudança de geometria."
+  },
+  {
+    "room": 13,
+    "anchor": "QuayFloodLine_1",
+    "side": "N",
+    "along": 40,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 13,
+    "anchor": "QuayFloodLine_2",
+    "side": "N",
+    "along": 48,
+    "resolution": "Vão real preservado; o ritmo arquitetônico termina antes deste acesso."
+  },
+  {
+    "room": 7,
+    "anchor": "CanalEntryWaterline",
+    "side": "E",
+    "along": -16,
+    "resolution": "Encaixe na borda física real: prolongamento de piso 1 célula(s), profundidade 0.45 u. Sem mudança de geometria."
+  }
+]

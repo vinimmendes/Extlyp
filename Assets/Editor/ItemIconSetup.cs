@@ -9,7 +9,7 @@ public static class ItemIconSetup
         "pistol", "pistol-ammo", "fish-common", "fish-rare", "fish-large", "cooked-fish", "burnt-fish", "raw-fish",
         "bolt-rifle", "rifle-ammo", "double-barrel-shotgun", "shotgun-shell" };
 
-    [MenuItem("Cyber Extraction/Itens/Preparar icones")]
+    [MenuItem("Cyber Extraction/Avançado/Preparação de assets/Ícones dos itens")]
     public static void Prepare()
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Saia do Play antes de preparar os icones.");

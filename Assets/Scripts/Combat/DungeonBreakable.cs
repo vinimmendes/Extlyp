@@ -18,6 +18,7 @@ namespace CyberExtraction.Combat
         BoxCollider2D hitbox;
         SpriteRenderer visual;
         Sprite intact,broken;
+        bool ownsIntact,ownsBroken;
         double lastBurst=-1;
         ItemStack reward;
         bool rewardConfigured,rewardClaimed;
@@ -49,10 +50,17 @@ namespace CyberExtraction.Combat
             foreach(var entry in data.art)
             {
                 if(entry.family!=point.family || entry.variant!=point.variant) continue;
+                var published=DungeonMapPublication.ArtSprite("Breakable_"+entry.family+"_"+entry.state+"_"+entry.variant);
+                if(published!=null)
+                {
+                    if(entry.state=="Intact") { intact=published; ownsIntact=false; }
+                    else if(entry.state=="Broken") { broken=published; ownsBroken=false; }
+                    continue;
+                }
                 var texture=Resources.Load<Texture2D>(entry.resource); if(texture==null || entry.rect==null) continue;
                 var r=entry.rect.Value;
                 var sprite=Sprite.Create(texture,new Rect(r.x*texture.width,r.y*texture.height,r.width*texture.width,r.height*texture.height),Vector2.one*.5f,128,0,SpriteMeshType.FullRect);
-                if(entry.state=="Intact") intact=sprite; else if(entry.state=="Broken") broken=sprite; else Destroy(sprite);
+                if(entry.state=="Intact") { intact=sprite; ownsIntact=true; } else if(entry.state=="Broken") { broken=sprite; ownsBroken=true; } else Destroy(sprite);
             }
         }
         void StateChanged(bool previous,bool current) => Apply(!previous && current);
@@ -64,7 +72,8 @@ namespace CyberExtraction.Combat
             var sprite=Broken.Value ? broken : intact;
             if(sprite==null) { visual.enabled=false; return; }
             visual.enabled=true;
-            SpriteFactory.Setup(visual,sprite,Broken.Value ? new Color(.8f,.78f,.72f,.85f) : Color.white,Broken.Value ? -7 : -5);
+            SpriteFactory.Setup(visual,sprite,Broken.Value ? new Color(.8f,.78f,.72f,.85f) : Color.white,Broken.Value ? DungeonMapPublication.Current!=null ? -6 : -7 : -5);
+            if(DungeonMapPublication.ArtCatalog?.SpriteMaterial!=null) visual.sharedMaterial=DungeonMapPublication.ArtCatalog.SpriteMaterial;
             float size=Broken.Value ? 1.05f : .9f;
             visual.transform.localScale=new Vector3(size/sprite.bounds.size.x,size/sprite.bounds.size.y,1);
             // Late join / visibility re-spawn shows final debris without replay.
@@ -81,6 +90,7 @@ namespace CyberExtraction.Combat
                 var piece=new GameObject("BreakFragment"); piece.transform.SetParent(transform,false);
                 var renderer=piece.AddComponent<SpriteRenderer>();
                 SpriteFactory.Setup(renderer,broken,new Color(.7f,.67f,.58f,.65f),-5);
+                if(DungeonMapPublication.ArtCatalog?.SpriteMaterial!=null) renderer.sharedMaterial=DungeonMapPublication.ArtCatalog.SpriteMaterial;
                 piece.transform.localScale=new Vector3(.16f/broken.bounds.size.x,.16f/broken.bounds.size.y,1);
                 fragments.Add(renderer);
             }
@@ -132,7 +142,7 @@ namespace CyberExtraction.Combat
             }
         }
         void ClearFragments() { foreach(var sr in fragments) if(sr!=null) Destroy(sr.gameObject); fragments.Clear(); }
-        void ReleaseSprites() { if(intact!=null) Destroy(intact); if(broken!=null) Destroy(broken); intact=broken=null; }
+        void ReleaseSprites() { if(ownsIntact && intact!=null) Destroy(intact); if(ownsBroken && broken!=null) Destroy(broken); intact=broken=null; ownsIntact=ownsBroken=false; }
         public override void OnNetworkDespawn()
         {
             CandidateId.OnValueChanged-=CandidateChanged; Broken.OnValueChanged-=StateChanged; BrokenAt.OnValueChanged-=TimeChanged;

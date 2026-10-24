@@ -1,0 +1,222 @@
+{
+  "sourceSha256": "6549436bd3ce6c2ef4f343295579aa84781eb03bc3d2c2ab63a0261841ca9fe8",
+  "kind": "native-art-comparison",
+  "rooms": [
+    {
+      "room": 0,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R00.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Recomparado: sino ancorado no recesso, placa ao fundo, vela e cera junto à recepção. A urna de entrada agora participa desse foco. Centro e acesso preservados.",
+      "comparisonHash": "Q9/QTDe4hvz7rafjaKTwYC2SPenHErNlN37iVzw63wI="
+    },
+    {
+      "room": 1,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R01.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Recomparado: nicho desmontável, baia vazia, fragmentos e cinzas abaixo da retirada; urna funcional junto ao grupo. Resíduos concentrados na origem, sem ocupar o centro.",
+      "comparisonHash": "b87bazeNOAJA9e31F/5XHVLkApFzqWhoB2NA9eSmXyg="
+    },
+    {
+      "room": 2,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R02.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Recomparado: inscrições preservadas agora contrastam com a placa apagada; peça deslocada e pó pertencem à mesma intervenção no memorial.",
+      "comparisonHash": "RFnU4FvyfnB4Ibjl7sxD/rSFJaB88SshODcwJEhVhnk="
+    },
+    {
+      "room": 3,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R03.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Refeito o sprite da grade recolhida, com vazios entre barras, fundo em recesso e fixações laterais. Nova comparação mantém ferragens e corrente junto ao apoio.",
+      "comparisonHash": "f8rtWUHBwsoqJE29KE9W0LL4b0v+qY3kwRJC2nVYGiI="
+    },
+    {
+      "room": 4,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R04.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Recomposta a raiz entrando pela ruptura noroeste, com terra contínua e fragmentos no pé. A ramificação segue para dentro sem fechar a chegada.",
+      "comparisonHash": "NPYRIwQ2FOmtTbjMbIqJzgjULN/KsKc7oNuWdchCT+8="
+    },
+    {
+      "room": 5,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R05.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Refeitos apoios, velas em perfil e tecido pendente. Velas permanecem em pé nas orientações laterais; cera liga o abandono à parede. Passagem central livre.",
+      "comparisonHash": "V7d7Iabl612X87z7eu7aGl36SJYPJUJR54qi4X6CZPY="
+    },
+    {
+      "room": 6,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R06.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Completado o conjunto leste com relevos antes/depois do memorial. Faixa processional permanece gasta e subordinada à arquitetura; entrada e conexão reais mantidas.",
+      "comparisonHash": "6u+0ZQ7Yau/+EDJieNPwwnaqLFY5IIG5TPdGN8IZzh0="
+    },
+    {
+      "room": 7,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R07.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Substituída a textura de piso molhado pela superfície própria do rio. Madeiras e corda foram agrupadas na margem; depósitos acompanham a borda existente.",
+      "comparisonHash": "N7y437w56VKrbUabFl6yaTwmvsAn16jFH01fQukobhw="
+    },
+    {
+      "room": 8,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R08.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Recomposta a falha noroeste com urnas partidas, cinzas e fragmentos. Produzido rastro próprio de pegadas e pó ligando a origem à circulação. Três recipientes por apoio, nichos em peças editáveis.",
+      "comparisonHash": "fODCJe7HjRVeUolZagKOBioB3zSTIm3utszBAoRHeiE="
+    },
+    {
+      "room": 9,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R09.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Produzida placa com gravação legível para distinguir memória preservada e raspada. Painel removido, ferramenta e detritos recompõem a intervenção leste, com centro desocupado.",
+      "comparisonHash": "Fk42Xq+5Kxprno0/cgArm5aDfWsZR5+Ivfc2UBDEOJ8="
+    },
+    {
+      "room": 10,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Prisao-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R10.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Substituída a grade achatada por barras abertas sobre recesso. Fixações, correntes longas, restos de permanência e ruptura agrupados no norte. Grelhas sobre apoios e chave real preservadas; ordens de desenho separadas.",
+      "comparisonHash": "lOeZZZHKW4fRUkaSFbc0S4XXp2mbG372D0F1R3sl6XU="
+    },
+    {
+      "room": 11,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Prisao-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R11.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Refeitas correntes longas e reentrâncias que as sustentam. Estoque acompanha a parede leste real, com peças caídas abaixo do apoio. Ferrugem deriva das fixações, sem repetir argolas no piso.",
+      "comparisonHash": "9vSyoL1vmyHnfjbjg6sXf1XvWCGivleP6dKD+3NuoyA="
+    },
+    {
+      "room": 12,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Cisternas-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R12.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Produzida base vazada em pedra e corrigida sua sobreposição. Umidade e depósitos seguem o perímetro e terminam nos acessos; removida mancha artificial ao redor do pilar. Régua e centro seco preservados.",
+      "comparisonHash": "vI/5dK8xGAle5VuL1bfqjysPidQy0tuH2felCuCMJEY="
+    },
+    {
+      "room": 13,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Cisternas-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R13.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Recomparado o transporte funerário: apoios guardados junto à chegada, sulcos conectados ao embarque e amarrações na margem. Superfície própria do rio; barca, cais e percurso reais vinculados, conforme ficha de tradução.",
+      "comparisonHash": "HFqcd8VLdM0hku72ewwPRzzWWkHEHttxGWLgc4k30Og="
+    },
+    {
+      "room": 14,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R14.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Piso processional recomposto em painéis individuais alinhados à escadaria real, com memoriais e apoios laterais. Nenhum desenho ou entulho fecha as rotas.",
+      "comparisonHash": "GuWuwzDllPDaJ/sq68V89VBPX/5KXH9LoWM07piDDXo="
+    },
+    {
+      "room": 15,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R15.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Corrigidas largura e altura dos relevos, mantendo figuras em pé também no sul. Ruptura interrompe a sequência; apoio nordeste recebe três recipientes em vez da placa genérica.",
+      "comparisonHash": "mNQk/qkb0BgLDO8ZcknayGoqztBB95LSVARjmRX+Hj8="
+    },
+    {
+      "room": 16,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Claustro-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R16.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Refeitos apoios, lábios, velas em perfil, tecidos e cera. Rastro próprio de passagem fica subordinado ao vazio central; peças apoiadas e deterioração pertencem às vigílias.",
+      "comparisonHash": "sgDksuYjhWWaxc2QhwKyfW7mOM/380EdKd3vKZb343w="
+    },
+    {
+      "room": 17,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Ossarios-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R17.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Recomparado ossuário de referência: ruptura noroeste, nichos ao norte/leste, caixões nos apoios, acampamento abandonado junto ao sudoeste e urnas funcionais sudeste. Leito corrigido para 2,0 × 0,8 u; sem água.",
+      "comparisonHash": "FR8+QkpCdD72vLECmspXyAVCYLoJpbnVJpolvvsm5SA="
+    },
+    {
+      "room": 18,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Ossarios-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R18.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Nichos reposicionados na borda física oeste real; raiz contínua, restos da baia aberta e detritos seguem até o pilar. Base vazada nordeste e conjunto real do poço preservam a leitura; plataforma transitável visível conforme ficha de tradução.",
+      "comparisonHash": "qgIXS7y6Gs3uiweObbludrisV5SXXONchFNblRtx+IE="
+    },
+    {
+      "room": 19,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Contrapesos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R19.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Corrigidos recorte/altura das roldanas e produzida ligação de corda. Tampa e ferragens redimensionadas sobre os apoios vazados. Ferramenta e pó vinculados ao trabalho interrompido; manivela acessível.",
+      "comparisonHash": "PJQAcnk94uI3WHDfILc4ur5F4jfH+PfbQDtoXx43rLM="
+    },
+    {
+      "room": 20,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Claustro-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R20.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Produzido vestígio cerimonial próprio e ajustada sua leitura no piso. Apoios, velas em pé, cera e tecidos margeiam o pátio; desenho gasto continua subordinado ao espaço vazio.",
+      "comparisonHash": "eNgMwKAaeDC9EDahuw5uL7p8DCYXvEwIZHQ1i4adKII="
+    },
+    {
+      "room": 21,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Capela-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R21.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Produzida arquitetura memorial ritual para o norte; altar e tecidos sobre o apoio nordeste. Piso direcionado ao altar conforme correção prevista no plano; utensílio e fragmentos vinculados ao rito.",
+      "comparisonHash": "X2fqsROWqfLT3J1IB065xZjGj12T639mPqJ+k9d690I="
+    },
+    {
+      "room": 22,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Capela-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R22.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Produzidos compartimentos vazios e linho pendente. Alternadas portas/ocupação; caixa violada e tecidos sobre apoios. O ritmo leste respeita a porta física real e os resíduos permanecem junto ao armazenamento.",
+      "comparisonHash": "GV7hHZMcDP/+H9HNMF9nk0tcL2mRn3XXB+KyCzLp3Io="
+    },
+    {
+      "room": 23,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Cisternas-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R23.png",
+      "resolved": true,
+      "pendingDeviations": "",
+      "replan": "Produzidas grelhas de pedra sobre os dois apoios e corrigida a ordem de desenho. Depósitos seguem as paredes e o dreno, com fragmentos no pé; centro seco e aberturas preservados.",
+      "comparisonHash": "EKdsLoTI4TTpzCFXSvezwopC8575gA6QNUDGVteE+Nc="
+    }
+  ]
+}

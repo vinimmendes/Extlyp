@@ -1,0 +1,7 @@
+{
+  "name": "GradeRecolhida-v1",
+  "reference": "Assets/Resources/Environment/Dungeon/ReworkComplete/IronGrille.png",
+  "prompt": "Use this exact painted iron and limestone art as MATERIAL AND STYLE reference, produce ONE dismantled iron gate leaned against an invisible wall for overhead 2D game. Broad rectangular rusted iron frame,5 vertical thick bars and2 thin crossbars; several bars slightly bent, chipped rivets. The whole grate is skewed slightly, showing rectangular negative spaces through the bars, clear genuine transparency with NO stone slab filling the holes. No wall blocks, NO wood, no barrels, no text. Footprint2.5m wide x1.45m projected depth. Orthographic straight-down game view with only small bevels and low front faces, exact muted rusty brown/dark iron palette and painterly outlines from input. Clear gate/grille silhouette, irregular wear, whole object comfortably inside transparent canvas. Not a front elevation, not perspective scene, no surrounding floor.",
+  "mode": "built-in imagegen",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-817b1b2b-5632-4005-a523-ed743ff73ee2.png"
+}

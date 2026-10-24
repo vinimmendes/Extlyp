@@ -7,23 +7,28 @@ using UnityEngine;
 
 public static class ServerBuild
 {
-    [MenuItem("Cyber Extraction/Servidor/Gerar servidor Windows")]
-    public static void BuildServer() => Build("Builds/Server/CyberExtractionServer.exe");
+    [MenuItem("Cyber Extraction/Servidor/Gerar servidor Windows de desenvolvimento", false, 30)]
+    public static void BuildServer() => Build("Builds/ServerDevelopment/CyberExtractionServer.exe");
 
-    [MenuItem("Cyber Extraction/Servidor/Gerar cliente Windows para teste")]
+    [MenuItem("Cyber Extraction/Servidor/Gerar cliente Windows para teste", false, 31)]
     public static void BuildClient() => Build("Builds/Client/CyberExtraction.exe");
 
     public static void BuildWindowsBoth() { ServerChecks.Run(); BuildServer(); BuildClient(); }
     static bool Release => Array.IndexOf(Environment.GetCommandLineArgs(),"-release")>=0;
     static BuildOptions Options => Release ? BuildOptions.None : BuildOptions.Development;
+    static string Argument(string name)
+    {
+        var args=Environment.GetCommandLineArgs(); int i=Array.IndexOf(args,name);
+        return i>=0 && i+1<args.Length ? args[i+1] : null;
+    }
     static void Configure()
     {
         PlayerSettings.productName="Cyber Extraction";
-        string version=Environment.GetEnvironmentVariable("CE_BUILD_VERSION");
-        PlayerSettings.bundleVersion=string.IsNullOrEmpty(version) ? "1.2" : version;
+        string version=Argument("-ce-build-version") ?? Environment.GetEnvironmentVariable("CE_BUILD_VERSION");
+        PlayerSettings.bundleVersion=string.IsNullOrEmpty(version) ? "1.2.4" : version;
     }
 
-    [MenuItem("Cyber Extraction/Servidor/Gerar APK Android para teste")]
+    [MenuItem("Cyber Extraction/Servidor/Gerar APK Android para teste", false, 32)]
     public static void BuildAndroid()
     {
         var connection=CyberExtraction.Core.ServerConnectionSettings.Load();
@@ -38,7 +43,7 @@ public static class ServerBuild
         EditorUserBuildSettings.buildAppBundle = false;
         EditorUserBuildSettings.exportAsGoogleAndroidProject = false;
         Configure();
-        PlayerSettings.Android.bundleVersionCode = int.TryParse(Environment.GetEnvironmentVariable("CE_ANDROID_VERSION_CODE"),out int code) ? code : 3;
+        PlayerSettings.Android.bundleVersionCode = int.TryParse(Argument("-ce-android-version-code") ?? Environment.GetEnvironmentVariable("CE_ANDROID_VERSION_CODE"),out int code) ? code : 7;
         PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.cyberextraction.game");
         PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
         PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
@@ -68,6 +73,9 @@ public static class ServerBuild
     {
         Configure();
         Directory.CreateDirectory(Path.GetDirectoryName(output));
+        // A direct Editor build cannot retain the updater's approval of older sources.
+        string sourceStamp=Path.Combine(Path.GetDirectoryName(output),"source.sha256");
+        if(File.Exists(sourceStamp)) File.Delete(sourceStamp);
         // Build Windows comum tambem funciona como servidor com -batchmode -nographics -server.
         // Nao exige instalar o modulo opcional Dedicated Server.
         var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions

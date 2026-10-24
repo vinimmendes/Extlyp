@@ -7,14 +7,14 @@ namespace CyberExtraction.Match
         // Authored coordinates relative to the centre of the 128-cell map.
         public static Vector2 CanalPoint(float x,float y)=>new Vector2(x,y)*CellSize;
         static RectInt CanalCells(int x,int y,int width,int height)=>new RectInt(x+64,y+64,width,height);
-        public static readonly RectInt CanalArea=CanalCells(30,-64,34,50);
-        public static readonly RectInt CanalEastRiver=CanalCells(32,-28,32,8);
-        public static readonly RectInt CanalSouthRiver=CanalCells(54,-64,8,44);
-        public static readonly RectInt CanalBridge=CanalCells(42,-28,4,8);
-        public static readonly RectInt CanalDetour=CanalCells(24,-52,6,40);
-        public static readonly RectInt CanalBoarding=CanalCells(54,-51,4,2);
-        public static readonly Vector2 CanalControl=CanalPoint(47,-18);
-        public static readonly Vector2 CanalDeparture=Vector2.down*(16*CellSize);
+        public static RectInt CanalArea=>DungeonMapPublication.CellRegion("CanalArea",CanalCells(30,-64,34,50));
+        public static RectInt CanalEastRiver=>DungeonMapPublication.CellRegion("CanalEastRiver",CanalCells(32,-28,32,8));
+        public static RectInt CanalSouthRiver=>DungeonMapPublication.CellRegion("CanalSouthRiver",CanalCells(54,-64,8,44));
+        public static RectInt CanalBridge=>DungeonMapPublication.CellRegion("CanalBridge",CanalCells(42,-28,4,8));
+        public static RectInt CanalDetour=>DungeonMapPublication.CellRegion("CanalDetour",CanalCells(24,-52,6,40));
+        public static RectInt CanalBoarding=>DungeonMapPublication.CellRegion("CanalBoarding",CanalCells(54,-51,4,2));
+        public static Vector2 CanalControl=>DungeonMapPublication.Point("Mechanism/3",CanalPoint(47,-18));
+        public static Vector2 CanalDeparture=>DungeonMapPublication.Point("BoatEnd",CanalPoint(56,-66))-DungeonMapPublication.Point("Exit/2",CanalPoint(56,-50));
         public static bool IsCanalBridge(int x,int y)=>CanalBridge.Contains(new Vector2Int(x,y));
         public static bool CanalReserved(Rect rect)=>rect.Overlaps(WorldRect(CanalArea)) || rect.Overlaps(WorldRect(CanalDetour));
 

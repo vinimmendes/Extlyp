@@ -17,7 +17,15 @@ namespace CyberExtraction.UI
         Vector2 messageScroll;
         string lastMessage;
         NetworkBootstrap Bootstrap=>NetworkBootstrap.Instance;
-        public static bool ChoosingEnvironment => NetworkBootstrap.Instance!=null && NetworkBootstrap.Instance.ReadyForMenus && !ClientEnvironment.Chosen;
+        static readonly ExpeditionMap[] mapOrder={ExpeditionMap.Dungeon,ExpeditionMap.Large,ExpeditionMap.Test};
+        public static ExpeditionMap NextMap(ExpeditionMap current,bool testing,int direction=1)
+        {
+            int count=testing ? mapOrder.Length : 2;
+            int index=System.Array.IndexOf(mapOrder,current);
+            if(index<0 || index>=count) return mapOrder[0];
+            return mapOrder[(index+direction+count)%count];
+        }
+        public static bool ChoosingEnvironment => NetworkBootstrap.Instance!=null && NetworkBootstrap.Instance.ReadyForMenus && !NetworkBootstrap.Instance.CheckingTestAccess && !ClientEnvironment.Chosen;
         public static bool IsOpen => instance!=null && instance.Visible;
         bool Visible
         {
@@ -56,7 +64,7 @@ namespace CyberExtraction.UI
                 if(Bootstrap.InTestCamp && !ChoosingEnvironment && !Bootstrap.ConnectionBusy && !Bootstrap.ConnectionUnavailable && focus<2 && Mathf.Abs(navigation.x)>.5f)
                 {
                     int direction=navigation.x>0 ? 1 : -1;
-                    Bootstrap.ConfigureTestExpedition(focus==0 ? ((ExpeditionMap)(((int)Bootstrap.TestMap+direction+3)%3)) : Bootstrap.TestMap,
+                    Bootstrap.ConfigureTestExpedition(focus==0 ? NextMap(Bootstrap.TestMap,true,direction) : Bootstrap.TestMap,
                         focus==1 ? Mathf.Clamp(Bootstrap.TestBots+direction,0,MapBuilder.CapacityFor(Bootstrap.TestMap)-1) : Bootstrap.TestBots);
                 }
                 else focus=(focus+(navigation.y>0 || navigation.x<0 ? -1 : 1)+count)%count;
@@ -115,11 +123,11 @@ namespace CyberExtraction.UI
                 var test=new Rect(normal.xMax+24,normal.y,cardWidth,250);
                 GUI.Box(normal,""); GUI.Box(test,"");
                 GUI.Label(new Rect(normal.x+18,normal.y+22,cardWidth-36,42),"BASE NORMAL",HudTheme.Label(24,TextAnchor.MiddleCenter));
-                GUI.Label(new Rect(normal.x+18,normal.y+78,cardWidth-36,82),"Sua mochila, seu baú e a expedição Floresta Velha. Progresso real.",HudTheme.Label(18));
+                GUI.Label(new Rect(normal.x+18,normal.y+78,cardWidth-36,82),"Sua mochila, seu baú e as Catacumbas dos Afogados. Progresso real.",HudTheme.Label(18));
                 if(Button(new Rect(normal.x+18,normal.yMax-68,cardWidth-36,50),"Entrar na base",0)) Bootstrap.ChooseEnvironment(CampEnvironment.Normal);
                 GUI.Label(new Rect(test.x+18,test.y+22,cardWidth-36,42),"ACAMPAMENTO DE TESTE",HudTheme.Label(24,TextAnchor.MiddleCenter));
                 GUI.Label(new Rect(test.x+18,test.y+78,cardWidth-36,82),"Recursos temporários, mapas de teste e laboratório. Sem alterar seu progresso real.",HudTheme.Label(18));
-                if(Button(new Rect(test.x+18,test.yMax-68,cardWidth-36,50),"Entrar para testar",1,GameConfig.AllowQuickTest)) Bootstrap.ChooseEnvironment(CampEnvironment.Test);
+                if(Button(new Rect(test.x+18,test.yMax-68,cardWidth-36,50),"Entrar para testar",1,Bootstrap.CanEnterTests)) Bootstrap.ChooseEnvironment(CampEnvironment.Test);
                 return;
             }
             float leftWidth=(width-72)*.43f;
@@ -132,7 +140,7 @@ namespace CyberExtraction.UI
             GUI.Label(new Rect(x,panel.y+24,w,44),MapBuilder.MapName(Bootstrap.TestMap).ToUpperInvariant(),HudTheme.Label(Bootstrap.TestMap==ExpeditionMap.Dungeon ? 22 : 30));
             if(Bootstrap.ConnectionBusy)
             {
-                GUI.Label(new Rect(x,panel.y+96,w,95),Bootstrap.Searching ? "Procurando uma sala disponível..." : "Preparando conexão...",HudTheme.Label(22));
+                GUI.Label(new Rect(x,panel.y+96,w,95),Bootstrap.CheckingTestAccess ? "Verificando acesso ao servidor..." : Bootstrap.Searching ? "Procurando uma sala disponível..." : "Preparando conexão...",HudTheme.Label(22));
                 if(Button(new Rect(x,panel.y+220,w,52),"Cancelar",0,Bootstrap.Searching)) Bootstrap.CancelConnectionSearch();
                 return;
             }
@@ -150,12 +158,12 @@ namespace CyberExtraction.UI
             if(testing)
             {
                 GUI.SetNextControlName("ExpeditionAction0"); if(focus==0) GUI.FocusControl("ExpeditionAction0");
-                int map=GUI.SelectionGrid(new Rect(x,y,w,36),(int)Bootstrap.TestMap,new[]{"Área de testes","Floresta Velha","Catacumbas"},3);
+                int map=GUI.SelectionGrid(new Rect(x,y,w,36),System.Array.IndexOf(mapOrder,Bootstrap.TestMap),new[]{"Catacumbas","Floresta Velha","Área de testes"},3);
                 GUI.SetNextControlName("ExpeditionAction1"); if(focus==1) GUI.FocusControl("ExpeditionAction1");
                 var labels=new string[MapBuilder.CapacityFor(Bootstrap.TestMap)];
                 for(int i=0;i<labels.Length;i++) labels[i]=i==0 ? "0 bots" : i.ToString();
                 int bots=GUI.SelectionGrid(new Rect(x,y+42,w,32),Bootstrap.TestBots,labels,labels.Length);
-                Bootstrap.ConfigureTestExpedition((ExpeditionMap)map,bots); y+=84;
+                Bootstrap.ConfigureTestExpedition(mapOrder[map],bots); y+=84;
             }
             if(!testing)
             {

@@ -160,7 +160,7 @@ namespace CyberExtraction.Players
                 {
                     int damage=weapon.DamageAt(Vector2.Distance(origin,end));
                     var monster=victim.GetComponent<CyberExtraction.Enemies.Monster>();
-                    victim.ServerTakeDamage(monster!=null ? monster.ProjectileDamage(damage,origin) : damage,inv);
+                    victim.ServerTakeDamage(monster!=null ? monster.ProjectileDamage(damage,origin) : damage,inv,origin:DamageOrigin.Player(inv,weapon.Item));
                 }
                 CyberExtraction.UI.NetworkBootstrap.Instance.BroadcastShot(origin,end,pellet==0,weapon.NoiseRadius,weapon.Item);
             }

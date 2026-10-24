@@ -7,7 +7,7 @@ using CyberExtraction.Core;
 // Verificacoes de contratos da IA, sem dependencias de NUnit ou de Play Mode.
 public static class BotChecks
 {
-    [MenuItem("Cyber Extraction/Verificar regras dos bots")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Regras dos bots")]
     public static void Run()
     {
         int checks = 0;

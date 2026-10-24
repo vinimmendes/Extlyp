@@ -171,7 +171,7 @@ namespace CyberExtraction.Enemies
                 rb.position=origin+direction*Mathf.Max(0,hitDistance-.04f);
                 var victim=nearest.collider.GetComponentInParent<PlayerInventory>();
                 if(victim!=null && Physics2D.Linecast(origin,victim.transform.position,GameConfig.WallMask).collider==null)
-                    victim.GetComponent<Health>()?.ServerTakeDamage(attackDamage,creatureName:DisplayName);
+                    victim.GetComponent<Health>()?.ServerTakeDamage(attackDamage,creatureName:DisplayName,origin:DamageOrigin.Creature(DamageOrigin.Identify(gameObject)));
                 RecoverWeaver(); return true;
             }
             rb.position=origin+direction*step; weaverDashLeft-=step; ChargeReach.Value=weaverDashLeft;

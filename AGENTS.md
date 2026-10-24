@@ -14,6 +14,17 @@
 - Use Darkwood como referencia de atmosfera, floresta, abandono, interiores e detalhes ambientais.
 - Use Bullet Echo como referencia de legibilidade do combate, cobertura, linhas de visao, circulacao e rotas alternativas.
 - Combine essas referencias com as regras e a identidade de Cyber Extraction; mantenha arte e layouts proprios.
+- Catacumbas: por orientacao posterior do usuario, manter a versao atual por enquanto. Permanecem diferencas visuais claras em relacao aos conceitos aprovados; a publicacao e a revisao estatica nao equivalem a aprovacao de fidelidade visual. Manter como objetivo aproximar o jogo desses conceitos, retomando comparacao, replanejamento e ajustes quando houver trabalho pertinente no visual das Catacumbas. Nao iniciar essa nova rodada apenas por este registro nem considerar os conceitos substituidos pela montagem atual.
+
+## Criacao de cenas e salas: ideia antes da execucao
+
+- Por orientacao do usuario, comece desenvolvendo a ideia da cena: o que o lugar pode ser, seu uso, sua historia e o que deve comunicar. Defina a composicao e as relacoes espaciais antes de escolher ou produzir os objetos.
+- Exemplos dados pelo usuario explicam a intencao e o raciocinio; nao os transforme automaticamente em lista obrigatoria de assets, tema fixo ou grupos isolados espalhados pela sala.
+- Prepare e apresente um conceito visual da ideia o mais proximo possivel do resultado realmente entregavel: mesma perspectiva, escala, linguagem de arte e limites do pipeline do jogo. Nao apresente uma pintura conceitual cuja qualidade, geometria ou efeitos nao possam ser reproduzidos na entrega.
+- Confira proporcoes tomando o personagem e a grade real como referencias comuns. Camas/leitos, caixoes, urnas, utensilios e passagens precisam pertencer a mesma escala; ajuste dimensoes e pegadas antes da montagem final. Uma composicao aprovada nao aprova automaticamente proporcoes incorretas da imagem conceitual.
+- Use esse conceito como referencia concreta para produzir os assets e montar a cena. Tudo que se distanciar do conceito deve ser identificado, replanejado e ajustado para se aproximar novamente dele, incluindo arte, escala, materiais, iluminacao e composicao. Compare novamente depois da correcao. Uma etapa com desvios pendentes nao esta concluida; nao simplifique nem atualize o conceito para justificar uma montagem inferior. Alteracoes do proprio conceito precisam ser apresentadas explicitamente ao usuario, sem presumir aprovacao.
+- Construa unidade entre arquitetura, piso, objetos e deterioracao. Terra, raizes, agua, fragmentos e sinais de ocupacao precisam ter origem e continuidade plausiveis, evitando ilhas tematicas usadas apenas para exibir materiais ou objetos.
+- Preserve as restricoes de gameplay e a preferencia de verificacao deste arquivo durante todas as etapas. Este fluxo nao autoriza expandir etapas que estejam aguardando retorno do usuario.
 
 ## Referencias permanentes para HUD e arte de interface
 
@@ -69,6 +80,7 @@ Leia a skill correspondente ao assunto antes de implementar ou revisar. Nao e ne
 
 ## Limites de arquitetura
 
+- Servidor: manter os canais estavel e desenvolvimento separados conforme `Docs/Integracao/SERVIDOR_ESTAVEL_E_DESENVOLVIMENTO.md`. Compilar/iniciar desenvolvimento nao deve substituir ou reiniciar a estavel nem compartilhar seus perfis. A promocao da estavel e explicita, com as salas desligadas; preservar clientes compativeis, builds anteriores e dados.
 - Regras da expedicao permanecem autoritativas no servidor.
 - ScriptableObjects podem armazenar configuracao; estado por jogador e progresso persistente precisam de armazenamento separado.
 - Adotar servicos online adicionais da Unity e uma decisao de arquitetura separada da manutencao do servidor atual por IP.

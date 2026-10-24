@@ -6,9 +6,11 @@ namespace CyberExtraction.Camp
     [Serializable] public class CampJoinRequest
     {
         public string Session, PublicKey, Signature, Nonce;
+        public string DungeonContentHash;
         public long IssuedTicks;
         public bool CampOnly, RepairPier, Fish;
         public bool CampSandbox;
+        public bool TestAccessProbe;
         public int BringBandages;
         public byte Map;
         public bool QuickTest;
@@ -30,25 +32,27 @@ namespace CyberExtraction.Camp
         {
             try { FlushPendingExperience(); }
             catch(Exception error) { UnityEngine.Debug.LogError("Nao foi possivel persistir XP ao encerrar: "+error.Message); }
-            ClearPendingExperience(); shared?.Dispose(); shared=null; records.Clear(); heldLeases.Clear();
+            ClearPendingExperience(); pendingProfile.Clear(); shared?.Dispose(); shared=null; records.Clear(); heldLeases.Clear();
         }
         static CampRecord Record(Dictionary<string,CampRecord> data,string session)
         { if(!data.TryGetValue(session,out var record)) data[session]=record=new CampRecord { Session=session,Progress=CampProfileMigration.Create() }; return record; }
         static T Transaction<T>(Func<Dictionary<string,CampRecord>,T> operation,bool persist=true)
         {
             var batch=pendingRewards.ToArray();
+            var profileBatch=pendingProfile.ToArray();
             if(shared!=null)
             {
-                T committed=shared.Transaction(data=> { ApplyPendingExperience(data,batch); return operation(data); },persist || batch.Length>0);
-                CompletePendingExperience(batch); return committed;
+                T committed=shared.Transaction(data=> { ApplyPendingExperience(data,batch); ApplyPendingProfile(data,profileBatch); return operation(data); },persist || batch.Length>0 || profileBatch.Length>0);
+                CompletePendingExperience(batch); CompletePendingProfile(profileBatch); return committed;
             }
             var copy=new Dictionary<string,CampRecord>();
             foreach(var pair in records) copy[pair.Key]=UnityEngine.JsonUtility.FromJson<CampRecord>(UnityEngine.JsonUtility.ToJson(pair.Value));
             foreach(var record in copy.Values) CampProfileMigration.Upgrade(record.Progress);
             ApplyPendingExperience(copy,batch);
+            ApplyPendingProfile(copy,profileBatch);
             T result=operation(copy); CampProfileMigration.ValidateOwnership(copy.Values);
             records.Clear(); foreach(var pair in copy) records[pair.Key]=pair.Value;
-            CompletePendingExperience(batch); return result;
+            CompletePendingExperience(batch); CompletePendingProfile(profileBatch); return result;
         }
         // Called inside the repository transaction (and shared-store mutex), never before it.
         static CampRecord OwnedRecord(Dictionary<string,CampRecord> data,string session,string expectedOwner=null)
@@ -139,7 +143,7 @@ namespace CyberExtraction.Camp
                     if(string.IsNullOrEmpty(session) || !data.TryGetValue(session,out var record) || !MatchesLease(record,session,owner)) return false;
                     var p=record.Progress;
                     if(settleExpedition && p.ExpeditionState==2)
-                    { ConfirmExperience(p,false); Clear(p); p.Revision++; p.Sync(); }
+                    { ConfirmExperience(p,false); p.Statistics.Finish(p.ExpeditionId,ExpeditionOutcome.Interrupted,p.LastExperienceAward); Clear(p); p.Revision++; p.Sync(); }
                     else if(settleExpedition && p.ExpeditionState==1) Recover(p,true);
                     record.Lease=null; record.LeaseToken=null; record.LeaseExpires=0;
                     return true;
@@ -161,6 +165,7 @@ namespace CyberExtraction.Camp
             var equipment=Edit(session,p=>
             {
                 p.Ensure(); if(p.ExpeditionState!=0) throw new InvalidOperationException("Expedicao anterior ativa.");
+                if(string.IsNullOrEmpty(p.PlayerName)) throw new InvalidOperationException("Escolha seu nome na aba Perfil antes de partir.");
                 p.PrepareRecoveryEquipment();
                 p.Equipment.FillWeapons(p.Pack);
                 p.Escrow=p.Pack.Copy(); p.EscrowEquipment=p.Equipment.Copy(); reserved=p.Equipment.Copy();
@@ -169,30 +174,30 @@ namespace CyberExtraction.Camp
                 p.ExpeditionId=expedition; p.ExpeditionState=1; p.Pack=new InventoryGrid(ItemCatalog.BackpackSlots); p.Equipment=new EquipmentLoadout(); p.Revision++; p.Sync(); return p.Escrow.Copy();
             }); food=buff; loadout=reserved; return equipment;
         }
-        public static void Commit(string session,string expedition)=>Edit(session,p=>
-        { if(p.ExpeditionId!=expedition || (p.ExpeditionState!=1 && p.ExpeditionState!=2)) throw new InvalidOperationException("Reserva invalida."); p.ExpeditionState=2; return 0; });
+        public static void Commit(string session,string expedition,byte map=0)=>Edit(session,p=>
+        { if(p.ExpeditionId!=expedition || (p.ExpeditionState!=1 && p.ExpeditionState!=2)) throw new InvalidOperationException("Reserva invalida."); if(p.ExpeditionState==1) { p.Statistics.Begin(expedition,map); p.Revision++; } p.ExpeditionState=2; return 0; });
         public static void Rollback(string session,string expedition)=>Edit(session,p=>
         { if(p.ExpeditionId==expedition && p.ExpeditionState!=0) Recover(p,true); return 0; });
         internal static void Recover(CampProgress p,bool rollback=false)
         {
-            if(p.ExpeditionState==2 && !rollback) { ConfirmExperience(p,false); Clear(p); p.Revision++; p.Sync(); return; }
+            if(p.ExpeditionState==2 && !rollback) { ConfirmExperience(p,false); p.Statistics?.Finish(p.ExpeditionId,ExpeditionOutcome.Interrupted,p.LastExperienceAward); Clear(p); p.Revision++; p.Sync(); return; }
             if(p.Escrow!=null) p.Pack=p.Escrow.Copy(); if(p.EscrowEquipment!=null) p.Equipment=p.EscrowEquipment.Copy();
             if(p.EscrowFood>0) { p.WellFed=true; p.FoodHealth=p.EscrowFood; }
-            if(rollback && p.ExpeditionState==2) p.ExpeditionState=1;
+            if(rollback && p.ExpeditionState==2) { p.Statistics.Finish(p.ExpeditionId,ExpeditionOutcome.Interrupted,0); p.ExpeditionState=1; }
             Clear(p); p.Revision++; p.Sync();
         }
         static void Clear(CampProgress p) { if(p.ExpeditionState==2) p.RestockMerchant(p.ExpeditionId); p.ExpeditionState=0; p.ExpeditionId=null; p.Escrow=null; p.EscrowEquipment=null; p.EscrowFood=0; p.ExpeditionExperience=0; p.ExpeditionExplorationExperience=p.ExpeditionPvpExperience=0; p.ExpeditionRewardKeys.Clear(); p.DeliverLegacyItems(); }
         public static bool Bank(string session,string expedition,InventoryGrid returned)=>Bank(session,expedition,returned,new EquipmentLoadout());
-        public static bool Bank(string session,string expedition,InventoryGrid returned,EquipmentLoadout loadout)=>Edit(session,p=>
+        public static bool Bank(string session,string expedition,InventoryGrid returned,EquipmentLoadout loadout,int exit=-1)=>Edit(session,p=>
         {
-            if(p.ExpeditionState!=2 || p.ExpeditionId!=expedition) return false;
+            if(p.ExpeditionState!=2 || p.ExpeditionId!=expedition || p.Statistics.Current?.Fatal==true) return false;
             p.Pack=returned.Copy(); p.Equipment=loadout.Copy();
             for(int i=0;i<p.Pack.Slots.Length;i++) p.Pack.Slots[i]=ItemCatalog.ExpeditionOnly(p.Pack.Slots[i].Item) ? default : RecoveryRules.Extracted(p.Pack.Slots[i]);
             for(int i=0;i<p.Equipment.Slots.Length;i++) p.Equipment.Slots[i]=RecoveryRules.Extracted(p.Equipment.Slots[i]);
-            ConfirmExperience(p,true); Clear(p); p.Revision++; p.Sync(); return true;
+            ConfirmExperience(p,true); p.Statistics.Finish(expedition,ExpeditionOutcome.Extracted,p.LastExperienceAward,exit); Clear(p); p.Revision++; p.Sync(); return true;
         });
-        public static void Lose(string session,string expedition)=>Edit(session,p=>
-        { if(p.ExpeditionId==expedition && p.ExpeditionState!=0) { if(p.ExpeditionState==2) ConfirmExperience(p,false); Clear(p); p.Revision++; p.Sync(); } return 0; });
+        public static void Lose(string session,string expedition,ExpeditionOutcome outcome=ExpeditionOutcome.Interrupted)=>Edit(session,p=>
+        { if(p.ExpeditionId==expedition && p.ExpeditionState!=0) { if(p.ExpeditionState==2) { ConfirmExperience(p,false); p.Statistics.Finish(expedition,outcome,p.LastExperienceAward); } Clear(p); p.Revision++; p.Sync(); } return 0; });
     }
     public static class CampSession
     {

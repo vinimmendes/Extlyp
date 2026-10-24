@@ -200,7 +200,7 @@ namespace CyberExtraction.Enemies
                 if(victim!=null)
                 {
                     var victimHealth=victim.GetComponent<Health>();
-                    if(victimHealth!=null) victimHealth.ServerTakeDamage(chargeDamage,creatureName:DisplayName);
+                    if(victimHealth!=null) victimHealth.ServerTakeDamage(chargeDamage,creatureName:DisplayName,origin:CyberExtraction.Combat.DamageOrigin.Creature(CyberExtraction.Combat.DamageOrigin.Identify(gameObject)));
                 }
                 Recover(); return;
             }

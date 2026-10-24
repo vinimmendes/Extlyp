@@ -1,0 +1,7 @@
+{
+  "name": "CorrenteSuspensa-v1",
+  "reference": "Assets/Resources/Environment/Dungeon/ReworkComplete/RingChain.png",
+  "prompt": "Edit this exact wall anchor into ONE long hanging chain sprite for the same overhead painted 2D game. Keep the chipped square limestone mounting plate, the rusty iron ring and exact colors/material rendering. Replace its very short three links by a longer chain of about10 heavy irregular oval rusty iron links hanging toward the bottom of the image, slight natural bend and a broken open final link. The stone plate occupies only the upper quarter, the rest is isolated iron links with genuine transparency through and around them. World footprint roughly0.65m width x1.8m projected height, overhead camera with low relief, not isometric. No floor backing, no extra piles, no shadows extending far away, no text. Whole anchor and chain fully inside canvas with alpha around. Match the input's painterly warm grey stone and dark aged metal.",
+  "mode": "built-in imagegen",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-1bc5c5cf-59fa-4905-9202-0d9092b52398.png"
+}

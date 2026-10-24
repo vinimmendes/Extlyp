@@ -8,7 +8,7 @@ using CyberExtraction.Players;
 
 namespace CyberExtraction.UI
 {
-    public enum BasePage { Preparation,Inventory,Character,Commerce,Activities }
+    public enum BasePage { Preparation,Inventory,Character,Commerce,Activities,Profile }
 
     [DefaultExecutionOrder(-100)]
     public sealed class UguiBaseHub : MonoBehaviour
@@ -16,6 +16,8 @@ namespace CyberExtraction.UI
         static UguiBaseHub instance;
         BaseHubView view;
         UguiInventoryPresenter inventory;
+        UguiProfilePresenter profilePresenter;
+        bool profilePrompted;
         BasePage page;
         bool dirty=true,wasVisible;
         (bool busy,bool unavailable,string message,bool pending,bool synchronized,string campMessage,bool test,ExpeditionMap map,int bots) connectionState;
@@ -39,6 +41,7 @@ namespace CyberExtraction.UI
         public void Initialize(BaseHubView screen,UguiInventoryPresenter items)
         {
             instance=this; view=screen; inventory=items;
+            profilePresenter=gameObject.AddComponent<UguiProfilePresenter>(); profilePresenter.Initialize(view);
             InitializeResourceControls();
             for(int i=0;i<view.Tabs.Length;i++) { var target=(BasePage)i; view.Tabs[i].onClick.AddListener(()=>Navigate(target)); }
             view.Options.onClick.AddListener(GameOptionsMenu.ShowOptions);
@@ -62,8 +65,7 @@ namespace CyberExtraction.UI
             {
                 var net=NetworkBootstrap.Instance;
                 if(!Ready) return;
-                net.ConfigureExpedition(net.IsTestEnvironment ? (ExpeditionMap)(((int)net.TestMap+1)%3) :
-                    net.TestMap==ExpeditionMap.Large ? ExpeditionMap.Dungeon : ExpeditionMap.Large,net.TestBots);
+                net.ConfigureExpedition(ExpeditionMenu.NextMap(net.TestMap,net.IsTestEnvironment),net.TestBots);
             });
             view.Bots.onClick.AddListener(()=> { var net=NetworkBootstrap.Instance; if(Ready && net.IsTestEnvironment) net.ConfigureExpedition(net.TestMap,(net.TestBots+1)%MapBuilder.CapacityFor(net.TestMap)); });
             view.ActivityButtons[0].onClick.AddListener(()=>CampController.Instance.OpenBench());
@@ -73,7 +75,7 @@ namespace CyberExtraction.UI
             BaseMenuStyle.Scope(view.gameObject,true);
             view.Panel.GetComponent<HudFrameGraphic>().FillOpacity=0;
             foreach(var tab in view.Tabs) tab.GetComponent<HudFrameGraphic>().BaseTab=true;
-            ExpeditionArtwork.Apply(view.Artwork,ExpeditionMap.Large);
+            ExpeditionArtwork.Apply(view.Artwork,ExpeditionMap.Dungeon);
             view.gameObject.SetActive(false);
         }
         bool Ready => CampController.Active && CampSession.Synchronized && !CampSession.Pending &&
@@ -108,6 +110,8 @@ namespace CyberExtraction.UI
             }
             wasVisible=visible;
             if(!visible) return;
+            if(!profilePrompted && Ready && !net.IsTestEnvironment)
+            { profilePrompted=true; if(string.IsNullOrEmpty(CampSession.Progress.PlayerName)) Navigate(BasePage.Profile); }
             if(net.ConnectionBusy || net.ConnectionUnavailable)
             { if(page!=BasePage.Preparation) { InventoryWindow.Instance.Close(); CampController.Instance?.ClosePreparation(); page=BasePage.Preparation; dirty=true; } }
             if(GameInput.BackPressed && !GameOptionsMenu.ConsumedBack && !HudLayoutEditor.ConsumedBack)
@@ -124,6 +128,7 @@ namespace CyberExtraction.UI
             bool preparing=page==BasePage.Preparation;
             view.Preparation.gameObject.SetActive(preparing);
             view.Activities.gameObject.SetActive(page==BasePage.Activities && !CampController.Instance.HasActivity);
+            profilePresenter.Show(page==BasePage.Profile);
             if(width!=UiLayout.Width || safeBounds!=UiLayout.SafeScreen || compactLayout!=WantsCompactLayout)
             { width=UiLayout.Width; safeBounds=UiLayout.SafeScreen; compactLayout=WantsCompactLayout; Layout(); dirty=true; }
             var nextState=(net.ConnectionBusy,net.ConnectionUnavailable,net.ConnectionMessage,CampSession.Pending,CampSession.Synchronized,CampSession.Message,net.IsTestEnvironment,net.TestMap,net.TestBots);
@@ -153,7 +158,7 @@ namespace CyberExtraction.UI
                 UguiGeometry.Place(view.ResourceLabels[i].rectTransform,new Rect(x+30,8,resourceWidth-34,20));
                 UguiGeometry.Place(view.ResourceValues[i].rectTransform,new Rect(x+30,30,resourceWidth-34,26));
             }
-            for(int i=0;i<5;i++) Place(view.Tabs[i],new Rect(box.x+i*w/5,60,w/5,48));
+            for(int i=0;i<view.Tabs.Length;i++) Place(view.Tabs[i],new Rect(box.x+i*w/view.Tabs.Length,60,w/view.Tabs.Length,48));
             UguiGeometry.Place(view.Message.rectTransform,new Rect(box.x+8,554,w-16,38));
             UguiGeometry.Place(view.Preparation,box); UguiGeometry.Place(view.Activities,box);
             float available=w-24,left=Mathf.Max(240,available*.24f),right=Mathf.Max(280,available*.30f),middle=w-left-right-24;
@@ -199,6 +204,7 @@ namespace CyberExtraction.UI
                 resourceButtons[i].gameObject.SetActive(compactLayout);
             }
             if(compactLayout) LayoutCompact(box,background);
+            profilePresenter.Layout();
         }
         void LayoutCompact(Rect box,Rect background)
         {
@@ -217,7 +223,7 @@ namespace CyberExtraction.UI
                 UguiGeometry.Place(view.ResourceIcons[i].rectTransform,new Rect(x+8,16,32,32));
                 UguiGeometry.Place(view.ResourceValues[i].rectTransform,new Rect(x+48,0,resourceWidth-64,64));
             }
-            for(int i=0;i<5;i++) Place(view.Tabs[i],new Rect(box.x+i*w/5,64,w/5,56));
+            for(int i=0;i<view.Tabs.Length;i++) Place(view.Tabs[i],new Rect(box.x+i*w/view.Tabs.Length,64,w/view.Tabs.Length,56));
             UguiGeometry.Place(view.Equipment,new Rect(0,0,panelWidth,432));
             UguiGeometry.Place(view.Destination,new Rect(panelWidth+16,0,panelWidth,432));
             UguiGeometry.Place(view.PreparationsTitle.rectTransform,new Rect(20,12,inner,40));
@@ -260,11 +266,12 @@ namespace CyberExtraction.UI
             Layout();
             UguiTheme.Apply(view.gameObject);
             var net=NetworkBootstrap.Instance; var profile=CampSession.Progress;
-            view.Heading.text=net.IsTestEnvironment ? "BASE · TESTE" : "BASE";
+            view.Heading.text=net.IsTestEnvironment ? "BASE · TESTE" : string.IsNullOrEmpty(profile.PlayerName) ? "BASE" : profile.PlayerName;
+            view.Heading.richText=false;
             view.Message.text=CampSession.Pending ? "Aguardando confirmação do servidor…" : !CampSession.Synchronized ? net.ConnectionMessage : CampSession.Message;
             view.Message.color=BaseMenuStyle.Secondary;
             view.FooterShade.gameObject.SetActive(!string.IsNullOrWhiteSpace(view.Message.text));
-            for(int i=0;i<5;i++)
+            for(int i=0;i<view.Tabs.Length;i++)
             {
                 var tab=view.Tabs[i]; tab.interactable=!net.ConnectionBusy && !CampSession.Pending && (i==0 || CampSession.Synchronized);
                 UguiMenuStyle.Button(tab);
@@ -274,6 +281,7 @@ namespace CyberExtraction.UI
                 label.fontSize=20; label.color=(int)page==i ? HudTheme.Text : BaseMenuStyle.Secondary;
             }
             foreach(var button in new[] {view.Options,view.Organize,view.Depart,view.Cancel,view.Retry,view.Leave,view.Map,view.Bots}) UguiMenuStyle.Button(button,button==view.Depart);
+            profilePresenter.Refresh();
             foreach(var icon in view.EquipmentIcons) icon.gameObject.SetActive(false);
             int used=0; foreach(var item in profile.Pack.Slots) if(!item.Empty) used++;
             view.BackpackCount.text=CampSession.Synchronized ? used+" / "+profile.Pack.Slots.Length+" espaços" : "Sincronizando…";
@@ -397,7 +405,7 @@ namespace CyberExtraction.UI
                 text.textWrappingMode=TMPro.TextWrappingModes.Normal;
                 text.color=selectedResource==i ? HudTheme.Accent : HudTheme.Text;
             }
-            foreach(var button in view.Tabs) CompactCaption(button,26);
+            foreach(var button in view.Tabs) CompactCaption(button,22);
             foreach(var button in view.ActivityButtons) CompactCaption(button,26);
             foreach(var button in new[] {view.Options,view.Organize,view.Map,view.Bots,view.Cancel,view.Retry,view.Leave}) CompactCaption(button,26);
             CompactCaption(view.Depart,30);

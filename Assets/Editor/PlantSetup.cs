@@ -9,7 +9,7 @@ public static class PlantSetup
 {
     public const string SheetPath = "Assets/Resources/Plants/PlantMonsterSheet.png";
     public const string PrefabPath = "Assets/Resources/Plants/PlantCreature.prefab";
-    [MenuItem("Cyber Extraction/Plantas/Preparar sprites e prefab")]
+    [MenuItem("Cyber Extraction/Avançado/Preparação de assets/Sprites e prefab das plantas")]
     public static void Prepare()
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode) { Debug.LogError("Saia do Play antes de preparar as plantas."); return; }

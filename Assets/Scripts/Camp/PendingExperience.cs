@@ -54,7 +54,7 @@ namespace CyberExtraction.Camp
             if(!pendingRewards.Exists(old=>SameReward(old,reward))) pendingRewards.Add(reward);
         }
         public static bool FlushPendingExperience()
-        { if(pendingRewards.Count==0) return false; Transaction(data=>0); return true; }
+        { if(pendingRewards.Count==0 && pendingProfile.Count==0) return false; Transaction(data=>0); return true; }
         static void ApplyPendingExperience(Dictionary<string,CampRecord> data,PendingReward[] batch)
         {
             foreach(var reward in batch)

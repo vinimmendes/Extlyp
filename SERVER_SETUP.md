@@ -1,4 +1,12 @@
-# Servidor e cliente — estado atual em 16/10/2026
+# Servidor e cliente
+
+## Fluxo atual — estavel e desenvolvimento (24/10/2026)
+
+Use [Servidor estavel e desenvolvimento](Docs/Integracao/SERVIDOR_ESTAVEL_E_DESENVOLVIMENTO.md). `Iniciar-Servidor.bat` conserva o executavel estavel atual; iniciar/reiniciar nao atualiza essa versao automaticamente. `Iniciar-Servidor-Desenvolvimento.bat` usa executavel, portas e dados separados. `Update-Server.ps1` atualiza somente desenvolvimento e `Publish-Server.ps1` promove explicitamente uma versao aprovada com a estavel desligada. O menu Unity de gerar servidor tambem escreve apenas em desenvolvimento.
+
+As instrucoes abaixo sao historicas; a atualizacao automatica da estavel descrita nelas foi substituida pelo fluxo acima. Consulte o protocolo no `GameConfig` e nos manifests dos builds correspondentes, pois os numeros antigos abaixo nao representam necessariamente o codigo atual.
+
+## Registro anterior — 16/10/2026
 
 ## Compatibilidade
 

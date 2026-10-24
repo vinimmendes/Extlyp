@@ -1,0 +1,87 @@
+{
+  "fps": 12,
+  "frames": 216,
+  "seconds": 18,
+  "states": [
+    {
+      "frame": 1,
+      "seconds": 0.0,
+      "state": "ESCOLHA A ISCA"
+    },
+    {
+      "frame": 15,
+      "seconds": 1.167,
+      "state": "LANÇANDO"
+    },
+    {
+      "frame": 22,
+      "seconds": 1.75,
+      "state": "AGUARDE"
+    },
+    {
+      "frame": 37,
+      "seconds": 3.0,
+      "state": "APROXIMANDO"
+    },
+    {
+      "frame": 61,
+      "seconds": 5.0,
+      "state": "NÃO MORDEU"
+    },
+    {
+      "frame": 72,
+      "seconds": 5.917,
+      "state": "AGUARDE"
+    },
+    {
+      "frame": 87,
+      "seconds": 7.167,
+      "state": "APROXIMANDO"
+    },
+    {
+      "frame": 109,
+      "seconds": 9.0,
+      "state": "FISGUE!"
+    },
+    {
+      "frame": 117,
+      "seconds": 9.667,
+      "state": "RECOLHA"
+    },
+    {
+      "frame": 126,
+      "seconds": 10.417,
+      "state": "CEDA LINHA!"
+    },
+    {
+      "frame": 130,
+      "seconds": 10.75,
+      "state": "RECOLHA"
+    },
+    {
+      "frame": 148,
+      "seconds": 12.25,
+      "state": "CEDA LINHA!"
+    },
+    {
+      "frame": 152,
+      "seconds": 12.583,
+      "state": "RECOLHA"
+    },
+    {
+      "frame": 169,
+      "seconds": 14.0,
+      "state": "CEDA LINHA!"
+    },
+    {
+      "frame": 173,
+      "seconds": 14.333,
+      "state": "RECOLHA"
+    },
+    {
+      "frame": 198,
+      "seconds": 16.417,
+      "state": "CAPTURADO"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ namespace CyberExtraction.Combat
         string experienceDeathId;
         bool experienceRewarded;
         void ResetExperienceTracking()
-        { experienceDamage.Clear(); experienceDeathId="death:"+Guid.NewGuid().ToString("N"); experienceRewarded=false; }
+        { experienceDamage.Clear(); profileContributions.Clear(); profileDeathQueued=false; experienceDeathId="death:"+Guid.NewGuid().ToString("N"); experienceRewarded=false; }
         void TrackExperienceDamage(PlayerInventory source,int amount)
         {
             double now=Time.timeAsDouble;

@@ -1,5 +1,7 @@
+param([ValidateSet('Stable', 'Development')][string]$Channel = 'Stable')
 $ErrorActionPreference = 'Stop'
-$serverExecutable = Join-Path $PSScriptRoot 'Builds/Server/CyberExtractionServer.exe'
+. (Join-Path $PSScriptRoot 'Server-Channel.ps1')
+$serverExecutable = (Get-ServerChannel $Channel).Executable
 $serversToStop = @(Get-CimInstance Win32_Process -Filter "Name = 'CyberExtractionServer.exe'" |
     Where-Object { $_.ExecutablePath -eq $serverExecutable -and $_.CommandLine -match '(?i)(^|\s)-server(\s|$)' })
 if ($serversToStop.Count -eq 0) {

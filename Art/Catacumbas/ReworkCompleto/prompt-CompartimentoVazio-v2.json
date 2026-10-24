@@ -1,0 +1,8 @@
+{
+  "name": "CompartimentoVazio-v2",
+  "mode": "built-in imagegen edit",
+  "reference": "Assets/Resources/Environment/Dungeon/ReworkComplete/RitualCompartment.png",
+  "instruction": "Preservar o compartimento de pedra, a porta de madeira aberta à esquerda, perspectiva, paleta, acabamento e transparência. Remover o tecido dobrado e os pequenos fragmentos internos, deixando a cavidade vazia para montagem desmontável da sacristia saqueada.",
+  "source": "C:/Users/Vinni/.codex/generated_images/01a168ff-1df2-7d63-87b4-8254741c3973/exec-ca3c23ea-eea6-4628-810a-a791f301b2c4.png",
+  "note": "Registro da instrução de produção recuperado do contexto; não é transcrição literal do prompt original. Fonte copiada para Fontes/CompartimentoVazio-v2.png."
+}

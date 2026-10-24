@@ -1,0 +1,7 @@
+{
+  "name": "MemorialRitual-v1",
+  "reference": "Art/Catacumbas/ReworkCompleto/Conceito-Capela-v1.png",
+  "prompt": "Use the NORTH WALL of the LEFT chapel in this reference, specifically the carved arched funerary niches, as the art reference. Produce ONE modular overhead 2D game wall bay, not a scene: a horizontal aged limestone architectural bay 3m wide by1.2m deep, with three shallow arched recesses in its dark interior and one central square relief plaque bearing a subtle invented funerary floral sigil, not text. Thick chipped warm grey stone outer cap, darker inner cavity, front lip at bottom of image. Same painted game style, orthographic top-down with only the low front faces visible, muted dusty grey-brown, soft dark outlines. Small broken stone at left foot but NO floor backing or room. Make it visually read as a ritual memorial alcove and keep the top pale wall cap, shadows contained. No candles or urns. Transparent background outside exact object. Isolated reusable sprite, practical game asset.",
+  "mode": "built-in imagegen",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-76e055f7-aac9-436c-8aa0-4504a7942a09.png"
+}

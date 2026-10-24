@@ -3,7 +3,7 @@ using UnityEngine;
 using CyberExtraction.Items;
 namespace CyberExtraction.Camp
 {
-    public enum CampCommandKind : byte { Sync, Action, BeginFishing, Reel, BeginCooking, Flip, FinishCooking, Cancel, TestSupply, TestReset }
+    public enum CampCommandKind : byte { Sync, Action, BeginFishing, Reel, BeginCooking, Flip, FinishCooking, Cancel, TestSupply, TestReset, SelectFishingBait, CastFishing, HookFishing }
     [Serializable] public class CampCommand
     {
         public string Id=Guid.NewGuid().ToString("N");
@@ -11,6 +11,7 @@ namespace CyberExtraction.Camp
         public CampAction Action;
         public int Slot;
         public bool Held;
+        public bool UseBait;
         public double CookingPressedAt;
     }
     [Serializable] public class CampSnapshot
@@ -22,6 +23,12 @@ namespace CyberExtraction.Camp
         public bool Nibble;
         public bool TestMode;
         public double CookStartedAt;
+        public FishingStage FishingStage;
+        public float FishingBar=.5f, FishingAge, FishingDuration;
+        public int FishingVisitor;
+        public ItemId FishingItem;
+        public bool FishingBait, FishingConsumed;
+        public string FishingMessage;
     }
     // Only the server owns this state, random capture and elapsed time.
     public sealed class CampActivity
@@ -31,6 +38,8 @@ namespace CyberExtraction.Camp
         public float Fish=.5f, Zone=.28f, CookMarker;
         public bool Nibble;
         readonly FishingGame fishing=new FishingGame();
+        public FishingGame Fishing=>fishing;
+        bool fishingCompleted;
         public float BarVelocity => fishing.Velocity;
         public double CookStartedAt { get; private set; }
         public int LastCookingQuality { get; private set; }=-1;
@@ -38,18 +47,32 @@ namespace CyberExtraction.Camp
         public string LastCookingStorage { get; private set; }
         public string FishingRejection { get; private set; }
         float started;
-        ItemId catchItem;
         public bool Busy=>Phase!=0;
-        public void Cancel() { Phase=0; Nibble=false; }
+        public void Cancel() { Phase=0; Nibble=false; fishing.Close(); }
         public bool BeginFishing(CampProgress profile,float now)
         {
             FishingRejection=null;
-            if(Busy || !profile.PierRepaired) return false;
-            catchItem=CampProgress.CatchItem(Guid.NewGuid().ToString("N"));
-            if(profile.Pack.FreeFor(new ItemStack(catchItem,1))<1)
-            { FishingRejection="Mochila cheia. Libere espaco para pescar."; return false; }
-            Phase=2; started=now; Progress=0; Tension=.5f; Nibble=false; fishing.Begin(catchItem,now); return true;
+            if(Busy || !profile.PierRepaired || profile.ExpeditionState!=0) return false;
+            fishing.Open(now); Phase=2; started=now; Progress=0; Nibble=false; fishingCompleted=false; return true;
         }
+        public bool SelectFishingBait(CampProgress profile,bool value)
+        {
+            FishingRejection=null;
+            if(Phase<2 || Phase>4 || value && profile.Count(ItemId.Worm)<1) { FishingRejection="Sem minhocas disponíveis na base."; return false; }
+            return fishing.SelectBait(value);
+        }
+        public bool CastFishing(CampProgress profile,float now)
+        {
+            FishingRejection=null;
+            if(Phase<2 || Phase>4 || !profile.PierRepaired || profile.ExpeditionState!=0) return false;
+            if(fishing.Stage!=FishingStage.Ready && !fishing.Done) return false;
+            if(fishing.UseBait && profile.Count(ItemId.Worm)<1) { FishingRejection="Sem minhocas. Selecione Sem isca para continuar."; return false; }
+            foreach(var item in new[] { ItemId.FishCommon,ItemId.FishLarge,ItemId.FishRare })
+                if(profile.Pack.FreeFor(new ItemStack(item,1))<1) { FishingRejection="Libere espaço na mochila para qualquer peixe da captura."; return false; }
+            fishingCompleted=false; started=now;
+            bool success=fishing.Cast(fishing.UseBait,now); if(success) AdvanceFishing(now,0); return success;
+        }
+        public void HookFishing(float now) { if(Phase>=2 && Phase<=4) { fishing.Hook(now); AdvanceFishing(now,0); } }
         public bool BeginCooking(CampProgress profile,int slot,float now,double? synchronizedNow=null)
         {
             if(Busy || slot<0 || slot>=profile.Pack.Slots.Length) return false;
@@ -57,24 +80,32 @@ namespace CyberExtraction.Camp
             var fish=profile.Pack.Slots[slot]; if(fish.Empty || !(ItemCatalog.Fish(fish.Item) || fish.Item==ItemId.RawFish)) return false;
             Phase=6; Slot=slot; Side=0; HeatA=HeatB=CookMarker=0; started=now; CookStartedAt=synchronizedNow ?? now; LastCookingQuality=-1; LastCookingStorage=null; CookingRejection=null; return true;
         }
-        public void Reel(bool value,float now) { fishing.Input(value,now); }
+        public void Reel(bool value,float now) { if(Phase>=2 && Phase<=4) fishing.Input(value,now); }
         public bool Flip() => false;
         public void AdvanceFishing(float now,float dt)
         {
             if(Phase<2 || Phase>4) return;
-            fishing.Tick(now,dt); Tension=fishing.Bar; Fish=fishing.Fish; Zone=fishing.Zone; Progress=fishing.Progress; Nibble=fishing.Nibble;
-            if(fishing.Phase<=3) Phase=fishing.Phase+1;
+            fishing.Tick(now,dt); Fish=fishing.Fish; Zone=fishing.Zone; Progress=fishing.Progress; Nibble=fishing.Nibble;
+            Phase=fishing.Stage==FishingStage.Bite ? 3 : fishing.Stage==FishingStage.Capture ? 4 : 2;
         }
         public string Tick(CampProgress profile,float now,float dt,double? synchronizedNow=null)
         {
             if(!Busy) return null;
-            if(now-started>90) { Cancel(); return "Atividade encerrada por tempo limite."; }
             if(Phase>=2 && Phase<=4)
             {
                 AdvanceFishing(now,dt);
-                if(fishing.Phase==5) { Cancel(); return "O peixe escapou. Espere a boia afundar e mantenha o peixe na faixa."; }
-                if(fishing.Phase==4) { Cancel(); return profile.CompleteFishing(catchItem) ? "Captura guardada: "+ItemCatalog.Name(catchItem) : "Mochila cheia."; }
-                Phase=fishing.Phase+1;
+                if(fishing.Stage==FishingStage.Bite && fishing.UseBait && !fishing.BaitConsumed)
+                {
+                    if(!profile.Take(ItemId.Worm,1)) { fishing.Fail("A minhoca não está mais disponível. Escolha uma isca novamente.",now); Phase=2; return fishing.Notice; }
+                    profile.Revision++; fishing.ConsumeBait();
+                }
+                if(fishing.Stage==FishingStage.Success && !fishingCompleted)
+                {
+                    fishingCompleted=true;
+                    if(!profile.CompleteFishing(fishing.Item)) { fishing.Fail("Não foi possível guardar a captura: mochila cheia.",now); return fishing.Notice; }
+                    return "Captura guardada: "+ItemCatalog.Name(fishing.Item);
+                }
+                return null;
             }
             if(Phase==6)
             {

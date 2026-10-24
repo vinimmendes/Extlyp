@@ -1,0 +1,7 @@
+{
+  "name": "LinhoPendente-v1",
+  "reference": "Assets/Resources/Environment/Dungeon/ReworkComplete/FoldedLinen.png",
+  "prompt": "Edit this exact linen into ONE UNFOLDED DRAPED CEREMONIAL CLOTH for a top-down 2D game. Preserve its woven old cream linen, muted faded burgundy edge stripe, wear, painterly outlines and camera style. Unfold it so a broad upper part lies flat on an invisible 1.5m-wide support and the lower half hangs toward the bottom, with soft clear folds, two unequal torn lower flaps and frayed edges. World dimensions1.5m wide x1.4m projected length. No support or stone is visible, only isolated cloth with genuine alpha. The upper half should form a broad soft rectangular fabric area with worn creases, the lower half visibly falls over an edge. No perfectly ironed folded stack, no rug, no utensils, no extra background. Same practical top-down painted sprite finish as input, all cloth inside canvas.",
+  "mode": "built-in imagegen",
+  "source": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-c208fd2a-f74e-4fe1-afb9-a211e9808324.png"
+}

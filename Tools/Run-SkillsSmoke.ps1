@@ -4,7 +4,7 @@ $smokeRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 if ([string]::IsNullOrEmpty($Project)) { $Project = Join-Path $smokeRoot 'Builds/SkillsValidation' }
 $smokeProject = [IO.Path]::GetFullPath($Project)
 if (-not $smokeProject.StartsWith((Join-Path $smokeRoot 'Builds') + [IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) { throw 'Smoke requires an isolated checkout under Builds.' }
-$smokeServer = Join-Path $smokeProject 'Builds/Server/CyberExtractionServer.exe'
+$smokeServer = Join-Path $smokeProject 'Builds/ServerDevelopment/CyberExtractionServer.exe'
 $smokeClient = Join-Path $smokeProject 'Builds/Client/CyberExtraction.exe'
 $smokeManifestPath = Join-Path (Split-Path -Parent $smokeServer) 'build-manifest.json'
 $smokeProtocol = if (Test-Path -LiteralPath $smokeManifestPath) { (Get-Content -LiteralPath $smokeManifestPath -Raw | ConvertFrom-Json).protocol } else { $null }

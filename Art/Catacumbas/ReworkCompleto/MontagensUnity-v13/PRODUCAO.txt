@@ -1,0 +1,1 @@
+Cena, sprites, tiles, prefabs, migração e imagens de montagem produzidos fora do Play. Publicação permanece bloqueada até a revisão de fidelidade de todas as salas.

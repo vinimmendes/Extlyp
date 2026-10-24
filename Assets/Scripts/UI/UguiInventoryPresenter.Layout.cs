@@ -139,7 +139,9 @@ namespace CyberExtraction.UI
             {
                 float reserved=CampController.Active || showCharacter ? 218 : 0;
                 UguiGeometry.Place(view.Detail.rectTransform,new Rect(24,bounds.height-90,bounds.width-48-reserved,76));
-                view.Detail.text=window.OrganizationPending || CampSession.Pending && CampController.Active ? "Aguardando confirmação do servidor…" : equipmentNotice ?? window.Notice ?? (showCharacter ? "Selecione um item da mochila para comparar e equipar." : "Selecione um item para ver os detalhes.");
+                view.Detail.text=window.OrganizationPending || CampSession.Pending && CampController.Active ? "Aguardando confirmação do servidor…" : equipmentTenths>=0
+                    ? "Equipando… "+(equipmentTenths/10f).ToString("0.0")+" s · Fique parado. Movimento ou dano cancelam a troca."
+                    : equipmentNotice ?? window.Notice ?? (showCharacter ? "Selecione um item da mochila para comparar e equipar." : "Selecione um item para ver os detalhes.");
             }
             bool characterIdle=showCharacter && (selectionSlot<0 || selectionItem.Empty);
             view.RespecButton.gameObject.SetActive(characterIdle && CampController.Active);

@@ -409,7 +409,7 @@ namespace CyberExtraction.UI
             elements[HudControl.Clock].Icon.gameObject.SetActive(true);
             elements[HudControl.Clock].Icon.rectTransform.localEulerAngles=new Vector3(0,0,edit ? -45 : -arrow);
             var move=elements[HudControl.Move]; var tc=TouchControls.Instance; var input=tc!=null && tc.IsTouch ? tc.Move : GameInput.Move;
-            if(!edit && movement!=null && movement.Sprinting.Value)
+            if(!edit && (tc!=null && tc.SprintEnabled || movement!=null && movement.Sprinting.Value))
                 elements[HudControl.Sprint].Icon.color=elements[HudControl.Sprint].Title.color=HudTheme.Accent;
             var size=move.Visual.sizeDelta; var center=size*.5f+new Vector2(input.x,-input.y)*size.x*.29f;
             Place(move.Knob.rectTransform,new Rect(center-Vector2.one*size.x*.14f,Vector2.one*size.x*.28f)); move.Knob.color=Color.white;

@@ -1,0 +1,198 @@
+{
+  "sourceSha256": "c2d86bfbc4f1f399de00b9893a3e94c813f69cbe93de0cd2f866923f2b4d6a53",
+  "kind": "native-art-comparison",
+  "rooms": [
+    {
+      "room": 0,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R00.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Rever reentrância, placa e cera como um conjunto antes de encerrar o vestíbulo."
+    },
+    {
+      "room": 1,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R01.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Manter urnas desmontáveis e o vazio legível; concentrar cinzas e quebra na origem."
+    },
+    {
+      "room": 2,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R02.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Recompor a relação entre placa preservada, placa deslocada e resíduos de raspagem."
+    },
+    {
+      "room": 3,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R03.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Rever desenho, inclinação e fixação; não resolver apenas aumentando a peça atual."
+    },
+    {
+      "room": 4,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R04.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Conferir origem na parede e continuidade até as pontas, mantendo entrada livre."
+    },
+    {
+      "room": 5,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R05.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Variar alturas e disposição das velas sem repetir um arranjo de exposição."
+    },
+    {
+      "room": 6,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R06.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Rever relevo lateral e ligação com a ornamentação de passagem, sem criar cobertura nova."
+    },
+    {
+      "room": 7,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R07.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Recompor madeira, corda e marca de nível ligados à margem real."
+    },
+    {
+      "room": 8,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R08.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "O ritmo dos nichos e as urnas foram ajustados; reabrir densidade e continuidade de cinzas, cacos e circulação desgastada."
+    },
+    {
+      "room": 9,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R09.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Recompor hierarquia de placas e raspagem, lascas diretamente abaixo e ferramenta ligada ao trabalho."
+    },
+    {
+      "room": 10,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Prisao-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R10.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Rever apoios das grades e argolas como cena de permanência; conservar chave e acesso ao pedestal."
+    },
+    {
+      "room": 11,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Prisao-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R11.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Produzir ou recompor fixações, correntes suspensas e corrosão sem repetir argolas embutidas no decal de ferrugem."
+    },
+    {
+      "room": 12,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Cisternas-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R12.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Comparar contraste, espessura e desgaste das linhas de nível, sem criar água física nova. Base vazada já substitui a base lisa."
+    },
+    {
+      "room": 13,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Cisternas-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R13.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Conferir rastro até o embarque, madeira e cordas como operação única; manter percurso real da barca e sua pegada."
+    },
+    {
+      "room": 14,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R14.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Conferir escala e desgaste dos painéis, término junto à extração e bordas transitáveis."
+    },
+    {
+      "room": 15,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R15.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Rever proporção das figuras e encontros dos relevos, preservando a interrupção do vão norte e a fratura sul."
+    },
+    {
+      "room": 16,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Claustro-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R16.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Variar quantidade, alturas e posição de velas, trechos vazios, tecido e cera; preservar o centro silencioso."
+    },
+    {
+      "room": 17,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Ossarios-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R17.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "A relação abrigo/caixão e o leito de 2,0 × 0,8 u estão preservados. Refinar depósitos e encaixes sem ampliar os objetos para copiar proporções incorretas do conceito."
+    },
+    {
+      "room": 18,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Ossarios-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R18.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Replanejar pegada visual, deslocamento e curva das raízes para revelar nichos pressionados e restos associados. Não mudar colisão ou obstruir o poço."
+    },
+    {
+      "room": 19,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Contrapesos-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R19.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Recompor o conjunto norte como mecanismo contínuo e aproximar ferragens, ferramenta e resíduos dos apoios existentes."
+    },
+    {
+      "room": 20,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Claustro-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R20.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Equilibrar desgaste do desenho com circulação e variar apoios/velas/tecidos sem preencher o centro com objetos."
+    },
+    {
+      "room": 21,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Capela-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R21.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Produzir módulos rituais próprios e integrar fragmentos ao altar; preservar dimensão física dos apoios e passagens."
+    },
+    {
+      "room": 22,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Capela-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R22.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Produzir tecido desmontável com queda apropriada e integrar portas, vasos e pano ao armazenamento violado. Não fechar a passagem leste real."
+    },
+    {
+      "room": 23,
+      "concept": "Art/Catacumbas/ReworkCompleto/Conceito-Cisternas-v1.png",
+      "comparison": "Art/Catacumbas/ReworkCompleto/Comparacoes/R23.png",
+      "resolved": false,
+      "pendingDeviations": "Revisar a montagem e registrar eventuais desvios.",
+      "replan": "Rever linha mineral, sedimento e madeira a partir do dreno real, mantendo centro transitável."
+    }
+  ]
+}

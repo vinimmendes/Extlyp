@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba7c7851ce2e4a2980fd355b78851242, type: 3}
+  m_Name: MigratedArt
+  m_EditorClassIdentifier: 
+  ContentHash: dDBjxGF/aRp/agIo+ieBlLH5XNxxD5WS2tTgw2f0As0=
+  Entries:
+  - Id: DockPier
+    DisplayName: DockPier
+    Family: ExtractionStates
+    Sector: "Extra\xE7\xF5es / Componentes"
+    State: 
+    WorldSize: {x: 1, y: 1}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: b4f7147a59bf7074db5dfd1276dd8e38, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -3
+  - Id: DockEdge
+    DisplayName: DockEdge
+    Family: ExtractionStates
+    Sector: "Extra\xE7\xF5es / Componentes"
+    State: 
+    WorldSize: {x: 1, y: 1}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 4c25a1d206a41e94c906cae4415d97d0, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -3
+  - Id: LegacyEdit_00
+    DisplayName: "Refer\xEAncia anterior 0"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.06, y: 1.06}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 4a75e91af82597943afc59b7fabf157b, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_01
+    DisplayName: "Refer\xEAncia anterior 1"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.0600001, y: 1.0600001}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: d6f5baf3eb387d24590d4be44581c568, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_02
+    DisplayName: "Refer\xEAncia anterior 2"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 0.93605345, y: 1.2003587}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 2e6aeacec9d08e24f96922cff250cdb6, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -4
+  - Id: LegacyEdit_03
+    DisplayName: "Refer\xEAncia anterior 3"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 4.2400002, y: 1.0600001}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 1eeac5ee5daac364cb62105b46d4cff4, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -6
+  - Id: LegacyEdit_04
+    DisplayName: "Refer\xEAncia anterior 4"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.06, y: 1.0599998}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 94a962060ecc4c541b05faded5541986, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_05
+    DisplayName: "Refer\xEAncia anterior 5"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 0.93605363, y: 1.2003591}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: dd6ea44b884e853409b3c249d90e0590, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -4
+  - Id: LegacyEdit_06
+    DisplayName: "Refer\xEAncia anterior 6"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.06, y: 1.06}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 1424e681b8995644998234dc69a825ad, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_07
+    DisplayName: "Refer\xEAncia anterior 7"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.0600001, y: 1.0600001}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: f94b62c200a7ab84ea57960943827298, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -4
+  - Id: LegacyEdit_08
+    DisplayName: "Refer\xEAncia anterior 8"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.0599998, y: 1.06}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 9ee153d994a112b4b82ebe0c3bd745de, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_09
+    DisplayName: "Refer\xEAncia anterior 9"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.0600001, y: 1.0600001}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: aba04933a3b20fd4497231d5aba94dae, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -4
+  - Id: LegacyEdit_10
+    DisplayName: "Refer\xEAncia anterior 10"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.06, y: 1.0599998}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: a7b4d4c4a6360c44a92fa91b42435d4a, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_11
+    DisplayName: "Refer\xEAncia anterior 11"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.06, y: 1.06}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 5ab51c7bb3c43524195ea8fd5ce8d156, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_12
+    DisplayName: "Refer\xEAncia anterior 12"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 2.12, y: 1.06}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 2de8968fa1a98e34a88059df49a354f6, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -4
+  - Id: LegacyEdit_13
+    DisplayName: "Refer\xEAncia anterior 13"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 2.12, y: 1.06}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 09ff2460f40adc945bfecaa0570d0a6d, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -3
+  - Id: LegacyEdit_14
+    DisplayName: "Refer\xEAncia anterior 14"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.06, y: 1.0599998}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 0a79f82947b19984e858184792a90e8e, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_15
+    DisplayName: "Refer\xEAncia anterior 15"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.0599997, y: 1.0599997}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: e1e9a565bfacec4419f4d17307c75980, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  - Id: LegacyEdit_16
+    DisplayName: "Refer\xEAncia anterior 16"
+    Family: Migrated
+    Sector: "Migra\xE7\xE3o / Refer\xEAncia anterior"
+    State: 
+    WorldSize: {x: 1.0599998, y: 1.0599998}
+    Pivot: {x: 0.5, y: 0.5}
+    Sprite: {fileID: 21300000, guid: 69dea5358eaf39f43b6aa491c13418d7, type: 3}
+    Tile: {fileID: 0}
+    PhysicalKind: 1
+    Structural: 0
+    Order: -5
+  SpriteMaterial: {fileID: 0}
+  WaterMaterial: {fileID: 0}
+  WaterFlowTexture: {fileID: 0}
+  SurfaceMaterials: []

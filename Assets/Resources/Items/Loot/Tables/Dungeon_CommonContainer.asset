@@ -30,6 +30,12 @@ MonoBehaviour:
   - Category: 4
     Weight: 15
   Entries:
+  - Item: 62
+    Category: 1
+    Weight: 10
+    Minimum: 1
+    Maximum: 3
+    Themes: 15
   - Item: 0
     Category: 0
     Weight: 20

@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using CyberExtraction.Items;
 namespace CyberExtraction.Camp
 {
-    public enum CampActionKind : byte { Repair, CraftAmmo, UpgradeRecycler, Transfer, Discard, CatchFish, CookFish, Eat, RecoverDrop, BuyComponent, ExchangeEquipment, InvestAttribute, Sell, Buy, Unload, Respec, Organize }
+    public enum CampActionKind : byte { Repair, CraftAmmo, UpgradeRecycler, Transfer, Discard, CatchFish, CookFish, Eat, RecoverDrop, BuyComponent, ExchangeEquipment, InvestAttribute, Sell, Buy, Unload, Respec, Organize, SetName }
     [Serializable] public class CampGroundItem { public string Id; public ItemStack Stack; }
     [Serializable] public class CampAction
     {
         public string Id = Guid.NewGuid().ToString("N");
         public long Sequence;
         public string Reference;
+        public string Name;
         public CampActionKind Kind;
         public int Source, Target, SourceGrid, TargetGrid, Result;
         public int Quantity;
@@ -124,7 +125,7 @@ namespace CyberExtraction.Camp
         internal bool CompleteCooking(CampAction action) => ApplyCommand(action, true);
         public bool CompleteFishing(ItemId item)
         {
-            if (!PierRepaired || !(ItemCatalog.Fish(item) || item == ItemId.Metal || item == ItemId.AmmoComponent) || !Pack.Add(new ItemStack(item, 1))) return false;
+            if (!PierRepaired || !ItemCatalog.Fish(item) || !Pack.Add(new ItemStack(item, 1))) return false;
             Revision++; Sync(); return true;
         }
         bool ApplyCommand(CampAction action, bool serverActivity)
@@ -138,7 +139,8 @@ namespace CyberExtraction.Camp
             bool success = false;
             InventoryGrid source = action.SourceGrid == 0 ? Pack : Chest;
             InventoryGrid target = action.TargetGrid == 0 ? Pack : Chest;
-            if (action.Kind == CampActionKind.Repair) success = RepairPier();
+            if(action.Kind==CampActionKind.SetName) { success=SetPlayerName(action.Name,out var feedback); action.TradeFeedback=feedback; }
+            else if (action.Kind == CampActionKind.Repair) success = RepairPier();
             else if (action.Kind == CampActionKind.CraftAmmo) success = CraftAmmo((ItemId)action.Result);
             else if (action.Kind == CampActionKind.UpgradeRecycler) success = UpgradeRecycler();
             else if (action.Kind == CampActionKind.BuyComponent) success = BuyComponent();
@@ -190,7 +192,7 @@ namespace CyberExtraction.Camp
         public static ItemId CatchItem(string id)
         {
             int roll=new Random(StableSeed(id)).Next(100);
-            return roll<8 ? ItemId.AmmoComponent : roll<15 ? ItemId.Metal : roll<25 ? ItemId.FishRare : roll<40 ? ItemId.FishLarge : ItemId.FishCommon;
+            return roll<10 ? ItemId.FishRare : roll<25 ? ItemId.FishLarge : ItemId.FishCommon;
         }
     }
 }

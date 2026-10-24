@@ -7,10 +7,10 @@ namespace CyberExtraction.Camp
 {
     public static class CampProfileMigration
     {
-        public const int CurrentVersion=6;
+        public const int CurrentVersion=7;
         public static CampProgress Create()
         {
-            var profile=new CampProgress {SchemaVersion=CurrentVersion,Merchant=MerchantCatalog.Current.CreateStock()};
+            var profile=new CampProgress {SchemaVersion=CurrentVersion,Merchant=MerchantCatalog.Current.CreateStock(),Statistics=new PlayerStatistics {SinceTicks=DateTime.UtcNow.Ticks}};
             profile.Ensure();
             return profile;
         }
@@ -61,6 +61,8 @@ namespace CyberExtraction.Camp
                 if(!MerchantState.IsAbsent(profile.TestMerchant)) profile.TestMerchant=MerchantCatalog.Current.RemoveRetiredOffers(profile.TestMerchant);
                 profile.DeliverLegacyItems();
             }
+            if(profile.SchemaVersion<7)
+            { profile.PlayerName=""; profile.NameChangedTicks=0; profile.Statistics=new PlayerStatistics {SinceTicks=DateTime.UtcNow.Ticks}; }
             profile.Sync();
             profile.SchemaVersion=CurrentVersion;
             return true;
@@ -130,6 +132,7 @@ namespace CyberExtraction.Camp
         public static void ValidateStructure(CampProgress profile)
         {
             NeedsUpgrade(profile);
+            if(profile.SchemaVersion>=7) profile.ValidateProfile();
             ValidateGridShape(profile.Chest,profile.SchemaVersion<5 ? ItemCatalog.InventorySlots : ItemCatalog.SafeChestSlots); ValidateGridShape(profile.Pack,profile.SchemaVersion<5 ? ItemCatalog.InventorySlots : ItemCatalog.BackpackSlots);
             if(profile.SchemaVersion>=5) ValidateMerchant(profile.Merchant,profile.SchemaVersion<6);
             if(!MerchantState.IsAbsent(profile.TestMerchant)) ValidateMerchant(profile.TestMerchant,profile.SchemaVersion<6);

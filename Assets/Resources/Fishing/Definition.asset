@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba31a599cf68450fa82afaf604a4a0e3, type: 3}
+  m_Name: Definition
+  m_EditorClassIdentifier:
+  CastSeconds: 0.6
+  WaitMin: 1
+  WaitMax: 2
+  ApproachSeconds: 1
+  InvestigateMin: 0.35
+  InvestigateMax: 0.75
+  LeaveSeconds: 0.65
+  HookSeconds: 1.6
+  CaptureSeconds: 20
+  AttemptSeconds: 90
+  Loss: 0.12
+  BitePercent: 70
+  RarePercent: 10
+  BaitRarePercent: 25
+  LargePercent: 15
+  Common:
+    Zone: 0.28
+    Frequency: 1.25
+    Speed: 0.45
+    Gain: 0.19
+  Large:
+    Zone: 0.23
+    Frequency: 1.4
+    Speed: 0.62
+    Gain: 0.11
+  Rare:
+    Zone: 0.20
+    Frequency: 2.2
+    Speed: 0.60
+    Gain: 0.105

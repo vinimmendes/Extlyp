@@ -1,0 +1,6 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Edit this exact transparent game sprite: preserve its outer stone masonry frame, dimensions, silhouette, top-down camera-facing shallow relief projection, warm gray limestone palette and painterly game finish. On the central recessed plaque only, replace the nearly invisible pitted marks with four clearly readable rows of dark recessed engraved fictional funerary glyphs, simple tiny angular ancient marks, no real language and no modern readable text. The engraving must remain visibly darker than stone at a small game scale, with subtle chipped lighter edge. Retain aged cracks but this is the preserved inscription variant, not scraped blank. No other objects, no ground, no glow. Output one sprite with genuine transparent background, same horizontal proportions.",
+  "source": "Fontes/PlacaGravada-v2.png",
+  "transparent_background": true
+}

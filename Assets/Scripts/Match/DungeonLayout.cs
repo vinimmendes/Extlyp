@@ -17,6 +17,8 @@ namespace CyberExtraction.Match
             public readonly RectInt Cells;
             public Room(string name,int sector,int x,int y,int w,int h)
             { Name=name; Sector=sector; Cells=new RectInt(x-w/2+64,y-h/2+64,w,h); }
+            public Room(string name,int sector,RectInt cells)
+            { Name=name; Sector=sector; Cells=cells; }
             public Vector2 Center => ToWorld(Cells.center);
         }
         public static readonly string[] SectorNames={"Vestíbulos dos Enlutados","Galeria dos Nomes Raspados","Ossário das Raízes",
@@ -34,6 +36,7 @@ namespace CyberExtraction.Match
             new Room("Ossário das raízes",2,-44,4,18,20),new Room("Câmara dos contrapesos",7,-28,24,20,16),
             new Room("Pátio das vigílias",3,-10,0,18,20),new Room("Capela invertida",6,12,0,20,20),
             new Room("Sacristia partida",6,12,24,18,16),new Room("Cisterna dos lamentos",4,8,-24,16,16)};
+        static readonly Room[] originalRooms=(Room[])Rooms.Clone();
         // Each edge is an orthogonal corridor, with an authored bend rather than a diagonal shortcut.
         public static readonly int[,] Links={
             {0,18},{1,8},{2,10},{3,11},{4,17},{5,16},{6,14},{7,12},
@@ -45,15 +48,17 @@ namespace CyberExtraction.Match
         public static readonly int[] SectorLabelRooms={0,9,18,16,12,10,21,19};
         public static readonly string[] ExitNames={"Escadaria do Cortejo","Poço dos Coveiros","Canal dos Defuntos"};
         public static readonly Vector2[] ExitPositions={Rooms[14].Center+new Vector2(0,4),Rooms[18].Center+new Vector2(0,4),CanalPoint(56,-50)};
+        static readonly Vector2[] originalExits=(Vector2[])ExitPositions.Clone();
         // Stone rim of the 3 x 3 stair sprite, centred one unit above the exit.
         // The northern edge stays open; physics and navigation share these bounds.
         public static Rect StairBorder(int side)
         {
             var centre=ExitPositions[0]+Vector2.up;
             const float half=1.5f, thickness=.36f;
-            return side==2
+            var original=side==2
                 ? new Rect(centre.x-half,centre.y-half,half*2,thickness)
                 : new Rect(centre.x+(side==0 ? -half : half-thickness),centre.y-half,thickness,half*2);
+            return DungeonMapPublication.Region("StairBorder/"+side,original);
         }
         static readonly bool[] floor=new bool[GridWidth*GridHeight];
         static readonly int[] sectors=new int[GridWidth*GridHeight];
@@ -64,13 +69,24 @@ namespace CyberExtraction.Match
         static readonly Dictionary<long,int[]> routes=new Dictionary<long,int[]>();
         static readonly Dictionary<int,bool[]> navigationMasks=new Dictionary<int,bool[]>();
         static bool shortcutOpen;
+        static string appliedContent;
         public static int GeometryVersion { get; private set; }
         public static void SetShortcutOpen(bool open)
         { if(shortcutOpen==open) return; shortcutOpen=open; GeometryVersion++; routes.Clear(); navigationMasks.Clear(); }
         static readonly int[] dx={1,0,-1,0},dy={0,1,0,-1};
 
         static DungeonLayout()
+        { RebuildPublishedContent(); }
+        public static void EnsurePublishedContent()
+        { if(appliedContent!=DungeonMapPublication.ContentHash) RebuildPublishedContent(); }
+        static void RebuildPublishedContent()
         {
+            System.Array.Copy(originalRooms,Rooms,Rooms.Length);
+            System.Array.Copy(originalExits,ExitPositions,ExitPositions.Length);
+            var starts=MakeSpawns(); System.Array.Copy(starts,Spawns,starts.Length);
+            var exploration=MakeExplorationPoints(); System.Array.Copy(exploration,ExplorationPoints,exploration.Length);
+            System.Array.Clear(floor,0,floor.Length); System.Array.Clear(lowCover,0,lowCover.Length); System.Array.Clear(waterCells,0,waterCells.Length);
+            Covers.Clear(); Pillars.Clear(); routes.Clear(); navigationMasks.Clear(); shortcutOpen=false;
             for(int i=0;i<sectors.Length;i++) sectors[i]=-1;
             for(int i=0;i<Rooms.Length;i++) Paint(Rooms[i].Cells,Rooms[i].Sector);
             for(int i=0;i<Links.GetLength(0);i++)
@@ -96,6 +112,30 @@ namespace CyberExtraction.Match
                 AddObstacle(new RectInt((int)c.x+4,(int)c.y+2,2,2),false);
             }
             BuildCanalGeometry();
+            ApplyPublication();
+            appliedContent=DungeonMapPublication.ContentHash;
+            GeometryVersion++;
+        }
+        static void ApplyPublication()
+        {
+            var data=DungeonMapPublication.Current;
+            if(data==null) return;
+            foreach(var r in data.rooms) Rooms[r.id]=new Room(r.name,r.sector,new RectInt(r.x,r.y,r.width,r.height));
+            Covers.Clear(); Pillars.Clear();
+            for(int i=0;i<floor.Length;i++)
+            {
+                floor[i]=data.cells[i]==(int)DungeonCellKind.Floor;
+                waterCells[i]=data.cells[i]==(int)DungeonCellKind.Water;
+                lowCover[i]=data.cells[i]==(int)DungeonCellKind.LowCover;
+                sectors[i]=data.sectors[i];
+            }
+            Covers.AddRange(DungeonMapArt.CoverRectangles(data.cells));
+            foreach(var r in data.regions)
+                if(r.id.StartsWith("Pillar/")) Pillars.Add(new RectInt(Mathf.RoundToInt(r.x),Mathf.RoundToInt(r.y),Mathf.RoundToInt(r.width),Mathf.RoundToInt(r.height)));
+            for(int i=0;i<Spawns.Length;i++) Spawns[i]=DungeonMapPublication.Point("Spawn/"+i,Rooms[i].Center);
+            for(int i=0;i<ExplorationPoints.Length;i++) ExplorationPoints[i]=DungeonMapPublication.Point("Exploration/"+i,Rooms[i].Center);
+            for(int i=0;i<ExitPositions.Length;i++) ExitPositions[i]=DungeonMapPublication.Point("Exit/"+i,ExitPositions[i]);
+            GeometryVersion++; routes.Clear(); navigationMasks.Clear();
         }
         static Vector2[] MakeSpawns()
         { var result=new Vector2[8]; for(int i=0;i<8;i++) result[i]=Rooms[i].Center; return result; }

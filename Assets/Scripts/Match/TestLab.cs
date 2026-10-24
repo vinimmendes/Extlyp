@@ -48,7 +48,7 @@ namespace CyberExtraction.Match
             var bootstrap=CyberExtraction.UI.NetworkBootstrap.Instance;
             var player=NetworkManager.ConnectedClients.TryGetValue(sender,out var client) ? client.PlayerObject : null;
             bool participant=player!=null && bootstrap!=null && bootstrap.ClientReady(sender) && !bootstrap.IsCampClient(sender);
-            if(!TestAccess(GameConfig.AllowQuickTest,Sandbox,CurrentState,participant) || action>(byte)TestAction.Equipment) return false;
+            if(!TestAccess(bootstrap!=null && bootstrap.ServerAllowsTests(sender),Sandbox,CurrentState,participant) || action>(byte)TestAction.Equipment) return false;
             var inv=player.GetComponent<PlayerInventory>(); var hp=player.GetComponent<Health>();
             Debug.Log("TEST LAB COMMAND: "+(TestAction)action+" "+value+" at "+player.transform.position);
             switch((TestAction)action)

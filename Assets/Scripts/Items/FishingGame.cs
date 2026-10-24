@@ -2,55 +2,90 @@ using UnityEngine;
 
 namespace CyberExtraction.Items
 {
-    // One authoritative simulation is shared by camp and expedition fishing.
+    // Server-owned simulation. Presentation only predicts the movement of the control window.
     public sealed class FishingGame
     {
-        public byte Phase { get; private set; } // waiting, bite, capture, success, escaped
+        public FishingStage Stage { get; private set; }
+        public byte Phase => Stage==FishingStage.None ? (byte)0 : Stage==FishingStage.Bite ? (byte)2 : Stage==FishingStage.Capture ? (byte)3 : Stage==FishingStage.Success ? (byte)4 : Stage==FishingStage.Failed ? (byte)5 : (byte)1;
         public float Bar=.5f, Fish=.5f, Progress, Zone=.28f;
-        public bool Nibble { get; private set; }
-        float biteAt, nextNibble, nibbleUntil, captureAt, inputAt, pressedAt=-1, velocity, seed;
-        bool held;
+        public bool Nibble => Stage==FishingStage.Investigating;
+        public bool UseBait { get; private set; }
+        public bool BaitConsumed { get; private set; }
+        public bool Done => Stage==FishingStage.Success || Stage==FishingStage.Failed;
+        public int Visitor { get; private set; }
+        public ItemId Item { get; private set; }
+        public string Notice { get; private set; }
+        public float StageStarted { get; private set; }
+        public float Duration { get; private set; }
+        float attemptAt, captureAt, inputAt, velocity, seed;
+        bool held, willBite;
+        FishingDefinition Definition=>FishingDefinition.Current;
         public float Velocity => velocity;
-        ItemId item;
-        public void Begin(ItemId caught,float now)
+        public void Open(float now)
         {
-            item=caught; Phase=1; Bar=Fish=.5f; Progress=.35f; velocity=0; held=false; pressedAt=-1; inputAt=now;
-            Zone=item==ItemId.FishLarge ? .20f : item==ItemId.FishRare ? .23f : .28f;
-            biteAt=now+Random.Range(2.5f,5f); nextNibble=now+.7f; nibbleUntil=0; seed=Random.Range(0f,6f); Nibble=false;
+            UseBait=BaitConsumed=held=false; Visitor=0; Notice=null; Progress=0; Bar=Fish=.5f; velocity=0;
+            Set(FishingStage.Ready,now,0);
+        }
+        public void Close() { Stage=FishingStage.None; held=false; }
+        public bool SelectBait(bool value)
+        { if(Stage!=FishingStage.Ready && !Done) return false; UseBait=value; return true; }
+        public bool Cast(bool bait,float now)
+        {
+            if(Stage!=FishingStage.Ready && !Done) return false;
+            UseBait=bait; BaitConsumed=held=false; Visitor=0; Notice=null; Progress=0; Bar=Fish=.5f; velocity=0;
+            attemptAt=inputAt=now; Set(FishingStage.Cast,now,Mathf.Max(.1f,Definition.CastSeconds)); return true;
+        }
+        public void ConsumeBait()=>BaitConsumed=true;
+        public void Fail(string message,float now) { Notice=message; Set(FishingStage.Failed,now,0); held=false; }
+        void Set(FishingStage stage,float now,float duration) { Stage=stage; StageStarted=now; Duration=duration; }
+        void Wait(float now)=>Set(FishingStage.Waiting,now,Random.Range(Definition.WaitMin,Definition.WaitMax));
+        public void Hook(float now)
+        {
+            if(Stage==FishingStage.Bite)
+            {
+                if(now>StageStarted+Duration) { Fail("O peixe escapou. A fisgada chegou tarde.",now); return; }
+                if(UseBait && !BaitConsumed) return;
+                Bar=Fish=.5f; Progress=.20f; velocity=0; held=false; captureAt=inputAt=now;
+                Set(FishingStage.Capture,now,Definition.CaptureSeconds);
+            }
+            else if(Stage==FishingStage.Approaching || Stage==FishingStage.Investigating)
+                Set(FishingStage.Leaving,now,Definition.LeaveSeconds);
         }
         public void Input(bool value,float now)
         {
-            if(value && !held) pressedAt=now;
             held=value; inputAt=now;
         }
         public void Tick(float now,float dt)
         {
-            if(Phase==0 || Phase>=4) return;
-            bool press=held && now-inputAt<.7f;
-            if(Phase==1)
+            if(Stage==FishingStage.None || Stage==FishingStage.Ready || Done) return;
+            if(now-attemptAt>=Definition.AttemptSeconds) { Fail("Pesca encerrada pelo limite de tempo.",now); return; }
+            float age=now-StageStarted;
+            if(Stage!=FishingStage.Capture)
             {
-                if(pressedAt>=0 && pressedAt<biteAt) { Phase=5; return; }
-                if(now>=nextNibble && now<biteAt) { nibbleUntil=now+.18f; nextNibble=now+Random.Range(.45f,.8f); }
-                Nibble=now<nibbleUntil;
-                if(now<biteAt) return;
-                Phase=2; Nibble=false;
-            }
-            if(Phase==2)
-            {
-                // Holding before the bite cannot automatically hook a fish.
-                if(pressedAt>=biteAt && pressedAt<=biteAt+1.6f) { Phase=3; captureAt=now; }
-                else if(now>biteAt+1.6f) Phase=5;
+                if(age<Duration) return;
+                switch(Stage)
+                {
+                    case FishingStage.Cast: case FishingStage.Leaving: Wait(now); break;
+                    case FishingStage.Waiting:
+                        Item=Definition.Roll(UseBait); Visitor++; Zone=Definition.For(Item).Zone;
+                        seed=Random.Range(0f,6f); willBite=Random.Range(0,100)<Definition.BitePercent;
+                        Set(FishingStage.Approaching,now,Definition.ApproachSeconds); break;
+                    case FishingStage.Approaching: Set(FishingStage.Investigating,now,Random.Range(Definition.InvestigateMin,Definition.InvestigateMax)); break;
+                    case FishingStage.Investigating: Set(willBite ? FishingStage.Bite : FishingStage.Leaving,now,willBite ? Definition.HookSeconds : Definition.LeaveSeconds); break;
+                    case FishingStage.Bite: Fail("O peixe escapou. Espere a mordida e pressione para fisgar.",now); break;
+                }
                 return;
             }
-            float t=now-captureAt, difficulty=item==ItemId.FishLarge ? 1.5f : item==ItemId.FishRare ? 1.3f : 1;
-            float target=.5f+Mathf.Sin(t*(item==ItemId.FishRare ? 2.2f : 1.25f)+seed)*.26f;
-            if(item==ItemId.FishLarge) target=Mathf.Clamp01(target+(Mathf.Sin(t*2.8f)>0 ? .18f : -.18f));
-            Fish=Mathf.MoveTowards(Fish,target,dt*(item==ItemId.FishLarge ? .7f : .45f));
+            var profile=Definition.For(Item);
+            float t=now-captureAt, target=.5f+Mathf.Sin(t*profile.Frequency+seed)*.26f;
+            if(Item==ItemId.FishLarge) target=Mathf.Clamp01(target+Mathf.Sin(t*2.8f)*.12f);
+            Fish=Mathf.MoveTowards(Fish,target,Mathf.Max(0,dt)*profile.Speed);
+            bool press=held && now-inputAt<.7f;
             MoveBar(ref Bar,ref velocity,Zone,press,dt);
             bool caught=Mathf.Abs(Fish-Bar)<=Zone*.5f;
-            Progress=Mathf.Clamp01(Progress+dt*(caught ? .18f/difficulty : -.12f));
-            if(Progress>=1) Phase=4;
-            else if(Progress<=0 || t>45) Phase=5;
+            Progress=Mathf.Clamp01(Progress+dt*(caught ? profile.Gain : -Definition.Loss));
+            if(Progress>=1) { Set(FishingStage.Success,now,0); held=false; }
+            else if(Progress<=0 || t>=Definition.CaptureSeconds) Fail(Progress<=0 ? "O peixe escapou da faixa." : "O peixe escapou pelo limite da disputa.",now);
         }
         // Shared motion only. Presentation never awards progress or a catch.
         public static void MoveBar(ref float bar,ref float speed,float zone,bool press,float dt)

@@ -1,10 +1,13 @@
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'Server-SourceFingerprint.ps1')
 $updateProjectRoot = [IO.Path]::GetFullPath($PSScriptRoot).TrimEnd('\')
-$updateOutputDirectory = Join-Path $updateProjectRoot 'Builds/Server'
+$updateOutputDirectory = Join-Path $updateProjectRoot 'Builds/ServerDevelopment'
 $updateExecutable = Join-Path $updateOutputDirectory 'CyberExtractionServer.exe'
 $updateStampPath = Join-Path $updateOutputDirectory 'source.sha256'
+$updateClock = [Diagnostics.Stopwatch]::StartNew()
+Write-Output 'Conferindo os arquivos do servidor de desenvolvimento...'
 $updateExpectedFingerprint = Get-ServerSourceFingerprint -ProjectDirectory $updateProjectRoot
+Write-Output ("Conferencia dos fontes: {0:N1}s." -f $updateClock.Elapsed.TotalSeconds)
 if ((Test-Path -LiteralPath $updateExecutable) -and (Test-Path -LiteralPath $updateStampPath) -and
     (Get-Content -LiteralPath $updateStampPath -Raw).Trim() -eq $updateExpectedFingerprint) {
     Write-Output 'O executavel do servidor esta atualizado.'
@@ -26,6 +29,7 @@ if (-not $updateWorkspace.StartsWith($updateBuildsRoot, [StringComparison]::Ordi
     throw 'Pasta de compilacao fora do projeto.'
 }
 New-Item -ItemType Directory -Force -Path $updateWorkspace | Out-Null
+Write-Output 'Sincronizando a copia de compilacao...'
 foreach ($updateSourceDirectory in @('Assets', 'Packages', 'ProjectSettings')) {
     $updateSource = [IO.Path]::GetFullPath((Join-Path $updateProjectRoot $updateSourceDirectory)).TrimEnd('\')
     $updateDestination = [IO.Path]::GetFullPath((Join-Path $updateWorkspace $updateSourceDirectory)).TrimEnd('\')
@@ -62,22 +66,26 @@ foreach ($updateSourceDirectory in @('Assets', 'Packages', 'ProjectSettings')) {
 
 $updateLogsDirectory = Join-Path $updateProjectRoot 'Logs'
 New-Item -ItemType Directory -Force -Path $updateLogsDirectory | Out-Null
-$updateLogPath = Join-Path $updateLogsDirectory 'server-update.log'
-Write-Output 'Atualizando o servidor com o codigo do projeto. Aguarde a Unity compilar...'
+$updateLogPath = Join-Path $updateLogsDirectory 'server-development-update.log'
+Write-Output 'Compilando o servidor de desenvolvimento. A versao estavel continua rodando...'
 $updateArguments = '-batchmode -nographics -quit -projectPath "' + $updateWorkspace +
     '" -buildTarget Win64 -executeMethod ServerBuild.BuildServer -logFile "' + $updateLogPath + '"'
-$updateUnityProcess = Start-Process -FilePath $updateUnityExecutable -ArgumentList $updateArguments -WindowStyle Hidden -PassThru
-$updateUnityProcess.WaitForExit()
-$updateUnityProcess.Refresh()
-if ($updateUnityProcess.ExitCode -ne 0) {
-    throw "A compilacao falhou. O servidor anterior foi preservado. Consulte $updateLogPath"
+if ($env:CE_BUILD_VERSION) {
+    if ($env:CE_BUILD_VERSION -notmatch '^[0-9A-Za-z.+-]+$') { throw 'Versao de build invalida.' }
+    $updateArguments += ' -ce-build-version ' + $env:CE_BUILD_VERSION
 }
-$updateBuiltDirectory = Join-Path $updateWorkspace 'Builds/Server'
+$updateUnityProcess = Start-Process -FilePath $updateUnityExecutable -ArgumentList $updateArguments -WorkingDirectory ([IO.Path]::GetDirectoryName($updateUnityExecutable)) -WindowStyle Hidden -PassThru
+$null = $updateUnityProcess.Handle
+$updateUnityProcess.WaitForExit()
+if ($updateUnityProcess.ExitCode -ne 0) {
+    throw "A compilacao retornou codigo $($updateUnityProcess.ExitCode). O servidor anterior foi preservado. Consulte $updateLogPath"
+}
+$updateBuiltDirectory = Join-Path $updateWorkspace 'Builds/ServerDevelopment'
 if (-not (Test-Path -LiteralPath (Join-Path $updateBuiltDirectory 'CyberExtractionServer.exe'))) {
     throw 'A Unity nao gerou o executavel esperado.'
 }
 if ((Get-ServerSourceFingerprint -ProjectDirectory $updateProjectRoot) -ne $updateExpectedFingerprint) {
-    throw 'O projeto mudou durante a compilacao. Execute Iniciar-Servidor.bat novamente para compilar o codigo mais recente.'
+    throw 'O projeto mudou durante a compilacao. Execute Update-Server.ps1 novamente para compilar o codigo mais recente.'
 }
 
 # So interrompe a versao anterior depois que a nova compilacao terminou com sucesso.
@@ -96,4 +104,5 @@ Get-ChildItem -LiteralPath $updateBuiltDirectory | ForEach-Object {
     Copy-Item -LiteralPath $_.FullName -Destination $updateOutputDirectory -Recurse -Force
 }
 Set-Content -LiteralPath $updateStampPath -Value $updateExpectedFingerprint -Encoding ASCII
-Write-Output 'Servidor atualizado. Nenhum APK foi gerado.'
+Write-Output 'Servidor de desenvolvimento atualizado. Versao estavel e APK preservados.'
+Write-Output ("Atualizacao concluida em {0:N1}s." -f $updateClock.Elapsed.TotalSeconds)

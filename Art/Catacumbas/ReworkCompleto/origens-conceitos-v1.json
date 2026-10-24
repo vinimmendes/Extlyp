@@ -1,0 +1,106 @@
+[
+  {
+    "sector": "Vestibulos",
+    "rooms": [
+      "R00",
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07"
+    ],
+    "original": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-94516ea9-959b-4b68-8786-ef1b2796ea4b.png",
+    "selected": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-8b47969c-45b4-43ca-99e5-fe00ac2fe6cf.png",
+    "workspace": "Art/Catacumbas/ReworkCompleto/Conceito-Vestibulos-v1.png",
+    "kind": "painted concept, not Unity execution",
+    "revised": true
+  },
+  {
+    "sector": "Galerias",
+    "rooms": [
+      "R08",
+      "R09",
+      "R14",
+      "R15"
+    ],
+    "original": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-ad0753bd-7b61-4225-9fb8-4ed35595da02.png",
+    "selected": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-7246c754-cef1-4d38-88f1-023bec0db0cc.png",
+    "workspace": "Art/Catacumbas/ReworkCompleto/Conceito-Galerias-v1.png",
+    "kind": "painted concept, not Unity execution",
+    "revised": true
+  },
+  {
+    "sector": "Ossarios",
+    "rooms": [
+      "R17",
+      "R18"
+    ],
+    "original": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-e959b98b-b4d8-43ae-869c-baf695405411.png",
+    "selected": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-e2c65225-47fe-4d44-a861-aa14d736bd29.png",
+    "workspace": "Art/Catacumbas/ReworkCompleto/Conceito-Ossarios-v1.png",
+    "kind": "painted concept, not Unity execution",
+    "revised": true
+  },
+  {
+    "sector": "Claustro",
+    "rooms": [
+      "R16",
+      "R20"
+    ],
+    "original": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-7e342d79-60f5-41fb-bc88-e3d56d1d8851.png",
+    "selected": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-91d5b885-d9b1-4e0f-b151-1084c33f5ce0.png",
+    "workspace": "Art/Catacumbas/ReworkCompleto/Conceito-Claustro-v1.png",
+    "kind": "painted concept, not Unity execution",
+    "revised": true
+  },
+  {
+    "sector": "Cisternas",
+    "rooms": [
+      "R12",
+      "R13",
+      "R23"
+    ],
+    "original": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-bd5968ce-e0ba-42b4-877c-11549d42b133.png",
+    "selected": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-0a4e1704-4956-450f-b756-03a53f5c769c.png",
+    "workspace": "Art/Catacumbas/ReworkCompleto/Conceito-Cisternas-v1.png",
+    "kind": "painted concept, not Unity execution",
+    "revised": true
+  },
+  {
+    "sector": "Prisao",
+    "rooms": [
+      "R10",
+      "R11"
+    ],
+    "original": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-3bb6b061-adc7-44ab-ae1f-e7293ec12e5d.png",
+    "selected": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-3bb6b061-adc7-44ab-ae1f-e7293ec12e5d.png",
+    "workspace": "Art/Catacumbas/ReworkCompleto/Conceito-Prisao-v1.png",
+    "kind": "painted concept, not Unity execution",
+    "revised": false
+  },
+  {
+    "sector": "Capela",
+    "rooms": [
+      "R21",
+      "R22"
+    ],
+    "original": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-0ec07caa-4dfa-4267-b739-9e0316649099.png",
+    "selected": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-1b8ebb1a-ad30-4cf4-a34a-f953f1539e8a.png",
+    "workspace": "Art/Catacumbas/ReworkCompleto/Conceito-Capela-v1.png",
+    "kind": "painted concept, not Unity execution",
+    "revised": true
+  },
+  {
+    "sector": "Contrapesos",
+    "rooms": [
+      "R19"
+    ],
+    "original": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-aef8579a-8ba5-4fb7-820d-5eca1ba0ad2c.png",
+    "selected": "C:\\Users\\Vinni\\.codex\\generated_images\\01a168ff-1df2-7d63-87b4-8254741c3973\\exec-e3007c04-2d44-4553-85fb-3d93f0d7299e.png",
+    "workspace": "Art/Catacumbas/ReworkCompleto/Conceito-Contrapesos-v1.png",
+    "kind": "painted concept, not Unity execution",
+    "revised": true
+  }
+]

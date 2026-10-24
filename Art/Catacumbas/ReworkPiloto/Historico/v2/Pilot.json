@@ -1,0 +1,6747 @@
+{
+  "version": 1,
+  "room": 17,
+  "cellSize": 1.06,
+  "assets": [
+    {
+      "id": "CRP_Floor_R17_00_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_10",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_11",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_12",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_14",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_00_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_01_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 134,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_02_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 266,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_03_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 398,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_04_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 530,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_05_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 662,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_06_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 794,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_07_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 926,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_08_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1058,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_09_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1190,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_10_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1322,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_11_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1454,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_12_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1586,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_13_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1718,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_14_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1850,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_15_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 1982,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_16_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2114,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Floor_R17_17_15",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FloorAtlas",
+      "x": 2246,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_13_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 2,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_14_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 134,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_15_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 266,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_16_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 398,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_12_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 530,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_13_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 662,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_14_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 794,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_15_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 926,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_16_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 2,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_17_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 134,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_12_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 266,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_13_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 398,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_14_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 530,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_15_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 662,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_16_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 794,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_17_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 926,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_13_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 2,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_14_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 134,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_15_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 266,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_ShallowWater_R17_16_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WaterAtlas",
+      "x": 398,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 3038,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 3038,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 3038,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 3038,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 3038,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 3038,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 3038,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 3038,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 2906,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 2906,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_0A",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 2906,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_0B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 2906,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_0C",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 2906,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_0D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 2906,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_0E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 2906,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_0F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 2906,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 2774,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_17",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 2774,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_1B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 2774,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_1F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 2774,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_26",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 2774,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_27",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 2774,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_2E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 2774,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_2F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 2774,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_37",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 2642,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_3F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 2642,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_4C",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 2642,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_4D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 2642,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_4E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 2642,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_4F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 2642,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_5F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 2642,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_6E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 2642,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_6F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 2510,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_7F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 2510,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_89",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 2510,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_8B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 2510,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_8D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 2510,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_8F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 2510,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_9B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 2510,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_9F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 2510,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_AF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 2378,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_BF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 2378,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_CD",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 2378,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_CF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 2378,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_DF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 2378,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_EF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 2378,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Dry_FF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 2378,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 2378,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 2246,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 2246,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 2246,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 2246,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 2246,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 2246,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 2246,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 2246,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 2114,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_0A",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 2114,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_0B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 2114,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_0C",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 2114,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_0D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 2114,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_0E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 2114,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_0F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 2114,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 2114,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_17",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_1B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_1F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_26",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_27",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_2E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_2F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_37",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 1982,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_3F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_4C",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_4D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_4E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_4F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_5F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_6E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_6F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 1850,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_7F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_89",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_8B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_8D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_8F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_9B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_9F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_AF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 1718,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_BF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_CD",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_CF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_DF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_EF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Damp_FF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 1586,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 1454,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_0A",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_0B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_0C",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_0D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_0E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_0F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_17",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 1322,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_1B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_1F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_26",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_27",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_2E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_2F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_37",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_3F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 1190,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_4C",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_4D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_4E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_4F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_5F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_6E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_6F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_7F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 1058,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_89",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_8B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_8D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_8F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_9B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_9F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_AF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_BF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 926,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_CD",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_CF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_DF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_EF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Cracked_FF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_00",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_01",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_02",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 794,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_03",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_04",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_05",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_06",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_07",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_08",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_09",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_0A",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 662,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_0B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_0C",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_0D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_0E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_0F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_13",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_17",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_1B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 530,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_1F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_26",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_27",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_2E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_2F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_37",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_3F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_4C",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 398,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_4D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_4E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_4F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_5F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_6E",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_6F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_7F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_89",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 266,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_8B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_8D",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_8F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_9B",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_9F",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 530,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_AF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 662,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_BF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 794,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_CD",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 926,
+      "y": 134,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_CF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 2,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_DF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 134,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_EF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 266,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_Wall_Roots_FF",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_WallAtlas",
+      "x": 398,
+      "y": 2,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_LowCoverStone",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_LowCoverStone",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "CRP_CoffinClosed",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_CoffinClosed",
+      "x": 16,
+      "y": 16,
+      "width": 449,
+      "height": 200
+    },
+    {
+      "id": "CRP_CoffinOpen",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_CoffinOpen",
+      "x": 16,
+      "y": 16,
+      "width": 444,
+      "height": 291
+    },
+    {
+      "id": "CRP_CoffinBroken",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_CoffinBroken",
+      "x": 16,
+      "y": 16,
+      "width": 453,
+      "height": 281
+    },
+    {
+      "id": "CRP_UrnIntact",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_UrnIntact",
+      "x": 16,
+      "y": 16,
+      "width": 277,
+      "height": 284
+    },
+    {
+      "id": "CRP_UrnBroken",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_UrnBroken",
+      "x": 16,
+      "y": 16,
+      "width": 359,
+      "height": 313
+    },
+    {
+      "id": "CRP_Skeleton",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_Skeleton",
+      "x": 16,
+      "y": 16,
+      "width": 466,
+      "height": 216
+    },
+    {
+      "id": "CRP_FireAsh",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_FireAsh",
+      "x": 16,
+      "y": 16,
+      "width": 389,
+      "height": 334
+    },
+    {
+      "id": "CRP_Pot",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_Pot",
+      "x": 16,
+      "y": 16,
+      "width": 364,
+      "height": 301
+    },
+    {
+      "id": "CRP_ShovelBroken",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_ShovelBroken",
+      "x": 16,
+      "y": 16,
+      "width": 471,
+      "height": 135
+    },
+    {
+      "id": "CRP_RopeBroken",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_RopeBroken",
+      "x": 16,
+      "y": 16,
+      "width": 441,
+      "height": 261
+    },
+    {
+      "id": "CRP_Equipment",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_Equipment",
+      "x": 16,
+      "y": 16,
+      "width": 480,
+      "height": 409
+    },
+    {
+      "id": "CRP_Niche",
+      "resource": "Environment/Dungeon/ReworkPilot/CRP_Niche",
+      "x": 16,
+      "y": 16,
+      "width": 464,
+      "height": 246
+    }
+  ],
+  "floors": [
+    {
+      "art": "CRP_Floor_R17_00_00",
+      "x": 11,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_01_00",
+      "x": 12,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_02_00",
+      "x": 13,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_03_00",
+      "x": 14,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_04_00",
+      "x": 15,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_05_00",
+      "x": 16,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_06_00",
+      "x": 17,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_07_00",
+      "x": 18,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_08_00",
+      "x": 19,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_09_00",
+      "x": 20,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_10_00",
+      "x": 21,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_11_00",
+      "x": 22,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_12_00",
+      "x": 23,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_13_00",
+      "x": 24,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_14_00",
+      "x": 25,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_15_00",
+      "x": 26,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_16_00",
+      "x": 27,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_17_00",
+      "x": 28,
+      "y": 36
+    },
+    {
+      "art": "CRP_Floor_R17_00_01",
+      "x": 11,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_01_01",
+      "x": 12,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_02_01",
+      "x": 13,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_03_01",
+      "x": 14,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_04_01",
+      "x": 15,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_05_01",
+      "x": 16,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_06_01",
+      "x": 17,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_07_01",
+      "x": 18,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_08_01",
+      "x": 19,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_09_01",
+      "x": 20,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_10_01",
+      "x": 21,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_11_01",
+      "x": 22,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_12_01",
+      "x": 23,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_13_01",
+      "x": 24,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_14_01",
+      "x": 25,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_15_01",
+      "x": 26,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_16_01",
+      "x": 27,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_17_01",
+      "x": 28,
+      "y": 37
+    },
+    {
+      "art": "CRP_Floor_R17_00_02",
+      "x": 11,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_01_02",
+      "x": 12,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_02_02",
+      "x": 13,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_03_02",
+      "x": 14,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_04_02",
+      "x": 15,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_05_02",
+      "x": 16,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_06_02",
+      "x": 17,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_07_02",
+      "x": 18,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_08_02",
+      "x": 19,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_09_02",
+      "x": 20,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_10_02",
+      "x": 21,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_11_02",
+      "x": 22,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_12_02",
+      "x": 23,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_13_02",
+      "x": 24,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_14_02",
+      "x": 25,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_15_02",
+      "x": 26,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_16_02",
+      "x": 27,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_17_02",
+      "x": 28,
+      "y": 38
+    },
+    {
+      "art": "CRP_Floor_R17_00_03",
+      "x": 11,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_01_03",
+      "x": 12,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_02_03",
+      "x": 13,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_03_03",
+      "x": 14,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_04_03",
+      "x": 15,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_05_03",
+      "x": 16,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_06_03",
+      "x": 17,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_07_03",
+      "x": 18,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_08_03",
+      "x": 19,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_09_03",
+      "x": 20,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_10_03",
+      "x": 21,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_11_03",
+      "x": 22,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_12_03",
+      "x": 23,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_13_03",
+      "x": 24,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_14_03",
+      "x": 25,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_15_03",
+      "x": 26,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_16_03",
+      "x": 27,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_17_03",
+      "x": 28,
+      "y": 39
+    },
+    {
+      "art": "CRP_Floor_R17_00_04",
+      "x": 11,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_01_04",
+      "x": 12,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_02_04",
+      "x": 13,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_03_04",
+      "x": 14,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_04_04",
+      "x": 15,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_05_04",
+      "x": 16,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_06_04",
+      "x": 17,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_07_04",
+      "x": 18,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_08_04",
+      "x": 19,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_09_04",
+      "x": 20,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_10_04",
+      "x": 21,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_11_04",
+      "x": 22,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_12_04",
+      "x": 23,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_13_04",
+      "x": 24,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_14_04",
+      "x": 25,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_15_04",
+      "x": 26,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_16_04",
+      "x": 27,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_17_04",
+      "x": 28,
+      "y": 40
+    },
+    {
+      "art": "CRP_Floor_R17_00_05",
+      "x": 11,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_01_05",
+      "x": 12,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_02_05",
+      "x": 13,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_03_05",
+      "x": 14,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_04_05",
+      "x": 15,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_05_05",
+      "x": 16,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_06_05",
+      "x": 17,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_07_05",
+      "x": 18,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_08_05",
+      "x": 19,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_09_05",
+      "x": 20,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_10_05",
+      "x": 21,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_11_05",
+      "x": 22,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_12_05",
+      "x": 23,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_13_05",
+      "x": 24,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_14_05",
+      "x": 25,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_15_05",
+      "x": 26,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_16_05",
+      "x": 27,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_17_05",
+      "x": 28,
+      "y": 41
+    },
+    {
+      "art": "CRP_Floor_R17_00_06",
+      "x": 11,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_01_06",
+      "x": 12,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_02_06",
+      "x": 13,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_03_06",
+      "x": 14,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_04_06",
+      "x": 15,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_05_06",
+      "x": 16,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_06_06",
+      "x": 17,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_07_06",
+      "x": 18,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_08_06",
+      "x": 19,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_09_06",
+      "x": 20,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_10_06",
+      "x": 21,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_11_06",
+      "x": 22,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_12_06",
+      "x": 23,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_13_06",
+      "x": 24,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_14_06",
+      "x": 25,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_15_06",
+      "x": 26,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_16_06",
+      "x": 27,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_17_06",
+      "x": 28,
+      "y": 42
+    },
+    {
+      "art": "CRP_Floor_R17_00_07",
+      "x": 11,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_01_07",
+      "x": 12,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_02_07",
+      "x": 13,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_03_07",
+      "x": 14,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_04_07",
+      "x": 15,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_05_07",
+      "x": 16,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_06_07",
+      "x": 17,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_07_07",
+      "x": 18,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_08_07",
+      "x": 19,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_09_07",
+      "x": 20,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_10_07",
+      "x": 21,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_11_07",
+      "x": 22,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_12_07",
+      "x": 23,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_13_07",
+      "x": 24,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_14_07",
+      "x": 25,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_15_07",
+      "x": 26,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_16_07",
+      "x": 27,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_17_07",
+      "x": 28,
+      "y": 43
+    },
+    {
+      "art": "CRP_Floor_R17_00_08",
+      "x": 11,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_01_08",
+      "x": 12,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_02_08",
+      "x": 13,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_03_08",
+      "x": 14,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_04_08",
+      "x": 15,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_05_08",
+      "x": 16,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_06_08",
+      "x": 17,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_07_08",
+      "x": 18,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_08_08",
+      "x": 19,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_09_08",
+      "x": 20,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_10_08",
+      "x": 21,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_11_08",
+      "x": 22,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_12_08",
+      "x": 23,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_13_08",
+      "x": 24,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_14_08",
+      "x": 25,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_15_08",
+      "x": 26,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_16_08",
+      "x": 27,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_17_08",
+      "x": 28,
+      "y": 44
+    },
+    {
+      "art": "CRP_Floor_R17_00_09",
+      "x": 11,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_01_09",
+      "x": 12,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_02_09",
+      "x": 13,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_03_09",
+      "x": 14,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_04_09",
+      "x": 15,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_05_09",
+      "x": 16,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_06_09",
+      "x": 17,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_07_09",
+      "x": 18,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_08_09",
+      "x": 19,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_09_09",
+      "x": 20,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_10_09",
+      "x": 21,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_11_09",
+      "x": 22,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_12_09",
+      "x": 23,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_13_09",
+      "x": 24,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_14_09",
+      "x": 25,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_15_09",
+      "x": 26,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_16_09",
+      "x": 27,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_17_09",
+      "x": 28,
+      "y": 45
+    },
+    {
+      "art": "CRP_Floor_R17_00_10",
+      "x": 11,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_01_10",
+      "x": 12,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_02_10",
+      "x": 13,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_03_10",
+      "x": 14,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_04_10",
+      "x": 15,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_05_10",
+      "x": 16,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_06_10",
+      "x": 17,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_07_10",
+      "x": 18,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_08_10",
+      "x": 19,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_09_10",
+      "x": 20,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_10_10",
+      "x": 21,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_11_10",
+      "x": 22,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_12_10",
+      "x": 23,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_13_10",
+      "x": 24,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_14_10",
+      "x": 25,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_15_10",
+      "x": 26,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_16_10",
+      "x": 27,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_17_10",
+      "x": 28,
+      "y": 46
+    },
+    {
+      "art": "CRP_Floor_R17_00_11",
+      "x": 11,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_01_11",
+      "x": 12,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_02_11",
+      "x": 13,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_03_11",
+      "x": 14,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_04_11",
+      "x": 15,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_05_11",
+      "x": 16,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_06_11",
+      "x": 17,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_07_11",
+      "x": 18,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_08_11",
+      "x": 19,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_09_11",
+      "x": 20,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_10_11",
+      "x": 21,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_11_11",
+      "x": 22,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_12_11",
+      "x": 23,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_13_11",
+      "x": 24,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_14_11",
+      "x": 25,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_15_11",
+      "x": 26,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_16_11",
+      "x": 27,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_17_11",
+      "x": 28,
+      "y": 47
+    },
+    {
+      "art": "CRP_Floor_R17_00_12",
+      "x": 11,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_01_12",
+      "x": 12,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_02_12",
+      "x": 13,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_03_12",
+      "x": 14,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_04_12",
+      "x": 15,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_05_12",
+      "x": 16,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_06_12",
+      "x": 17,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_07_12",
+      "x": 18,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_08_12",
+      "x": 19,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_09_12",
+      "x": 20,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_10_12",
+      "x": 21,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_11_12",
+      "x": 22,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_12_12",
+      "x": 23,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_13_12",
+      "x": 24,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_14_12",
+      "x": 25,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_15_12",
+      "x": 26,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_16_12",
+      "x": 27,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_17_12",
+      "x": 28,
+      "y": 48
+    },
+    {
+      "art": "CRP_Floor_R17_00_13",
+      "x": 11,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_01_13",
+      "x": 12,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_02_13",
+      "x": 13,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_03_13",
+      "x": 14,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_04_13",
+      "x": 15,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_05_13",
+      "x": 16,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_06_13",
+      "x": 17,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_07_13",
+      "x": 18,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_08_13",
+      "x": 19,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_09_13",
+      "x": 20,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_10_13",
+      "x": 21,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_11_13",
+      "x": 22,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_12_13",
+      "x": 23,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_13_13",
+      "x": 24,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_14_13",
+      "x": 25,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_15_13",
+      "x": 26,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_16_13",
+      "x": 27,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_17_13",
+      "x": 28,
+      "y": 49
+    },
+    {
+      "art": "CRP_Floor_R17_00_14",
+      "x": 11,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_01_14",
+      "x": 12,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_02_14",
+      "x": 13,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_03_14",
+      "x": 14,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_04_14",
+      "x": 15,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_05_14",
+      "x": 16,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_06_14",
+      "x": 17,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_07_14",
+      "x": 18,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_08_14",
+      "x": 19,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_09_14",
+      "x": 20,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_10_14",
+      "x": 21,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_11_14",
+      "x": 22,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_12_14",
+      "x": 23,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_13_14",
+      "x": 24,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_14_14",
+      "x": 25,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_15_14",
+      "x": 26,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_16_14",
+      "x": 27,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_17_14",
+      "x": 28,
+      "y": 50
+    },
+    {
+      "art": "CRP_Floor_R17_00_15",
+      "x": 11,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_01_15",
+      "x": 12,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_02_15",
+      "x": 13,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_03_15",
+      "x": 14,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_04_15",
+      "x": 15,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_05_15",
+      "x": 16,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_06_15",
+      "x": 17,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_07_15",
+      "x": 18,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_08_15",
+      "x": 19,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_09_15",
+      "x": 20,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_10_15",
+      "x": 21,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_11_15",
+      "x": 22,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_12_15",
+      "x": 23,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_13_15",
+      "x": 24,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_14_15",
+      "x": 25,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_15_15",
+      "x": 26,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_16_15",
+      "x": 27,
+      "y": 51
+    },
+    {
+      "art": "CRP_Floor_R17_17_15",
+      "x": 28,
+      "y": 51
+    }
+  ],
+  "water": [
+    {
+      "art": "CRP_ShallowWater_R17_13_01",
+      "x": 24,
+      "y": 37
+    },
+    {
+      "art": "CRP_ShallowWater_R17_14_01",
+      "x": 25,
+      "y": 37
+    },
+    {
+      "art": "CRP_ShallowWater_R17_15_01",
+      "x": 26,
+      "y": 37
+    },
+    {
+      "art": "CRP_ShallowWater_R17_16_01",
+      "x": 27,
+      "y": 37
+    },
+    {
+      "art": "CRP_ShallowWater_R17_12_02",
+      "x": 23,
+      "y": 38
+    },
+    {
+      "art": "CRP_ShallowWater_R17_13_02",
+      "x": 24,
+      "y": 38
+    },
+    {
+      "art": "CRP_ShallowWater_R17_14_02",
+      "x": 25,
+      "y": 38
+    },
+    {
+      "art": "CRP_ShallowWater_R17_15_02",
+      "x": 26,
+      "y": 38
+    },
+    {
+      "art": "CRP_ShallowWater_R17_16_02",
+      "x": 27,
+      "y": 38
+    },
+    {
+      "art": "CRP_ShallowWater_R17_17_02",
+      "x": 28,
+      "y": 38
+    },
+    {
+      "art": "CRP_ShallowWater_R17_12_03",
+      "x": 23,
+      "y": 39
+    },
+    {
+      "art": "CRP_ShallowWater_R17_13_03",
+      "x": 24,
+      "y": 39
+    },
+    {
+      "art": "CRP_ShallowWater_R17_14_03",
+      "x": 25,
+      "y": 39
+    },
+    {
+      "art": "CRP_ShallowWater_R17_15_03",
+      "x": 26,
+      "y": 39
+    },
+    {
+      "art": "CRP_ShallowWater_R17_16_03",
+      "x": 27,
+      "y": 39
+    },
+    {
+      "art": "CRP_ShallowWater_R17_17_03",
+      "x": 28,
+      "y": 39
+    },
+    {
+      "art": "CRP_ShallowWater_R17_13_04",
+      "x": 24,
+      "y": 40
+    },
+    {
+      "art": "CRP_ShallowWater_R17_14_04",
+      "x": 25,
+      "y": 40
+    },
+    {
+      "art": "CRP_ShallowWater_R17_15_04",
+      "x": 26,
+      "y": 40
+    },
+    {
+      "art": "CRP_ShallowWater_R17_16_04",
+      "x": 27,
+      "y": 40
+    }
+  ],
+  "walls": [
+    {
+      "state": "Dry",
+      "mask": 0,
+      "art": "CRP_Wall_Dry_00"
+    },
+    {
+      "state": "Dry",
+      "mask": 1,
+      "art": "CRP_Wall_Dry_01"
+    },
+    {
+      "state": "Dry",
+      "mask": 2,
+      "art": "CRP_Wall_Dry_02"
+    },
+    {
+      "state": "Dry",
+      "mask": 3,
+      "art": "CRP_Wall_Dry_03"
+    },
+    {
+      "state": "Dry",
+      "mask": 4,
+      "art": "CRP_Wall_Dry_04"
+    },
+    {
+      "state": "Dry",
+      "mask": 5,
+      "art": "CRP_Wall_Dry_05"
+    },
+    {
+      "state": "Dry",
+      "mask": 6,
+      "art": "CRP_Wall_Dry_06"
+    },
+    {
+      "state": "Dry",
+      "mask": 7,
+      "art": "CRP_Wall_Dry_07"
+    },
+    {
+      "state": "Dry",
+      "mask": 8,
+      "art": "CRP_Wall_Dry_08"
+    },
+    {
+      "state": "Dry",
+      "mask": 9,
+      "art": "CRP_Wall_Dry_09"
+    },
+    {
+      "state": "Dry",
+      "mask": 10,
+      "art": "CRP_Wall_Dry_0A"
+    },
+    {
+      "state": "Dry",
+      "mask": 11,
+      "art": "CRP_Wall_Dry_0B"
+    },
+    {
+      "state": "Dry",
+      "mask": 12,
+      "art": "CRP_Wall_Dry_0C"
+    },
+    {
+      "state": "Dry",
+      "mask": 13,
+      "art": "CRP_Wall_Dry_0D"
+    },
+    {
+      "state": "Dry",
+      "mask": 14,
+      "art": "CRP_Wall_Dry_0E"
+    },
+    {
+      "state": "Dry",
+      "mask": 15,
+      "art": "CRP_Wall_Dry_0F"
+    },
+    {
+      "state": "Dry",
+      "mask": 19,
+      "art": "CRP_Wall_Dry_13"
+    },
+    {
+      "state": "Dry",
+      "mask": 23,
+      "art": "CRP_Wall_Dry_17"
+    },
+    {
+      "state": "Dry",
+      "mask": 27,
+      "art": "CRP_Wall_Dry_1B"
+    },
+    {
+      "state": "Dry",
+      "mask": 31,
+      "art": "CRP_Wall_Dry_1F"
+    },
+    {
+      "state": "Dry",
+      "mask": 38,
+      "art": "CRP_Wall_Dry_26"
+    },
+    {
+      "state": "Dry",
+      "mask": 39,
+      "art": "CRP_Wall_Dry_27"
+    },
+    {
+      "state": "Dry",
+      "mask": 46,
+      "art": "CRP_Wall_Dry_2E"
+    },
+    {
+      "state": "Dry",
+      "mask": 47,
+      "art": "CRP_Wall_Dry_2F"
+    },
+    {
+      "state": "Dry",
+      "mask": 55,
+      "art": "CRP_Wall_Dry_37"
+    },
+    {
+      "state": "Dry",
+      "mask": 63,
+      "art": "CRP_Wall_Dry_3F"
+    },
+    {
+      "state": "Dry",
+      "mask": 76,
+      "art": "CRP_Wall_Dry_4C"
+    },
+    {
+      "state": "Dry",
+      "mask": 77,
+      "art": "CRP_Wall_Dry_4D"
+    },
+    {
+      "state": "Dry",
+      "mask": 78,
+      "art": "CRP_Wall_Dry_4E"
+    },
+    {
+      "state": "Dry",
+      "mask": 79,
+      "art": "CRP_Wall_Dry_4F"
+    },
+    {
+      "state": "Dry",
+      "mask": 95,
+      "art": "CRP_Wall_Dry_5F"
+    },
+    {
+      "state": "Dry",
+      "mask": 110,
+      "art": "CRP_Wall_Dry_6E"
+    },
+    {
+      "state": "Dry",
+      "mask": 111,
+      "art": "CRP_Wall_Dry_6F"
+    },
+    {
+      "state": "Dry",
+      "mask": 127,
+      "art": "CRP_Wall_Dry_7F"
+    },
+    {
+      "state": "Dry",
+      "mask": 137,
+      "art": "CRP_Wall_Dry_89"
+    },
+    {
+      "state": "Dry",
+      "mask": 139,
+      "art": "CRP_Wall_Dry_8B"
+    },
+    {
+      "state": "Dry",
+      "mask": 141,
+      "art": "CRP_Wall_Dry_8D"
+    },
+    {
+      "state": "Dry",
+      "mask": 143,
+      "art": "CRP_Wall_Dry_8F"
+    },
+    {
+      "state": "Dry",
+      "mask": 155,
+      "art": "CRP_Wall_Dry_9B"
+    },
+    {
+      "state": "Dry",
+      "mask": 159,
+      "art": "CRP_Wall_Dry_9F"
+    },
+    {
+      "state": "Dry",
+      "mask": 175,
+      "art": "CRP_Wall_Dry_AF"
+    },
+    {
+      "state": "Dry",
+      "mask": 191,
+      "art": "CRP_Wall_Dry_BF"
+    },
+    {
+      "state": "Dry",
+      "mask": 205,
+      "art": "CRP_Wall_Dry_CD"
+    },
+    {
+      "state": "Dry",
+      "mask": 207,
+      "art": "CRP_Wall_Dry_CF"
+    },
+    {
+      "state": "Dry",
+      "mask": 223,
+      "art": "CRP_Wall_Dry_DF"
+    },
+    {
+      "state": "Dry",
+      "mask": 239,
+      "art": "CRP_Wall_Dry_EF"
+    },
+    {
+      "state": "Dry",
+      "mask": 255,
+      "art": "CRP_Wall_Dry_FF"
+    },
+    {
+      "state": "Damp",
+      "mask": 0,
+      "art": "CRP_Wall_Damp_00"
+    },
+    {
+      "state": "Damp",
+      "mask": 1,
+      "art": "CRP_Wall_Damp_01"
+    },
+    {
+      "state": "Damp",
+      "mask": 2,
+      "art": "CRP_Wall_Damp_02"
+    },
+    {
+      "state": "Damp",
+      "mask": 3,
+      "art": "CRP_Wall_Damp_03"
+    },
+    {
+      "state": "Damp",
+      "mask": 4,
+      "art": "CRP_Wall_Damp_04"
+    },
+    {
+      "state": "Damp",
+      "mask": 5,
+      "art": "CRP_Wall_Damp_05"
+    },
+    {
+      "state": "Damp",
+      "mask": 6,
+      "art": "CRP_Wall_Damp_06"
+    },
+    {
+      "state": "Damp",
+      "mask": 7,
+      "art": "CRP_Wall_Damp_07"
+    },
+    {
+      "state": "Damp",
+      "mask": 8,
+      "art": "CRP_Wall_Damp_08"
+    },
+    {
+      "state": "Damp",
+      "mask": 9,
+      "art": "CRP_Wall_Damp_09"
+    },
+    {
+      "state": "Damp",
+      "mask": 10,
+      "art": "CRP_Wall_Damp_0A"
+    },
+    {
+      "state": "Damp",
+      "mask": 11,
+      "art": "CRP_Wall_Damp_0B"
+    },
+    {
+      "state": "Damp",
+      "mask": 12,
+      "art": "CRP_Wall_Damp_0C"
+    },
+    {
+      "state": "Damp",
+      "mask": 13,
+      "art": "CRP_Wall_Damp_0D"
+    },
+    {
+      "state": "Damp",
+      "mask": 14,
+      "art": "CRP_Wall_Damp_0E"
+    },
+    {
+      "state": "Damp",
+      "mask": 15,
+      "art": "CRP_Wall_Damp_0F"
+    },
+    {
+      "state": "Damp",
+      "mask": 19,
+      "art": "CRP_Wall_Damp_13"
+    },
+    {
+      "state": "Damp",
+      "mask": 23,
+      "art": "CRP_Wall_Damp_17"
+    },
+    {
+      "state": "Damp",
+      "mask": 27,
+      "art": "CRP_Wall_Damp_1B"
+    },
+    {
+      "state": "Damp",
+      "mask": 31,
+      "art": "CRP_Wall_Damp_1F"
+    },
+    {
+      "state": "Damp",
+      "mask": 38,
+      "art": "CRP_Wall_Damp_26"
+    },
+    {
+      "state": "Damp",
+      "mask": 39,
+      "art": "CRP_Wall_Damp_27"
+    },
+    {
+      "state": "Damp",
+      "mask": 46,
+      "art": "CRP_Wall_Damp_2E"
+    },
+    {
+      "state": "Damp",
+      "mask": 47,
+      "art": "CRP_Wall_Damp_2F"
+    },
+    {
+      "state": "Damp",
+      "mask": 55,
+      "art": "CRP_Wall_Damp_37"
+    },
+    {
+      "state": "Damp",
+      "mask": 63,
+      "art": "CRP_Wall_Damp_3F"
+    },
+    {
+      "state": "Damp",
+      "mask": 76,
+      "art": "CRP_Wall_Damp_4C"
+    },
+    {
+      "state": "Damp",
+      "mask": 77,
+      "art": "CRP_Wall_Damp_4D"
+    },
+    {
+      "state": "Damp",
+      "mask": 78,
+      "art": "CRP_Wall_Damp_4E"
+    },
+    {
+      "state": "Damp",
+      "mask": 79,
+      "art": "CRP_Wall_Damp_4F"
+    },
+    {
+      "state": "Damp",
+      "mask": 95,
+      "art": "CRP_Wall_Damp_5F"
+    },
+    {
+      "state": "Damp",
+      "mask": 110,
+      "art": "CRP_Wall_Damp_6E"
+    },
+    {
+      "state": "Damp",
+      "mask": 111,
+      "art": "CRP_Wall_Damp_6F"
+    },
+    {
+      "state": "Damp",
+      "mask": 127,
+      "art": "CRP_Wall_Damp_7F"
+    },
+    {
+      "state": "Damp",
+      "mask": 137,
+      "art": "CRP_Wall_Damp_89"
+    },
+    {
+      "state": "Damp",
+      "mask": 139,
+      "art": "CRP_Wall_Damp_8B"
+    },
+    {
+      "state": "Damp",
+      "mask": 141,
+      "art": "CRP_Wall_Damp_8D"
+    },
+    {
+      "state": "Damp",
+      "mask": 143,
+      "art": "CRP_Wall_Damp_8F"
+    },
+    {
+      "state": "Damp",
+      "mask": 155,
+      "art": "CRP_Wall_Damp_9B"
+    },
+    {
+      "state": "Damp",
+      "mask": 159,
+      "art": "CRP_Wall_Damp_9F"
+    },
+    {
+      "state": "Damp",
+      "mask": 175,
+      "art": "CRP_Wall_Damp_AF"
+    },
+    {
+      "state": "Damp",
+      "mask": 191,
+      "art": "CRP_Wall_Damp_BF"
+    },
+    {
+      "state": "Damp",
+      "mask": 205,
+      "art": "CRP_Wall_Damp_CD"
+    },
+    {
+      "state": "Damp",
+      "mask": 207,
+      "art": "CRP_Wall_Damp_CF"
+    },
+    {
+      "state": "Damp",
+      "mask": 223,
+      "art": "CRP_Wall_Damp_DF"
+    },
+    {
+      "state": "Damp",
+      "mask": 239,
+      "art": "CRP_Wall_Damp_EF"
+    },
+    {
+      "state": "Damp",
+      "mask": 255,
+      "art": "CRP_Wall_Damp_FF"
+    },
+    {
+      "state": "Cracked",
+      "mask": 0,
+      "art": "CRP_Wall_Cracked_00"
+    },
+    {
+      "state": "Cracked",
+      "mask": 1,
+      "art": "CRP_Wall_Cracked_01"
+    },
+    {
+      "state": "Cracked",
+      "mask": 2,
+      "art": "CRP_Wall_Cracked_02"
+    },
+    {
+      "state": "Cracked",
+      "mask": 3,
+      "art": "CRP_Wall_Cracked_03"
+    },
+    {
+      "state": "Cracked",
+      "mask": 4,
+      "art": "CRP_Wall_Cracked_04"
+    },
+    {
+      "state": "Cracked",
+      "mask": 5,
+      "art": "CRP_Wall_Cracked_05"
+    },
+    {
+      "state": "Cracked",
+      "mask": 6,
+      "art": "CRP_Wall_Cracked_06"
+    },
+    {
+      "state": "Cracked",
+      "mask": 7,
+      "art": "CRP_Wall_Cracked_07"
+    },
+    {
+      "state": "Cracked",
+      "mask": 8,
+      "art": "CRP_Wall_Cracked_08"
+    },
+    {
+      "state": "Cracked",
+      "mask": 9,
+      "art": "CRP_Wall_Cracked_09"
+    },
+    {
+      "state": "Cracked",
+      "mask": 10,
+      "art": "CRP_Wall_Cracked_0A"
+    },
+    {
+      "state": "Cracked",
+      "mask": 11,
+      "art": "CRP_Wall_Cracked_0B"
+    },
+    {
+      "state": "Cracked",
+      "mask": 12,
+      "art": "CRP_Wall_Cracked_0C"
+    },
+    {
+      "state": "Cracked",
+      "mask": 13,
+      "art": "CRP_Wall_Cracked_0D"
+    },
+    {
+      "state": "Cracked",
+      "mask": 14,
+      "art": "CRP_Wall_Cracked_0E"
+    },
+    {
+      "state": "Cracked",
+      "mask": 15,
+      "art": "CRP_Wall_Cracked_0F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 19,
+      "art": "CRP_Wall_Cracked_13"
+    },
+    {
+      "state": "Cracked",
+      "mask": 23,
+      "art": "CRP_Wall_Cracked_17"
+    },
+    {
+      "state": "Cracked",
+      "mask": 27,
+      "art": "CRP_Wall_Cracked_1B"
+    },
+    {
+      "state": "Cracked",
+      "mask": 31,
+      "art": "CRP_Wall_Cracked_1F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 38,
+      "art": "CRP_Wall_Cracked_26"
+    },
+    {
+      "state": "Cracked",
+      "mask": 39,
+      "art": "CRP_Wall_Cracked_27"
+    },
+    {
+      "state": "Cracked",
+      "mask": 46,
+      "art": "CRP_Wall_Cracked_2E"
+    },
+    {
+      "state": "Cracked",
+      "mask": 47,
+      "art": "CRP_Wall_Cracked_2F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 55,
+      "art": "CRP_Wall_Cracked_37"
+    },
+    {
+      "state": "Cracked",
+      "mask": 63,
+      "art": "CRP_Wall_Cracked_3F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 76,
+      "art": "CRP_Wall_Cracked_4C"
+    },
+    {
+      "state": "Cracked",
+      "mask": 77,
+      "art": "CRP_Wall_Cracked_4D"
+    },
+    {
+      "state": "Cracked",
+      "mask": 78,
+      "art": "CRP_Wall_Cracked_4E"
+    },
+    {
+      "state": "Cracked",
+      "mask": 79,
+      "art": "CRP_Wall_Cracked_4F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 95,
+      "art": "CRP_Wall_Cracked_5F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 110,
+      "art": "CRP_Wall_Cracked_6E"
+    },
+    {
+      "state": "Cracked",
+      "mask": 111,
+      "art": "CRP_Wall_Cracked_6F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 127,
+      "art": "CRP_Wall_Cracked_7F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 137,
+      "art": "CRP_Wall_Cracked_89"
+    },
+    {
+      "state": "Cracked",
+      "mask": 139,
+      "art": "CRP_Wall_Cracked_8B"
+    },
+    {
+      "state": "Cracked",
+      "mask": 141,
+      "art": "CRP_Wall_Cracked_8D"
+    },
+    {
+      "state": "Cracked",
+      "mask": 143,
+      "art": "CRP_Wall_Cracked_8F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 155,
+      "art": "CRP_Wall_Cracked_9B"
+    },
+    {
+      "state": "Cracked",
+      "mask": 159,
+      "art": "CRP_Wall_Cracked_9F"
+    },
+    {
+      "state": "Cracked",
+      "mask": 175,
+      "art": "CRP_Wall_Cracked_AF"
+    },
+    {
+      "state": "Cracked",
+      "mask": 191,
+      "art": "CRP_Wall_Cracked_BF"
+    },
+    {
+      "state": "Cracked",
+      "mask": 205,
+      "art": "CRP_Wall_Cracked_CD"
+    },
+    {
+      "state": "Cracked",
+      "mask": 207,
+      "art": "CRP_Wall_Cracked_CF"
+    },
+    {
+      "state": "Cracked",
+      "mask": 223,
+      "art": "CRP_Wall_Cracked_DF"
+    },
+    {
+      "state": "Cracked",
+      "mask": 239,
+      "art": "CRP_Wall_Cracked_EF"
+    },
+    {
+      "state": "Cracked",
+      "mask": 255,
+      "art": "CRP_Wall_Cracked_FF"
+    },
+    {
+      "state": "Roots",
+      "mask": 0,
+      "art": "CRP_Wall_Roots_00"
+    },
+    {
+      "state": "Roots",
+      "mask": 1,
+      "art": "CRP_Wall_Roots_01"
+    },
+    {
+      "state": "Roots",
+      "mask": 2,
+      "art": "CRP_Wall_Roots_02"
+    },
+    {
+      "state": "Roots",
+      "mask": 3,
+      "art": "CRP_Wall_Roots_03"
+    },
+    {
+      "state": "Roots",
+      "mask": 4,
+      "art": "CRP_Wall_Roots_04"
+    },
+    {
+      "state": "Roots",
+      "mask": 5,
+      "art": "CRP_Wall_Roots_05"
+    },
+    {
+      "state": "Roots",
+      "mask": 6,
+      "art": "CRP_Wall_Roots_06"
+    },
+    {
+      "state": "Roots",
+      "mask": 7,
+      "art": "CRP_Wall_Roots_07"
+    },
+    {
+      "state": "Roots",
+      "mask": 8,
+      "art": "CRP_Wall_Roots_08"
+    },
+    {
+      "state": "Roots",
+      "mask": 9,
+      "art": "CRP_Wall_Roots_09"
+    },
+    {
+      "state": "Roots",
+      "mask": 10,
+      "art": "CRP_Wall_Roots_0A"
+    },
+    {
+      "state": "Roots",
+      "mask": 11,
+      "art": "CRP_Wall_Roots_0B"
+    },
+    {
+      "state": "Roots",
+      "mask": 12,
+      "art": "CRP_Wall_Roots_0C"
+    },
+    {
+      "state": "Roots",
+      "mask": 13,
+      "art": "CRP_Wall_Roots_0D"
+    },
+    {
+      "state": "Roots",
+      "mask": 14,
+      "art": "CRP_Wall_Roots_0E"
+    },
+    {
+      "state": "Roots",
+      "mask": 15,
+      "art": "CRP_Wall_Roots_0F"
+    },
+    {
+      "state": "Roots",
+      "mask": 19,
+      "art": "CRP_Wall_Roots_13"
+    },
+    {
+      "state": "Roots",
+      "mask": 23,
+      "art": "CRP_Wall_Roots_17"
+    },
+    {
+      "state": "Roots",
+      "mask": 27,
+      "art": "CRP_Wall_Roots_1B"
+    },
+    {
+      "state": "Roots",
+      "mask": 31,
+      "art": "CRP_Wall_Roots_1F"
+    },
+    {
+      "state": "Roots",
+      "mask": 38,
+      "art": "CRP_Wall_Roots_26"
+    },
+    {
+      "state": "Roots",
+      "mask": 39,
+      "art": "CRP_Wall_Roots_27"
+    },
+    {
+      "state": "Roots",
+      "mask": 46,
+      "art": "CRP_Wall_Roots_2E"
+    },
+    {
+      "state": "Roots",
+      "mask": 47,
+      "art": "CRP_Wall_Roots_2F"
+    },
+    {
+      "state": "Roots",
+      "mask": 55,
+      "art": "CRP_Wall_Roots_37"
+    },
+    {
+      "state": "Roots",
+      "mask": 63,
+      "art": "CRP_Wall_Roots_3F"
+    },
+    {
+      "state": "Roots",
+      "mask": 76,
+      "art": "CRP_Wall_Roots_4C"
+    },
+    {
+      "state": "Roots",
+      "mask": 77,
+      "art": "CRP_Wall_Roots_4D"
+    },
+    {
+      "state": "Roots",
+      "mask": 78,
+      "art": "CRP_Wall_Roots_4E"
+    },
+    {
+      "state": "Roots",
+      "mask": 79,
+      "art": "CRP_Wall_Roots_4F"
+    },
+    {
+      "state": "Roots",
+      "mask": 95,
+      "art": "CRP_Wall_Roots_5F"
+    },
+    {
+      "state": "Roots",
+      "mask": 110,
+      "art": "CRP_Wall_Roots_6E"
+    },
+    {
+      "state": "Roots",
+      "mask": 111,
+      "art": "CRP_Wall_Roots_6F"
+    },
+    {
+      "state": "Roots",
+      "mask": 127,
+      "art": "CRP_Wall_Roots_7F"
+    },
+    {
+      "state": "Roots",
+      "mask": 137,
+      "art": "CRP_Wall_Roots_89"
+    },
+    {
+      "state": "Roots",
+      "mask": 139,
+      "art": "CRP_Wall_Roots_8B"
+    },
+    {
+      "state": "Roots",
+      "mask": 141,
+      "art": "CRP_Wall_Roots_8D"
+    },
+    {
+      "state": "Roots",
+      "mask": 143,
+      "art": "CRP_Wall_Roots_8F"
+    },
+    {
+      "state": "Roots",
+      "mask": 155,
+      "art": "CRP_Wall_Roots_9B"
+    },
+    {
+      "state": "Roots",
+      "mask": 159,
+      "art": "CRP_Wall_Roots_9F"
+    },
+    {
+      "state": "Roots",
+      "mask": 175,
+      "art": "CRP_Wall_Roots_AF"
+    },
+    {
+      "state": "Roots",
+      "mask": 191,
+      "art": "CRP_Wall_Roots_BF"
+    },
+    {
+      "state": "Roots",
+      "mask": 205,
+      "art": "CRP_Wall_Roots_CD"
+    },
+    {
+      "state": "Roots",
+      "mask": 207,
+      "art": "CRP_Wall_Roots_CF"
+    },
+    {
+      "state": "Roots",
+      "mask": 223,
+      "art": "CRP_Wall_Roots_DF"
+    },
+    {
+      "state": "Roots",
+      "mask": 239,
+      "art": "CRP_Wall_Roots_EF"
+    },
+    {
+      "state": "Roots",
+      "mask": 255,
+      "art": "CRP_Wall_Roots_FF"
+    }
+  ],
+  "pieces": [
+    {
+      "id": "WestTomb",
+      "art": "CRP_CoffinClosed",
+      "x": 15,
+      "y": 41,
+      "width": 1.8,
+      "height": 1.1,
+      "support": "Cover",
+      "order": -3,
+      "angle": 0,
+      "group": "Burials"
+    },
+    {
+      "id": "EastTomb",
+      "art": "CRP_CoffinOpen",
+      "x": 25,
+      "y": 47,
+      "width": 1.85,
+      "height": 1.65,
+      "support": "Cover",
+      "order": -3,
+      "angle": 0,
+      "group": "Burials"
+    },
+    {
+      "id": "DestroyedBurial",
+      "art": "CRP_CoffinBroken",
+      "x": 25.7,
+      "y": 35.5,
+      "width": 2.6,
+      "height": 0.9,
+      "support": "Stone",
+      "order": -3,
+      "angle": 0,
+      "group": "BrokenBurial"
+    },
+    {
+      "id": "NorthNicheWest",
+      "art": "CRP_Niche",
+      "x": 14,
+      "y": 52.5,
+      "width": 3,
+      "height": 0.9,
+      "support": "Stone",
+      "order": -4,
+      "angle": 0,
+      "group": "UrnNiches"
+    },
+    {
+      "id": "NorthNicheEast",
+      "art": "CRP_Niche",
+      "x": 25.2,
+      "y": 52.5,
+      "width": 3,
+      "height": 0.9,
+      "support": "Stone",
+      "order": -4,
+      "angle": 0,
+      "group": "UrnNiches"
+    },
+    {
+      "id": "AshUrnWest",
+      "art": "CRP_UrnIntact",
+      "x": 13.35,
+      "y": 52.5,
+      "width": 0.5,
+      "height": 0.5,
+      "support": "Stone",
+      "order": -3,
+      "angle": 0,
+      "group": "UrnNiches"
+    },
+    {
+      "id": "AshUrnEast",
+      "art": "CRP_UrnIntact",
+      "x": 24.55,
+      "y": 52.5,
+      "width": 0.5,
+      "height": 0.5,
+      "support": "Stone",
+      "order": -3,
+      "angle": 0,
+      "group": "UrnNiches"
+    },
+    {
+      "id": "BrokenAshUrn",
+      "art": "CRP_UrnBroken",
+      "x": 25.8,
+      "y": 52.5,
+      "width": 0.65,
+      "height": 0.6,
+      "support": "Stone",
+      "order": -3,
+      "angle": 0,
+      "group": "UrnNiches"
+    },
+    {
+      "id": "OldSkeleton",
+      "art": "CRP_Skeleton",
+      "x": 13.3,
+      "y": 38.3,
+      "width": 1.75,
+      "height": 0.85,
+      "support": "Floor",
+      "order": -5,
+      "angle": 90,
+      "group": "Burials"
+    },
+    {
+      "id": "ExtinguishedFire",
+      "art": "CRP_FireAsh",
+      "x": 24.0,
+      "y": 49.95,
+      "width": 1.45,
+      "height": 1.45,
+      "support": "Floor",
+      "order": -5,
+      "angle": 0,
+      "group": "Camp"
+    },
+    {
+      "id": "CookingPot",
+      "art": "CRP_Pot",
+      "x": 25.35,
+      "y": 49.95,
+      "width": 0.6,
+      "height": 0.6,
+      "support": "Floor",
+      "order": -4,
+      "angle": 0,
+      "group": "Camp"
+    },
+    {
+      "id": "TornEquipment",
+      "art": "CRP_Equipment",
+      "x": 23.8,
+      "y": 51.15,
+      "width": 0.85,
+      "height": 0.95,
+      "support": "Floor",
+      "order": -4,
+      "angle": 90,
+      "group": "Camp"
+    },
+    {
+      "id": "PartedRope",
+      "art": "CRP_RopeBroken",
+      "x": 25.2,
+      "y": 48.65,
+      "width": 0.85,
+      "height": 0.5,
+      "support": "Floor",
+      "order": -5,
+      "angle": 0,
+      "group": "Camp"
+    },
+    {
+      "id": "BrokenShovel",
+      "art": "CRP_ShovelBroken",
+      "x": 27.1,
+      "y": 37.3,
+      "width": 1.35,
+      "height": 0.48,
+      "support": "Floor",
+      "order": -5,
+      "angle": 0,
+      "group": "BrokenBurial"
+    },
+    {
+      "id": "ScatteredCeramic",
+      "art": "CRP_UrnBroken",
+      "x": 27.0,
+      "y": 38.35,
+      "width": 0.65,
+      "height": 0.6,
+      "support": "Floor",
+      "order": -5,
+      "angle": 0,
+      "group": "BrokenBurial"
+    }
+  ]
+}

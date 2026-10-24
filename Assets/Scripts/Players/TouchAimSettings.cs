@@ -67,7 +67,7 @@ namespace CyberExtraction.Players
             {
                 if (!screenAimLoaded)
                 {
-                    aimAnywhere = PlayerPrefs.GetInt(ScreenAimKey, 0) == 1;
+                    aimAnywhere = PlayerPrefs.GetInt(ScreenAimKey, 1) == 1;
                     screenAimLoaded = true;
                 }
                 return aimAnywhere;

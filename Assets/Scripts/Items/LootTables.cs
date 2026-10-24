@@ -39,7 +39,7 @@ namespace CyberExtraction.Items
             switch(category)
             {
                 case LootCategory.Materials: return item==ItemId.Wood || item==ItemId.Nails || item==ItemId.Metal || item==ItemId.Gunpowder || item==ItemId.AmmoComponent;
-                case LootCategory.Supplies: return item==ItemId.Bandage || ItemCatalog.Ammo(item) || item==ItemId.Lockpick ||
+                case LootCategory.Supplies: return item==ItemId.Bandage || item==ItemId.Worm || ItemCatalog.Ammo(item) || item==ItemId.Lockpick ||
                     map==ExpeditionMap.Large && (item==ItemId.BoltCutters || item==ItemId.Crowbar || item==ItemId.HandSaw);
                 case LootCategory.Equipment: return EquipmentCatalog.IsDefined(item);
                 case LootCategory.Weapons: return ItemCatalog.Weapon(item);

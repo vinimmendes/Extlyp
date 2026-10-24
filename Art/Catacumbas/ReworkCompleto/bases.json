@@ -1,0 +1,82 @@
+[
+  {
+    "sector": 0,
+    "slug": "Vestibulos",
+    "rooms": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "base": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\Catacumbas\\ReworkCompleto\\Base-Vestibulos.png"
+  },
+  {
+    "sector": 1,
+    "slug": "Galerias",
+    "rooms": [
+      8,
+      9,
+      14,
+      15
+    ],
+    "base": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\Catacumbas\\ReworkCompleto\\Base-Galerias.png"
+  },
+  {
+    "sector": 2,
+    "slug": "Ossarios",
+    "rooms": [
+      17,
+      18
+    ],
+    "base": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\Catacumbas\\ReworkCompleto\\Base-Ossarios.png"
+  },
+  {
+    "sector": 3,
+    "slug": "Claustro",
+    "rooms": [
+      16,
+      20
+    ],
+    "base": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\Catacumbas\\ReworkCompleto\\Base-Claustro.png"
+  },
+  {
+    "sector": 4,
+    "slug": "Cisternas",
+    "rooms": [
+      12,
+      13,
+      23
+    ],
+    "base": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\Catacumbas\\ReworkCompleto\\Base-Cisternas.png"
+  },
+  {
+    "sector": 5,
+    "slug": "Prisao",
+    "rooms": [
+      10,
+      11
+    ],
+    "base": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\Catacumbas\\ReworkCompleto\\Base-Prisao.png"
+  },
+  {
+    "sector": 6,
+    "slug": "Capela",
+    "rooms": [
+      21,
+      22
+    ],
+    "base": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\Catacumbas\\ReworkCompleto\\Base-Capela.png"
+  },
+  {
+    "sector": 7,
+    "slug": "Contrapesos",
+    "rooms": [
+      19
+    ],
+    "base": "C:\\Users\\Vinni\\Documents\\GitHub\\Extlyp\\Art\\Catacumbas\\ReworkCompleto\\Base-Contrapesos.png"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Create ONE transparent 2D environmental decal for a top-down painted catacomb game, a narrow horizontal trail of disturbed dusty earth and pale ash with overlapping worn boot sole impressions and a few tiny terracotta crumbs. It represents repeated traffic carrying urns away from a damaged funerary niche. Horizontal shape length to width about 5:1, low contrast warm gray tan muted ash, irregular soft translucent broken edges, believable accumulated dust and fine gritty surface, slight raking painted light only, orthographic top down, no floor stones or background, no separate islands, no walls, no objects, no labels. Keep impressions readable at game scale but worn and subtle. Darkwood abandoned atmosphere and combat-readable negative space. Genuine transparent alpha around and between residue. Production game sprite, matching the warm limestone catacomb reference.",
+  "source": "Fontes/RastroPassagem-v1.png",
+  "transparent_background": true
+}

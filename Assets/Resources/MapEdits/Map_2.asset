@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82992bf4395f3e548aad3c589debd781, type: 3}
+  m_Name: Map_2
+  m_EditorClassIdentifier: 
+  Map: 2
+  Edits:
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 63, y: 53, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: -0.6250763, y: 0.71767807, z: 0}
+    Rotation: 0
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 65, y: 58, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 0
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/CAT-A06_v02_right@16
+    Cell: 0
+    Position: {x: 0, y: 0, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0.00000031100276, y: -0.022207882, z: 0}
+    Rotation: 450
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/CAT-A06_v02_middle@16
+    Cell: 0
+    Position: {x: 0, y: 0, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 180
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 65, y: 66, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 360
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/CAT-A06_v02_left@16
+    Cell: 0
+    Position: {x: 0, y: 0, z: 0}
+    Hidden: 1
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 270
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 65, y: 61, z: 0}
+    Hidden: 0
+    ReplaceSprite: 1
+    Texture: {fileID: 2800000, guid: 8e70c58029294b888627ae467ea37f0f, type: 3}
+    SpriteRect:
+      serializedVersion: 2
+      x: 26
+      y: 28
+      width: 203
+      height: 198
+    Pivot: {x: 0.5, y: 0.5}
+    PixelsPerUnit: 128
+    Offset: {x: -0.0000076293945, y: -0.0000038146973, z: 0}
+    Rotation: 450
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/CAT-A06_v01_right@14
+    Cell: 0
+    Position: {x: 0, y: 0, z: 0}
+    Hidden: 1
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 0
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 63, y: 66, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 360
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/CAT-A06_v01_left@14
+    Cell: 0
+    Position: {x: 0, y: 0, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0.00000015039983, y: 1.7086719, z: 0}
+    Rotation: 0
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 63, y: 61, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 360
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 63, y: 58, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 0
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/CAT-A08_v01@7
+    Cell: 0
+    Position: {x: 0, y: 0, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0.73759836, y: -0.000000043933408, z: 0}
+    Rotation: 0
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonProps@0/CAT-P06_v01@1
+    Cell: 0
+    Position: {x: 0, y: 0, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: -0.79919827, y: 0.00000004421675, z: 0}
+    Rotation: 0
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 42, y: 61, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 180
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 44, y: 61, z: 0}
+    Hidden: 0
+    ReplaceSprite: 0
+    Texture: {fileID: 0}
+    SpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Pivot: {x: 0, y: 0}
+    PixelsPerUnit: 100
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 180
+    FlipX: 0
+    FlipY: 0
+  - Path: DungeonArchitecture@0/ArchitectureGrid@0/WallContour@0
+    Cell: 1
+    Position: {x: 43, y: 61, z: 0}
+    Hidden: 0
+    ReplaceSprite: 1
+    Texture: {fileID: 2800000, guid: a9a411388b044b9296c2e85a2018d548, type: 3}
+    SpriteRect:
+      serializedVersion: 2
+      x: 173
+      y: 173
+      width: 165
+      height: 82.5
+    Pivot: {x: 0.5, y: 0.5}
+    PixelsPerUnit: 128
+    Offset: {x: 0, y: 0, z: 0}
+    Rotation: 0
+    FlipX: 0
+    FlipY: 0
+  Additions: []

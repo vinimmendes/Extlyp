@@ -28,6 +28,7 @@ namespace CyberExtraction.Camp
             if(amount<=0 || p.ExpeditionExperience>=CharacterProgressionRules.MaxPendingExperience) return true;
             amount=(int)Math.Min(amount,CharacterProgressionRules.MaxPendingExperience-p.ExpeditionExperience);
             p.ExpeditionRewardKeys.Add(grant.Key); p.ExpeditionExperience+=amount;
+            if(grant.Key.StartsWith("death:",StringComparison.Ordinal)) p.Statistics.CombatXp+=amount;
             if(grant.Exploration) p.ExpeditionExplorationExperience+=amount;
             return true;
         }

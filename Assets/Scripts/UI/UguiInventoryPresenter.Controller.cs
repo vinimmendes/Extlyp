@@ -21,6 +21,8 @@ namespace CyberExtraction.UI
             var item=PresentedItem(slot);
             bool twice=!showCommerce && lastPointerSlot==slot && !item.Empty && item.Equals(lastPointerItem) &&
                 Time.unscaledTime-lastPointerTime<=.35f && Vector2.Distance(data.position,lastPointerPosition)<=32*UiLayout.Scale;
+            if(Debug.isDebugBuild && !showCommerce && lastPointerSlot==slot && !item.Empty && item.Equals(lastPointerItem) && !twice)
+                Debug.Log("[Equipamento] Segundo clique/toque fora da janela: "+((Time.unscaledTime-lastPointerTime)*1000).ToString("0")+" ms (limite 350 ms); deslocamento "+Vector2.Distance(data.position,lastPointerPosition).ToString("0")+" px.");
             lastPointerSlot=twice ? null : slot; lastPointerItem=item;
             lastPointerTime=Time.unscaledTime; lastPointerPosition=data.position;
             if(twice && QuickEquipment(slot,item)) return;
@@ -51,6 +53,7 @@ namespace CyberExtraction.UI
             }
             // Reuse the authoritative exchange, including its existing validation,
             // base acknowledgement and timed/cancellable expedition action.
+            if(Debug.isDebugBuild) Debug.Log("[Equipamento] Duplo clique/toque reconhecido; solicitando troca "+(CampController.Active ? "na base." : "na expedicao (acao de 2 s)."));
             window.ExchangeEquipment(bag,target);
             selectedBag=selectionSlot=-1; selectedItem=selectionItem=default;
             equipmentNotice=CampController.Active ? "Aguardando confirmação do servidor…" : "Troca solicitada. Fique parado para concluir.";

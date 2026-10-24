@@ -85,7 +85,7 @@ namespace CyberExtraction.Players
                 var target=meleeCandidates[i];
                 if(!MeleeTarget(target,weapon) || !meleeHitIds.Add(target.NetworkObjectId)) continue;
                 // One application per entity, independent of its collider/component count.
-                target.ServerTakeDamage(Mathf.RoundToInt(weapon.Damage*inv.MeleeDamageMultiplier),inv);
+                target.ServerTakeDamage(Mathf.RoundToInt(weapon.Damage*inv.MeleeDamageMultiplier),inv,origin:DamageOrigin.Player(inv,weapon.Item));
                 hitCount++;
             }
             DungeonBreakable.ServerMelee(origin,MeleeAngle.Value,weapon.Range,weapon.StillHalfAngle,gameObject.scene);

@@ -32,3 +32,14 @@ Skills aplicadas: `level-design`, `unity-tilemap-2d`, `unity-csharp-scripting` e
 ## Verificação e limites
 
 Revisão estática do carregamento, dos encaixes e do isolamento da apresentação. Foram inspecionadas as 32 imagens e preparados seus metadados RGBA. Isso não confirma a leitura em partida: repetição modular, junções dos cantos, altura visual, contraste sob fog e escala no Android dependem da primeira avaliação prática do usuário. Não foram iniciados Unity, testes automatizados ou builds para esta entrega.
+
+## Correção dos encaixes — 22/10/2026
+
+As capturas do usuário mostraram cantos desconectados e faces de parede interrompidas. A comparação do seletor com os recortes originais identificou:
+
+- A02 tem abertura canônica para norte/oeste; o seletor a tratava como sul/leste, invertendo os quatro cantos em 180 graus. A correção de fonte de A02_v02 continua aplicada.
+- A02_v03 contém um recesso emoldurado, incompatível com o L aberto das outras duas variantes. O asset foi preservado, mas excluído da seleção de contorno.
+- As terminações com piso a leste/sul/oeste ou norte/leste/oeste estavam giradas para o lado contrário. Células com quatro lados expostos agora usam uma peça fechada de pilar.
+- Paredes de uma célula com piso em lados opostos recebiam uma única face. Agora duas metades de A01 ocupam a mesma célula, cada qual voltada para seu piso, sem uma imagem opaca cobrir a outra.
+
+Alteração exclusiva de apresentação em `DungeonArchitecture`: sem mudar máscara, colisores, navegação, visão ou PNGs. Conferência estática do fluxo e do diff; sem execução de testes, Unity ou build nesta correção. Avaliação visual pendente no jogo: cantos das quatro orientações, terminações e divisórias finas, incluindo os trechos das cinco capturas.

@@ -11,7 +11,7 @@ public static class PlayerUiAssetPreparation
 {
     static bool importing;
     static PlayerUiAssetPreparation() { EditorApplication.delayCall+=Prepare; }
-    [MenuItem("Cyber Extraction/Interface/Preparar fontes e atlas uGUI")]
+    [MenuItem("Cyber Extraction/Avançado/Preparação de assets/Fontes e atlas da interface")]
     public static void Prepare()
     {
         if(EditorApplication.isPlayingOrWillChangePlaymode || EditorApplication.isCompiling || EditorApplication.isUpdating)

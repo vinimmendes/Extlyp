@@ -29,7 +29,7 @@ namespace CyberExtraction.Match
             var details=root.AddComponent<DungeonDetails>();
             try { details.Load(); details.DressRooms(); details.DressClusters(); }
             catch(Exception exception)
-            { root.SetActive(false); Destroy(root); Debug.LogWarning("Catacumbas: detalhes ambientais omitidos. "+exception.Message); }
+            { root.SetActive(false); DungeonArtLifetime.Release(root); Debug.LogWarning("Catacumbas: detalhes ambientais omitidos. "+exception.Message); }
         }
         static string Id(int family,int variant) => "CAT-D"+family.ToString("00")+"_v"+variant.ToString("00");
         void Load()
@@ -300,6 +300,6 @@ namespace CyberExtraction.Match
                     " grupos de sala e "+corridorGroups+"/"+corridorTarget+
                     " de corredor. Grupos sem espaço seguro omitidos; reservas preservadas.");
         }
-        void OnDestroy() { foreach(var sprite in owned) if(sprite!=null) Destroy(sprite); }
+        void OnDestroy() { foreach(var sprite in owned) if(sprite!=null) DungeonArtLifetime.Release(sprite); }
     }
 }

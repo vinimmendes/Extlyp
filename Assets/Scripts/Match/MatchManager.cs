@@ -256,7 +256,7 @@ namespace CyberExtraction.Match
         {
             foreach (var inv in PlayerInventory.All)
             {
-                if (inv != null && inv.IsAlive) { if(inv.NetworkObject.IsPlayerObject) { var join=CyberExtraction.UI.NetworkBootstrap.Instance.RequestFor(inv.OwnerClientId); if(join!=null) inv.ServerLoseExpedition(); } inv.ServerSetStatus(PlayerStatus.TimeUp); }
+                if (inv != null && inv.IsAlive) { if(inv.NetworkObject.IsPlayerObject) { var join=CyberExtraction.UI.NetworkBootstrap.Instance.RequestFor(inv.OwnerClientId); if(join!=null) inv.ServerLoseExpedition(CyberExtraction.Camp.ExpeditionOutcome.TimeUp); } inv.ServerSetStatus(PlayerStatus.TimeUp); }
             }
             State.Value = (byte)MatchState.Ended;
             timeLeft = GameConfig.ResultsSeconds;

@@ -8,7 +8,7 @@ using CyberExtraction.Enemies;
 
 public static class PlantChecks
 {
-    [MenuItem("Cyber Extraction/Plantas/Verificar regras e recursos")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Regras e recursos das plantas")]
     public static void Run()
     {
         int count = 0;

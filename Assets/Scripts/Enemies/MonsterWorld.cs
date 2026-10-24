@@ -92,7 +92,7 @@ namespace CyberExtraction.Enemies
                             bool wall=(GameConfig.WallMask & (1<<hit.collider.gameObject.layer))!=0;
                             if(!wall && (victim==null || !victim.IsAlive)) continue;
                             impact=true; impactPoint=hit.centroid;
-                            if(victim!=null && e.Kind==MonsterEffectKind.AcidShot) victim.GetComponent<Health>().ServerTakeDamage(10,null,DamageKind.Environmental,"Corrosivo");
+                            if(victim!=null && e.Kind==MonsterEffectKind.AcidShot) victim.GetComponent<Health>().ServerTakeDamage(10,null,DamageKind.Environmental,"Corrosivo",DamageOrigin.Creature(CyberExtraction.Camp.ProfileSpecies.Acid));
                             break;
                         }
                     }
@@ -111,7 +111,7 @@ namespace CyberExtraction.Enemies
                     if(inv==null || !inv.IsAlive || Vector2.Distance(inv.transform.position,e.To)>e.Radius+.35f ||
                         Physics2D.Linecast(e.To,inv.transform.position,GameConfig.WallMask).collider!=null) continue;
                     if(e.Kind==MonsterEffectKind.Web) inv.ServerSlowUntil=Mathf.Max(inv.ServerSlowUntil,Time.time+1);
-                    else if(acidTick) inv.GetComponent<Health>().ServerTakeDamage(4,null,DamageKind.Environmental,"Corrosivo");
+                    else if(acidTick) inv.GetComponent<Health>().ServerTakeDamage(4,null,DamageKind.Environmental,"Corrosivo",DamageOrigin.Creature(CyberExtraction.Camp.ProfileSpecies.Acid));
                 }
             }
         }

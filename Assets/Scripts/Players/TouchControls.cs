@@ -21,12 +21,13 @@ namespace CyberExtraction.Players
         public bool AimHeld { get; private set; }
         public bool AimActive => aimId >= 0 || screenAimId >= 0;
         public bool FireHeld { get; private set; }
-        public bool SprintHeld => CanAct && sprintId>=0;
+        public bool SprintEnabled => CanAct && sprintEnabled;
         public bool PointerFireHeld=>!IsTouch && CanAct && GameInput.Fire && Mouse.current!=null && FireRect.Contains(Mouse.current.position.ReadValue());
         public bool ContainsHudPoint(Vector2 point)
         { return !CampController.Active && CanAct && (HudLayout.ScreenBounds(HudControl.Move).Contains(point) || HudLayout.ScreenBounds(HudControl.Aim).Contains(point) || HudLayout.ScreenBounds(HudControl.Sprint).Contains(point) || FireRect.Contains(point)); }
 
         int moveId = -1, aimId = -1, fireId = -1, sprintId = -1;
+        bool sprintEnabled;
         // IDs crus do Touchscreen sao separados dos IDs de ponteiro do uGUI.
         int screenAimId = -1;
         Vector2 moveOrigin, moveCur, aimOrigin, aimCur, fireCur;
@@ -69,6 +70,7 @@ namespace CyberExtraction.Players
             moveId = aimId = fireId = sprintId = screenAimId = -1;
             Move = Aim = Vector2.zero;
             AimHeld = FireHeld = false;
+            sprintEnabled = false;
         }
 
         private void Update()
@@ -97,7 +99,7 @@ namespace CyberExtraction.Players
                     // O botao tem prioridade sobre a metade direita. O dedo conserva
                     // sua funcao ate ser solto, mesmo se atravessar outra area.
                     if (HudLayout.ScreenBounds(HudControl.Sprint).Contains(pos))
-                    { if(sprintId<0) sprintId=id; }
+                    { if(sprintId<0) { sprintId=id; sprintEnabled=!sprintEnabled; } }
                     else if (FireRect.Contains(pos))
                     {
                         if (fireId < 0) { fireId = id; fireCur = pos; }
@@ -161,7 +163,7 @@ namespace CyberExtraction.Players
             if(control==HudControl.Move && moveId<0) { moveId=id; moveOrigin=moveCur=point; }
             else if(control==HudControl.Aim && aimId<0 && screenAimId<0) { aimId=id; aimOrigin=aimCur=point; }
             else if(control==HudControl.Fire && fireId<0) { fireId=id; fireCur=point; }
-            else if(control==HudControl.Sprint && sprintId<0) sprintId=id;
+            else if(control==HudControl.Sprint && sprintId<0) { sprintId=id; sprintEnabled=!sprintEnabled; }
             ReadHeldPointers();
         }
         public void MovePointer(int id,Vector2 point)
@@ -213,7 +215,7 @@ namespace CyberExtraction.Players
             if(activeWeapon!=null && activeWeapon.IsMelee) GUI.DrawTexture(fireIcon,Items.MeleeWeaponArt.Get(activeWeapon.Item).texture,ScaleMode.ScaleToFit,true);
             else HudArt.Icon(fireIcon,HudSymbol.Bullet,HudTheme.Text);
             GUI.Label(new Rect(fire.x+6,fire.y+fire.height*.67f,fire.width-12,fire.height*.22f),activeWeapon!=null && activeWeapon.IsMelee ? "ATACAR" : "ATIRAR",HudTheme.Label(Mathf.RoundToInt(fire.width*.145f),TextAnchor.MiddleCenter));
-            var sprint=HudLayout.Bounds(HudControl.Sprint); HudArt.Circle(sprint,held:SprintHeld);
+            var sprint=HudLayout.Bounds(HudControl.Sprint); HudArt.Circle(sprint,held:SprintEnabled);
             HudArt.Icon(new Rect(sprint.x+sprint.width*.25f,sprint.y+sprint.height*.25f,sprint.width*.5f,sprint.height*.5f),HudSymbol.Sprint,HudTheme.Text);
             GUI.Label(new Rect(sprint.x,sprint.yMax+4,sprint.width,24),"CORRER",HudTheme.Label(HudLayout.TextSize(HudControl.Sprint,13),TextAnchor.UpperCenter));
         }

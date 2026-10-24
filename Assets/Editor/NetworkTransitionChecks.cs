@@ -15,7 +15,7 @@ public static class NetworkTransitionChecks
     static void Check(bool ok,string description)
     { if(!ok) throw new Exception("NETWORK TRANSITION FAIL: "+description); passed++; }
 
-    [MenuItem("Cyber Extraction/Verificar transicao de conexao")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Transição de conexão")]
     public static void Run()
     {
         if(EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Saia do Play para verificar isoladamente.");

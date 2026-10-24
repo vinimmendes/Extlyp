@@ -15,7 +15,7 @@ namespace CyberExtraction.UI
         {
             view=screen;
             forestBackground=screen.Backdrop.texture as Texture2D;
-            screen.EnvironmentPortraits[0].texture=ExpeditionArtwork.For(ExpeditionMap.Large);
+            screen.EnvironmentPortraits[0].texture=ExpeditionArtwork.For(ExpeditionMap.Dungeon);
         }
         void Update()
         {
@@ -26,7 +26,7 @@ namespace CyberExtraction.UI
             int next=ExpeditionMenu.ChoosingEnvironment ? 0 : bootstrap.ConnectionBusy ? 1 : bootstrap.ConnectionUnavailable ? 2 : 3;
             float width=UiLayout.Width;
             UguiGeometry.Place(view.Panel,new Rect(0,0,width,600));
-            string key=next+"|"+width+"|"+bootstrap.ConnectionMessage+"|"+CampSession.Synchronized+"|"+CampSession.Pending+"|"+HudTheme.Appearance+"|"+bootstrap.IsTestEnvironment+"|"+bootstrap.TestMap+"|"+bootstrap.TestBots;
+            string key=next+"|"+width+"|"+bootstrap.ConnectionMessage+"|"+CampSession.Synchronized+"|"+CampSession.Pending+"|"+HudTheme.Appearance+"|"+bootstrap.IsTestEnvironment+"|"+bootstrap.TestMap+"|"+bootstrap.TestBots+"|"+bootstrap.CheckingTestAccess+"|"+bootstrap.CanEnterTests;
             if(key==signature) return; signature=key; UguiTheme.Apply(view.gameObject);
             foreach(var b in view.Buttons) { b.gameObject.SetActive(false); b.onClick.RemoveAllListeners(); }
             bool approved=next==0;
@@ -103,12 +103,12 @@ namespace CyberExtraction.UI
             {
                 view.Body.text="O progresso da base e os recursos de teste ficam separados.";
                 Button(0,"Entrar na base",()=>bootstrap.ChooseEnvironment(CampEnvironment.Normal),0);
-                Button(1,"Entrar para testar",()=>bootstrap.ChooseEnvironment(CampEnvironment.Test),1,GameConfig.AllowQuickTest);
+                Button(1,"Entrar para testar",()=>bootstrap.ChooseEnvironment(CampEnvironment.Test),1,bootstrap.CanEnterTests);
                 float cardWidth=(width-72)/2;
                 for(int i=0;i<2;i++) UguiGeometry.Place((RectTransform)view.Buttons[i].transform,new Rect(42+i*(cardWidth+24),312,cardWidth-36,50));
             }
             else if(next==1)
-            { view.Body.text=bootstrap.Searching ? "Procurando uma sala disponível..." : "Preparando conexão..."; Button(0,"Cancelar",bootstrap.CancelConnectionSearch,0,bootstrap.Searching); }
+            { view.Body.text=bootstrap.CheckingTestAccess ? "Verificando acesso ao servidor..." : bootstrap.Searching ? "Procurando uma sala disponível..." : "Preparando conexão..."; Button(0,"Cancelar",bootstrap.CancelConnectionSearch,0,bootstrap.Searching); }
             else if(next==2)
             { view.Body.text=bootstrap.ConnectionMessage; Button(0,"Tentar novamente",bootstrap.RetryConnection,0); Button(1,"Voltar",ExpeditionMenu.Return,1); }
             else
@@ -119,7 +119,7 @@ namespace CyberExtraction.UI
                 if(bootstrap.TestMap==ExpeditionMap.Dungeon) view.Body.text="Catacumbas dos Afogados\n8 participantes · 10 minutos · PvPvE\n\nExplore, saqueie e prepare uma fuga pela escadaria, pelo poço ou pelo canal. Arte provisória.";
                 bool ready=CampSession.Synchronized && !CampSession.Pending;
                 Button(0,"Preparar mochila",ExpeditionMenu.PrepareInventory,0,ready); Button(1,"Partir",bootstrap.BeginExpedition,1,ready); Button(2,"Voltar à base",ExpeditionMenu.Return,2);
-                Button(3,"Mapa: "+MapBuilder.MapName(bootstrap.TestMap),()=>bootstrap.ConfigureExpedition(bootstrap.IsTestEnvironment ? (ExpeditionMap)(((int)bootstrap.TestMap+1)%3) : bootstrap.TestMap==ExpeditionMap.Large ? ExpeditionMap.Dungeon : ExpeditionMap.Large,bootstrap.TestBots),3,ready);
+                Button(3,"Mapa: "+MapBuilder.MapName(bootstrap.TestMap),()=>bootstrap.ConfigureExpedition(ExpeditionMenu.NextMap(bootstrap.TestMap,bootstrap.IsTestEnvironment),bootstrap.TestBots),3,ready);
                 if(bootstrap.IsTestEnvironment) Button(4,"Bots: "+bootstrap.TestBots,()=>bootstrap.ConfigureExpedition(bootstrap.TestMap,(bootstrap.TestBots+1)%MapBuilder.CapacityFor(bootstrap.TestMap)),4,ready);
                 float actionsY=412;
                 UguiGeometry.Place((RectTransform)view.Buttons[3].transform,new Rect(x,316,bootstrap.IsTestEnvironment ? w*.65f-6 : w,42));
@@ -174,9 +174,9 @@ namespace CyberExtraction.UI
                 title.font=UiFontAssets.Bold; title.fontSize=34*scale; title.alignment=TMPro.TextAlignmentOptions.Center;
                 description.font=UiFontAssets.Regular; description.fontSize=23*scale; description.alignment=TMPro.TextAlignmentOptions.Center;
                 title.text=i==0 ? "BASE NORMAL" : "ACAMPAMENTO DE TESTE";
-                description.text=i==0 ? "Sua mochila, seu baú e a Floresta Velha.\nProgresso real." : "Recursos temporários e laboratório.\nSeu progresso real fica preservado.";
+                description.text=i==0 ? "Sua mochila, seu baú e as Catacumbas.\nProgresso real." : "Recursos temporários e laboratório.\nSeu progresso real fica preservado.";
                 var button=view.Buttons[i]; button.gameObject.SetActive(true);
-                button.interactable=i==0 || GameConfig.AllowQuickTest;
+                button.interactable=!bootstrap.CheckingTestAccess && (i==0 || bootstrap.CanEnterTests);
                 Place((RectTransform)button.transform,targets[i]);
                 var caption=button.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
                 caption.text=i==0 ? "Entrar na base" : "Entrar para testar";

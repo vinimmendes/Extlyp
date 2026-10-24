@@ -8,7 +8,7 @@ using CyberExtraction.Items;
 
 public static class ItemIconChecks
 {
-    [MenuItem("Cyber Extraction/Itens/Verificar icones")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Ícones dos itens")]
     public static void Run()
     {
         var library = Resources.Load<ItemIconLibrary>("ItemIcons");

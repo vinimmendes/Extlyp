@@ -8,11 +8,11 @@ namespace CyberExtraction.UI
         static AudioClip biteSound;
         public static Rect FishingPanelBounds
         {
-            get { float width=Mathf.Min(560,UiLayout.Width-32); return new Rect((UiLayout.Width-width)*.5f,40,width,520); }
+            get { float width=Mathf.Min(1020,UiLayout.Width-32); return new Rect((UiLayout.Width-width)*.5f,32,width,536); }
         }
         public static Rect FishingControlBounds
         {
-            get { var panel=FishingPanelBounds; return new Rect(panel.x+panel.width*.49f,panel.y+250,panel.width*.45f,100); }
+            get { var p=FishingPanelBounds; return new Rect(p.x+p.width*.65f,p.y+352,p.width*.32f,66); }
         }
         public static Rect CookingPanelBounds
         {
@@ -63,31 +63,7 @@ namespace CyberExtraction.UI
         }
         public static bool FishingPanel(FishingPresentation view,bool nibble)
         {
-            Rect panel=FishingPanelBounds;
-            GUI.Box(panel,GUIContent.none);
-            GUI.Label(new Rect(panel.x+24,panel.y+16,panel.width-48,32),"PESCA",HudTheme.Label(24,TextAnchor.MiddleCenter));
-            string heading=view.Phase==1 ? "AGUARDE A FISGADA" : view.Phase==2 ? "FISGOU!" : "MANTENHA O PEIXE NA FAIXA";
-            GUI.Label(new Rect(panel.x+20,panel.y+54,panel.width-40,32),heading,HudTheme.Label(18,TextAnchor.MiddleCenter));
-            Rect track=new Rect(panel.x+panel.width*.17f,panel.y+106,72,286);
-            if(view.Phase==3) Fishing(track,view.Bar,view.Fish,view.Zone,view.Progress);
-            else
-            {
-                Bobber(new Rect(panel.x+28,panel.y+112,panel.width*.38f,270),nibble,view.Phase==2,view.PhaseAge);
-                if(view.Phase==2)
-                    GUI.Label(new Rect(panel.x+30,panel.y+125,panel.width*.36f,50),"!",HudTheme.Label(36,TextAnchor.MiddleCenter));
-            }
-            Rect control=FishingControlBounds;
-            string state=view.Phase==1 ? (nibble ? "Beliscando..." : "A boia vai afundar.") : view.Phase==2 ? "Puxe agora!" :
-                Mathf.Abs(view.Fish-view.Bar)<=view.Zone*.5f ? "NA FAIXA" : "FORA DA FAIXA";
-            GUI.Label(new Rect(control.x,panel.y+112,control.width,45),state,HudTheme.Label(20,TextAnchor.MiddleCenter));
-            string help=view.Phase==1 ? "Espere a boia afundar antes de puxar." : view.Phase==2 ? "Toque no botao ou aperte ESPACO / A." : "Segure para subir.\nSolte para descer.";
-            GUI.Label(new Rect(control.x,panel.y+165,control.width,72),help,HudTheme.Label(18,TextAnchor.MiddleCenter));
-            GUI.Box(control,GUIContent.none);
-            if(view.Held) HudTheme.Fill(new Rect(control.x+3,control.y+3,control.width-6,control.height-6),Color.Lerp(HudTheme.Panel,HudTheme.Good,.4f));
-            GUI.Label(control,view.Phase<3 ? "FISGAR" : view.Held ? "RECOLHENDO" : "SEGURAR",HudTheme.Label(22,TextAnchor.MiddleCenter));
-            GUI.Label(new Rect(control.x,control.yMax+8,control.width,40),Players.GameInput.TouchActive ? "Toque e segure" : "ESPACO / A / mouse",HudTheme.Label(15,TextAnchor.MiddleCenter));
-            GUI.Label(new Rect(panel.x+24,panel.y+408,panel.width-48,38),view.Phase==3 ? "Preencha o medidor para capturar." : "Observe a boia. Nao puxe antes do sinal.",HudTheme.Label(16,TextAnchor.MiddleCenter));
-            return GUI.Button(new Rect(panel.x+24,panel.yMax-60,panel.width-48,44),"Cancelar pesca");
+            return FishingPanelView.Draw(view);
         }
         public static void BiteCue()
         {

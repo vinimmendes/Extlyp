@@ -8,6 +8,8 @@ namespace CyberExtraction.Match
     {
         [SerializeField, Tooltip("Piloto visual da serraria. Desative antes de iniciar a partida para usar o mapa anterior.")]
         bool sawmillTerrainPilot=true;
+        [SerializeField, Tooltip("Rework visual somente do Ossário inferior. Desative e regenere o mapa para rever a arte anterior.")]
+        bool catacombOssuaryReworkPilot=true;
         readonly List<TerrainRoad> terrainRoads=new List<TerrainRoad>();
         public static MapBuilder Instance { get; private set; }
         public static ExpeditionMap Current { get; private set; } = ExpeditionMap.Test;
@@ -76,11 +78,28 @@ namespace CyberExtraction.Match
         }
         static Vector2[] MakeLoot() { var points=new List<Vector2>(); for(int i=0;i<largeSites.Length;i++) { points.Add(RuinPoint(i,new Vector2(0,-3))); points.Add(RuinPoint(i,new Vector2(4,-2))); } foreach(var spawn in largeSpawns) points.Add(spawn+new Vector2(0,-12)); return points.ToArray(); }
         GameObject world;
+        string builtDungeonContent;
+        public Transform EditingWorld=>world!=null ? world.transform : null;
+        #if UNITY_EDITOR
+        public static MapBuilder CreateLegacyAuthoringReference()
+        {
+            if(Application.isPlaying || DungeonMapPublication.Current!=null)
+                throw new System.InvalidOperationException("A referência anterior só é criada fora do Play, antes da primeira publicação.");
+            var saved=Current;
+            var holder=new GameObject("Catacumbas_LegacyMigration");
+            var builder=holder.AddComponent<MapBuilder>();
+            try { Current=ExpeditionMap.Dungeon; builder.Rebuild(); return builder; }
+            catch { DestroyImmediate(holder); throw; }
+            finally { Current=saved; }
+        }
+        #endif
         void Awake() { Instance=this; Current=ExpeditionMap.Test; LayoutSeed=43127; Rebuild(); }
         public static void Configure(ExpeditionMap map,int layoutSeed=43127)
         {
             if(map!=ExpeditionMap.Test && map!=ExpeditionMap.Large && map!=ExpeditionMap.Dungeon) return;
-            bool changed=Current!=map || LayoutSeed!=layoutSeed; Current=map; LayoutSeed=layoutSeed;
+            if(map==ExpeditionMap.Dungeon) DungeonLayout.EnsurePublishedContent();
+            bool changed=Current!=map || LayoutSeed!=layoutSeed || map==ExpeditionMap.Dungeon && Instance!=null && Instance.builtDungeonContent!=DungeonMapPublication.ContentHash;
+            Current=map; LayoutSeed=layoutSeed;
             if(Instance!=null && (changed || Instance.world==null)) Instance.Rebuild();
         }
         void Rebuild()
@@ -99,6 +118,7 @@ namespace CyberExtraction.Match
             Block("East",new Vector2(Width/2+.5f,0),new Vector2(1,Height),Color.gray,-5,true);
             }
             if(Current==ExpeditionMap.Dungeon) BuildDungeon(); else if(Current==ExpeditionMap.Test) BuildTest(); else BuildLarge();
+            builtDungeonContent=Current==ExpeditionMap.Dungeon ? DungeonMapPublication.ContentHash : null;
             if(Current==ExpeditionMap.Test) foreach(var exit in ExtractionPoints)
             {
                 var go=Block("Extraction",exit,new Vector2(5,3.5f),new Color(.2f,.8f,.4f,.35f),-7);
@@ -107,6 +127,8 @@ namespace CyberExtraction.Match
             Physics2D.SyncTransforms();
             if(Current==ExpeditionMap.Large && sawmillTerrainPilot)
                 SawmillTerrain.Build(world.transform,terrainRoads,OpenTerrain,LayoutSeed);
+            if(Current!=ExpeditionMap.Dungeon || DungeonMapPublication.Current==null)
+                MapVisualEditRuntime.Apply(world.transform,Current);
         }
         void BuildTest()
         {

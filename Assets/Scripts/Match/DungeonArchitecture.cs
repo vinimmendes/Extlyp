@@ -7,12 +7,13 @@ using CyberExtraction.Core;
 namespace CyberExtraction.Match
 {
     // Presentation only: the authoritative floor, cover and wall masks remain in DungeonLayout.
-    public sealed class DungeonArchitecture : MonoBehaviour
+    public sealed class DungeonArchitecture : MonoBehaviour,IMapSpritePalette
     {
         [Serializable] sealed class ArtManifest { public ArtEntry[] assets; }
         [Serializable] sealed class ArtEntry { public string id; public float x,y,width,height,rotation; }
         readonly List<UnityEngine.Object> owned=new List<UnityEngine.Object>();
         readonly Dictionary<string,Sprite> sprites=new Dictionary<string,Sprite>();
+        public IEnumerable<Sprite> PaletteSprites=>sprites.Values;
         readonly Dictionary<string,float> sourceRotations=new Dictionary<string,float>();
         readonly HashSet<int> pillarCells=new HashSet<int>();
         readonly HashSet<Vector3Int> portals=new HashSet<Vector3Int>();
@@ -27,7 +28,7 @@ namespace CyberExtraction.Match
             var art=root.AddComponent<DungeonArchitecture>();
             try { art.Load(); art.BuildWalls(); art.BuildPillars(); art.BuildPortals(); art.BuildRiverMouth(); art.BuildWallDetails(); art.Commit(); }
             catch(Exception exception)
-            { root.SetActive(false); Destroy(root); Debug.LogWarning("Catacumbas: arquitetura anterior preservada. "+exception.Message); }
+            { root.SetActive(false); DungeonArtLifetime.Release(root); Debug.LogWarning("Catacumbas: arquitetura anterior preservada. "+exception.Message); }
         }
         T Own<T>(T asset) where T:UnityEngine.Object { owned.Add(asset); return asset; }
         void Load()
@@ -47,6 +48,8 @@ namespace CyberExtraction.Match
                 int h=Mathf.Clamp(Mathf.CeilToInt(entry.height*texture.height),1,texture.height-y);
                 sprites.Add(entry.id,Own(Sprite.Create(texture,new Rect(x,y,w,h),new Vector2(.5f,.5f),128,0,SpriteMeshType.FullRect)));
                 sourceRotations.Add(entry.id,entry.rotation);
+                if(entry.id.StartsWith("CAT-A01_",StringComparison.Ordinal))
+                    sprites.Add(entry.id+"_face",Own(Sprite.Create(texture,new Rect(x,y,w,h*.5f),new Vector2(.5f,.5f),128,0,SpriteMeshType.FullRect)));
                 if(entry.id.StartsWith("CAT-A06_",StringComparison.Ordinal))
                 {
                     float side=w*.18f;
@@ -89,6 +92,10 @@ namespace CyberExtraction.Match
             var go=new GameObject("WallContour"); go.transform.SetParent(grid.transform,false);
             var map=go.AddComponent<Tilemap>(); var renderer=go.AddComponent<TilemapRenderer>(); renderer.sortingOrder=-5;
             if(SpriteFactory.SpriteMaterial!=null) renderer.sharedMaterial=SpriteFactory.SpriteMaterial;
+            var oppositeObject=new GameObject("WallOppositeContour"); oppositeObject.transform.SetParent(grid.transform,false);
+            var opposite=oppositeObject.AddComponent<Tilemap>();
+            var oppositeRenderer=oppositeObject.AddComponent<TilemapRenderer>(); oppositeRenderer.sortingOrder=-5;
+            if(SpriteFactory.SpriteMaterial!=null) oppositeRenderer.sharedMaterial=SpriteFactory.SpriteMaterial;
             var tileCache=new Dictionary<string,Tile>();
             for(int y=0;y<DungeonLayout.GridHeight;y++) for(int x=0;x<DungeonLayout.GridWidth;x++)
             {
@@ -96,6 +103,14 @@ namespace CyberExtraction.Match
                 int mask=0,first=-1,exposed=0;
                 for(int d=0;d<4;d++) if(Floor(x+directions[d].x,y+directions[d].y))
                 { mask|=1<<d; if(first<0) first=d; exposed++; }
+                if(mask==5 || mask==10)
+                {
+                    // A one-cell partition has two exposed faces. Each owns half the cell,
+                    // so an opaque full sprite cannot paint over the opposite face.
+                    SetWallTile(map,tileCache,x,y,1,(2-first)*90,true);
+                    SetWallTile(opposite,tileCache,x,y,1,-first*90,true);
+                    continue;
+                }
                 int family=1; float angle=first>=0 ? (2-first)*90 : 0;
                 if(exposed==0)
                 {
@@ -106,20 +121,32 @@ namespace CyberExtraction.Match
                     family=3; angle=(1-diagonal)*90;
                 }
                 else if(exposed==2 && mask!=5 && mask!=10)
-                { family=2; angle=mask==3 ? 90 : mask==6 ? 0 : mask==12 ? 270 : 180; }
-                else if(exposed>=3)
-                { family=4; angle=mask==7 ? 0 : mask==14 ? 90 : mask==13 ? 180 : 270; }
-                string id=Id(family,Variant(family,x,y));
-                if(!tileCache.TryGetValue(id,out var tile))
                 {
-                    var sprite=sprites[id]; tile=Own(ScriptableObject.CreateInstance<Tile>());
-                    tile.sprite=sprite; tile.colliderType=Tile.ColliderType.None;
-                    tile.transform=Matrix4x4.Scale(new Vector3(1/sprite.bounds.size.x,1/sprite.bounds.size.y,1));
-                    tileCache.Add(id,tile);
+                    // A02's canonical opening faces north/west; A01's face points south.
+                    family=2; angle=mask==3 ? 270 : mask==6 ? 180 : mask==12 ? 90 : 0;
                 }
-                var cell=new Vector3Int(x,y,0); map.SetTile(cell,tile); map.SetTileFlags(cell,TileFlags.None);
-                map.SetTransformMatrix(cell,Matrix4x4.Rotate(Quaternion.Euler(0,0,angle+sourceRotations[id]))*tile.transform);
+                else if(exposed==3)
+                { family=4; angle=mask==7 ? 0 : mask==14 ? 270 : mask==13 ? 180 : 90; }
+                else if(exposed==4)
+                { family=7; angle=0; } // An isolated stone needs a closed outline, not a three-sided cap.
+                SetWallTile(map,tileCache,x,y,family,angle);
             }
+        }
+        void SetWallTile(Tilemap map,Dictionary<string,Tile> cache,int x,int y,int family,float angle,bool halfFace=false)
+        {
+            // A02_v03 depicts a framed recess, not an open L; keep it out of contour selection.
+            int variant=family==2 ? (Variant(family,x,y)-1)%2+1 : Variant(family,x,y);
+            string id=Id(family,variant),key=id+(halfFace ? "_face" : "");
+            if(!cache.TryGetValue(key,out var tile))
+            {
+                var sprite=sprites[key]; tile=Own(ScriptableObject.CreateInstance<Tile>());
+                tile.sprite=sprite; tile.colliderType=Tile.ColliderType.None;
+                tile.transform=Matrix4x4.TRS(halfFace ? new Vector3(0,-.25f,0) : Vector3.zero,Quaternion.identity,
+                    new Vector3(1/sprite.bounds.size.x,(halfFace ? .5f : 1)/sprite.bounds.size.y,1));
+                cache.Add(key,tile);
+            }
+            var cell=new Vector3Int(x,y,0); map.SetTile(cell,tile); map.SetTileFlags(cell,TileFlags.None);
+            map.SetTransformMatrix(cell,Matrix4x4.Rotate(Quaternion.Euler(0,0,angle+sourceRotations[id]))*tile.transform);
         }
         void Place(int family,int variant,Vector2 cellCenter,Vector2 cells,float angle,int order)
         {
@@ -212,6 +239,6 @@ namespace CyberExtraction.Match
                 if(renderer.name.StartsWith("Entrance_",StringComparison.Ordinal) && int.TryParse(renderer.name.Substring(9),out int entry) && dressedEntrances.Contains(entry-1)) renderer.enabled=false;
             }
         }
-        void OnDestroy() { foreach(var asset in owned) if(asset!=null) Destroy(asset); }
+        void OnDestroy() { foreach(var asset in owned) if(asset!=null) DungeonArtLifetime.Release(asset); }
     }
 }

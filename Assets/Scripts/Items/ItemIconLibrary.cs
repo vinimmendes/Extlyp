@@ -21,6 +21,12 @@ namespace CyberExtraction.Items
         public static Sprite GetWorld(ItemId item)
         {
             if(!ItemCatalog.Available(item)) return null;
+            if(CyberExtraction.Match.MapBuilder.Current==CyberExtraction.Match.ExpeditionMap.Dungeon &&
+                (item==ItemId.DungeonCrank || item==ItemId.DungeonKey))
+            {
+                var authored=CyberExtraction.Match.DungeonMapPublication.ArtSprite(item==ItemId.DungeonCrank ? "CAT-E13_v01" : "CAT-E14_v01");
+                if(authored!=null) return authored;
+            }
             var explicitWorld=ItemVisualCatalog.World(item) ?? DungeonToolArt.GetWorld(item);
             if(explicitWorld!=null) return explicitWorld;
             // Training gear had no world art: its legacy representation is a solid square.

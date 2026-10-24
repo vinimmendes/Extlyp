@@ -23,7 +23,7 @@ namespace CyberExtraction.Match
             try { terrain.Load(); terrain.Paint(); }
             catch(Exception exception)
             {
-                root.SetActive(false); Destroy(root);
+                root.SetActive(false); DungeonArtLifetime.Release(root);
                 Debug.LogWarning("Catacumbas: pisos anteriores preservados. "+exception.Message);
             }
         }
@@ -182,7 +182,7 @@ namespace CyberExtraction.Match
         }
         static bool IsStone(int x,int y) => DungeonLayout.Index(x,y)>=0 && !DungeonLayout.IsBaseFloor(x,y) && !DungeonLayout.IsWater(x,y) && !DungeonLayout.IsLowCover(x,y);
         static bool WetFloor(int x,int y) => DungeonLayout.IsBaseFloor(x,y) && DungeonLayout.SectorAt(x,y)==4;
-        static void ConfigureRiverMaterial(Material material,RectInt cells)
+        public static void ConfigureRiverMaterial(Material material,RectInt cells)
         {
             if(material==null) return;
             var bounds=DungeonLayout.WorldRect(cells);
@@ -203,6 +203,6 @@ namespace CyberExtraction.Match
             material.SetVector("_RippleB",new Vector4(b.x,b.y,channel ? 7.4f : 6.1f,channel ? 4.6f : 3.1f));
         }
         void OnDestroy()
-        { foreach(var asset in owned) if(asset!=null) Destroy(asset); }
+        { foreach(var asset in owned) if(asset!=null) DungeonArtLifetime.Release(asset); }
     }
 }

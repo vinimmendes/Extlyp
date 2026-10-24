@@ -27,6 +27,7 @@ namespace CyberExtraction.UI
         HudAppearance theme=(HudAppearance)(-1);
         bool wasPending;
         bool wasOrganizationPending,wasOrganizationReady;
+        int equipmentTenths=-1;
         int selectedBag=-1;
         ItemStack selectedItem;
         string equipmentNotice;
@@ -86,6 +87,9 @@ namespace CyberExtraction.UI
                 }
             }
             if(!visible) return;
+            int nextEquipmentTenths=!CampController.Active && player!=null && player.ChangingEquipment
+                ? Mathf.Max(0,Mathf.CeilToInt((float)(player.EquipmentChangeEnds.Value-player.NetworkManager.ServerTime.Time)*10)) : -1;
+            if(equipmentTenths!=nextEquipmentTenths) { equipmentTenths=nextEquipmentTenths; dirty=true; }
             if(GameInput.UiDiscardPressed) DiscardControllerSelection();
             if(wasPending!=CampSession.Pending) { wasPending=CampSession.Pending; dirty=true; }
             bool organizing=window.OrganizationPending,organizeReady=window.CanOrganize(0);
@@ -184,6 +188,11 @@ namespace CyberExtraction.UI
         string Describe(ItemStack item,bool compare=true)
         {
             if(item.Empty) return "Vazio";
+            if(item.Item==ItemId.Worm)
+            {
+                var fishing=FishingDefinition.Current;
+                return "Minhoca · Isca de pesca · Aumenta a chance de peixe raro de "+fishing.RarePercent+"% para "+fishing.BaitRarePercent+"%. Uma unidade é consumida na mordida, mesmo se o peixe escapar. Pilha máxima: 20.";
+            }
             if(TreasureCatalog.IsDefined(item.Item)) return ItemCatalog.Name(item.Item)+" · Tesouro · Valor de venda: "+TreasureCatalog.Get(item.Item).SellPrice+" moedas/un. · Pilha máxima: 5";
             string text=ItemCatalog.Name(item.Item)+" ["+EquipmentCatalog.RarityName(item.Instance.Rarity)+"]";
             if(RecoveryRules.Bound(item)) text+=" · Recuperação: vinculado até extrair";

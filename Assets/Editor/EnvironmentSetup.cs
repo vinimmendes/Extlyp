@@ -7,7 +7,7 @@ using UnityEngine;
 public static class EnvironmentSetup
 {
     public const string Path="Assets/Resources/Environment/AbandonedProps.png";
-    [MenuItem("Cyber Extraction/Cenario/Preparar sprites do ambiente")]
+    [MenuItem("Cyber Extraction/Avançado/Preparação de assets/Sprites do ambiente")]
     public static void Prepare()
     {
         var importer=AssetImporter.GetAtPath(Path) as TextureImporter;

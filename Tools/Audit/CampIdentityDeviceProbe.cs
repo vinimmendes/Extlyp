@@ -44,9 +44,9 @@ namespace CyberExtraction.Camp
     // Fronteira DTO equivalente ao pedido de login; nenhuma regra do repositorio adaptada.
     public class CampJoinRequest
     {
-        public string Session,PublicKey,Signature,Nonce;
+        public string Session,PublicKey,Signature,Nonce,DungeonContentHash;
         public long IssuedTicks;
-        public bool CampOnly,RepairPier,Fish,CampSandbox,QuickTest;
+        public bool CampOnly,RepairPier,Fish,CampSandbox,QuickTest,TestAccessProbe;
         public byte Map;
         public int QuickBots;
         public object[] Actions;

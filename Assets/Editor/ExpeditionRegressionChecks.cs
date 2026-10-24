@@ -12,7 +12,7 @@ public static class ExpeditionRegressionChecks
     static readonly List<string> failures=new List<string>();
     static int checks;
     static void Verify(bool ok,string name) { checks++; if(!ok) { failures.Add(name); Debug.LogError("REGRESSION: "+name); } }
-    [MenuItem("Cyber Extraction/Verificar inventario e equipamento inicial")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Inventário e equipamento inicial")]
     public static void Run()
     {
         checks=0; failures.Clear(); CampRepository.Close();

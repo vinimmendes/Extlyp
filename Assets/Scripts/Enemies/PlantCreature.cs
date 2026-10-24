@@ -213,7 +213,7 @@ namespace CyberExtraction.Enemies
                 {
                     nextAttack = Now + PlantRules.AttackCooldown;
                     target.GetComponent<Health>()?.ServerTakeDamage(PlantRules.AttackDamage,creatureName:
-                        CurrentKind==PlantKind.AttackBulb ? "Bulbo de ataque" : "Servo vegetal");
+                        CurrentKind==PlantKind.AttackBulb ? "Bulbo de ataque" : "Servo vegetal",origin:DamageOrigin.Creature(DamageOrigin.Identify(gameObject)));
                 }
             }
             else if (Now < investigateUntil) goal = lastSeen;

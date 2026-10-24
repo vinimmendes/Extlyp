@@ -85,7 +85,8 @@ namespace CyberExtraction.Camp
             SaveKey(replacement);
             key=replacement;
         }
-        static byte[] Data(CampJoinRequest r)=>Encoding.UTF8.GetBytes(r.Session+"|"+r.IssuedTicks+"|"+r.Nonce+"|"+r.CampOnly+"|"+r.Map+"|"+r.QuickTest+"|"+r.QuickBots+"|"+r.CampSandbox);
+        static byte[] Data(CampJoinRequest r)=>Encoding.UTF8.GetBytes(r.Session+"|"+r.IssuedTicks+"|"+r.Nonce+"|"+r.CampOnly+"|"+r.Map+"|"+r.QuickTest+"|"+r.QuickBots+"|"+r.CampSandbox+"|"+r.TestAccessProbe+
+            (string.IsNullOrEmpty(r.DungeonContentHash) ? "" : "|"+r.DungeonContentHash));
         public static void Sign(CampJoinRequest r)
         {
             r.Session=Key.Session; r.PublicKey=Key.Public; r.IssuedTicks=DateTime.UtcNow.Ticks; r.Nonce=Guid.NewGuid().ToString("N");

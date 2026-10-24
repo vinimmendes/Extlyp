@@ -7,10 +7,10 @@ namespace CyberExtraction.Match
     public static class DungeonContent
     {
         public const float InteractionRange=2.3f;
-        public static readonly Vector2 CrankPedestal=DungeonLayout.Rooms[19].Center+new Vector2(0,3);
-        public static readonly Vector2 KeyPedestal=DungeonLayout.Rooms[10].Center+new Vector2(0,3);
-        public static readonly Vector2 ShortcutControl=DungeonLayout.CanalControl;
-        public static Vector2 Mechanism(int id) => id==3 ? ShortcutControl : id==2 ? DungeonLayout.CanalPoint(52,-50) : DungeonLayout.ExitPositions[id]+new Vector2(-2.5f,-2);
+        public static Vector2 CrankPedestal=>DungeonMapPublication.Point("CrankPedestal",DungeonLayout.Rooms[19].Center+new Vector2(0,3));
+        public static Vector2 KeyPedestal=>DungeonMapPublication.Point("KeyPedestal",DungeonLayout.Rooms[10].Center+new Vector2(0,3));
+        public static Vector2 ShortcutControl=>DungeonLayout.CanalControl;
+        public static Vector2 Mechanism(int id) => DungeonMapPublication.Point("Mechanism/"+id,id==3 ? ShortcutControl : id==2 ? DungeonLayout.CanalPoint(52,-50) : DungeonLayout.ExitPositions[id]+new Vector2(-2.5f,-2));
         public static float Duration(int id) => id==0 ? 6 : 4;
         public static string Action(int id) => id==0 ? "Erguer grade" : id==1 ? "Instalar manivela" : id==2 ? "Soltar corrente da barca" : "Liberar atalho da comporta";
         public static ItemId RequiredItem(int id) => id==1 ? ItemId.DungeonCrank : ItemId.DungeonKey;
@@ -28,9 +28,10 @@ namespace CyberExtraction.Match
             public readonly Vector2 Offset;
             public readonly bool Valuable;
             public readonly LootRisk Risk;
-            public LootSlot(int room,float x,float y,bool valuable=false,LootRisk risk=LootRisk.Low)
-            { Room=room; Offset=new Vector2(x,y); Valuable=valuable; Risk=risk; }
-            public Vector2 Position => DungeonLayout.ExplorationPoints[Room]+Offset;
+            public readonly int Id;
+            public LootSlot(int room,float x,float y,bool valuable=false,LootRisk risk=LootRisk.Low,int id=-1)
+            { Room=room; Offset=new Vector2(x,y); Valuable=valuable; Risk=risk; Id=id; }
+            public Vector2 Position => DungeonMapPublication.Point("Loot/"+Id,DungeonLayout.ExplorationPoints[Room]+Offset);
         }
         public static readonly LootSlot[] Loot={
             new LootSlot(8,-2,-1),new LootSlot(9,-2,-1),new LootSlot(10,-2,-1),new LootSlot(11,-2,-1),
@@ -44,8 +45,9 @@ namespace CyberExtraction.Match
             public readonly int Room;
             public readonly Vector2 Offset;
             public readonly MonsterKind Kind;
-            public Encounter(int room,float x,float y,MonsterKind kind) { Room=room; Offset=new Vector2(x,y); Kind=kind; }
-            public Vector2 Position => DungeonLayout.Rooms[Room].Center+Offset;
+            public readonly int Id;
+            public Encounter(int room,float x,float y,MonsterKind kind,int id=-1) { Room=room; Offset=new Vector2(x,y); Kind=kind; Id=id; }
+            public Vector2 Position => DungeonMapPublication.Point("Encounter/"+Id,DungeonLayout.Rooms[Room].Center+Offset);
         }
         public static readonly Encounter[] Encounters={
             new Encounter(18,-4,-3,MonsterKind.Weaver),new Encounter(18,4,-4,MonsterKind.Weaver),
@@ -56,5 +58,12 @@ namespace CyberExtraction.Match
             new Encounter(10,-3,0,MonsterKind.Stalker),new Encounter(11,1,4,MonsterKind.Stalker),
             new Encounter(9,0,-4,MonsterKind.Stalker),new Encounter(22,-4,-2,MonsterKind.Stalker),new Encounter(15,2,3,MonsterKind.Stalker),
             new Encounter(19,3,-3,MonsterKind.Shell),new Encounter(21,0,-2,MonsterKind.Shell),new Encounter(12,-5,0,MonsterKind.Shell)};
+        static DungeonContent()
+        {
+            for(int i=0;i<Loot.Length;i++)
+            { var p=Loot[i]; Loot[i]=new LootSlot(p.Room,p.Offset.x,p.Offset.y,p.Valuable,p.Risk,i); }
+            for(int i=0;i<Encounters.Length;i++)
+            { var p=Encounters[i]; Encounters[i]=new Encounter(p.Room,p.Offset.x,p.Offset.y,p.Kind,i); }
+        }
     }
 }

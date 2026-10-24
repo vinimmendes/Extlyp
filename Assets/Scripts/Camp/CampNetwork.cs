@@ -18,9 +18,15 @@ namespace CyberExtraction.Camp
         bool recovering,clientActive;
         readonly Dictionary<ulong,CampActivity> activities=new Dictionary<ulong,CampActivity>();
         readonly Dictionary<ulong,CampProgress> testProfiles=new Dictionary<ulong,CampProgress>();
-        bool IsTest(ulong client) { var join=bootstrap.RequestFor(client); return join!=null && join.CampOnly && join.CampSandbox && CyberExtraction.Core.GameConfig.AllowQuickTest; }
+        bool IsTest(ulong client) { var join=bootstrap.RequestFor(client); return join!=null && join.CampOnly && join.CampSandbox; }
+        void RequireTestAccess(ulong client)
+        {
+            if(IsTest(client) && !bootstrap.ServerAllowsTests(client))
+                throw new InvalidOperationException("O acesso a testes exige a rede local do servidor.");
+        }
         CampProgress Profile(ulong client)
         {
+            RequireTestAccess(client);
             if(!IsTest(client)) return CampRepository.GetOwned(bootstrap.RequestFor(client).Session,bootstrap.LeaseOwner(client));
             if(!testProfiles.TryGetValue(client,out var profile))
             {
@@ -28,13 +34,18 @@ namespace CyberExtraction.Camp
                 profile.Merchant=CampRepository.GetTestMerchant(bootstrap.RequestFor(client).Session,bootstrap.LeaseOwner(client));
                 testProfiles[client]=profile;
             }
+            var account=CampRepository.GetOwned(bootstrap.RequestFor(client).Session,bootstrap.LeaseOwner(client));
+            profile.PlayerName=account.PlayerName; profile.NameChangedTicks=account.NameChangedTicks;
+            profile.Statistics=account.Statistics;
             return profile;
         }
         void Save(ulong client,CampProgress profile,long expectedRevision)
-        { if(IsTest(client)) { CampRepository.SaveTestMerchant(bootstrap.RequestFor(client).Session,bootstrap.LeaseOwner(client),profile.Merchant); testProfiles[client]=profile; } else CampRepository.Save(bootstrap.RequestFor(client).Session,profile,expectedRevision,bootstrap.LeaseOwner(client)); }
+        { RequireTestAccess(client); if(IsTest(client)) { CampRepository.SaveTestMerchant(bootstrap.RequestFor(client).Session,bootstrap.LeaseOwner(client),profile.Merchant); testProfiles[client]=profile; } else CampRepository.Save(bootstrap.RequestFor(client).Session,profile,expectedRevision,bootstrap.LeaseOwner(client)); }
         sealed class InputBudget { public float At, Tokens=8; }
         readonly Dictionary<ulong,InputBudget> nextInput=new Dictionary<ulong,InputBudget>();
         string pendingId;
+        string equipmentTimingId;
+        double equipmentTimingAt;
         readonly List<ulong> clients=new List<ulong>();
         float nextTick, lastTick;
         public CampSnapshot Snapshot { get; private set; }=new CampSnapshot();
@@ -58,6 +69,8 @@ namespace CyberExtraction.Camp
             if(command==null || recovering || !bootstrap.CampConnection || !manager.IsConnectedClient ||
                 (command.Kind!=CampCommandKind.Sync && !CampSession.Synchronized) || (command.Kind!=CampCommandKind.Reel && CampSession.Pending)) return false;
             if(command.Kind!=CampCommandKind.Reel) { CampSession.Pending=true; pendingId=command.Id; waitingSince=Time.realtimeSinceStartup; }
+            if(Debug.isDebugBuild && command.Kind==CampCommandKind.Action && command.Action?.Kind==CampActionKind.ExchangeEquipment)
+            { equipmentTimingId=command.Id; equipmentTimingAt=Time.realtimeSinceStartupAsDouble; }
             try { Send(manager,CommandName,NetworkManager.ServerClientId,JsonUtility.ToJson(command)); return true; }
             catch(Exception error) { FailClient(error); return false; }
         }
@@ -69,7 +82,10 @@ namespace CyberExtraction.Camp
                 if(!activities.TryGetValue(client,out var activity)) activities[client]=activity=new CampActivity();
                 var snapshot=new CampSnapshot { Profile=JsonUtility.ToJson(Profile(client)),Ack=ack,Message=message,TestMode=IsTest(client),
                     Activity=activity.Phase,Side=activity.Side,Tension=activity.Tension,Progress=activity.Progress,HeatA=activity.HeatA,HeatB=activity.HeatB,
-                    Fish=activity.Fish,Zone=activity.Zone,Nibble=activity.Nibble,CookMarker=activity.CookMarker,BarVelocity=activity.BarVelocity,CookStartedAt=activity.CookStartedAt };
+                    Fish=activity.Fish,Zone=activity.Zone,Nibble=activity.Nibble,CookMarker=activity.CookMarker,BarVelocity=activity.BarVelocity,CookStartedAt=activity.CookStartedAt,
+                    FishingStage=activity.Fishing.Stage,FishingBar=activity.Fishing.Bar,FishingAge=Mathf.Max(0,Time.realtimeSinceStartup-activity.Fishing.StageStarted),
+                    FishingDuration=activity.Fishing.Duration,FishingVisitor=activity.Fishing.Visitor,FishingItem=activity.Fishing.Item,
+                    FishingBait=activity.Fishing.UseBait,FishingConsumed=activity.Fishing.BaitConsumed,FishingMessage=activity.Fishing.Notice };
                 snapshotSender.Enqueue(client,snapshot);
             }
             catch(CampLeaseLostException) { bootstrap.DisconnectCampSession(client,"SESSION_LOST|Esta sala perdeu a sessao do acampamento. Conecte novamente."); }
@@ -99,6 +115,11 @@ namespace CyberExtraction.Camp
                 CampSession.ApplySnapshot(profile,()=>
                 {
                     Snapshot=snapshot;
+                    if(equipmentTimingId!=null && snapshot.Ack==equipmentTimingId)
+                    {
+                        Debug.Log("[Equipamento] Base: confirmacao aplicada em "+((Time.realtimeSinceStartupAsDouble-equipmentTimingAt)*1000).ToString("0")+" ms; pedido "+equipmentTimingId+".");
+                        equipmentTimingId=null;
+                    }
                     if(pendingId!=null && snapshot.Ack==pendingId) { CampSession.Pending=false; pendingId=null; }
                     if(snapshot.Message!=null) CampSession.Message=snapshot.Message;
                     if(!CampSession.Pending) { waitingSince=-1; recovering=false; }
@@ -107,7 +128,7 @@ namespace CyberExtraction.Camp
             catch(Exception error) { FailClient(error); }
         }
         void ResetClient()
-        { snapshotReceiver.Reset(); pendingId=null; waitingSince=-1; recovering=false; Snapshot=new CampSnapshot(); CampSession.Disconnected(); }
+        { snapshotReceiver.Reset(); pendingId=equipmentTimingId=null; waitingSince=-1; recovering=false; Snapshot=new CampSnapshot(); CampSession.Disconnected(); }
         void FailClient(Exception error)
         {
             Debug.LogError("Falha ao receber acampamento: "+error);
@@ -142,6 +163,8 @@ namespace CyberExtraction.Camp
                 reader.ReadValueSafe(out string json); var command=JsonUtility.FromJson<CampCommand>(json);
                 if(command==null || !Guid.TryParseExact(command.Id,"N",out _) || !Enum.IsDefined(typeof(CampCommandKind),command.Kind)) return;
                 commandId=command.Id;
+                var equipmentClock=Debug.isDebugBuild && command.Kind==CampCommandKind.Action && command.Action?.Kind==CampActionKind.ExchangeEquipment
+                    ? System.Diagnostics.Stopwatch.StartNew() : null;
                 if(!nextInput.TryGetValue(client,out var budget)) nextInput[client]=budget=new InputBudget { At=now };
                 budget.Tokens=Mathf.Min(8,budget.Tokens+(now-budget.At)*20); budget.At=now;
                 if(budget.Tokens<1)
@@ -157,13 +180,27 @@ namespace CyberExtraction.Camp
                     case CampCommandKind.Action:
                         if(!a.Busy)
                         {
-                            if(IsTest(client)) { var copy=profile.Copy(); success=copy.Apply(command.Action); if(success) Save(client,copy,revision); }
+                            if(IsTest(client) && command.Action?.Kind==CampActionKind.SetName)
+                            {
+                                // The sandbox has its own inventory revision. Name still belongs to the real account.
+                                if(command.Action.Sequence==revision+1)
+                                {
+                                    var action=JsonUtility.FromJson<CampAction>(JsonUtility.ToJson(command.Action));
+                                    success=CampRepository.Edit(join.Session,p=> { action.Sequence=p.Revision+1; return p.Apply(action); },bootstrap.LeaseOwner(client));
+                                    command.Action.TradeFeedback=action.TradeFeedback;
+                                    if(success) profile.Revision++;
+                                }
+                            }
+                            else if(IsTest(client)) { var copy=profile.Copy(); success=copy.Apply(command.Action); if(success) Save(client,copy,revision); }
                             else success=CampRepository.Edit(join.Session,p=>p.Apply(command.Action),bootstrap.LeaseOwner(client));
                         }
-                        if(success) completionMessage=command.Action?.TradeFeedback;
+                        if(success || command.Action?.Kind==CampActionKind.SetName) completionMessage=command.Action?.TradeFeedback;
                         else if(command.Action?.Kind==CampActionKind.Organize) completionMessage="Inventário ou estado mudou. Tente organizar novamente.";
                         break;
                     case CampCommandKind.BeginFishing: success=a.BeginFishing(profile,now); completionMessage=a.FishingRejection; break;
+                    case CampCommandKind.SelectFishingBait: success=a.SelectFishingBait(profile,command.UseBait); completionMessage=a.FishingRejection; break;
+                    case CampCommandKind.CastFishing: success=a.CastFishing(profile,now); completionMessage=a.FishingRejection; break;
+                    case CampCommandKind.HookFishing: a.HookFishing(now); success=true; break;
                     case CampCommandKind.Reel: a.Reel(command.Held,now); return;
                     case CampCommandKind.BeginCooking: success=a.BeginCooking(profile,command.Slot,now,manager.ServerTime.Time); completionMessage=a.CookingRejection; break;
                     case CampCommandKind.Flip: success=a.Flip(); break;
@@ -188,6 +225,7 @@ namespace CyberExtraction.Camp
                         if(IsTest(client)) { a.Cancel(); var reset=CampTestResources.Create(); reset.Revision=profile.Revision+1; Save(client,reset,profile.Revision); success=true; } break;
                 }
                 Sync(client,command.Id,success ? completionMessage ?? string.Empty : completionMessage ?? "Acao recusada: verifique recursos, espaco e estado da atividade.");
+                if(equipmentClock!=null) Debug.Log("[Equipamento] Servidor: comando e preparo da resposta em "+equipmentClock.Elapsed.TotalMilliseconds.ToString("0")+" ms; pedido "+command.Id+"; aceito="+success+".");
             }
             catch(CampLeaseLostException) { bootstrap.DisconnectCampSession(client,"SESSION_LOST|Esta sala perdeu a sessao do acampamento. Conecte novamente."); }
             catch(Exception error) { Debug.LogError("Comando de acampamento: "+error.Message); Sync(client,commandId,"Nao foi possivel salvar. Tente novamente."); }

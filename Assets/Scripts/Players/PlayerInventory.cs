@@ -14,6 +14,7 @@ namespace CyberExtraction.Players
         public NetworkVariable<int> LootValue = new NetworkVariable<int>(0,NetworkVariableReadPermission.Owner), Wood = new NetworkVariable<int>(0,NetworkVariableReadPermission.Owner), Nails = new NetworkVariable<int>(0,NetworkVariableReadPermission.Owner), Bandages = new NetworkVariable<int>(0,NetworkVariableReadPermission.Owner), RecyclerLevel = new NetworkVariable<int>(0,NetworkVariableReadPermission.Owner);
         public NetworkVariable<double> BandageReadyAt = new NetworkVariable<double>(0,NetworkVariableReadPermission.Owner);
         public NetworkVariable<byte> Status = new NetworkVariable<byte>((byte)PlayerStatus.Alive);
+        public NetworkVariable<Unity.Collections.FixedString128Bytes> AccountName=new NetworkVariable<Unity.Collections.FixedString128Bytes>(default);
         public NetworkVariable<int> EquippedSlot = new NetworkVariable<int>(-1,NetworkVariableReadPermission.Owner);
         public NetworkVariable<byte> EquippedItem = new NetworkVariable<byte>(255);
         public NetworkVariable<byte> FishingPhase = new NetworkVariable<byte>(0,NetworkVariableReadPermission.Owner);
@@ -30,7 +31,7 @@ namespace CyberExtraction.Players
             get
             {
                 var bot=GetComponent<CyberExtraction.Bots.BotController>();
-                return bot!=null ? bot.DisplayName : "Jogador "+(OwnerClientId+1);
+                return bot!=null ? bot.DisplayName : AccountName.Value.Length>0 ? AccountName.Value.ToString() : "Jogador "+(OwnerClientId+1);
             }
         }
         public bool IsAlive => CurrentStatus == PlayerStatus.Alive && !extractionBanked;
@@ -46,6 +47,7 @@ namespace CyberExtraction.Players
         void FixedUpdate()
         {
             if(!IsServer || !IsAlive || MatchManager.Instance==null || MatchManager.Instance.CurrentState!=MatchState.Running) return;
+            if(ProgressionActive && health!=null && !health.IsDead) CampRepository.QueueProfile(new ProfileEvent {Session=progressionSession,Expedition=expeditionId,Seconds=Time.fixedDeltaTime},true);
             InspectExits();
             Vector2 point=transform.position;
             if(Time.time>=nextStepNoise && Vector2.Distance(point,noisePosition)>.4f)
@@ -62,6 +64,8 @@ namespace CyberExtraction.Players
             if (IsServer) { while (Slots.Count < ItemCatalog.BackpackSlots) Slots.Add(default); while(Equipment.Count<EquipmentLoadout.Count) Equipment.Add(default); health.OnDiedServer += HandleDeath; }
             Status.OnValueChanged += OnStatusChanged; ApplyStatus();
             if (IsServer) ServerSyncCamp();
+            if(IsServer && NetworkObject.IsPlayerObject && Join()!=null)
+                AccountName.Value=new Unity.Collections.FixedString128Bytes(CampRepository.Get(Join().Session).PlayerName ?? "");
             if (IsServer) ServerRefreshAttributes();
         }
         public override void OnNetworkDespawn()
@@ -87,7 +91,19 @@ namespace CyberExtraction.Players
             if (CurrentStatus == PlayerStatus.Extracted && vis != null) vis.ForceHidden = true;
             if (CurrentStatus == PlayerStatus.Dead && sr != null) sr.color = new Color(.25f,.25f,.25f);
         }
-        void HandleDeath(Health h) { if (!IsAlive) return; CyberExtraction.Enemies.MonsterWorld.AddCorpse(transform.position); DropItems(); Status.Value = (byte)PlayerStatus.Dead; }
+        float nextDeathFinalize;
+        void HandleDeath(Health h)
+        {
+            if(!IsAlive) return;
+            nextDeathFinalize=Time.unscaledTime+2;
+            try
+            {
+                DropItems(ExpeditionOutcome.Dead);
+                Status.Value=(byte)PlayerStatus.Dead;
+                CyberExtraction.Enemies.MonsterWorld.AddCorpse(transform.position);
+            }
+            catch(System.Exception error) { Debug.LogError("Morte pendente de finalização; nova tentativa em até dois segundos: "+error.Message); }
+        }
         public InventoryGrid Grid()
         {
             var grid = new InventoryGrid(ItemCatalog.BackpackSlots); for (int i = 0; i < Mathf.Min(ItemCatalog.BackpackSlots, Slots.Count); i++) grid.Slots[i] = Slots[i]; return grid;
@@ -164,13 +180,13 @@ namespace CyberExtraction.Players
             CampRepository.RestockTestMerchant(testMerchantSession,CyberExtraction.UI.NetworkBootstrap.Instance.LeaseOwner(OwnerClientId),testMerchantExpedition);
             testMerchantCommitted=false;
         }
-        public void ServerCommitExpedition() { if(!string.IsNullOrEmpty(testMerchantSession)) testMerchantCommitted=true; if(!extractionBanked && !string.IsNullOrEmpty(progressionSession)) { CampRepository.Commit(progressionSession,expeditionId); progressionCommitted=true; } }
-        public void ServerLoseExpedition() { FinishTestMerchant(); if(!extractionBanked && !string.IsNullOrEmpty(progressionSession)) { CampRepository.Lose(progressionSession,expeditionId); progressionFinished=true; ServerRefreshProgress(); ServerSyncCamp(); } }
+        public void ServerCommitExpedition() { if(!string.IsNullOrEmpty(testMerchantSession)) testMerchantCommitted=true; if(!extractionBanked && !string.IsNullOrEmpty(progressionSession)) { CampRepository.Commit(progressionSession,expeditionId,(byte)MapBuilder.Current); progressionCommitted=true; } }
+        public void ServerLoseExpedition(ExpeditionOutcome outcome=ExpeditionOutcome.Interrupted) { FinishTestMerchant(); if(!extractionBanked && !string.IsNullOrEmpty(progressionSession)) { CampRepository.Lose(progressionSession,expeditionId,outcome); progressionFinished=true; ServerRefreshProgress(); ServerSyncCamp(); } }
         public void ServerRollbackExpedition() { testMerchantCommitted=false; if(!extractionBanked && !string.IsNullOrEmpty(progressionSession)) { CampRepository.Rollback(progressionSession,expeditionId); progressionFinished=true; } }
-        void DropItems()
+        void DropItems(ExpeditionOutcome outcome=ExpeditionOutcome.Interrupted)
         {
             if(extractionBanked) return;
-            ServerLoseExpedition();
+            ServerLoseExpedition(outcome);
             var mm = MatchManager.Instance; if (mm == null) return;
             foreach (var stack in Grid().Slots) if (!stack.Empty) mm.ServerDropStack(transform.position + (Vector3)(Random.insideUnitCircle * .7f), RecoveryRules.DeathDrop(stack));
             foreach(var stack in Equipment) if(!stack.Empty) mm.ServerDropStack(transform.position+(Vector3)(Random.insideUnitCircle*.7f),RecoveryRules.DeathDrop(stack));
@@ -192,6 +208,7 @@ namespace CyberExtraction.Players
         [ServerRpc] void CancelFishingServerRpc() { FishingPhase.Value=0; }
         void Update()
         {
+            if(IsServer && IsAlive && health!=null && health.IsDead && Time.unscaledTime>=nextDeathFinalize) HandleDeath(health);
             StepOrganizationReceipt();
             if(IsServer) PublishBankedExtraction();
             if(IsServer) StepEquipmentChange();
@@ -258,7 +275,7 @@ namespace CyberExtraction.Players
                 PublishBankedExtraction(); return true;
             }
             if (!CanAct || !NetworkObject.IsPlayerObject || Join() == null || string.IsNullOrEmpty(progressionSession)) return false;
-            if(ChangingEquipment || !CampRepository.Bank(progressionSession,expeditionId,Grid(),Loadout())) return false;
+            if(ChangingEquipment || !CampRepository.Bank(progressionSession,expeditionId,Grid(),Loadout(),CurrentExtractionExit.Value)) return false;
             // Bank returned success: item/XP ownership is now final, before any
             // network callbacks, profile refresh, or further operation can throw.
             extractionBanked=true; progressionFinished=true;

@@ -35,8 +35,10 @@ namespace CyberExtraction.UI
         bool IsLocalConnection()
         {
             var manager=NetworkManager.Singleton;
-            if(manager==null || !manager.IsConnectedClient) return true;
+            if(manager==null || !manager.IsConnectedClient) return false;
             var transport=manager.GetComponent<UnityTransport>();
+            // The in-game development action must never restart the stable cluster.
+            if(transport==null || transport.ConnectionData.Port<17777 || transport.ConnectionData.Port>17779) return false;
             string address=transport!=null ? transport.ConnectionData.Address : "";
             if(string.Equals(address,"localhost",StringComparison.OrdinalIgnoreCase)) return true;
             if(!IPAddress.TryParse(address,out var target)) return false;
@@ -48,7 +50,7 @@ namespace CyberExtraction.UI
             if(restartProcess==null || !restartProcess.HasExited) return;
             bool success=restartProcess.ExitCode==0;
             restartProcess.Dispose(); restartProcess=null; requested=false;
-            message=success ? "Servidor reiniciado. Voce pode entrar novamente." : "Falha no reinicio. Consulte Logs/server-restart.log.";
+            message=success ? "Servidor reiniciado. Voce pode entrar novamente." : "Falha no reinicio. Consulte Logs/Development/server-restart.log.";
             PlayerPrefs.SetString("connection_message",message);
         }
         public static void DrawControl(Rect rect)
@@ -65,7 +67,7 @@ namespace CyberExtraction.UI
             {
                 string script=Path.Combine(projectRoot,"Restart-Server.ps1");
                 var info=new System.Diagnostics.ProcessStartInfo("powershell.exe",
-                    "-NoProfile -ExecutionPolicy Bypass -File \""+script+"\"")
+                    "-NoProfile -ExecutionPolicy Bypass -File \""+script+"\" -Channel Development")
                 { WorkingDirectory=projectRoot,UseShellExecute=false,CreateNoWindow=true,WindowStyle=System.Diagnostics.ProcessWindowStyle.Hidden };
                 restartProcess=System.Diagnostics.Process.Start(info);
                 if(restartProcess==null) throw new InvalidOperationException("Nao foi possivel iniciar o reinicio.");

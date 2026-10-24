@@ -22,7 +22,7 @@ namespace CyberExtraction.Match
             var art=root.AddComponent<DungeonSectorArt>();
             try { art.Load(); art.BuildEntrances(); art.BuildLandmarks(); art.Commit(); }
             catch(Exception exception)
-            { root.SetActive(false); Destroy(root); Debug.LogWarning("Catacumbas: marcos dos setores indisponiveis. "+exception.Message); }
+            { root.SetActive(false); DungeonArtLifetime.Release(root); Debug.LogWarning("Catacumbas: marcos dos setores indisponiveis. "+exception.Message); }
         }
         static string Id(int family,int variant) => "CAT-S"+family.ToString("00")+"_v"+variant.ToString("00");
         void Load()
@@ -137,6 +137,6 @@ namespace CyberExtraction.Match
             foreach(var renderer in transform.parent.GetComponentsInChildren<SpriteRenderer>())
                 if(renderer.name.StartsWith("Entrance_",StringComparison.Ordinal) && int.TryParse(renderer.name.Substring(9),out int entry) && dressedEntrances.Contains(entry)) renderer.enabled=false;
         }
-        void OnDestroy() { foreach(var sprite in owned) if(sprite!=null) Destroy(sprite); }
+        void OnDestroy() { foreach(var sprite in owned) if(sprite!=null) DungeonArtLifetime.Release(sprite); }
     }
 }

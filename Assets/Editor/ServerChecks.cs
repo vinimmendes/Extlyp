@@ -10,7 +10,7 @@ using CyberExtraction.Bots;
 
 public static class ServerChecks
 {
-    [MenuItem("Cyber Extraction/Servidor/Verificar sala e prefabs")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Salas e prefabs do servidor")]
     public static void Run()
     {
         int checks = 0;

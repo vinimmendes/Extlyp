@@ -19,7 +19,6 @@ public static class MvpSetup
     const string PrefabDir = "Assets/Prefabs";
     const string ScenePath = "Assets/Scenes/Game.unity";
 
-    [MenuItem("Cyber Extraction/Montar MVP (prefabs + cena)")]
     public static void Build()
     {
         if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
@@ -71,7 +70,7 @@ public static class MvpSetup
         AssetDatabase.CreateAsset(new Material(sh), path);
     }
 
-    [MenuItem("Cyber Extraction/Atualizar material dos sprites")]
+    [MenuItem("Cyber Extraction/Avançado/Preparação de assets/Material dos sprites")]
     public static void UpdateSpriteMaterial()
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode)

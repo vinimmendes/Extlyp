@@ -15,7 +15,7 @@ public static class ImplementationChecks
     [Serializable] class Result { public int Passed; public string[] Checks; }
     static readonly List<string> passed=new List<string>();
     static void Verify(bool ok,string name) { if(!ok) throw new Exception("Implementation check failed: "+name); passed.Add(name); }
-    [MenuItem("Cyber Extraction/Verificar melhorias da auditoria")]
+    [MenuItem("Cyber Extraction/Avançado/Diagnósticos/Melhorias da auditoria")]
     public static void Run()
     {
         if(EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Saia do Play antes de executar os checks de editor.");
@@ -63,15 +63,17 @@ public static class ImplementationChecks
         var p=new CampProgress { PierRepaired=true,Pack=new InventoryGrid() };
         var activity=new CampActivity();
         Verify(activity.BeginFishing(p,0),"Pesca iniciada no servidor");
+        Verify(activity.CastFishing(p,0),"Lancamento iniciado no servidor");
         activity.Reel(true,.1f); activity.Tick(p,.1f,.1f);
-        Verify(!activity.Busy && p.Revision==0,"Fisgada antes da mordida nao entrega peixe");
+        Verify(activity.Busy && p.Revision==0,"Segurar antes da mordida nao entrega peixe nem encerra o lancamento");
         Verify(!new CampActivity().BeginFishing(new CampProgress(),0),"Pier quebrado impede pesca");
-        var game=new FishingGame(); UnityEngine.Random.InitState(42); game.Begin(ItemId.FishCommon,0);
+        var game=new FishingGame(); UnityEngine.Random.InitState(42); game.Open(0); game.Cast(false,0);
         float now=0,lastBar=game.Bar;
         for(int i=0;i<1200 && game.Phase<4;i++)
         {
             now+=.05f;
             float speed=(game.Bar-lastBar)/.05f; lastBar=game.Bar;
+            if(game.Stage==FishingStage.Bite) game.Hook(now);
             game.Input(game.Phase==2 || game.Phase==3 && game.Fish>game.Bar+speed*.2f,now);
             game.Tick(now,.05f);
         }
